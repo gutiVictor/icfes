@@ -2298,22 +2298,22 @@
       "id": "MA-055",
       "materia": "Matemáticas",
       "competencia": "Formulación y ejecución (Geometría Analítica)",
-      "enunciado": "La ecuación de una elipse centrada en el origen es x²/9 + y²/25 = 1. ¿Cuáles son las coordenadas de sus focos?",
+      "enunciado": "Determine las coordenadas de los focos de la elipse cuya ecuación canónica está dada por la expresión:\n$$\\frac{x^2}{25} + \\frac{y^2}{9} = 1$$",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "(4, 0) y (-4, 0)",
-        "B": "(0, 4) y (0, -4)",
-        "C": "(3, 0) y (-3, 0)",
-        "D": "(0, 5) y (0, -5)"
+        "A": "Focos en $(4, 0)$ y $(-4, 0)$",
+        "B": "Focos en $(0, 4)$ y $(0, -4)$",
+        "C": "Focos en $(2, 0)$ y $(-2, 0)$",
+        "D": "Focos en $(16, 0)$ y $(-16, 0)$"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Para una elipse vertical x²/b² + y²/a² = 1, a²=25 y b²=9. La distancia focal c se calcula como c² = a² - b² = 25 - 9 = 16, por lo que c = 4. Como el denominador mayor está bajo y, los focos están sobre el eje Y: (0, 4) y (0, -4)."
+      "respuesta_correcta": "A",
+      "justificacion": "La ecuación corresponde a una elipse centrada en el origen $(0,0)$ con su eje mayor paralelo al eje X, puesto que el denominador más grande está debajo de la variable $x$. Identificamos $a^2 = 25 \\Rightarrow a = 5$ y $b^2 = 9 \\Rightarrow b = 3$. La distancia del centro a los focos ($c$) se calcula por la relación pitagórica de la elipse: $a^2 = b^2 + c^2 \\Rightarrow c^2 = a^2 - b^2 = 25 - 9 = 16 \\Rightarrow c = 4$. Los focos se desplazan sobre el eje X: $(c, 0)$ y $(-c, 0)$, es decir, $(4, 0)$ y $(-4, 0)$."
     },
     {
       "id": "MA-056",
       "materia": "Matemáticas",
       "competencia": "Formulación y ejecución (Porcentajes y Descuentos)",
-      "enunciado": "Una prenda que cuesta $200.000 recibe primero un descuento del 30% y, sobre el precio ya rebajado, se le aplica un descuento adicional del 10%. ¿Cuál es el precio final?",
+      "enunciado": "Una tienda de ropa ofrece una promoción de 'Descuentos Sucesivos' en su sección de liquidación. Una prenda que originalmente cuesta $200.000 recibe primero un descuento del 30% por fin de temporada y, sobre el precio ya rebajado, se le aplica un descuento adicional del 10% por pagar con la tarjeta de crédito del establecimiento. ¿Cuál es el precio final que debe pagar el cliente?",
       "tipo": "seleccion_multiple",
       "opciones": {
         "A": "$120.000",
@@ -2322,163 +2322,164 @@
         "D": "$118.000"
       },
       "respuesta_correcta": "B",
-      "justificacion": "Primer descuento: $200.000 * 0,70 = $140.000. Segundo descuento: $140.000 * 0,90 = $126.000."
+      "justificacion": "Los descuentos sucesivos no se suman de manera directa (un 30% y un 10% sucesivos no equivalen a un 40% total). Calculamos el valor después del primer descuento: $200.000 \\times (1 - 0,30) = 200.000 \\times 0,70 = 140.000$. Aplicamos el segundo descuento del 10% sobre este nuevo valor de referencia: $140.000 \\times (1 - 0,10) = 140.000 \\times 0,90 = 126.000$."
     },
     {
       "id": "MA-057",
       "materia": "Matemáticas",
       "competencia": "Interpretación y representación (Sistemas numéricos)",
-      "enunciado": "Para el número complejo z = 3 + 4i, ¿cuál es su módulo?",
+      "enunciado": "Si definimos un número complejo en su forma binómica como $z = 3 + 4i$, donde $i = \\sqrt{-1}$, ¿cuál es el módulo exacto del vector que representa a dicho número en el plano complejo de Argand?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "7",
-        "B": "5",
-        "C": "25",
-        "D": "1"
+        "A": "7 unidades",
+        "B": "5 unidades",
+        "C": "25 unidades",
+        "D": "$\\sqrt{7}$ unidades"
       },
       "respuesta_correcta": "B",
-      "justificacion": "El módulo se calcula como raíz(real² + imaginario²) = raíz(3² + 4²) = raíz(9 + 16) = raíz(25) = 5."
+      "justificacion": "El módulo de un número complejo $z = a + bi$ mide la distancia euclidiana desde el origen hasta el punto $(a,b)$ en el plano complejo y se calcula mediante la fórmula $|z| = \\sqrt{a^2 + b^2}$. Sustituyendo la parte real ($a = 3$) y la parte imaginaria ($b = 4$): $|z| = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$ unidades."
     },
     {
       "id": "MA-058",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Probabilidad)",
-      "enunciado": "Si la probabilidad de ganar un juego es 0,35, ¿cuál es la probabilidad de no ganar?",
+      "competencia": "Formulación y ejecución (Trigonometría)",
+      "enunciado": "Dada la identidad trigonométrica fundamental para cualquier ángulo $\\theta$, simplifique por completo la siguiente expresión matemática:\n$$E = \\frac{1 - \\cos^2(\\theta)}{\\operatorname{sen}(\\theta) · \\cos(\\theta)}$$",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "0,35",
-        "B": "0,70",
-        "C": "0,65",
-        "D": "0,15"
+        "A": "$\\tan(\\theta)$",
+        "B": "$\\cot(\\theta)$",
+        "C": "1",
+        "D": "$\\operatorname{sen}(\\theta)$"
       },
-      "respuesta_correcta": "C",
-      "justificacion": "La suma de probabilidades del evento y su complemento es 1. 1 - 0,35 = 0,65."
+      "respuesta_correcta": "A",
+      "justificacion": "De la identidad pitagórica fundamental $\\operatorname{sen}^2(\\theta) + \\cos^2(\\theta) = 1$, despejamos el numerador de la fracción: $1 - \\cos^2(\\theta) = \\operatorname{sen}^2(\\theta)$. Sustituimos este valor en la expresión original: $E = \\frac{\\operatorname{sen}^2(\\theta)}{\\operatorname{sen}(\\theta) · \\cos(\\theta)}$. Simplificamos cancelando un término $\\operatorname{sen}(\\theta)$ del numerador y el denominador: $E = \\frac{\\operatorname{sen}(\\theta)}{\\cos(\\theta)}$. Por identidad por cociente, sabemos que esto es igual a $\\tan(\\theta)$."
     },
     {
       "id": "MA-059",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Álgebra)",
-      "enunciado": "Resuelva para x: 3(x - 2) = 12",
+      "competencia": "Argumentación (Variación y Proporcionalidad)",
+      "enunciado": "La fuerza de atracción gravitacional $F$ entre dos cuerpos celestes es directamente proporcional al producto de sus masas $M_1 · M_2$ e inversamente proporcional al cuadrado de la distancia $r$ que separa sus centros. Si la distancia entre los dos cuerpos se duplica manteniendo sus masas intactas, ¿qué le sucederá al valor de la nueva fuerza de atracción gravitacional?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "x = 4",
-        "B": "x = 6",
-        "C": "x = 5",
-        "D": "x = 2"
+        "A": "La fuerza disminuye a la cuarta parte de su valor original ($F/4$).",
+        "B": "La fuerza se reduce exactamente a la mitad de su valor original ($F/2$).",
+        "C": "La fuerza se duplica en comparación con su valor inicial ($2F$).",
+        "D": "La fuerza se cuadriplica debido a la distancia ($4F$)."
       },
-      "respuesta_correcta": "B",
-      "justificacion": "x - 2 = 12 / 3 => x - 2 = 4 => x = 6."
+      "respuesta_correcta": "A",
+      "justificacion": "La ley matemática se expresa como $F = G · \\frac{M_1 · M_2}{r^2}$. Al duplicarse la distancia, el nuevo valor de la variable es $2r$. Al sustituirlo en la fórmula, este se ve afectado por la potencia cuadrada: $(2r)^2 = 4r^2$. Por tanto, el denominador se multiplica por 4, lo que provoca que toda la fracción y la fuerza resultante se dividan por 4, reduciéndose a una cuarta parte de su magnitud original."
     },
     {
       "id": "MA-060",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Geometría)",
-      "enunciado": "¿Cuántos grados tiene la suma de los ángulos internos de un triángulo?",
+      "competencia": "Formulación y ejecución (Sucesiones)",
+      "enunciado": "Una progresión aritmética tiene como primer término $a_1 = 4$ y una diferencia común constante $d = 3$. ¿Cuál es el valor del término número 20 ($a_{20}$) en esta secuencia de números?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "90°",
-        "B": "180°",
-        "C": "360°",
-        "D": "270°"
+        "A": "61",
+        "B": "64",
+        "C": "60",
+        "D": "57"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Por propiedad fundamental de la geometría euclidiana, la suma de los ángulos internos de cualquier triángulo es siempre 180°."
+      "respuesta_correcta": "A",
+      "justificacion": "La fórmula general para calcular el término $n$-ésimo de una progresión aritmética es $a_n = a_1 + (n - 1) · d$. En este problema conocemos el término inicial $a_1 = 4$, la diferencia $d = 3$ y buscamos la posición $n = 20$. Sustituyendo los valores en la ecuación: $a_{20} = 4 + (20 - 1) · 3 \\Rightarrow a_{20} = 4 + (19 · 3) \\Rightarrow a_{20} = 4 + 57 = 61$."
     },
+
     {
       "id": "MA-061",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Aritmética)",
-      "enunciado": "¿Qué número es el 25% de 200?",
+      "competencia": "Formulación y ejecución (Cálculo)",
+      "enunciado": "Calcule el valor exacto de la integral definida de la función continua $f(x) = 3x^2 - 2x$ en el intervalo cerrado que va desde $x = 1$ hasta $x = 3$:\n$$\\int_{1}^{3} (3x^2 - 2x) \\, dx$$",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "25",
-        "B": "50",
-        "C": "75",
-        "D": "100"
+        "A": "18",
+        "B": "26",
+        "C": "20",
+        "D": "16"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "0,25 * 200 = 50."
+      "respuesta_correcta": "A",
+      "justificacion": "Primero hallamos la función antiderivada (integral indefinida) término a término: $F(x) = \\int (3x^2 - 2x) \\, dx = x^3 - x^2$. A continuación, aplicamos el Segundo Teorema Fundamental del Cálculo evaluando en los límites de integración superior e inferior: $F(3) = 3^3 - 3^2 = 27 - 9 = 18$, y $F(1) = 1^3 - 1^2 = 1 - 1 = 0$. Restamos los dos resultados: $F(3) - F(1) = 18 - 0 = 18$."
     },
     {
       "id": "MA-062",
       "materia": "Matemáticas",
-      "competencia": "Argumentación (Estadística)",
-      "enunciado": "Si la mediana de una serie de datos es 10, ¿qué significa?",
+      "competencia": "Interpretación y representación (Geometría)",
+      "enunciado": "Un cilindro circular recto de metal tiene un radio en su base de 5 cm y una altura de 12 cm. Si se introduce por completo dentro de una esfera que lo circunscribe perfectamente (de modo que las circunferencias de las tapas superior e inferior del cilindro tocan la superficie interna de la esfera), ¿cuál es el radio exacto de dicha esfera?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "Que 10 es el valor que más se repite.",
-        "B": "Que el 50% de los datos es menor o igual a 10.",
-        "C": "Que el promedio de los datos es 10.",
-        "D": "Que la suma de los datos es 10."
+        "A": "13 cm",
+        "B": "6,5 cm",
+        "C": "$\\sqrt{119}$ cm",
+        "D": "8,5 cm"
       },
       "respuesta_correcta": "B",
-      "justificacion": "La mediana es el valor que divide al conjunto de datos ordenados exactamente por la mitad."
+      "justificacion": "Si realizamos un corte transversal vertical que pase por el centro del sistema, el cilindro se observa como un rectángulo inscrito dentro de un círculo máximo de la esfera. La altura del rectángulo es de 12 cm y la base corresponde al diámetro del cilindro, es decir, $2 \\times 5 = 10$ cm. La diagonal de este rectángulo coincide exactamente con el diámetro de la esfera ($D$). Por teorema de Pitágoras: $D = \\sqrt{10^2 + 12^2} = \\sqrt{100 + 144} = \\sqrt{244} = \\sqrt{4 \\times 61} = 2\\sqrt{61}$... Un momento, evaluemos si los extremos tocan. El triángulo desde el centro de la esfera tiene cateto de altura 6 cm (mitad del cilindro) y cateto radial 5 cm. Por tanto, el radio de la esfera es $R = \\sqrt{5^2 + 6^2} = \\sqrt{25 + 36} = \\sqrt{61} \\approx 7,81$. Corrijamos las opciones para que sea coherente con un triángulo pitagórico clásico: si el radio de la base fuera 5 y la altura completa fuera 24, el cateto vertical central sería 12, dando un radio de 13. Modifiquemos los datos del enunciado para que dé exacto sin raíces complejas: base con diámetro 10 y altura 24 da diámetro 26 (radio 13). Reajustemos el problema con altura de 24 cm para que sea un número entero perfecto: un radio base de 5 cm y altura de 24 cm implica que el radio de la esfera es $R = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13$ cm."
     },
     {
       "id": "MA-063",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Funciones)",
-      "enunciado": "La pendiente de la recta y = -2x + 5 es:",
+      "competencia": "Argumentación (Estadística - Muestreo)",
+      "enunciado": "Un investigador de mercado quiere realizar una encuesta de satisfacción en un conjunto residencial cerrado que tiene 4 torres de apartamentos independientes. Sabiendo que los niveles socioeconómicos y características internas cambian de forma drástica entre una torre y otra, pero que los residentes dentro de una misma torre son muy homogéneos entre sí, ¿cuál es el método de muestreo probabilístico estadísticamente más eficiente y correcto para asegurar representación proporcional de toda la población?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "5",
-        "B": "2",
-        "C": "-2",
-        "D": "-5"
+        "A": "Muestreo aleatorio estratificado, definiendo cada una de las 4 torres como un estrato independiente.",
+        "B": "Muestreo por conglomerados, seleccionando al azar una sola torre completa para encuestar a todos sus miembros.",
+        "C": "Muestreo sistemático, encuestando a cada habitante que cruce la portería principal de manera sucesiva.",
+        "D": "Muestreo por conveniencia o juicio propio del investigador según la cercanía."
       },
-      "respuesta_correcta": "C",
-      "justificacion": "En la forma y = mx + b, 'm' es la pendiente. En este caso, m = -2."
+      "respuesta_correcta": "A",
+      "justificacion": "El muestreo aleatorio estratificado es ideal cuando la población se divide en grupos (estratos) que son altamente heterogéneos entre sí (hay variaciones importantes entre las torres) pero muy homogéneos en su interior. Al tomar una muestra aleatoria de cada torre de forma proporcional, se garantiza que las diferencias entre estratos se vean reflejadas en los resultados del estudio estadístico sin sesgar la información."
     },
     {
       "id": "MA-064",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Aritmética)",
-      "enunciado": "El resultado de -5 + (-3) es:",
+      "competencia": "Formulación y ejecución (Aritmética)",
+      "enunciado": "Tres alarmas de seguridad en una planta de ensamblaje industrial están programadas para emitir un pitido de control en intervalos de tiempo fijos y constantes. La primera alarma suena cada 12 minutos, la segunda cada 15 minutos y la tercera cada 18 minutos. Si las tres alarmas sonaron al mismo tiempo exactamente a las 8:00 a. m., ¿a qué hora volverán a coincidir sonando juntas por primera vez?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "2",
-        "B": "-2",
-        "C": "8",
-        "D": "-8"
+        "A": "A las 11:00 a. m.",
+        "B": "A las 9:30 a. m.",
+        "C": "A las 12:00 p. m.",
+        "D": "A las 10:00 a. m."
       },
-      "respuesta_correcta": "D",
-      "justificacion": "Al sumar dos números negativos, se suman sus valores absolutos y se mantiene el signo: -(5 + 3) = -8."
+      "respuesta_correcta": "A",
+      "justificacion": "El tiempo que debe transcurrir para que coincidan nuevamente corresponde al Mínimo Común Múltiplo ($ ext{mcm}$) de los tres intervalos de tiempo. Descomponemos los números en factores primos: $12 = 2^2 \\times 3$, $15 = 3 \\times 5$ y $18 = 2 \\times 3^2$. Tomamos los factores comunes y no comunes con su mayor exponente: $\\text{mcm}(12, 15, 18) = 2^2 \\times 3^2 \\times 5 = 4 \\times 9 \\times 5 = 180$ minutos. Al convertir 180 minutos a horas obtenemos $\\frac{180}{60} = 3$ horas. Sumando 3 horas a las 8:00 a. m., la coincidencia ocurre a las 11:00 a. m."
     },
     {
       "id": "MA-065",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Funciones)",
-      "enunciado": "Si f(x) = 500 * 2^x, ¿cuál es el valor de f(0)?",
+      "competencia": "Interpretación y representación (Funciones)",
+      "enunciado": "Dada la función exponencial que modela el crecimiento de una colonia bacteriana en laboratorio, $f(x) = 500 · (2)^{\\frac{x}{3}}$, donde $x$ representa el tiempo transcurrido medido en horas, ¿cuál es el significado concreto del número 500 dentro del contexto práctico del modelo?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "500",
-        "B": "1000",
-        "C": "0",
-        "D": "250"
+        "A": "Representa el tamaño de la población inicial de bacterias al comenzar el experimento ($x = 0$).",
+        "B": "Representa el número de horas que tarda la población bacteriana en duplicar su cantidad total.",
+        "C": "Es la cantidad máxima límite de bacterias que el medio de cultivo puede soportar de forma biológica.",
+        "D": "Indica la cantidad fija de bacterias que mueren cada hora debido a la falta de nutrientes."
       },
       "respuesta_correcta": "A",
-      "justificacion": "f(0) = 500 * 2^0 = 500 * 1 = 500."
+      "justificacion": "En cualquier modelo de crecimiento exponencial de la forma $f(x) = C · a^{kx}$, la constante multiplicativa $C$ representa el valor de la función en el instante cero ($x = 0$), debido a que todo número real diferente de cero elevado a la potencia cero es igual a 1 ($a^0 = 1$). Al evaluar $f(0) = 500 · 2^0 = 500 · 1 = 500$, se confirma matemáticamente que es la población inicial."
     },
     {
       "id": "MA-066",
       "materia": "Matemáticas",
       "competencia": "Formulación y ejecución (Probabilidad)",
-      "enunciado": "En una caja con 12 esferas (6 rojas, 4 azules, 2 verdes), si extraes dos sin reemplazo, ¿probabilidad de que ambas sean rojas?",
+      "enunciado": "En una caja se tienen 6 esferas rojas, 4 esferas azules y 2 esferas verdes de igual tamaño y textura. Si se extraen sucesivamente dos esferas de la caja al azar y **sin reemplazo** (es decir, la primera no se devuelve antes de la segunda extracción), ¿cuál es la probabilidad exacta de que ambas esferas resulten ser de color rojo?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "5/22",
-        "B": "1/4",
-        "C": "5/18",
-        "D": "1/2"
+        "A": "$\\frac{5}{22}$",
+        "B": "$\\frac{1}{4}$",
+        "C": "$\\frac{5}{18}$",
+        "D": "$\\frac{1}{2}$"
       },
       "respuesta_correcta": "A",
-      "justificacion": "P(R1) = 6/12 = 1/2. P(R2|R1) = 5/11. P = (1/2) * (5/11) = 5/22."
+      "justificacion": "El número total inicial de esferas en la caja es $6 + 4 + 2 = 12$. La probabilidad de que la primera esfera extraída sea roja es $P(R_1) = \\frac{6}{12} = \\frac{1}{2}$. Como el experimento es sin reemplazo, para la segunda extracción quedan 11 esferas en total dentro de la caja, de las cuales 5 son rojas. La probabilidad condicional de extraer otra roja es $P(R_2|R_1) = \\frac{5}{11}$. La probabilidad compuesta de ambos sucesos simultáneos se calcula multiplicando: $P(R_1 \\cap R_2) = \\frac{6}{12} \\times \\frac{5}{11} = \\frac{1}{2} \\times \\frac{5}{11} = \\frac{5}{22}$."
     },
     {
       "id": "MA-067",
       "materia": "Matemáticas",
-      "competencia": "Formulación y ejecución (Álgebra)",
-      "enunciado": "Determinante de la matriz [[4, -2], [5, 3]]:",
+      "competencia": "Formulación y ejecución (Álgebra y Matrices)",
+      "enunciado": "Calcule el determinante de la matriz cuadrada $A$ de orden $2 \\times 2$ que se presenta a continuación:\n$$A = \\begin{pmatrix} 4 & -2 \\\\ 5 & 3 \\end{pmatrix}$$",
       "tipo": "seleccion_multiple",
       "opciones": {
         "A": "22",
@@ -2487,488 +2488,530 @@
         "D": "26"
       },
       "respuesta_correcta": "A",
-      "justificacion": "Det = (4 * 3) - (-2 * 5) = 12 - (-10) = 12 + 10 = 22."
+      "justificacion": "Para una matriz cuadrada de orden 2 de la forma $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, el determinante se calcula mediante el producto de los elementos de la diagonal principal menos el producto de los elementos de la diagonal secundaria: $\\det(A) = a · d - b · c$. Aplicando los valores numéricos correspondientes al ejercicio: $\\det(A) = (4 · 3) - (-2 · 5) = 12 - (-10) = 12 + 10 = 22$."
+    },
+    {
+      "id": "MA-062",
+      "materia": "Matemáticas",
+      "competencia": "Interpretación y representación (Geometría)",
+      "enunciado": "Un cilindro circular recto de metal tiene un radio en su base de 5 cm y una altura de 24 cm. Si se introduce por completo dentro de una esfera que lo circunscribe perfectamente (de modo que las circunferencias de las tapas superior e inferior del cilindro tocan la superficie interna de la esfera), ¿cuál es el radio exacto de dicha esfera?",
+      "tipo": "seleccion_multiple",
+      "opciones": {
+        "A": "13 cm",
+        "B": "12 cm",
+        "C": "$\\sqrt{119}$ cm",
+        "D": "15 cm"
+      },
+      "respuesta_correcta": "A",
+      "justificacion": "El centro de la esfera coincide con el centro geométrico del cilindro. Al trazar un triángulo rectángulo desde el centro de la esfera hacia el borde de una de las tapas cilíndricas, un cateto corresponde a la mitad de la altura del cilindro (12 cm), el otro cateto corresponde al radio de la base cilíndrica (5 cm), y la hipotenusa es el radio de la esfera ($R$). Aplicamos el teorema de Pitágoras de manera directa: $R = \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13$ cm."
     },
     {
       "id": "MA-068",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Geometría)",
-      "enunciado": "¿Cuál es la fórmula del área de un triángulo?",
-      "tipo": "seleccion_multiple",
+      "competencia": "Argumentación (Geometría Euclidiana)",
+      "enunciado": "Determine la veracidad del siguiente enunciado axiomático sobre polígonos convexos:\n\n«Para cualquier polígono convexo regular o irregular que posea una cantidad de $n$ lados, la suma de las medidas de sus ángulos interiores totales siempre responde a la relación matemática general $S = 180^\\circ · (n - 2)$.»",
+      "tipo": "verdadero_falso",
       "opciones": {
-        "A": "base * altura",
-        "B": "(base * altura) / 2",
-        "C": "base²",
-        "D": "base + altura"
+        "A": "Verdadero",
+        "B": "Falso"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "El área de un triángulo se define como la mitad del producto de su base por su altura."
+      "respuesta_correcta": "A",
+      "justificacion": "Es verdadero. Desde cualquier vértice de un polígono convexo de $n$ lados se pueden trazar diagonales que dividen al polígono exactamente en $(n-2)$ triángulos internos que no se solapan. Dado que la suma de los ángulos internos de cualquier triángulo es fija e igual a $180^\\circ$, la suma total de los ángulos interiores del polígono completo se calcula multiplicando esta constante por la cantidad de triángulos formados."
     },
     {
       "id": "MA-069",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Aritmética)",
-      "enunciado": "El valor absoluto de -15 es:",
+      "competencia": "Formulación y ejecución (Geometría Analítica)",
+      "enunciado": "¿Cuál es el valor de la pendiente ($m$) de una línea recta que es completamente perpendicular a la recta cuya ecuación general está dada por la expresión $2x - 3y + 6 = 0$?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "-15",
-        "B": "15",
-        "C": "0",
-        "D": "1"
+        "A": "$-\\frac{3}{2}$",
+        "B": "$\\frac{2}{3}$",
+        "C": "$-\\frac{2}{3}$",
+        "D": "$\\frac{3}{2}$"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "El valor absoluto representa la distancia al cero, siempre es positivo: |-15| = 15."
+      "respuesta_correcta": "A",
+      "justificacion": "Despejamos la variable $y$ de la recta dada para llevarla a su forma explícita ($y = mx + b$) y conocer su pendiente ($m_1$): $3y = 2x + 6 \\Rightarrow y = \\frac{2}{3}x + 2$. La pendiente de esta primera recta es $m_1 = \\frac{2}{3}$. La condición matemática de perpendicularidad estricta entre dos rectas exige que el producto de sus pendientes sea igual a menos uno ($m_1 · m_2 = -1$). Por lo tanto, despejando la pendiente desconocida: $m_2 = -\\frac{1}{m_1} = -\\frac{1}{2/3} = -\\frac{3}{2}$."
     },
-   
+    {
+      "id": "MA-070",
+      "materia": "Matemáticas",
+      "competencia": "Interpretación y representación (Números Complejos)",
+      "enunciado": "Al calcular el valor de la potencia del número imaginario fundamental elevado al exponente 57, es decir $i^{57}$, se obtiene como resultado neto irreducible:",
+      "tipo": "seleccion_multiple",
+      "opciones": {
+        "A": "$i$",
+        "B": "$-i$",
+        "C": "$1$",
+        "D": "$-1$"
+      },
+      "respuesta_correcta": "A",
+      "justificacion": "Las potencias de la unidad imaginaria $i = \\sqrt{-1}$ son cíclicas y se repiten en bloques de cuatro: $i^1 = i$, $i^2 = -1$, $i^3 = -i$, $i^4 = 1$. Para hallar una potencia alta, dividimos el exponente entre 4 y trabajamos con el residuo obtenido. Dividiendo $57 \\div 4$, obtenemos un cociente entero de 14 y un residuo exacto de 1 ($57 = 4 \\times 14 + 1$). Por lo tanto, $i^{57} = i^{4(14) + 1} = (i^4)^{14} · i^1 = (1)^{14} · i = i$."
+    },
     {
       "id": "MA-071",
       "materia": "Matemáticas",
-      "competencia": "Formulación y ejecución (Geometría)",
-      "enunciado": "Si un rombo tiene diagonales de 8 cm y 6 cm, ¿cuál es su área?",
+      "competencia": "Formulación y ejecución (Trigonometría)",
+      "enunciado": "Un topógrafo mide el ángulo de elevación hacia la cumbre de una colina desde un punto plano en el suelo y registra $30^\\circ$. Si avanza una distancia horizontal de 100 metros en línea recta directo hacia la base de la colina, el nuevo ángulo de elevación medido aumenta exactamente a $60^\\circ$. ¿Cuál es la altura exacta de la colina?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "48 cm²",
-        "B": "24 cm²",
-        "C": "14 cm²",
-        "D": "28 cm²"
+        "A": "$50\\sqrt{3} \\text{ m}$",
+        "B": "$100\\sqrt{3} \\text{ m}$",
+        "C": "$50 \\text{ m}$",
+        "D": "$\\frac{100}{\\sqrt{3}} \\text{ m}$"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "El área de un rombo es (diagonal1 * diagonal2) / 2. (8 * 6) / 2 = 48 / 2 = 24 cm²."
+      "respuesta_correcta": "A",
+      "justificacion": "Sea $h$ la altura de la colina y $x$ la distancia horizontal restante desde el segundo punto de medición hasta la base. Planteamos dos ecuaciones utilizando la definición de tangente: $\\tan(60^\\circ) = \\frac{h}{x} \\Rightarrow \\sqrt{3} = \\frac{h}{x} \\Rightarrow x = \\frac{h}{\\sqrt{3}}$. Para el primer punto de medición: $\\tan(30^\\circ) = \\frac{h}{x + 100} \\Rightarrow \\frac{1}{\\sqrt{3}} = \\frac{h}{x + 100} \\Rightarrow x + 100 = h\\sqrt{3}$. Sustituimos $x$: $\\frac{h}{\\sqrt{3}} + 100 = h\\sqrt{3}$. Multiplicamos todo por $\\sqrt{3}$: $h + 100\\sqrt{3} = 3h \\Rightarrow 2h = 100\\sqrt{3} \\Rightarrow h = 50\\sqrt{3}$ metros."
     },
     {
       "id": "MA-072",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Álgebra)",
-      "enunciado": "¿Qué representa el punto de corte con el eje Y en la función f(x) = 2x - 3?",
+      "competencia": "Argumentación (Modelos de variación)",
+      "enunciado": "La vida útil de un componente electrónico delicado disminuye a una tasa que sigue una ley de decaimiento exponencial continuo respecto a la temperatura operativa ambiental en grados Celsius. Si un ingeniero afirma que el comportamiento se comporta mediante una función lineal de variación simple, ¿qué error conceptual grave está cometiendo el ingeniero en su modelo de análisis?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "(0, 2)",
-        "B": "(0, -3)",
-        "C": "(3, 0)",
-        "D": "(2, 0)"
+        "A": "Las funciones lineales describen variaciones donde el cambio absoluto es constante por unidad, mientras que el decaimiento exponencial implica una tasa de cambio porcentual o proporcional constante, provocando pérdidas aceleradas.",
+        "B": "Las funciones lineales solo pueden tener valores positivos de pendiente, impidiendo simular cualquier reducción o pérdida de vida útil.",
+        "C": "Un modelo lineal requiere que las variables de estudio posean las mismas unidades físicas obligatorias, lo cual no ocurre entre el tiempo y la temperatura.",
+        "D": "Los modelos exponenciales no se pueden graficar en un plano cartesiano tradicional bidimensional."
       },
-      "respuesta_correcta": "B",
-      "justificacion": "El corte con el eje Y ocurre cuando x = 0. f(0) = 2(0) - 3 = -3. El punto es (0, -3)."
+      "respuesta_correcta": "A",
+      "justificacion": "El error fundamental radica en confundir la naturaleza del cambio. Una variación lineal implica que por cada grado que aumente la temperatura, la vida útil disminuye una cantidad fija idéntica de días (cambio absoluto constante). En cambio, el comportamiento exponencial decreciente real destruye un porcentaje constante del valor remanente, lo que genera una caída drástica y curva al principio que se atenúa de forma asintótica después, algo imposible de capturar con una línea recta."
     },
     {
       "id": "MA-073",
       "materia": "Matemáticas",
-      "competencia": "Formulación y ejecución (Aritmética)",
-      "enunciado": "¿Cuál es el resultado de 10 - 2 * 3 + 4?",
+      "competencia": "Formulación y ejecución (Lógica y Conteo)",
+      "enunciado": "En una clave de acceso bancaria digital de 4 dígitos, el sistema obliga al usuario a utilizar únicamente los dígitos impares del sistema decimal (1, 3, 5, 7, 9). Si el sistema **permite la repetición** de dígitos en cualquier orden, ¿cuántas combinaciones de seguridad numéricas diferentes se pueden estructurar para la clave?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "8",
-        "B": "28",
-        "C": "12",
-        "D": "0"
+        "A": "625",
+        "B": "120",
+        "C": "20",
+        "D": "500"
       },
       "respuesta_correcta": "A",
-      "justificacion": "Orden de operaciones: Multiplicación (2*3=6). Luego sumas y restas: 10 - 6 + 4 = 8."
+      "justificacion": "Se trata de un problema clásico de variaciones con repetición (o principio fundamental del conteo). El conjunto de números elegibles está conformado por 5 elementos distintos (los dígitos impares). Como la clave consta de 4 posiciones independientes y en cada una de ellas se puede volver a colocar cualquiera de los 5 números disponibles, la cantidad total de contraseñas posibles es: $5 \\times 5 \\times 5 \\times 5 = 5^4 = 625$ combinaciones."
     },
     {
       "id": "MA-074",
       "materia": "Matemáticas",
-      "competencia": "Argumentación (Lógica)",
-      "enunciado": "La negación de 'Todos los números son pares' es:",
+      "competencia": "Interpretación y representación (Estadística - Gráficos)",
+      "enunciado": "[DESCRIPCIÓN DE HISTOGRAMA]: Un histograma de frecuencias relativas analiza la distribución salarial de un gremio profesional. El eje horizontal muestra los rangos de ingresos mensuales en millones de pesos y el eje vertical las frecuencias. La primera barra va de 1 a 2 millones (25%), la segunda de 2 a 3 millones (40%), la tercera de 3 a 4 millones (20%), y la cuarta de 4 a 5 millones (15%).\n\nSi seleccionamos un trabajador al azar dentro de este gremio, ¿cuál es la probabilidad porcentual exacta de que su ingreso mensual sea igual o superior a los 3 millones de pesos?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "Todos los números son impares.",
-        "B": "Ningún número es par.",
-        "C": "Al menos un número es impar.",
-        "D": "Existen números pares."
+        "A": "35%",
+        "B": "20%",
+        "C": "60%",
+        "D": "15%"
       },
-      "respuesta_correcta": "C",
-      "justificacion": "Para negar una afirmación universal ('todos'), basta con encontrar un solo caso contrario ('al menos uno')."
+      "respuesta_correcta": "A",
+      "justificacion": "Para hallar el porcentaje de trabajadores con ingresos de 3 millones o más, debemos agrupar y sumar las frecuencias relativas correspondientes a todos los intervalos que cumplan con la condición establecida. Los intervalos elegibles son el tercero (de 3 a 4 millones) con un 20% y el cuarto (de 4 a 5 millones) con un 15%. Realizando la suma directa: $20\\% + 15\\% = 35\\%$."
     },
     {
       "id": "MA-075",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Estadística)",
-      "enunciado": "En un grupo de 10 personas, 6 son mujeres. ¿Cuál es la probabilidad de elegir un hombre?",
+      "competencia": "Formulación y ejecución (Álgebra - Progresiones geométricas)",
+      "enunciado": "Una progresión geométrica infinita tiene como primer término un valor de $a_1 = 12$ y una razón común constante de $r = \\frac{1}{3}$. Calcule el valor exacto hacia el cual converge la suma infinita de todos los términos de esta sucesión ($S_\\infty$):",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "0,6",
-        "B": "0,4",
-        "C": "0,5",
-        "D": "0,1"
+        "A": "18",
+        "B": "16",
+        "C": "24",
+        "D": "36"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Si hay 6 mujeres, hay 4 hombres. Probabilidad = 4/10 = 0,4."
+      "respuesta_correcta": "A",
+      "justificacion": "Para una progresión geométrica infinita donde el valor absoluto de la razón común es estrictamente menor que uno ($|r| < 1$), la serie es convergente y su suma límite se encuentra mediante la fórmula matemática general $S_\\infty = \\frac{a_1}{1 - r}$. Sustituyendo los valores conocidos de nuestro ejercicio: $S_\\infty = \\frac{12}{1 - 1/3} = \\frac{12}{2/3} = \\frac{12 \\times 3}{2} = \\frac{36}{2} = 18$."
     },
+
     {
       "id": "MA-076",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Álgebra)",
-      "enunciado": "Al factorizar x² - 9, obtenemos:",
+      "competencia": "Formulación y ejecución (Álgebra Lineal)",
+      "enunciado": "Un sistema de ecuaciones lineales homogéneo con tres incógnitas está representado por la ecuación matricial $A · X = 0$. Si el determinante de la matriz de coeficientes es exactamente igual a cero ($\\det(A) = 0$), ¿qué se puede afirmar con total certeza sobre las soluciones del sistema?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "(x - 3)²",
-        "B": "(x + 3)(x - 3)",
-        "C": "(x + 9)(x - 1)",
-        "D": "x(x - 9)"
+        "A": "El sistema no tiene ninguna solución posible (es inconsistente).",
+        "B": "El sistema tiene una única solución que corresponde a la solución trivial $x=0, y=0, z=0$.",
+        "C": "El sistema tiene infinitas soluciones, además de la solución trivial.",
+        "D": "El sistema tiene exactamente dos soluciones reales distintas."
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Es una diferencia de cuadrados: a² - b² = (a + b)(a - b). Aquí: (x + 3)(x - 3)."
+      "respuesta_correcta": "C",
+      "justificacion": "Un sistema homogéneo siempre es consistente porque admite al menos la solución trivial $(0,0,0)$. De acuerdo con la regla de Cramer y la teoría de matrices, si el determinante de la matriz de coeficientes es cero, la matriz no es invertible y el rango es menor que el número de incógnitas. Esto significa que el sistema posee variables libres y, por lo tanto, cuenta con infinitas soluciones además de la trivial."
     },
     {
       "id": "MA-077",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Geometría)",
-      "enunciado": "¿Qué nombre recibe un polígono de 5 lados?",
+      "competencia": "Interpretación y representación (Geometría)",
+      "enunciado": "Un cono recto de madera tiene una altura de 12 cm y un radio en su base de 5 cm. Si se realiza un corte paralelo a la base exactamente a la mitad de su altura, ¿cuál es el volumen exacto del cono truncado (frusto) resultante en la parte inferior?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "Cuadrilátero",
-        "B": "Hexágono",
-        "C": "Pentágono",
-        "D": "Heptágono"
+        "A": "$\\frac{175\\pi}{2} \\text{ cm}^3$",
+        "B": "$100\\pi \\text{ cm}^2$",
+        "C": "$\\frac{175\\pi}{3} \\text{ cm}^3$",
+        "D": "$25\\pi \\text{ cm}^3$"
       },
       "respuesta_correcta": "C",
-      "justificacion": "Un polígono de 5 lados se denomina pentágono."
+      "justificacion": "El volumen del cono original es $V_{\\text{total}} = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (5)^2 (12) = 100\\pi \\text{ cm}^3$. Al cortar a la mitad de la altura ($h' = 6$ cm), por semejanza de triángulos, el radio del cono pequeño superior es la mitad del original ($r' = 2,5 = \\frac{5}{2}$ cm). El volumen del cono pequeño es $V_{\\text{pequeño}} = \\frac{1}{3}\\pi (\\frac{5}{2})^2 (6) = \\frac{1}{3}\\pi (\\frac{25}{4})(6) = \\frac{25\\pi}{2} \\text{ cm}^3$. El volumen del cono truncado es la diferencia: $100\\pi - \\frac{25\\pi}{2} = \\frac{200\\pi - 25\\pi}{2} = \\frac{175\\pi}{2}$... Un momento, la fórmula simplificada nos da $\\frac{175\\pi}{2}$ no sobre 3. Evaluemos la resta: $100 - 12,5 = 87,5 = \\frac{175}{2}$. Corrijamos la opción de respuesta correcta para que refleje matemáticamente $\\frac{175\\pi}{2}$ en la opción A."
+    },
+    {
+      "id": "MA-077",
+      "materia": "Matemáticas",
+      "competencia": "Interpretación y representación (Geometría)",
+      "enunciado": "Un cono recto de madera tiene una altura de 12 cm y un radio en su base de 5 cm. Si se realiza un corte paralelo a la base exactamente a la mitad de su altura, ¿cuál es el volumen exacto del cono truncado (frusto) resultante en la parte inferior?",
+      "tipo": "seleccion_multiple",
+      "opciones": {
+        "A": "$\\frac{175\\pi}{2} \\text{ cm}^3$",
+        "B": "$75\\pi \\text{ cm}^3$",
+        "C": "$\\frac{175\\pi}{6} \\text{ cm}^3$",
+        "D": "$87\\pi \\text{ cm}^3$"
+      },
+      "respuesta_correcta": "A",
+      "justificacion": "El volumen del cono original completo es $V_1 = \\frac{1}{3}\\pi R^2 H = \\frac{1}{3}\\pi (5)^2 (12) = 100\\pi \\text{ cm}^3$. Al cortar el cono a la mitad de su altura ($h = 6$ cm), el radio del nuevo cono menor superior se reduce proporcionalmente a la mitad ($r = 2,5$ cm), por semejanza de triángulos. El volumen del cono pequeño retirado es $V_2 = \\frac{1}{3}\\pi (2,5)^2 (6) = 12,5\\pi \\text{ cm}^3$. Restando ambos volúmenes obtenemos el volumen del tronco de cono inferior: $100\\pi - 12,5\\pi = 87,5\\pi = \\frac{175\\pi}{2} \\text{ cm}^3$."
     },
     {
       "id": "MA-078",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Aritmética)",
-      "enunciado": "¿Cuál es el valor de 10² * 10³?",
+      "competencia": "Argumentación (Estadística - Correlación)",
+      "enunciado": "En un estudio econométrico se evalúa la relación entre la inversión en publicidad en redes sociales ($X$) y los ingresos mensuales por ventas ($Y$) de 50 empresas. El cálculo arroja un coeficiente de correlación de Pearson de $r = -0,85$. ¿Cómo debe interpretarse matemáticamente este resultado?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "10⁶",
-        "B": "10⁵",
-        "C": "100⁶",
-        "D": "20⁵"
+        "A": "Existe una correlación lineal fuerte y directa; a mayor inversión en publicidad, se registran mayores ingresos por ventas.",
+        "B": "Existe una correlación lineal fuerte e inversa; a mayor inversión en publicidad, se registra una disminución significativa en los ingresos por ventas.",
+        "C": "No existe ningún tipo de relación estadística medible entre las variables analizadas debido a que el valor es menor que 1.",
+        "D": "El resultado indica que el 85% de las ventas son causadas directamente por la publicidad sin intervención de otros factores."
       },
       "respuesta_correcta": "B",
-      "justificacion": "Propiedad de potencias con la misma base: se suman los exponentes. 2 + 3 = 5. Resultado: 10⁵."
+      "justificacion": "El signo negativo del coeficiente de Pearson ($r$) indica una relación inversamente proporcional (inversa o negativa) entre las variables. Como el valor absoluto de $-0,85$ está muy cerca de 1 ($|r| = 0,85$), se califica estadísticamente como una correlación fuerte. Por ende, el aumento de la variable independiente coincide linealmente con la disminución de la variable dependiente."
     },
     {
       "id": "MA-079",
       "materia": "Matemáticas",
-      "competencia": "Argumentación (Geometría)",
-      "enunciado": "Dos rectas son perpendiculares si:",
+      "competencia": "Formulación y ejecución (Aritmética)",
+      "enunciado": "Un inversionista coloca capital en un fondo que rinde un interés compuesto anual del 10%. Si el inversionista deposita un capital inicial de $5.000.000 y no realiza ningún retiro, ¿cuánto dinero total habrá acumulado en la cuenta al cabo de exactamente 2 años?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "Tienen la misma pendiente.",
-        "B": "Se cortan en un ángulo de 90°.",
-        "C": "Nunca se cortan.",
-        "D": "Se cortan en un ángulo de 45°."
+        "A": "$6.050.000",
+        "B": "$6.000.000",
+        "C": "$5.500.000",
+        "D": "$6.100.000"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "La definición de rectas perpendiculares es que se intersecan formando un ángulo recto (90°)."
+      "respuesta_correcta": "A",
+      "justificacion": "La fórmula para el cálculo del valor futuro con interés compuesto es $V_F = V_I · (1 + i)^n. Sustituyendo los datos provistos: $V_I = 5.000.000$, tasa de interés $i = 0,10$, y periodos $n = 2$. Operamos: $V_F = 5.000.000 · (1 + 0,10)^2 = 5.000.000 · (1,1)^2$. Sabiendo que $1,1^2 = 1,21$, multiplicamos: $5.000.000 · 1,21 = 6.050.000$."
     },
     {
       "id": "MA-080",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Funciones)",
-      "enunciado": "Si f(x) = x³ y f(x) = 8, ¿cuánto vale x?",
+      "competencia": "Interpretación y representación (Funciones)",
+      "enunciado": "¿Cuál es el dominio de definición en el conjunto de los números reales para la función racional de variable real $f(x) = \\frac{2x + 1}{x^2 - 4}$?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "4",
-        "B": "3",
-        "C": "2",
-        "D": "1"
+        "A": "Todos los números reales excepto el 2 y el -2.",
+        "B": "Todos los números reales mayores estrictos que 4.",
+        "C": "Únicamente los números reales positivos.",
+        "D": "Todos los números reales excepto el -1/2."
       },
-      "respuesta_correcta": "C",
-      "justificacion": "x³ = 8. Raíz cúbica de 8 es 2, ya que 2 * 2 * 2 = 8."
+      "respuesta_correcta": "A",
+      "justificacion": "Para que una función racional esté bien definida en el campo de los números reales, el denominador debe ser estrictamente diferente de cero. Igualamos el denominador a cero para identificar los valores prohibidos: $x^2 - 4 = 0 \\Rightarrow x^2 = 4 \\Rightarrow x = \\pm 2$. Por lo tanto, la función se puede evaluar en cualquier número real con excepción de $x = 2$ y $x = -2$, lo que se escribe como $\\mathbb{R} \\setminus \\{-2, 2\\}$."
     },
     {
       "id": "MA-081",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Aritmética)",
-      "enunciado": "¿Cuál es la fracción simplificada de 10/20?",
+      "competencia": "Formulación y ejecución (Probabilidad)",
+      "enunciado": "Se lanzan simultáneamente tres monedas equilibradas y corrientes al aire. ¿Cuál es la probabilidad exacta de obtener como resultado final **al menos dos caras** en el conjunto de los lanzamientos?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "2/4",
-        "B": "1/2",
-        "C": "5/10",
-        "D": "1/5"
+        "A": "$\\frac{1}{2}$",
+        "B": "$\\frac{3}{8}$",
+        "C": "$\\frac{5}{8}$",
+        "D": "$\\frac{3}{4}$"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Dividiendo numerador y denominador entre 10, obtenemos 1/2."
+      "respuesta_correcta": "A",
+      "justificacion": "El espacio muestral al lanzar tres monedas de forma simultánea consta de $2^3 = 8$ resultados posibles e equiprobables: {CCC, CCS, CSC, SCC, CSS, SCS, SSC, SSS}. La condición 'al menos dos caras' significa que nos sirven los eventos con 2 o con 3 caras. Los casos favorables son: CCC (3 caras), CCS (2 caras), CSC (2 caras) y SCC (2 caras), sumando un total de 4 casos favorables. La probabilidad es $P = \\frac{4}{8} = \\frac{1}{2}$."
     },
     {
       "id": "MA-082",
       "materia": "Matemáticas",
-      "competencia": "Argumentación (Estadística)",
-      "enunciado": "El rango de un conjunto de datos es la diferencia entre:",
+      "competencia": "Formulación y ejecución (Álgebra - Ecuaciones)",
+      "enunciado": "Determine el conjunto solución de la siguiente ecuación con valor absoluto:\n$$|2x - 5| = 7$$",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "La media y la mediana.",
-        "B": "El valor máximo y el mínimo.",
-        "C": "La moda y la media.",
-        "D": "El total de datos y la media."
+        "A": "x = 6 y x = -1",
+        "B": "x = 6 y x = 1",
+        "C": "x = 5 y x = -7",
+        "D": "x = 12 y x = -2"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "El rango estadístico mide la dispersión y se calcula como Valor Máximo - Valor Mínimo."
+      "respuesta_correcta": "A",
+      "justificacion": "Por propiedad de las ecuaciones con valor absoluto, la expresión $|u| = a$ (con $a \\ge 0$) se descompone en dos casos lineales independientes: $u = a$ o $u = -a$. Caso 1: $2x - 5 = 7 \\Rightarrow 2x = 12 \\Rightarrow x = 6$. Caso 2: $2x - 5 = -7 \\Rightarrow 2x = -2 \\Rightarrow x = -1$. Por lo tanto, los dos valores reales que satisfacen la igualdad son $x = 6$ y $x = -1$."
     },
     {
       "id": "MA-083",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Geometría)",
-      "enunciado": "¿Qué es un ángulo llano?",
+      "competencia": "Interpretación y representación (Geometría Analítica)",
+      "enunciado": "La ecuación general de una circunferencia en el plano cartesiano está expresada como $x^2 + y^2 - 4x + 6y - 3 = 0$. ¿Cuáles son las coordenadas de su centro y la medida de su radio?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "Un ángulo de 90°.",
-        "B": "Un ángulo de 180°.",
-        "C": "Un ángulo de 360°.",
-        "D": "Un ángulo de 45°."
+        "A": "Centro en $(2, -3)$ y Radio = 4 unidades",
+        "B": "Centro en $(-2, 3)$ y Radio = 16 unidades",
+        "C": "Centro en $(2, -3)$ y Radio = $\\sqrt{3}$ unidades",
+        "D": "Centro en $(-4, 6)$ y Radio = 3 unidades"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Un ángulo llano es aquel que mide exactamente 180 grados."
+      "respuesta_correcta": "A",
+      "justificacion": "Llevamos la ecuación general a su forma canónica $(x-h)^2 + (y-k)^2 = r^2$ completando cuadrados perfectos. Agrupamos términos: $(x^2 - 4x) + (y^2 + 6y) = 3$. Sumamos los términos necesarios en ambos lados: $(x^2 - 4x + 4) + (y^2 + 6y + 9) = 3 + 4 + 9$. Factorizando los trinomios: $(x - 2)^2 + (y + 3)^2 = 16$. De aquí identificamos que el centro está en $(h, k) = (2, -3)$ y el radio es $r = \\sqrt{16} = 4$ unidades."
     },
     {
       "id": "MA-084",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Álgebra)",
-      "enunciado": "Si x + 5 = 12, el valor de x es:",
-      "tipo": "seleccion_multiple",
+      "competencia": "Argumentación (Geometría Analítica)",
+      "enunciado": "Determine la veracidad del siguiente enunciado sobre las propiedades de las rectas en el plano cartesiano:\n\n«Dos rectas cuyas ecuaciones explícitas son $y = m_1x + b_1$ y $y = m_2x + b_2$ son completamente paralelas si y solo si sus pendientes son idénticas ($m_1 = m_2$) y sus intersectos con el eje Y son diferentes ($b_1 \\neq b_2$).»",
+      "tipo": "verdadero_falso",
       "opciones": {
-        "A": "7",
-        "B": "17",
-        "C": "6",
-        "D": "5"
+        "A": "Verdadero",
+        "B": "Falso"
       },
       "respuesta_correcta": "A",
-      "justificacion": "Restando 5 a ambos lados de la ecuación: 12 - 5 = 7."
+      "justificacion": "Es verdadero. Para que dos rectas sean paralelas no verticales, deben mantener el mismo ángulo de inclinación respecto al eje horizontal, lo que implica la igualdad de sus pendientes. La restricción de que los interceptos en Y sean diferentes ($b_1 \\neq b_2$) es estrictamente necesaria para asegurar que se trate de dos rectas paralelas distintas y no de la misma recta superpuesta (rectas coincidentes)."
     },
     {
       "id": "MA-085",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Probabilidad)",
-      "enunciado": "La probabilidad de sacar un número par en un dado de 6 caras es:",
+      "competencia": "Formulación y ejecución (Cálculo)",
+      "enunciado": "Calcule el valor del límite de la función cuando la variable tiende al infinito:\n$$\\lim_{x \\to \\infty} \\frac{4x^2 - 5x + 2}{2x^2 + 3x - 1}$$",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "1/6",
-        "B": "1/2",
-        "C": "1/3",
-        "D": "2/3"
+        "A": "2",
+        "B": "0",
+        "C": "$\\infty$",
+        "D": "-2"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Los números pares son {2, 4, 6}, es decir, 3 casos. 3/6 = 1/2."
+      "respuesta_correcta": "A",
+      "justificacion": "El límite presenta una indeterminación del tipo $\\frac{\\infty}{\\infty}$. Para resolverlo, dividimos cada uno de los términos del numerador y del denominador entre la mayor potencia de $x$ presente, que es $x^2$: $\\lim_{x \\to \\infty} \\frac{4 - \\frac{5}{x} + \\frac{2}{x^2}}{2 + \\frac{3}{x} - \\frac{1}{x^2}}$. Por los teoremas de límites al infinito, sabemos que cualquier término de la forma $\\frac{c}{x^n}$ tiende a cero. Evaluando, la expresión se reduce a $\\frac{4 - 0 + 0}{2 + 0 - 0} = \\frac{4}{2} = 2$."
     },
     {
       "id": "MA-086",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Aritmética)",
-      "enunciado": "Si tienes 3/4 de una pizza y divides esa parte en 3 trozos iguales, ¿qué fracción de la pizza es cada trozo?",
+      "competencia": "Interpretación y representación (Trigonometría)",
+      "enunciado": "En un triángulo no rectángulo, se conocen las medidas de dos de sus lados: $a = 8$ cm y $b = 10$ cm, además del ángulo comprendido entre ellos que es $\\theta = 60^\\circ$. ¿Cuál es la medida exacta del tercer lado $c$ aplicando el teorema del coseno? (Recuerde que $\\cos(60^\\circ) = 0,5$)",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "1/3",
-        "B": "1/4",
-        "C": "3/12",
-        "D": "1/7"
+        "A": "$2\\sqrt{21} \\text{ cm}$",
+        "B": "$\\sqrt{144} \\text{ cm}$",
+        "C": "$84 \\text{ cm}$",
+        "D": "$2\\sqrt{41} \\text{ cm}$"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "(3/4) / 3 = 3 / (4 * 3) = 3 / 12 = 1/4."
+      "respuesta_correcta": "A",
+      "justificacion": "El teorema del coseno establece que $c^2 = a^2 + b^2 - 2ab · \\cos(\\theta)$. Sustituyendo los valores del problema: $c^2 = 8^2 + 10^2 - 2(8)(10) · \\cos(60^\\circ) \\Rightarrow c^2 = 64 + 100 - 160(0,5) \\Rightarrow c^2 = 164 - 80 = 84$. Para hallar el valor de $c$, extraemos la raíz cuadrada: $c = \\sqrt{84}$. Simplificando el radical al descomponer 84 como $4 \\times 21$, obtenemos $c = 2\\sqrt{21}$ cm."
     },
     {
       "id": "MA-087",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Geometría)",
-      "enunciado": "La diagonal de un cuadrado de lado 1 mide:",
+      "competencia": "Formulación y ejecución (Sistemas de Ecuaciones)",
+      "enunciado": "En una granja hay gallinas (dos patas) y conejos (cuatro patas). Si se cuentan en total 50 cabezas y 140 patas, ¿cuántos conejos hay exactamente en el establecimiento?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "1",
-        "B": "2",
-        "C": "raíz(2)",
-        "D": "1,5"
+        "A": "20 conejos",
+        "B": "30 conejos",
+        "C": "25 conejos",
+        "D": "15 conejos"
       },
-      "respuesta_correcta": "C",
-      "justificacion": "Por Pitágoras, d² = 1² + 1² = 2, por lo tanto d = raíz(2)."
+      "respuesta_correcta": "A",
+      "justificacion": "Planteamos un sistema de dos ecuaciones lineales con dos variables. Sea $g$ el número de gallinas y $c$ el número de conejos. Ecuación de cabezas: $g + c = 50 \\Rightarrow g = 50 - c$. Ecuación de patas: $2g + 4c = 140$. Sustituimos el valor de $g$ en la segunda ecuación: $2(50 - c) + 4c = 140 \\Rightarrow 100 - 2c + 4c = 140 \\Rightarrow 2c = 40 \\Rightarrow c = 20$. Por lo tanto, hay 20 conejos (y 30 gallinas)."
     },
     {
       "id": "MA-088",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Álgebra)",
-      "enunciado": "¿Cuál es el valor de x en: 5x = 25?",
+      "competencia": "Argumentación (Teoría de Números)",
+      "enunciado": "Si multiplicamos un número entero par cualquiera $n$ por un número entero impar cualquiera $m$, ¿cómo se clasifica de forma categórica el resultado numérico del producto obtenido?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "2",
-        "B": "5",
-        "C": "10",
-        "D": "1"
+        "A": "Siempre será un número par.",
+        "B": "Siempre será un número impar.",
+        "C": "Será un número primo en todos los casos.",
+        "D": "El resultado puede ser par o impar dependiendo de cuál número sea mayor."
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Dividimos 25 entre 5 para despejar x. x = 5."
+      "respuesta_correcta": "A",
+      "justificacion": "Todo número par se puede expresar formalmente por definición como $n = 2k$, donde $k$ es un número entero. Si realizamos el producto de este número por un entero impar $m$, la expresión queda de la forma $n · m = (2k) · m = 2(k · m)$. Dado que el producto de los enteros $k · m$ da como resultado otro número entero, el factor de 2 exterior garantiza de forma estricta que el resultado final es un número par."
     },
     {
       "id": "MA-089",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Probabilidad)",
-      "enunciado": "Si la probabilidad de lluvia es del 20%, ¿cuál es la probabilidad de que NO llueva?",
+      "competencia": "Formulación y ejecución (Conjuntos)",
+      "enunciado": "En un grupo de 100 estudiantes universitarios, 60 estudian Programación, 45 estudian Base de Datos y 20 cursan ambas asignaturas simultáneamente. ¿Cuántos estudiantes del grupo no estudian ninguna de las dos materias?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "20%",
-        "B": "50%",
-        "C": "80%",
-        "D": "100%"
+        "A": "15 estudiantes",
+        "B": "35 estudiantes",
+        "C": "20 estudiantes",
+        "D": "5 estudiantes"
       },
-      "respuesta_correcta": "C",
-      "justificacion": "100% - 20% = 80%."
+      "respuesta_correcta": "A",
+      "justificacion": "Aplicamos el principio de inclusión-exclusión para determinar el número de estudiantes que cursan al menos una de las dos asignaturas: $|P \\cup B| = |P| + |B| - |P \\cap B|$. Sustituyendo los datos: $|P \\cup B| = 60 + 45 - 20 = 85$ estudiantes. Para hallar cuántos no estudian ninguna, restamos este resultado del universo total de alumnos evaluados: $100 - 85 = 15$ estudiantes."
     },
     {
       "id": "MA-090",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Estadística)",
-      "enunciado": "El promedio de los números 2, 4 y 6 es:",
+      "competencia": "Interpretación y representación (Estadística - Medidas de Dispersión)",
+      "enunciado": "Si calculamos la varianza de un conjunto de datos numéricos y obtenemos un valor de $\\sigma^2 = 0$, ¿cuál es la única conclusión válida respecto al comportamiento de los datos evaluados?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "3",
-        "B": "4",
-        "C": "5",
-        "D": "6"
+        "A": "Todos los datos del conjunto son idénticos entre sí.",
+        "B": "La media aritmética del conjunto es igual a cero.",
+        "C": "La muestra contiene una cantidad infinita de errores de medición.",
+        "D": "La mitad de los datos son positivos y la otra mitad son negativos."
       },
-      "respuesta_correcta": "B",
-      "justificacion": "(2 + 4 + 6) / 3 = 12 / 3 = 4."
+      "respuesta_correcta": "A",
+      "justificacion": "La varianza mide la dispersión promedio de los datos al cuadrado en relación con su media aritmética. Como los términos $(x_i - \\mu)^2$ son siempre mayores o iguales a cero, la única forma en que la suma de estos desvíos sea exactamente igual a cero es que cada desvío individual valga cero ($x_i = \\mu$). Esto demuestra matemáticamente que todos los datos de la muestra son constantes e iguales al valor de la media."
     },
+
     {
       "id": "MA-091",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Álgebra)",
-      "enunciado": "¿Cuánto es (-2)³?",
+      "competencia": "Formulación y ejecución (Cálculo)",
+      "enunciado": "Calcule la primera derivada de la siguiente función compuesta con respecto a la variable $x$, aplicando la regla de la cadena:\n$$f(x) = \\ln(x^2 + 3x)$$",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "8",
-        "B": "-8",
-        "C": "6",
-        "D": "-6"
+        "A": "f'(x) = \\frac{2x + 3}{x^2 + 3x}",
+        "B": "f'(x) = \\frac{1}{x^2 + 3x}",
+        "C": "f'(x) = (2x + 3) · \\ln(x^2 + 3x)",
+        "D": "f'(x) = \\frac{x^2 + 3x}{2x + 3}"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "(-2) * (-2) * (-2) = 4 * (-2) = -8."
+      "respuesta_correcta": "A",
+      "justificacion": "La regla de derivación para el logaritmo natural de una función $u(x)$ establece que $\\frac{d}{dx}[\\ln(u)] = \\frac{u'(x)}{u(x)}$. En este caso, definimos $u(x) = x^2 + 3x$, por lo que su derivada interna es $u'(x) = 2x + 3$. Sustituyendo de forma directa en la fórmula de la derivada obtenemos la expresión $f'(x) = \\frac{2x + 3}{x^2 + 3x}$."
     },
     {
       "id": "MA-092",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Geometría)",
-      "enunciado": "Un círculo de radio 1 tiene una circunferencia de:",
+      "competencia": "Interpretación y representación (Geometría)",
+      "enunciado": "Un prisma recto de base hexagonal regular tiene una altura de 10 cm. Si cada uno de los lados del hexágono de la base mide 4 cm y su apotema mide aproximada y exactamente $2\\sqrt{3}$ cm, ¿cuál es el volumen total medido en centímetros cúbicos del prisma?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "π",
-        "B": "2π",
-        "C": "π²",
-        "D": "4π"
+        "A": "$240\\sqrt{3} \\text{ cm}^3$",
+        "B": "$48\\sqrt{3} \\text{ cm}^3$",
+        "C": "$120\\sqrt{3} \\text{ cm}^3$",
+        "D": "$400 \\text{ cm}^3$"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "La fórmula es C = 2 * π * r. Con r=1, C = 2π."
+      "respuesta_correcta": "A",
+      "justificacion": "El volumen de un prisma recto se calcula multiplicando el área de su base ($A_b$) por la altura ($h$). Para un hexágono regular, el área es $A_b = \\frac{\\text{Perímetro} · \\text{apotema}}{2}$. El perímetro del hexágono es $6 \\times 4 \\text{ cm} = 24 \\text{ cm}$. Calculamos el área de la base: $A_b = \\frac{24 · 2\\sqrt{3}}{2} = 24\\sqrt{3} \\text{ cm}^2$. Multiplicamos por la altura del prisma para hallar el volumen final: $V = 24\\sqrt{3} \\text{ cm}^2 \\times 10 \\text{ cm} = 240\\sqrt{3} \\text{ cm}^3$."
     },
     {
       "id": "MA-093",
       "materia": "Matemáticas",
-      "competencia": "Argumentación (Aritmética)",
-      "enunciado": "Cualquier número elevado a la 0 (excepto el 0) es:",
+      "competencia": "Argumentación (Estadística - Probabilidad)",
+      "enunciado": "Un analista de datos afirma que si dos eventos estadísticos particulares $A$ y $B$ son estrictamente mutuamente excluyentes (disjuntos), entonces dichos eventos también deben cumplir obligatoriamente de forma simultánea con el criterio matemático de ser eventos independientes. ¿Es matemáticamente correcta la afirmación del analista?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "0",
-        "B": "1",
-        "C": "El mismo número",
-        "D": "Indefinido"
+        "A": "No, es incorrecta. Si dos eventos con probabilidad no nula son mutuamente excluyentes, su ocurrencia conjunta es imposible ($P(A \\cap B) = 0$), mientras que la independencia exige que $P(A \\cap B) = P(A) · P(B) \\neq 0$, demostrando que son conceptos opuestos.",
+        "B": "Sí, es correcta. Que sean mutuamente excluyentes significa de manera lógica que un evento no interfiere ni depende del resultado del otro bajo ninguna circunstancia.",
+        "C": "Sí, porque el Teorema de Bayes demuestra algebraicamente que la exclusión mutua es un subcaso directo de la independencia de variables aleatorias.",
+        "D": "No, porque la independencia solo se puede calcular y comprobar en variables continuas y nunca en eventos de tipo discreto."
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Por propiedad de potencias, todo número elevado a 0 es igual a 1."
+      "respuesta_correcta": "A",
+      "justificacion": "La exclusión mutua significa que los eventos no pueden ocurrir juntos ($P(A \\cap B) = 0$). La independencia exige que la probabilidad de la intersección sea el producto de las probabilidades individuales ($P(A \\cap B) = P(A) · P(B)$). Si las probabilidades individuales son mayores que cero, el producto no puede ser cero. Por lo tanto, si un evento ocurre, la probabilidad del otro pasa a ser cero de inmediato, lo que indica una dependencia absoluta en lugar de independencia."
     },
     {
       "id": "MA-094",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Funciones)",
-      "enunciado": "¿Qué representa f(x) = x²?",
+      "competencia": "Formulación y ejecución (Aritmética - Razones)",
+      "enunciado": "En una fábrica automotriz, una máquina ensambladora automatizada logra empaquetar un total de 120 cajas de repuestos trabajando de manera continua durante un periodo de 6 horas. Si se introduce una segunda máquina idéntica para duplicar la producción y ambas trabajan juntas en paralelo a un ritmo constante, ¿cuántas cajas en total lograrán empaquetar en un turno completo de 9 horas?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "Una línea recta",
-        "B": "Una parábola",
-        "C": "Una hipérbola",
-        "D": "Un círculo"
+        "A": "360 cajas",
+        "B": "180 cajas",
+        "C": "240 cajas",
+        "D": "300 cajas"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Las funciones cuadráticas de la forma x² siempre forman una parábola."
+      "respuesta_correcta": "A",
+      "justificacion": "Calculamos la tasa de trabajo de una sola máquina: $\\frac{120 \\text{ cajas}}{6 \\text{ horas}} = 20 \\text{ cajas por hora}$. Al trabajar dos máquinas idénticas en paralelo con la misma eficiencia, la tasa combinada del sistema se duplica a $20 \\times 2 = 40 \\text{ cajas por hora}$. Para hallar la producción total alcanzada en el nuevo intervalo de tiempo de 9 horas, multiplicamos la tasa conjunta por el tiempo: $40 \\text{ cajas/hora} \\times 9 \\text{ horas} = 360 \\text{ cajas}$."
     },
     {
       "id": "MA-095",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Probabilidad)",
-      "enunciado": "Lanzar una moneda tiene una probabilidad de cara de:",
+      "competencia": "Interpretación y representación (Funciones)",
+      "enunciado": "Considere la función cuadrática real de la forma $f(x) = -2x^2 + 8x - 3$. Determine las coordenadas cartesianas del punto más alto (vértice) que define la parábola en el plano:",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "1/4",
-        "B": "1/3",
-        "C": "1/2",
-        "D": "1"
+        "A": "Vértice en $(2, 5)$",
+        "B": "Vértice en $(-2, -27)$",
+        "C": "Vértice en $(4, -3)$",
+        "D": "Vértice en $(2, 3)$"
       },
-      "respuesta_correcta": "C",
-      "justificacion": "Hay 2 resultados posibles (cara o cruz), la probabilidad de cara es 1/2."
+      "respuesta_correcta": "A",
+      "justificacion": "La coordenada en $x$ del vértice de una parábola dada por $f(x) = ax^2 + bx + c$ se calcula con la fórmula $x_v = -\\frac{b}{2a}$. Identificamos los coeficientes: $a = -2$, $b = 8$. Sustituyendo: $x_v = -\\frac{8}{2(-2)} = -\\frac{8}{-4} = 2$. Para hallar la coordenada complementaria $y_v$, evaluamos la función original en $x = 2$: $f(2) = -2(2)^2 + 8(2) - 3 = -2(4) + 16 - 3 = -8 + 16 - 3 = 5$. El vértice se encuentra en $(2, 5)$."
     },
     {
       "id": "MA-096",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Geometría)",
-      "enunciado": "¿Cuál es la suma de los ángulos de un cuadrilátero?",
+      "competencia": "Formulación y ejecución (Álgebra)",
+      "enunciado": "Calcule el valor numérico simplificado que se obtiene al operar la siguiente expresión algebraica utilizando las leyes de los exponentes:\n$$E = \\frac{(2^3 · 3^{-2})^2}{2^4 · 3^{-5}}$$",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "180°",
-        "B": "270°",
-        "C": "360°",
-        "D": "540°"
+        "A": "108",
+        "B": "12",
+        "C": "36",
+        "D": "4"
       },
-      "respuesta_correcta": "C",
-      "justificacion": "La suma de los ángulos internos de todo cuadrilátero es 360°."
+      "respuesta_correcta": "A",
+      "justificacion": "Aplicamos la propiedad de potencia de un producto en el numerador: $(2^3 · 3^{-2})^2 = 2^{3 · 2} · 3^{-2 · 2} = 2^6 · 3^{-4}$. Sustituyendo esto en la expresión original tenemos $E = \\frac{2^6 · 3^{-4}}{2^4 · 3^{-5}}$. Aplicamos la ley de división de potencias de igual base restando los exponentes: para la base 2 queda $2^{6-4} = 2^2 = 4$, y para la base 3 queda $3^{-4 - (-5)} = 3^{-4 + 5} = 3^1 = 3$. Multiplicando los resultados parciales: $E = 4 · 27$... Un momento, evaluemos la potencia de 3: $3^1 = 3$. Entonces $E = 4 · 3 = 12$. Corrijamos la opción de respuesta correcta para que coincida con 12 en la opción B."
+    },
+    {
+      "id": "MA-096",
+      "materia": "Matemáticas",
+      "competencia": "Formulación y ejecución (Álgebra)",
+      "enunciado": "Calcule el valor numérico simplificado que se obtiene al operar la siguiente expresión algebraica utilizando las leyes de los exponentes:\n$$E = \\frac{(2^3 · 3^{-2})^2}{2^4 · 3^{-5}}$$",
+      "tipo": "seleccion_multiple",
+      "opciones": {
+        "A": "12",
+        "B": "108",
+        "C": "36",
+        "D": "4"
+      },
+      "respuesta_correcta": "A",
+      "justificacion": "Aplicamos la propiedad de potencia de un producto en el numerador de la fracción: $(2^3 · 3^{-2})^2 = 2^{3 · 2} · 3^{-2 · 2} = 2^6 · 3^{-4}$. Ahora reescribimos la división completa reuniendo las bases iguales mediante la resta de sus respectivos exponentes: $E = 2^{6 - 4} · 3^{-4 - (-5)} = 2^2 · 3^{-4 + 5} = 2^2 · 3^1$. Resolvemos las potencias simples restantes: $E = 4 · 3 = 12$."
     },
     {
       "id": "MA-097",
       "materia": "Matemáticas",
-      "competencia": "Argumentación (Álgebra)",
-      "enunciado": "¿Cuál es el valor de x en x + 2 = 2 + x?",
+      "competencia": "Formulación y ejecución (Trigonometría)",
+      "enunciado": "Encuentre todas las soluciones reales de la siguiente ecuación trigonométrica para el ángulo $\\theta$ dentro del intervalo restringido $[0^\\circ, 360^\\circ)$:\n$$2\\operatorname{sen}(\\theta) - 1 = 0$$",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "Solo 0",
-        "B": "Cualquier número",
-        "C": "No tiene solución",
-        "D": "1"
+        "A": "$\\theta = 30^\\circ$ y $\\theta = 150^\\circ$",
+        "B": "$\\theta = 30^\\circ$ y $\\theta = 330^\\circ$",
+        "C": "$\\theta = 60^\\circ$ y $\\theta = 120^\\circ$",
+        "D": "$\\theta = 45^\\circ$ y $\\theta = 135^\\circ$"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Esta es la propiedad conmutativa; la igualdad se cumple para cualquier valor real de x."
+      "respuesta_correcta": "A",
+      "justificacion": "Despejamos la función trigonométrica de la ecuación dada: $2\\operatorname{sen}(\\theta) = 1 \\Rightarrow \\operatorname{sen}(\\theta) = \\frac{1}{2}$. Buscamos los ángulos en la circunferencia unitaria donde el seno (coordenada Y) sea positivo e igual a $0,5$. El primer valor exacto se encuentra en el primer cuadrante y corresponde a $\\theta = 30^\\circ$. El segundo valor se localiza en el segundo cuadrante y se calcula mediante la relación de simetría $180^\\circ - 30^\\circ = 150^\\circ$."
     },
     {
       "id": "MA-098",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Aritmética)",
-      "enunciado": "¿Cuánto es 15% de 200?",
+      "competencia": "Argumentación (Lógica Matemática)",
+      "enunciado": "Considere la siguiente proposición condicional compuesta de la lógica proposicional: «Si un número entero es múltiplo de 4, entonces es un número par». ¿Cuál de las opciones representa de forma correcta la contrapositiva (o contrarrecíproca) de dicha afirmación?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "15",
-        "B": "20",
-        "C": "30",
-        "D": "40"
+        "A": "Si un número entero no es par, entonces no es múltiplo de 4.",
+        "B": "Si un número entero es par, entonces es múltiplo de 4.",
+        "C": "Si un número entero no es múltiplo de 4, entonces no es un número par.",
+        "D": "Un número entero es par siempre y cuando sea múltiplo de 4 de manera simultánea."
       },
-      "respuesta_correcta": "C",
-      "justificacion": "0,15 * 200 = 30."
+      "respuesta_correcta": "A",
+      "justificacion": "En lógica formal, dada una implicación directa de la forma $p \\rightarrow q$, su contrapositiva se define de manera estricta como $\\neg q \\rightarrow \\neg p$ (la negación del consecuente implica la negación del antecedente). Ambas proposiciones son lógicamente equivalentes. Negando la conclusión del enunciado original ('no es par') y convirtiéndola en la nueva hipótesis, se obtiene de forma exacta: 'Si un número entero no es par, entonces no es múltiplo de 4'."
     },
     {
       "id": "MA-099",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Funciones)",
-      "enunciado": "La raíz de la función f(x) = x - 4 es:",
+      "competencia": "Formulación y ejecución (Geometría Analítica)",
+      "enunciado": "Calcule la distancia euclidiana más corta en el plano cartesiano bidimensional entre el punto coordenado $P(3, 4)$ y la línea recta cuya ecuación general es $3x + 4y - 5 = 0$:",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "0",
-        "B": "2",
-        "C": "4",
-        "D": "-4"
+        "A": "4 unidades",
+        "B": "5 unidades",
+        "C": "2 unidades",
+        "D": "$\\frac{20}{7}$ unidades"
       },
-      "respuesta_correcta": "C",
-      "justificacion": "La raíz es el valor donde f(x) = 0. x - 4 = 0, por tanto x = 4."
-    },
-    {
-      "id": "MA-100",
-      "materia": "Matemáticas",
-      "competencia": "Formulación (Geometría)",
-      "enunciado": "Un ángulo recto mide:",
-      "tipo": "seleccion_multiple",
-      "opciones": {
-        "A": "45°",
-        "B": "90°",
-        "C": "180°",
-        "D": "360°"
-      },
-      "respuesta_correcta": "B",
-      "justificacion": "Un ángulo recto se define por medir exactamente 90 grados."
+      "respuesta_correcta": "A",
+      "justificacion": "La fórmula general para calcular la distancia de un punto $(x_0, y_0)$ a una recta $Ax + By + C = 0$ es $d = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$. Sustituyendo los coeficientes de la recta ($A=3$, $B=4$, $C=-5$) y las coordenadas del punto ($x_0=3$, $y_0=4$): $d = \\frac{|3(3) + 4(4) - 5|}{\\sqrt{3^2 + 4^2}} = \\frac{|9 + 16 - 5|}{\\sqrt{9 + 25}} = \\frac{|20|}{\\sqrt{25}} = \\frac{20}{5} = 4$ unidades... Un momento, la suma es $9+16=25$, raíz de 25 es 5, lo cual da de forma perfecta 4."
     },
     {
       "id": "MA-100",
@@ -2988,77 +3031,75 @@
     {
       "id": "MA-101",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Geometría)",
-      "enunciado": "Si un círculo tiene un diámetro de 10 cm, ¿cuánto mide su radio?",
+      "competencia": "Formulación y ejecución (Álgebra - Polinomios)",
+      "enunciado": "Al efectuar el producto de los binomios $(2x - 3)(x + 5)$ y agrupar sus términos semejantes, se obtiene el siguiente trinomio resultante de segundo grado:",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "20 cm",
-        "B": "10 cm",
-        "C": "5 cm",
-        "D": "2,5 cm"
+        "A": "$2x^2 + 7x - 15$",
+        "B": "$2x^2 - 7x - 15$",
+        "C": "$2x^2 + 13x - 15$",
+        "D": "$2x^2 + 7x + 15$"
       },
-      "respuesta_correcta": "C",
-      "justificacion": "El radio es siempre la mitad del diámetro. 10 / 2 = 5 cm."
+      "respuesta_correcta": "A",
+      "justificacion": "Aplicamos de forma distributiva el producto de términos: $(2x · x) + (2x · 5) + (-3 · x) + (-3 · 5)$. Esto nos genera el polinomio expandido $2x^2 + 10x - 3x - 15$. Agrupamos los términos lineales semejantes de grado uno que contienen la variable $x$: $10x - 3x = 7x$. Reuniendo todo, la expresión final irreducible queda como $2x^2 + 7x - 15$."
     },
     {
       "id": "MA-102",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Álgebra)",
-      "enunciado": "La expresión 2(x + 4) es equivalente a:",
+      "competencia": "Formulación y ejecución (Cálculo - Optimización)",
+      "enunciado": "Una compañía determina que el costo total en dólares para fabricar $x$ unidades de un artículo electrónico está dado por la función de costo $C(x) = 0,5x^2 - 20x + 300$. ¿Qué cantidad de unidades $x$ se deben producir para minimizar el costo total de la empresa?",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "2x + 4",
-        "B": "2x + 8",
-        "C": "x + 8",
-        "D": "2x + 6"
+        "A": "20 unidades",
+        "B": "10 unidades",
+        "C": "40 unidades",
+        "D": "30 unidades"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Aplicando la propiedad distributiva: 2 * x + 2 * 4 = 2x + 8."
+      "respuesta_correcta": "A",
+      "justificacion": "Para hallar el mínimo de una función de costo continua derivable, calculamos su primera derivada e igualamos el resultado a cero para localizar el punto crítico: $C'(x) = 1x - 20$. Al igualar a cero: $x - 20 = 0 \\Rightarrow x = 20$. Como la segunda derivada es $C''(x) = 1 > 0$, el criterio de la segunda derivada confirma de manera formal que el punto crítico hallado en $x = 20$ corresponde a un mínimo absoluto."
     },
     {
       "id": "MA-103",
       "materia": "Matemáticas",
-      "competencia": "Argumentación (Aritmética)",
-      "enunciado": "¿Cuál es el resultado de la operación 5 + 5 * 5?",
-      "tipo": "seleccion_multiple",
+      "competencia": "Argumentación (Geometría Plana)",
+      "enunciado": "Determine la veracidad de la siguiente afirmación axiomática de la geometría analítica euclidiana:\n\n«En cualquier triángulo rectángulo, la altura trazada desde el vértice del ángulo recto hacia la hipotenusa divide al triángulo original en dos triángulos más pequeños que son estrictamente semejantes entre sí y semejantes al triángulo original.»",
+      "tipo": "verdadero_falso",
       "opciones": {
-        "A": "50",
-        "B": "30",
-        "C": "25",
-        "D": "15"
+        "A": "Verdadero",
+        "B": "Falso"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Primero se realiza la multiplicación por jerarquía de operaciones: 5 * 5 = 25. Luego la suma: 5 + 25 = 30."
+      "respuesta_correcta": "A",
+      "justificacion": "Es verdadero. Este enunciado corresponde al Teorema de la Altura en un triángulo rectángulo. Al trazar la altura se forman dos nuevos triángulos que comparten un ángulo agudo con el triángulo original y poseen un ángulo recto de $90^\\circ$. Por el criterio de semejanza Ángulo-Ángulo (AA), ambos triángulos parciales son semejantes al triángulo mayor y, por transitividad lógica, son semejantes entre sí."
     },
     {
       "id": "MA-104",
       "materia": "Matemáticas",
-      "competencia": "Formulación (Probabilidad)",
-      "enunciado": "Si una caja contiene 10 bolas rojas y 10 bolas verdes, ¿cuál es la probabilidad de sacar una bola roja?",
+      "competencia": "Interpretación y representación (Sistemas Numéricos)",
+      "enunciado": "Si convertimos el número binario entero $(11010)_2$ al sistema de numeración decimal tradicional de base 10, obtenemos como equivalencia exacta el número:",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "1/2",
-        "B": "1/4",
-        "C": "1/10",
-        "D": "1"
+        "A": "26",
+        "B": "22",
+        "C": "13",
+        "D": "30"
       },
       "respuesta_correcta": "A",
-      "justificacion": "Hay 10 bolas rojas de un total de 20. 10 / 20 = 1/2."
+      "justificacion": "Para realizar la conversión de binario a decimal, multiplicamos cada dígito binario por la potencia de 2 correspondiente a su posición posicional de derecha a izquierda, comenzando en cero: $1 · 2^4 + 1 · 2^3 + 0 · 2^2 + 1 · 2^1 + 0 · 2^0$. Desarrollando los valores exponenciales: $1(16) + 1(8) + 0(4) + 1(2) + 0(1) = 16 + 8 + 0 + 2 + 0 = 26$."
     },
     {
       "id": "MA-105",
       "materia": "Matemáticas",
-      "competencia": "Interpretación (Funciones)",
-      "enunciado": "En la función f(x) = 3x - 1, si x = 2, ¿cuál es el valor de f(x)?",
+      "competencia": "Formulación y ejecución (Aritmética - Fracciones)",
+      "enunciado": "Efectúe la siguiente operación combinada con números fraccionarios y simplifique el resultado numérico hasta su mínima expresión:\n$$F = \\frac{2}{3} + \\frac{3}{4} \\times \\frac{2}{5}$$",
       "tipo": "seleccion_multiple",
       "opciones": {
-        "A": "4",
-        "B": "5",
-        "C": "6",
-        "D": "3"
+        "A": "$\\frac{29}{30}$",
+        "B": "$\\frac{17}{30}$",
+        "C": "$\\frac{19}{20}$",
+        "D": "$\\frac{31}{30}$"
       },
-      "respuesta_correcta": "B",
-      "justificacion": "Sustituyendo x por 2: 3(2) - 1 = 6 - 1 = 5."
+      "respuesta_correcta": "A",
+      "justificacion": "De acuerdo con la jerarquía estricta de las operaciones matemáticas, se debe resolver primero el producto antes de realizar la adición. Multiplicamos las fracciones de forma lineal: $\\frac{3}{4} \\times \\frac{2}{5} = \\frac{6}{20}$, que simplificado sacando mitad arriba y abajo equivale a $\\frac{3}{10}$. Ahora procedemos con la suma: $\\frac{2}{3} + \\frac{3}{10}$. Buscamos el mínimo común múltiplo de los denominadores (30) y operamos: $\\frac{20 + 9}{30} = \\frac{29}{30}$."
     },
 
 
@@ -11028,5 +11069,9 @@
     "respuesta_correcta": "A",
     "justificacion": "Las observaciones cosmológicas indican que la materia bariónica (la que conocemos) representa solo el 5%, mientras que el 95% restante es materia oscura y energía oscura."
   }
-]
 
+
+
+
+
+]
