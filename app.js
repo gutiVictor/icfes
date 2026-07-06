@@ -232,15 +232,23 @@
     if (state.todasPreguntas.length === 0) return;
 
     let disponibles;
+    let mensaje;
+
     if (state.modo === 'materia' && DOM.selectMateria.value) {
       disponibles = state.todasPreguntas.filter(p => p.materia === DOM.selectMateria.value).length;
-    } else if (state.modo === 'simulacro') {
-      disponibles = state.todasPreguntas.length;
+      mensaje = `${disponibles} preguntas disponibles para esta materia`;
+    } else if (state.modo === 'medicina') {
+      // Solo mostrar las preguntas de las áreas que prioriza este modo
+      const cantA = state.todasPreguntas.filter(p => p.materia === 'Ciencias Naturales' || p.materia === 'Matemáticas').length;
+      const cantB = state.todasPreguntas.filter(p => p.materia !== 'Ciencias Naturales' && p.materia !== 'Matemáticas').length;
+      disponibles = cantA + cantB;
+      mensaje = `♥ ${cantA} de Ciencias & Matemáticas (60%) + ${cantB} de otras materias (40%)`;
     } else {
       disponibles = state.todasPreguntas.length;
+      mensaje = `${disponibles} preguntas disponibles en la base de datos`;
     }
 
-    DOM.disponiblesInfo.textContent = `${disponibles} preguntas disponibles en la base de datos`;
+    DOM.disponiblesInfo.textContent = mensaje;
 
     // Ajustar cantidad si excede disponibles
     if (state.cantidadPreguntas > disponibles) {
@@ -269,8 +277,9 @@
       state.preguntasSesion = shuffleArray(pool).slice(0, cantidad);
     } else if (state.modo === 'medicina') {
       state.materiaSeleccionada = '';
-      
+
       // Lógica de 60% Ciencias y Matemáticas / 40% Resto de materias
+      // totalRequerido es exactamente la cantidad seleccionada por el usuario
       const totalRequerido = Math.min(state.cantidadPreguntas, state.todasPreguntas.length);
       const reqA = Math.round(totalRequerido * 0.6); // Grupo A: Ciencias y Mate
       const reqB = totalRequerido - reqA;            // Grupo B: Otras
@@ -284,20 +293,20 @@
       let seleccionA = shufA.slice(0, Math.min(reqA, shufA.length));
       let seleccionB = shufB.slice(0, Math.min(reqB, shufB.length));
 
-      // Fallbacks en caso de pool desbalanceado
+      // Fallback: si alguno de los grupos no tiene suficientes, completar con el otro
       if (seleccionA.length < reqA) {
         const faltan = reqA - seleccionA.length;
-        const extraB = shufB.slice(seleccionB.length, seleccionB.length + faltan);
-        seleccionB = seleccionB.concat(extraB);
+        const sobraB = shufB.slice(seleccionB.length, seleccionB.length + faltan);
+        seleccionB = seleccionB.concat(sobraB);
       }
       if (seleccionB.length < reqB) {
         const faltan = reqB - seleccionB.length;
-        const extraA = shufA.slice(seleccionA.length, seleccionA.length + faltan);
-        seleccionA = seleccionA.concat(extraA);
+        const sobraA = shufA.slice(seleccionA.length, seleccionA.length + faltan);
+        seleccionA = seleccionA.concat(sobraA);
       }
 
-      // Reunir y volver a barajar para evitar patrones secuenciales
-      state.preguntasSesion = shuffleArray([...seleccionA, ...seleccionB]);
+      // Reunir, barajar y cortar al número EXACTO solicitado por el usuario
+      state.preguntasSesion = shuffleArray([...seleccionA, ...seleccionB]).slice(0, totalRequerido);
     } else {
       state.materiaSeleccionada = '';
       pool = [...state.todasPreguntas];
