@@ -1,0 +1,40 @@
+Fase 1 (La Herramienta de Conversión): Crearemos un prompt y un script en Python muy fácil de usar para que la IA tome tus archivos PDF de simulacros, extraiga los enunciados, opciones y respuestas, y te devuelva el archivo preguntas.json perfectamente estructurado.
+
+Fase 2 (La Aplicación Web): Modificaremos el prompt de la app para que incluya la lógica de puntuación real del ICFES (escala de 0 a 100 puntos por cada una de las 5 materias).
+
+A continuación, te presento las herramientas y los prompts definitivos para cada paso:
+
+PASO 1: Prompt para crear el Convertidor de PDF a JSON
+Como los PDF del ICFES tienen tablas, textos largos y estructuras complejas, primero debes usar este prompt en una IA avanzada (como Gemini o ChatGPT) para que te genere el código que limpiará tus documentos.
+
+Copia y pega este prompt en una nueva conversación:
+
+
+
+
+
+Actúa como un experto desarrollador de software y especialista en procesamiento de datos. Necesito extraer la información de varios archivos PDF que contienen simulacros del examen ICFES Saber 11 (preguntas, opciones de respuesta de la A a la D, y claves de respuestas correctas) para convertirlos automáticamente en un archivo estructurado llamado `preguntas.json`.
+
+Por favor, proporcióname un script de Python utilizando librerías como `PyPDF2`, `pdfplumber` o `pypdf` que sea capaz de:
+1. Leer un archivo PDF de simulacro.
+2. Identificar el inicio de cada pregunta (por ejemplo, buscando patrones como "1.", "2.", o palabras clave por materias).
+3. Separar limpiamente: el Enunciado, las Opciones (A, B, C, D) y asociar la respuesta correcta si viene al final del documento como una tabla de claves.
+4. Calcular de forma estimada el "Componente o Competencia" evaluada según palabras clave (ej. si habla de células, asignarlo a Biología/Ciencias Naturales).
+5. Exportar todo a un archivo `preguntas.json` con la siguiente estructura exacta por cada objeto:
+   {
+     "id": 1,
+     "materia": "Matemáticas",
+     "competencia": "Razonamiento y argumentación",
+     "enunciado": "Texto completo de la pregunta...",
+     "tipo": "seleccion_multiple",
+     "opciones": {
+       "A": "Texto opción A",
+       "B": "Texto opción B",
+       "C": "Texto opción C",
+       "D": "Texto opción D"
+     },
+     "respuesta_correcta": "B",
+     "justificacion": "Explicación detallada de por qué la B es la correcta (dejar vacío si el PDF no la incluye para llenarla después)."
+   }
+
+Dame el código completo de Python listo para ejecutar y una guía paso a paso de cómo ejecutarlo en mi computadora de forma sencilla.

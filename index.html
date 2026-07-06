@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICFES Saber 11 - Entrenamiento</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc',
+              400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca',
+              800: '#3730a3', 900: '#312e81',
+            },
+            icfes: {
+              green: '#10b981', yellow: '#f59e0b', red: '#ef4444',
+              blue: '#3b82f6', purple: '#8b5cf6', pink: '#ec4899',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
+
+  <!-- ==================== PANTALLA DE INICIO ==================== -->
+  <div id="pantalla-inicio" class="min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-primary-500/25">S11</div>
+          <span class="font-bold text-lg tracking-tight hidden sm:block">ICFES <span class="text-primary-500">Saber 11</span></span>
+        </div>
+        <button id="btn-toggle-theme" class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" title="Cambiar tema">
+          <svg id="icon-sun" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <svg id="icon-moon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-1 flex items-center justify-center px-4 py-8 sm:py-12">
+      <div class="w-full max-w-xl">
+        <!-- Card de configuración -->
+        <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 overflow-hidden">
+          
+          <!-- Header del card -->
+          <div class="bg-gradient-to-br from-primary-600 via-primary-500 to-purple-600 px-6 py-8 sm:px-8 sm:py-10 text-white text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItSDI0di0yaDEyem0wLTRWMjhIMjR2Mmgxem0tNC00di0ySDI4djJoNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-50"></div>
+            <div class="relative">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-5 shadow-lg">
+                <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+              </div>
+              <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Entrenamiento ICFES</h1>
+              <p class="text-white/80 mt-2 text-sm sm:text-base">Prepárate para las pruebas Saber 11</p>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="px-6 py-6 sm:px-8 sm:py-8 space-y-6">
+            
+            <!-- Modo de juego -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Modo de entrenamiento</label>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <button id="modo-simulacro" class="modo-btn active-mode flex flex-col sm:flex-row md:flex-col items-center gap-3 p-4 rounded-2xl border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-center sm:text-left md:text-center transition-all duration-200 hover:shadow-md group w-full">
+                  <div class="w-10 h-10 rounded-xl bg-primary-100 dark:bg-primary-800/40 flex items-center justify-center flex-shrink-0 group-[.active-mode]:bg-primary-500 group-[.active-mode]:text-white">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                  </div>
+                  <div>
+                    <p class="font-bold text-sm">Simulacro Completo</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Todas las materias mezcladas</p>
+                  </div>
+                </button>
+                <button id="modo-materia" class="modo-btn flex flex-col sm:flex-row md:flex-col items-center gap-3 p-4 rounded-2xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-center sm:text-left md:text-center transition-all duration-200 hover:shadow-md hover:border-primary-300 dark:hover:border-primary-600 group w-full">
+                  <div class="w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-700 flex items-center justify-center flex-shrink-0 group-[.active-mode]:bg-primary-500 group-[.active-mode]:text-white">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                  </div>
+                  <div>
+                    <p class="font-bold text-sm">Por Materia</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Elige una específica</p>
+                  </div>
+                </button>
+                <button id="modo-medicina" class="modo-btn flex flex-col sm:flex-row md:flex-col items-center gap-3 p-4 rounded-2xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-center sm:text-left md:text-center transition-all duration-200 hover:shadow-md hover:border-primary-300 dark:hover:border-primary-600 group w-full">
+                  <div class="w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-700 flex items-center justify-center flex-shrink-0 group-[.active-mode]:bg-primary-500 group-[.active-mode]:text-white">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                  </div>
+                  <div>
+                    <p class="font-bold text-sm">Énfasis Medicina</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Prioriza Ciencias y Matemáticas (60%)</p>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Selector de materia (oculto por defecto) -->
+            <div id="selector-materia" class="hidden">
+              <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Materia</label>
+              <div class="relative">
+                <select id="select-materia" class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 font-medium text-sm appearance-none focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all cursor-pointer">
+                  <option value="">Selecciona una materia</option>
+                  <option value="Lectura Crítica">Lectura Crítica</option>
+                  <option value="Matemáticas">Matemáticas</option>
+                  <option value="Sociales y Ciudadanas">Sociales y Ciudadanas</option>
+                  <option value="Ciencias Naturales">Ciencias Naturales</option>
+                  <option value="Inglés">Inglés</option>
+                </select>
+                <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                  <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cantidad de preguntas -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Cantidad de preguntas</label>
+              <div class="grid grid-cols-4 gap-2">
+                <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="5">5</button>
+                <button class="cantidad-btn active-mode px-3 py-2.5 rounded-xl border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-sm font-bold transition-all" data-cantidad="10">10</button>
+                <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="20">20</button>
+                <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="50">50</button>
+              </div>
+              <p id="disponibles-info" class="text-xs text-gray-400 dark:text-gray-500 mt-2"></p>
+            </div>
+
+            <!-- Temporizador Configuración -->
+            <div class="border-t border-gray-100 dark:border-gray-800 pt-5 space-y-4">
+              <div class="flex items-center justify-between">
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300">Activar temporizador</label>
+                  <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Controla el tiempo de la sesión</p>
+                </div>
+                <label class="relative inline-flex items-center cursor-pointer">
+                  <input type="checkbox" id="timer-toggle" class="sr-only peer" checked>
+                  <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary-500/20 dark:bg-gray-700 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-500"></div>
+                </label>
+              </div>
+
+              <div id="timer-options" class="grid grid-cols-2 gap-3 transition-all duration-300">
+                <button id="timer-mode-total" class="timer-opt-btn active-mode flex flex-col items-center justify-center p-3 rounded-2xl border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-center transition-all duration-200 hover:shadow-sm">
+                  <span class="text-xs font-bold text-gray-900 dark:text-white">Tiempo Total</span>
+                  <span class="text-[10px] text-gray-500 dark:text-gray-400 mt-0.5">Cronómetro acumulado</span>
+                </button>
+                <button id="timer-mode-question" class="timer-opt-btn flex flex-col items-center justify-center p-3 rounded-2xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-center transition-all duration-200 hover:shadow-sm">
+                  <span class="text-xs font-bold text-gray-900 dark:text-white">Tiempo por Pregunta</span>
+                  <span class="text-[10px] text-gray-500 dark:text-gray-400 mt-0.5">2:00 mins por pregunta</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Botón de iniciar -->
+            <button id="btn-iniciar" class="w-full py-4 rounded-2xl bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white font-bold text-base shadow-lg shadow-primary-500/25 hover:shadow-xl hover:shadow-primary-500/30 transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Comenzar Entrenamiento
+            </button>
+          </div>
+        </div>
+
+        <!-- Stats footer -->
+        <div class="mt-6 flex items-center justify-center gap-6 text-xs text-gray-400 dark:text-gray-500">
+          <span id="total-preguntas-stat" class="flex items-center gap-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span>0 preguntas</span>
+          </span>
+          <span class="flex items-center gap-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+            5 materias
+          </span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ==================== PANTALLA DEL CUESTIONARIO ==================== -->
+  <div id="pantalla-quiz" class="min-h-screen flex flex-col hidden">
+    <!-- Quiz Navbar -->
+    <nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 py-3">
+        <!-- Progress bar -->
+        <div class="flex items-center gap-3 mb-2">
+          <span id="quiz-counter" class="text-xs font-bold text-primary-600 dark:text-primary-400 whitespace-nowrap">1/10</span>
+          <div class="flex-1 h-2.5 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
+            <div id="quiz-progress-bar" class="h-full bg-gradient-to-r from-primary-500 to-primary-400 rounded-full transition-all duration-500 ease-out" style="width: 10%"></div>
+          </div>
+          <span id="quiz-percent" class="text-xs font-bold text-gray-500 dark:text-gray-400 whitespace-nowrap">10%</span>
+        </div>
+        <!-- Top bar info -->
+        <div class="flex items-center justify-between">
+          <button id="btn-abandonar" class="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            <span class="hidden sm:inline">Salir</span>
+          </button>
+          <div id="quiz-materia-badge" class="px-3 py-1 rounded-full text-xs font-bold bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300"></div>
+          <div id="quiz-timer" class="flex items-center gap-1.5 text-sm font-mono text-gray-500 dark:text-gray-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span id="timer-display">00:00</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Quiz Content -->
+    <main class="flex-1 px-4 sm:px-6 py-6 sm:py-10">
+      <div class="max-w-3xl mx-auto">
+        <!-- Pregunta card -->
+        <div id="pregunta-card" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 overflow-hidden">
+          <!-- Competencia badge -->
+          <div class="px-5 sm:px-7 pt-5 sm:pt-7">
+            <span id="quiz-competencia-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <span id="competencia-text">Competencia</span>
+            </span>
+          </div>
+
+          <!-- Enunciado -->
+          <div class="px-5 sm:px-7 pt-3 pb-5 sm:pt-4 sm:pb-6">
+            <h2 id="pregunta-enunciado" class="text-base sm:text-lg font-semibold leading-relaxed whitespace-pre-line"></h2>
+          </div>
+
+          <!-- Opciones -->
+          <div id="opciones-container" class="px-5 sm:px-7 pb-5 sm:pb-6 space-y-3">
+            <!-- Se renderizan dinámicamente -->
+          </div>
+
+          <!-- Feedback -->
+          <div id="feedback-container" class="hidden px-5 sm:px-7 pb-5 sm:pb-6">
+            <div id="feedback-box" class="rounded-2xl p-4 sm:p-5">
+              <div class="flex items-start gap-3">
+                <div id="feedback-icon" class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"></div>
+                <div class="flex-1">
+                  <p id="feedback-title" class="font-bold text-sm mb-1"></p>
+                  <p id="feedback-justificacion" class="text-sm leading-relaxed text-gray-600 dark:text-gray-300"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón verificar / siguiente -->
+          <div class="px-5 sm:px-7 pb-6 sm:pb-7">
+            <button id="btn-verificar" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white font-bold text-sm shadow-lg shadow-primary-500/25 transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2">
+              Verificar Respuesta
+            </button>
+            <button id="btn-siguiente" class="hidden w-full py-3.5 rounded-2xl bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 font-bold text-sm transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2">
+              Siguiente Pregunta
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Score mini -->
+        <div class="mt-4 flex items-center justify-center gap-4 text-xs text-gray-400 dark:text-gray-500">
+          <span class="flex items-center gap-1">
+            <span class="w-2.5 h-2.5 rounded-full bg-green-500 inline-block"></span>
+            Correctas: <strong id="mini-correctas" class="text-gray-600 dark:text-gray-300">0</strong>
+          </span>
+          <span class="flex items-center gap-1">
+            <span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span>
+            Incorrectas: <strong id="mini-incorrectas" class="text-gray-600 dark:text-gray-300">0</strong>
+          </span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ==================== PANTALLA DE RESULTADOS ==================== -->
+  <div id="pantalla-resultados" class="min-h-screen flex flex-col hidden">
+    <!-- Resultados Navbar -->
+    <nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-primary-500/25">S11</div>
+          <span class="font-bold text-lg tracking-tight hidden sm:block">Resultados</span>
+        </div>
+        <button id="btn-reiniciar" class="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 text-sm font-semibold hover:bg-primary-100 dark:hover:bg-primary-900/40 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          Nuevo Entrenamiento
+        </button>
+      </div>
+    </nav>
+
+    <main class="flex-1 px-4 sm:px-6 py-8 sm:py-12">
+      <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8">
+
+        <!-- Puntaje global hero -->
+        <div id="resultado-hero" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8 text-center">
+          <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Puntaje Global</p>
+          <div class="relative inline-block">
+            <canvas id="chart-donut-global" width="200" height="200" class="mx-auto"></canvas>
+            <div class="absolute inset-0 flex items-center justify-center flex-col">
+              <span id="global-puntaje" class="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white"></span>
+              <span class="text-xs text-gray-400 dark:text-gray-500 font-medium">de 100</span>
+            </div>
+          </div>
+          <p id="global-mensaje" class="mt-4 text-base sm:text-lg font-semibold"></p>
+          <p id="global-detalle" class="mt-1 text-sm text-gray-500 dark:text-gray-400"></p>
+        </div>
+
+        <!-- Desglose por materia -->
+        <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8">
+          <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            Rendimiento por Materia
+          </h3>
+          
+          <!-- Barras de materia -->
+          <div id="materias-barras" class="space-y-5">
+            <!-- Se renderizan dinámicamente -->
+          </div>
+
+          <!-- Gráfico de barras Chart.js -->
+          <div class="mt-8 hidden sm:block">
+            <canvas id="chart-barras-materias" height="250"></canvas>
+          </div>
+        </div>
+
+        <!-- Alerta Medicina (dinámica) -->
+        <div id="medicina-alerta-container" class="hidden animate-fade-in-up"></div>
+
+        <!-- Recomendación -->
+        <div id="recomendacion-card" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8">
+          <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            Recomendación
+          </h3>
+          <div id="recomendacion-content" class="text-sm leading-relaxed text-gray-600 dark:text-gray-300"></div>
+        </div>
+
+        <!-- Botón nuevo entrenamiento (móvil) -->
+        <div class="sm:hidden">
+          <button id="btn-reiniciar-mobile" class="w-full py-4 rounded-2xl bg-gradient-to-r from-primary-600 to-primary-500 text-white font-bold text-sm shadow-lg shadow-primary-500/25 flex items-center justify-center gap-2 active:scale-[0.98] transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            Nuevo Entrenamiento
+          </button>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Custom Modal de Confirmación para salir -->
+  <div id="modal-confirmacion" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden animate-fade-in">
+    <div class="bg-white dark:bg-gray-900 rounded-3xl max-w-sm w-full p-6 shadow-2xl border border-gray-100 dark:border-gray-800 transform scale-95 transition-all duration-300 animate-scale-in">
+      <div class="w-12 h-12 rounded-2xl bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center mx-auto mb-4">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+      </div>
+      <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white mb-2">¿Quieres salir?</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 text-center mb-6">Si abandonas ahora, perderás todo el progreso y las estadísticas de esta sesión de estudio.</p>
+      <div class="flex gap-3">
+        <button id="btn-cancelar-salir" class="flex-1 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors">
+          Cancelar
+        </button>
+        <button id="btn-confirmar-salir" class="flex-1 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white text-sm font-bold shadow-lg shadow-red-600/20 transition-colors">
+          Salir de todas formas
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

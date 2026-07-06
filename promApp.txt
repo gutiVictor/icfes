@@ -1,0 +1,125 @@
+Contexto del Proyecto:
+Deseo crear una aplicación web interactiva, responsiva (optimizada para celulares y PC) y moderna para ayudar a mi hija a entrenar para las pruebas de Estado ICFES Saber 11 en Colombia. La app se desplegará en Netlify como un sitio estático.
+
+Base de Datos (Estructura JSON):
+La aplicación consumirá un archivo preguntas.json. Necesito que me ayudes a definir este archivo. Cada objeto de pregunta debe incluir:
+
+ID único.
+
+Materia (Lectura Crítica, Matemáticas, Sociales y Ciudadanas, Ciencias Naturales, Inglés).
+
+Componente o Competencia evaluada (opcional, para el análisis).
+
+Enunciado (puede incluir texto o enlaces a imágenes de diagramas si el PDF los tenía).
+
+Tipo de pregunta (Selección múltiple con única respuesta [A, B, C, D], Falso/Verdadero, etc. Nota: El ICFES real usa principalmente selección múltiple, pero quiero variedad pedagógica).
+
+Opciones de respuesta.
+
+Respuesta correcta.
+
+Justificación o explicación de la respuesta (retroalimentación).
+
+Funcionalidades Principales:
+
+Configuración del Entrenamiento (Pantalla de Inicio):
+
+El usuario debe poder elegir el modo de juego/estudio.
+
+Opción A: Simulacro Completo (todas las materias mezcladas con la estructura del ICFES).
+
+Opción B: Práctica por Materia (seleccionar una materia específica: ej. Matemáticas).
+
+Selector de cantidad de preguntas: Un control para definir cuántas preguntas responder en esa sesión (ej. 5, 10, 20, 50 preguntas). Las preguntas deben seleccionarse de forma aleatoria del archivo JSON según los filtros aplicados.
+
+Interfaz del Cuestionario (Modo Entrenamiento):
+
+Diseño vistoso, moderno, intuitivo y amigable (con fuentes claras y modo oscuro/claro si es posible).
+
+Barra de progreso visual que indique cuántas preguntas lleva y cuántas le faltan.
+
+Temporizador (opcional o configurable) para medir el tiempo por pregunta.
+
+Al responder cada pregunta, la app debe mostrar inmediatamente si acertó o falló y desplegar la justificación/explicación antes de pasar a la siguiente (modo aprendizaje).
+
+Módulo de Análisis de Datos y Resultados:
+
+Al finalizar el cuestionario, no solo debe mostrar el puntaje global (ej. 80% correctas).
+
+Debe generar un reporte visual con gráficos (puedes usar librerías como Chart.js o Tailwind para barras de progreso) emulando los reportes del ICFES.
+
+El reporte debe mostrar el rendimiento por materia (cuántas buenas y malas en cada una) y dar una recomendación automática (ej: "Tu punto débil hoy fue Lectura Crítica, ¡reparsemos esa área!").
+
+Tecnología Recomendada:
+Por favor, genera el código utilizando HTML5, CSS3 (puedes usar Tailwind CSS para que sea rápido y muy vistoso) y JavaScript Vanilla (o React si consideras que es mejor para manejar el estado del JSON). Todo debe quedar estructurado en archivos limpios para que pueda subirlos directamente a un repositorio de GitHub y desplegarlos en Netlify con un solo clic.
+
+Dame primero la estructura sugerida del archivo JSON con 2 ejemplos de preguntas del ICFES y luego procede con el código de la aplicación.
+
+
+
+
+Contexto del Proyecto:
+Deseo crear una aplicación web interactiva, responsiva (perfectamente optimizada para celulares y PC), moderna y amigable para ayudar a mi hija a entrenar para las pruebas de Estado ICFES Saber 11 en Colombia. La app se desplegará de forma estática en Netlify.
+
+Base de Datos:
+La aplicación consumirá un archivo local llamado `preguntas.json` (el cual contiene campos para id, materia, competencia, enunciado, tipo, opciones [A, B, C, D], respuesta_correcta y justificacion). Las materias incluidas son: Lectura Crítica, Matemáticas, Sociales y Ciudadanas, Ciencias Naturales e Inglés.
+
+Funcionalidades Principales y Lógica Requerida:
+
+1. Configuración del Entrenamiento (Pantalla de Inicio):
+   - El usuario debe poder elegir entre dos modos:
+     * "Simulacro Completo": Mezcla preguntas aleatorias de todas las materias.
+     * "Práctica por Materia": Un menú desplegable para elegir una materia específica.
+   - Selector numérico interactivo para definir la cantidad de preguntas a contestar en la sesión (ej. 10, 20, 50 preguntas).
+
+2. Interfaz del Cuestionario (Modo Aprendizaje):
+   - Diseño visualmente atractivo, intuitivo y limpio. Tipografías legibles y espaciado cómodo tanto en pantallas táctiles de móviles como en monitores de PC.
+   - Barra de progreso superior que indique de forma dinámica el avance del cuestionario.
+   - Al seleccionar una opción (A, B, C o D) y dar clic en "Verificar":
+     * Si es correcta: Resaltar en verde y mostrar un mensaje de éxito.
+     * Si es incorrecta: Resaltar en rojo la seleccionada, marcar en verde la respuesta que era correcta.
+     * En ambos casos, debe desplegar inmediatamente abajo la "Justificación o Explicación" guardada en el JSON para que ella aprenda del error antes de presionar el botón "Siguiente pregunta".
+
+3. Módulo de Análisis de Datos y Calificación Estilo ICFES (Pantalla de Resultados):
+   - Al finalizar el cuestionario, la app debe calcular los resultados simulando la escala real del ICFES por materia (puntaje de 0 a 100 puntos).
+   - Fórmula de puntuación requerida: Para cada materia evaluada en la sesión, el puntaje será equivalente al porcentaje de respuestas correctas multiplicado por 100 (ej: si respondió 8 de 10 correctas en Matemáticas, su puntaje en esa materia es 80/100).
+   - Mostrar un panel estadístico vistoso con gráficos de barra dinámicos o componentes visuales llamativos (puedes usar la librería Chart.js o barras de progreso estilizadas con Tailwind CSS) que desglose el puntaje obtenido (0-100) en cada materia realizada.
+   - Incluir un sistema de semáforo visual: Verde para puntajes de 65-100 (Alto/Optimista), Amarillo para 45-64 (Aceptable/Por mejorar) y Rojo para menos de 45 (Crítico/Reforzar).
+   - Generar un texto de recomendación automática basado en la materia donde obtuvo el puntaje más bajo.
+
+Requisitos Tecnológicos y Despliegue:
+Genera la aplicación utilizando una estructura limpia de archivos listos para producción: `index.html`, `style.css` (utilizando Tailwind CSS vía CDN para asegurar un diseño hermoso y responsivo sin configuraciones complejas) y `app.js` para toda la lógica del estado, eventos y renderizado de preguntas. El código debe ser modular y documentado para que pueda subirlo directamente a GitHub y conectarlo a Netlify con éxito. Por favor, genera el código completo.
+
+
+
+
+
+
+Contexto del Proyecto:
+Deseo crear una aplicación web interactiva, responsiva (celular y PC) y moderna para ayudar a mi hija a entrenar para el ICFES Saber 11 en Colombia. Ella quiere estudiar Medicina, por lo que la app debe tener un enfoque especial para esta carrera. La app se alojará en Netlify.
+
+Base de Datos y Variedad de Preguntas:
+La app consumirá un archivo `preguntas.json`. Debe ser capaz de renderizar dinámicamente dos tipos de preguntas según el campo "tipo":
+1. "seleccion_multiple": Con opciones A, B, C, D.
+2. "verdadero_falso": Con opciones A (Verdadero) y B (Falso).
+
+Funcionalidades Principales y Enfoque en Medicina:
+
+1. Configuración del Entrenamiento (Pantalla de Inicio):
+   - El usuario podrá elegir entre tres modos de estudio:
+     * "Simulacro Estándar": Mezcla equilibrada de todas las materias.
+     * "Práctica por Materia": Seleccionar una materia específica.
+     * "Énfasis en Medicina": Un modo especial que genera un cuestionario donde el 60% de las preguntas pertenecen a Ciencias Naturales (Biología/Química) y Matemáticas, y el 40% restante a las demás materias.
+   - Selector de cantidad de preguntas para la sesión (ej. 10, 20, 50).
+
+2. Interfaz del Cuestionario (Modo Aprendizaje):
+   - Diseño visualmente muy atractivo y limpio (Usa Tailwind CSS).
+   - Al responder, la app debe validar inmediatamente. Si es correcta se marca en verde; si falla, se resalta su error en rojo y muestra la correcta en verde.
+   - Debe desplegar inmediatamente el texto del campo "justificacion" para retroalimentación instantánea.
+
+3. Análisis de Resultados (Escala ICFES 0-100):
+   - Al finalizar, calculará el puntaje de 0 a 100 por materia (Porcentaje de aciertos * 100).
+   - Mostrar un panel estadístico con gráficos descriptivos.
+   - Si está en el modo "Énfasis en Medicina", la app debe darle un mensaje personalizado. Si su puntaje en Ciencias Naturales es menor a 75, debe alertarla con un mensaje: "Para Medicina necesitas fortalecer Ciencias Naturales. ¡Sigue practicando!".
+
+Por favor, genera el código completo estructurado en index.html, style.css (con Tailwind) y app.js listo para producción y despliegue.

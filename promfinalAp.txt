@@ -1,0 +1,53 @@
+Actúa como un Ingeniero de Software Senior y Desarrollador Frontend Experto. Deseo crear una aplicación web interactiva, moderna, intuitiva y 100% responsiva (perfectamente optimizada para pantallas táctiles de celulares y monitores de PC) para ayudar a mi hija a entrenar para las pruebas de Estado ICFES Saber 11 en Colombia, con un enfoque estratégico para su meta de estudiar Medicina. La app se desplegará de forma estática en Netlify.
+
+### 1. Base de Datos (Estructura JSON)
+La aplicación consumirá un archivo local llamado `preguntas.json`. El sistema debe ser capaz de renderizar dinámicamente dos tipos de preguntas según el campo "tipo":
+- "seleccion_multiple": Opciones A, B, C, D.
+- "verdadero_falso": Opciones A (Verdadero) y B (Falso).
+
+Cada objeto del JSON debe seguir esta estructura exacta:
+{
+  "id": "CN-001",
+  "materia": "Ciencias Naturales",
+  "competencia": "Explicación de fenómenos (Biología)",
+  "enunciado": "Texto de la pregunta (puede incluir URLs de imágenes si aplica)",
+  "tipo": "seleccion_multiple",
+  "opciones": { "A": "Opción A", "B": "Opción B", "C": "Opción C", "D": "Opción D" },
+  "respuesta_correcta": "B",
+  "justificacion": "Explicación detallada de la respuesta para retroalimentación."
+}
+Las materias evaluadas serán: Lectura Crítica, Matemáticas, Sociales y Ciudadanas, Ciencias Naturales e Inglés.
+
+### 2. Funcionalidades Principales y Lógica Requerida
+
+#### A. Configuración del Entrenamiento (Pantalla de Inicio)
+- Interfaz limpia y llamativa para configurar la sesión de estudio.
+- El usuario podrá elegir entre tres modos de estudio:
+  1. "Simulacro Estándar": Mezcla equilibrada y aleatoria de todas las materias.
+  2. "Práctica por Materia": Menú desplegable para seleccionar una materia específica.
+  3. "Énfasis en Medicina": Modo especial que prioriza las materias clave para ciencias de la salud. Generará un cuestionario donde el 60% de las preguntas pertenezcan a Ciencias Naturales y Matemáticas, y el 40% restante se distribuya entre las demás materias.
+- Selector interactivo para definir la cantidad de preguntas de la sesión (ej. 5, 10, 20, 50 preguntas) extraídas aleatoriamente según los filtros aplicados.
+- Temporizador opcional para medir el tiempo total o por pregunta.
+
+#### B. Interfaz del Cuestionario (Modo Aprendizaje Activo)
+- Diseño ultra amigable y estético (Usa tipografías claras, espaciado cómodo y barra de progreso dinámica en la parte superior).
+- Al seleccionar una opción y hacer clic en "Verificar":
+  - Si es correcta: Se resalta la opción en verde y muestra un mensaje de éxito.
+  - Si es incorrecta: Se resalta el error en rojo y se marca en verde la respuesta que era correcta.
+  - En ambos casos, se despliega inmediatamente abajo el texto de la "justificacion" guardada en el JSON para que ella aprenda de sus errores en tiempo real antes de presionar el botón "Siguiente".
+
+#### C. Módulo de Análisis y Calificación Estilo ICFES (Pantalla de Resultados)
+- Al finalizar el cuestionario, la app calculará el puntaje simulando la escala real del ICFES por materia (de 0 a 100 puntos).
+- Fórmula de puntuación por materia: (Preguntas correctas de la materia / Preguntas totales respondidas de esa materia) * 100.
+- Mostrar un panel estadístico visualmente impactante usando Chart.js o barras de progreso estilizadas con Tailwind CSS que desglose el puntaje obtenido por cada materia.
+- Implementar un sistema de semáforo visual: Verde para 65-100 (Alto/Rendimiento Óptimo), Amarillo para 45-64 (Aceptable) y Rojo para menos de 45 (Crítico/Reforzar).
+- Generar un texto de recomendación automática basado en su peor materia.
+- Si jugó en modo "Énfasis en Medicina" y su puntaje en Ciencias Naturales fue menor a 75, mostrar una alerta motivacional: "Para Medicina necesitas un puntaje excelente en Ciencias Naturales. ¡Reforcemos esta área en tu próximo intento!".
+
+### 3. Requisitos Tecnológicos y Despliegue
+Por favor, genera el código completo utilizando una estructura limpia y modular de archivos listos para producción:
+- `index.html`: Estructura semántica de la SPA (Single Page Application).
+- `style.css`: Estilos modernos utilizando Tailwind CSS vía CDN para asegurar un diseño hermoso sin configuraciones complejas. Incluye soporte para modo oscuro/claro si es posible.
+- `app.js`: Lógica completa de estados de la app, filtros aleatorios, renderizado, validación de respuestas y cálculo estadístico.
+
+Proporcióname primero un ejemplo de la estructura del archivo `preguntas.json` con 2 preguntas de muestra (una de selección múltiple y otra de verdadero/falso) y después escribe el código completo de los archivos listos para guardar, subir a GitHub y desplegar en Netlify.

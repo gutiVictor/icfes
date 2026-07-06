@@ -1,0 +1,405 @@
+[
+  {
+    "id": "LC-001",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión lectora",
+    "enunciado": "Lea el siguiente texto y responda la pregunta.\n\n«La literatura latinoamericana del siglo XX se caracterizó por el realismo mágico, un movimiento que fusionaba elementos fantásticos con situaciones cotidianas. Autores como Gabriel García Márquez, Isabel Allende y Jorge Luis Borges exploraron esta vertiente, creando universos narrativos donde lo imposible coexistía con lo mundane. Este enfoque permitió a los escritores latinoamericanos abordar temas históricos, políticos y sociales desde una perspectiva simbólica y alegórica, logrando una resonancia universal que trascendió las fronteras del continente.»\n\n¿Cuál es el propósito principal del texto anterior?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Describir las biografías de los autores latinoamericanos más importantes del siglo XX",
+      "B": "Explicar las características del realismo mágico y su función en la literatura latinoamericana",
+      "C": "Comparar la literatura latinoamericana con la literatura europea del mismo período",
+      "D": "Criticar el uso de elementos fantásticos en la narrativa contemporánea"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El texto se centra en explicar qué es el realismo mágico, quiénes fueron sus principales exponentes en Latinoamérica y cómo este movimiento permitió abordar temas sociales e históricos desde una perspectiva simbólica. Las demás opciones no se corresponden con el contenido del texto: no se presentan biografías (A), no se hace una comparación con Europa (C), ni se critica el movimiento (D)."
+  },
+  {
+    "id": "LC-002",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de la intención comunicativa",
+    "enunciado": "Lea el siguiente fragmento de una columna de opinión:\n\n«Es alarmante que en pleno siglo XXI todavía existan comunidades rurales en Colombia sin acceso a internet. Mientras las ciudades disfrutan de conexiones de alta velocidad, millones de campesinos siguen aislados digitalmente. Si realmente queremos cerrar la brecha de equidad en nuestro país, la conectividad rural no puede seguir siendo una promesa de campaña: debe ser una política de Estado con financiación garantizada.»\n\n¿Cuál es la intención comunicativa del autor de este texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Informar de manera neutral sobre los avances tecnológicos en Colombia",
+      "B": "Narrar una experiencia personal sobre la falta de internet en el campo",
+      "C": "Argumentar a favor de garantizar la conectividad rural como política de Estado",
+      "D": "Describir las características técnicas de las conexiones de internet en zonas rurales"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El autor utiliza un tono persuasivo y argumentativo: presenta un problema (la brecha digital), lo califica como «alarmante», y concluye con una tesis clara («la conectividad rural debe ser una política de Estado»). No es neutral (A), no narra una experiencia personal (B), ni describe aspectos técnicos (D). Es un texto de opinión con intención argumentativa."
+  },
+  {
+    "id": "LC-003",
+    "materia": "Lectura Crítica",
+    "competencia": "Inferencia textual",
+    "enunciado": "Lea el siguiente texto:\n\n«María se levantó esa mañana con una sonrisa que no había aparecido en su rostro en meses. Miró por la ventana y vio que el cielo estaba despejado. Tomó su vieja maleta del armario, la llenó con apenas lo necesario, y caminó hacia la estación sin mirar atrás.»\n\n¿Qué se puede inferir del texto anterior?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "María iba a hacer un viaje corto de negocios",
+      "B": "María estaba emocionada por un cambio importante en su vida",
+      "C": "María vivía en una ciudad muy fría",
+      "D": "María tenía problemas económicos graves"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Varios indicios permiten inferir que María está viviendo un momento de cambio significativo: la sonrisa que «no había aparecido en meses» sugiere que atravesaba un periodo difícil que ahora termina; el cielo despejado funciona como símbolo de esperanza; la vieja maleta con «apenas lo necesario» y el hecho de no mirar atrás indican una decisión de dejar algo atrás, probablemente un nuevo comienzo. Las demás opciones carecen de suficiente respaldo textual."
+  },
+  {
+    "id": "LC-004",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión lectora",
+    "enunciado": "Lea el siguiente texto:\n\n«El agua es un recurso finito que apenas representa el 0.5 % del total del agua dulce disponible en el planeta. A pesar de esto, su consumo ha crecido al doble de la tasa de crecimiento poblacional en el último siglo. Si las tendencias actuales se mantienen, para 2025 dos tercios de la población mundial vivirán en condiciones de estrés hídrico.»\n\n¿Qué tipo de texto es el anterior?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Un texto literario con intención estética",
+      "B": "Un texto argumentativo que defiende una tesis subjetiva",
+      "C": "Un texto expositivo-informativo que presenta datos sobre un problema ambiental",
+      "D": "Un texto instructivo que explica cómo ahorrar agua"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El texto presenta datos objetivos y estadísticas (0.5%, doble de la tasa, dos tercios) sobre un tema ambiental, sin emitir opiniones personales ni dar instrucciones. Su función es informar y exponer un problema real, por lo que es un texto expositivo-informativo. No tiene intención estética (A), no defiende una tesis opinable (B), ni da instrucciones (D)."
+  },
+  {
+    "id": "LC-005",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de coherencia y cohesión",
+    "enunciado": "En el siguiente texto, una de las oraciones fue extraída. ¿Cuál de las opciones completa coherentemente el texto?\n\n«La contaminación del aire en las grandes ciudades es un problema que afecta la salud de millones de personas. _____ Por esta razón, los gobiernos locales deben implementar políticas más estrictas de control de emisiones.»",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los colores del atardecer se ven más bonitos desde la ciudad.",
+      "B": "Estudios recientes demuestran que las enfermedades respiratorias han aumentado un 30 % en zonas urbanas de alta contaminación.",
+      "C": "El fútbol es el deporte más popular en América Latina.",
+      "D": "Los perros son los animales domésticos más comunes en los hogares urbanos."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Para que el texto sea coherente, la oración faltante debe conectar la idea de «contaminación del aire que afecta la salud» con la conclusión «por esta razón, se deben implementar políticas». La opción B proporciona exactamente ese eslabón: demuestra con datos el impacto en la salud (enfermedades respiratorias), lo que justifica la necesidad de políticas. Las demás opciones son completamente irrelevantes al tema."
+  },
+  {
+    "id": "MA-001",
+    "materia": "Matemáticas",
+    "competencia": "Razonamiento cuantitativo",
+    "enunciado": "Un terreno rectangular tiene un perímetro de 80 metros. Si el largo es el triple del ancho, ¿cuál es el área del terreno en metros cuadrados?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "300 m²",
+      "B": "600 m²",
+      "C": "400 m²",
+      "D": "150 m²"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Sea x el ancho. Entonces el largo es 3x. El perímetro de un rectángulo es 2(largo + ancho) = 2(3x + x) = 2(4x) = 8x. Como el perímetro es 80: 8x = 80, entonces x = 10 metros (ancho). El largo es 3x = 30 metros. El área es largo × ancho = 30 × 10 = 300 m²."
+  },
+  {
+    "id": "MA-002",
+    "materia": "Matemáticas",
+    "competencia": "Análisis de datos",
+    "enunciado": "En un curso de 40 estudiantes, las calificaciones en un examen fueron las siguientes:\n\n• 5 estudiantes obtuvieron 3.0\n• 12 estudiantes obtuvieron 3.5\n• 15 estudiantes obtuvieron 4.0\n• 8 estudiantes obtuvieron 5.0\n\n¿Cuál es la calificación promedio del grupo?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "3.8",
+      "B": "4.0",
+      "C": "3.9",
+      "D": "3.7"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Se calcula el promedio ponderado: (5×3.0 + 12×3.5 + 15×4.0 + 8×5.0) / 40 = (15 + 42 + 60 + 40) / 40 = 157 / 40 = 3.925, que redondeado es 3.9."
+  },
+  {
+    "id": "MA-003",
+    "materia": "Matemáticas",
+    "competencia": "Razonamiento algebraico",
+    "enunciado": "Si la suma de tres números consecutivos es 72, ¿cuál es el mayor de estos números?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "23",
+      "B": "24",
+      "C": "25",
+      "D": "26"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Sean los tres números consecutivos: n, n+1 y n+2. Su suma es: n + (n+1) + (n+2) = 3n + 3 = 72. Entonces 3n = 69, y n = 23. Los tres números son 23, 24 y 25. El mayor es 25."
+  },
+  {
+    "id": "MA-004",
+    "materia": "Matemáticas",
+    "competencia": "Razonamiento cuantitativo",
+    "enunciado": "Una tienda ofrece un descuento del 20 % en todos sus productos. Si Camila compró una camiseta que originalmente costaba $45.000 y unos jeans de $80.000, ¿cuánto pagó en total después del descuento?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "$100.000",
+      "B": "$95.000",
+      "C": "$125.000",
+      "D": "$105.000"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El precio total sin descuento es: $45.000 + $80.000 = $125.000. El descuento del 20 % es: $125.000 × 0.20 = $25.000. El precio final es: $125.000 - $25.000 = $100.000."
+  },
+  {
+    "id": "MA-005",
+    "materia": "Matemáticas",
+    "competencia": "Razonamiento geométrico",
+    "enunciado": "Un cilindro tiene un radio de 3 cm y una altura de 10 cm. ¿Cuál es el volumen del cilindro? (Use π ≈ 3.14)",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "188.4 cm³",
+      "B": "282.6 cm³",
+      "C": "94.2 cm³",
+      "D": "376.8 cm³"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El volumen de un cilindro es V = π × r² × h. Sustituyendo: V = 3.14 × (3)² × 10 = 3.14 × 9 × 10 = 3.14 × 90 = 282.6 cm³."
+  },
+  {
+    "id": "SC-001",
+    "materia": "Sociales y Ciudadanas",
+    "competencia": "Convivencia y paz",
+    "enunciado": "En Colombia, la Constitución Política de 1991 establece mecanismos de participación ciudadana. ¿Cuál de los siguientes es un mecanismo de participación ciudadana directa contemplado en la Constitución?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El nombramiento directo de ministros por parte de los ciudadanos",
+      "B": "El referendo, la consulta popular, la iniciativa legislativa y la revocatoria del mandato",
+      "C": "La creación de partidos políticos sin autorización del Estado",
+      "D": "La elección popular de los magistrados de la Corte Suprema de Justicia"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El Artículo 103 de la Constitución de 1991 establece como mecanismos de participación ciudadana: el voto, el plebiscito, el referendo, la consulta popular, el cabildo abierto, la iniciativa legislativa y la revocatoria del mandato. Las demás opciones no corresponden a mecanismos contemplados en la Constitución."
+  },
+  {
+    "id": "SC-002",
+    "materia": "Sociales y Ciudadanas",
+    "competencia": "Pluralidad, identidad y valoración de las diferencias",
+    "enunciado": "La Declaración Universal de los Derechos Humanos fue adoptada por la Asamblea General de las Naciones Unidas en 1948. ¿Cuál era el contexto histórico principal que motivó su creación?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La Revolución Industrial y sus consecuencias laborales",
+      "B": "El descubrimiento de América y el encuentro entre culturas",
+      "C": "Las atrocidades cometidas durante la Segunda Guerra Mundial y el Holocausto",
+      "D": "La Guerra Fría y la amenaza nuclear"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La Declaración Universal de los Derechos Humanos fue una respuesta directa a los horrores de la Segunda Guerra Mundial, incluyendo el genocidio judío (Holocausto) y otros crímenes contra la humanidad. La comunidad internacional reconoció la necesidad de establecer un marco universal de derechos que protegiera la dignidad humana y evitara la repetición de tales atrocidades."
+  },
+  {
+    "id": "SC-003",
+    "materia": "Sociales y Ciudadanas",
+    "competencia": "Competencias ciudadanas",
+    "enunciado": "En un colegio, un grupo de estudiantes decide organizar una protesta pacífica porque consideran que las instalaciones deportivas están en mal estado. ¿Cuál de las siguientes acciones sería la más coherente con el ejercicio responsable de la participación ciudadana?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Dañar las instalaciones para llamar la atención de los medios",
+      "B": "Presentar una petición formal al Consejo Directivo con propuestas y posibles soluciones",
+      "C": "Dejar de asistir a clases hasta que el problema se resuelva",
+      "D": "Publicar quejas anónimas en redes sociales sin ofrecer soluciones"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La participación ciudadana responsable se ejerce a través de canales institucionales y constructivos. Presentar una petición formal al Consejo Directivo, acompañada de propuestas y soluciones, demuestra ejercicio democrático, respeto por los canales de diálogo y capacidad propositiva. Las demás opciones implican violencia (A), abandono irresponsable (C) o falta de constructividad (D)."
+  },
+  {
+    "id": "SC-004",
+    "materia": "Sociales y Ciudadanas",
+    "competencia": "Comprensión espacial",
+    "enunciado": "Colombia se divide políticamente en departamentos y municipios. ¿Cuántos departamentos tiene Colombia?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "30",
+      "B": "32",
+      "C": "35",
+      "D": "28"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Colombia está conformada por 32 departamentos y el Distrito Capital (Bogotá), para un total de 33 entidades territoriales de primer nivel. Sin embargo, la pregunta pregunta por departamentos específicamente, y el número correcto es 32."
+  },
+  {
+    "id": "SC-005",
+    "materia": "Sociales y Ciudadanas",
+    "competencia": "Razonamiento económico",
+    "enunciado": "¿Qué es la inflación?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La disminución general y sostenida de los precios de bienes y servicios",
+      "B": "El aumento de la producción industrial de un país",
+      "C": "El aumento general y sostenido de los precios de bienes y servicios en una economía",
+      "D": "La reducción del desempleo en un período determinado"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La inflación se define como el aumento general y sostenido de los precios de bienes y servicios en una economía durante un período de tiempo. Esto significa que con la misma cantidad de dinero se pueden comprar menos cosas. La disminución general de precios se llama deflación (A). Las opciones B y D describen fenómenos económicos diferentes (crecimiento productivo y empleo)."
+  },
+  {
+    "id": "CN-001",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Celular",
+    "enunciado": "¿Cuál es la organela celular responsable de producir la energía necesaria para las funciones vitales de la célula?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El retículo endoplásmico",
+      "B": "La mitocondria",
+      "C": "El aparato de Golgi",
+      "D": "El núcleo celular"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La mitocondria es conocida como la «central energética» de la célula porque realiza la respiración celular, un proceso mediante el cual se produce ATP (adenosín trifosfato), la molécula que suministra energía para las funciones celulares. El retículo endoplásmico sintetiza proteínas y lípidos, el aparato de Golgi modifica y empaqueta moléculas, y el núcleo almacena el material genético."
+  },
+  {
+    "id": "CN-002",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Cinemática",
+    "enunciado": "Un carro viaja a una velocidad constante de 60 km/h durante 2 horas. ¿Cuántos kilómetros recorre en ese tiempo?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "30 km",
+      "B": "90 km",
+      "C": "120 km",
+      "D": "180 km"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Aplicando la fórmula de velocidad: v = d / t, entonces d = v × t. Sustituyendo: d = 60 km/h × 2 h = 120 km. El carro recorre 120 kilómetros en 2 horas a velocidad constante de 60 km/h."
+  },
+  {
+    "id": "CN-003",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Tabla periódica",
+    "enunciado": "¿Cuál de las siguientes sustancias es un compuesto químico (no un elemento)?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Oxígeno (O₂)",
+      "B": "Hierro (Fe)",
+      "C": "Agua (H₂O)",
+      "D": "Ozono (O₃)"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Un compuesto químico está formado por dos o más elementos diferentes unidos químicamente. El agua (H₂O) está compuesta por hidrógeno y oxígeno, dos elementos diferentes. El oxígeno (O₂) y el ozono (O₃) son moléculas formadas por un solo elemento (alotropías), y el hierro (Fe) es un elemento puro."
+  },
+  {
+    "id": "CN-004",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Ecología",
+    "enunciado": "En una cadena alimentaria, los organismos que producen su propio alimento mediante la fotosíntesis se denominan:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Consumidores primarios",
+      "B": "Descomponedores",
+      "C": "Productores",
+      "D": "Consumidores secundarios"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Los productores (también llamados autótrofos) son los organismos capaces de fabricar su propio alimento mediante la fotosíntesis, como las plantas, las algas y algunas bacterias. Ocupan el primer nivel trófico de la cadena alimentaria. Los consumidores primarios se alimentan de los productores, los secundarios de los primarios, y los descomponedores se alimentan de materia orgánica en descomposición."
+  },
+  {
+    "id": "CN-005",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Electricidad",
+    "enunciado": "Según la Ley de Ohm, si un circuito eléctrico tiene una resistencia de 10 ohmios y por él circula una corriente de 2 amperios, ¿cuál es el voltaje del circuito?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "5 voltios",
+      "B": "12 voltios",
+      "C": "20 voltios",
+      "D": "8 voltios"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La Ley de Ohm establece que V = R × I (Voltaje = Resistencia × Corriente). Sustituyendo: V = 10 Ω × 2 A = 20 voltios."
+  },
+  {
+    "id": "IN-001",
+    "materia": "Inglés",
+    "competencia": "Comprensión lectora",
+    "enunciado": "Read the following text and answer the question.\n\n«Sofia loves spending her weekends outdoors. Last Saturday, she went hiking in the mountains with her friends. They started early in the morning because the weather gets very hot by noon. Sofia packed sandwiches, fruit, and plenty of water. The trail was steep, but the view from the top was absolutely breathtaking.»\n\nWhy did Sofia and her friends start hiking early in the morning?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Because the trail closes at noon",
+      "B": "Because the weather becomes very hot later in the day",
+      "C": "Because they wanted to arrive before their friends",
+      "D": "Because Sofia forgot to pack enough water"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El texto dice explícitamente: «They started early in the morning because the weather gets very hot by noon» (Empezaron temprano porque el clima se pone muy caliente al mediodía). La opción B es una parafrasis exacta de esta razón. Las demás opciones no tienen respaldo en el texto."
+  },
+  {
+    "id": "IN-002",
+    "materia": "Inglés",
+    "competencia": "Uso gramatical - Tiempos verbales",
+    "enunciado": "Choose the correct option to complete the sentence:\n\n«If I _____ more time yesterday, I would have visited my grandmother.»",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "have",
+      "B": "had",
+      "C": "will have",
+      "D": "having"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Esta es una oración condicional del tercer tipo (Third Conditional), que se usa para hablar de situaciones hipotéticas en el pasado. La estructura es: If + pasado perfecto (had + participio), would have + participio. Por lo tanto, la respuesta correcta es «had». La oración completa sería: «If I had had more time yesterday, I would have visited my grandmother.»"
+  },
+  {
+    "id": "IN-003",
+    "materia": "Inglés",
+    "competencia": "Vocabulario contextual",
+    "enunciado": "Choose the word that best completes the sentence:\n\n«The teacher asked the students to _____ their homework before Friday.»",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "submit",
+      "B": "permit",
+      "C": "omit",
+      "D": "commit"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "«Submit» significa «entregar» o «presentar», que es la acción lógica que un profesor pediría sobre una tarea. «Permit» significa «permitir», «omit» significa «omitir» y «commit» puede significar «comprometerse» o «cometer». En el contexto académico, «submit homework» (entregar la tarea) es la expresión correcta."
+  },
+  {
+    "id": "IN-004",
+    "materia": "Inglés",
+    "competencia": "Comprensión lectora",
+    "enunciado": "Read the text and answer:\n\n«Colombia is known for its incredible biodiversity. It is the second most biodiverse country in the world, after Brazil. The country has more than 1,900 species of birds, 456 species of mammals, and over 3,000 types of butterflies. The Amazon rainforest, the Andes mountains, and both the Pacific and Caribbean coasts create a wide variety of ecosystems.»\n\nAccording to the text, what makes Colombia so biodiverse?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Its large population of scientists studying animals",
+      "B": "The variety of ecosystems created by its diverse geography",
+      "C": "Its proximity to the United States",
+      "D": "The number of national parks created by the government"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El texto señala que «The Amazon rainforest, the Andes mountains, and both the Pacific and Caribbean coasts create a wide variety of ecosystems», es decir, la diversidad geográfica de Colombia (selva, montañas, dos costas) crea una gran variedad de ecosistemas, lo que explica su alta biodiversidad. Las demás opciones no se mencionan en el texto."
+  },
+  {
+    "id": "IN-005",
+    "materia": "Inglés",
+    "competencia": "Uso gramatical - Voz pasiva",
+    "enunciado": "Choose the correct passive form of the sentence:\n\n«They built this school in 2010.»",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "This school was built in 2010.",
+      "B": "This school is built in 2010.",
+      "C": "This school has been built in 2010.",
+      "D": "This school were built in 2010."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Para convertir una oración en pasado simple (built) a voz pasiva, se usa: sujeto + was/were + participio pasado. Como «school» es singular, se usa «was»: «This school was built in 2010.» La opción B usa presente simple (incorrecto porque la acción fue en el pasado), la C usa presente perfecto (cambia el significado) y la D usa «were» con sujeto singular (error de concordancia)."
+  },
+  {
+    "id": "CN-006",
+    "materia": "Ciencias Naturales",
+    "competencia": "Explicación de fenómenos (Biología)",
+    "enunciado": "Las células eucariotas se caracterizan por poseer un núcleo definido y delimitado por una membrana nuclear, a diferencia de las células procariotas.",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Las células eucariotas (del griego eu, 'bueno/verdadero', y karyon, 'núcleo') tienen su material genético rodeado por una doble membrana llamada envoltura nuclear, que define un núcleo celular organizado. Por el contrario, las células procariotas (como las bacterias) carecen de núcleo delimitado y su ADN está libre en el citoplasma."
+  },
+  {
+    "id": "CN-007",
+    "materia": "Ciencias Naturales",
+    "competencia": "Explicación de fenómenos (Química)",
+    "enunciado": "Observe la siguiente ecuación general que describe la fotosíntesis:\n\n![Ecuación de Fotosíntesis](https://upload.wikimedia.org/wikipedia/commons/e/eb/Photosynthesis_equation.svg)\n\n¿Cuáles son las sustancias reactivas que la planta absorbe del medio ambiente para llevar a cabo este proceso?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Oxígeno (O₂) y Glucosa (C₆H₁₂O₆)",
+      "B": "Dióxido de carbono (CO₂) y Agua (H₂O)",
+      "C": "Ozono (O₃) y Monóxido de carbono (CO)",
+      "D": "Glucosa (C₆H₁₂O₆) y Agua (H₂O)"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Según la ecuación general de la fotosíntesis: 6CO₂ + 6H₂O + Luz solar → C₆H₁₂O₆ + 6O₂. Las sustancias de la izquierda (los reactivos) que la planta absorbe son el Dióxido de carbono (CO₂) de la atmósfera y el Agua (H₂O) del suelo. La glucosa y el oxígeno son los productos resultantes."
+  }
+]

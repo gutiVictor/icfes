@@ -1,0 +1,519 @@
+/* ============================================
+   ICFES Saber 11 - Estilos Personalizados
+   ============================================ */
+
+/* Reset y base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+/* ===== Animaciones ===== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
+  }
+}
+
+@keyframes shakeX {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+@keyframes pulse-green {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+@keyframes progress-stripe {
+  0% { background-position: 1rem 0; }
+  100% { background-position: 0 0; }
+}
+
+/* ===== Clases de animación ===== */
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out both;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out both;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.4s ease-out both;
+  overflow: hidden;
+}
+
+.animate-shake {
+  animation: shakeX 0.5s ease-in-out;
+}
+
+.animate-pulse-green {
+  animation: pulse-green 1s ease-in-out;
+}
+
+/* ===== Opciones de respuesta ===== */
+
+.opcion-btn {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.dark .opcion-btn {
+  border-color: #374151;
+  background: #1f2937;
+}
+
+.opcion-btn:hover:not(:disabled):not(.opcion-correcta):not(.opcion-incorrecta):not(.opcion-revelada) {
+  border-color: #a5b4fc;
+  background: #eef2ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+}
+
+.dark .opcion-btn:hover:not(:disabled):not(.opcion-correcta):not(.opcion-incorrecta):not(.opcion-revelada) {
+  border-color: #6366f1;
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.opcion-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Opción seleccionada (antes de verificar) */
+.opcion-btn.opcion-seleccionada {
+  border-color: #6366f1;
+  background: #eef2ff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.dark .opcion-btn.opcion-seleccionada {
+  border-color: #6366f1;
+  background: rgba(99, 102, 241, 0.15);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Respuesta correcta */
+.opcion-btn.opcion-correcta {
+  border-color: #10b981 !important;
+  background: #ecfdf5 !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2) !important;
+}
+
+.dark .opcion-btn.opcion-correcta {
+  background: rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Respuesta incorrecta */
+.opcion-btn.opcion-incorrecta {
+  border-color: #ef4444 !important;
+  background: #fef2f2 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
+}
+
+.dark .opcion-btn.opcion-incorrecta {
+  background: rgba(239, 68, 68, 0.15) !important;
+}
+
+/* Respuesta correcta revelada (cuando el usuario eligió mal) */
+.opcion-btn.opcion-revelada {
+  border-color: #10b981 !important;
+  background: #ecfdf5 !important;
+  border-style: dashed !important;
+}
+
+.dark .opcion-btn.opcion-revelada {
+  background: rgba(16, 185, 129, 0.1) !important;
+}
+
+/* Letra de opción (A, B, C, D) */
+.opcion-letra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #6b7280;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.dark .opcion-letra {
+  background: #374151;
+  color: #9ca3af;
+}
+
+.opcion-seleccionada .opcion-letra {
+  background: #6366f1;
+  color: white;
+}
+
+.opcion-correcta .opcion-letra {
+  background: #10b981 !important;
+  color: white !important;
+}
+
+.opcion-incorrecta .opcion-letra {
+  background: #ef4444 !important;
+  color: white !important;
+}
+
+.opcion-revelada .opcion-letra {
+  background: #10b981 !important;
+  color: white !important;
+}
+
+/* ===== Botón de cantidad activo ===== */
+
+.cantidad-btn.active-mode {
+  border-color: #6366f1 !important;
+  background: #eef2ff !important;
+  color: #4f46e5;
+  font-weight: 700 !important;
+}
+
+.dark .cantidad-btn.active-mode {
+  border-color: #6366f1 !important;
+  background: rgba(99, 102, 241, 0.2) !important;
+  color: #a5b4fc;
+}
+
+/* ===== Modo btn activo (inicio) ===== */
+
+.modo-btn.active-mode .w-10 {
+  background: #6366f1 !important;
+  color: white !important;
+}
+
+/* ===== Feedback box ===== */
+
+.feedback-correcto {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+}
+
+.dark .feedback-correcto {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.feedback-incorrecto {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.dark .feedback-incorrecto {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+/* ===== Barras de progreso de materia (resultados) ===== */
+
+.barra-materia-track {
+  height: 14px;
+  background: #f3f4f6;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.dark .barra-materia-track {
+  background: #1f2937;
+}
+
+.barra-materia-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 1s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.barra-materia-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: progress-stripe 1.5s linear infinite;
+}
+
+.barra-verde { background: linear-gradient(90deg, #10b981, #34d399); }
+.barra-amarilla { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.barra-roja { background: linear-gradient(90deg, #ef4444, #f87171); }
+
+/* ===== Semaforo badge ===== */
+
+.semaforo-verde {
+  color: #10b981;
+  background: #ecfdf5;
+}
+
+.dark .semaforo-verde {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.15);
+}
+
+.semaforo-amarillo {
+  color: #d97706;
+  background: #fffbeb;
+}
+
+.dark .semaforo-amarillo {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.15);
+}
+
+.semaforo-rojo {
+  color: #dc2626;
+  background: #fef2f2;
+}
+
+.dark .semaforo-rojo {
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.15);
+}
+
+/* ===== Select estilizado ===== */
+
+select:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* ===== Scrollbar personalizado ===== */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+/* ===== Responsive touch target (móvil) ===== */
+
+@media (max-width: 640px) {
+  .opcion-btn {
+    padding: 14px 14px;
+    gap: 10px;
+    border-radius: 14px;
+  }
+
+  .opcion-letra {
+    width: 30px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+
+  .cantidad-btn {
+    padding: 12px 8px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== Transición suave para pantallas ===== */
+
+#pantalla-inicio,
+#pantalla-quiz,
+#pantalla-resultados {
+  transition: opacity 0.3s ease;
+}
+
+/* ===== Confetti effect (placeholder) ===== */
+
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* ===== Ocultar scrollbar en carousel si se necesita ===== */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ===== Clases adicionales para nuevas funcionalidades ===== */
+
+/* Estilo del selector de temporizador */
+.timer-opt-btn {
+  border-width: 2px;
+  transition: all 0.2s ease;
+}
+.timer-opt-btn.active-mode {
+  border-color: #6366f1 !important;
+  background: #eef2ff !important;
+  color: #4f46e5;
+  font-weight: 700;
+}
+.dark .timer-opt-btn.active-mode {
+  border-color: #6366f1 !important;
+  background: rgba(99, 102, 241, 0.2) !important;
+  color: #a5b4fc;
+}
+
+/* Modo Medicina - Color diferenciado para enfatizar salud */
+.modo-btn#modo-medicina.active-mode {
+  border-color: #ec4899 !important;
+  background: #fdf2f8 !important;
+}
+.dark .modo-btn#modo-medicina.active-mode {
+  border-color: #ec4899 !important;
+  background: rgba(236, 72, 153, 0.15) !important;
+}
+.modo-btn#modo-medicina.active-mode .w-10 {
+  background: #ec4899 !important;
+  color: white !important;
+}
+
+/* Grid de 2 columnas para Verdadero/Falso */
+.opciones-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+@media (max-width: 640px) {
+  .opciones-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+/* Imágenes dentro del enunciado */
+.enunciado-img-container {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+  width: 100%;
+}
+.dark .enunciado-img-container {
+  background: #1f2937;
+  border-color: #374151;
+}
+.enunciado-img {
+  max-height: 220px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.enunciado-img:hover {
+  transform: scale(1.02);
+  cursor: zoom-in;
+}
+
+/* Barra de temporizador regresivo de pregunta */
+.timer-pulse-critical {
+  animation: timerPulse 1s infinite alternate;
+  color: #ef4444 !important;
+}
+@keyframes timerPulse {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0.8; transform: scale(1.05); }
+}
