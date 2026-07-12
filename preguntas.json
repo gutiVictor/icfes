@@ -6752,6 +6752,1345 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+        
+  {
+    "id": "CN-300",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Ósmosis y Plasmólisis",
+    "enunciado": "El proceso de ósmosis ocurre cuando el agua se desplaza a través de la membrana celular desde una región de menor concentración de soluto hacia una de mayor concentración. En ambientes salinos, esto provoca la retracción del citoplasma, fenómeno conocido como plasmólisis. Un grupo de estudiantes evaluó la tasa de ósmosis en células de cebolla expuestas a diferentes concentraciones de sal. Los resultados mostraron que a 0,5% de sal no hay retracción; a 1,0% retracción moderada; a 2,0% retracción notable; a 5,0% retracción severa. ¿Qué pasaría con las células si la temperatura se incrementa a 37 °C durante el experimento?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Todas las células presentarían un citoplasma con una retracción ligera.",
+      "B": "Las células presentarían un citoplasma con una retracción moderada.",
+      "C": "Todas las células presentarían un citoplasma con una retracción severa.",
+      "D": "Las células presentarían un citoplasma con una expansión fuerte."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Al aumentar la temperatura, aumenta la energía cinética de las moléculas de agua y, con ello, la presión osmótica, lo que provoca una retracción más severa del citoplasma en todas las concentraciones."
+  },
+  {
+    "id": "CN-301",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Proteínas y Tejidos",
+    "enunciado": "El colágeno tipo 1 es una proteína que se encuentra en forma de fibras en huesos y tendones. Su función principal es brindar soporte estructural. Para su síntesis, el ADN se transcribe a ARN que a su vez es traducido para formar las cadenas de aminoácidos que, en el medio extracelular, serán modificados para conformar las fibras de colágeno. ¿Qué le sucederá a los huesos de una persona cuando la síntesis de esa proteína falla reduciendo la cantidad de colágeno producido?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La persona sufrirá un endurecimiento de los huesos disminuyendo su movilidad.",
+      "B": "El sistema inmune de la persona atacará por error a los huesos sanos.",
+      "C": "La persona tendrá un exceso en sus huesos, sin poder formar fibras, haciéndolos débiles y frágiles.",
+      "D": "La persona tendrá huesos muy frágiles que se fracturan con facilidad y repetidamente."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "El colágeno es esencial para la estructura ósea. Su deficiencia causa huesos frágiles que se fracturan fácilmente, como ocurre en la osteogénesis imperfecta."
+  },
+  {
+    "id": "CN-302",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Microbiología y Relaciones Ecológicas",
+    "enunciado": "Las bacterias Lactobacillus casei viven en las paredes vaginales, las cuales les proporcionan un hábitat cálido y lleno de nutrientes. Además, estas bacterias promueven un ambiente ácido en la vagina evitando el crecimiento de microorganismos patógenos para las mujeres. Al respecto, algunas mujeres presentan repetidos episodios de infecciones vaginales, ya que ciertos hongos y bacterias patógenos segregan sustancias que disminuyen el ambiente ácido de las paredes vaginales. ¿Cómo ha propiciado la bacteria L. casei la evolución de estos hongos y bacterias patógenos?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Ayudando a los hongos y bacterias patógenos a colonizar de manera adecuada las paredes vaginales.",
+      "B": "Promoviendo en los hongos y bacterias patógenos la evolución de estrategias que permitan sobrevivir al ambiente ácido.",
+      "C": "Aumentando la competencia entre los hongos y las bacterias por crecer en la pared vaginal, sin importar el tipo de ambiente.",
+      "D": "Previniendo las infecciones de otros individuos de L. casei, para que los hongos aumenten en número."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La presión selectiva del ambiente ácido creado por L. casei ha llevado a los patógenos a desarrollar mecanismos de resistencia a la acidez para poder sobrevivir y colonizar el nicho."
+  },
+  {
+    "id": "CN-303",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Neurobiología",
+    "enunciado": "La serotonina es un neurotransmisor que transmite mensajes entre células nerviosas actuando como regulador del estado de ánimo. Cuando se encuentra en bajas concentraciones, genera ansiedad y depresión. Un investigador evalúa algunos compuestos estructuralmente similares a la serotonina para tratar la ansiedad. Estos compuestos sobreestimulan el cerebro, a concentraciones bajas, y se unen a los receptores neuronales simulando una concentración normal de serotonina. El investigador ensaya un compuesto llamado psicolibina por sus buenos resultados a bajas concentraciones de serotonina. Teniendo en cuenta la información, ¿qué sucederá si una persona con niveles normales de serotonina consume psicolibina?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La persona se deprimirá aún más, debido al exceso de psicolibina en el organismo y a la ausencia de serotonina, agravando su condición.",
+      "B": "La persona tendrá un trastorno en su conducta habitual, debido al exceso de sustancias que regulan el comportamiento.",
+      "C": "La persona no tendrá ningún cambio en su comportamiento habitual, pues sus niveles de serotonina son los normales.",
+      "D": "La persona no sabrá cómo comportarse, debido a que consumió psicolibina a pesar de tener concentraciones normales de serotonina en su cuerpo."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La psicolibina sobreestimula los receptores de serotonina al unirse a ellos y simular una concentración más alta de serotonina. En una persona con niveles normales de serotonina, esto resulta en una sobrestimulación que altera la percepción, el estado de ánimo y la conducta."
+  },
+  {
+    "id": "CN-304",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Sistema Endocrino",
+    "enunciado": "El páncreas es un órgano que produce dos hormonas, insulina y glucagón, para regular la concentración de glucosa en la sangre. Así, cuando los niveles de glucosa aumentan en la sangre, el páncreas inhibe la producción de glucagón y aumenta la secreción de insulina; cuando el nivel de glucosa disminuye en la sangre, el páncreas aumenta la secreción de glucagón y disminuye la de insulina. Con base a la información anterior, el modelo que representaría esta acción hormonal en un individuo sin ninguna enfermedad que acaba de consumir un alimento con una alta concentración de glucosa es:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Aumenta la insulina y disminuye el glucagón.",
+      "B": "Disminuye la insulina y aumenta el glucagón.",
+      "C": "Aumenta tanto la insulina como el glucagón.",
+      "D": "Disminuye tanto la insulina como el glucagón."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Después de consumir un alimento con alta concentración de glucosa, el nivel de glucosa en sangre aumenta. Esto estimula al páncreas para que aumente la secreción de insulina (que ayuda a que las células absorban la glucosa) e inhiba la secreción de glucagón (que eleva la glucosa en sangre)."
+  },
+  {
+    "id": "CN-305",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Ecosistemas y Relaciones Tróficas",
+    "enunciado": "La imagen muestra algunas de las relaciones ecológicas que se presentan en un bosque húmedo. En uno de estos bosques ha aumentado la caza de primates, lo que ha ocasionado la disminución en su número. ¿Qué efecto tiene esta situación sobre el ecosistema?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Aumento en la abundancia de plántulas, porque los primates dejan de consumir las semillas de los árboles frutales.",
+      "B": "Disminución en la generación de plántulas, porque hay disminución en la abundancia de materia fecal para los escarabajos.",
+      "C": "Aumento en la germinación de las semillas, porque más escarabajos entierran las semillas protegiéndolas de la depredación.",
+      "D": "Disminución en la abundancia de escarabajos, porque el número de semillas necesarias para su alimentación disminuye."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "Los primates son importantes dispersores de semillas. Al disminuir su población, se reduce la cantidad de semillas disponibles y, por lo tanto, la cantidad de alimento para los escarabajos que dependen de ellas, disminuyendo su población."
+  },
+  {
+    "id": "CN-306",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Genética",
+    "enunciado": "A partir de un cruzamiento entre dos ratones amarillos, se obtienen los siguientes resultados en la descendencia: ratones amarillos y ratones no amarillos. Teniendo en cuenta que el alelo amarillo (Y) al presentarse en homocigosis (YY) causa la muerte temprana del ratón, ¿cuáles son los genotipos de los padres?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Ambos heterocigotos.",
+      "B": "Ambos homocigotos.",
+      "C": "Padre homocigoto recesivo y madre homocigota dominante.",
+      "D": "Padre heterocigoto y madre homocigota dominante."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Si el alelo Y en homocigosis (YY) es letal, los ratones amarillos deben ser heterocigotos (Yy). Al cruzar dos ratones amarillos (Yy × Yy), la descendencia esperada sería: YY (letal, no nace), Yy (amarillo), y yy (no amarillo). La proporción entre amarillos y no amarillos sería 2:1, lo que coincide con lo observado."
+  },
+  {
+    "id": "CN-307",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Enlaces Químicos",
+    "enunciado": "La electronegatividad es la capacidad que tiene un átomo para atraer electrones. Este valor puede utilizarse para determinar qué tipo de enlace están formando dos átomos en una molécula; así, si la diferencia de electronegatividad entre los dos átomos que forman el enlace es mayor a 1,7, se dice que el enlace es de tipo iónico; si la diferencia es menor, se dice que el enlace es covalente. En la tabla se muestran varios átomos con su respectivo valor de electronegatividad: Z=2,1; X=0,7; Y=0,9; W=3,0. Con base en la información anterior, ¿cuál o cuáles de los siguientes enlaces son iónicos?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Z-W y X-Y",
+      "B": "X-W",
+      "C": "X-W y Z-X",
+      "D": "Z-W"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Calculando las diferencias de electronegatividad: Z-W = |2,1 - 3,0| = 0,9 (covalente); X-Y = |0,7 - 0,9| = 0,2 (covalente); X-W = |0,7 - 3,0| = 2,3 (iónico); Z-X = |2,1 - 0,7| = 1,4 (covalente polar). Por lo tanto, solo el enlace X-W es iónico."
+  },
+  {
+    "id": "CN-308",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Solubilidad",
+    "enunciado": "La solubilidad en agua representa la máxima cantidad de un compuesto que se disuelve en 100 g de agua a una temperatura dada. La gráfica muestra la variación de la solubilidad del KNO₃ con la temperatura. La línea curva de la gráfica representa la cantidad de KNO₃ máxima que se disuelve a una determinada temperatura para formar una disolución saturada. Cuando se adicionan cantidades de KNO₃ por debajo del máximo, se forma una disolución insaturada. De acuerdo con la información anterior, si a 20 °C se tiene una disolución preparada con 20 gramos de KNO₃ en 100 gramos de agua, ¿qué tipo de solución se obtiene?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Insaturada, porque a 10 °C se disuelven 80 gramos de KNO₃ en 100 gramos de agua.",
+      "B": "Saturada, porque a 20 °C se pueden disolver máximo 20 gramos de KNO₃ en 100 gramos de agua.",
+      "C": "Insaturada, porque a 20 °C se pueden disolver más de 20 gramos de KNO₃ en 100 gramos de agua.",
+      "D": "Saturada, porque a 10 °C se disuelven 40 gramos de KNO₃ en 100 gramos de agua."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La solubilidad del KNO₃ a 20 °C es de aproximadamente 32 g por 100 g de agua (según la gráfica típica de solubilidad). Como solo se agregaron 20 g de soluto, que es menos de la cantidad máxima que se puede disolver, la solución es insaturada."
+  },
+  {
+    "id": "CN-309",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Métodos de Separación",
+    "enunciado": "Un estudiante tiene una mezcla homogénea de etanol (CH₃CH₂OH) y agua (H₂O). Para separar sus componentes, se cuenta con diferentes métodos. ¿Cuál de estos métodos es el más adecuado para obtener por separado todos los componentes de la mezcla?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Decantación",
+      "B": "Evaporación",
+      "C": "Filtración",
+      "D": "Destilación"
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "El etanol y el agua son dos líquidos miscibles (se mezclan en cualquier proporción) que tienen diferentes puntos de ebullición (etanol: 78,4 °C; agua: 100 °C). La destilación es el método adecuado para separar líquidos miscibles con diferentes puntos de ebullición, ya que permite evaporar y condensar cada componente por separado."
+  },
+  {
+    "id": "CN-310",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Estequiometría",
+    "enunciado": "La producción de ácido clorhídrico (HCl) puede llevarse a cabo por medio de la siguiente reacción química: 2NaCl + H₂SO₄ → Na₂SO₄ + 2HCl. Según lo anterior, ¿qué tipo de reacción ocurre en la producción de HCl?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Reacción de combustión.",
+      "B": "Reacción de síntesis.",
+      "C": "Reacción de sustitución doble.",
+      "D": "Reacción de descomposición."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "En la reacción, el NaCl y el H₂SO₄ intercambian iones: el Na⁺ se combina con el SO₄²⁻ para formar Na₂SO₄, y el H⁺ se combina con el Cl⁻ para formar HCl. Este intercambio de iones entre dos compuestos se llama reacción de sustitución doble o metátesis."
+  },
+  {
+    "id": "CN-311",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Termodinámica",
+    "enunciado": "Un estudiante introduce tres cucharas de diferentes materiales, con temperatura inicial de 10 °C cada una, dentro de un recipiente con agua a 50 °C. Después de dos minutos, el estudiante observa que las cucharas tienen diferentes temperaturas y concluye que la cuchara 3 es mejor conductora térmica que las otras dos. ¿Por qué la temperatura inicial de las cucharas debe ser la misma?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Porque permite comparar el aumento de temperatura del agua.",
+      "B": "Porque el agua disminuye la temperatura de las tres cucharas.",
+      "C": "Porque las tres cucharas se introducen en un solo recipiente.",
+      "D": "Porque permite comparar el aumento de temperatura de cada cuchara."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "Para comparar la conductividad térmica de diferentes materiales, las condiciones iniciales deben ser iguales, incluyendo la temperatura inicial de las cucharas. De esta manera, se puede atribuir cualquier diferencia en la temperatura final a la conductividad del material y no a condiciones iniciales diferentes."
+  },
+  {
+    "id": "CN-312",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Mecánica",
+    "enunciado": "Un deportista se sostiene de una cuerda, como se muestra en la figura. El deportista permanece quieto, pues la tensión de la cuerda y su peso se cancelan. ¿Por qué se cancelan la tensión de la cuerda y el peso del deportista?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Porque la tensión de la cuerda va hacia la derecha y el peso del deportista va hacia la izquierda.",
+      "B": "Porque la tensión de la cuerda y el peso del deportista van hacia abajo.",
+      "C": "Porque la tensión de la cuerda y el peso del deportista van hacia arriba.",
+      "D": "Porque la tensión de la cuerda va hacia arriba y el peso del deportista va hacia abajo."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "Para que el deportista esté en equilibrio estático, la suma de todas las fuerzas que actúan sobre él debe ser cero. La tensión de la cuerda actúa hacia arriba y el peso (fuerza gravitacional) actúa hacia abajo. Ambas fuerzas son de igual magnitud y dirección opuesta, por lo que se cancelan."
+  },
+  {
+    "id": "CN-313",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Energía",
+    "enunciado": "Un arquero coloca la flecha sobre la cuerda y hala esta una cierta distancia para tensar el arco, como se muestra en la imagen. Al soltar la cuerda, la flecha viaja por el aire y penetra el blanco, haciendo que aumente la temperatura del blanco y de la flecha. De acuerdo con lo anterior, ¿cuáles son las formas de energía presentes en el proceso descrito?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Energía potencial gravitacional, energía lumínica, energía cinética y energía térmica.",
+      "B": "Energía potencial elástica, energía cinética, energía potencial gravitacional y energía térmica.",
+      "C": "Energía potencial gravitacional, energía química, energía cinética y energía lumínica.",
+      "D": "Energía potencial elástica, energía química, energía cinética y energía potencial gravitacional."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El proceso incluye: energía potencial elástica (cuando se tensa el arco), energía cinética (cuando la flecha se mueve), energía potencial gravitacional (cuando la flecha está elevada), y energía térmica (cuando la flecha impacta el blanco y aumenta la temperatura)."
+  },
+  {
+    "id": "CN-314",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Termodinámica",
+    "enunciado": "Un estudiante modela el flujo de calor entre dos objetos (P y Q) a partir de una analogía con el movimiento del agua contenida en dos recipientes. En el modelo, el nivel del líquido representará la temperatura y la cantidad de líquido representará la energía térmica (que se puede transferir como calor). Según el modelo, si se colocan dos objetos de diferentes tamaños (Volumen Q > Volumen P) y temperaturas (Temperatura P > Temperatura Q), ¿cómo será el flujo del calor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "De Q a P porque fluiría del cuerpo con mayor calor al cuerpo con menor calor.",
+      "B": "De P a Q porque fluiría del cuerpo con mayor temperatura al cuerpo con menor temperatura.",
+      "C": "De P a Q porque fluiría del cuerpo con menor temperatura al cuerpo con mayor temperatura.",
+      "D": "De Q a P porque fluiría del cuerpo con menor calor al cuerpo con mayor calor."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El calor siempre fluye del cuerpo de mayor temperatura al de menor temperatura, independientemente de la cantidad de energía térmica que cada uno contenga. En este caso, como Temperatura P > Temperatura Q, el calor fluirá de P a Q."
+  },
+  {
+    "id": "CN-315",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Mecánica",
+    "enunciado": "Un ciclista salta de una rampa en dos ocasiones y cae sobre una superficie inclinada. En cada ocasión cae con diferente velocidad. Teniendo en cuenta que al momento de llegar a la superficie inclinada el ciclista debe mantener la cantidad de movimiento, para evitar un choque fuerte y caer, ¿cuál de las siguientes predicciones puede obtenerse teniendo en cuenta el modelo anterior?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "En el primer salto el ciclista tendrá menor probabilidad de caer, porque la posición de llegada a la superficie será de menor contacto, minimizando la fricción con el suelo.",
+      "B": "En ambos saltos es altamente probable que se caiga el ciclista, porque la posición ideal para la bicicleta es tocar el suelo de manera perpendicular al mismo.",
+      "C": "En el segundo salto el ciclista tendrá menos probabilidad de caer, porque al ir paralelo a la superficie del suelo se evitan cambios bruscos en la cantidad de movimiento.",
+      "D": "En ambos saltos llegará el ciclista a la superficie del suelo sin inconveniente alguno, porque la fricción es la misma en ambos saltos, conservando su cantidad de movimiento."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Cuando la velocidad del ciclista es paralela a la superficie de caída, el cambio en la cantidad de movimiento es menos abrupto, lo que reduce la probabilidad de caer. En el segundo salto, el ciclista está más alineado con la superficie inclinada, lo que hace que la transición sea más suave."
+  },
+  {
+    "id": "CN-316",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Ecología y Contaminación",
+    "enunciado": "El DDT es una sustancia química contaminante y bioacumulable que se usó en el pasado como control de plagas de mosquitos y de otros insectos. La bioacumulación es un proceso de depósito gradual de una sustancia química en el organismo de un ser vivo, y puede dar lugar a la biomagnificación de la sustancia química a lo largo de la cadena trófica. Teniendo en cuenta la información anterior, ¿por qué se prohibió la venta de DDT en todo el mundo?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Porque se transmitía a las personas por medio de las picaduras de los mosquitos y otros insectos causando la muerte.",
+      "B": "Porque terminaba acumulándose en los organismos de las personas y las perjudicaba seriamente en su salud.",
+      "C": "Porque acababa con todos los organismos presentes en los medios acuáticos y terrestres.",
+      "D": "Porque permanecía en el medio acuático y terrestre de manera indefinida."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El DDT se acumula en los tejidos grasos de los organismos (bioacumulación) y se biomagnifica en la cadena alimentaria, causando graves daños a la salud y al ecosistema. Por esta razón, su uso fue prohibido a nivel mundial."
+  },
+  {
+    "id": "CN-317",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Enlaces Químicos",
+    "enunciado": "El cloruro de sodio (NaCl) es un ejemplo de un enlace iónico. En este tipo de enlaces, el sodio cede el electrón de su capa más externa a la capa más externa del cloro. Los electrones tienen carga negativa. De acuerdo con lo anterior, cuando se forma el NaCl, ¿cuáles serán los estados de oxidación para el Na y el Cl?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Na⁺ y Cl⁻",
+      "B": "Na⁰ y Cl⁰",
+      "C": "Na⁺ y Cl⁻",
+      "D": "Na⁺ y Cl⁻"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El sodio (Na) tiene 1 electrón en su capa más externa, que cede para alcanzar estabilidad, quedando con carga positiva (Na⁺). El cloro (Cl) tiene 7 electrones en su capa más externa y necesita 1 electrón para completar el octeto, por lo que gana el electrón cedido por el sodio, quedando con carga negativa (Cl⁻)."
+  },
+  {
+    "id": "CN-318",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Ecosistemas y Clima",
+    "enunciado": "El permafrost es una capa subterránea de suelo congelado que constituye un reservorio de más o menos el doble del carbono que se encuentra actualmente en la atmósfera. Debido al cambio climático, esta capa se ha ido descongelando a un ritmo muy acelerado y, con ello, se están liberando enormes cantidades de carbono a la atmósfera en forma de dióxido de carbono y gas metano. De acuerdo con lo anterior, ¿qué consecuencias podría traer para el equilibrio del ambiente o de los organismos una mayor liberación de carbono a la atmósfera?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Que, al derretirse la capa de permafrost, quede mayor cantidad de suelo no congelado, y que este pueda ser utilizado en actividades humanas como la agricultura.",
+      "B": "Que, al liberarse mayores cantidades de carbono, los seres vivos lo puedan asimilar, y de esta manera se disminuya la cantidad de carbono en la atmósfera.",
+      "C": "Que, al derretirse la capa de permafrost, se acelere el cambio climático debido a una mayor cantidad de gases de efecto invernadero en la atmósfera.",
+      "D": "Que, al liberarse mayores cantidades de carbono a la atmósfera, aumenten los depósitos de carbono que pueden ser utilizados por los seres humanos."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Al liberarse grandes cantidades de carbono a la atmósfera en forma de CO₂ y metano (gases de efecto invernadero), se acelera el calentamiento global, lo que a su vez provoca más deshielo y liberación de carbono, creando un ciclo de retroalimentación positiva."
+  },
+  {
+    "id": "CN-319",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Electricidad",
+    "enunciado": "Un objeto de carga eléctrica positiva q se coloca junto a otros dos objetos. Q1 tiene carga eléctrica positiva y Q2, carga eléctrica negativa, ambas de la misma magnitud. La distancia d que los separa de q es la misma. ¿Cuál de los siguientes esquemas representa adecuadamente la dirección de la fuerza total sobre q?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Hacia la izquierda.",
+      "B": "Hacia la derecha.",
+      "C": "Hacia arriba.",
+      "D": "Hacia abajo."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La carga q (positiva) es repelida por Q1 (positiva) y atraída por Q2 (negativa). Como ambas fuerzas actúan en dirección opuesta y Q1 y Q2 tienen la misma magnitud y están a la misma distancia de q, la fuerza neta sobre q se dirige hacia la izquierda (hacia Q2)."
+  },
+  {
+    "id": "CN-320",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Polinización",
+    "enunciado": "Las plantas con flores han desarrollado una simbiosis con animales que actúan como polinizadores, los cuales transportan el polen que se les adhiere a su cuerpo mientras se alimentan del néctar. El polen se transporta a otras flores de la misma especie cuando los polinizadores vuelven a alimentarse. En este proceso pueden recorrer grandes distancias. Esta relación mutualista se ha diversificado en muchas especies de plantas. ¿Cuál es una de las razones que explica esta diversificación del mutualismo entre las plantas con flor y los polinizadores?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los polinizadores llegan a nuevos ecosistemas que las plantas han colonizado.",
+      "B": "El néctar de las plantas garantiza la reproducción de los polinizadores.",
+      "C": "Los polinizadores aseguran el intercambio genético entre las plantas de la misma especie.",
+      "D": "El néctar de las plantas garantiza que la planta produzca polen para el alimento de los polinizadores."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Los polinizadores transportan polen entre flores de la misma especie, asegurando el flujo genético y la diversificación de las plantas. Este intercambio genético es fundamental para la variabilidad y adaptación de las especies vegetales."
+  },
+  {
+    "id": "CN-321",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Clasificación de los Seres Vivos",
+    "enunciado": "La clasificación de los organismos vivos en grupos ha permitido entender cómo ha evolucionado la vida. En la tabla se muestra cómo ha cambiado en el tiempo el número de reinos que la ciencia ha reconocido para clasificar a los seres vivos. ¿Por qué durante el tiempo ha cambiado el número de reinos descritos?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Porque ha aumentado la reproducción de los organismos en la Tierra, y esto ha generado un mayor esfuerzo en la clasificación.",
+      "B": "Porque ha aumentado el número de especies descritas, lo cual ha incrementado el número de grupos por estudiar y clasificar.",
+      "C": "Porque se debe aumentar una unidad en los reinos, aproximadamente cada 70 años, para ayudar al avance de la ciencia.",
+      "D": "Porque se debe aumentar el número de especies para ayudar a que más científicos sigan clasificando a los organismos."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El número de reinos ha cambiado porque el descubrimiento y descripción de nuevas especies ha revelado una mayor diversidad biológica, lo que ha llevado a los científicos a reorganizar los sistemas de clasificación para reflejar mejor las relaciones evolutivas."
+  },
+  {
+    "id": "CN-322",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Mezclas",
+    "enunciado": "Una estudiante plantea como hipótesis que si el aceite no se mezcla con ciertas sustancias, estas deben ser similares entre sí. Para corroborarlo, decide realizar ensayos con agua, vinagre, alcohol y aceite, mezclándolos entre sí, obteniendo los resultados: Agua y etanol (Sí), Agua y vinagre (Sí), Vinagre y etanol (Sí), Aceite y etanol (No), Aceite y vinagre (No). La estudiante afirma que las moléculas de agua, etanol y vinagre son semejantes entre sí, porque ninguna de estas sustancias se mezcla con el aceite. Según los resultados y la hipótesis planteada, ¿esta afirmación es una evidencia o una conclusión?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Una conclusión, ya que a partir de los resultados se infiere que el agua, el etanol y el vinagre son semejantes.",
+      "B": "Una evidencia, ya que solo una parte de los resultados muestra que el agua, el etanol y el vinagre no se mezclan.",
+      "C": "Una conclusión, ya que a partir de los resultados se infiere que el agua, el etanol y el vinagre no se mezclan.",
+      "D": "Una evidencia, ya que solo una parte de los resultados muestra que el agua, el etanol y el vinagre se mezclan con el aceite."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La afirmación de que el agua, el etanol y el vinagre son semejantes entre sí es una conclusión, ya que se deriva de la observación de que estas tres sustancias se mezclan entre sí (evidencia) y ninguna se mezcla con el aceite. La estudiante infiere la semejanza a partir de los resultados experimentales."
+  },
+  {
+    "id": "CN-323",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Energía",
+    "enunciado": "Se tiene una masa atada a un resorte. En este sistema la energía total no cambia pero durante el movimiento se comparte entre el resorte y la masa. Al estirar el resorte, la energía entra en el sistema y se acumula en forma de energía potencial elástica; cuando se suelta, la energía se transfiere a la masa en forma de energía cinética, y la masa se mueve hacia el punto de equilibrio, luego la masa devuelve la energía al resorte y lo comprime. El proceso se repite y genera que la masa oscile alrededor del punto de equilibrio. Si se mide el tiempo desde el instante en que el resorte está estirado y se suelta, ¿cuál gráfica representa el cambio de la energía cinética (Ec) y la energía potencial elástica (Ep), en función del tiempo?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La energía cinética y potencial elástica son constantes.",
+      "B": "La energía cinética aumenta mientras la potencial elástica disminuye.",
+      "C": "La energía cinética y potencial elástica oscilan de manera complementaria.",
+      "D": "La energía cinética y potencial elástica disminuyen gradualmente."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "En un sistema masa-resorte sin fricción (oscilador armónico simple), la energía total se conserva. La energía cinética es máxima en el punto de equilibrio y cero en los extremos; la energía potencial elástica es máxima en los extremos y cero en el equilibrio. Ambas energías oscilan de manera complementaria (desfasadas 90°), intercambiándose continuamente."
+  },
+  {
+    "id": "CN-324",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Propiedades de Alcanos",
+    "enunciado": "Unos estudiantes miden el punto de ebullición de algunos alcanos lineales y lo relacionan con el número de carbonos que contienen en su estructura. Ellos saben que al aumentar el número de carbonos en los alcanos, algunas de sus propiedades también aumentan, como su punto de fusión y ebullición. Los estudiantes olvidaron ponerle los nombres a los ejes. De acuerdo con la información anterior, ¿cuáles son los rótulos adecuados para el título y los ejes?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Título: Punto de fusión de alcanos lineales. Eje y: Número de carbonos. Eje x: Temperatura (°C).",
+      "B": "Título: Punto de ebullición de alcanos lineales. Eje y: Temperatura (°C). Eje x: Número de carbonos.",
+      "C": "Título: Punto de fusión de alcanos lineales. Eje y: Temperatura (°C). Eje x: Número de carbonos.",
+      "D": "Título: Punto de ebullición de alcanos lineales. Eje y: Número de carbonos. Eje x: Temperatura (°C)."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Los estudiantes midieron el punto de ebullición (propiedad física) en función del número de carbonos (variable independiente). Por lo tanto, el título debe ser 'Punto de ebullición de alcanos lineales', el eje y (variable dependiente) debe ser 'Temperatura (°C)' y el eje x (variable independiente) debe ser 'Número de carbonos'."
+  },
+  {
+    "id": "CN-325",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Clasificación de Sustancias",
+    "enunciado": "Un estudiante encuentra la siguiente información sobre clasificación de sustancias: Elementos: Sustancias que no pueden descomponerse en otras más simples; se componen de átomos iguales sin enlazar. Compuestos: sustancias que pueden descomponerse en otras más simples; están formados por dos o más átomos enlazados. Mezclas: sustancias que pueden descomponerse en otras más simples; están formadas por dos o más componentes no enlazados. Teniendo en cuenta la información anterior, ¿cuál o cuáles de las sustancias son un compuesto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Únicamente la sustancia T.",
+      "B": "Las sustancias Q y Z.",
+      "C": "Las sustancias Q y T.",
+      "D": "Únicamente la sustancia Z."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Los compuestos están formados por dos o más átomos enlazados. Las sustancias Q y Z presentan esta característica, mientras que las otras sustancias son elementos o mezclas según la clasificación dada."
+  },
+  {
+    "id": "CN-326",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Cinemática",
+    "enunciado": "La tabla muestra la rapidez de descenso de un paracaidista como función del tiempo: 0,00s → 0,0 m/s; 0,25s → 2,5 m/s; 0,50s → 5,0 m/s; 0,75s → 7,5 m/s; 1,00s → 10,0 m/s; 1,25s → 10,0 m/s; 1,50s → 10,0 m/s. Teniendo en cuenta la información anterior, ¿cuál será la rapidez del paracaidista a los 3,00 s?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "10,0 m/s.",
+      "B": "15,0 m/s.",
+      "C": "20,0 m/s.",
+      "D": "30,0 m/s."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Los datos muestran que la rapidez del paracaidista se estabiliza en 10,0 m/s a partir de 1,00 s, alcanzando la velocidad terminal. Por lo tanto, a los 3,00 s la rapidez se mantiene constante en 10,0 m/s."
+  },
+  {
+    "id": "CN-327",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Colágeno",
+    "enunciado": "El colágeno tipo 1 es una proteína que se encuentra en forma de fibras en huesos y tendones. Su función principal es brindar soporte estructural. Para su síntesis, el ADN se transcribe a ARN que a su vez es traducido para formar las cadenas de aminoácidos que, en el medio extracelular, serán modificados para conformar las fibras de colágeno. ¿Qué le sucederá a los huesos de una persona cuando la síntesis de esa proteína falla reduciendo la cantidad de colágeno producido?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La persona sufrirá un endurecimiento de los huesos disminuyendo su movilidad.",
+      "B": "El sistema inmune de la persona atacará por error a los huesos sanos.",
+      "C": "La persona tendrá un exceso en sus huesos, sin poder formar fibras, haciéndolos débiles y frágiles.",
+      "D": "La persona tendrá huesos muy frágiles que se fracturan con facilidad y repetidamente."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "El colágeno es esencial para la estructura ósea. Su deficiencia causa huesos frágiles que se fracturan fácilmente, como en la enfermedad de osteogénesis imperfecta."
+  },
+  {
+    "id": "CN-328",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Calorimetría",
+    "enunciado": "Una práctica de laboratorio de calorimetría consiste en hallar el calor específico del hierro (Chierro), midiendo la masa y la temperatura inicial del hierro para luego introducirlo en agua, cuya masa y temperatura se conocen previamente. Posteriormente, se espera a que alcancen el equilibrio térmico (igual temperatura) y, para finalizar, se introducen los datos anteriores en la ecuación: magua × 1 cal/g°C × (Tinicial agua - Tfinal agua) = mhierro × Chierro × (Tfinal hierro - Tinicial hierro). Un estudiante propone cuatro tablas de datos para recoger la información. ¿Cuál de las siguientes tablas es la que le permite recoger los datos de una forma más adecuada?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Sustancia | Masa (g) | Calor específico (cal/g°C) | Temperatura final (°C) | Temperatura inicial (°C)",
+      "B": "Sustancia | Masa inicial (g) | Masa final (g) | Temperatura final (°C) | Densidad (g/cm³)",
+      "C": "Sustancia | Masa (g) | Calor específico (cal/g°C) | Variación de Temperatura (°C) | Temperatura Ambiente (°C)",
+      "D": "Sustancia | Volumen (cm³) | Densidad (g/cm³) | Masa (g) | Temperatura inicial (°C)"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Para calcular el calor específico del hierro, se necesitan la masa, las temperaturas inicial y final (para calcular el cambio de temperatura), y el calor específico conocido del agua. La tabla A contiene exactamente estos datos organizados de manera adecuada para el experimento de calorimetría."
+  },
+  {
+    "id": "CN-329",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Reacciones Químicas",
+    "enunciado": "La siguiente tabla presenta algunos tipos de reacciones químicas: Síntesis (2H₂ + O₂ → 2H₂O), Descomposición (2HgO → 2Hg + O₂), Combustión (CH₄ + 2O₂ → CO₂ + 2H₂O), Sustitución doble (2HI + 2NaOH → 2NaI + H₂O). La producción de ácido clorhídrico (HCl) puede llevarse a cabo por medio de la siguiente reacción química: 2NaCl + H₂SO₄ → Na₂SO₄ + 2HCl. Según lo anterior, ¿qué tipo de reacción ocurre en la producción de HCl?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Reacción de combustión.",
+      "B": "Reacción de síntesis.",
+      "C": "Reacción de sustitución doble.",
+      "D": "Reacción de descomposición."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "En la reacción, el NaCl y el H₂SO₄ intercambian iones: el Na⁺ se combina con el SO₄²⁻ para formar Na₂SO₄, y el H⁺ se combina con el Cl⁻ para formar HCl. Este intercambio de iones entre dos compuestos se llama reacción de sustitución doble."
+  },
+  {
+    "id": "CN-330",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Genética y Mutaciones",
+    "enunciado": "En una comunidad de pescadores que habita a las orillas de un río, han aparecido síntomas de enfermedades nunca antes vistas en la región. Al respecto, los habitantes asocian esta situación con la explotación de oro que se ha iniciado río arriba y para la cual se utiliza principalmente mercurio. Según la Organización Mundial de la Salud, la concentración máxima de mercurio que puede tener un pez para poder ser consumido es de 0,5 μg/g. Teniendo en cuenta que esta comunidad basa su alimentación en el pescado, se realizó un estudio que muestra la concentración de mercurio en los peces más consumidos. Desde el aumento en la exposición al mercurio en la zona, han nacido algunos niños con ceguera, probablemente debido a mutaciones inducidas en las células sexuales de sus padres. Ahora bien, si se sabe que la expresión de esta enfermedad está ligada a la presencia de alelos de tipo recesivo en un solo gen, ¿qué genotipo presentará un niño sano de la zona?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Homocigoto dominante o heterocigoto.",
+      "B": "Heterocigoto recesivo únicamente.",
+      "C": "Homocigoto recesivo únicamente.",
+      "D": "Heterocigoto u homocigoto recesivo."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Si la enfermedad es recesiva, un niño sano puede tener genotipo homocigoto dominante (AA) o heterocigoto (Aa). Solo los homocigotos recesivos (aa) expresan la enfermedad. Por lo tanto, un niño sano puede ser AA o Aa."
+  },
+  {
+    "id": "CN-331",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Densidad y Flotación",
+    "enunciado": "Un globo aerostático sube cada vez que se calienta el aire que contiene en su interior. Esto hace que la densidad del aire en su interior varíe en relación con la densidad del aire en el exterior del globo. Para mantener el globo aerostático en el aire y en reposo, se deben cumplir ciertas condiciones. Teniendo en cuenta lo anterior, ¿qué se requiere para que el globo ascienda?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Aumentar la masa de aire al interior del globo, para que el empuje sea igual al peso.",
+      "B": "Aumentar la temperatura al interior del globo, para que el empuje sea mayor que el peso.",
+      "C": "Igualar las temperaturas en el interior y exterior del globo, para que el peso sea mayor que el empuje.",
+      "D": "Disminuir la temperatura del aire en el interior del globo, para que el peso sea mayor que el empuje."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Para que el globo ascienda, la densidad del aire en su interior debe ser menor que la del exterior (aire caliente es menos denso). Esto se logra aumentando la temperatura del aire interior, lo que disminuye su densidad y hace que el empuje (fuerza hacia arriba) sea mayor que el peso del globo."
+  },
+  {
+    "id": "CN-332",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Densidad de Gases",
+    "enunciado": "Un grupo de estudiantes midió la densidad de un gas para un rango de temperaturas entre 0°C y 48°C. Los resultados obtenidos muestran que la densidad disminuye al aumentar la temperatura. A partir de los datos de la gráfica, los estudiantes concluyen: 'Para temperaturas mayores a 50°C la densidad del gas es constante'. ¿La evidencia mostrada en la gráfica es suficiente para llegar a esta conclusión?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "No, porque es necesario continuar la toma de datos debido al incremento de la densidad del gas para ciertos rangos de temperatura.",
+      "B": "Sí, porque la tendencia de la gráfica para esas temperaturas apunta a que la densidad es constante.",
+      "C": "No, porque la tendencia de la gráfica muestra que a mayor temperatura, menor densidad.",
+      "D": "Sí, porque se puede deducir a partir de los datos que la relación de densidad y temperatura es constante para cualquier rango de temperatura."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Los datos muestran claramente una tendencia: a mayor temperatura, menor densidad. No hay evidencia que indique que la densidad se vuelva constante a 50°C. La conclusión de los estudiantes es una extrapolación no justificada por los datos disponibles, que solo cubren hasta 48°C."
+  },
+  {
+    "id": "CN-333",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Sistema Muscular",
+    "enunciado": "La figura muestra la composición general de un músculo estriado. Algunos deportistas que quieren aumentar su masa muscular completan largas jornadas de ejercicio físico y siguen una dieta rigurosa rica en proteínas. ¿Por qué deben incluir en su dieta una gran cantidad de alimentos ricos en proteínas?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Suministran la energía necesaria para resistir jornadas de actividad física exigente.",
+      "B": "Aumentan la oxigenación del tejido muscular durante el desarrollo de actividades físicas.",
+      "C": "Ayudan a disolver la grasa que se acumula en algunas partes del cuerpo.",
+      "D": "Se requieren para la formación de nuevos filamentos musculares."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "Las proteínas son los bloques de construcción de los tejidos musculares. Durante el ejercicio intenso, las fibras musculares se desgastan y se dañan; para repararlas y construir nuevas fibras (hipertrofia muscular), el cuerpo necesita aminoácidos, que obtiene de las proteínas de la dieta."
+  },
+  {
+    "id": "CN-334",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Poleas",
+    "enunciado": "En una fábrica se cargan cajas con diferentes combinaciones de poleas fijas y móviles. Para levantar las cajas, los empleados deben halar la cuerda del sistema de poleas con una fuerza igual al peso de la caja dividido por el doble de la cantidad de poleas móviles. Si un empleado hala la cuerda con una fuerza de 75 N para levantar una caja de 600 N de peso, ¿cuál de las siguientes combinaciones de poleas representa correctamente la situación?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "1 polea móvil",
+      "B": "2 poleas móviles",
+      "C": "3 poleas móviles",
+      "D": "4 poleas móviles"
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "La fuerza necesaria es F = Peso / (2 × número de poleas móviles). Despejando: 75 = 600 / (2 × n). Resolviendo: 150n = 600 → n = 4. Por lo tanto, se necesitan 4 poleas móviles."
+  },
+  {
+    "id": "CN-335",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Ecosistemas",
+    "enunciado": "Un grupo de investigadores está estudiando la biodiversidad del municipio de Soacha y ha encontrado que allí se presentan diferentes ecosistemas, tales como humedales, páramos, bosque altoandino, enclave seco, y pastos y cultivos. En su investigación, ellos encontraron una planta importante para la conservación de las fuentes hídricas. Esta especie tiene una estructura en forma de roseta de hasta 2,5 m de altura, y sus hojas son erectas y suculentas, y están cubiertas por pequeños pelos; además, estas hojas, al morir, se acumulan alrededor del tallo para la protección contra el frío. Por último, estas plantas son capaces de absorber y retener grandes cantidades de agua en sus hojas y tallos, así como de absorber la humedad de la niebla y conducirla al suelo por medio de sus tallos. A partir de la información anterior, ¿a cuál de los siguientes ecosistemas pertenece la especie de planta descrita?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "A los humedales.",
+      "B": "Al bosque altoandino.",
+      "C": "Al páramo.",
+      "D": "Al enclave seco."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Las plantas descritas (rosetas, hojas suculentas y pelosas, capacidad de retener agua y absorber humedad de la niebla) son características típicas de las plantas de páramo, como los frailejones (Espeletia spp.), que son especies emblemáticas de este ecosistema de alta montaña."
+  },
+  {
+    "id": "CN-336",
+    "materia": "Ciencias Naturales",
+    "competencia": "Geología - Tectónica de Placas",
+    "enunciado": "Anteriormente, se pensaba que el sistema montañoso de los Andes estaba compuesto, exclusivamente, por la acumulación de sedimentos y rocas en esta zona, que había ocurrido durante millones de años. Sin embargo, a través de los años y con la modernización de la tecnología, se pudo establecer que la acumulación de sedimento no era la causa de esta formación montañosa, sino que se debió a la convergencia de placas tectónicas. De acuerdo con lo anterior, ¿por qué cambió la explicación para la formación de la cordillera de los Andes?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Porque la acumulación de sedimento y roca hizo que las placas tectónicas se hundieran una encima de la otra.",
+      "B": "Porque la nueva tecnología comprobó la presencia de sedimentos y rocas en varios lugares de la zona montañosa.",
+      "C": "Porque los nuevos equipos pudieron mostrar la manera en la que están ubicadas las placas tectónicas.",
+      "D": "Porque, con la ayuda de la nueva tecnología, se pudo corroborar que los sedimentos provienen de las rocas."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El cambio en la explicación se debió a los avances tecnológicos que permitieron estudiar la estructura profunda de la Tierra, como la sismología y la geofísica, que revelaron la existencia de placas tectónicas y su movimiento. Estos nuevos datos demostraron que la formación de los Andes se debe a la convergencia (choque) de la placa de Nazca con la placa Sudamericana."
+  },
+  {
+    "id": "CN-337",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Contaminación y Bioacumulación",
+    "enunciado": "Existen sustancias tóxicas que se incorporan en el organismo y que no pueden excretarse. Por ello, se acumulan en los tejidos de seres pluricelulares o en el citoplasma de los organismos unicelulares. Este proceso se denomina bioacumulación. La figura muestra la cadena alimentaria en un pantano y la cifra de residuos de mercurio en partes por millón (ppm) acumulada en las especies que la conforman. El mercurio se presenta en bajas concentraciones en los productores y va aumentando su concentración en los diferentes niveles tróficos. ¿Cuál de las siguientes es una posible explicación a este fenómeno?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los consumidores terciarios absorben el mercurio directamente del agua, mientras que los productores lo transforman del medio.",
+      "B": "La población de productores es muy baja para absorber todo el mercurio disponible en el agua.",
+      "C": "Los productores al absorber grandes cantidades de mercurio mueren por intoxicación antes de ser consumidos.",
+      "D": "Los consumidores ingieren el mercurio acumulado en los tejidos de su presa."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "El mercurio se bioacumula a lo largo de la cadena trófica porque cada nivel trófico consume a los organismos del nivel inferior, acumulando todo el mercurio que estos tenían en sus tejidos. Este fenómeno se llama biomagnificación: la concentración de la toxina aumenta en cada nivel trófico superior."
+  },
+  {
+    "id": "CN-338",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Enlaces y Electrones de Valencia",
+    "enunciado": "A continuación, se muestra una representación gráfica de los electrones del último nivel de energía de los átomos K y F. Teniendo en cuenta la información anterior, ¿cuántos electrones tienen en su último nivel de energía el átomo K y el átomo F?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "K = 2, F = 6",
+      "B": "K = 8, F = 8",
+      "C": "K = 1, F = 7",
+      "D": "K = 0, F = 8"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El potasio (K) tiene 1 electrón en su último nivel de energía (configuración: [Ar] 4s¹). El flúor (F) tiene 7 electrones en su último nivel (configuración: [He] 2s² 2p⁵). Esta es la base para que el potasio ceda un electrón y el flúor lo acepte, formando un enlace iónico."
+  },
+  {
+    "id": "CN-339",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Experimentación",
+    "enunciado": "Un estudiante realizó el siguiente experimento: Agregó 100 mL de agua con levaduras en un recipiente y lo calentó en una estufa. Midió el volumen del agua y contabilizó el número de células de levaduras cada dos minutos. Los resultados se muestran en la tabla: 2 min (100 mL, 500 células), 4 min (100 mL, 500 células), 6 min (100 mL, 500 células), 8 min (100 mL, 400 células), 10 min (60 mL, 300 células). Si la tendencia se mantiene, ¿cuál sería el volumen del agua a los 12 minutos?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Entre 120 mL y 100 mL.",
+      "B": "Menor a 60 mL.",
+      "C": "Menor a 300 mL.",
+      "D": "Entre 80 mL y 60 mL."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Los datos muestran que el volumen de agua disminuye progresivamente: a los 8 min es 100 mL, a los 10 min es 60 mL. La tendencia indica que el agua se evapora o se consume. Siguiendo esta tendencia, a los 12 minutos el volumen sería menor a 60 mL (probablemente alrededor de 20-30 mL)."
+  },
+  {
+    "id": "CN-340",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Contaminación Ambiental",
+    "enunciado": "Una estación de monitoreo de calidad del aire en un sitio de una ciudad, analiza la concentración de dióxido de nitrógeno (NO₂) y ozono (O₃) durante un día con equipos automatizados. En la tabla se muestran los resultados obtenidos: 1:00 (O₃: 1,70, NO₂: 19,34), 4:00 (O₃: 6,17, NO₂: 14,20), 7:00 (O₃: 2,75, NO₂: 15,64), 10:00 (O₃: 19,60, NO₂: 4,60), 13:00 (O₃: 22,17, NO₂: 3,19), 16:00 (O₃: 23,76, NO₂: 3,92), 19:00 (O₃: 7,83, NO₂: 17,39), 22:00 (O₃: 3,76, NO₂: 18,30), 24:00 (O₃: 6,92, NO₂: 14,14). Según los datos, se observa que la concentración de ozono es inversamente proporcional a la del dióxido de nitrógeno. ¿Qué gráfica representa mejor los datos?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Gráfica de barras con dos series (O₃ y NO₂) para cada hora.",
+      "B": "Gráfica de líneas con dos curvas (O₃ y NO₂) en el mismo gráfico.",
+      "C": "Gráfica circular mostrando el promedio de cada gas.",
+      "D": "Gráfica de dispersión con NO₂ en X y O₃ en Y."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Dado que se trata de datos temporales (evolución a lo largo del día), la mejor representación es una gráfica de líneas con dos curvas: una para O₃ y otra para NO₂, que permite visualizar claramente cómo varían ambas concentraciones a lo largo del tiempo y la relación inversa entre ellas."
+  },
+  {
+    "id": "CN-341",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Clasificación de Animales",
+    "enunciado": "En la figura se muestran cuatro animales distintos: un pez, un anfibio, un ave y un mamífero. Con base en la información anterior, ¿qué característica comparten estos animales?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Presencia de pelo.",
+      "B": "Cuello largo.",
+      "C": "Patas largas.",
+      "D": "Se reproducen depositando huevos."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "Estos cuatro grupos de animales (peces, anfibios, aves, y algunos mamíferos como el ornitorrinco) comparten la característica de ser ovíparos (se reproducen depositando huevos). Aunque la mayoría de los mamíferos son vivíparos, la pregunta se refiere a la característica común que los agrupa a todos."
+  },
+  {
+    "id": "CN-342",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Competencia",
+    "enunciado": "En la figura se muestra un ejemplo de competencia entre tres tipos de plantas por la luz solar, en un ecosistema durante 20 años de formación. De acuerdo con el ejemplo, ¿por qué puede influir la competencia en la conformación de las comunidades de este ecosistema?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Porque al competir por los recursos, estos se agotan rápidamente para todos y se pone en riesgo la estabilidad del ecosistema.",
+      "B": "Porque solo los más aptos sobreviven, lo que determina el tipo de organismos que constituirán el ecosistema resultante.",
+      "C": "Porque garantiza la disponibilidad de los recursos en el ecosistema, lo cual asegura la permanencia de los mismos organismos.",
+      "D": "Porque elimina a los organismos más aptos y permite el desarrollo de los más débiles que formarán el ecosistema."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La competencia por recursos como la luz solar actúa como un mecanismo de selección natural. Solo las especies mejor adaptadas a las condiciones del ecosistema sobreviven y se reproducen, determinando así la composición de la comunidad a largo plazo. Esto se conoce como el principio de exclusión competitiva."
+  },
+  {
+    "id": "CN-343",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Medición de Magnitudes",
+    "enunciado": "Un docente realiza el montaje de la figura para identificar algunas magnitudes. El docente les solicita a los estudiantes que establezcan las medidas de los objetos dados. ¿Cuáles son las medidas y magnitudes correctas que deben escribir los estudiantes?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Masa de la piedra: 445; volumen del agua: 36; longitud del lápiz: 3,3.",
+      "B": "Masa de la piedra: 445 mL; volumen del agua: 36 cm; longitud del lápiz: 3,3 cm.",
+      "C": "Masa de la piedra: 445 g; volumen del agua: 36 mL; longitud del lápiz: 3,3 cm.",
+      "D": "Masa de la piedra: 445 cm; volumen del agua: 36 g; longitud del lápiz: 3,3 mL."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Las unidades correctas para cada magnitud son: masa en gramos (g), volumen en mililitros (mL) o centímetros cúbicos (cm³), y longitud en centímetros (cm). La opción C utiliza las unidades correctas para cada medición."
+  },
+  {
+    "id": "CN-344",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Adaptación",
+    "enunciado": "En la figura se muestran las características de adaptación al ambiente del hongo Trichoderma reesei. Según las características dadas, ¿en cuál de los siguientes ecosistemas se adaptaría mejor este organismo?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Pastizal.",
+      "B": "Desierto.",
+      "C": "Selva tropical.",
+      "D": "Bosque seco."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Trichoderma reesei es un hongo que se encuentra comúnmente en suelos, especialmente en ambientes con materia orgánica en descomposición. Se adapta mejor a ecosistemas como pastizales o bosques templados, donde hay abundante materia orgánica y condiciones de humedad moderada."
+  },
+  {
+    "id": "CN-345",
+    "materia": "Ciencias Naturales",
+    "competencia": "Ecología - Poblaciones",
+    "enunciado": "La gráfica muestra el número de individuos de focas en la Antártida, cada 30 años desde 1860 hasta 2010. Con base en la información anterior, ¿cuál de las siguientes interpretaciones es válida?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El número de focas en 1950 era el mismo que en 1980.",
+      "B": "El número de focas ha aumentado desde el año 1860.",
+      "C": "El número de focas disminuyó en el año 1950.",
+      "D": "El número de focas en 1860 era el mismo que en el año 1920."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La gráfica muestra una tendencia general de aumento en la población de focas desde 1860 hasta 2010. Aunque puede haber fluctuaciones, la tendencia general es ascendente, lo que indica un incremento en la población a lo largo del tiempo."
+  },
+  {
+    "id": "CN-346",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Clasificación de Animales",
+    "enunciado": "En la figura se muestran cuatro animales: una medusa, un pulpo, un calamar y una estrella de mar. Con base en la información anterior, ¿qué características tienen en común estos cuatro animales?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Todos presentan tentáculos para desplazarse.",
+      "B": "Todos habitan en medios acuáticos.",
+      "C": "Todos se adhieren a una superficie.",
+      "D": "Todos presentan una piel escamosa."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Los cuatro animales (medusa, pulpo, calamar y estrella de mar) son organismos marinos que habitan en medios acuáticos (océanos y mares). Aunque tienen características diferentes, comparten este hábitat común."
+  },
+  {
+    "id": "CN-347",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Termodinámica",
+    "enunciado": "En un ambiente de 20 ºC permanece una persona que tiene una temperatura de 33 ºC y toca una taza con café a 40 ºC, como se observa en la figura. Si la persona siente un aumento de temperatura en su mano, ¿cuál es la dirección del flujo de calor para que esto ocurra?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "De la mano a la taza con café.",
+      "B": "Del ambiente a la mano.",
+      "C": "De la taza con café a la mano.",
+      "D": "De la taza con café al ambiente."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El calor fluye del objeto de mayor temperatura al de menor temperatura. La taza con café está a 40 °C, mientras que la mano de la persona está a 33 °C. Por lo tanto, el calor fluye de la taza con café a la mano, lo que hace que la persona sienta un aumento de temperatura."
+  },
+  {
+    "id": "CN-348",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Energía Mecánica",
+    "enunciado": "Un estudiante lee en un libro que la energía mecánica de una esfera que cae por una rampa ubicada en aire depende únicamente de su altura en la rampa y de la velocidad que tiene la esfera a esa altura. El estudiante realiza un experimento en el que dispone de dos rampas iguales para dejar caer una esfera en dos medios (aire y agua). Teniendo en cuenta la información anterior, ¿cómo debe ser la energía mecánica de la esfera al estar en la parte más baja de las rampas, en los dos medios?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La energía mecánica de la esfera debe ser la misma, porque los medios tienen el mismo volumen dentro del recipiente.",
+      "B": "La energía mecánica de la esfera debe ser diferente, porque el medio afecta la velocidad de la esfera.",
+      "C": "La energía mecánica de la esfera debe ser la misma, porque las rampas tienen la misma altura.",
+      "D": "La energía mecánica de la esfera debe ser diferente, porque se deja caer en diferentes momentos."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La energía mecánica de un objeto depende de su altura y velocidad (E = Ep + Ec). En la parte más baja de la rampa, la altura es la misma (cero) y la energía potencial se ha convertido en cinética. Sin embargo, en el agua, la fricción disipa energía, por lo que la velocidad en la parte baja sería menor. La energía mecánica debe ser la misma solo si no hay pérdidas por fricción. Pero dado que el agua genera fricción, la energía mecánica en la parte baja es diferente: en el agua es menor que en el aire debido a la pérdida de energía por rozamiento."
+  },
+  {
+    "id": "CN-349",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Energía",
+    "enunciado": "Una esfera se suelta desde lo alto de una rampa sin fricción y pasa por los puntos 1, 2 y 3. Si la energía total se conserva, y se usan las siguientes convenciones: energía cinética; energía potencial; energía mecánica total. ¿Cuál gráfica de energía en función del tiempo describe el movimiento de la bola?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La energía potencial disminuye, la cinética aumenta y la total es constante.",
+      "B": "La energía potencial aumenta, la cinética disminuye y la total es constante.",
+      "C": "La energía potencial y cinética son constantes, y la total también es constante.",
+      "D": "La energía potencial disminuye, la cinética aumenta y la total también aumenta."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "En una rampa sin fricción, la energía mecánica total se conserva. A medida que la esfera desciende, su energía potencial (Ep = mgh) disminuye porque la altura disminuye, y su energía cinética (Ec = ½mv²) aumenta porque la velocidad aumenta. La energía total (Ep + Ec) permanece constante a lo largo del movimiento."
+  },
+  {
+    "id": "CN-350",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Calorimetría",
+    "enunciado": "El calor específico indica la cantidad de calor (en Joules) que se debe agregar a 1 g de una sustancia para elevar su temperatura 1 °C. En la tabla se muestran los valores del calor específico para 4 sólidos: Cobre (0,385 J/g°C), Oro (0,129 J/g°C), Aluminio (0,900 J/g°C), Hierro (0,450 J/g°C). Teniendo en cuenta lo anterior, si se tiene un gramo de cada sólido, ¿cuál de los sólidos necesita mayor energía para aumentar 1 °C su temperatura?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Cobre.",
+      "B": "Oro.",
+      "C": "Aluminio.",
+      "D": "Hierro."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El calor específico es la cantidad de energía necesaria para elevar 1 °C la temperatura de 1 gramo de sustancia. El Aluminio tiene el calor específico más alto (0,900 J/g°C), por lo que necesita más energía para aumentar su temperatura en 1 °C en comparación con los otros metales."
+  },
+  {
+    "id": "CN-351",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Conductividad Térmica",
+    "enunciado": "Camila tiene una esfera de madera y otra de hierro, y las mete en agua hirviendo por un minuto. Después de un minuto las saca y mide su temperatura. ¿Qué puede probar Camila con su experimento?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Que el hierro se transforma en madera al calentarlo.",
+      "B": "Que la esfera de hierro se calienta más rápido que la de madera.",
+      "C": "Que las esferas cambian de composición al calentarse en agua.",
+      "D": "Que las esferas se vuelven cuadradas al calentarse con bastante agua."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El hierro es un buen conductor del calor (conductor), mientras que la madera es un mal conductor (aislante). Por lo tanto, la esfera de hierro se calienta más rápido que la esfera de madera cuando ambas se sumergen en agua hirviendo. Este experimento demuestra la diferencia en la conductividad térmica de los materiales."
+  },
+  {
+    "id": "CN-352",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Contaminación Minera",
+    "enunciado": "Respecto a la problemática de contaminación que deja la extracción de oro para la región, un grupo de investigadores propone un filtro de agua que trabaja pasando agua con mercurio (Hg) por una barrera formada por algas de la especie Lemna minor, conocida como lenteja de agua. Esta alga metaboliza gran parte del mercurio y produce sustancias como oxígeno (O₂), dióxido de carbono (CO₂) y metilmercurio (CH₃Hg); una pequeña fracción del mercurio no alcanza a metabolizarse por las algas. Si la cantidad de mercurio usado en la extracción aumenta, ¿qué ocurrirá con la cantidad de sustancias producidas por las algas?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Disminuirán las cantidades de CO₂ y de CH₃Hg en el agua.",
+      "B": "Aumentará la cantidad de CO₂ y disminuirá la de CH₃Hg en el agua.",
+      "C": "Aumentará la cantidad de mercurio sin metabolizar.",
+      "D": "Disminuirá la cantidad de mercurio sin metabolizar."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Si aumenta la cantidad de mercurio que entra al sistema, las algas solo pueden metabolizar una cantidad limitada. Por lo tanto, aumentará la cantidad de mercurio sin metabolizar que queda en el agua. Las algas producirán más CO₂ y CH₃Hg proporcionalmente, pero el exceso de mercurio no metabolizado es el principal problema."
+  },
+  {
+    "id": "CN-353",
+    "materia": "Ciencias Naturales",
+    "competencia": "Ecología - Impacto Ambiental",
+    "enunciado": "En esta región existe una explotación minera para extraer el oro de la reserva. Para ello, se desvía una parte del río y se usan sustancias químicas como mercurio y otros metales tóxicos; después de la extracción del oro, el agua utilizada regresa a su cauce normal. De acuerdo con lo anterior, ¿cuál de los siguientes es un efecto negativo del desvío del río?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Disminución del cauce final del río.",
+      "B": "Aumento de zonas de pastoreo alejadas al río.",
+      "C": "Reducción de tierras para el cultivo.",
+      "D": "Destrucción de ecosistemas aledaños a la mina."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "Desviar un río altera el ecosistema original, destruyendo los hábitats acuáticos y terrestres cercanos a la mina. Los organismos que dependen de ese flujo de agua (peces, aves, plantas) se ven afectados, y el ecosistema sufre una pérdida de biodiversidad. Además, los químicos utilizados contaminan el agua que vuelve al río, afectando a toda la cuenca."
+  },
+  {
+    "id": "CN-354",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Método Científico",
+    "enunciado": "Lucía es dueña de una finca en la zona de pastoreo en la que hay un jardín con varios tipos de plantas. Ella observa que la mayoría de plantas han empezado a marchitarse desde que empezaron la extracción de oro; también observa frecuentemente a unos insectos voladores cerca de las plantas con flores. Los insectos se posan sobre las hojas de las plantas. Lucía afirma: 'Los insectos se posan sobre las hojas de las plantas y las contaminan con hongos que las marchitan'. De acuerdo con lo anterior, ¿la afirmación de Lucía es una suposición no fundamentada o una hipótesis?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Una suposición no fundamentada, porque no se revisaron otras partes de las plantas, como las raíces o los tallos.",
+      "B": "Una hipótesis, porque ella investigó sobre los tipos de hongos que afectan a las plantas.",
+      "C": "Una suposición no fundamentada, porque no hay evidencia de la contaminación por los insectos.",
+      "D": "Una hipótesis, porque los insectos se alimentan de las plantas, y así las marchitan."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La afirmación de Lucía es una suposición no fundamentada porque no hay evidencia que demuestre que los insectos están contaminando las plantas con hongos. Ella solo observa una correlación (insectos presentes + plantas marchitas), pero no ha realizado experimentos para comprobar su hipótesis (por ejemplo, aislar los hongos de los insectos o de las plantas)."
+  },
+  {
+    "id": "CN-355",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Densidad",
+    "enunciado": "Un grupo de estudiantes quiere determinar la densidad del aceite de cocina. Después de revisar la bibliografía al respecto, encuentran que la densidad de una sustancia se define como: Densidad = Masa / Volumen. Con base en la información anterior, ¿cuáles de los siguientes instrumentos permitirían determinar la masa y el volumen del aceite de cocina?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Balanza y cronómetro.",
+      "B": "Un vaso de precipitado y un pocillo.",
+      "C": "Cronómetro y pocillo.",
+      "D": "Balanza y vaso de precipitado."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "Para determinar la densidad (masa/volumen), se necesita medir la masa del aceite con una balanza y el volumen del aceite con un vaso de precipitado (o probeta). El cronómetro no es necesario para esta medición."
+  },
+  {
+    "id": "CN-356",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Ecosistemas",
+    "enunciado": "A continuación, se enuncian algunas características de un ecosistema desconocido: Periodos secos y escasez de agua. Suelos arenosos. Altas temperaturas durante el día y bajas durante la noche. Con base en las características del ecosistema, ¿qué tipo de organismo puede sobrevivir en este?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Oso polar.",
+      "B": "Cactus.",
+      "C": "Delfín.",
+      "D": "Un árbol de ceiba."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Las características descritas (escasez de agua, suelos arenosos, altas temperaturas diurnas y bajas nocturnas) corresponden a un ecosistema desértico. El cactus es una planta adaptada a estas condiciones extremas: almacena agua en sus tejidos, tiene espinas para reducir la pérdida de agua y sus raíces son extensas para captar la poca humedad disponible."
+  },
+  {
+    "id": "CN-357",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Presión",
+    "enunciado": "Una estudiante quiere saber cómo cambia la presión que ejerce una persona sobre el piso, al utilizar zapatos con suela de diferentes áreas. Ella obtiene los siguientes resultados: Peso = 500 N; Área de la suela: 8 cm² → Presión: 625 kPa; 12 cm² → Presión: 417 kPa; 24 cm² → Presión: 285 kPa. La estudiante concluye que la presión que ejerce sobre el suelo disminuye cuando el peso del estudiante disminuye. Su profesora le indica que esa conclusión es incoherente, porque en el experimento no se realizaron mediciones para diferentes pesos. Teniendo en cuenta la información anterior, ¿cuál de las siguientes es una conclusión coherente con los resultados obtenidos?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Para un área fija, la presión que ejerce el zapato disminuye al cambiar el material del zapato.",
+      "B": "Para un peso fijo, la presión que ejerce el zapato disminuye cuando el área del zapato aumenta.",
+      "C": "Para un área fija, la presión que ejerce el zapato aumenta al cambiar el peso del zapato.",
+      "D": "Para un material fijo, la presión que ejerce el zapato aumenta cuando el área del zapato aumenta."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Los datos muestran que, manteniendo el peso constante (500 N), al aumentar el área de la suela, la presión disminuye (625 → 417 → 285 kPa). Esto se debe a la fórmula P = F/A (presión es inversamente proporcional al área). Por lo tanto, la conclusión correcta es: para un peso fijo, la presión disminuye cuando el área aumenta."
+  },
+  {
+    "id": "CN-358",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Contaminación por Mercurio",
+    "enunciado": "La concentración máxima de mercurio que puede tener un pez para poder ser consumido es de 0,5 μg/g. En una comunidad que basa su alimentación en el pescado, se realizó un estudio que muestra la concentración de mercurio en los peces más consumidos: Bagre pintao (carnívoro) → 0,51 μg/g; Blanquillo (carnívoro) → 0,74 μg/g; Pacora (carnívoro) → 0,68 μg/g; Bocachico (no carnívoro) → 0,15 μg/g; Liseta (no carnívoro) → 0,22 μg/g. ¿Qué pez supera el límite de 0,5 μg/g?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Bagre pintao, Blanquillo y Pacora.",
+      "B": "Solo Bocachico y Liseta.",
+      "C": "Todos los peces.",
+      "D": "Ningún pece."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Los peces carnívoros tienen mayor concentración de mercurio debido a la biomagnificación en la cadena trófica. Bagre pintao (0,51 μg/g), Blanquillo (0,74 μg/g) y Pacora (0,68 μg/g) superan el límite de 0,5 μg/g. Los peces no carnívoros (Bocachico y Liseta) tienen concentraciones por debajo del límite."
+  },
+  {
+    "id": "CN-359",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Movimiento Rectilíneo Uniforme",
+    "enunciado": "Un grupo de estudiantes pretende verificar las características del movimiento rectilíneo uniforme. Para ello, los estudiantes establecen una distancia fija que va a recorrer un carrito, luego realizan 3 mediciones del tiempo que emplea el carrito para recorrerla. Estos tiempos se promedian, y la distancia se divide en ese valor para calcular un indicador de velocidad. Teniendo en cuenta la información anterior, ¿cuál de las siguientes carteleras, con secuencias, muestra correctamente el procedimiento efectuado por los estudiantes?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Medir distancia → Medir tiempos → Calcular promedio → Dividir distancia/promedio → Obtener velocidad.",
+      "B": "Medir tiempos → Medir distancia → Calcular promedio → Dividir distancia/promedio → Obtener velocidad.",
+      "C": "Medir distancia → Medir tiempos → Dividir distancia/tiempo → Calcular promedio → Obtener velocidad.",
+      "D": "Medir tiempos → Dividir distancia/tiempo → Medir distancia → Calcular promedio → Obtener velocidad."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El procedimiento correcto para determinar la velocidad en MRU es: 1) Establecer una distancia fija, 2) Realizar varias mediciones del tiempo, 3) Calcular el promedio de los tiempos, 4) Dividir la distancia entre el tiempo promedio para obtener la velocidad. La opción A describe este orden correcto."
+  },
+  {
+    "id": "CN-360",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Concentración",
+    "enunciado": "A continuación se presentan dos unidades mediante las cuales se puede medir la concentración de una disolución: % p/V = (Masa de sustancia (g) / 100 mL de disolución) × 100%; Masa de sustancia (mol) / 1 L de disolución (Molaridad). Un estudiante tiene dos disoluciones de distinta concentración de una misma sustancia, cuya masa es 200 g por cada mol. Teniendo en cuenta la masa de un mol de la sustancia, ¿son equivalentes las concentraciones de ambas disoluciones?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Sí, porque las dos disoluciones tienen un volumen diferente.",
+      "B": "Sí, porque de acuerdo con el valor de la masa, 1 mol/L equivale a 200 g/1000 mL, que sería igual a 20 % p/V.",
+      "C": "No, porque la cantidad de moles son las mismas en las dos disoluciones, de manera que la concentración no cambia.",
+      "D": "No, porque las disoluciones están preparadas con la misma sustancia."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Si la masa molar es 200 g/mol, entonces 1 mol/L = 200 g/1000 mL = 0.2 g/mL = 20 g/100 mL. Multiplicando por 100%: 20% p/V. Por lo tanto, 1 mol/L es equivalente a 20% p/V. Ambas disoluciones tienen la misma concentración expresada en diferentes unidades."
+  },
+  {
+    "id": "CN-361",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Equilibrio Térmico",
+    "enunciado": "Un estudiante coloca un recipiente con agua caliente junto a otro con agua fría; a través de las paredes de los recipientes se establecerá un flujo de energía calorífica y, pasado un tiempo, estos llegarán a un equilibrio térmico con el medio ambiente. Con base en el modelo de equilibrio térmico planteado con anterioridad, ¿qué pasará si los dos recipientes se dejaran aislados dentro de una caja de icopor sellada a una temperatura intermedia entre la del agua caliente y la fría?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Aumentará únicamente la temperatura del agua caliente.",
+      "B": "Disminuirá la temperatura del agua caliente y de la fría, y aumentará la temperatura de la caja.",
+      "C": "Disminuirá únicamente la temperatura del agua fría.",
+      "D": "Aumentará la temperatura del agua fría, porque el cuerpo con mayor temperatura siempre cede energía a los cuerpos más fríos."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "En un sistema aislado, el calor fluye del cuerpo de mayor temperatura al de menor temperatura hasta alcanzar el equilibrio térmico. El agua caliente (mayor temperatura) cederá calor al agua fría (menor temperatura) y también a la caja (temperatura intermedia). Como resultado, la temperatura del agua caliente disminuye y la del agua fría y la caja aumentan."
+  },
+  {
+    "id": "CN-362",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Gases Ideales",
+    "enunciado": "En la tabla se muestran las variaciones de presión de una cantidad fija de un gas en un recipiente cerrado variando la temperatura, pero manteniendo las demás condiciones sin variar. Un estudiante quiere explicar este comportamiento y recurre a la ley de los gases ideales: PV = nRT. Con base en la información anterior, y teniendo en cuenta la ley de los gases ideales, ¿cómo cambia el comportamiento del gas cuando aumenta la temperatura en el recipiente?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Aumenta el número de moles del gas.",
+      "B": "Disminuye el volumen del gas.",
+      "C": "Aumenta la presión del gas.",
+      "D": "Disminuye la densidad del gas."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Según la ley de los gases ideales (PV = nRT), si el volumen (V) y el número de moles (n) son constantes, al aumentar la temperatura (T), la presión (P) debe aumentar proporcionalmente (P ∝ T). El número de moles no cambia porque es una cantidad fija de gas, y el volumen se mantiene constante porque el recipiente es cerrado."
+  },
+  {
+    "id": "CN-363",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Propiedades de Sustancias",
+    "enunciado": "En la tabla se presentan características físicas y químicas de 4 sustancias puras: X (punto de ebullición 100°C, punto de fusión 0°C), Y (punto de ebullición 64,7°C, punto de fusión -97°C), Z (punto de ebullición 78,4°C, punto de fusión -114°C), W (punto de ebullición 97,5°C, punto de fusión -126°C). Según la información de la tabla, se puede observar que las sustancias Y y Z tienen como característica común que:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Presentan la misma composición química.",
+      "B": "Presentan una presión de vapor superior a 4000 Pa.",
+      "C": "Tienen valores de conductividad eléctrica superiores a 0,00001 S/m.",
+      "D": "Tienen puntos de fusión más altos que los de ebullición."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Las sustancias Y y Z tienen valores de conductividad eléctrica superiores a 0,00001 S/m (Y: 4×10⁻¹⁹, Z: 0,000065). Esto indica que son capaces de conducir electricidad en cierta medida, lo que las diferencia de otras sustancias como X y W, que tienen conductividades mucho menores."
+  },
+  {
+    "id": "CN-364",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Torque",
+    "enunciado": "Una estudiante lee que el torque se da cuando se aplica una fuerza en algún punto de un cuerpo y este tiende a realizar un movimiento de rotación respecto a otro punto. La estudiante analiza que cuando una persona monta en bicicleta ejerce una fuerza (F) en el pedal hacia abajo. Si la estudiante quiere medir el torque que permite el desplazamiento de la bicicleta, ¿cuál de los siguientes puntos de la bicicleta es el más adecuado para hacerlo?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El extremo inferior de la cadena.",
+      "B": "El centro de la rueda delantera.",
+      "C": "El centro del plato.",
+      "D": "El centro del manubrio."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El torque (τ = F × d) se calcula multiplicando la fuerza aplicada por la distancia desde el punto de aplicación de la fuerza hasta el eje de rotación. En una bicicleta, la fuerza se aplica en el pedal, y el eje de rotación es el centro del plato (el eje del pedalier). Por lo tanto, el torque se mide respecto al centro del plato."
+  },
+  {
+    "id": "CN-365",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Propiedades de la Materia",
+    "enunciado": "En un experimento se tomaron medidas de la variación del volumen (ΔV) de un cubo de un material elástico (respecto a un volumen de referencia), de su temperatura (T) y de la presión (P) a la que se sometía. Los datos del experimento se muestran en la tabla. Teniendo en cuenta la información anterior, ¿cuál de los siguientes sería el título más apropiado para esta tabla?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Variación del volumen con la temperatura a diferentes presiones.",
+      "B": "Comportamiento de la temperatura y el volumen a diferentes presiones.",
+      "C": "Comportamiento de la temperatura con la presión a diferentes volúmenes.",
+      "D": "Variación del volumen y la presión a diferentes temperaturas."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La tabla muestra la variación del volumen (ΔV) en función de la temperatura (T) para diferentes valores de presión (P). Por lo tanto, el título más apropiado es 'Variación del volumen con la temperatura a diferentes presiones', ya que describe las variables independiente y dependiente del experimento."
+  },
+  {
+    "id": "CN-366",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Acidez y Eclosión",
+    "enunciado": "Los científicos han realizado experimentos en el laboratorio para probar que la disminución de pH tiene incidencia sobre el comportamiento y la actividad de algunos organismos. La tabla muestra los resultados: Calamares (Actividad normal → Se vuelven letárgicos), Krill (Eclosión normal → Los embriones no logran salir del cascarón), Peces de arrecife (Detectan peligros → No son capaces de detectar a sus depredadores). Con base en la información anterior, ¿qué problema ocasionaría en los crustáceos la acidificación del océano?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Sus conchas no detectarían a los depredadores en el océano.",
+      "B": "Sus conchas tendrían un pH ácido como el del océano.",
+      "C": "Sus conchas serían débiles por formarse solo dos de sus capas.",
+      "D": "Sus conchas se tornarían más duras y se imposibilitaría su movimiento."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La acidificación del océano disminuye la disponibilidad de iones de carbonato (CO₃²⁻) necesarios para la formación de las conchas de carbonato de calcio (CaCO₃). Si las conchas no pueden formarse completamente, serían más débiles o se formarían solo algunas de sus capas, lo que afectaría la protección y el soporte estructural de los crustáceos."
+  },
+  {
+    "id": "CN-367",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Cambio Climático y Acidificación",
+    "enunciado": "Uno de los cambios químicos en los océanos es su constante proceso de acidificación, generado por la absorción de casi un tercio del dióxido de carbono proveniente de la quema de combustibles fósiles y la tala de bosques. La consecuencia de esto es que el nivel de acidez aumenta en un 30%, lo cual agota los iones de carbonato de calcio en el agua. Los científicos han encontrado que las conchas de la mayoría de crustáceos tienen tres capas. La más interna es el nácar, compuesta por capas de quitina y cristales de aragonito. La intermedia y más gruesa es el mesostraco, formada por cristales de carbonato cálcico y, por último, la capa más delgada es el periostraco, compuesta por una sustancia similar a la queratina. Con base en la información anterior, ¿qué problema ocasionaría en los crustáceos la acidificación del océano?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Sus conchas no detectarían a los depredadores en el océano.",
+      "B": "Sus conchas tendrían un pH ácido como el del océano.",
+      "C": "Sus conchas serían débiles por formarse solo dos de sus capas.",
+      "D": "Sus conchas se tornarían más duras y se imposibilitaría su movimiento."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La acidificación del océano disminuye la concentración de iones carbonato (CO₃²⁻) necesarios para la formación de capas de carbonato de calcio en las conchas de los crustáceos. Esto afecta la formación de las capas, resultando en conchas más débiles y delgadas."
+  },
+  {
+    "id": "CN-368",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Fiebre Amarilla",
+    "enunciado": "La fiebre amarilla se contrae por la picadura de los mosquitos del género Aedes. Esta enfermedad provoca fiebres intensas, dolores de cabeza y músculos, coloración amarilla de la piel, náuseas, vómitos y cansancio. Aunque se han hecho importantes avances en el control de la enfermedad, aún se producen grandes epidemias especialmente en zonas altamente pobladas, no vacunadas y que cuentan con la presencia del mosquito. En la figura se muestra el ciclo de transmisión de esta enfermedad en diferentes hábitats. ¿Qué estrategia puede usarse para controlar esta enfermedad en zonas urbanas con bajos índices de vacunación?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Eliminar los criaderos de mosquitos y usar insecticidas contra estos para que el virus no se transmita a los humanos.",
+      "B": "Promover el uso de tapabocas y guantes para evitar la transmisión del virus de persona a persona.",
+      "C": "Reducir las poblaciones de primates en las selvas cercanas a la ciudad, pues estos son los principales generadores de fiebre amarilla.",
+      "D": "Impedir el transporte de zonas rurales a zonas urbanas para no expandir el rango de la infección."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La fiebre amarilla se transmite por la picadura de mosquitos Aedes infectados. En zonas urbanas con baja vacunación, la estrategia más efectiva es eliminar los criaderos de mosquitos (agua estancada) y usar insecticidas para reducir la población de mosquitos vectores, interrumpiendo así el ciclo de transmisión."
+  },
+  {
+    "id": "CN-369",
+    "materia": "Ciencias Naturales",
+    "competencia": "Ecología - Impacto del Cambio Climático",
+    "enunciado": "En las últimas décadas, la población de fitoplancton se ha reducido de manera considerable y ha afectado el equilibrio en los océanos. De acuerdo con la información anterior, ¿cuál de las siguientes opciones es una consecuencia probable de la disminución del fitoplancton en los océanos?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los peces tendrán que consumir más fitoplancton para absorber más CO₂ atmosférico.",
+      "B": "El carbono atrapado en el fondo liberaría las moléculas de oxígeno para la respiración de los animales terrestres.",
+      "C": "El CO₂ atmosférico se acumulará en el aire al no ser absorbido ni depositado en el fondo.",
+      "D": "La fotosíntesis aumentaría considerablemente al tener más fuentes de carbono disponibles."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El fitoplancton es un organismo fotosintético que absorbe CO₂ de la atmósfera y lo convierte en materia orgánica, actuando como sumidero de carbono. Si su población disminuye, menos CO₂ es absorbido, lo que contribuye a la acumulación de este gas de efecto invernadero en la atmósfera."
+  },
+  {
+    "id": "CN-370",
+    "materia": "Ciencias Naturales",
+    "competencia": "Ecología - Pirámide Trófica",
+    "enunciado": "En la figura se observa una pirámide trófica de un ecosistema marino. En este ecosistema se ha reducido drásticamente la población de delfines, tiburones y calamares debido a la caza indiscriminada de estos animales. Con base en la información de la pirámide, ¿qué ocurriría si se extinguen los delfines, tiburones y calamares de este ecosistema?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los descomponedores disminuirán considerablemente porque no tendrían alimento, y esto afectará la dinámica de los otros niveles.",
+      "B": "Los productores primarios no tendrían alimento y desaparecerían porque el ecosistema dejaría de recibir energía solar.",
+      "C": "Los carnívoros del segundo nivel aumentarían en número de individuos porque no tendrían depredadores.",
+      "D": "Los carnívoros del primer nivel aumentarían en número de individuos, porque se alimentarían de los carnívoros de segundo nivel."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Si los depredadores tope (delfines, tiburones, calamares) desaparecen, los carnívoros del nivel inferior aumentarán porque no tienen depredadores. Esto provocará una disminución de los consumidores primarios, afectando a los productores y alterando todo el ecosistema. Los descomponedores también se verían afectados por la reducción de materia orgánica disponible."
+  },
+  {
+    "id": "CN-371",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Fiebre Amarilla",
+    "enunciado": "En la figura se muestra el ciclo de transmisión de la fiebre amarilla. Si hay un aumento en las poblaciones de Aedes aegypti, ¿cuál de las siguientes situaciones se presentará?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Disminución de los mosquitos en la selva, debido a la competencia por recursos.",
+      "B": "Reducción de las poblaciones de primates, debido al aumento del transmisor de la enfermedad.",
+      "C": "Aumento de casos de infección de humanos en zonas selváticas.",
+      "D": "Aumento de casos de infección de humanos en zonas rurales y urbanas."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "Aedes aegypti es el mosquito vector de la fiebre amarilla en zonas urbanas y rurales. Un aumento en su población incrementa el riesgo de transmisión del virus a los humanos, lo que se traduce en un aumento de casos de infección en estas áreas."
+  },
+  {
+    "id": "CN-372",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Fiebre Amarilla",
+    "enunciado": "De las siguientes preguntas, ¿cuál puede resolverse según la investigación en ciencias naturales, para aportar al control de la fiebre amarilla?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "¿Cuántas personas hay vacunadas en África y América contra la fiebre amarilla?",
+      "B": "¿Cuál es el presupuesto que debe invertir un país para disminuir las muertes por fiebre amarilla?",
+      "C": "¿Cuáles especies están involucradas en la transmisión de la fiebre amarilla?",
+      "D": "¿La fiebre amarilla afecta en mayor proporción a hombres que a mujeres en el continente africano?"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Las ciencias naturales (biología, ecología, epidemiología) pueden investigar las especies involucradas en la transmisión de la fiebre amarilla (mosquitos vectores, primates reservorios). Las otras preguntas involucran aspectos políticos, económicos o de salud pública que requieren aproximaciones interdisciplinarias."
+  },
+  {
+    "id": "CN-373",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Caída Libre",
+    "enunciado": "Un paracaidista se lanza de un avión y registra su rapidez de caída en función del tiempo en la siguiente gráfica. A partir de la información anterior, luego de 7 segundos el paracaidista:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Aumenta su rapidez.",
+      "B": "Mantiene su rapidez en 0 m/s.",
+      "C": "Disminuye su rapidez.",
+      "D": "Mantiene su rapidez en 40 m/s."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "Después de 7 segundos, el paracaidista ha alcanzado la velocidad terminal (40 m/s), donde la fuerza de gravedad se equilibra con la resistencia del aire. A partir de ese momento, su rapidez se mantiene constante en 40 m/s."
+  },
+  {
+    "id": "CN-374",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Configuración Electrónica",
+    "enunciado": "En la tabla se muestra la configuración electrónica de un átomo y de un ion de aluminio: Aluminio neutro: 1s²2s²2p⁶3s²3p¹; Ion de aluminio: 1s²2s²2p⁶. Teniendo en cuenta que el estado de oxidación de un átomo se determina conociendo los cambios en el número de electrones de la configuración electrónica respecto al átomo neutro, se puede afirmar que el estado de oxidación del ion de aluminio es de 3+, porque:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El último nivel de energía de su configuración electrónica es 3.",
+      "B": "Tiene 3 electrones menos en su configuración electrónica que el aluminio.",
+      "C": "Tiene 3 electrones más en su configuración electrónica que el aluminio.",
+      "D": "El número total de electrones en su configuración electrónica es 3."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El aluminio neutro tiene 13 electrones (1s²2s²2p⁶3s²3p¹). El ion de aluminio (Al³⁺) tiene 10 electrones (1s²2s²2p⁶). Perdió 3 electrones (los del nivel 3s²3p¹), por lo que su estado de oxidación es +3."
+  },
+  {
+    "id": "CN-375",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Rotación de Barras",
+    "enunciado": "Una estudiante aplica dos fuerzas de igual magnitud en distintas partes a cuatro barras. La estudiante sabe que dependiendo de donde se apliquen las fuerzas en las barras, estas pueden rotar respecto al centro de masa, moverse sin rotar o permanecer quietas. ¿En cuál barra la aplicación de las fuerzas produce que la barra gire en el sentido opuesto al de las manecillas del reloj?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "En la barra 1.",
+      "B": "En la barra 2.",
+      "C": "En la barra 3.",
+      "D": "En la barra 4."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La rotación de una barra depende del torque neto aplicado (τ = F × d). Para que la barra gire en sentido antihorario, el torque neto debe ser positivo. En la barra 1, la fuerza aplicada a la derecha genera un torque antihorario, mientras que la fuerza a la izquierda genera un torque horario. Dependiendo de la magnitud de las distancias, el torque neto puede ser antihorario."
+  },
+  {
+    "id": "CN-376",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Cromatografía",
+    "enunciado": "Cuatro estudiantes quieren saber si la tinta púrpura está conformada por varios colores que fueron mezclados. Ellos tienen la hipótesis de que tanto el etanol como el agua son disolventes que podrán separar la mezcla de tinta. Para evaluarla toman una gota de la tinta y separan los colores que la componen usando ambos disolventes y descubren que la tinta púrpura está compuesta de los colores rojo y azul. Finalmente, con estos resultados concluyen que tanto el agua como el etanol separan la mezcla de tinta en sus dos colores: rojo y azul. Cada uno de los estudiantes decide elaborar una cartelera para resumir las conclusiones de la investigación. ¿Cuál de las siguientes carteleras presenta apropiadamente las conclusiones de la investigación?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Agregar una gota de tinta púrpura en etanol y agua, observar la separación de los colores rojo y azul.",
+      "B": "Demostrar que la tinta púrpura es una mezcla de colores.",
+      "C": "Concluir que la tinta púrpura está compuesta por más colores que la tinta azul y rosada.",
+      "D": "Determinar que las tintas púrpura y roja pueden usarse en esferos."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La cartelera apropiada debe describir el procedimiento experimental (agregar tinta en etanol y agua) y la observación (separación de colores rojo y azul). Esto muestra claramente cómo se llegó a la conclusión de que la tinta púrpura es una mezcla de los colores rojo y azul."
+  },
+  {
+    "id": "CN-377",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Flujo de Calor",
+    "enunciado": "Un estudiante modela el flujo de calor entre dos objetos (P y Q) a partir de una analogía con el movimiento del agua contenida en dos recipientes. El estudiante observa que cuando se conectan dos recipientes con niveles y cantidades de agua diferentes, el agua se mueve del recipiente P al recipiente Q hasta que los dos recipientes tienen el mismo nivel de agua. En el modelo, el nivel del líquido representará la temperatura y la cantidad de líquido representará la energía térmica (que se puede transferir como calor). Según el modelo, si se colocan dos objetos de diferentes tamaños (Volumen Q > Volumen P) y temperaturas (Temperatura P > Temperatura Q), ¿cómo será el flujo del calor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "De Q a P porque fluiría del cuerpo con mayor calor al cuerpo con menor calor.",
+      "B": "De P a Q porque fluiría del cuerpo con mayor temperatura al cuerpo con menor temperatura.",
+      "C": "De P a Q porque fluiría del cuerpo con menor temperatura al cuerpo con mayor temperatura.",
+      "D": "De Q a P porque fluiría del cuerpo con menor calor al cuerpo con mayor calor."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "En el modelo de flujo de calor, el calor siempre se transfiere desde el objeto con mayor temperatura al objeto con menor temperatura, independientemente de su volumen o cantidad de energía térmica. Por lo tanto, si Temperatura P > Temperatura Q, el calor fluirá de P a Q."
+  },
+  {
+    "id": "CN-378",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Genética de Ratones",
+    "enunciado": "A partir de un cruzamiento entre dos ratones amarillos, se obtienen los siguientes resultados en la descendencia: ratones amarillos y ratones no amarillos. Teniendo en cuenta que el alelo amarillo (Y) al presentarse en homocigosis (YY) causa la muerte temprana del ratón, ¿cuáles son los genotipos de los padres?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Ambos heterocigotos.",
+      "B": "Ambos homocigotos.",
+      "C": "Padre homocigoto recesivo y madre homocigota dominante.",
+      "D": "Padre heterocigoto y madre homocigota dominante."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Si el alelo Y en homocigosis (YY) es letal, los ratones amarillos deben ser heterocigotos (Yy). Al cruzar dos ratones amarillos (Yy × Yy), la descendencia esperada sería: YY (letal, no nace), Yy (amarillo), y yy (no amarillo). La proporción entre amarillos y no amarillos sería 2:1, lo que coincide con lo observado."
+  },
+  {
+    "id": "CN-379",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Ingeniería Genética",
+    "enunciado": "Los cultivos de una especie frutal de interés económico para cierta región, están siendo infectados por un hongo que ataca los tallos y los hace más débiles, impidiendo el crecimiento de la planta hasta la etapa de producción de frutos. Para solucionar el problema se consulta a un grupo de científicos, quienes intentan modificar un conjunto de genes en esta especie de planta, para volverla resistente a la infección producida por el hongo. De acuerdo con la situación planteada, ¿cuál de las siguientes preguntas puede ser abordada desde las ciencias naturales?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "¿La modificación de un grupo de genes potenciará la producción de sustancias tóxicas en la planta que evitará la infección producida por el hongo?",
+      "B": "¿Qué beneficios económicos le traerá a los agricultores la manipulación de genes vegetales en el tratamiento de enfermedades en sus cultivos?",
+      "C": "¿Cómo contribuirá la experimentación con plantas al desarrollo social y cultural de la región?",
+      "D": "¿Qué otro tipo de actividad o negocio podrán utilizar los agricultores para reemplazar el cultivo afectado por el hongo?"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La pregunta A es una pregunta de ciencias naturales porque se enfoca en el efecto de la modificación genética sobre la resistencia a un patógeno (hongo). Esto implica procesos biológicos y moleculares. Las otras preguntas abordan aspectos económicos, sociales o culturales, que no son temas de las ciencias naturales."
+  },
+  {
+    "id": "CN-380",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Cambio Climático",
+    "enunciado": "Un grupo de investigadores realizó mediciones de la temperatura promedio anual en una región, durante 5 años consecutivos. Se observa un aumento de al menos 1 °C en la temperatura promedio después del quinto año. El grupo quiere conocer los fenómenos que causaron este aumento de temperatura en la región. ¿Cuál de las siguientes preguntas puede resolverse mediante una investigación, según el campo de las ciencias naturales?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "¿Cuál es el efecto del aumento de la temperatura en las finanzas del gobierno de la región?",
+      "B": "¿Cuál será el partido político beneficiado en las próximas elecciones debido al aumento de la temperatura?",
+      "C": "¿El aumento de temperatura ha favorecido el desplazamiento de personas de la región?",
+      "D": "¿Ha variado la intensidad de luz emitida por el Sol durante los últimos 5 años, lo cual causa el aumento de temperatura?"
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "La pregunta D se enfoca en una causa física (variación de la intensidad de luz solar) que podría explicar el aumento de temperatura. Es una pregunta de ciencias naturales porque investiga un fenómeno físico medible. Las otras preguntas abordan aspectos económicos, políticos o sociales que no son competencia de las ciencias naturales."
+  },
+  {
+    "id": "CN-381",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Reacciones de Neutralización",
+    "enunciado": "Una reacción de neutralización tiene lugar cuando reaccionan un ácido y una base (por lo general ambos en estado acuoso) para producir agua en estado líquido y una sal. Al hacer reaccionar ácido clorhídrico (HCl) con hidróxido de sodio (NaOH), ¿cuál de las siguientes reacciones describe la obtención de una sal?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "HCl + NaOH → NaCl + HCl",
+      "B": "H₂O + NaOH → NaCl + HCl",
+      "C": "HCl + NaOH → NaCl + H₂O",
+      "D": "HCl + NaOH → Na₂SO₄ + H₂O"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La reacción de neutralización entre un ácido (HCl) y una base (NaOH) produce una sal (NaCl) y agua (H₂O). La ecuación balanceada es: HCl + NaOH → NaCl + H₂O."
+  },
+  {
+    "id": "CN-382",
+    "materia": "Ciencias Naturales",
+    "competencia": "Biología - Experimentación",
+    "enunciado": "Un estudiante tiene la hipótesis de que un tipo de dulce se disuelve completamente en el mismo tiempo en alcohol, agua y aceite. Para contrastarla coloca dulces idénticos, del mismo tamaño, y los sumerge en las tres sustancias. Al transcurrir el mismo tiempo para las tres sustancias obtiene los resultados: Alcohol (Se disuelve poco), Agua (Se disuelve completamente), Aceite (No se disuelve). De acuerdo con lo anterior, se puede afirmar que la hipótesis planteada por el estudiante es:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Verdadera, porque el dulce se disuelve completamente en las tres sustancias empleadas.",
+      "B": "Falsa, porque el dulce se disuelve en un menor tiempo en el agua que en las otras sustancias.",
+      "C": "Verdadera, porque el tiempo que tarda en disolverse depende del tamaño del dulce empleado.",
+      "D": "Falsa, porque el dulce podría disolverse en un menor tiempo con una mezcla de alcohol y aceite."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La hipótesis del estudiante era que el dulce se disuelve completamente en el mismo tiempo en las tres sustancias. Los resultados muestran que solo se disuelve completamente en agua, no en alcohol ni en aceite. Por lo tanto, la hipótesis es falsa. Además, la disolución es más rápida en agua que en las otras sustancias."
+  },
+  {
+    "id": "CN-383",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Dilatación Térmica",
+    "enunciado": "La expansión térmica es el fenómeno físico que experimenta un cuerpo al calentarse. Conforme aumenta la temperatura del objeto, aumenta su tamaño y sus cambios de longitud son proporcionales a los cambios de temperatura. Un alambre de cobre de longitud inicial de 1,00000 metros a una temperatura de 20 °C se calienta hasta alcanzar los 50 °C y llega a una longitud final de 1,00051 metros. ¿Cuál de las siguientes gráficas de longitud como función de la temperatura describe la situación anterior?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Una línea recta con pendiente positiva.",
+      "B": "Una línea recta con pendiente negativa.",
+      "C": "Una curva exponencial creciente.",
+      "D": "Una línea horizontal constante."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La expansión térmica es un proceso lineal para pequeños cambios de temperatura. La longitud aumenta proporcionalmente al aumento de temperatura (ΔL = α × L₀ × ΔT). Por lo tanto, la gráfica de longitud en función de la temperatura es una línea recta con pendiente positiva."
+  },
+  {
+    "id": "CN-384",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Flotación",
+    "enunciado": "Un estudiante viaja a un lago que es famoso porque es muy difícil hundirse en él. Cuando el estudiante llega a un lugar donde la profundidad es de 4 metros, intenta sumergirse, se da cuenta de que requiere mucha energía para hundirse en sus aguas y que puede flotar en ellas sin ningún esfuerzo, cosa que no pasa en una piscina, donde el estudiante se hunde más rápido. Cuando él observa con cuidado el agua de este lago, se da cuenta de que tiene un color amarillento, un olor muy fuerte y un sabor bastante particular. De acuerdo con lo anterior, ¿cuál de las siguientes hipótesis plantea una causa probable para explicar por qué en este lago se flota con mayor facilidad que en una piscina?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Este lugar es tan poco profundo que es imposible hundirse en él, ya que el agua le llega a las rodillas al estudiante.",
+      "B": "El agua de este lago contiene compuestos químicos que aumentan su densidad y facilitan la flotabilidad.",
+      "C": "El agua de este lago es potable, pero el agua de la piscina no, y es imposible hundirse en agua pura.",
+      "D": "El lago fue creado por el hombre y no por la naturaleza, y los humanos solo pueden flotar en aguas naturales."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La flotabilidad depende de la densidad del líquido. Si el lago contiene compuestos químicos disueltos (sales minerales, azufre, etc.), su densidad es mayor que la del agua dulce de una piscina. Esto explica por qué es más fácil flotar en el lago: el cuerpo humano experimenta un mayor empuje (Principio de Arquímedes)."
+  },
+  {
+    "id": "CN-385",
+    "materia": "Ciencias Naturales",
+    "competencia": "Química - Enlaces Iónicos",
+    "enunciado": "La electronegatividad es la capacidad que tiene un átomo para atraer electrones. Este valor puede utilizarse para determinar qué tipo de enlace están formando dos átomos en una molécula; así, si la diferencia de electronegatividad entre los dos átomos que forman el enlace es mayor a 1,7, se dice que el enlace es de tipo iónico; si la diferencia es menor, se dice que el enlace es covalente. En la tabla se muestran varios átomos con su respectivo valor de electronegatividad: Z=2,1; X=0,7; Y=0,9; W=3,0. Con base en la información anterior, ¿cuál o cuáles de los siguientes enlaces son iónicos?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Z-W y X-Y",
+      "B": "X-W",
+      "C": "X-W y Z-X",
+      "D": "Z-W"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El enlace iónico se forma cuando la diferencia de electronegatividad es mayor a 1,7. X-W: |0,7 - 3,0| = 2,3 (iónico). Los otros enlaces tienen diferencias menores (Z-W: 0,9; X-Y: 0,2; Z-X: 1,4), por lo que son covalentes."
+  },
+  {
+    "id": "CN-386",
+    "materia": "Ciencias Naturales",
+    "competencia": "Física - Fuerzas",
+    "enunciado": "Un deportista se sostiene de una cuerda, como se muestra en la figura. El deportista permanece quieto, pues la tensión de la cuerda y su peso se cancelan. ¿Por qué se cancelan la tensión de la cuerda y el peso del deportista?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Porque la tensión de la cuerda va hacia la derecha y el peso del deportista va hacia la izquierda.",
+      "B": "Porque la tensión de la cuerda y el peso del deportista van hacia abajo.",
+      "C": "Porque la tensión de la cuerda y el peso del deportista van hacia arriba.",
+      "D": "Porque la tensión de la cuerda va hacia arriba y el peso del deportista va hacia abajo."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "Para que el deportista esté en equilibrio estático, la suma de las fuerzas debe ser cero. La tensión de la cuerda actúa hacia arriba y el peso (fuerza gravitacional) actúa hacia abajo. Ambas fuerzas son de igual magnitud y dirección opuesta, por lo que se cancelan."
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           {
             "id": "IN-001",
             "materia": "Inglés",
