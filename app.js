@@ -192,6 +192,17 @@
         actualizarDisponibles();
         actualizarTiempoEstimado();
       });
+
+      // Pausa
+    document.getElementById('btn-pausar')?.addEventListener('click', togglePausa);
+    document.getElementById('btn-reanudar')?.addEventListener('click', reanudarSimulacro);
+    
+    // Cerrar pausa con Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && pausaActiva) {
+        reanudarSimulacro();
+      }
+    });
   
       // Limpiar historial
       document.getElementById('btn-limpiar-historial')?.addEventListener('click', limpiarHistorial);
@@ -1426,6 +1437,76 @@ function seleccionarModo(modo) {
         renderizarHistorial();
       }
     }
+
+      // ============================================================
+  // ===== PAUSA =================================================
+  // ============================================================
+
+  let pausaActiva = false;
+
+  /** Pausar el simulacro */
+  function pausarSimulacro() {
+    if (pausaActiva) return;
+    if (state.preguntasSesion.length === 0) return;
+    
+    pausaActiva = true;
+    
+    // Detener timer
+    detenerTimer();
+    
+    // Actualizar información de pausa
+    const total = state.preguntasSesion.length;
+    const actual = state.indiceActual + 1;
+    document.getElementById('pausa-pregunta').textContent = actual;
+    document.getElementById('pausa-total').textContent = total;
+    
+    // Mostrar overlay
+    document.getElementById('overlay-pausa').classList.remove('hidden');
+    
+    // Cambiar texto del botón
+    const btnPausar = document.getElementById('btn-pausar');
+    if (btnPausar) {
+      btnPausar.innerHTML = `
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg>
+        <span class="hidden sm:inline">Reanudar</span>
+      `;
+      btnPausar.classList.add('text-primary-500', 'dark:text-primary-400');
+    }
+  }
+
+  /** Reanudar el simulacro */
+  function reanudarSimulacro() {
+    if (!pausaActiva) return;
+    
+    pausaActiva = false;
+    
+    // Ocultar overlay
+    document.getElementById('overlay-pausa').classList.add('hidden');
+    
+    // Reanudar timer
+    if (state.timerActivo) {
+      iniciarTimer();
+    }
+    
+    // Cambiar texto del botón
+    const btnPausar = document.getElementById('btn-pausar');
+    if (btnPausar) {
+      btnPausar.innerHTML = `
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span class="hidden sm:inline">Pausar</span>
+      `;
+      btnPausar.classList.remove('text-primary-500', 'dark:text-primary-400');
+    }
+  }
+
+  /** Alternar pausa */
+  function togglePausa() {
+    if (pausaActiva) {
+      reanudarSimulacro();
+    } else {
+      pausarSimulacro();
+    }
+  }
 
 
       // ============================================================

@@ -127,28 +127,25 @@
             </div>
 
             <!-- Cantidad de preguntas -->
-            <!-- Reemplaza la sección de cantidad con esto: -->
+            <div id="cantidad-container">
+              <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Cantidad de preguntas</label>
+              <div class="grid grid-cols-4 gap-2">
+                <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="5">5</button>
+                <button class="cantidad-btn active-mode px-3 py-2.5 rounded-xl border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-sm font-bold transition-all" data-cantidad="10">10</button>
+                <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="20">20</button>
+                <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="50">50</button>
+              </div>
+            </div>
 
-<!-- Cantidad de preguntas -->
-<div id="cantidad-container">
-  <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Cantidad de preguntas</label>
-  <div class="grid grid-cols-4 gap-2">
-    <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="5">5</button>
-    <button class="cantidad-btn active-mode px-3 py-2.5 rounded-xl border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-sm font-bold transition-all" data-cantidad="10">10</button>
-    <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="20">20</button>
-    <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="50">50</button>
-  </div>
-</div>
+            <!-- Mensaje informativo para simulacro -->
+            <div id="simulacro-info" class="hidden mt-3 p-3 rounded-xl bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800/30">
+              <p class="text-xs text-primary-700 dark:text-primary-300 leading-relaxed">
+                <span class="font-bold">📋 Simulacro Completo ICFES</span><br>
+                <span class="text-primary-600 dark:text-primary-400">55 Inglés · 29 Ciencias Naturales · 25 Matemáticas · 25 Sociales · 41 Lectura Crítica</span>
+              </p>
+            </div>
 
-<!-- Mensaje informativo para simulacro -->
-<div id="simulacro-info" class="hidden mt-3 p-3 rounded-xl bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800/30">
-  <p class="text-xs text-primary-700 dark:text-primary-300 leading-relaxed">
-    <span class="font-bold">📋 Simulacro Completo ICFES</span><br>
-    <span class="text-primary-600 dark:text-primary-400">55 Inglés · 29 Ciencias Naturales · 25 Matemáticas · 25 Sociales · 41 Lectura Crítica</span>
-  </p>
-</div>
-
-<p id="disponibles-info" class="text-xs text-gray-400 dark:text-gray-500 mt-2"></p>
+            <p id="disponibles-info" class="text-xs text-gray-400 dark:text-gray-500 mt-2"></p>
 
             <!-- Temporizador Configuración -->
             <div class="border-t border-gray-100 dark:border-gray-800 pt-5 space-y-4">
@@ -180,73 +177,58 @@
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               Comenzar Entrenamiento
             </button>
+
+            <!-- Tiempo estimado -->
+            <div id="tiempo-estimado-container" class="mt-3 hidden">
+              <div class="flex items-center gap-2 p-3 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800/30">
+                <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <div>
+                  <p class="text-xs text-blue-700 dark:text-blue-300 font-medium">
+                    ⏱️ Tiempo estimado: <span id="tiempo-estimado-texto">--</span>
+                  </p>
+                  <p class="text-[10px] text-blue-600 dark:text-blue-400/70">
+                    Basado en <span id="tiempo-estimado-preguntas">0</span> preguntas · ~60 segundos por pregunta
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
-
-
-
-        <!-- Tiempo estimado -->
-<div id="tiempo-estimado-container" class="mt-3 hidden">
-  <div class="flex items-center gap-2 p-3 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800/30">
-    <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-    </svg>
-    <div>
-      <p class="text-xs text-blue-700 dark:text-blue-300 font-medium">
-        ⏱️ Tiempo estimado: <span id="tiempo-estimado-texto">--</span>
-      </p>
-      <p class="text-[10px] text-blue-600 dark:text-blue-400/70">
-        Basado en <span id="tiempo-estimado-preguntas">0</span> preguntas · ~60 segundos por pregunta
-      </p>
-    </div>
-  </div>
-</div>
-
-
-
-
-
         </div>
 
-
-
-
-
-
         <!-- ===== HISTORIAL DE RESULTADOS ===== -->
-<div id="historial-container" class="w-full max-w-xl mt-8">
-  <div id="historial-card" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 overflow-hidden">
-    
-    <!-- Header del historial -->
-    <div class="px-6 py-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-        <h3 class="font-bold text-gray-900 dark:text-white">Mi Historial</h3>
-      </div>
-      <button id="btn-limpiar-historial" class="text-xs text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors flex items-center gap-1">
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
-        Limpiar
-      </button>
-    </div>
+        <div id="historial-container" class="w-full max-w-xl mt-8">
+          <div id="historial-card" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 overflow-hidden">
+            
+            <!-- Header del historial -->
+            <div class="px-6 py-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                <h3 class="font-bold text-gray-900 dark:text-white">Mi Historial</h3>
+              </div>
+              <button id="btn-limpiar-historial" class="text-xs text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors flex items-center gap-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                Limpiar
+              </button>
+            </div>
 
-    <!-- Estadísticas -->
-    <div id="estadisticas-container" class="px-6 pt-4 pb-2 grid grid-cols-2 md:grid-cols-4 gap-3">
-      <!-- Se llena dinámicamente -->
-    </div>
+            <!-- Estadísticas -->
+            <div id="estadisticas-container" class="px-6 pt-4 pb-2 grid grid-cols-2 md:grid-cols-4 gap-3">
+              <!-- Se llena dinámicamente -->
+            </div>
 
-    <!-- Lista de historial -->
-    <div id="historial-lista" class="px-6 pb-6 max-h-[400px] overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700">
-      <!-- Se llena dinámicamente -->
-      <p id="historial-vacio" class="text-center text-gray-400 dark:text-gray-500 py-8 text-sm">
-        No hay intentos guardados aún.<br>
-        ¡Completa tu primer entrenamiento para ver tu progreso!
-      </p>
-    </div>
-  </div>
-</div>
-
-
-
-
+            <!-- Lista de historial -->
+            <div id="historial-lista" class="px-6 pb-6 max-h-[400px] overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700">
+              <!-- Se llena dinámicamente -->
+              <p id="historial-vacio" class="text-center text-gray-400 dark:text-gray-500 py-8 text-sm">
+                No hay intentos guardados aún.<br>
+                ¡Completa tu primer entrenamiento para ver tu progreso!
+              </p>
+            </div>
+          </div>
+        </div>
 
         <!-- Stats footer -->
         <div class="mt-6 flex items-center justify-center gap-6 text-xs text-gray-400 dark:text-gray-500">
@@ -278,10 +260,16 @@
         </div>
         <!-- Top bar info -->
         <div class="flex items-center justify-between">
-          <button id="btn-abandonar" class="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-            <span class="hidden sm:inline">Salir</span>
-          </button>
+          <div class="flex items-center gap-2">
+            <button id="btn-abandonar" class="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              <span class="hidden sm:inline">Salir</span>
+            </button>
+            <button id="btn-pausar" class="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="hidden sm:inline">Pausar</span>
+            </button>
+          </div>
           <div id="quiz-materia-badge" class="px-3 py-1 rounded-full text-xs font-bold bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300"></div>
           <div id="quiz-timer" class="flex items-center gap-1.5 text-sm font-mono text-gray-500 dark:text-gray-400">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -429,6 +417,8 @@
     </main>
   </div>
 
+  <!-- ==================== MODALES ==================== -->
+
   <!-- Custom Modal de Confirmación para salir -->
   <div id="modal-confirmacion" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden animate-fade-in">
     <div class="bg-white dark:bg-gray-900 rounded-3xl max-w-sm w-full p-6 shadow-2xl border border-gray-100 dark:border-gray-800 transform scale-95 transition-all duration-300 animate-scale-in">
@@ -448,30 +438,50 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
-
   <!-- Modal de progreso guardado -->
-<div id="modal-progreso" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden animate-fade-in">
-  <div class="bg-white dark:bg-gray-900 rounded-3xl max-w-sm w-full p-6 shadow-2xl border border-gray-100 dark:border-gray-800 transform scale-95 transition-all duration-300 animate-scale-in">
-    <div class="w-12 h-12 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center mx-auto mb-4">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+  <div id="modal-progreso" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden animate-fade-in">
+    <div class="bg-white dark:bg-gray-900 rounded-3xl max-w-sm w-full p-6 shadow-2xl border border-gray-100 dark:border-gray-800 transform scale-95 transition-all duration-300 animate-scale-in">
+      <div class="w-12 h-12 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center mx-auto mb-4">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+      </div>
+      <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white mb-2">¿Continuar donde quedaste?</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 text-center mb-1">
+        Tienes un simulacro en progreso:
+      </p>
+      <p id="modal-progreso-info" class="text-sm text-gray-600 dark:text-gray-300 text-center font-medium mb-6">
+        Pregunta 5 de 175 · 2 correctas
+      </p>
+      <div class="flex gap-3">
+        <button id="btn-continuar" class="flex-1 py-3 rounded-xl bg-primary-500 hover:bg-primary-600 text-white text-sm font-bold shadow-lg shadow-primary-500/20 transition-colors">
+          Continuar
+        </button>
+        <button id="btn-reiniciar-progreso" class="flex-1 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors">
+          Empezar de nuevo
+        </button>
+      </div>
     </div>
-    <h3 class="text-lg font-bold text-center text-gray-900 dark:text-white mb-2">¿Continuar donde quedaste?</h3>
-    <p class="text-sm text-gray-500 dark:text-gray-400 text-center mb-1">
-      Tienes un simulacro en progreso:
-    </p>
-    <p id="modal-progreso-info" class="text-sm text-gray-600 dark:text-gray-300 text-center font-medium mb-6">
-      Pregunta 5 de 175 · 2 correctas
-    </p>
-    <div class="flex gap-3">
-      <button id="btn-continuar" class="flex-1 py-3 rounded-xl bg-primary-500 hover:bg-primary-600 text-white text-sm font-bold shadow-lg shadow-primary-500/20 transition-colors">
-        Continuar
-      </button>
-      <button id="btn-reiniciar-progreso" class="flex-1 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/80 transition-colors">
-        Empezar de nuevo
+  </div>
+
+  <!-- Overlay de Pausa -->
+  <div id="overlay-pausa" class="fixed inset-0 z-[90] flex items-center justify-center bg-black/70 backdrop-blur-sm hidden animate-fade-in">
+    <div class="bg-white dark:bg-gray-900 rounded-3xl max-w-sm w-full p-8 shadow-2xl border border-gray-100 dark:border-gray-800 text-center transform scale-95 transition-all duration-300 animate-scale-in">
+      <div class="w-16 h-16 rounded-2xl bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 flex items-center justify-center mx-auto mb-4">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">⏸️ En pausa</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+        Tu progreso está guardado. Cuando estés listo, reanuda el simulacro.
+      </p>
+      <p id="pausa-info" class="text-xs text-gray-400 dark:text-gray-500 mb-6">
+        Pregunta <span id="pausa-pregunta">0</span> de <span id="pausa-total">0</span>
+      </p>
+      <button id="btn-reanudar" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white font-bold text-sm shadow-lg shadow-primary-500/25 transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg>
+        Reanudar
       </button>
     </div>
   </div>
-</div>
+
+  <script src="app.js"></script>
 </body>
 </html>
