@@ -46,10 +46,28 @@
           <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-primary-500/25">S11</div>
           <span class="font-bold text-lg tracking-tight hidden sm:block">ICFES <span class="text-primary-500">Saber 11</span></span>
         </div>
-        <button id="btn-toggle-theme" class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" title="Cambiar tema">
-          <svg id="icon-sun" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-          <svg id="icon-moon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
-        </button>
+        
+        <!-- Perfil y temas - Grupo de botones a la derecha -->
+        <div class="flex items-center gap-2">
+          <!-- Perfil activo -->
+          <div class="flex items-center gap-2">
+            <button id="btn-cambiar-perfil" class="flex items-center gap-2 px-3 py-1.5 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors border border-gray-200 dark:border-gray-700" title="Cambiar perfil">
+              <span class="w-6 h-6 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-white text-xs font-bold">
+                <span id="perfil-inicial">P</span>
+              </span>
+              <span id="perfil-activo-nombre" class="text-sm font-medium text-gray-700 dark:text-gray-300 hidden sm:inline">Principal</span>
+              <svg class="w-4 h-4 text-gray-400 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+          </div>
+          
+          <!-- Tema -->
+          <button id="btn-toggle-theme" class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" title="Cambiar tema">
+            <svg id="icon-sun" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <svg id="icon-moon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </button>
+        </div>
       </div>
     </nav>
 
@@ -199,61 +217,59 @@
         </div>
 
         <!-- ===== HISTORIAL DE RESULTADOS ===== -->
-        <!-- ===== HISTORIAL DE RESULTADOS ===== -->
-<div id="historial-container" class="w-full max-w-xl mt-8">
-  <div id="historial-card" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 overflow-hidden">
-    
-    <!-- Header del historial -->
-    <div class="px-6 py-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between flex-wrap gap-2">
-      <div class="flex items-center gap-2">
-        <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-        <h3 class="font-bold text-gray-900 dark:text-white">Mi Historial</h3>
-        <span id="historial-total" class="text-xs text-gray-400 dark:text-gray-500 ml-1">(0)</span>
-      </div>
-      <div class="flex items-center gap-2">
-        <button id="btn-exportar-csv" class="text-xs text-gray-400 hover:text-green-500 dark:hover:text-green-400 transition-colors flex items-center gap-1">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-          Exportar CSV
-        </button>
-        <button id="btn-limpiar-historial" class="text-xs text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors flex items-center gap-1">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
-          Limpiar
-        </button>
-      </div>
-    </div>
+        <div id="historial-container" class="w-full max-w-xl mt-8">
+          <div id="historial-card" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 overflow-hidden">
+            
+            <!-- Header del historial -->
+            <div class="px-6 py-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between flex-wrap gap-2">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                <h3 class="font-bold text-gray-900 dark:text-white">Mi Historial</h3>
+                <span id="historial-total" class="text-xs text-gray-400 dark:text-gray-500 ml-1">(0)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <button id="btn-exportar-csv" class="text-xs text-gray-400 hover:text-green-500 dark:hover:text-green-400 transition-colors flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                  Exportar CSV
+                </button>
+                <button id="btn-limpiar-historial" class="text-xs text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+                  Limpiar
+                </button>
+              </div>
+            </div>
 
-    <!-- Gráfico de evolución -->
-    <div id="grafico-evolucion-container" class="px-6 pt-4 pb-2 hidden">
-      <div class="flex items-center justify-between mb-2">
-        <span class="text-xs font-semibold text-gray-600 dark:text-gray-300">📈 Evolución de puntajes</span>
-        <span id="tendencia-label" class="text-xs text-gray-400 dark:text-gray-500"></span>
-      </div>
-      <canvas id="chart-evolucion" height="120"></canvas>
-    </div>
+            <!-- Gráfico de evolución -->
+            <div id="grafico-evolucion-container" class="px-6 pt-4 pb-2 hidden">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-semibold text-gray-600 dark:text-gray-300">📈 Evolución de puntajes</span>
+                <span id="tendencia-label" class="text-xs text-gray-400 dark:text-gray-500"></span>
+              </div>
+              <canvas id="chart-evolucion" height="120"></canvas>
+            </div>
 
-    <!-- Estadísticas -->
-    <div id="estadisticas-container" class="px-6 pt-4 pb-2 grid grid-cols-2 md:grid-cols-4 gap-3">
-      <!-- Se llena dinámicamente -->
-    </div>
+            <!-- Estadísticas -->
+            <div id="estadisticas-container" class="px-6 pt-4 pb-2 grid grid-cols-2 md:grid-cols-4 gap-3">
+              <!-- Se llena dinámicamente -->
+            </div>
 
-    <!-- Filtros -->
-    <div class="px-6 pt-3 pb-1 flex flex-wrap gap-2 border-t border-gray-100 dark:border-gray-800">
-      <button class="filtro-btn active-mode px-3 py-1.5 rounded-full text-xs font-medium border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300 transition-all" data-filtro="todos">Todos</button>
-      <button class="filtro-btn px-3 py-1.5 rounded-full text-xs font-medium border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-filtro="simulacro">Simulacro</button>
-      <button class="filtro-btn px-3 py-1.5 rounded-full text-xs font-medium border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-filtro="materia">Materia</button>
-      <button class="filtro-btn px-3 py-1.5 rounded-full text-xs font-medium border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-filtro="medicina">Medicina</button>
-    </div>
+            <!-- Filtros -->
+            <div class="px-6 pt-3 pb-1 flex flex-wrap gap-2 border-t border-gray-100 dark:border-gray-800">
+              <button class="filtro-btn active-mode px-3 py-1.5 rounded-full text-xs font-medium border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300 transition-all" data-filtro="todos">Todos</button>
+              <button class="filtro-btn px-3 py-1.5 rounded-full text-xs font-medium border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-filtro="simulacro">Simulacro</button>
+              <button class="filtro-btn px-3 py-1.5 rounded-full text-xs font-medium border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-filtro="materia">Materia</button>
+              <button class="filtro-btn px-3 py-1.5 rounded-full text-xs font-medium border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-filtro="medicina">Medicina</button>
+            </div>
 
-    <!-- Lista de historial -->
-    <div id="historial-lista" class="px-6 pb-6 max-h-[400px] overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700">
-      <!-- Se llena dinámicamente -->
-      <p id="historial-vacio" class="text-center text-gray-400 dark:text-gray-500 py-8 text-sm">
-        No hay intentos guardados aún.<br>
-        ¡Completa tu primer entrenamiento para ver tu progreso!
-      </p>
-    </div>
-  </div>
-</div>
+            <!-- Lista de historial -->
+            <div id="historial-lista" class="px-6 pb-6 max-h-[400px] overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700">
+              <p id="historial-vacio" class="text-center text-gray-400 dark:text-gray-500 py-8 text-sm">
+                No hay intentos guardados aún.<br>
+                ¡Completa tu primer entrenamiento para ver tu progreso!
+              </p>
+            </div>
+          </div>
+        </div>
 
         <!-- Stats footer -->
         <div class="mt-6 flex items-center justify-center gap-6 text-xs text-gray-400 dark:text-gray-500">
@@ -444,7 +460,7 @@
 
   <!-- ==================== MODALES ==================== -->
 
-  <!-- Custom Modal de Confirmación para salir -->
+  <!-- Modal de Confirmación para salir -->
   <div id="modal-confirmacion" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden animate-fade-in">
     <div class="bg-white dark:bg-gray-900 rounded-3xl max-w-sm w-full p-6 shadow-2xl border border-gray-100 dark:border-gray-800 transform scale-95 transition-all duration-300 animate-scale-in">
       <div class="w-12 h-12 rounded-2xl bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center mx-auto mb-4">
@@ -504,6 +520,49 @@
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg>
         Reanudar
       </button>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL DE PERFILES ==================== -->
+  <div id="modal-perfiles" class="fixed inset-0 z-[110] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden animate-fade-in">
+    <div class="bg-white dark:bg-gray-900 rounded-3xl max-w-md w-full p-6 shadow-2xl border border-gray-100 dark:border-gray-800 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-lg font-bold text-gray-900 dark:text-white">👤 Perfiles</h3>
+        <button id="btn-cerrar-modal-perfiles" class="p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Perfil actual -->
+      <div class="mb-4 p-3 rounded-xl bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800/30">
+        <p class="text-xs text-gray-500 dark:text-gray-400">Perfil activo</p>
+        <p class="font-bold text-gray-900 dark:text-white" id="modal-perfil-actual">Principal</p>
+        <p class="text-xs text-gray-400 dark:text-gray-500" id="modal-perfil-stats">0 intentos</p>
+      </div>
+      
+      <!-- Crear nuevo perfil -->
+      <div class="mb-4">
+        <label class="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1.5">Crear nuevo perfil</label>
+        <div class="flex gap-2">
+          <input id="input-nuevo-perfil" type="text" placeholder="Nombre..." class="flex-1 px-4 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm focus:outline-none focus:border-primary-500 transition-colors">
+          <button id="btn-crear-perfil" class="px-4 py-2.5 rounded-xl bg-primary-500 hover:bg-primary-600 text-white font-semibold text-sm transition-colors whitespace-nowrap">
+            Crear
+          </button>
+        </div>
+      </div>
+      
+      <!-- Lista de perfiles -->
+      <div class="border-t border-gray-100 dark:border-gray-800 pt-4">
+        <p class="text-xs font-semibold text-gray-600 dark:text-gray-400 mb-2">Tus perfiles</p>
+        <div id="lista-perfiles" class="space-y-2">
+          <!-- Renderizado dinámicamente -->
+        </div>
+        <p id="sin-perfiles" class="text-center text-gray-400 dark:text-gray-500 py-4 text-sm hidden">
+          No hay perfiles creados.<br>Crea uno para guardar tu progreso.
+        </p>
+      </div>
     </div>
   </div>
 

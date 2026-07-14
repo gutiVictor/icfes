@@ -108,17 +108,27 @@
       btnConfirmarSalir: $('#btn-confirmar-salir'),
     };
   
-      // ===== INICIALIZACIÓN =====
-  async function init() {
-    await cargarPreguntas();
-    configurarTema();
-    configurarEventos();
-    actualizarDisponibles();
-    actualizarUIporModo();
-    renderizarHistorial();
-    actualizarTiempoEstimado(); // <--- ESTA LÍNEA DEBE ESTAR
-    verificarProgresoGuardado(); // <--- AGREGAR
-  }
+    // ===== VARIABLES GLOBALES =====
+    let pausaActiva = false;
+    let filtroActual = 'todos';
+  
+    // ===== INICIALIZACIÓN =====
+    async function init() {
+      await cargarPreguntas();
+      configurarTema();
+      configurarEventos();
+      
+      // Cargar perfil y aplicar tema
+      renderizarSelectorPerfiles();
+      aplicarTemaPerfil();
+      
+      actualizarDisponibles();
+      actualizarUIporModo();
+      renderizarHistorial();
+      actualizarTiempoEstimado();
+      
+      verificarProgresoGuardado();
+    }
   
     // ===== CARGAR PREGUNTAS JSON =====
     async function cargarPreguntas() {
@@ -138,6 +148,19 @@
   
     // ===== TEMA OSCURO / CLARO =====
     function configurarTema() {
+      const perfil = getPerfilData();
+      if (perfil && perfil.preferencias?.tema) {
+        const tema = perfil.preferencias.tema;
+        if (tema === 'dark') {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+        } else {
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+        }
+        return;
+      }
+      
       const saved = localStorage.getItem('icfes-theme');
       if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
@@ -149,6 +172,7 @@
       const isDark = document.documentElement.classList.toggle('dark');
       document.documentElement.classList.toggle('light', !isDark);
       localStorage.setItem('icfes-theme', isDark ? 'dark' : 'light');
+      guardarPreferencia('tema', isDark ? 'dark' : 'light');
     }
   
     // ===== EVENTOS =====
@@ -192,20 +216,70 @@
         actualizarDisponibles();
         actualizarTiempoEstimado();
       });
-
+  
       // Pausa
-    document.getElementById('btn-pausar')?.addEventListener('click', togglePausa);
-    document.getElementById('btn-reanudar')?.addEventListener('click', reanudarSimulacro);
-    
-    // Cerrar pausa con Escape
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && pausaActiva) {
-        reanudarSimulacro();
-      }
-    });
+      document.getElementById('btn-pausar')?.addEventListener('click', togglePausa);
+      document.getElementById('btn-reanudar')?.addEventListener('click', reanudarSimulacro);
+      
+      // Cerrar pausa con Escape
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && pausaActiva) {
+          reanudarSimulacro();
+        }
+      });
   
       // Limpiar historial
       document.getElementById('btn-limpiar-historial')?.addEventListener('click', limpiarHistorial);
+  
+      // Exportar CSV
+      document.getElementById('btn-exportar-csv')?.addEventListener('click', exportarCSV);
+  
+      // ===== PERFILES =====
+      document.getElementById('btn-cambiar-perfil')?.addEventListener('click', function() {
+        renderizarListaPerfiles();
+        renderizarSelectorPerfiles();
+        document.getElementById('modal-perfiles')?.classList.remove('hidden');
+      });
+  
+      document.getElementById('btn-cerrar-modal-perfiles')?.addEventListener('click', function() {
+        document.getElementById('modal-perfiles')?.classList.add('hidden');
+      });
+  
+      document.getElementById('modal-perfiles')?.addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.classList.add('hidden');
+        }
+      });
+  
+      document.getElementById('btn-crear-perfil')?.addEventListener('click', function() {
+        const input = document.getElementById('input-nuevo-perfil');
+        if (crearPerfil(input.value)) {
+          input.value = '';
+          renderizarListaPerfiles();
+          renderizarSelectorPerfiles();
+        }
+      });
+  
+      document.getElementById('input-nuevo-perfil')?.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          document.getElementById('btn-crear-perfil')?.click();
+        }
+      });
+  
+      // Filtros de historial
+      document.querySelectorAll('.filtro-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.filtro-btn').forEach(b => {
+            b.classList.remove('active-mode', 'border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20', 'text-primary-700', 'dark:text-primary-300');
+            b.classList.add('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400');
+          });
+          this.classList.add('active-mode', 'border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20', 'text-primary-700', 'dark:text-primary-300');
+          this.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400');
+          
+          filtroActual = this.dataset.filtro;
+          renderizarHistorial();
+        });
+      });
     }
   
     // ===== ACTUALIZAR UI SEGÚN MODO =====
@@ -269,35 +343,34 @@
     }
   
     // ===== MODO DE JUEGO =====
-   // ===== MODO DE JUEGO =====
-function seleccionarModo(modo) {
-  state.modo = modo;
-
-  DOM.modoSimulacro.classList.toggle('active-mode', modo === 'simulacro');
-  DOM.modoMateria.classList.toggle('active-mode', modo === 'materia');
-  DOM.modoMedicina.classList.toggle('active-mode', modo === 'medicina');
-
-  const botones = [DOM.modoSimulacro, DOM.modoMateria, DOM.modoMedicina];
-  botones.forEach(btn => {
-      btn.classList.remove('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
-      btn.classList.add('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
-  });
-
-  if (modo === 'simulacro') {
-      DOM.modoSimulacro.classList.add('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
-      DOM.modoSimulacro.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
-  } else if (modo === 'materia') {
-      DOM.modoMateria.classList.add('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
-      DOM.modoMateria.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
-  } else if (modo === 'medicina') {
-      DOM.modoMedicina.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
-  }
-
-  DOM.selectorMateria.classList.toggle('hidden', modo !== 'materia');
-  actualizarUIporModo();
-  actualizarDisponibles();
-  actualizarTiempoEstimado();
-}
+    function seleccionarModo(modo) {
+      state.modo = modo;
+  
+      DOM.modoSimulacro.classList.toggle('active-mode', modo === 'simulacro');
+      DOM.modoMateria.classList.toggle('active-mode', modo === 'materia');
+      DOM.modoMedicina.classList.toggle('active-mode', modo === 'medicina');
+  
+      const botones = [DOM.modoSimulacro, DOM.modoMateria, DOM.modoMedicina];
+      botones.forEach(btn => {
+        btn.classList.remove('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
+        btn.classList.add('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
+      });
+  
+      if (modo === 'simulacro') {
+        DOM.modoSimulacro.classList.add('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
+        DOM.modoSimulacro.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
+      } else if (modo === 'materia') {
+        DOM.modoMateria.classList.add('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
+        DOM.modoMateria.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
+      } else if (modo === 'medicina') {
+        DOM.modoMedicina.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
+      }
+  
+      DOM.selectorMateria.classList.toggle('hidden', modo !== 'materia');
+      actualizarUIporModo();
+      actualizarDisponibles();
+      actualizarTiempoEstimado();
+    }
   
     // ===== CANTIDAD DE PREGUNTAS =====
     function seleccionarCantidad(cant) {
@@ -463,7 +536,7 @@ function seleccionarModo(modo) {
         state.timerInterval = setInterval(() => {
           state.timerSeconds++;
           DOM.timerDisplay.textContent = formatearMMSS(state.timerSeconds);
-          guardarProgreso(); // <--- AGREGAR
+          guardarProgreso();
         }, 1000);
       }
     }
@@ -536,7 +609,7 @@ function seleccionarModo(modo) {
   
       DOM.miniCorrectas.textContent = state.correctas;
       DOM.miniIncorrectas.textContent = state.incorrectas;
-      guardarProgreso(); // <--- AGREGAR
+      guardarProgreso();
     }
   
     // ===== SELECCIONAR OPCIÓN =====
@@ -636,7 +709,7 @@ function seleccionarModo(modo) {
   
       DOM.miniCorrectas.textContent = state.correctas;
       DOM.miniIncorrectas.textContent = state.incorrectas;
-      guardarProgreso(); // <--- AGREGAR
+      guardarProgreso();
     }
   
     // ===== SIGUIENTE PREGUNTA =====
@@ -652,7 +725,7 @@ function seleccionarModo(modo) {
   
     // ===== CALCULAR Y MOSTRAR RESULTADOS =====
     function calcularYMostrarResultados() {
-      eliminarProgreso(); // <--- AGREGAR AL INICIO
+      eliminarProgreso();
       const total = state.respuestas.length;
       const totalCorrectas = state.respuestas.filter(r => r.correcta).length;
       const puntajeGlobal = Math.round((totalCorrectas / total) * 100);
@@ -1029,7 +1102,7 @@ function seleccionarModo(modo) {
     function confirmarSalir() {
       DOM.modalConfirmacion.classList.add('hidden');
       detenerTimer();
-      eliminarProgreso(); // <--- AGREGAR
+      eliminarProgreso();
       mostrarPantalla('inicio');
     }
   
@@ -1172,433 +1245,27 @@ function seleccionarModo(modo) {
     }
   
     // ============================================================
-    // ===== HISTORIAL =============================================
+    // ===== HISTORIAL MEJORADO ====================================
     // ============================================================
   
-      // ============================================================
-  // ===== HISTORIAL MEJORADO ====================================
-  // ============================================================
-
-  let filtroActual = 'todos';
-
-  /** Obtener historial del usuario actual */
-  function getHistorial() {
-    try {
-      const data = localStorage.getItem('icfes-historial');
-      return data ? JSON.parse(data) : [];
-    } catch {
-      return [];
-    }
-  }
-
-  /** Guardar historial */
-  function saveHistorial(historial) {
-    localStorage.setItem('icfes-historial', JSON.stringify(historial));
-  }
-
-  /** Filtrar historial por modo */
-  function filtrarHistorial(historial, filtro) {
-    if (filtro === 'todos') return historial;
-    return historial.filter(item => item.modo === filtro);
-  }
-
-  /** Renderizar historial en la UI */
-  function renderizarHistorial() {
-    const historial = getHistorial();
-    const filtrados = filtrarHistorial(historial, filtroActual);
-    const lista = document.getElementById('historial-lista');
-    const vacio = document.getElementById('historial-vacio');
-    const estadisticas = document.getElementById('estadisticas-container');
-    const totalSpan = document.getElementById('historial-total');
-    
-    if (!lista) return;
-    
-    // Actualizar contador
-    if (totalSpan) totalSpan.textContent = `(${historial.length})`;
-    
-    if (historial.length === 0) {
-      if (vacio) vacio.classList.remove('hidden');
-      lista.innerHTML = '';
-      if (estadisticas) {
-        estadisticas.innerHTML = `
-          <div class="col-span-4 text-center text-gray-400 dark:text-gray-500 py-4 text-sm">
-            No hay datos aún. Completa tu primer simulacro.
-          </div>
-        `;
-      }
-      document.getElementById('grafico-evolucion-container')?.classList.add('hidden');
-      return;
-    }
-    
-    if (vacio) vacio.classList.add('hidden');
-    
-    renderizarEstadisticas(historial);
-    renderizarGraficoEvolucion(historial);
-    renderizarTendencia(historial);
-    
-    lista.innerHTML = '';
-    if (filtrados.length === 0) {
-      lista.innerHTML = `
-        <p class="text-center text-gray-400 dark:text-gray-500 py-8 text-sm">
-          No hay intentos con el filtro seleccionado.
-        </p>
-      `;
-      return;
-    }
-    
-    filtrados.forEach((item, index) => {
-      const card = crearTarjetaHistorial(item, index);
-      lista.appendChild(card);
-    });
-  }
-
-  /** Renderizar estadísticas generales */
-  function renderizarEstadisticas(historial) {
-    const container = document.getElementById('estadisticas-container');
-    if (!container) return;
-    
-    const total = historial.length;
-    const mejor = Math.max(...historial.map(h => h.puntaje));
-    const promedio = Math.round(historial.reduce((a, h) => a + h.puntaje, 0) / total);
-    
-    let mejora = 0;
-    if (total >= 4) {
-      const primeros = historial.slice(-5);
-      const ultimos = historial.slice(0, 5);
-      const promPrimeros = primeros.reduce((a, h) => a + h.puntaje, 0) / primeros.length;
-      const promUltimos = ultimos.reduce((a, h) => a + h.puntaje, 0) / ultimos.length;
-      mejora = Math.round(promUltimos - promPrimeros);
-    }
-    
-    container.innerHTML = `
-      <div class="bg-green-50 dark:bg-green-900/20 rounded-xl p-3 text-center">
-        <p class="text-2xl font-black text-green-600 dark:text-green-400">${mejor}%</p>
-        <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Mejor</p>
-      </div>
-      <div class="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-3 text-center">
-        <p class="text-2xl font-black text-blue-600 dark:text-blue-400">${promedio}%</p>
-        <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Promedio</p>
-      </div>
-      <div class="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-3 text-center">
-        <p class="text-2xl font-black text-purple-600 dark:text-purple-400">${total}</p>
-        <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Intentos</p>
-      </div>
-      <div class="bg-yellow-50 dark:bg-yellow-900/20 rounded-xl p-3 text-center">
-        <p class="text-2xl font-black ${mejora >= 0 ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}">
-          ${mejora >= 0 ? '+' : ''}${mejora}%
-        </p>
-        <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Mejora</p>
-      </div>
-    `;
-  }
-
-  /** Renderizar gráfico de evolución */
-  function renderizarGraficoEvolucion(historial) {
-    const container = document.getElementById('grafico-evolucion-container');
-    const canvas = document.getElementById('chart-evolucion');
-    if (!container || !canvas) return;
-    
-    if (historial.length < 2) {
-      container.classList.add('hidden');
-      return;
-    }
-    
-    container.classList.remove('hidden');
-    
-    const ctx = canvas.getContext('2d');
-    const isDark = document.documentElement.classList.contains('dark');
-    
-    // Destruir chart previo si existe
-    if (canvas._chart) {
-      canvas._chart.destroy();
-    }
-    
-    const labels = historial.map((_, i) => `#${i + 1}`);
-    const data = historial.map(h => h.puntaje);
-    const colores = data.map(p => p >= 65 ? '#10b981' : p >= 45 ? '#f59e0b' : '#ef4444');
-    
-    const chart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: labels,
-        datasets: [{
-          label: 'Puntaje',
-          data: data,
-          borderColor: '#6366f1',
-          backgroundColor: 'rgba(99, 102, 241, 0.1)',
-          borderWidth: 2,
-          pointBackgroundColor: colores,
-          pointBorderColor: isDark ? '#1f2937' : '#ffffff',
-          pointBorderWidth: 2,
-          pointRadius: 4,
-          pointHoverRadius: 6,
-          fill: true,
-          tension: 0.3,
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            backgroundColor: isDark ? '#1f2937' : '#ffffff',
-            titleColor: isDark ? '#f3f4f6' : '#111827',
-            bodyColor: isDark ? '#d1d5db' : '#4b5563',
-            borderColor: isDark ? '#374151' : '#e5e7eb',
-            borderWidth: 1,
-            cornerRadius: 8,
-            padding: 10,
-            callbacks: {
-              label: function(context) {
-                return `Puntaje: ${context.raw}%`;
-              }
-            }
-          }
-        },
-        scales: {
-          x: {
-            grid: { display: false },
-            ticks: {
-              color: isDark ? '#9ca3af' : '#6b7280',
-              font: { size: 9 },
-              maxTicksLimit: 10,
-            }
-          },
-          y: {
-            min: 0,
-            max: 100,
-            grid: {
-              color: isDark ? '#374151' : '#f3f4f6',
-            },
-            ticks: {
-              color: isDark ? '#9ca3af' : '#6b7280',
-              font: { size: 9 },
-              callback: v => v + '%',
-            }
-          }
-        },
-        animation: {
-          duration: 800,
-        },
-      },
-    });
-    
-    canvas._chart = chart;
-  }
-
-  /** Renderizar tendencia */
-  function renderizarTendencia(historial) {
-    const label = document.getElementById('tendencia-label');
-    if (!label || historial.length < 2) {
-      if (label) label.textContent = '';
-      return;
-    }
-    
-    const primero = historial[historial.length - 1].puntaje;
-    const ultimo = historial[0].puntaje;
-    const diff = ultimo - primero;
-    
-    const emoji = diff > 5 ? '📈' : diff < -5 ? '📉' : '➡️';
-    const texto = diff > 0 ? `+${diff}% de mejora` : diff < 0 ? `${diff}% de caída` : 'Sin cambios';
-    const color = diff > 5 ? 'text-green-500' : diff < -5 ? 'text-red-500' : 'text-yellow-500';
-    
-    label.textContent = `${emoji} ${texto}`;
-    label.className = `text-xs ${color}`;
-  }
-
-  /** Exportar historial a CSV */
-  function exportarCSV() {
-    const historial = getHistorial();
-    if (historial.length === 0) {
-      alert('No hay datos para exportar.');
-      return;
-    }
-    
-    // Crear cabeceras
-    let csv = 'Fecha,Modo,Materia,Puntaje,Correctas,Total,Tiempo (min)\n';
-    
-    historial.forEach(item => {
-      const fecha = new Date(item.fecha).toLocaleDateString('es-ES');
-      const modo = item.modo === 'simulacro' ? 'Simulacro' : 
-                   item.modo === 'materia' ? `Materia (${item.materia || 'N/A'})` : 
-                   'Medicina';
-      const tiempoMin = Math.round((item.tiempoSegundos || 0) / 60);
-      csv += `${fecha},${modo},${item.materia || 'N/A'},${item.puntaje}%,${item.correctas},${item.totalPreguntas},${tiempoMin}\n`;
-    });
-    
-    // Crear y descargar archivo
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = `historial_icfes_${new Date().toISOString().slice(0,10)}.csv`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(link.href);
-  }
-
-  /** Crear tarjeta de historial */
-  function crearTarjetaHistorial(item, index) {
-    const div = document.createElement('div');
-    div.className = `bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 animate-fade-in-up`;
-    div.style.animationDelay = `${index * 50}ms`;
-    
-    const fecha = new Date(item.fecha);
-    const fechaStr = fecha.toLocaleDateString('es-ES', { 
-      day: 'numeric', month: 'long', year: 'numeric' 
-    });
-    const horaStr = fecha.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
-    
-    const modoLabel = item.modo === 'simulacro' ? 'Simulacro Completo' :
-                      item.modo === 'materia' ? `Materia: ${item.materia}` :
-                      'Medicina (Énfasis)';
-    
-    const tiempoStr = formatearTiempoHistorial(item.tiempoSegundos);
-    
-    let colorClase = 'text-green-600 dark:text-green-400';
-    let barraColor = 'bg-green-500';
-    if (item.puntaje < 45) {
-      colorClase = 'text-red-600 dark:text-red-400';
-      barraColor = 'bg-red-500';
-    } else if (item.puntaje < 65) {
-      colorClase = 'text-yellow-600 dark:text-yellow-400';
-      barraColor = 'bg-yellow-500';
-    }
-    
-    // Badge del modo
-    let badgeColor = 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300';
-    if (item.modo === 'simulacro') badgeColor = 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300';
-    else if (item.modo === 'medicina') badgeColor = 'bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300';
-    
-    div.innerHTML = `
-      <div class="flex items-start justify-between mb-2">
-        <div>
-          <p class="text-xs text-gray-400 dark:text-gray-500">${fechaStr} · ${horaStr}</p>
-          <div class="flex items-center gap-2 mt-0.5">
-            <span class="text-sm font-semibold text-gray-800 dark:text-gray-200">${modoLabel}</span>
-            <span class="text-[10px] px-2 py-0.5 rounded-full ${badgeColor}">${item.modo}</span>
-          </div>
-        </div>
-        <span class="text-xl font-black ${colorClase}">${item.puntaje}%</span>
-      </div>
-      <div class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mb-2">
-        <div class="h-full ${barraColor} rounded-full transition-all duration-1000" style="width: ${item.puntaje}%"></div>
-      </div>
-      <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-        <span>✅ ${item.correctas}/${item.totalPreguntas} correctas</span>
-        <span>⏱ ${tiempoStr}</span>
-      </div>
-      <button class="btn-ver-detalle mt-3 w-full py-1.5 rounded-xl text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-id="${item.id}">
-        📊 Ver detalles
-      </button>
-    `;
-    
-    const btnDetalle = div.querySelector('.btn-ver-detalle');
-    btnDetalle.addEventListener('click', () => mostrarDetalleIntento(item));
-    
-    return div;
-  }
-
-  /** Formatear tiempo para historial */
-  function formatearTiempoHistorial(segundos) {
-    if (!segundos || segundos < 60) return `${segundos || 0}s`;
-    const mins = Math.floor(segundos / 60);
-    const secs = segundos % 60;
-    if (mins < 60) return `${mins}m ${secs}s`;
-    const horas = Math.floor(mins / 60);
-    const minRest = mins % 60;
-    return `${horas}h ${minRest}m`;
-  }
-
-  /** Mostrar detalles de un intento en modal */
-  function mostrarDetalleIntento(intento) {
-    const modal = document.createElement('div');
-    modal.className = 'fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in';
-    
-    const materias = Object.keys(intento.respuestasPorMateria || {});
-    
-    let materiasHtml = '';
-    if (materias.length > 0) {
-      materiasHtml = materias.map(m => {
-        const data = intento.respuestasPorMateria[m];
-        const pct = Math.round((data.correctas / data.total) * 100);
-        const mc = MATERIA_COLORS[m] || { bar: '#6b7280' };
-        return `
-          <div class="flex items-center justify-between py-1.5 border-b border-gray-100 dark:border-gray-800 last:border-0">
-            <span class="text-sm">${m}</span>
-            <div class="flex items-center gap-3">
-              <span class="text-xs text-gray-500 dark:text-gray-400">${data.correctas}/${data.total}</span>
-              <span class="text-sm font-bold" style="color: ${mc.bar}">${pct}%</span>
-            </div>
-          </div>
-        `;
-      }).join('');
-    } else {
-      materiasHtml = '<p class="text-sm text-gray-400">No hay datos de materias disponibles.</p>';
-    }
-    
-    const fecha = new Date(intento.fecha);
-    const fechaStr = fecha.toLocaleDateString('es-ES', { 
-      day: 'numeric', month: 'long', year: 'numeric' 
-    });
-    
-    modal.innerHTML = `
-      <div class="bg-white dark:bg-gray-900 rounded-3xl max-w-md w-full p-6 shadow-2xl border border-gray-100 dark:border-gray-800 transform scale-95 transition-all duration-300 animate-scale-in max-h-[90vh] overflow-y-auto">
-        <div class="flex items-center justify-between mb-4">
-          <h3 class="text-lg font-bold text-gray-900 dark:text-white">Detalles del intento</h3>
-          <button class="btn-cerrar-modal p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-            <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-          </button>
-        </div>
-        
-        <div class="mb-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/50">
-          <p class="text-xs text-gray-400 dark:text-gray-500">${fechaStr}</p>
-          <p class="text-sm font-semibold text-gray-800 dark:text-gray-200">
-            ${intento.modo === 'simulacro' ? 'Simulacro Completo' :
-              intento.modo === 'materia' ? `Materia: ${intento.materia}` :
-              'Medicina (Énfasis)'}
-          </p>
-          <div class="flex items-center gap-6 mt-2">
-            <span class="text-2xl font-black ${intento.puntaje >= 65 ? 'text-green-600 dark:text-green-400' : intento.puntaje >= 45 ? 'text-yellow-600 dark:text-yellow-400' : 'text-red-600 dark:text-red-400'}">${intento.puntaje}%</span>
-            <span class="text-sm text-gray-500 dark:text-gray-400">✅ ${intento.correctas}/${intento.totalPreguntas}</span>
-            <span class="text-sm text-gray-500 dark:text-gray-400">⏱ ${formatearTiempoHistorial(intento.tiempoSegundos)}</span>
-          </div>
-        </div>
-        
-        <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Desglose por materia</h4>
-        <div class="bg-gray-50 dark:bg-gray-800/30 rounded-xl p-3">
-          ${materiasHtml}
-        </div>
-        
-        <button class="btn-cerrar-modal w-full mt-4 py-2.5 rounded-xl bg-primary-500 hover:bg-primary-600 text-white font-medium text-sm transition-colors">
-          Cerrar
-        </button>
-      </div>
-    `;
-    
-    document.body.appendChild(modal);
-    
-    const cerrarBtns = modal.querySelectorAll('.btn-cerrar-modal');
-    cerrarBtns.forEach(btn => {
-      btn.addEventListener('click', () => modal.remove());
-    });
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) modal.remove();
-    });
-  }
-
-  /** Limpiar historial */
-  function limpiarHistorial() {
-    if (confirm('¿Estás seguro de que quieres eliminar todo tu historial? Esta acción no se puede deshacer.')) {
-      saveHistorial([]);
-      renderizarHistorial();
-    }
-  }
-    function saveHistorial(historial) {
-      localStorage.setItem('icfes-historial', JSON.stringify(historial));
+    /** Obtener historial del perfil activo */
+    function getHistorial() {
+      const perfil = getPerfilData();
+      if (!perfil) return [];
+      return perfil.historial || [];
     }
   
+    /** Guardar historial en el perfil activo */
+    function saveHistorial(historial) {
+      const data = getPerfiles();
+      const nombre = data.perfilActivo;
+      if (!nombre || !data.perfiles[nombre]) return;
+      
+      data.perfiles[nombre].historial = historial;
+      savePerfiles(data);
+    }
+  
+    /** Agregar nuevo intento al historial del perfil activo */
     function agregarIntento() {
       const historial = getHistorial();
       
@@ -1618,8 +1285,10 @@ function seleccionarModo(modo) {
       historial.unshift(intento);
       saveHistorial(historial);
       renderizarHistorial();
+      renderizarSelectorPerfiles();
     }
   
+    /** Calcular respuestas por materia */
     function calcularRespuestasPorMateria() {
       const porMateria = {};
       state.respuestas.forEach(r => {
@@ -1632,13 +1301,25 @@ function seleccionarModo(modo) {
       return porMateria;
     }
   
+    /** Filtrar historial por modo */
+    function filtrarHistorial(historial, filtro) {
+      if (filtro === 'todos') return historial;
+      return historial.filter(item => item.modo === filtro);
+    }
+  
+    /** Renderizar historial en la UI */
     function renderizarHistorial() {
       const historial = getHistorial();
+      const filtrados = filtrarHistorial(historial, filtroActual);
       const lista = document.getElementById('historial-lista');
       const vacio = document.getElementById('historial-vacio');
       const estadisticas = document.getElementById('estadisticas-container');
+      const totalSpan = document.getElementById('historial-total');
       
       if (!lista) return;
+      
+      // Actualizar contador
+      if (totalSpan) totalSpan.textContent = `(${historial.length})`;
       
       if (historial.length === 0) {
         if (vacio) vacio.classList.remove('hidden');
@@ -1650,20 +1331,33 @@ function seleccionarModo(modo) {
             </div>
           `;
         }
+        document.getElementById('grafico-evolucion-container')?.classList.add('hidden');
         return;
       }
       
       if (vacio) vacio.classList.add('hidden');
       
       renderizarEstadisticas(historial);
+      renderizarGraficoEvolucion(historial);
+      renderizarTendencia(historial);
       
       lista.innerHTML = '';
-      historial.forEach((item, index) => {
+      if (filtrados.length === 0) {
+        lista.innerHTML = `
+          <p class="text-center text-gray-400 dark:text-gray-500 py-8 text-sm">
+            No hay intentos con el filtro seleccionado.
+          </p>
+        `;
+        return;
+      }
+      
+      filtrados.forEach((item, index) => {
         const card = crearTarjetaHistorial(item, index);
         lista.appendChild(card);
       });
     }
   
+    /** Renderizar estadísticas generales */
     function renderizarEstadisticas(historial) {
       const container = document.getElementById('estadisticas-container');
       if (!container) return;
@@ -1703,6 +1397,150 @@ function seleccionarModo(modo) {
       `;
     }
   
+    /** Renderizar gráfico de evolución */
+    function renderizarGraficoEvolucion(historial) {
+      const container = document.getElementById('grafico-evolucion-container');
+      const canvas = document.getElementById('chart-evolucion');
+      if (!container || !canvas) return;
+      
+      if (historial.length < 2) {
+        container.classList.add('hidden');
+        return;
+      }
+      
+      container.classList.remove('hidden');
+      
+      const ctx = canvas.getContext('2d');
+      const isDark = document.documentElement.classList.contains('dark');
+      
+      if (canvas._chart) {
+        canvas._chart.destroy();
+      }
+      
+      const labels = historial.map((_, i) => `#${i + 1}`);
+      const data = historial.map(h => h.puntaje);
+      const colores = data.map(p => p >= 65 ? '#10b981' : p >= 45 ? '#f59e0b' : '#ef4444');
+      
+      const chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Puntaje',
+            data: data,
+            borderColor: '#6366f1',
+            backgroundColor: 'rgba(99, 102, 241, 0.1)',
+            borderWidth: 2,
+            pointBackgroundColor: colores,
+            pointBorderColor: isDark ? '#1f2937' : '#ffffff',
+            pointBorderWidth: 2,
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            fill: true,
+            tension: 0.3,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: isDark ? '#1f2937' : '#ffffff',
+              titleColor: isDark ? '#f3f4f6' : '#111827',
+              bodyColor: isDark ? '#d1d5db' : '#4b5563',
+              borderColor: isDark ? '#374151' : '#e5e7eb',
+              borderWidth: 1,
+              cornerRadius: 8,
+              padding: 10,
+              callbacks: {
+                label: function(context) {
+                  return `Puntaje: ${context.raw}%`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: {
+                color: isDark ? '#9ca3af' : '#6b7280',
+                font: { size: 9 },
+                maxTicksLimit: 10,
+              }
+            },
+            y: {
+              min: 0,
+              max: 100,
+              grid: {
+                color: isDark ? '#374151' : '#f3f4f6',
+              },
+              ticks: {
+                color: isDark ? '#9ca3af' : '#6b7280',
+                font: { size: 9 },
+                callback: v => v + '%',
+              }
+            }
+          },
+          animation: {
+            duration: 800,
+          },
+        },
+      });
+      
+      canvas._chart = chart;
+    }
+  
+    /** Renderizar tendencia */
+    function renderizarTendencia(historial) {
+      const label = document.getElementById('tendencia-label');
+      if (!label || historial.length < 2) {
+        if (label) label.textContent = '';
+        return;
+      }
+      
+      const primero = historial[historial.length - 1].puntaje;
+      const ultimo = historial[0].puntaje;
+      const diff = ultimo - primero;
+      
+      const emoji = diff > 5 ? '📈' : diff < -5 ? '📉' : '➡️';
+      const texto = diff > 0 ? `+${diff}% de mejora` : diff < 0 ? `${diff}% de caída` : 'Sin cambios';
+      const color = diff > 5 ? 'text-green-500' : diff < -5 ? 'text-red-500' : 'text-yellow-500';
+      
+      label.textContent = `${emoji} ${texto}`;
+      label.className = `text-xs ${color}`;
+    }
+  
+    /** Exportar historial a CSV */
+    function exportarCSV() {
+      const historial = getHistorial();
+      if (historial.length === 0) {
+        alert('No hay datos para exportar.');
+        return;
+      }
+      
+      let csv = 'Fecha,Modo,Materia,Puntaje,Correctas,Total,Tiempo (min)\n';
+      
+      historial.forEach(item => {
+        const fecha = new Date(item.fecha).toLocaleDateString('es-ES');
+        const modo = item.modo === 'simulacro' ? 'Simulacro' : 
+                     item.modo === 'materia' ? `Materia (${item.materia || 'N/A'})` : 
+                     'Medicina';
+        const tiempoMin = Math.round((item.tiempoSegundos || 0) / 60);
+        csv += `${fecha},${modo},${item.materia || 'N/A'},${item.puntaje}%,${item.correctas},${item.totalPreguntas},${tiempoMin}\n`;
+      });
+      
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `historial_icfes_${new Date().toISOString().slice(0,10)}.csv`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+    }
+  
+    /** Crear tarjeta de historial */
     function crearTarjetaHistorial(item, index) {
       const div = document.createElement('div');
       div.className = `bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 animate-fade-in-up`;
@@ -1730,11 +1568,18 @@ function seleccionarModo(modo) {
         barraColor = 'bg-yellow-500';
       }
       
+      let badgeColor = 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300';
+      if (item.modo === 'simulacro') badgeColor = 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300';
+      else if (item.modo === 'medicina') badgeColor = 'bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300';
+      
       div.innerHTML = `
         <div class="flex items-start justify-between mb-2">
           <div>
             <p class="text-xs text-gray-400 dark:text-gray-500">${fechaStr} · ${horaStr}</p>
-            <p class="text-sm font-semibold text-gray-800 dark:text-gray-200">${modoLabel}</p>
+            <div class="flex items-center gap-2 mt-0.5">
+              <span class="text-sm font-semibold text-gray-800 dark:text-gray-200">${modoLabel}</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full ${badgeColor}">${item.modo}</span>
+            </div>
           </div>
           <span class="text-xl font-black ${colorClase}">${item.puntaje}%</span>
         </div>
@@ -1756,6 +1601,7 @@ function seleccionarModo(modo) {
       return div;
     }
   
+    /** Formatear tiempo para historial */
     function formatearTiempoHistorial(segundos) {
       if (!segundos || segundos < 60) return `${segundos || 0}s`;
       const mins = Math.floor(segundos / 60);
@@ -1766,6 +1612,7 @@ function seleccionarModo(modo) {
       return `${horas}h ${minRest}m`;
     }
   
+    /** Mostrar detalles de un intento en modal */
     function mostrarDetalleIntento(intento) {
       const modal = document.createElement('div');
       modal.className = 'fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in';
@@ -1842,231 +1689,487 @@ function seleccionarModo(modo) {
       });
     }
   
+    /** Limpiar historial */
     function limpiarHistorial() {
       if (confirm('¿Estás seguro de que quieres eliminar todo tu historial? Esta acción no se puede deshacer.')) {
         saveHistorial([]);
         renderizarHistorial();
+        renderizarSelectorPerfiles();
       }
     }
-
-      // ============================================================
-  // ===== PAUSA =================================================
-  // ============================================================
-
-  let pausaActiva = false;
-
-  /** Pausar el simulacro */
-  function pausarSimulacro() {
-    if (pausaActiva) return;
-    if (state.preguntasSesion.length === 0) return;
-    
-    pausaActiva = true;
-    
-    // Detener timer
-    detenerTimer();
-    
-    // Actualizar información de pausa
-    const total = state.preguntasSesion.length;
-    const actual = state.indiceActual + 1;
-    document.getElementById('pausa-pregunta').textContent = actual;
-    document.getElementById('pausa-total').textContent = total;
-    
-    // Mostrar overlay
-    document.getElementById('overlay-pausa').classList.remove('hidden');
-    
-    // Cambiar texto del botón
-    const btnPausar = document.getElementById('btn-pausar');
-    if (btnPausar) {
-      btnPausar.innerHTML = `
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg>
-        <span class="hidden sm:inline">Reanudar</span>
-      `;
-      btnPausar.classList.add('text-primary-500', 'dark:text-primary-400');
-    }
-  }
-
-  /** Reanudar el simulacro */
-  function reanudarSimulacro() {
-    if (!pausaActiva) return;
-    
-    pausaActiva = false;
-    
-    // Ocultar overlay
-    document.getElementById('overlay-pausa').classList.add('hidden');
-    
-    // Reanudar timer
-    if (state.timerActivo) {
-      iniciarTimer();
-    }
-    
-    // Cambiar texto del botón
-    const btnPausar = document.getElementById('btn-pausar');
-    if (btnPausar) {
-      btnPausar.innerHTML = `
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        <span class="hidden sm:inline">Pausar</span>
-      `;
-      btnPausar.classList.remove('text-primary-500', 'dark:text-primary-400');
-    }
-  }
-
-  /** Alternar pausa */
-  function togglePausa() {
-    if (pausaActiva) {
-      reanudarSimulacro();
-    } else {
-      pausarSimulacro();
-    }
-  }
-
-
-      // ============================================================
-  // ===== GUARDAR PROGRESO ======================================
-  // ============================================================
-
-  /** Guardar progreso actual en localStorage */
-  function guardarProgreso() {
-    if (state.preguntasSesion.length === 0) return;
-    
-    const progreso = {
-      preguntasSesion: state.preguntasSesion,
-      indiceActual: state.indiceActual,
-      respuestas: state.respuestas,
-      correctas: state.correctas,
-      incorrectas: state.incorrectas,
-      timerSeconds: state.timerSeconds,
-      timerPreguntaRestante: state.timerPreguntaRestante,
-      modo: state.modo,
-      materiaSeleccionada: state.materiaSeleccionada,
-      cantidadPreguntas: state.cantidadPreguntas,
-      timerActivo: state.timerActivo,
-      timerModo: state.timerModo,
-      fecha: new Date().toISOString()
-    };
-    
-    try {
-      localStorage.setItem('icfes-progreso', JSON.stringify(progreso));
-    } catch (e) {
-      console.warn('No se pudo guardar el progreso:', e);
-    }
-  }
-
-  /** Cargar progreso guardado */
-  function cargarProgreso() {
-    try {
-      const data = localStorage.getItem('icfes-progreso');
-      if (!data) return null;
-      const progreso = JSON.parse(data);
+  
+    // ============================================================
+    // ===== PAUSA =================================================
+    // ============================================================
+  
+    /** Pausar el simulacro */
+    function pausarSimulacro() {
+      if (pausaActiva) return;
+      if (state.preguntasSesion.length === 0) return;
       
-      if (!progreso.preguntasSesion || progreso.preguntasSesion.length === 0) {
+      pausaActiva = true;
+      
+      detenerTimer();
+      
+      const total = state.preguntasSesion.length;
+      const actual = state.indiceActual + 1;
+      document.getElementById('pausa-pregunta').textContent = actual;
+      document.getElementById('pausa-total').textContent = total;
+      
+      document.getElementById('overlay-pausa').classList.remove('hidden');
+      
+      const btnPausar = document.getElementById('btn-pausar');
+      if (btnPausar) {
+        btnPausar.innerHTML = `
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg>
+          <span class="hidden sm:inline">Reanudar</span>
+        `;
+        btnPausar.classList.add('text-primary-500', 'dark:text-primary-400');
+      }
+    }
+  
+    /** Reanudar el simulacro */
+    function reanudarSimulacro() {
+      if (!pausaActiva) return;
+      
+      pausaActiva = false;
+      
+      document.getElementById('overlay-pausa').classList.add('hidden');
+      
+      if (state.timerActivo) {
+        iniciarTimer();
+      }
+      
+      const btnPausar = document.getElementById('btn-pausar');
+      if (btnPausar) {
+        btnPausar.innerHTML = `
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span class="hidden sm:inline">Pausar</span>
+        `;
+        btnPausar.classList.remove('text-primary-500', 'dark:text-primary-400');
+      }
+    }
+  
+    /** Alternar pausa */
+    function togglePausa() {
+      if (pausaActiva) {
+        reanudarSimulacro();
+      } else {
+        pausarSimulacro();
+      }
+    }
+  
+    // ============================================================
+    // ===== GUARDAR PROGRESO ======================================
+    // ============================================================
+  
+    /** Guardar progreso actual en localStorage */
+    function guardarProgreso() {
+      if (state.preguntasSesion.length === 0) return;
+      
+      const progreso = {
+        preguntasSesion: state.preguntasSesion,
+        indiceActual: state.indiceActual,
+        respuestas: state.respuestas,
+        correctas: state.correctas,
+        incorrectas: state.incorrectas,
+        timerSeconds: state.timerSeconds,
+        timerPreguntaRestante: state.timerPreguntaRestante,
+        modo: state.modo,
+        materiaSeleccionada: state.materiaSeleccionada,
+        cantidadPreguntas: state.cantidadPreguntas,
+        timerActivo: state.timerActivo,
+        timerModo: state.timerModo,
+        fecha: new Date().toISOString()
+      };
+      
+      try {
+        localStorage.setItem('icfes-progreso', JSON.stringify(progreso));
+      } catch (e) {
+        console.warn('No se pudo guardar el progreso:', e);
+      }
+    }
+  
+    /** Cargar progreso guardado */
+    function cargarProgreso() {
+      try {
+        const data = localStorage.getItem('icfes-progreso');
+        if (!data) return null;
+        const progreso = JSON.parse(data);
+        
+        if (!progreso.preguntasSesion || progreso.preguntasSesion.length === 0) {
+          localStorage.removeItem('icfes-progreso');
+          return null;
+        }
+        
+        return progreso;
+      } catch (e) {
+        console.warn('Error al cargar progreso:', e);
         localStorage.removeItem('icfes-progreso');
         return null;
       }
-      
-      return progreso;
-    } catch (e) {
-      console.warn('Error al cargar progreso:', e);
+    }
+  
+    /** Eliminar progreso guardado */
+    function eliminarProgreso() {
       localStorage.removeItem('icfes-progreso');
-      return null;
     }
-  }
-
-  /** Eliminar progreso guardado */
-  function eliminarProgreso() {
-    localStorage.removeItem('icfes-progreso');
-  }
-
-  /** Mostrar modal de progreso guardado */
-  function mostrarModalProgreso(progreso) {
-    const modal = document.getElementById('modal-progreso');
-    const info = document.getElementById('modal-progreso-info');
-    
-    if (!modal || !info) return;
-    
-    const total = progreso.preguntasSesion.length;
-    const actual = progreso.indiceActual + 1;
-    const correctas = progreso.correctas || 0;
-    
-    const modoLabel = progreso.modo === 'simulacro' ? 'Simulacro Completo' :
-                      progreso.modo === 'materia' ? `Materia: ${progreso.materiaSeleccionada}` :
-                      'Medicina (Énfasis)';
-    
-    info.textContent = `${modoLabel} · Pregunta ${actual} de ${total} · ✅ ${correctas} correctas`;
-    
-    modal.classList.remove('hidden');
-    
-    // Botón continuar
-    document.getElementById('btn-continuar')?.addEventListener('click', function handler() {
-      modal.classList.add('hidden');
-      restaurarProgreso(progreso);
-      document.getElementById('btn-continuar')?.removeEventListener('click', handler);
-    });
-    
-    // Botón reiniciar
-    document.getElementById('btn-reiniciar-progreso')?.addEventListener('click', function handler() {
-      modal.classList.add('hidden');
+  
+    /** Mostrar modal de progreso guardado */
+    function mostrarModalProgreso(progreso) {
+      const modal = document.getElementById('modal-progreso');
+      const info = document.getElementById('modal-progreso-info');
+      
+      if (!modal || !info) return;
+      
+      const total = progreso.preguntasSesion.length;
+      const actual = progreso.indiceActual + 1;
+      const correctas = progreso.correctas || 0;
+      
+      const modoLabel = progreso.modo === 'simulacro' ? 'Simulacro Completo' :
+                        progreso.modo === 'materia' ? `Materia: ${progreso.materiaSeleccionada}` :
+                        'Medicina (Énfasis)';
+      
+      info.textContent = `${modoLabel} · Pregunta ${actual} de ${total} · ✅ ${correctas} correctas`;
+      
+      modal.classList.remove('hidden');
+      
+      document.getElementById('btn-continuar')?.addEventListener('click', function handler() {
+        modal.classList.add('hidden');
+        restaurarProgreso(progreso);
+        document.getElementById('btn-continuar')?.removeEventListener('click', handler);
+      });
+      
+      document.getElementById('btn-reiniciar-progreso')?.addEventListener('click', function handler() {
+        modal.classList.add('hidden');
+        eliminarProgreso();
+        document.getElementById('btn-reiniciar-progreso')?.removeEventListener('click', handler);
+        state.preguntasSesion = [];
+        state.indiceActual = 0;
+        state.respuestas = [];
+        state.correctas = 0;
+        state.incorrectas = 0;
+        state.timerSeconds = 0;
+        mostrarPantalla('inicio');
+      });
+    }
+  
+    /** Restaurar progreso guardado */
+    function restaurarProgreso(progreso) {
+      state.preguntasSesion = progreso.preguntasSesion;
+      state.indiceActual = progreso.indiceActual;
+      state.respuestas = progreso.respuestas || [];
+      state.correctas = progreso.correctas || 0;
+      state.incorrectas = progreso.incorrectas || 0;
+      state.timerSeconds = progreso.timerSeconds || 0;
+      state.timerPreguntaRestante = progreso.timerPreguntaRestante || state.timerLimitPregunta;
+      state.modo = progreso.modo || 'simulacro';
+      state.materiaSeleccionada = progreso.materiaSeleccionada || '';
+      state.cantidadPreguntas = progreso.cantidadPreguntas || 10;
+      state.timerActivo = progreso.timerActivo !== undefined ? progreso.timerActivo : true;
+      state.timerModo = progreso.timerModo || 'total';
+      state.opcionSeleccionada = null;
+      state.respondida = false;
+      
+      actualizarUIporModo();
+      actualizarDisponibles();
+      
       eliminarProgreso();
-      document.getElementById('btn-reiniciar-progreso')?.removeEventListener('click', handler);
-      state.preguntasSesion = [];
-      state.indiceActual = 0;
-      state.respuestas = [];
-      state.correctas = 0;
-      state.incorrectas = 0;
-      state.timerSeconds = 0;
-      mostrarPantalla('inicio');
-    });
-  }
-
-  /** Restaurar progreso guardado */
-  function restaurarProgreso(progreso) {
-    state.preguntasSesion = progreso.preguntasSesion;
-    state.indiceActual = progreso.indiceActual;
-    state.respuestas = progreso.respuestas || [];
-    state.correctas = progreso.correctas || 0;
-    state.incorrectas = progreso.incorrectas || 0;
-    state.timerSeconds = progreso.timerSeconds || 0;
-    state.timerPreguntaRestante = progreso.timerPreguntaRestante || state.timerLimitPregunta;
-    state.modo = progreso.modo || 'simulacro';
-    state.materiaSeleccionada = progreso.materiaSeleccionada || '';
-    state.cantidadPreguntas = progreso.cantidadPreguntas || 10;
-    state.timerActivo = progreso.timerActivo !== undefined ? progreso.timerActivo : true;
-    state.timerModo = progreso.timerModo || 'total';
-    state.opcionSeleccionada = null;
-    state.respondida = false;
-    
-    actualizarUIporModo();
-    actualizarDisponibles();
-    
-    eliminarProgreso();
-    
-    if (state.timerActivo) {
-      DOM.quizTimer.classList.remove('hidden');
-      if (state.timerModo === 'pregunta') {
-        state.timerPreguntaRestante = progreso.timerPreguntaRestante || state.timerLimitPregunta;
+      
+      if (state.timerActivo) {
+        DOM.quizTimer.classList.remove('hidden');
+        if (state.timerModo === 'pregunta') {
+          state.timerPreguntaRestante = progreso.timerPreguntaRestante || state.timerLimitPregunta;
+        } else {
+          state.timerSeconds = progreso.timerSeconds || 0;
+        }
+        iniciarTimer();
       } else {
-        state.timerSeconds = progreso.timerSeconds || 0;
+        DOM.quizTimer.classList.add('hidden');
       }
-      iniciarTimer();
-    } else {
-      DOM.quizTimer.classList.add('hidden');
+      
+      mostrarPantalla('quiz');
+      renderizarPregunta();
+      
+      DOM.miniCorrectas.textContent = state.correctas;
+      DOM.miniIncorrectas.textContent = state.incorrectas;
     }
-    
-    mostrarPantalla('quiz');
-    renderizarPregunta();
-    
-    DOM.miniCorrectas.textContent = state.correctas;
-    DOM.miniIncorrectas.textContent = state.incorrectas;
-  }
-
-  /** Verificar si hay progreso guardado al cargar la página */
-  function verificarProgresoGuardado() {
-    const progreso = cargarProgreso();
-    if (progreso) {
-      mostrarModalProgreso(progreso);
+  
+    /** Verificar si hay progreso guardado al cargar la página */
+    function verificarProgresoGuardado() {
+      const progreso = cargarProgreso();
+      if (progreso) {
+        mostrarModalProgreso(progreso);
+        return true;
+      }
+      return false;
+    }
+  
+    // ============================================================
+    // ===== PERFILES ==============================================
+    // ============================================================
+  
+    /** Obtener todos los perfiles */
+    function getPerfiles() {
+      try {
+        const data = localStorage.getItem('icfes-perfiles');
+        if (data) {
+          const parsed = JSON.parse(data);
+          if (!parsed.perfiles || Object.keys(parsed.perfiles).length === 0) {
+            const historialAntiguo = localStorage.getItem('icfes-historial');
+            if (historialAntiguo) {
+              const historial = JSON.parse(historialAntiguo);
+              if (historial.length > 0) {
+                parsed.perfiles = {
+                  'Principal': {
+                    historial: historial,
+                    preferencias: {
+                      tema: 'light',
+                      timerActivo: true,
+                      timerModo: 'total'
+                    }
+                  }
+                };
+                parsed.perfilActivo = 'Principal';
+                savePerfiles(parsed);
+                localStorage.removeItem('icfes-historial');
+              }
+            }
+          }
+          return parsed;
+        }
+        return { perfiles: {}, perfilActivo: null };
+      } catch {
+        return { perfiles: {}, perfilActivo: null };
+      }
+    }
+  
+    /** Guardar perfiles */
+    function savePerfiles(data) {
+      localStorage.setItem('icfes-perfiles', JSON.stringify(data));
+    }
+  
+    /** Obtener perfil activo */
+    function getPerfilActivo() {
+      const data = getPerfiles();
+      return data.perfilActivo;
+    }
+  
+    /** Obtener datos del perfil activo */
+    function getPerfilData() {
+      const data = getPerfiles();
+      const nombre = data.perfilActivo;
+      if (!nombre || !data.perfiles[nombre]) {
+        return null;
+      }
+      return {
+        nombre: nombre,
+        ...data.perfiles[nombre]
+      };
+    }
+  
+    /** Cambiar de perfil */
+    function cambiarPerfil(nombre) {
+      const data = getPerfiles();
+      if (!data.perfiles[nombre]) {
+        console.warn('Perfil no encontrado:', nombre);
+        return false;
+      }
+      data.perfilActivo = nombre;
+      savePerfiles(data);
+      
+      renderizarSelectorPerfiles();
+      renderizarHistorial();
+      actualizarTiempoEstimado();
+      aplicarTemaPerfil();
       return true;
     }
-    return false;
-  }
+  
+    /** Crear nuevo perfil */
+    function crearPerfil(nombre) {
+      nombre = nombre.trim();
+      if (!nombre) {
+        alert('Por favor ingresa un nombre para el perfil.');
+        return false;
+      }
+      
+      const data = getPerfiles();
+      if (data.perfiles[nombre]) {
+        alert('Ya existe un perfil con este nombre.');
+        return false;
+      }
+      
+      data.perfiles[nombre] = {
+        historial: [],
+        preferencias: {
+          tema: document.documentElement.classList.contains('dark') ? 'dark' : 'light',
+          timerActivo: true,
+          timerModo: 'total'
+        }
+      };
+      data.perfilActivo = nombre;
+      savePerfiles(data);
+      
+      renderizarSelectorPerfiles();
+      renderizarHistorial();
+      actualizarTiempoEstimado();
+      return true;
+    }
+  
+    /** Eliminar perfil */
+    function eliminarPerfil(nombre) {
+      if (nombre === 'Principal' && Object.keys(getPerfiles().perfiles).length === 1) {
+        alert('No puedes eliminar el único perfil. Crea otro primero.');
+        return;
+      }
+      
+      if (!confirm(`¿Estás seguro de que quieres eliminar el perfil "${nombre}"? Se perderá todo su historial.`)) {
+        return;
+      }
+      
+      const data = getPerfiles();
+      if (!data.perfiles[nombre]) return;
+      
+      if (data.perfilActivo === nombre) {
+        const otros = Object.keys(data.perfiles).filter(n => n !== nombre);
+        data.perfilActivo = otros.length > 0 ? otros[0] : null;
+      }
+      
+      delete data.perfiles[nombre];
+      savePerfiles(data);
+      
+      renderizarSelectorPerfiles();
+      renderizarHistorial();
+      actualizarTiempoEstimado();
+      aplicarTemaPerfil();
+    }
+  
+    /** Guardar preferencia del perfil */
+    function guardarPreferencia(key, value) {
+      const data = getPerfiles();
+      const nombre = data.perfilActivo;
+      if (!nombre || !data.perfiles[nombre]) return;
+      
+      data.perfiles[nombre].preferencias = data.perfiles[nombre].preferencias || {};
+      data.perfiles[nombre].preferencias[key] = value;
+      savePerfiles(data);
+    }
+  
+    /** Aplicar tema del perfil */
+    function aplicarTemaPerfil() {
+      const perfil = getPerfilData();
+      if (!perfil) return;
+      
+      const tema = perfil.preferencias?.tema || 'light';
+      if (tema === 'dark') {
+        document.documentElement.classList.add('dark');
+        document.documentElement.classList.remove('light');
+      } else {
+        document.documentElement.classList.add('light');
+        document.documentElement.classList.remove('dark');
+      }
+    }
+  
+    // ============================================================
+    // ===== UI DE PERFILES ========================================
+    // ============================================================
+  
+    /** Renderizar selector de perfiles en la UI */
+    function renderizarSelectorPerfiles() {
+      const data = getPerfiles();
+      const nombre = data.perfilActivo;
+      const perfil = nombre ? data.perfiles[nombre] : null;
+      
+      const nombreEl = document.getElementById('perfil-activo-nombre');
+      const inicialEl = document.getElementById('perfil-inicial');
+      
+      if (nombreEl) {
+        nombreEl.textContent = nombre || 'Invitado';
+      }
+      if (inicialEl) {
+        inicialEl.textContent = nombre ? nombre.charAt(0).toUpperCase() : '?';
+      }
+      
+      const modalActual = document.getElementById('modal-perfil-actual');
+      const modalStats = document.getElementById('modal-perfil-stats');
+      
+      if (modalActual) {
+        modalActual.textContent = nombre || 'Invitado';
+      }
+      if (modalStats && perfil) {
+        const historial = perfil.historial || [];
+        const total = historial.length;
+        const ultimo = historial.length > 0 ? historial[0].puntaje : null;
+        modalStats.textContent = ultimo !== null ? `⭐ Último: ${ultimo}% · 📊 ${total} intentos` : `📊 ${total} intentos`;
+      } else if (modalStats) {
+        modalStats.textContent = '📊 0 intentos';
+      }
+    }
+  
+    /** Renderizar lista de perfiles en el modal */
+    function renderizarListaPerfiles() {
+      const data = getPerfiles();
+      const container = document.getElementById('lista-perfiles');
+      const sinPerfiles = document.getElementById('sin-perfiles');
+      
+      if (!container) return;
+      
+      const nombres = Object.keys(data.perfiles);
+      
+      if (nombres.length === 0) {
+        if (sinPerfiles) sinPerfiles.classList.remove('hidden');
+        container.innerHTML = '';
+        return;
+      }
+      
+      if (sinPerfiles) sinPerfiles.classList.add('hidden');
+      container.innerHTML = '';
+      
+      nombres.forEach(nombre => {
+        const perfil = data.perfiles[nombre];
+        const historial = perfil.historial || [];
+        const total = historial.length;
+        const ultimo = historial.length > 0 ? historial[0].puntaje : null;
+        const esActivo = data.perfilActivo === nombre;
+        
+        const div = document.createElement('div');
+        div.className = `flex items-center justify-between p-3 rounded-xl border-2 transition-all ${esActivo ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20' : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800'}`;
+        
+        div.innerHTML = `
+          <div class="flex items-center gap-3 cursor-pointer flex-1" data-perfil="${nombre}">
+            <div class="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-sm font-bold text-gray-600 dark:text-gray-300">
+              ${nombre.charAt(0).toUpperCase()}
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-gray-900 dark:text-white">${nombre}</p>
+              <p class="text-xs text-gray-400 dark:text-gray-500">${ultimo !== null ? `⭐ ${ultimo}% · ` : ''}📊 ${total} intentos</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            ${esActivo ? '<span class="text-xs text-primary-500 font-bold">✅ Activo</span>' : ''}
+            <button class="btn-eliminar-perfil text-xs text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors px-2 py-1" data-perfil="${nombre}">
+              Eliminar
+            </button>
+          </div>
+        `;
+        
+        div.querySelector('[data-perfil]').addEventListener('click', () => {
+          if (!esActivo) {
+            cambiarPerfil(nombre);
+            document.getElementById('modal-perfiles')?.classList.add('hidden');
+            renderizarListaPerfiles();
+          }
+        });
+        
+        div.querySelector('.btn-eliminar-perfil').addEventListener('click', (e) => {
+          e.stopPropagation();
+          eliminarPerfil(nombre);
+          renderizarListaPerfiles();
+        });
+        
+        container.appendChild(div);
+      });
+    }
   
     // ===== UTILIDADES =====
     function shuffleArray(arr) {
