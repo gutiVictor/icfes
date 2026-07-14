@@ -117,6 +117,7 @@
     actualizarUIporModo();
     renderizarHistorial();
     actualizarTiempoEstimado(); // <--- ESTA LÍNEA DEBE ESTAR
+    verificarProgresoGuardado(); // <--- AGREGAR
   }
   
     // ===== CARGAR PREGUNTAS JSON =====
@@ -451,6 +452,7 @@ function seleccionarModo(modo) {
         state.timerInterval = setInterval(() => {
           state.timerSeconds++;
           DOM.timerDisplay.textContent = formatearMMSS(state.timerSeconds);
+          guardarProgreso(); // <--- AGREGAR
         }, 1000);
       }
     }
@@ -523,6 +525,7 @@ function seleccionarModo(modo) {
   
       DOM.miniCorrectas.textContent = state.correctas;
       DOM.miniIncorrectas.textContent = state.incorrectas;
+      guardarProgreso(); // <--- AGREGAR
     }
   
     // ===== SELECCIONAR OPCIÓN =====
@@ -622,6 +625,7 @@ function seleccionarModo(modo) {
   
       DOM.miniCorrectas.textContent = state.correctas;
       DOM.miniIncorrectas.textContent = state.incorrectas;
+      guardarProgreso(); // <--- AGREGAR
     }
   
     // ===== SIGUIENTE PREGUNTA =====
@@ -637,6 +641,7 @@ function seleccionarModo(modo) {
   
     // ===== CALCULAR Y MOSTRAR RESULTADOS =====
     function calcularYMostrarResultados() {
+      eliminarProgreso(); // <--- AGREGAR AL INICIO
       const total = state.respuestas.length;
       const totalCorrectas = state.respuestas.filter(r => r.correcta).length;
       const puntajeGlobal = Math.round((totalCorrectas / total) * 100);
@@ -1013,6 +1018,7 @@ function seleccionarModo(modo) {
     function confirmarSalir() {
       DOM.modalConfirmacion.classList.add('hidden');
       detenerTimer();
+      eliminarProgreso(); // <--- AGREGAR
       mostrarPantalla('inicio');
     }
   
@@ -1420,6 +1426,155 @@ function seleccionarModo(modo) {
         renderizarHistorial();
       }
     }
+
+
+      // ============================================================
+  // ===== GUARDAR PROGRESO ======================================
+  // ============================================================
+
+  /** Guardar progreso actual en localStorage */
+  function guardarProgreso() {
+    if (state.preguntasSesion.length === 0) return;
+    
+    const progreso = {
+      preguntasSesion: state.preguntasSesion,
+      indiceActual: state.indiceActual,
+      respuestas: state.respuestas,
+      correctas: state.correctas,
+      incorrectas: state.incorrectas,
+      timerSeconds: state.timerSeconds,
+      timerPreguntaRestante: state.timerPreguntaRestante,
+      modo: state.modo,
+      materiaSeleccionada: state.materiaSeleccionada,
+      cantidadPreguntas: state.cantidadPreguntas,
+      timerActivo: state.timerActivo,
+      timerModo: state.timerModo,
+      fecha: new Date().toISOString()
+    };
+    
+    try {
+      localStorage.setItem('icfes-progreso', JSON.stringify(progreso));
+    } catch (e) {
+      console.warn('No se pudo guardar el progreso:', e);
+    }
+  }
+
+  /** Cargar progreso guardado */
+  function cargarProgreso() {
+    try {
+      const data = localStorage.getItem('icfes-progreso');
+      if (!data) return null;
+      const progreso = JSON.parse(data);
+      
+      if (!progreso.preguntasSesion || progreso.preguntasSesion.length === 0) {
+        localStorage.removeItem('icfes-progreso');
+        return null;
+      }
+      
+      return progreso;
+    } catch (e) {
+      console.warn('Error al cargar progreso:', e);
+      localStorage.removeItem('icfes-progreso');
+      return null;
+    }
+  }
+
+  /** Eliminar progreso guardado */
+  function eliminarProgreso() {
+    localStorage.removeItem('icfes-progreso');
+  }
+
+  /** Mostrar modal de progreso guardado */
+  function mostrarModalProgreso(progreso) {
+    const modal = document.getElementById('modal-progreso');
+    const info = document.getElementById('modal-progreso-info');
+    
+    if (!modal || !info) return;
+    
+    const total = progreso.preguntasSesion.length;
+    const actual = progreso.indiceActual + 1;
+    const correctas = progreso.correctas || 0;
+    
+    const modoLabel = progreso.modo === 'simulacro' ? 'Simulacro Completo' :
+                      progreso.modo === 'materia' ? `Materia: ${progreso.materiaSeleccionada}` :
+                      'Medicina (Énfasis)';
+    
+    info.textContent = `${modoLabel} · Pregunta ${actual} de ${total} · ✅ ${correctas} correctas`;
+    
+    modal.classList.remove('hidden');
+    
+    // Botón continuar
+    document.getElementById('btn-continuar')?.addEventListener('click', function handler() {
+      modal.classList.add('hidden');
+      restaurarProgreso(progreso);
+      document.getElementById('btn-continuar')?.removeEventListener('click', handler);
+    });
+    
+    // Botón reiniciar
+    document.getElementById('btn-reiniciar-progreso')?.addEventListener('click', function handler() {
+      modal.classList.add('hidden');
+      eliminarProgreso();
+      document.getElementById('btn-reiniciar-progreso')?.removeEventListener('click', handler);
+      state.preguntasSesion = [];
+      state.indiceActual = 0;
+      state.respuestas = [];
+      state.correctas = 0;
+      state.incorrectas = 0;
+      state.timerSeconds = 0;
+      mostrarPantalla('inicio');
+    });
+  }
+
+  /** Restaurar progreso guardado */
+  function restaurarProgreso(progreso) {
+    state.preguntasSesion = progreso.preguntasSesion;
+    state.indiceActual = progreso.indiceActual;
+    state.respuestas = progreso.respuestas || [];
+    state.correctas = progreso.correctas || 0;
+    state.incorrectas = progreso.incorrectas || 0;
+    state.timerSeconds = progreso.timerSeconds || 0;
+    state.timerPreguntaRestante = progreso.timerPreguntaRestante || state.timerLimitPregunta;
+    state.modo = progreso.modo || 'simulacro';
+    state.materiaSeleccionada = progreso.materiaSeleccionada || '';
+    state.cantidadPreguntas = progreso.cantidadPreguntas || 10;
+    state.timerActivo = progreso.timerActivo !== undefined ? progreso.timerActivo : true;
+    state.timerModo = progreso.timerModo || 'total';
+    state.opcionSeleccionada = null;
+    state.respondida = false;
+    
+    actualizarUIporModo();
+    actualizarDisponibles();
+    
+    eliminarProgreso();
+    
+    if (state.timerActivo) {
+      DOM.quizTimer.classList.remove('hidden');
+      if (state.timerModo === 'pregunta') {
+        state.timerPreguntaRestante = progreso.timerPreguntaRestante || state.timerLimitPregunta;
+      } else {
+        state.timerSeconds = progreso.timerSeconds || 0;
+      }
+      iniciarTimer();
+    } else {
+      DOM.quizTimer.classList.add('hidden');
+    }
+    
+    mostrarPantalla('quiz');
+    renderizarPregunta();
+    
+    DOM.miniCorrectas.textContent = state.correctas;
+    DOM.miniIncorrectas.textContent = state.incorrectas;
+  }
+
+  /** Verificar si hay progreso guardado al cargar la página */
+  function verificarProgresoGuardado() {
+    const progreso = cargarProgreso();
+    if (progreso) {
+      mostrarModalProgreso(progreso);
+      return true;
+    }
+    return false;
+  }
   
     // ===== UTILIDADES =====
     function shuffleArray(arr) {
