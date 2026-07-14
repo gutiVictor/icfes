@@ -1175,15 +1175,426 @@ function seleccionarModo(modo) {
     // ===== HISTORIAL =============================================
     // ============================================================
   
-    function getHistorial() {
-      try {
-        const data = localStorage.getItem('icfes-historial');
-        return data ? JSON.parse(data) : [];
-      } catch {
-        return [];
-      }
+      // ============================================================
+  // ===== HISTORIAL MEJORADO ====================================
+  // ============================================================
+
+  let filtroActual = 'todos';
+
+  /** Obtener historial del usuario actual */
+  function getHistorial() {
+    try {
+      const data = localStorage.getItem('icfes-historial');
+      return data ? JSON.parse(data) : [];
+    } catch {
+      return [];
     }
-  
+  }
+
+  /** Guardar historial */
+  function saveHistorial(historial) {
+    localStorage.setItem('icfes-historial', JSON.stringify(historial));
+  }
+
+  /** Filtrar historial por modo */
+  function filtrarHistorial(historial, filtro) {
+    if (filtro === 'todos') return historial;
+    return historial.filter(item => item.modo === filtro);
+  }
+
+  /** Renderizar historial en la UI */
+  function renderizarHistorial() {
+    const historial = getHistorial();
+    const filtrados = filtrarHistorial(historial, filtroActual);
+    const lista = document.getElementById('historial-lista');
+    const vacio = document.getElementById('historial-vacio');
+    const estadisticas = document.getElementById('estadisticas-container');
+    const totalSpan = document.getElementById('historial-total');
+    
+    if (!lista) return;
+    
+    // Actualizar contador
+    if (totalSpan) totalSpan.textContent = `(${historial.length})`;
+    
+    if (historial.length === 0) {
+      if (vacio) vacio.classList.remove('hidden');
+      lista.innerHTML = '';
+      if (estadisticas) {
+        estadisticas.innerHTML = `
+          <div class="col-span-4 text-center text-gray-400 dark:text-gray-500 py-4 text-sm">
+            No hay datos aún. Completa tu primer simulacro.
+          </div>
+        `;
+      }
+      document.getElementById('grafico-evolucion-container')?.classList.add('hidden');
+      return;
+    }
+    
+    if (vacio) vacio.classList.add('hidden');
+    
+    renderizarEstadisticas(historial);
+    renderizarGraficoEvolucion(historial);
+    renderizarTendencia(historial);
+    
+    lista.innerHTML = '';
+    if (filtrados.length === 0) {
+      lista.innerHTML = `
+        <p class="text-center text-gray-400 dark:text-gray-500 py-8 text-sm">
+          No hay intentos con el filtro seleccionado.
+        </p>
+      `;
+      return;
+    }
+    
+    filtrados.forEach((item, index) => {
+      const card = crearTarjetaHistorial(item, index);
+      lista.appendChild(card);
+    });
+  }
+
+  /** Renderizar estadísticas generales */
+  function renderizarEstadisticas(historial) {
+    const container = document.getElementById('estadisticas-container');
+    if (!container) return;
+    
+    const total = historial.length;
+    const mejor = Math.max(...historial.map(h => h.puntaje));
+    const promedio = Math.round(historial.reduce((a, h) => a + h.puntaje, 0) / total);
+    
+    let mejora = 0;
+    if (total >= 4) {
+      const primeros = historial.slice(-5);
+      const ultimos = historial.slice(0, 5);
+      const promPrimeros = primeros.reduce((a, h) => a + h.puntaje, 0) / primeros.length;
+      const promUltimos = ultimos.reduce((a, h) => a + h.puntaje, 0) / ultimos.length;
+      mejora = Math.round(promUltimos - promPrimeros);
+    }
+    
+    container.innerHTML = `
+      <div class="bg-green-50 dark:bg-green-900/20 rounded-xl p-3 text-center">
+        <p class="text-2xl font-black text-green-600 dark:text-green-400">${mejor}%</p>
+        <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Mejor</p>
+      </div>
+      <div class="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-3 text-center">
+        <p class="text-2xl font-black text-blue-600 dark:text-blue-400">${promedio}%</p>
+        <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Promedio</p>
+      </div>
+      <div class="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-3 text-center">
+        <p class="text-2xl font-black text-purple-600 dark:text-purple-400">${total}</p>
+        <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Intentos</p>
+      </div>
+      <div class="bg-yellow-50 dark:bg-yellow-900/20 rounded-xl p-3 text-center">
+        <p class="text-2xl font-black ${mejora >= 0 ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}">
+          ${mejora >= 0 ? '+' : ''}${mejora}%
+        </p>
+        <p class="text-[10px] text-gray-500 dark:text-gray-400 font-medium">Mejora</p>
+      </div>
+    `;
+  }
+
+  /** Renderizar gráfico de evolución */
+  function renderizarGraficoEvolucion(historial) {
+    const container = document.getElementById('grafico-evolucion-container');
+    const canvas = document.getElementById('chart-evolucion');
+    if (!container || !canvas) return;
+    
+    if (historial.length < 2) {
+      container.classList.add('hidden');
+      return;
+    }
+    
+    container.classList.remove('hidden');
+    
+    const ctx = canvas.getContext('2d');
+    const isDark = document.documentElement.classList.contains('dark');
+    
+    // Destruir chart previo si existe
+    if (canvas._chart) {
+      canvas._chart.destroy();
+    }
+    
+    const labels = historial.map((_, i) => `#${i + 1}`);
+    const data = historial.map(h => h.puntaje);
+    const colores = data.map(p => p >= 65 ? '#10b981' : p >= 45 ? '#f59e0b' : '#ef4444');
+    
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Puntaje',
+          data: data,
+          borderColor: '#6366f1',
+          backgroundColor: 'rgba(99, 102, 241, 0.1)',
+          borderWidth: 2,
+          pointBackgroundColor: colores,
+          pointBorderColor: isDark ? '#1f2937' : '#ffffff',
+          pointBorderWidth: 2,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          fill: true,
+          tension: 0.3,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: isDark ? '#1f2937' : '#ffffff',
+            titleColor: isDark ? '#f3f4f6' : '#111827',
+            bodyColor: isDark ? '#d1d5db' : '#4b5563',
+            borderColor: isDark ? '#374151' : '#e5e7eb',
+            borderWidth: 1,
+            cornerRadius: 8,
+            padding: 10,
+            callbacks: {
+              label: function(context) {
+                return `Puntaje: ${context.raw}%`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { display: false },
+            ticks: {
+              color: isDark ? '#9ca3af' : '#6b7280',
+              font: { size: 9 },
+              maxTicksLimit: 10,
+            }
+          },
+          y: {
+            min: 0,
+            max: 100,
+            grid: {
+              color: isDark ? '#374151' : '#f3f4f6',
+            },
+            ticks: {
+              color: isDark ? '#9ca3af' : '#6b7280',
+              font: { size: 9 },
+              callback: v => v + '%',
+            }
+          }
+        },
+        animation: {
+          duration: 800,
+        },
+      },
+    });
+    
+    canvas._chart = chart;
+  }
+
+  /** Renderizar tendencia */
+  function renderizarTendencia(historial) {
+    const label = document.getElementById('tendencia-label');
+    if (!label || historial.length < 2) {
+      if (label) label.textContent = '';
+      return;
+    }
+    
+    const primero = historial[historial.length - 1].puntaje;
+    const ultimo = historial[0].puntaje;
+    const diff = ultimo - primero;
+    
+    const emoji = diff > 5 ? '📈' : diff < -5 ? '📉' : '➡️';
+    const texto = diff > 0 ? `+${diff}% de mejora` : diff < 0 ? `${diff}% de caída` : 'Sin cambios';
+    const color = diff > 5 ? 'text-green-500' : diff < -5 ? 'text-red-500' : 'text-yellow-500';
+    
+    label.textContent = `${emoji} ${texto}`;
+    label.className = `text-xs ${color}`;
+  }
+
+  /** Exportar historial a CSV */
+  function exportarCSV() {
+    const historial = getHistorial();
+    if (historial.length === 0) {
+      alert('No hay datos para exportar.');
+      return;
+    }
+    
+    // Crear cabeceras
+    let csv = 'Fecha,Modo,Materia,Puntaje,Correctas,Total,Tiempo (min)\n';
+    
+    historial.forEach(item => {
+      const fecha = new Date(item.fecha).toLocaleDateString('es-ES');
+      const modo = item.modo === 'simulacro' ? 'Simulacro' : 
+                   item.modo === 'materia' ? `Materia (${item.materia || 'N/A'})` : 
+                   'Medicina';
+      const tiempoMin = Math.round((item.tiempoSegundos || 0) / 60);
+      csv += `${fecha},${modo},${item.materia || 'N/A'},${item.puntaje}%,${item.correctas},${item.totalPreguntas},${tiempoMin}\n`;
+    });
+    
+    // Crear y descargar archivo
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `historial_icfes_${new Date().toISOString().slice(0,10)}.csv`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(link.href);
+  }
+
+  /** Crear tarjeta de historial */
+  function crearTarjetaHistorial(item, index) {
+    const div = document.createElement('div');
+    div.className = `bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 animate-fade-in-up`;
+    div.style.animationDelay = `${index * 50}ms`;
+    
+    const fecha = new Date(item.fecha);
+    const fechaStr = fecha.toLocaleDateString('es-ES', { 
+      day: 'numeric', month: 'long', year: 'numeric' 
+    });
+    const horaStr = fecha.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+    
+    const modoLabel = item.modo === 'simulacro' ? 'Simulacro Completo' :
+                      item.modo === 'materia' ? `Materia: ${item.materia}` :
+                      'Medicina (Énfasis)';
+    
+    const tiempoStr = formatearTiempoHistorial(item.tiempoSegundos);
+    
+    let colorClase = 'text-green-600 dark:text-green-400';
+    let barraColor = 'bg-green-500';
+    if (item.puntaje < 45) {
+      colorClase = 'text-red-600 dark:text-red-400';
+      barraColor = 'bg-red-500';
+    } else if (item.puntaje < 65) {
+      colorClase = 'text-yellow-600 dark:text-yellow-400';
+      barraColor = 'bg-yellow-500';
+    }
+    
+    // Badge del modo
+    let badgeColor = 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300';
+    if (item.modo === 'simulacro') badgeColor = 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300';
+    else if (item.modo === 'medicina') badgeColor = 'bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300';
+    
+    div.innerHTML = `
+      <div class="flex items-start justify-between mb-2">
+        <div>
+          <p class="text-xs text-gray-400 dark:text-gray-500">${fechaStr} · ${horaStr}</p>
+          <div class="flex items-center gap-2 mt-0.5">
+            <span class="text-sm font-semibold text-gray-800 dark:text-gray-200">${modoLabel}</span>
+            <span class="text-[10px] px-2 py-0.5 rounded-full ${badgeColor}">${item.modo}</span>
+          </div>
+        </div>
+        <span class="text-xl font-black ${colorClase}">${item.puntaje}%</span>
+      </div>
+      <div class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mb-2">
+        <div class="h-full ${barraColor} rounded-full transition-all duration-1000" style="width: ${item.puntaje}%"></div>
+      </div>
+      <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+        <span>✅ ${item.correctas}/${item.totalPreguntas} correctas</span>
+        <span>⏱ ${tiempoStr}</span>
+      </div>
+      <button class="btn-ver-detalle mt-3 w-full py-1.5 rounded-xl text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-id="${item.id}">
+        📊 Ver detalles
+      </button>
+    `;
+    
+    const btnDetalle = div.querySelector('.btn-ver-detalle');
+    btnDetalle.addEventListener('click', () => mostrarDetalleIntento(item));
+    
+    return div;
+  }
+
+  /** Formatear tiempo para historial */
+  function formatearTiempoHistorial(segundos) {
+    if (!segundos || segundos < 60) return `${segundos || 0}s`;
+    const mins = Math.floor(segundos / 60);
+    const secs = segundos % 60;
+    if (mins < 60) return `${mins}m ${secs}s`;
+    const horas = Math.floor(mins / 60);
+    const minRest = mins % 60;
+    return `${horas}h ${minRest}m`;
+  }
+
+  /** Mostrar detalles de un intento en modal */
+  function mostrarDetalleIntento(intento) {
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in';
+    
+    const materias = Object.keys(intento.respuestasPorMateria || {});
+    
+    let materiasHtml = '';
+    if (materias.length > 0) {
+      materiasHtml = materias.map(m => {
+        const data = intento.respuestasPorMateria[m];
+        const pct = Math.round((data.correctas / data.total) * 100);
+        const mc = MATERIA_COLORS[m] || { bar: '#6b7280' };
+        return `
+          <div class="flex items-center justify-between py-1.5 border-b border-gray-100 dark:border-gray-800 last:border-0">
+            <span class="text-sm">${m}</span>
+            <div class="flex items-center gap-3">
+              <span class="text-xs text-gray-500 dark:text-gray-400">${data.correctas}/${data.total}</span>
+              <span class="text-sm font-bold" style="color: ${mc.bar}">${pct}%</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    } else {
+      materiasHtml = '<p class="text-sm text-gray-400">No hay datos de materias disponibles.</p>';
+    }
+    
+    const fecha = new Date(intento.fecha);
+    const fechaStr = fecha.toLocaleDateString('es-ES', { 
+      day: 'numeric', month: 'long', year: 'numeric' 
+    });
+    
+    modal.innerHTML = `
+      <div class="bg-white dark:bg-gray-900 rounded-3xl max-w-md w-full p-6 shadow-2xl border border-gray-100 dark:border-gray-800 transform scale-95 transition-all duration-300 animate-scale-in max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-lg font-bold text-gray-900 dark:text-white">Detalles del intento</h3>
+          <button class="btn-cerrar-modal p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+            <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        
+        <div class="mb-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/50">
+          <p class="text-xs text-gray-400 dark:text-gray-500">${fechaStr}</p>
+          <p class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+            ${intento.modo === 'simulacro' ? 'Simulacro Completo' :
+              intento.modo === 'materia' ? `Materia: ${intento.materia}` :
+              'Medicina (Énfasis)'}
+          </p>
+          <div class="flex items-center gap-6 mt-2">
+            <span class="text-2xl font-black ${intento.puntaje >= 65 ? 'text-green-600 dark:text-green-400' : intento.puntaje >= 45 ? 'text-yellow-600 dark:text-yellow-400' : 'text-red-600 dark:text-red-400'}">${intento.puntaje}%</span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">✅ ${intento.correctas}/${intento.totalPreguntas}</span>
+            <span class="text-sm text-gray-500 dark:text-gray-400">⏱ ${formatearTiempoHistorial(intento.tiempoSegundos)}</span>
+          </div>
+        </div>
+        
+        <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Desglose por materia</h4>
+        <div class="bg-gray-50 dark:bg-gray-800/30 rounded-xl p-3">
+          ${materiasHtml}
+        </div>
+        
+        <button class="btn-cerrar-modal w-full mt-4 py-2.5 rounded-xl bg-primary-500 hover:bg-primary-600 text-white font-medium text-sm transition-colors">
+          Cerrar
+        </button>
+      </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    const cerrarBtns = modal.querySelectorAll('.btn-cerrar-modal');
+    cerrarBtns.forEach(btn => {
+      btn.addEventListener('click', () => modal.remove());
+    });
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.remove();
+    });
+  }
+
+  /** Limpiar historial */
+  function limpiarHistorial() {
+    if (confirm('¿Estás seguro de que quieres eliminar todo tu historial? Esta acción no se puede deshacer.')) {
+      saveHistorial([]);
+      renderizarHistorial();
+    }
+  }
     function saveHistorial(historial) {
       localStorage.setItem('icfes-historial', JSON.stringify(historial));
     }
