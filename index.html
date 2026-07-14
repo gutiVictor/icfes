@@ -127,16 +127,28 @@
             </div>
 
             <!-- Cantidad de preguntas -->
-            <div>
-              <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Cantidad de preguntas</label>
-              <div class="grid grid-cols-4 gap-2">
-                <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="5">5</button>
-                <button class="cantidad-btn active-mode px-3 py-2.5 rounded-xl border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-sm font-bold transition-all" data-cantidad="10">10</button>
-                <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="20">20</button>
-                <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="50">50</button>
-              </div>
-              <p id="disponibles-info" class="text-xs text-gray-400 dark:text-gray-500 mt-2"></p>
-            </div>
+            <!-- Reemplaza la sección de cantidad con esto: -->
+
+<!-- Cantidad de preguntas -->
+<div id="cantidad-container">
+  <label class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Cantidad de preguntas</label>
+  <div class="grid grid-cols-4 gap-2">
+    <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="5">5</button>
+    <button class="cantidad-btn active-mode px-3 py-2.5 rounded-xl border-2 border-primary-500 bg-primary-50 dark:bg-primary-900/20 text-sm font-bold transition-all" data-cantidad="10">10</button>
+    <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="20">20</button>
+    <button class="cantidad-btn px-3 py-2.5 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-sm font-bold hover:border-primary-300 dark:hover:border-primary-600 transition-all" data-cantidad="50">50</button>
+  </div>
+</div>
+
+<!-- Mensaje informativo para simulacro -->
+<div id="simulacro-info" class="hidden mt-3 p-3 rounded-xl bg-primary-50 dark:bg-primary-900/20 border border-primary-200 dark:border-primary-800/30">
+  <p class="text-xs text-primary-700 dark:text-primary-300 leading-relaxed">
+    <span class="font-bold">📋 Simulacro Completo ICFES</span><br>
+    <span class="text-primary-600 dark:text-primary-400">55 Inglés · 29 Ciencias Naturales · 25 Matemáticas · 25 Sociales · 41 Lectura Crítica</span>
+  </p>
+</div>
+
+<p id="disponibles-info" class="text-xs text-gray-400 dark:text-gray-500 mt-2"></p>
 
             <!-- Temporizador Configuración -->
             <div class="border-t border-gray-100 dark:border-gray-800 pt-5 space-y-4">
