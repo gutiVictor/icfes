@@ -183,6 +183,47 @@
           </div>
         </div>
 
+
+
+
+
+
+        <!-- ===== HISTORIAL DE RESULTADOS ===== -->
+<div id="historial-container" class="w-full max-w-xl mt-8">
+  <div id="historial-card" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 overflow-hidden">
+    
+    <!-- Header del historial -->
+    <div class="px-6 py-4 border-b border-gray-100 dark:border-gray-800 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        <h3 class="font-bold text-gray-900 dark:text-white">Mi Historial</h3>
+      </div>
+      <button id="btn-limpiar-historial" class="text-xs text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors flex items-center gap-1">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+        Limpiar
+      </button>
+    </div>
+
+    <!-- Estadísticas -->
+    <div id="estadisticas-container" class="px-6 pt-4 pb-2 grid grid-cols-2 md:grid-cols-4 gap-3">
+      <!-- Se llena dinámicamente -->
+    </div>
+
+    <!-- Lista de historial -->
+    <div id="historial-lista" class="px-6 pb-6 max-h-[400px] overflow-y-auto space-y-3 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700">
+      <!-- Se llena dinámicamente -->
+      <p id="historial-vacio" class="text-center text-gray-400 dark:text-gray-500 py-8 text-sm">
+        No hay intentos guardados aún.<br>
+        ¡Completa tu primer entrenamiento para ver tu progreso!
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
         <!-- Stats footer -->
         <div class="mt-6 flex items-center justify-center gap-6 text-xs text-gray-400 dark:text-gray-500">
           <span id="total-preguntas-stat" class="flex items-center gap-1">
