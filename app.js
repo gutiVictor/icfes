@@ -7,26 +7,24 @@
   
     // ===== ESTADO GLOBAL =====
     const state = {
-      pantalla: 'inicio',       // 'inicio' | 'quiz' | 'resultados'
-      modo: 'simulacro',        // 'simulacro' | 'materia' | 'medicina'
-      materiaSeleccionada: '',  // vacío = todas
+      pantalla: 'inicio',
+      modo: 'simulacro',
+      materiaSeleccionada: '',
       cantidadPreguntas: 10,
-      todasPreguntas: [],       // datos crudos del JSON
-      preguntasSesion: [],      // preguntas seleccionadas para esta sesión
+      todasPreguntas: [],
+      preguntasSesion: [],
       indiceActual: 0,
-      opcionSeleccionada: null, // 'A' | 'B' | 'C' | 'D'
-      respondida: false,        // ¿ya se verificó esta pregunta?
-      respuestas: [],           // array de { id, materia, correcta, seleccionada, correctaEs }
+      opcionSeleccionada: null,
+      respondida: false,
+      respuestas: [],
       correctas: 0,
       incorrectas: 0,
       timerInterval: null,
       timerSeconds: 0,
-      // Nuevas propiedades para temporizador avanzado
       timerActivo: true,
-      timerModo: 'total',       // 'total' | 'pregunta'
-      timerLimitPregunta: 120,  // 2 minutos (120 segundos) por pregunta
+      timerModo: 'total',
+      timerLimitPregunta: 120,
       timerPreguntaRestante: 0,
-      // Distribución fija para simulacro completo
       SIMULACRO_DISTRIBUCION: {
         'Inglés': 55,
         'Ciencias Naturales': 29,
@@ -38,11 +36,11 @@
   
     // ===== COLORES DE MATERIA =====
     const MATERIA_COLORS = {
-      'Lectura Crítica':       { bg: 'bg-blue-100 dark:bg-blue-900/30', text: 'text-blue-700 dark:text-blue-300', bar: '#3b82f6' },
-      'Matemáticas':           { bg: 'bg-purple-100 dark:bg-purple-900/30', text: 'text-purple-700 dark:text-purple-300', bar: '#8b5cf6' },
+      'Lectura Crítica': { bg: 'bg-blue-100 dark:bg-blue-900/30', text: 'text-blue-700 dark:text-blue-300', bar: '#3b82f6' },
+      'Matemáticas': { bg: 'bg-purple-100 dark:bg-purple-900/30', text: 'text-purple-700 dark:text-purple-300', bar: '#8b5cf6' },
       'Sociales y Ciudadanas': { bg: 'bg-amber-100 dark:bg-amber-900/30', text: 'text-amber-700 dark:text-amber-300', bar: '#f59e0b' },
-      'Ciencias Naturales':    { bg: 'bg-emerald-100 dark:bg-emerald-900/30', text: 'text-emerald-700 dark:text-emerald-300', bar: '#10b981' },
-      'Inglés':                { bg: 'bg-pink-100 dark:bg-pink-900/30', text: 'text-pink-700 dark:text-pink-300', bar: '#ec4899' },
+      'Ciencias Naturales': { bg: 'bg-emerald-100 dark:bg-emerald-900/30', text: 'text-emerald-700 dark:text-emerald-300', bar: '#10b981' },
+      'Inglés': { bg: 'bg-pink-100 dark:bg-pink-900/30', text: 'text-pink-700 dark:text-pink-300', bar: '#ec4899' },
     };
   
     // ===== ICONOS SVG =====
@@ -56,75 +54,70 @@
     const $$ = (sel) => document.querySelectorAll(sel);
   
     const DOM = {
-      // Pantallas
-      pantallaInicio:     $('#pantalla-inicio'),
-      pantallaQuiz:       $('#pantalla-quiz'),
+      pantallaInicio: $('#pantalla-inicio'),
+      pantallaQuiz: $('#pantalla-quiz'),
       pantallaResultados: $('#pantalla-resultados'),
-      // Inicio
-      modoSimulacro:      $('#modo-simulacro'),
-      modoMateria:        $('#modo-materia'),
-      modoMedicina:       $('#modo-medicina'),
-      selectorMateria:    $('#selector-materia'),
-      selectMateria:      $('#select-materia'),
-      btnIniciar:         $('#btn-iniciar'),
-      disponiblesInfo:    $('#disponibles-info'),
+      modoSimulacro: $('#modo-simulacro'),
+      modoMateria: $('#modo-materia'),
+      modoMedicina: $('#modo-medicina'),
+      selectorMateria: $('#selector-materia'),
+      selectMateria: $('#select-materia'),
+      btnIniciar: $('#btn-iniciar'),
+      disponiblesInfo: $('#disponibles-info'),
       totalPreguntasStat: $('#total-preguntas-stat'),
-      timerToggle:        $('#timer-toggle'),
-      timerOptions:       $('#timer-options'),
-      timerModeTotal:     $('#timer-mode-total'),
-      timerModeQuestion:  $('#timer-mode-question'),
-      cantidadContainer:  $('#cantidad-container'),
-      cantidadBtns:       $$('.cantidad-btn'),
-      simulacroInfo:      $('#simulacro-info'),
-      // Quiz
-      quizCounter:        $('#quiz-counter'),
-      quizProgressBar:    $('#quiz-progress-bar'),
-      quizPercent:        $('#quiz-percent'),
-      quizMateriaBadge:   $('#quiz-materia-badge'),
-      quizTimer:          $('#quiz-timer'),
-      timerDisplay:       $('#timer-display'),
-      quizCompetenciaText:$('#competencia-text'),
-      preguntaEnunciado:  $('#pregunta-enunciado'),
-      opcionesContainer:  $('#opciones-container'),
-      feedbackContainer:  $('#feedback-container'),
-      feedbackBox:        $('#feedback-box'),
-      feedbackIcon:       $('#feedback-icon'),
-      feedbackTitle:      $('#feedback-title'),
+      timerToggle: $('#timer-toggle'),
+      timerOptions: $('#timer-options'),
+      timerModeTotal: $('#timer-mode-total'),
+      timerModeQuestion: $('#timer-mode-question'),
+      cantidadContainer: $('#cantidad-container'),
+      cantidadBtns: $$('.cantidad-btn'),
+      simulacroInfo: $('#simulacro-info'),
+      quizCounter: $('#quiz-counter'),
+      quizProgressBar: $('#quiz-progress-bar'),
+      quizPercent: $('#quiz-percent'),
+      quizMateriaBadge: $('#quiz-materia-badge'),
+      quizTimer: $('#quiz-timer'),
+      timerDisplay: $('#timer-display'),
+      quizCompetenciaText: $('#competencia-text'),
+      preguntaEnunciado: $('#pregunta-enunciado'),
+      opcionesContainer: $('#opciones-container'),
+      feedbackContainer: $('#feedback-container'),
+      feedbackBox: $('#feedback-box'),
+      feedbackIcon: $('#feedback-icon'),
+      feedbackTitle: $('#feedback-title'),
       feedbackJustificacion: $('#feedback-justificacion'),
-      btnVerificar:       $('#btn-verificar'),
-      btnSiguiente:       $('#btn-siguiente'),
-      btnAbandonar:       $('#btn-abandonar'),
-      miniCorrectas:      $('#mini-correctas'),
-      miniIncorrectas:    $('#mini-incorrectas'),
-      // Resultados
-      resultadoHero:      $('#resultado-hero'),
-      chartDonutGlobal:   $('#chart-donut-global'),
-      globalPuntaje:      $('#global-puntaje'),
-      globalMensaje:      $('#global-mensaje'),
-      globalDetalle:      $('#global-detalle'),
+      btnVerificar: $('#btn-verificar'),
+      btnSiguiente: $('#btn-siguiente'),
+      btnAbandonar: $('#btn-abandonar'),
+      miniCorrectas: $('#mini-correctas'),
+      miniIncorrectas: $('#mini-incorrectas'),
+      resultadoHero: $('#resultado-hero'),
+      chartDonutGlobal: $('#chart-donut-global'),
+      globalPuntaje: $('#global-puntaje'),
+      globalMensaje: $('#global-mensaje'),
+      globalDetalle: $('#global-detalle'),
       medicinaAlertaContainer: $('#medicina-alerta-container'),
-      materiasBarras:     $('#materias-barras'),
-      chartBarrasMaterias:$('#chart-barras-materias'),
+      materiasBarras: $('#materias-barras'),
+      chartBarrasMaterias: $('#chart-barras-materias'),
       recomendacionContent: $('#recomendacion-content'),
-      btnReiniciar:       $('#btn-reiniciar'),
+      btnReiniciar: $('#btn-reiniciar'),
       btnReiniciarMobile: $('#btn-reiniciar-mobile'),
-      // Tema
-      btnToggleTheme:     $('#btn-toggle-theme'),
-      // Modal Confirmación
-      modalConfirmacion:  $('#modal-confirmacion'),
-      btnCancelarSalir:   $('#btn-cancelar-salir'),
-      btnConfirmarSalir:  $('#btn-confirmar-salir'),
+      btnToggleTheme: $('#btn-toggle-theme'),
+      modalConfirmacion: $('#modal-confirmacion'),
+      btnCancelarSalir: $('#btn-cancelar-salir'),
+      btnConfirmarSalir: $('#btn-confirmar-salir'),
     };
   
-    // ===== INICIALIZACIÓN =====
-    async function init() {
-      await cargarPreguntas();
-      configurarTema();
-      configurarEventos();
-      actualizarDisponibles();
-      actualizarUIporModo();
-      renderizarHistorial();
-    }
+      // ===== INICIALIZACIÓN =====
+  async function init() {
+    await cargarPreguntas();
+    configurarTema();
+    configurarEventos();
+    actualizarDisponibles();
+    actualizarUIporModo();
+    renderizarHistorial();
+    actualizarTiempoEstimado(); // <--- ESTA LÍNEA DEBE ESTAR
+  }
   
     // ===== CARGAR PREGUNTAS JSON =====
     async function cargarPreguntas() {
@@ -194,8 +187,11 @@
       DOM.btnReiniciarMobile.addEventListener('click', () => mostrarPantalla('inicio'));
   
       // Materia select cambia disponibles
-      DOM.selectMateria.addEventListener('change', actualizarDisponibles);
-      
+      DOM.selectMateria.addEventListener('change', function() {
+        actualizarDisponibles();
+        actualizarTiempoEstimado();
+      });
+  
       // Limpiar historial
       document.getElementById('btn-limpiar-historial')?.addEventListener('click', limpiarHistorial);
     }
@@ -215,34 +211,81 @@
       DOM.selectorMateria.classList.toggle('hidden', state.modo !== 'materia');
     }
   
-    // ===== MODO DE JUEGO =====
-    function seleccionarModo(modo) {
-      state.modo = modo;
-  
-      DOM.modoSimulacro.classList.toggle('active-mode', modo === 'simulacro');
-      DOM.modoMateria.classList.toggle('active-mode', modo === 'materia');
-      DOM.modoMedicina.classList.toggle('active-mode', modo === 'medicina');
-  
-      const botones = [DOM.modoSimulacro, DOM.modoMateria, DOM.modoMedicina];
-      botones.forEach(btn => {
-        btn.classList.remove('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
-        btn.classList.add('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
-      });
-  
-      if (modo === 'simulacro') {
-        DOM.modoSimulacro.classList.add('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
-        DOM.modoSimulacro.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
-      } else if (modo === 'materia') {
-        DOM.modoMateria.classList.add('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
-        DOM.modoMateria.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
-      } else if (modo === 'medicina') {
-        DOM.modoMedicina.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
+    // ===== TIEMPO ESTIMADO =====
+    function actualizarTiempoEstimado() {
+      const container = document.getElementById('tiempo-estimado-container');
+      const texto = document.getElementById('tiempo-estimado-texto');
+      const preguntasSpan = document.getElementById('tiempo-estimado-preguntas');
+      
+      if (!container || !texto) return;
+      
+      let totalPreguntas = 0;
+      const SEGUNDOS_POR_PREGUNTA = 60;
+      
+      if (state.modo === 'simulacro') {
+        totalPreguntas = Object.values(state.SIMULACRO_DISTRIBUCION).reduce((a, b) => a + b, 0);
+      } else if (state.modo === 'materia') {
+        const materia = DOM.selectMateria.value;
+        if (materia) {
+          totalPreguntas = state.todasPreguntas.filter(p => p.materia === materia).length;
+          totalPreguntas = Math.min(totalPreguntas, state.cantidadPreguntas);
+        }
+      } else if (state.modo === 'medicina') {
+        totalPreguntas = Math.min(state.cantidadPreguntas, state.todasPreguntas.length);
       }
-  
-      DOM.selectorMateria.classList.toggle('hidden', modo !== 'materia');
-      actualizarUIporModo();
-      actualizarDisponibles();
+      
+      if (totalPreguntas === 0) {
+        container.classList.add('hidden');
+        return;
+      }
+      
+      container.classList.remove('hidden');
+      preguntasSpan.textContent = totalPreguntas;
+      
+      const segundosTotales = totalPreguntas * SEGUNDOS_POR_PREGUNTA;
+      texto.textContent = formatearTiempoEstimado(segundosTotales);
     }
+  
+    function formatearTiempoEstimado(segundos) {
+      if (segundos < 60) return `${segundos} segundos`;
+      const minutos = Math.floor(segundos / 60);
+      const horas = Math.floor(minutos / 60);
+      const minRest = minutos % 60;
+      if (horas === 0) return `${minutos} minutos`;
+      if (minRest === 0) return `${horas} hora${horas > 1 ? 's' : ''}`;
+      return `${horas}h ${minRest}min`;
+    }
+  
+    // ===== MODO DE JUEGO =====
+   // ===== MODO DE JUEGO =====
+function seleccionarModo(modo) {
+  state.modo = modo;
+
+  DOM.modoSimulacro.classList.toggle('active-mode', modo === 'simulacro');
+  DOM.modoMateria.classList.toggle('active-mode', modo === 'materia');
+  DOM.modoMedicina.classList.toggle('active-mode', modo === 'medicina');
+
+  const botones = [DOM.modoSimulacro, DOM.modoMateria, DOM.modoMedicina];
+  botones.forEach(btn => {
+      btn.classList.remove('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
+      btn.classList.add('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
+  });
+
+  if (modo === 'simulacro') {
+      DOM.modoSimulacro.classList.add('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
+      DOM.modoSimulacro.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
+  } else if (modo === 'materia') {
+      DOM.modoMateria.classList.add('border-primary-500', 'bg-primary-50', 'dark:bg-primary-900/20');
+      DOM.modoMateria.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
+  } else if (modo === 'medicina') {
+      DOM.modoMedicina.classList.remove('border-gray-200', 'dark:border-gray-700', 'bg-white', 'dark:bg-gray-800');
+  }
+
+  DOM.selectorMateria.classList.toggle('hidden', modo !== 'materia');
+  actualizarUIporModo();
+  actualizarDisponibles();
+  actualizarTiempoEstimado();
+}
   
     // ===== CANTIDAD DE PREGUNTAS =====
     function seleccionarCantidad(cant) {
@@ -251,6 +294,7 @@
         const isActive = parseInt(btn.dataset.cantidad) === cant;
         btn.classList.toggle('active-mode', isActive);
       });
+      actualizarTiempoEstimado();
     }
   
     // ===== ACTUALIZAR INFO DISPONIBLES =====
@@ -285,6 +329,8 @@
       if (state.modo !== 'simulacro' && state.cantidadPreguntas > disponibles) {
         seleccionarCantidad(disponibles > 0 ? Math.min(disponibles, 50) : 5);
       }
+      
+      actualizarTiempoEstimado();
     }
   
     // ===== INICIAR SESIÓN =====
@@ -1112,7 +1158,6 @@
     // ===== HISTORIAL =============================================
     // ============================================================
   
-    /** Obtener historial del usuario actual */
     function getHistorial() {
       try {
         const data = localStorage.getItem('icfes-historial');
@@ -1122,12 +1167,10 @@
       }
     }
   
-    /** Guardar historial */
     function saveHistorial(historial) {
       localStorage.setItem('icfes-historial', JSON.stringify(historial));
     }
   
-    /** Agregar nuevo intento al historial */
     function agregarIntento() {
       const historial = getHistorial();
       
@@ -1149,7 +1192,6 @@
       renderizarHistorial();
     }
   
-    /** Calcular respuestas por materia para el historial */
     function calcularRespuestasPorMateria() {
       const porMateria = {};
       state.respuestas.forEach(r => {
@@ -1162,7 +1204,6 @@
       return porMateria;
     }
   
-    /** Renderizar historial en la UI */
     function renderizarHistorial() {
       const historial = getHistorial();
       const lista = document.getElementById('historial-lista');
@@ -1195,7 +1236,6 @@
       });
     }
   
-    /** Renderizar estadísticas generales */
     function renderizarEstadisticas(historial) {
       const container = document.getElementById('estadisticas-container');
       if (!container) return;
@@ -1235,7 +1275,6 @@
       `;
     }
   
-    /** Crear tarjeta de historial */
     function crearTarjetaHistorial(item, index) {
       const div = document.createElement('div');
       div.className = `bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 animate-fade-in-up`;
@@ -1289,7 +1328,6 @@
       return div;
     }
   
-    /** Formatear tiempo para historial */
     function formatearTiempoHistorial(segundos) {
       if (!segundos || segundos < 60) return `${segundos || 0}s`;
       const mins = Math.floor(segundos / 60);
@@ -1300,7 +1338,6 @@
       return `${horas}h ${minRest}m`;
     }
   
-    /** Mostrar detalles de un intento en modal */
     function mostrarDetalleIntento(intento) {
       const modal = document.createElement('div');
       modal.className = 'fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in';
@@ -1377,7 +1414,6 @@
       });
     }
   
-    /** Limpiar historial */
     function limpiarHistorial() {
       if (confirm('¿Estás seguro de que quieres eliminar todo tu historial? Esta acción no se puede deshacer.')) {
         saveHistorial([]);
