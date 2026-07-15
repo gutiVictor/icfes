@@ -2013,16 +2013,22 @@
     // ===== PERFILES ==============================================
     // ============================================================
   
-    function getPerfiles() {
-      try {
-        const data = localStorage.getItem('icfes-perfiles');
-        if (data) {
-          const parsed = JSON.parse(data);
-          if (!parsed.perfiles || Object.keys(parsed.perfiles).length === 0) {
-            const historialAntiguo = localStorage.getItem('icfes-historial');
-            if (historialAntiguo) {
+   // ===== PERFILES =====
+
+function getPerfiles() {
+  try {
+    const data = localStorage.getItem('icfes-perfiles');
+    if (data) {
+      const parsed = JSON.parse(data);
+      // Validar que tenga la estructura esperada
+      if (parsed && typeof parsed === 'object' && parsed.perfiles && typeof parsed.perfiles === 'object') {
+        // Si no hay perfiles pero hay historial antiguo, migrar
+        if (Object.keys(parsed.perfiles).length === 0) {
+          const historialAntiguo = localStorage.getItem('icfes-historial');
+          if (historialAntiguo) {
+            try {
               const historial = JSON.parse(historialAntiguo);
-              if (historial.length > 0) {
+              if (Array.isArray(historial) && historial.length > 0) {
                 parsed.perfiles = {
                   'Principal': {
                     historial: historial,
@@ -2037,16 +2043,285 @@
                 savePerfiles(parsed);
                 localStorage.removeItem('icfes-historial');
               }
+            } catch (e) {
+              console.warn('Error migrando historial antiguo:', e);
             }
           }
-          return parsed;
         }
-        return { perfiles: {}, perfilActivo: null };
-      } catch {
-        return { perfiles: {}, perfilActivo: null };
+        return parsed;
       }
+      // Si la estructura es inválida, crear nueva
+      return { perfiles: {}, perfilActivo: null };
     }
+    return { perfiles: {}, perfilActivo: null };
+  } catch (e) {
+    console.warn('Error cargando perfiles:', e);
+    return { perfiles: {}, perfilActivo: null };
+  }
+}
+
+function savePerfiles(data) {
+  try {
+    if (!data || typeof data !== 'object') {
+      data = { perfiles: {}, perfilActivo: null };
+    }
+    if (!data.perfiles || typeof data.perfiles !== 'object') {
+      data.perfiles = {};
+    }
+    localStorage.setItem('icfes-perfiles', JSON.stringify(data));
+  } catch (e) {
+    console.warn('Error guardando perfiles:', e);
+  }
+}
+
+function getPerfilActivo() {
+  const data = getPerfiles();
+  return data && data.perfilActivo ? data.perfilActivo : null;
+}
+
+function getPerfilData() {
+  const data = getPerfiles();
+  if (!data || !data.perfiles || typeof data.perfiles !== 'object') return null;
+  const nombre = data.perfilActivo;
+  if (!nombre || !data.perfiles[nombre] || typeof data.perfiles[nombre] !== 'object') {
+    return null;
+  }
+  return {
+    nombre: nombre,
+    ...data.perfiles[nombre]
+  };
+}
+
+function cambiarPerfil(nombre) {
+  const data = getPerfiles();
+  if (!data || !data.perfiles || typeof data.perfiles !== 'object') return false;
+  if (!data.perfiles[nombre]) {
+    console.warn('Perfil no encontrado:', nombre);
+    return false;
+  }
+  data.perfilActivo = nombre;
+  savePerfiles(data);
   
+  renderizarSelectorPerfiles();
+  renderizarHistorial();
+  actualizarTiempoEstimado();
+  aplicarTemaPerfil();
+  return true;
+}
+
+function crearPerfil(nombre) {
+  nombre = nombre.trim();
+  if (!nombre) {
+    alert('Por favor ingresa un nombre para el perfil.');
+    return false;
+  }
+  
+  const data = getPerfiles();
+  if (!data || !data.perfiles || typeof data.perfiles !== 'object') {
+    // Si no hay datos válidos, crear estructura nueva
+    const newData = { 
+      perfiles: {}, 
+      perfilActivo: null 
+    };
+    newData.perfiles[nombre] = {
+      historial: [],
+      preferencias: {
+        tema: document.documentElement.classList.contains('dark') ? 'dark' : 'light',
+        timerActivo: true,
+        timerModo: 'total'
+      }
+    };
+    newData.perfilActivo = nombre;
+    savePerfiles(newData);
+    renderizarSelectorPerfiles();
+    renderizarHistorial();
+    actualizarTiempoEstimado();
+    return true;
+  }
+  
+  if (data.perfiles[nombre]) {
+    alert('Ya existe un perfil con este nombre.');
+    return false;
+  }
+  
+  data.perfiles[nombre] = {
+    historial: [],
+    preferencias: {
+      tema: document.documentElement.classList.contains('dark') ? 'dark' : 'light',
+      timerActivo: true,
+      timerModo: 'total'
+    }
+  };
+  data.perfilActivo = nombre;
+  savePerfiles(data);
+  
+  renderizarSelectorPerfiles();
+  renderizarHistorial();
+  actualizarTiempoEstimado();
+  return true;
+}
+
+function eliminarPerfil(nombre) {
+  const data = getPerfiles();
+  if (!data || !data.perfiles || typeof data.perfiles !== 'object') return;
+  
+  const perfilesKeys = Object.keys(data.perfiles);
+  if (perfilesKeys.length === 0) return;
+  
+  if (nombre === 'Principal' && perfilesKeys.length === 1) {
+    alert('No puedes eliminar el único perfil. Crea otro primero.');
+    return;
+  }
+  
+  if (!confirm(`¿Estás seguro de que quieres eliminar el perfil "${nombre}"? Se perderá todo su historial.`)) {
+    return;
+  }
+  
+  if (!data.perfiles[nombre]) return;
+  
+  if (data.perfilActivo === nombre) {
+    const otros = perfilesKeys.filter(n => n !== nombre);
+    data.perfilActivo = otros.length > 0 ? otros[0] : null;
+  }
+  
+  delete data.perfiles[nombre];
+  savePerfiles(data);
+  
+  renderizarSelectorPerfiles();
+  renderizarHistorial();
+  actualizarTiempoEstimado();
+  aplicarTemaPerfil();
+}
+
+function guardarPreferencia(key, value) {
+  const data = getPerfiles();
+  if (!data || !data.perfiles || typeof data.perfiles !== 'object') return;
+  const nombre = data.perfilActivo;
+  if (!nombre || !data.perfiles[nombre] || typeof data.perfiles[nombre] !== 'object') return;
+  
+  if (!data.perfiles[nombre].preferencias || typeof data.perfiles[nombre].preferencias !== 'object') {
+    data.perfiles[nombre].preferencias = {};
+  }
+  data.perfiles[nombre].preferencias[key] = value;
+  savePerfiles(data);
+}
+
+function aplicarTemaPerfil() {
+  const perfil = getPerfilData();
+  if (!perfil) return;
+  
+  const tema = perfil.preferencias?.tema || 'light';
+  if (tema === 'dark') {
+    document.documentElement.classList.add('dark');
+    document.documentElement.classList.remove('light');
+  } else {
+    document.documentElement.classList.add('light');
+    document.documentElement.classList.remove('dark');
+  }
+}
+
+// ===== UI DE PERFILES =====
+
+function renderizarSelectorPerfiles() {
+  const data = getPerfiles();
+  const nombre = data && data.perfilActivo ? data.perfilActivo : null;
+  
+  const nombreEl = document.getElementById('perfil-activo-nombre');
+  const inicialEl = document.getElementById('perfil-inicial');
+  
+  if (nombreEl) {
+    nombreEl.textContent = nombre || 'Invitado';
+  }
+  if (inicialEl) {
+    inicialEl.textContent = nombre ? nombre.charAt(0).toUpperCase() : '?';
+  }
+  
+  const modalActual = document.getElementById('modal-perfil-actual');
+  const modalStats = document.getElementById('modal-perfil-stats');
+  
+  if (modalActual) {
+    modalActual.textContent = nombre || 'Invitado';
+  }
+  if (modalStats) {
+    const perfil = nombre && data && data.perfiles && data.perfiles[nombre] ? data.perfiles[nombre] : null;
+    if (perfil) {
+      const historial = Array.isArray(perfil.historial) ? perfil.historial : [];
+      const total = historial.length;
+      const ultimo = total > 0 && historial[0] && typeof historial[0].puntaje === 'number' ? historial[0].puntaje : null;
+      modalStats.textContent = ultimo !== null ? `⭐ Último: ${ultimo}% · 📊 ${total} intentos` : `📊 ${total} intentos`;
+    } else {
+      modalStats.textContent = '📊 0 intentos';
+    }
+  }
+}
+
+function renderizarListaPerfiles() {
+  const data = getPerfiles();
+  const container = document.getElementById('lista-perfiles');
+  const sinPerfiles = document.getElementById('sin-perfiles');
+  
+  if (!container) return;
+  
+  // Asegurar que data.perfiles existe y es un objeto
+  if (!data || !data.perfiles || typeof data.perfiles !== 'object' || Object.keys(data.perfiles).length === 0) {
+    if (sinPerfiles) sinPerfiles.classList.remove('hidden');
+    container.innerHTML = '';
+    return;
+  }
+  
+  if (sinPerfiles) sinPerfiles.classList.add('hidden');
+  container.innerHTML = '';
+  
+  const nombres = Object.keys(data.perfiles);
+  const perfilActivo = data.perfilActivo || null;
+  
+  nombres.forEach(nombre => {
+    const perfil = data.perfiles[nombre];
+    if (!perfil || typeof perfil !== 'object') return;
+    
+    const historial = Array.isArray(perfil.historial) ? perfil.historial : [];
+    const total = historial.length;
+    const ultimo = total > 0 && historial[0] && typeof historial[0].puntaje === 'number' ? historial[0].puntaje : null;
+    const esActivo = perfilActivo === nombre;
+    
+    const div = document.createElement('div');
+    div.className = `flex items-center justify-between p-3 rounded-xl border-2 transition-all ${esActivo ? 'border-primary-500 bg-primary-50 dark:bg-primary-900/20' : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800'}`;
+    
+    div.innerHTML = `
+      <div class="flex items-center gap-3 cursor-pointer flex-1" data-perfil="${nombre}">
+        <div class="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-sm font-bold text-gray-600 dark:text-gray-300">
+          ${nombre.charAt(0).toUpperCase()}
+        </div>
+        <div>
+          <p class="text-sm font-semibold text-gray-900 dark:text-white">${nombre}</p>
+          <p class="text-xs text-gray-400 dark:text-gray-500">${ultimo !== null ? `⭐ ${ultimo}% · ` : ''}📊 ${total} intentos</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        ${esActivo ? '<span class="text-xs text-primary-500 font-bold">✅ Activo</span>' : ''}
+        <button class="btn-eliminar-perfil text-xs text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-colors px-2 py-1" data-perfil="${nombre}">
+          Eliminar
+        </button>
+      </div>
+    `;
+    
+    div.querySelector('[data-perfil]')?.addEventListener('click', () => {
+      if (!esActivo) {
+        cambiarPerfil(nombre);
+        document.getElementById('modal-perfiles')?.classList.add('hidden');
+        renderizarListaPerfiles();
+      }
+    });
+    
+    div.querySelector('.btn-eliminar-perfil')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      eliminarPerfil(nombre);
+      renderizarListaPerfiles();
+    });
+    
+    container.appendChild(div);
+  });
+}
     function savePerfiles(data) {
       localStorage.setItem('icfes-perfiles', JSON.stringify(data));
     }
