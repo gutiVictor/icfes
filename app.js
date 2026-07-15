@@ -112,13 +112,87 @@
     let pausaActiva = false;
     let filtroActual = 'todos';
   
+    // ============================================================
+    // ===== RENDERIZAR FÓRMULAS MATEMÁTICAS CON KATEX ============
+    // ============================================================
+  
+    function renderizarFormulas() {
+      if (typeof katex === 'undefined') {
+        console.warn('KaTeX no está cargado');
+        return;
+      }
+  
+      const elementos = document.querySelectorAll('.math, .math-display, #feedback-justificacion, .opcion-btn .flex-1');
+      
+      elementos.forEach(el => {
+        const texto = el.textContent || '';
+        const regex = /\$\$(.*?)\$\$|\$(.*?)\$/g;
+        let match;
+        let resultado = texto;
+        let cambios = false;
+        
+        while ((match = regex.exec(texto)) !== null) {
+          const formula = match[1] || match[2];
+          if (formula && formula.trim()) {
+            try {
+              const isDisplay = match[1] ? true : false;
+              const rendered = katex.renderToString(formula.trim(), {
+                throwOnError: false,
+                displayMode: isDisplay,
+                trust: true
+              });
+              resultado = resultado.replace(match[0], rendered);
+              cambios = true;
+            } catch (e) {
+              console.warn('Error renderizando fórmula:', formula, e);
+            }
+          }
+        }
+        
+        if (cambios) {
+          el.innerHTML = resultado;
+        }
+      });
+    }
+  
+    function renderizarFormulasEnElemento(elemento) {
+      if (typeof katex === 'undefined' || !elemento) return;
+      
+      const texto = elemento.textContent || '';
+      const regex = /\$\$(.*?)\$\$|\$(.*?)\$/g;
+      let match;
+      let resultado = texto;
+      let cambios = false;
+      
+      while ((match = regex.exec(texto)) !== null) {
+        const formula = match[1] || match[2];
+        if (formula && formula.trim()) {
+          try {
+            const isDisplay = match[1] ? true : false;
+            const rendered = katex.renderToString(formula.trim(), {
+              throwOnError: false,
+              displayMode: isDisplay,
+              trust: true
+            });
+            resultado = resultado.replace(match[0], rendered);
+            cambios = true;
+          } catch (e) {
+            console.warn('Error renderizando fórmula en elemento:', formula, e);
+          }
+        }
+      }
+      
+      if (cambios) {
+        elemento.innerHTML = resultado;
+      }
+    }
+  
     // ===== INICIALIZACIÓN =====
     async function init() {
       await cargarPreguntas();
       configurarTema();
       configurarEventos();
       
-      // Cargar perfil y aplicar tema
       renderizarSelectorPerfiles();
       aplicarTemaPerfil();
       
@@ -177,64 +251,49 @@
   
     // ===== EVENTOS =====
     function configurarEventos() {
-      // Tema
       DOM.btnToggleTheme.addEventListener('click', toggleTema);
   
-      // Modo de juego
       DOM.modoSimulacro.addEventListener('click', () => seleccionarModo('simulacro'));
       DOM.modoMateria.addEventListener('click', () => seleccionarModo('materia'));
       DOM.modoMedicina.addEventListener('click', () => seleccionarModo('medicina'));
   
-      // Cantidad de preguntas
       DOM.cantidadBtns.forEach(btn => {
         btn.addEventListener('click', () => seleccionarCantidad(parseInt(btn.dataset.cantidad)));
       });
   
-      // Temporizador
       DOM.timerToggle.addEventListener('change', toggleTimerConfig);
       DOM.timerModeTotal.addEventListener('click', () => seleccionarModoTimer('total'));
       DOM.timerModeQuestion.addEventListener('click', () => seleccionarModoTimer('pregunta'));
   
-      // Iniciar
       DOM.btnIniciar.addEventListener('click', iniciarSesion);
   
-      // Quiz
       DOM.btnVerificar.addEventListener('click', verificarRespuesta);
       DOM.btnSiguiente.addEventListener('click', siguientePregunta);
       DOM.btnAbandonar.addEventListener('click', mostrarModalSalir);
   
-      // Modal confirmación de abandono
       DOM.btnCancelarSalir.addEventListener('click', ocultarModalSalir);
       DOM.btnConfirmarSalir.addEventListener('click', confirmarSalir);
   
-      // Resultados
       DOM.btnReiniciar.addEventListener('click', () => mostrarPantalla('inicio'));
       DOM.btnReiniciarMobile.addEventListener('click', () => mostrarPantalla('inicio'));
   
-      // Materia select cambia disponibles
       DOM.selectMateria.addEventListener('change', function() {
         actualizarDisponibles();
         actualizarTiempoEstimado();
       });
   
-      // Pausa
       document.getElementById('btn-pausar')?.addEventListener('click', togglePausa);
       document.getElementById('btn-reanudar')?.addEventListener('click', reanudarSimulacro);
       
-      // Cerrar pausa con Escape
       document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && pausaActiva) {
           reanudarSimulacro();
         }
       });
   
-      // Limpiar historial
       document.getElementById('btn-limpiar-historial')?.addEventListener('click', limpiarHistorial);
-  
-      // Exportar CSV
       document.getElementById('btn-exportar-csv')?.addEventListener('click', exportarCSV);
   
-      // ===== PERFILES =====
       document.getElementById('btn-cambiar-perfil')?.addEventListener('click', function() {
         renderizarListaPerfiles();
         renderizarSelectorPerfiles();
@@ -266,7 +325,6 @@
         }
       });
   
-      // Filtros de historial
       document.querySelectorAll('.filtro-btn').forEach(btn => {
         btn.addEventListener('click', function() {
           document.querySelectorAll('.filtro-btn').forEach(b => {
@@ -464,7 +522,6 @@
         state.preguntasSesion = shuffleArray([...seleccionA, ...seleccionB]).slice(0, totalRequerido);
         
       } else {
-        // ===== MODO SIMULACRO COMPLETO =====
         state.materiaSeleccionada = '';
         const distribucion = state.SIMULACRO_DISTRIBUCION;
         let seleccionadas = [];
@@ -604,6 +661,9 @@
         DOM.opcionesContainer.appendChild(btn);
       });
   
+      // Renderizar fórmulas en las opciones
+      setTimeout(renderizarFormulas, 200);
+  
       DOM.preguntaEnunciado.parentElement.classList.add('animate-fade-in');
       setTimeout(() => DOM.preguntaEnunciado.parentElement.classList.remove('animate-fade-in'), 500);
   
@@ -691,6 +751,9 @@
       }
   
       DOM.feedbackJustificacion.textContent = pregunta.justificacion;
+  
+      // Renderizar fórmulas en la justificación
+      setTimeout(() => renderizarFormulasEnElemento(DOM.feedbackJustificacion), 150);
   
       DOM.btnVerificar.classList.add('hidden');
       DOM.btnSiguiente.classList.remove('hidden');
@@ -822,7 +885,6 @@
       renderizarChartBarras(porMateria);
       generarRecomendacion(porMateria);
       
-      // ===== GUARDAR EN HISTORIAL =====
       agregarIntento();
     }
   
@@ -1218,7 +1280,7 @@
         
         if (partes[0].trim()) {
           const textNode = document.createElement('div');
-          textNode.className = 'mb-3';
+          textNode.className = 'mb-3 math';
           textNode.textContent = partes[0];
           DOM.preguntaEnunciado.appendChild(textNode);
         }
@@ -1235,27 +1297,30 @@
         
         if (partes[1] && partes[1].trim()) {
           const textNode2 = document.createElement('div');
-          textNode2.className = 'mt-3';
+          textNode2.className = 'mt-3 math';
           textNode2.textContent = partes[1];
           DOM.preguntaEnunciado.appendChild(textNode2);
         }
       } else {
-        DOM.preguntaEnunciado.textContent = texto;
+        const textNode = document.createElement('div');
+        textNode.className = 'math';
+        textNode.textContent = texto;
+        DOM.preguntaEnunciado.appendChild(textNode);
       }
+  
+      setTimeout(renderizarFormulas, 100);
     }
   
     // ============================================================
     // ===== HISTORIAL MEJORADO ====================================
     // ============================================================
   
-    /** Obtener historial del perfil activo */
     function getHistorial() {
       const perfil = getPerfilData();
       if (!perfil) return [];
       return perfil.historial || [];
     }
   
-    /** Guardar historial en el perfil activo */
     function saveHistorial(historial) {
       const data = getPerfiles();
       const nombre = data.perfilActivo;
@@ -1265,7 +1330,6 @@
       savePerfiles(data);
     }
   
-    /** Agregar nuevo intento al historial del perfil activo */
     function agregarIntento() {
       const historial = getHistorial();
       
@@ -1288,7 +1352,6 @@
       renderizarSelectorPerfiles();
     }
   
-    /** Calcular respuestas por materia */
     function calcularRespuestasPorMateria() {
       const porMateria = {};
       state.respuestas.forEach(r => {
@@ -1301,63 +1364,73 @@
       return porMateria;
     }
   
-    /** Filtrar historial por modo */
     function filtrarHistorial(historial, filtro) {
       if (filtro === 'todos') return historial;
       return historial.filter(item => item.modo === filtro);
     }
   
-    /** Renderizar historial en la UI */
     function renderizarHistorial() {
-      const historial = getHistorial();
-      const filtrados = filtrarHistorial(historial, filtroActual);
-      const lista = document.getElementById('historial-lista');
-      const vacio = document.getElementById('historial-vacio');
-      const estadisticas = document.getElementById('estadisticas-container');
-      const totalSpan = document.getElementById('historial-total');
-      
-      if (!lista) return;
-      
-      // Actualizar contador
-      if (totalSpan) totalSpan.textContent = `(${historial.length})`;
-      
-      if (historial.length === 0) {
-        if (vacio) vacio.classList.remove('hidden');
-        lista.innerHTML = '';
-        if (estadisticas) {
-          estadisticas.innerHTML = `
-            <div class="col-span-4 text-center text-gray-400 dark:text-gray-500 py-4 text-sm">
-              No hay datos aún. Completa tu primer simulacro.
-            </div>
-          `;
+      try {
+        const historial = getHistorial();
+        const filtrados = filtrarHistorial(historial, filtroActual);
+        const lista = document.getElementById('historial-lista');
+        const vacio = document.getElementById('historial-vacio');
+        const estadisticas = document.getElementById('estadisticas-container');
+        const totalSpan = document.getElementById('historial-total');
+        
+        if (!lista) return;
+        
+        if (totalSpan) totalSpan.textContent = `(${historial.length})`;
+        
+        if (historial.length === 0) {
+          if (vacio) vacio.classList.remove('hidden');
+          lista.innerHTML = '';
+          if (estadisticas) {
+            estadisticas.innerHTML = `
+              <div class="col-span-4 text-center text-gray-400 dark:text-gray-500 py-4 text-sm">
+                No hay datos aún. Completa tu primer simulacro.
+              </div>
+            `;
+          }
+          document.getElementById('grafico-evolucion-container')?.classList.add('hidden');
+          return;
         }
-        document.getElementById('grafico-evolucion-container')?.classList.add('hidden');
-        return;
+        
+        if (vacio) vacio.classList.add('hidden');
+        
+        // Verificar que los datos tengan los campos necesarios
+        const datosValidos = historial.every(item => 
+          typeof item.puntaje === 'number' && 
+          typeof item.correctas === 'number' &&
+          typeof item.totalPreguntas === 'number'
+        );
+        
+        if (!datosValidos) {
+          console.warn('Datos de historial incompletos:', historial);
+        }
+        
+        renderizarEstadisticas(historial);
+        renderizarGraficoEvolucion(historial);
+        renderizarTendencia(historial);
+        
+        lista.innerHTML = '';
+        if (filtrados.length === 0) {
+          lista.innerHTML = `
+            <p class="text-center text-gray-400 dark:text-gray-500 py-8 text-sm">
+              No hay intentos con el filtro seleccionado.
+            </p>
+          `;
+          return;
+        }
+        
+        filtrados.forEach((item, index) => {
+          const card = crearTarjetaHistorial(item, index);
+          lista.appendChild(card);
+        });
+      } catch (error) {
+        console.error('Error renderizando historial:', error);
       }
-      
-      if (vacio) vacio.classList.add('hidden');
-      
-      renderizarEstadisticas(historial);
-      renderizarGraficoEvolucion(historial);
-      renderizarTendencia(historial);
-      
-      lista.innerHTML = '';
-      if (filtrados.length === 0) {
-        lista.innerHTML = `
-          <p class="text-center text-gray-400 dark:text-gray-500 py-8 text-sm">
-            No hay intentos con el filtro seleccionado.
-          </p>
-        `;
-        return;
-      }
-      
-      filtrados.forEach((item, index) => {
-        const card = crearTarjetaHistorial(item, index);
-        lista.appendChild(card);
-      });
     }
-  
-    /** Renderizar estadísticas generales */
     function renderizarEstadisticas(historial) {
       const container = document.getElementById('estadisticas-container');
       if (!container) return;
@@ -1397,121 +1470,158 @@
       `;
     }
   
-    /** Renderizar gráfico de evolución */
     function renderizarGraficoEvolucion(historial) {
-      const container = document.getElementById('grafico-evolucion-container');
-      const canvas = document.getElementById('chart-evolucion');
-      if (!container || !canvas) return;
-      
-      if (historial.length < 2) {
-        container.classList.add('hidden');
-        return;
-      }
-      
-      container.classList.remove('hidden');
-      
-      const ctx = canvas.getContext('2d');
-      const isDark = document.documentElement.classList.contains('dark');
-      
-      if (canvas._chart) {
-        canvas._chart.destroy();
-      }
-      
-      const labels = historial.map((_, i) => `#${i + 1}`);
-      const data = historial.map(h => h.puntaje);
-      const colores = data.map(p => p >= 65 ? '#10b981' : p >= 45 ? '#f59e0b' : '#ef4444');
-      
-      const chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: labels,
-          datasets: [{
-            label: 'Puntaje',
-            data: data,
-            borderColor: '#6366f1',
-            backgroundColor: 'rgba(99, 102, 241, 0.1)',
-            borderWidth: 2,
-            pointBackgroundColor: colores,
-            pointBorderColor: isDark ? '#1f2937' : '#ffffff',
-            pointBorderWidth: 2,
-            pointRadius: 4,
-            pointHoverRadius: 6,
-            fill: true,
-            tension: 0.3,
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              backgroundColor: isDark ? '#1f2937' : '#ffffff',
-              titleColor: isDark ? '#f3f4f6' : '#111827',
-              bodyColor: isDark ? '#d1d5db' : '#4b5563',
-              borderColor: isDark ? '#374151' : '#e5e7eb',
-              borderWidth: 1,
-              cornerRadius: 8,
-              padding: 10,
-              callbacks: {
-                label: function(context) {
-                  return `Puntaje: ${context.raw}%`;
+      try {
+        const container = document.getElementById('grafico-evolucion-container');
+        const canvas = document.getElementById('chart-evolucion');
+        if (!container || !canvas) return;
+        
+        // Validar datos
+        if (!historial || historial.length < 2) {
+          container.classList.add('hidden');
+          return;
+        }
+        
+        // Verificar que los datos tengan puntaje
+        const datosValidos = historial.every(item => typeof item.puntaje === 'number');
+        if (!datosValidos) {
+          console.warn('Datos sin puntaje válido:', historial);
+          container.classList.add('hidden');
+          return;
+        }
+        
+        container.classList.remove('hidden');
+        
+        const ctx = canvas.getContext('2d');
+        const isDark = document.documentElement.classList.contains('dark');
+        
+        // Destruir chart previo si existe
+        if (canvas._chart) {
+          canvas._chart.destroy();
+          canvas._chart = null;
+        }
+        
+        // Mostrar hasta 20 puntos máximo para no saturar
+        const datosMostrar = historial.slice(0, 20).reverse();
+        const labels = datosMostrar.map((_, i) => `#${datosMostrar.length - i}`);
+        const data = datosMostrar.map(h => h.puntaje || 0);
+        const colores = data.map(p => p >= 65 ? '#10b981' : p >= 45 ? '#f59e0b' : '#ef4444');
+        
+        const chart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Puntaje',
+              data: data,
+              borderColor: '#6366f1',
+              backgroundColor: 'rgba(99, 102, 241, 0.1)',
+              borderWidth: 2,
+              pointBackgroundColor: colores,
+              pointBorderColor: isDark ? '#1f2937' : '#ffffff',
+              pointBorderWidth: 2,
+              pointRadius: 4,
+              pointHoverRadius: 6,
+              fill: true,
+              tension: 0.3,
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                backgroundColor: isDark ? '#1f2937' : '#ffffff',
+                titleColor: isDark ? '#f3f4f6' : '#111827',
+                bodyColor: isDark ? '#d1d5db' : '#4b5563',
+                borderColor: isDark ? '#374151' : '#e5e7eb',
+                borderWidth: 1,
+                cornerRadius: 8,
+                padding: 10,
+                callbacks: {
+                  label: function(context) {
+                    return `Puntaje: ${context.raw}%`;
+                  }
                 }
               }
-            }
-          },
-          scales: {
-            x: {
-              grid: { display: false },
-              ticks: {
-                color: isDark ? '#9ca3af' : '#6b7280',
-                font: { size: 9 },
-                maxTicksLimit: 10,
+            },
+            scales: {
+              x: {
+                grid: { display: false },
+                ticks: {
+                  color: isDark ? '#9ca3af' : '#6b7280',
+                  font: { size: 9 },
+                  maxTicksLimit: 10,
+                }
+              },
+              y: {
+                min: 0,
+                max: 100,
+                grid: {
+                  color: isDark ? '#374151' : '#f3f4f6',
+                },
+                ticks: {
+                  color: isDark ? '#9ca3af' : '#6b7280',
+                  font: { size: 9 },
+                  callback: v => v + '%',
+                }
               }
             },
-            y: {
-              min: 0,
-              max: 100,
-              grid: {
-                color: isDark ? '#374151' : '#f3f4f6',
-              },
-              ticks: {
-                color: isDark ? '#9ca3af' : '#6b7280',
-                font: { size: 9 },
-                callback: v => v + '%',
-              }
-            }
+            animation: {
+              duration: 800,
+            },
           },
-          animation: {
-            duration: 800,
-          },
-        },
-      });
-      
-      canvas._chart = chart;
-    }
-  
-    /** Renderizar tendencia */
-    function renderizarTendencia(historial) {
-      const label = document.getElementById('tendencia-label');
-      if (!label || historial.length < 2) {
-        if (label) label.textContent = '';
-        return;
+        });
+        
+        canvas._chart = chart;
+        
+        // Forzar redibujo
+        setTimeout(() => {
+          if (canvas._chart) {
+            canvas._chart.resize();
+            canvas._chart.update();
+          }
+        }, 100);
+        
+      } catch (error) {
+        console.error('Error en gráfico de evolución:', error);
+        document.getElementById('grafico-evolucion-container')?.classList.add('hidden');
       }
-      
-      const primero = historial[historial.length - 1].puntaje;
-      const ultimo = historial[0].puntaje;
-      const diff = ultimo - primero;
-      
-      const emoji = diff > 5 ? '📈' : diff < -5 ? '📉' : '➡️';
-      const texto = diff > 0 ? `+${diff}% de mejora` : diff < 0 ? `${diff}% de caída` : 'Sin cambios';
-      const color = diff > 5 ? 'text-green-500' : diff < -5 ? 'text-red-500' : 'text-yellow-500';
-      
-      label.textContent = `${emoji} ${texto}`;
-      label.className = `text-xs ${color}`;
     }
   
-    /** Exportar historial a CSV */
+    function renderizarTendencia(historial) {
+      try {
+        const label = document.getElementById('tendencia-label');
+        if (!label) return;
+        
+        if (!historial || historial.length < 2) {
+          label.textContent = '';
+          return;
+        }
+        
+        // Usar el primer y último intento para la tendencia
+        const primero = historial[historial.length - 1];
+        const ultimo = historial[0];
+        
+        if (!primero || !ultimo || typeof primero.puntaje !== 'number' || typeof ultimo.puntaje !== 'number') {
+          label.textContent = '';
+          return;
+        }
+        
+        const diff = ultimo.puntaje - primero.puntaje;
+        
+        const emoji = diff > 5 ? '📈' : diff < -5 ? '📉' : '➡️';
+        const texto = diff > 0 ? `+${diff}% de mejora` : diff < 0 ? `${diff}% de caída` : 'Sin cambios';
+        const color = diff > 5 ? 'text-green-500' : diff < -5 ? 'text-red-500' : 'text-yellow-500';
+        
+        label.textContent = `${emoji} ${texto}`;
+        label.className = `text-xs ${color}`;
+      } catch (error) {
+        console.error('Error en tendencia:', error);
+      }
+    }
+  
     function exportarCSV() {
       const historial = getHistorial();
       if (historial.length === 0) {
@@ -1540,30 +1650,35 @@
       URL.revokeObjectURL(link.href);
     }
   
-    /** Crear tarjeta de historial */
     function crearTarjetaHistorial(item, index) {
       const div = document.createElement('div');
       div.className = `bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-4 border border-gray-100 dark:border-gray-700 animate-fade-in-up`;
       div.style.animationDelay = `${index * 50}ms`;
       
-      const fecha = new Date(item.fecha);
+      // Validar datos
+      const puntaje = typeof item.puntaje === 'number' ? item.puntaje : 0;
+      const correctas = typeof item.correctas === 'number' ? item.correctas : 0;
+      const total = typeof item.totalPreguntas === 'number' ? item.totalPreguntas : 0;
+      const tiempo = typeof item.tiempoSegundos === 'number' ? item.tiempoSegundos : 0;
+      
+      const fecha = new Date(item.fecha || Date.now());
       const fechaStr = fecha.toLocaleDateString('es-ES', { 
         day: 'numeric', month: 'long', year: 'numeric' 
       });
       const horaStr = fecha.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
       
       const modoLabel = item.modo === 'simulacro' ? 'Simulacro Completo' :
-                        item.modo === 'materia' ? `Materia: ${item.materia}` :
+                        item.modo === 'materia' ? `Materia: ${item.materia || 'N/A'}` :
                         'Medicina (Énfasis)';
       
-      const tiempoStr = formatearTiempoHistorial(item.tiempoSegundos);
+      const tiempoStr = formatearTiempoHistorial(tiempo);
       
       let colorClase = 'text-green-600 dark:text-green-400';
       let barraColor = 'bg-green-500';
-      if (item.puntaje < 45) {
+      if (puntaje < 45) {
         colorClase = 'text-red-600 dark:text-red-400';
         barraColor = 'bg-red-500';
-      } else if (item.puntaje < 65) {
+      } else if (puntaje < 65) {
         colorClase = 'text-yellow-600 dark:text-yellow-400';
         barraColor = 'bg-yellow-500';
       }
@@ -1578,30 +1693,30 @@
             <p class="text-xs text-gray-400 dark:text-gray-500">${fechaStr} · ${horaStr}</p>
             <div class="flex items-center gap-2 mt-0.5">
               <span class="text-sm font-semibold text-gray-800 dark:text-gray-200">${modoLabel}</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full ${badgeColor}">${item.modo}</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full ${badgeColor}">${item.modo || 'N/A'}</span>
             </div>
           </div>
-          <span class="text-xl font-black ${colorClase}">${item.puntaje}%</span>
+          <span class="text-xl font-black ${colorClase}">${puntaje}%</span>
         </div>
         <div class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mb-2">
-          <div class="h-full ${barraColor} rounded-full transition-all duration-1000" style="width: ${item.puntaje}%"></div>
+          <div class="h-full ${barraColor} rounded-full transition-all duration-1000" style="width: ${puntaje}%"></div>
         </div>
         <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-          <span>✅ ${item.correctas}/${item.totalPreguntas} correctas</span>
+          <span>✅ ${correctas}/${total} correctas</span>
           <span>⏱ ${tiempoStr}</span>
         </div>
-        <button class="btn-ver-detalle mt-3 w-full py-1.5 rounded-xl text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-id="${item.id}">
+        <button class="btn-ver-detalle mt-3 w-full py-1.5 rounded-xl text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-id="${item.id || 'N/A'}">
           📊 Ver detalles
         </button>
       `;
       
       const btnDetalle = div.querySelector('.btn-ver-detalle');
-      btnDetalle.addEventListener('click', () => mostrarDetalleIntento(item));
+      if (btnDetalle) {
+        btnDetalle.addEventListener('click', () => mostrarDetalleIntento(item));
+      }
       
       return div;
     }
-  
-    /** Formatear tiempo para historial */
     function formatearTiempoHistorial(segundos) {
       if (!segundos || segundos < 60) return `${segundos || 0}s`;
       const mins = Math.floor(segundos / 60);
@@ -1612,7 +1727,6 @@
       return `${horas}h ${minRest}m`;
     }
   
-    /** Mostrar detalles de un intento en modal */
     function mostrarDetalleIntento(intento) {
       const modal = document.createElement('div');
       modal.className = 'fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in';
@@ -1689,7 +1803,6 @@
       });
     }
   
-    /** Limpiar historial */
     function limpiarHistorial() {
       if (confirm('¿Estás seguro de que quieres eliminar todo tu historial? Esta acción no se puede deshacer.')) {
         saveHistorial([]);
@@ -1702,7 +1815,6 @@
     // ===== PAUSA =================================================
     // ============================================================
   
-    /** Pausar el simulacro */
     function pausarSimulacro() {
       if (pausaActiva) return;
       if (state.preguntasSesion.length === 0) return;
@@ -1728,7 +1840,6 @@
       }
     }
   
-    /** Reanudar el simulacro */
     function reanudarSimulacro() {
       if (!pausaActiva) return;
       
@@ -1750,7 +1861,6 @@
       }
     }
   
-    /** Alternar pausa */
     function togglePausa() {
       if (pausaActiva) {
         reanudarSimulacro();
@@ -1763,7 +1873,6 @@
     // ===== GUARDAR PROGRESO ======================================
     // ============================================================
   
-    /** Guardar progreso actual en localStorage */
     function guardarProgreso() {
       if (state.preguntasSesion.length === 0) return;
       
@@ -1790,7 +1899,6 @@
       }
     }
   
-    /** Cargar progreso guardado */
     function cargarProgreso() {
       try {
         const data = localStorage.getItem('icfes-progreso');
@@ -1810,12 +1918,10 @@
       }
     }
   
-    /** Eliminar progreso guardado */
     function eliminarProgreso() {
       localStorage.removeItem('icfes-progreso');
     }
   
-    /** Mostrar modal de progreso guardado */
     function mostrarModalProgreso(progreso) {
       const modal = document.getElementById('modal-progreso');
       const info = document.getElementById('modal-progreso-info');
@@ -1854,7 +1960,6 @@
       });
     }
   
-    /** Restaurar progreso guardado */
     function restaurarProgreso(progreso) {
       state.preguntasSesion = progreso.preguntasSesion;
       state.indiceActual = progreso.indiceActual;
@@ -1895,7 +2000,6 @@
       DOM.miniIncorrectas.textContent = state.incorrectas;
     }
   
-    /** Verificar si hay progreso guardado al cargar la página */
     function verificarProgresoGuardado() {
       const progreso = cargarProgreso();
       if (progreso) {
@@ -1909,7 +2013,6 @@
     // ===== PERFILES ==============================================
     // ============================================================
   
-    /** Obtener todos los perfiles */
     function getPerfiles() {
       try {
         const data = localStorage.getItem('icfes-perfiles');
@@ -1944,18 +2047,15 @@
       }
     }
   
-    /** Guardar perfiles */
     function savePerfiles(data) {
       localStorage.setItem('icfes-perfiles', JSON.stringify(data));
     }
   
-    /** Obtener perfil activo */
     function getPerfilActivo() {
       const data = getPerfiles();
       return data.perfilActivo;
     }
   
-    /** Obtener datos del perfil activo */
     function getPerfilData() {
       const data = getPerfiles();
       const nombre = data.perfilActivo;
@@ -1968,7 +2068,6 @@
       };
     }
   
-    /** Cambiar de perfil */
     function cambiarPerfil(nombre) {
       const data = getPerfiles();
       if (!data.perfiles[nombre]) {
@@ -1985,7 +2084,6 @@
       return true;
     }
   
-    /** Crear nuevo perfil */
     function crearPerfil(nombre) {
       nombre = nombre.trim();
       if (!nombre) {
@@ -2016,7 +2114,6 @@
       return true;
     }
   
-    /** Eliminar perfil */
     function eliminarPerfil(nombre) {
       if (nombre === 'Principal' && Object.keys(getPerfiles().perfiles).length === 1) {
         alert('No puedes eliminar el único perfil. Crea otro primero.');
@@ -2044,7 +2141,6 @@
       aplicarTemaPerfil();
     }
   
-    /** Guardar preferencia del perfil */
     function guardarPreferencia(key, value) {
       const data = getPerfiles();
       const nombre = data.perfilActivo;
@@ -2055,7 +2151,6 @@
       savePerfiles(data);
     }
   
-    /** Aplicar tema del perfil */
     function aplicarTemaPerfil() {
       const perfil = getPerfilData();
       if (!perfil) return;
@@ -2074,7 +2169,6 @@
     // ===== UI DE PERFILES ========================================
     // ============================================================
   
-    /** Renderizar selector de perfiles en la UI */
     function renderizarSelectorPerfiles() {
       const data = getPerfiles();
       const nombre = data.perfilActivo;
@@ -2106,7 +2200,6 @@
       }
     }
   
-    /** Renderizar lista de perfiles en el modal */
     function renderizarListaPerfiles() {
       const data = getPerfiles();
       const container = document.getElementById('lista-perfiles');

@@ -517,3 +517,9 @@ select:focus {
   from { opacity: 1; transform: scale(1); }
   to { opacity: 0.8; transform: scale(1.05); }
 }
+
+#chart-evolucion {
+  width: 100% !important;
+  height: 120px !important;
+  max-height: 120px;
+}
