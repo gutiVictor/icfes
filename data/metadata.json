@@ -1,0 +1,27 @@
+[
+  { 
+    "nombre": "Lectura Crítica", 
+    "archivo": "lectura_critica.json",
+    "total": 142
+  },
+  { 
+    "nombre": "Matemáticas", 
+    "archivo": "matematicas.json",
+    "total": 221
+  },
+  { 
+    "nombre": "Sociales y Ciudadanas", 
+    "archivo": "sociales_y_ciudadanas.json",
+    "total": 198
+  },
+  { 
+    "nombre": "Ciencias Naturales", 
+    "archivo": "ciencias_naturales.json",
+    "total": 382
+  },
+  { 
+    "nombre": "Inglés", 
+    "archivo": "ingles.json",
+    "total": 210
+  }
+]

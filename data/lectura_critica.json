@@ -1,0 +1,2107 @@
+[
+  {
+    "id": "LC-001",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Filosófico)",
+    "enunciado": "Lea el siguiente fragmento y responda:\n\n«Nadie niega que el control de la información sea una herramienta de poder. Sin embargo, en la era digital, el peligro ya no es la censura totalitaria que prohíbe los libros, sino la sobreabundancia de datos irrelevantes que sepulta las verdades esenciales. Hoy el opresor no nos quita la palabra; nos satura con ella hasta que perdemos la capacidad de discernir.»\n\n¿Cuál de las siguientes afirmaciones se alinea mejor con la tesis principal del autor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Las dictaduras del siglo XX eran más peligrosas para los lectores que los algoritmos de internet actuales.",
+      "B": "La libertad de expresión está plenamente garantizada gracias al exceso de información en redes sociales.",
+      "C": "La desinformación moderna no opera escondiendo los hechos, sino distrayendo la atención del ciudadano con datos triviales.",
+      "D": "Los libros impresos son la única salvaguarda efectiva contra la manipulación mediática del siglo XXI."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El autor expone que el peligro contemporáneo cambió: ya no se esconde la información, sino que se genera una sobreabundancia de datos irrelevantes para que la gente no pueda concentrarse en lo importante. La opción C parafrasea esta idea de manipulación por distracción."
+  },
+  {
+    "id": "LC-002",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Vocabulario)",
+    "enunciado": "Considere la siguiente frase del texto anterior:\n\n«...creando universos narrativos donde lo imposible coexistía con lo mundane...»\n\nEn este contexto, la palabra 'mundane' (mundano) se utiliza para referirse a algo:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Perteneciente a las altas esferas sociales y a la aristocracia.",
+      "B": "Cotidiano, común y corriente, que carece de características místicas o fantásticas.",
+      "C": "Relacionado estrictamente con el pecado, los vicios y la vida nocturna.",
+      "D": "Que tiene un alcance global e internacional, abarcando muchos países."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "En el contexto del realismo mágico literario, lo mundano hace referencia a la rutina ordinaria de la vida cotidiana que sirve de escenario para que ocurran eventos mágicos o imposibles, contrastando lo común con lo fantástico."
+  },
+  {
+    "id": "LC-003",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de las partes de un texto (Discontinuo)",
+    "enunciado": "[DESCRIPCIÓN DE INFOGRAFÍA]: Imagina una infografía sobre el calentamiento global. En la parte superior hay un dibujo de la Tierra sudando con un termómetro. Abajo hay dos columnas: la izquierda muestra barras de emisiones de CO2 en aumento (2000-2026), y la derecha muestra siluetas de fábricas y autos. En el pie de página dice en letras pequeñas: 'Datos tomados de informes ambientales de la ONU'.\n\n¿Qué función cumple el texto del pie de página en la infografía descrita?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Explicar las soluciones científicas necesarias para detener el aumento de la temperatura mundial.",
+      "B": "Dar créditos de diseño a los artistas gráficos que diagramaron la información visual.",
+      "C": "Validar la veracidad y darle respaldo científico a las estadísticas presentadas mediante una fuente oficial.",
+      "D": "Contradecir los datos mostrados en las barras estadísticas de la columna izquierda."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El pie de página que cita a una entidad internacional como la ONU tiene la función de actuar como fuente de autoridad, otorgando validez, seriedad y rigor científico a los datos numéricos mostrados en la infografía."
+  },
+  {
+    "id": "LC-004",
+    "materia": "Lectura Crítica",
+    "competencia": "Aproximación crítica (Evaluación de argumentos)",
+    "enunciado": "Lea el siguiente texto:\n«La obligatoriedad del voto en las elecciones democráticas es una medida necesaria para combatir la apatía ciudadana. Si las personas se ven forzadas a asistir a las urnas, se interesarán más por los planes de gobierno y tomarán decisiones más informadas, mejorando la calidad de la representación política.»\n\n¿Cuál de las siguientes es una debilidad metodológica o supuesto no demostrado en el argumento del autor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Asumir que el acto obligatorio de votar genera automáticamente un interés genuino e informado en el ciudadano.",
+      "B": "Afirmar que las elecciones son el único mecanismo de participación que existe en una democracia.",
+      "C": "Sugerir que la apatía ciudadana es un fenómeno exclusivo de los países de América Latina.",
+      "D": "Ignorar el costo económico que tiene para el Estado la organización de una jornada electoral."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El autor comete una falacia de causa falsa al asumir, sin pruebas, que la obligación legal de ir a votar transforma mágicamente a un ciudadano apático en uno educado políticamente. Es perfectamente posible que la gente vote en blanco o al azar solo por cumplir con la norma."
+  },
+  {
+    "id": "LC-005",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Estructura)",
+    "enunciado": "Lea con atención el siguiente enunciado:\n«Aunque la globalización ha integrado los mercados mundiales y facilitado el intercambio cultural, también ha homogeneizado las costumbres, amenazando la supervivencia de las lenguas y tradiciones de las comunidades minoritarias.»\n\nLa palabra 'Aunque' al inicio del texto cumple la función conectiva de:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Introducir una causa directa de los problemas culturales descritos al final.",
+      "B": "Establecer una objeción o concesión parcial frente a los efectos negativos de la globalización.",
+      "C": "Indicar una secuencia temporal cronológica entre dos hechos históricos.",
+      "D": "Presentar una conclusión definitiva fundada en datos estadísticos previos."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El conector 'Aunque' es de carácter concesivo u adversativo mitigado. Permite aceptar que la globalización tiene aspectos positivos (integración e intercambio) pero introduce inmediatamente la idea principal del texto, que resalta sus efectos nocivos."
+  },
+  {
+    "id": "LC-006",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión y evaluación (Pedagógica)",
+    "enunciado": "Un docente afirma en clase: 'La lectura de novelas de ficción es una pérdida de tiempo para los jóvenes de hoy, ya que no aporta datos reales ni habilidades técnicas útiles para el mercado laboral actual'.\n\n¿Cuál de las siguientes afirmaciones constituye un contraargumento sólido frente a la postura del docente?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los jóvenes prefieren ver series de televisión antes que sentarse a leer novelas extensas.",
+      "B": "La literatura de ficción desarrolla la empatía, el pensamiento crítico y la comprensión de estructuras complejas de lenguaje, habilidades humanas altamente valoradas.",
+      "C": "La mayoría de las novelas de ficción se convierten en películas taquilleras que generan millones de dólares.",
+      "D": "El mercado laboral actual prefiere perfiles puramente técnicos e ingenieriles sobre los humanistas."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Para atacar la premisa del docente (que la ficción no sirve para el mercado laboral), la opción B demuestra que la lectura literaria sí desarrolla competencias transversales cognitivas y emocionales fundamentales para el desarrollo profesional moderno."
+  },
+  {
+    "id": "LC-007",
+    "materia": "Lectura Crítica",
+    "competencia": "Sentido de los enunciados (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente enunciado basándose en las reglas lógicas de la argumentación:\n\n«Una falacia ad hominem ocurre cuando se ataca directamente la validez de un argumento analizando minuciosamente los datos y pruebas presentados por el emisor, en lugar de juzgar sus características personales o intenciones.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Es falso. Una falacia 'ad hominem' (contra el hombre) consiste exactamente en lo contrario: atacar a la persona que habla (su vida, color político, profesión) para desacreditarla, evadiendo por completo el análisis de sus argumentos o datos reales."
+  },
+  {
+    "id": "LC-008",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de intenciones (Literario)",
+    "enunciado": "Lea el fragmento del siguiente poema:\n\n«Pobrecito el peatón que camina despacio / esquivando las olas de hierro del espacio / el semáforo ríe con su ojo de fuego / mientras la ciudad ruge y continúa su juego.»\n\n¿Qué figura retórica predomina en el texto para describir el entorno urbano?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El hipérbaton, porque se altera el orden gramatical lógico de las oraciones constantemente.",
+      "B": "La personificación, ya que se le atribuyen rasgos humanos y acciones animadas a objetos como el semáforo y la ciudad.",
+      "C": "La metonimia, porque se intercambia el nombre del peatón con el del constructor de las vías.",
+      "D": "La paradoja, puesto que se expone una contradicción matemática insoluble entre el hierro y el fuego."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El poema utiliza la personificación o prosopopeya al otorgar características vitales y emocionales humanas a elementos inertes: un semáforo que 'ríe', un ojo de 'fuego', y una ciudad que 'ruge' y 'juega'."
+  },
+  {
+    "id": "LC-009",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación semántica (Texto discontinuo)",
+    "enunciado": "[ANÁLISIS DE CARICATURA POLITICA]: En una viñeta se observa a dos políticos idénticos parados en un podio de campaña. El de la izquierda tiene un letrero que dice 'PROMESAS A'. El de la derecha tiene un letrero que dice 'PROMESAS B'. Frente a ellos hay una multitud de ciudadanos aplaudiendo con fervor. Detrás de los podios, ambos políticos están conectados por cables a la misma máquina de dinero etiquetada como 'Grandes Monopolios'.\n\n¿Cuál es el mensaje subyacente que el caricaturista intenta comunicar?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La ciudadanía prefiere las propuestas del candidato A debido a su carisma en el podio.",
+      "B": "Las campañas electorales modernas requieren un uso avanzado de tecnología de cables eléctricos.",
+      "C": "La aparente rivalidad y diferencia entre los partidos políticos es una ilusión, ya que ambos responden a los mismos intereses económicos detrás de escena.",
+      "D": "Los monopolios financieros financian únicamente a los candidatos que prometen reformas sociales de fondo."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La imagen de los candidatos idénticos siendo alimentados u operados por la misma maquinaria económica oculta ('Grandes Monopolios') es una crítica satírica a la falta de opciones reales en el sistema político, sugiriendo una falsa libertad de elección para el pueblo."
+  },
+  {
+    "id": "LC-010",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión conceptual (Filosófico)",
+    "enunciado": "Lea el siguiente texto:\n«De acuerdo con el escepticismo radical, el conocimiento absoluto es inalcanzable para el ser humano, puesto que nuestros sentidos son imperfectos y la razón está sujeta a sesgos constantes. Por lo tanto, la actitud más sabia no es defender dogmas, sino suspender el juicio permanente frente a las verdades absolutas.»\n\nSegún el texto, ¿cuál es la consecuencia directa de adoptar una postura escéptica radical?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La búsqueda incesante de mejores herramientas tecnológicas para perfeccionar los sentidos.",
+      "B": "La adopción de dogmas religiosos estrictos para reemplazar la debilidad de la razón humana.",
+      "C": "La suspensión del juicio, evitando afirmar verdades de manera categórica o inflexible.",
+      "D": "El rechazo absoluto a la filosofía y el aislamiento total de la sociedad civil."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El texto lo indica textualmente al final: 'Por lo tanto, la actitud más sabia no es defender dogmas, sino suspender el juicio permanente'. Esto es una consecuencia metodológica directa del postulado escéptico."
+  },
+  {
+    "id": "LC-011",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Argumentativo)",
+    "enunciado": "Lea el siguiente texto y responda:\n\n«Es común escuchar que el castigo penal severo es la única solución contra la delincuencia. Sin embargo, la criminología moderna ha demostrado que las tasas de criminalidad no disminuyen aumentando los años de prisión, sino incrementando la certeza de la captura. Al delincuente no le asusta pasar más tiempo encerrado, sino la alta probabilidad de ser atrapado en el acto.»\n\n¿Cuál de las siguientes conclusiones se deriva lógicamente del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Las cárceles deberían ser eliminadas para optar por un sistema de vigilancia absoluto.",
+      "B": "Para reducir el crimen, es más efectivo mejorar la eficiencia policial y judicial que aumentar las penas en el código de ley.",
+      "C": "Los delincuentes prefieren penas cortas en prisiones de máxima seguridad que penas largas en cárceles comunes.",
+      "D": "La severidad de los castigos penales es el único factor que analiza un criminal antes de actuar."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor contrapone la severidad (años de prisión) con la certeza de captura (eficiencia). Concluye que lo que realmente disuade al delincuente es saber que lo van a atrapar, por lo que fortalecer el sistema de captura e investigación (opción B) es la consecuencia directa."
+  },
+  {
+    "id": "LC-012",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Sintaxis)",
+    "enunciado": "Considere la siguiente oración:\n\n«Si las abejas desaparecieran de la faz de la Tierra, a la humanidad solo le quedarían cuatro años de existencia, pues sin polinización no hay plantas, sin plantas no hay animales, y sin animales no hay hombres.»\n\n¿Cuál es la función del conector 'pues' en este enunciado?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Introducir una objeción a la hipótesis planteada sobre la extinción.",
+      "B": "Ejemplificar un caso particular de desaparición de insectos en ecosistemas agrícolas.",
+      "C": "Iniciar la explicación causal que justifica la afirmación apocalíptica inicial.",
+      "D": "Establecer una condición obligatoria para que el ser humano sobreviva."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El conector 'pues' actúa aquí con un valor causal (equivalente a 'porque' o 'ya que'). Su función es abrir paso a la cadena de razones (plantas, animales) que explican por qué la humanidad desaparecería si no hay abejas."
+  },
+  {
+    "id": "LC-013",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de las partes (Texto Discontinuo)",
+    "enunciado": "[DESCRIPCIÓN DE TABLA ESTADÍSTICA]: Una tabla muestra los hábitos de lectura en Colombia en 2026. La columna 1 indica rangos de edad (12-18, 19-30, 31-50, 51+). La columna 2 indica 'Libros impresos leídos al año' (promedios: 1.2, 0.8, 1.5, 2.3). La columna 3 indica 'Formatos digitales (e-books, artículos web) leídos al mes' (promedios: 15.4, 22.1, 8.3, 2.1).\n\nBasándose en la relación de estos datos, ¿cuál afirmación es completamente verídica?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los jóvenes de 19 a 30 años son la población que menos lee en cualquier tipo de formato.",
+      "B": "El consumo de textos digitales tiene una tendencia inversamente proporcional a la edad: a mayor edad, menor lectura digital.",
+      "C": "Los adultos mayores de 51 años rechazan los formatos digitales porque les causan problemas visuales.",
+      "D": "El formato impreso desaparecerá por completo debido al alto consumo mensual de artículos en la población de 12 a 18 años."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Al mirar la columna 3 de arriba hacia abajo (de menor a mayor edad), los números descienden drásticamente (15.4 -> 22.1 -> 8.3 -> 2.1). Esto demuestra una relación analítica inversa exacta entre los años cumplidos y la preferencia por lo digital."
+  },
+  {
+    "id": "LC-014",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de supuestos (Filosófico)",
+    "enunciado": "Lea el fragmento:\n\n«El utilitarismo sostiene que la mejor acción es aquella que produce el mayor bienestar para el mayor número de personas. Si el sacrificio de los derechos de una minoría inocente trae consigo una felicidad inconmensurable para toda una nación, esta corriente ética validaría dicho sacrificio sin pestañear.»\n\n¿Cuál es la premisa o supuesto ético implícito del que parte el utilitarismo según el texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los derechos individuales son absolutos e inviolables bajo cualquier circunstancia histórica.",
+      "B": "El valor moral de una acción depende exclusivamente de sus consecuencias globales y cuantitativas de felicidad.",
+      "C": "Las minorías siempre tienen la razón en los debates jurídicos y constitucionales.",
+      "D": "La felicidad es un concepto abstracto imposible de medir en la práctica de un gobierno."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El utilitarismo se basa en un cálculo de consecuencias ('mayor bienestar para el mayor número'). Por ende, presupone que el fin justifica los medios si el resultado colectivo es positivo, lo que valida el sacrificio de la minoría si la suma aritmética de felicidad es mayor."
+  },
+  {
+    "id": "LC-015",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de intenciones (Literario)",
+    "enunciado": "Lea el siguiente microcuento:\n\n«El dinosaurio despertó, miró a su alrededor y no vio a nadie. Suspiró aliviado al notar que el hombre ya se había extinguido.»\n\nEste texto plantea una parodia o inversión intencional de un famoso cuento de Augusto Monterroso. ¿Cuál es el propósito del autor con esta modificación?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Demostrar que la ciencia ficción es un género superior al realismo mágico.",
+      "B": "Criticar el impacto destructivo de la humanidad en el planeta, sugiriendo que el ser humano es el verdadero peligro para la naturaleza.",
+      "C": "Explicar las razones biológicas por las cuales los dinosaurios dominaron la era mesozoica.",
+      "D": "Sustentar la teoría del meteorito como única causa del fin de la prehistoria."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El cuento clásico original dice 'cuando despertó, el dinosaurio todavía estaba allí'. Al invertir los roles y hacer que el dinosaurio se alegre de la extinción humana, el autor usa la ironía para dejar una fuerte crítica medioambiental sobre el daño antrópico."
+  },
+  {
+    "id": "LC-016",
+    "materia": "Lectura Crítica",
+    "competencia": "Sentido de los enunciados (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente enunciado sobre tipologías textuales:\n\n«Un texto discontinuo es aquel que organiza la información de forma secuencial y lineal a través de párrafos organizados en capítulos, como ocurre de forma representativa en los ensayos académicos o en las novelas históricas.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Es falso. La descripción corresponde a un texto *continuo*. Los textos discontinuos son aquellos que no siguen una línea de lectura fija o secuencial de izquierda a derecha, sino que requieren un análisis gráfico y de lectura espacial, tales como mapas, infografías, cómics y tablas."
+  },
+  {
+    "id": "LC-017",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido global (Tesis)",
+    "enunciado": "Lea el fragmento de opinión:\n\n«Creer que la inteligencia artificial va a reemplazar a los médicos es no entender la esencia de la medicina. Una máquina puede procesar millones de tomografías en segundos y dar un diagnóstico probabilístico exacto. Pero la medicina no es solo diagnóstico: es sostener la mano de un paciente asustado, comprender sus miedos culturales y acompañarlo en el duelo. El algoritmo cura el cuerpo; el médico sana al ser humano.»\n\n¿Cuál es la tesis central que defiende el autor de la columna?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Las facultades de medicina deberían prohibir el uso de software de inteligencia artificial.",
+      "B": "La tecnología de diagnóstico por imágenes es deficiente en comparación con el ojo clínico humano.",
+      "C": "La dimensión humana y empática de la medicina es insustituible por la automatización tecnológica.",
+      "D": "Los médicos del futuro serán principalmente programadores de sistemas informáticos de salud."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El autor concede que las máquinas son excelentes procesando datos y diagnósticos, pero sitúa la esencia de la medicina en la empatía y la relación interpersonal, lo que marca el límite insalvable para las máquinas (Opción C)."
+  },
+  {
+    "id": "LC-018",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de enunciados (Coherencia)",
+    "enunciado": "Elija la opción que organice lógicamente las siguientes oraciones para formar un texto coherente:\n\n1. Por el contrario, la dieta vegetariana estricta requiere una planeación meticulosa de suplementos.\n2. La alimentación humana ha evolucionado de forma diversa a lo largo de los siglos.\n3. En la antigüedad, la dieta dependía estrictamente de los recursos disponibles en el entorno geográfico inmediato.\n4. Hoy en día, la tecnología de alimentos permite elegir modelos nutricionales según convicciones ideológicas.",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "3 - 1 - 4 - 2",
+      "B": "2 - 3 - 4 - 1",
+      "C": "4 - 1 - 2 - 3",
+      "D": "2 - 4 - 1 - 3"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El orden lógico va de lo general a lo particular y sigue una línea de tiempo cronológica: La oración 2 introduce el tema general (evolución de la dieta). La 3 habla del pasado (la antigüedad). La 4 nos trae al presente (hoy en día y las elecciones ideológicas). Y la 1 complementa la 4 mediante un conector adversativo ('Por el contrario') para detallar un caso específico (dieta vegetariana)."
+  },
+  {
+    "id": "LC-019",
+    "materia": "Lectura Crítica",
+    "competencia": "Aproximación crítica (Tono del texto)",
+    "enunciado": "Lea el fragmento:\n\n«¡Qué maravilla el transporte público de nuestra ilustre capital! Es verdaderamente un privilegio pagar un pasaje costoso para viajar aplastado contra el vidrio, disfrutar del sauna gratuito que genera el hacinamiento y llegar dos horas tarde al trabajo debido a bloqueos rutinarios. Una experiencia digna del primer mundo.»\n\n¿Qué tono predomina en las afirmaciones del autor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Melancólico, pues extraña las épocas doradas del transporte antiguo.",
+      "B": "Irónico, ya que usa palabras elogiosas para criticar y burlarse de las pésimas condiciones del sistema.",
+      "C": "Objetivo y académico, porque se basa en datos científicos de movilidad urbana.",
+      "D": "Optimista, puesto que exalta las ventajas higiénicas del calor dentro del bus."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor recurre a la ironía y el sarcasmo: califica de 'maravilla', 'privilegio' y 'experiencia del primer mundo' cosas claramente negativas (viajar aplastado, llegar tarde), manifestando su inconformidad diciendo lo opuesto de lo que piensa."
+  },
+  {
+    "id": "LC-020",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión semántica (Vocabulario)",
+    "enunciado": "Lea el siguiente texto:\n\n«El conocimiento científico no es una estructura inmutable; por el contrario, su naturaleza es esencialmente **falible**. Cada teoría aceptada hoy es solo la mejor aproximación disponible hasta que surjan nuevas evidencias que la refuten.»\n\nEl antónimo contextual de la palabra resaltada en negrita (**falible**) es:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Erróneo",
+      "B": "Dogmático",
+      "C": "Infalible",
+      "D": "Provisional"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Falible significa que puede fallar, cometer errores o cambiar. Por lo tanto, su opuesto directo o antónimo es **infalible** (que no falla, seguro, absoluto)."
+  },
+  {
+    "id": "LC-021",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación semántica (Texto discontinuo)",
+    "enunciado": "[ANÁLISIS DE AFICHE PUBLICITARIO]: Un cartel de una campaña gubernamental muestra la fotografía de un bosque frondoso. En el centro, hay una enorme huella digital humana pixelada que reemplaza los árboles caídos de una sección. El eslogan dice en letras grandes: 'Tu identidad destruye la de ellos. Cuida el uso del papel'.\n\n¿A qué apela principalmente la campaña para persuadir al lector?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "A la lógica económica sobre los altos costos de importación de la madera.",
+      "B": "A la culpabilidad y la conciencia ambiental del ciudadano, conectando una acción cotidiana (gastar papel/huella) con la deforestación.",
+      "C": "A la necesidad estética de tener ciudades con parques y jardines más limpios.",
+      "D": "A la promoción de la tecnología biométrica y digital en los trámites notariales."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El afiche utiliza una metáfora visual potente (la huella humana borrando el bosque) combinada con el eslogan para generar un impacto emocional de responsabilidad individual o culpa en el espectador, buscando un cambio en sus hábitos de consumo."
+  },
+  {
+    "id": "LC-022",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Relaciones)",
+    "enunciado": "Lea el fragmento científico:\n\n«Los antibióticos revolucionaron la medicina en el siglo XX, salvando millones de vidas. No obstante, su uso indiscriminado y sin receta médica ha acelerado la resistencia bacteriana. Las bacterias mutan para sobrevivir al medicamento, convirtiendo infecciones antes sencillas en amenazas mortales incurables.»\n\n¿Qué relación existe entre la primera y la segunda oración del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La segunda oración es una consecuencia directa y positiva del éxito médico descrito en la primera.",
+      "B": "La segunda oración restringe y matiza el panorama optimista de la primera mediante una advertencia adversativa.",
+      "C": "La segunda oración funciona como una definición técnica de lo que es un antibiótico.",
+      "D": "La segunda oración contradice de forma absoluta la efectividad histórica de la medicina del siglo XX."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La primera oración alaba el logro de los antibióticos. La segunda utiliza el conector 'No obstante' (adversativo) para introducir el matiz negativo o el reverso de la moneda: el problema de salud pública de la resistencia bacteriana provocado por el mal uso."
+  },
+  {
+    "id": "LC-023",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de Validez (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente enunciado basándose en la tipología del debate formal:\n\n«En un argumento inductivo, si todas las premisas analizadas de casos particulares son verdaderas, la conclusión final de carácter general que se extraiga de ellas será siempre e inapelablemente verdadera y absoluta.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Es falso. A diferencia de los argumentos deductivos, la inducción se basa en probabilidades a partir de observaciones. Aunque veas 100 cisnes blancos (premisas verdaderas), la conclusión 'todos los cisnes son blancos' puede ser refutada si aparece un solo cisne negro. La conclusión inductiva nunca es absoluta."
+  },
+  {
+    "id": "LC-024",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir del texto (Filosófico)",
+    "enunciado": "Lea el siguiente texto de Friedrich Nietzsche:\n\n«Lo que hacemos no es comprendido nunca, sino solo alabado o vituperado; las masas juzgan la superficie de los actos, pero desconocen los abismos de la motivación humana.»\n\nDe acuerdo con la visión del autor, el juicio del público frente a las acciones de un individuo se caracteriza por ser:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Profundo, analítico y centrado en la psicología interna.",
+      "B": "Superficial, basado únicamente en apariencias y carente de comprensión real.",
+      "C": "Justo, ecuánime y guiado por leyes universales de moral.",
+      "D": "Inexistente, ya que a la sociedad no le importan las acciones de los demás."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor afirma directamente que los actos de uno 'no son comprendidos nunca' y que las masas 'juzgan la superficie'. Esto denota que el juicio social es eminentemente superficial y ajeno a los motivos reales de las personas (Opción B)."
+  },
+  {
+    "id": "LC-025",
+    "materia": "Lectura Crítica",
+    "competencia": "Intención comunicativa (Argumentativo)",
+    "enunciado": "Lea el fragmento de un editorial periodístico:\n\n«Permitir la minería a gran escala en los ecosistemas de páramo colombianos es cambiar agua por oro para hoy, y asegurar sed y desierto para mañana. Los páramos proveen el agua potable de más del 70% de la población del país; destruir la fábrica natural de agua a cambio de regalías mineras temporales es un suicidio ecológico e institucional.»\n\n¿Cuál es el propósito comunicativo primordial del editorial?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Explicar detalladamente el proceso químico de extracción del oro en minas subterráneas.",
+      "B": "Persuadir a los lectores y gobernantes sobre la imperiosa necesidad de prohibir la minería en los páramos para proteger el agua.",
+      "C": "Promover la inversión extranjera en la minería sostenible tecnificada en alta montaña.",
+      "D": "Hacer un censo demográfico de las poblaciones colombianas que viven cerca de las cuencas hídricas."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El texto usa un lenguaje persuasivo, cargado de analogías fuertes ('cambiar agua por oro', 'suicidio ecológico') con la intención clara de convencer al lector y generar una postura política y civil de rechazo absoluto a la explotación minera en estas zonas críticas."
+  },
+  {
+    "id": "LC-026",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Argumentativo)",
+    "enunciado": "Lea el siguiente texto y responda:\n\n«Muchos defienden las redes sociales argumentando que democratizan la palabra, permitiendo que cualquiera exprese su opinión. Sin embargo, esta 'democratización' es engañosa: los algoritmos no priorizan los argumentos más racionales o verídicos, sino aquellos que generan más indignación y confrontación, ya que estos mantienen a los usuarios conectados por más tiempo. Lo que llamamos esfera pública digital es, en realidad, un mercado diseñado para monetizar nuestras emociones más bajas.»\n\n¿Cuál de las siguientes afirmaciones expresa una suposición implícita del autor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Las emociones bajas de los usuarios son el único factor que determina el éxito de un medio impreso tradicional.",
+      "B": "Una verdadera democratización de la palabra debería basarse en el debate racional y no en la manipulación algorítmica del conflicto.",
+      "C": "Los programadores de algoritmos tienen motivaciones estrictamente políticas y de control totalitario estatal.",
+      "D": "Los usuarios de redes sociales son incapaces de experimentar emociones positivas o colectivas de solidaridad."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor critica la supuesta 'democratización' de las redes señalando que el algoritmo prioriza la indignación sobre la racionalidad. Por lo tanto, asume implícitamente que una esfera pública verdaderamente democrática y valiosa debería regirse por la racionalidad y el debate sano, en lugar del negocio del conflicto."
+  },
+  {
+    "id": "LC-027",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Sintaxis)",
+    "enunciado": "Considere el siguiente fragmento de una crítica de arte:\n\n«El pintor no pretendía imitar la realidad de forma fotográfica; **por el contrario**, buscaba desmantelar las formas geométricas estables para plasmar la angustia del hombre moderno ante la industrialización.»\n\n¿Qué relación lógica establece el conector resaltado en negrita (**por el contrario**) entre las dos partes de la oración?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Adición, ya que agrega una nueva intención estética que complementa la imitación realista.",
+      "B": "Oposición o contraste, porque niega la intención del realismo fotográfico para introducir un enfoque artístico opuesto.",
+      "C": "Causa, puesto que explica los motivos técnicos por los cuales el pintor prefería la fotografía.",
+      "D": "Conclusión, debido a que resume el resultado final de la obra pictórica en el mercado actual."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El conector 'por el contrario' es adversativo exclusivo. Su función es negar rotundamente la primera idea (imitar la realidad) y presentar en su lugar una propuesta radicalmente diferente (desmantelar las formas geométricas)."
+  },
+  {
+    "id": "LC-028",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de las partes (Texto Discontinuo)",
+    "enunciado": "[DESCRIPCIÓN DE GRÁFICO DE LÍNEAS]: Un gráfico muestra la evolución del desempleo juvenil en una región durante doce meses. La línea del desempleo desciende de forma constante de enero a junio. En julio hay un pico abrupto hacia arriba, seguido de un descenso moderado entre agosto y diciembre. Una nota al pie del gráfico señala: 'En julio entró en vigencia la reforma laboral que eliminó los subsidios de contratación para menores de 25 años'.\n\n¿Qué conclusión se puede extraer de la relación entre el gráfico y la nota al pie?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La reforma laboral de julio logró estabilizar el empleo juvenil hacia el final del año académico.",
+      "B": "Existe una correlación directa entre la eliminación de los subsidios gubernamentales y el incremento inmediato del desempleo juvenil en julio.",
+      "C": "El desempleo juvenil es un fenómeno climático que siempre aumenta en las épocas de verano de mitad de año.",
+      "D": "Los menores de 25 años decidieron renunciar masivamente en julio para regresar a la educación universitaria."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El pico del gráfico (aumento de desempleo) coincide exactamente con la fecha en que se aplicó la reforma explicada en la nota (eliminación de incentivos para contratar jóvenes). El análisis conjunto evidencia un impacto directo de la medida legal sobre las cifras de ocupación."
+  },
+  {
+    "id": "LC-029",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de argumentos (Filosófico)",
+    "enunciado": "Lea el fragmento:\n\n«Thomas Hobbes afirmaba que en el estado de naturaleza el hombre es el lobo del hombre, guiado por un egoísmo salvaje que desata una guerra de todos contra todos. Para evitar la destrucción mutua, los individuos ceden sus libertades a un soberano absoluto a través de un contrato social, garantizando así la paz y el orden a cambio de la sumisión.»\n\n¿Cuál de las siguientes situaciones contemporáneas contradice la premisa hobbesiana sobre la necesidad de un control estatal absoluto para mantener la paz?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El estallido de disturbios violentos en una ciudad tras un apagón eléctrico generalizado.",
+      "B": "Una comunidad rural aislada que gestiona pacíficamente sus recursos, seguridad y justicia mediante asambleas autónomas y cooperación mutua, sin intervención de la policía estatal.",
+      "C": "El aumento de las penas de prisión en el código penal para disuadir a las bandas criminales organizadas.",
+      "D": "La firma de un tratado internacional de paz donde varios ejércitos estatales acuerdan desarmar sus fronteras."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Hobbes plantea que sin un Estado fuerte o un soberano absoluto que imponga el orden por la fuerza, los seres humanos se destruyen debido a su egoísmo natural. La opción B muestra un contraejemplo directo: humanos cooperando y viviendo en paz de forma autónoma sin estructuras autoritarias."
+  },
+  {
+    "id": "LC-030",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de intenciones (Literario)",
+    "enunciado": "Lea el fragmento de la siguiente novela:\n\n«Don Aurelio miró el reloj de arena por décima vez en la mañana. Los granos caían con una regularidad desesperante, ajenos a la angustia de sus deudas o al llanto de su hija en la habitación contigua. Pensó en romper el cristal, como si fracturando el instrumento pudiera detener el avance implacable de sus acreedores.»\n\nEl autor utiliza la imagen del reloj de arena principalmente para representar:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El avance tecnológico de la navegación marítima en el siglo XIX.",
+      "B": "La indiferencia de la naturaleza y del tiempo frente a las tragedias y preocupaciones humanas.",
+      "C": "La riqueza material y el estatus aristocrático de la familia de Don Aurelio.",
+      "D": "La afición del protagonista por la recolección y reparación de antigüedades finas."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El texto destaca que los granos de arena caen con una regularidad 'desesperante' y son 'ajenos a la angustia' del personaje. Esto funciona como un recurso literario que simboliza cómo el tiempo avanza de forma implacable e indiferente ante los problemas del ser humano."
+  },
+  {
+    "id": "LC-031",
+    "materia": "Lectura Crítica",
+    "competencia": "Sentido de los enunciados (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente enunciado conceptual sobre literatura de vanguardia:\n\n«El surrealismo literario buscaba expresar el funcionamiento real del pensamiento de manera automática, libre de cualquier control ejercido por la razón y al margen de preocupaciones estéticas o morales, apoyándose fuertemente en el análisis del mundo de los sueños.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Es verdadero. Definido por André Breton en su manifiesto, el surrealismo se basa en el automatismo psíquico puro, dictado por el pensamiento en ausencia de regulaciones racionales, lógicas o estéticas, inspirándose en las teorías del inconsciente y el sueño."
+  },
+  {
+    "id": "LC-032",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido global (Tesis)",
+    "enunciado": "Lea el fragmento científico:\n\n«La obsesión moderna por la higiene extrema ha tenido un costo inesperado. Al aislar a los niños de entornos naturales y esterilizar excesivamente cada superficie, impedimos que sus sistemas inmunológicos interactúen con bacterias y alérgenos comunes en las etapas críticas de desarrollo. El resultado no es una población más sana, sino un incremento exponencial de enfermedades autoinmunes y alergias crónicas en las zonas urbanas.»\n\n¿Cuál de las siguientes opciones resume la idea principal del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La limpieza en el hogar debe ser abandonada por completo para garantizar la salud familiar.",
+      "B": "Las zonas urbanas poseen un aire mucho más puro que los entornos rurales debido a la industrialización.",
+      "C": "El exceso de esterilización e higiene debilita el sistema inmune, favoreciendo la aparición de alergias y afecciones autoinmunes.",
+      "D": "Las enfermedades autoinmunes son causadas exclusivamente por factores genéticos hereditarios y no ambientales."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El texto argumenta que la falta de exposición a bacterias cotidianas debido a la 'higiene extrema' tiene como consecuencia directa el aumento de alergias y fallos en el sistema inmune, lo cual se sintetiza perfectamente en la opción C."
+  },
+  {
+    "id": "LC-033",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de enunciados (Coherencia)",
+    "enunciado": "Elija la opción que organice de forma más coherente las siguientes ideas:\n\n1. El cerebro procesa esta luz azul interrumpiendo la producción de melatonina, la hormona del sueño.\n2. Por esta razón, los médicos aconsejan apagar las pantallas al menos una hora antes de ir a la cama.\n3. Los dispositivos móviles modernos emiten una intensa radiación lumínica de onda corta.\n4. En consecuencia, el usuario experimenta insomnio crónico o un descanso de muy mala calidad.",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "3 - 1 - 4 - 2",
+      "B": "2 - 3 - 1 - 4",
+      "C": "3 - 4 - 1 - 2",
+      "D": "1 - 3 - 4 - 2"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El orden lógico sigue una secuencia causa-efecto: La 3 presenta el elemento físico (dispositivos emitiendo luz azul). La 1 detalla la reacción fisiológica del cuerpo ante esa luz (freno a la melatonina). La 4 expone la consecuencia directa de esa alteración orgánica (insomnio). Y la 2 cierra con la recomendación médica derivada de todo el proceso anterior."
+  },
+  {
+    "id": "LC-034",
+    "materia": "Lectura Crítica",
+    "competencia": "Aproximación crítica (Análisis de discursos)",
+    "enunciado": "Lea el fragmento de un discurso corporativo:\n\n«Para nuestra multinacional, el capital más valioso son nuestros colaboradores. Ellos son el corazón de la gran familia empresarial. Por eso, ante la reciente caída global de las ganancias, hemos decidido desvincular al 30% del personal; una medida dolorosa pero indispensable para salvaguardar la competitividad de las acciones en la bolsa.»\n\n¿Qué contradicción sustancial se evidencia en el discurso de la empresa?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Afirmar que las ganancias cayeron cuando en realidad el mercado bursátil está en su punto más alto.",
+      "B": "Utilizar metáforas familiares ('gran familia', 'capital más valioso') para referirse a los trabajadores, mientras se les trata como variables económicas prescindibles para favorecer a los accionistas.",
+      "C": "Sugerir que el despido masivo aumentará el volumen de producción y las jornadas de trabajo extra.",
+      "D": "Culpar a los colaboradores del bajo rendimiento financiero de las sedes de la multinacional."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La contradicción radica en la retórica emotiva y humanista que se despliega al inicio ('capital más valioso', 'familia') frente a la fría acción corporativa final, donde se deshacen de casi un tercio de esa 'familia' para priorizar el valor monetario de las acciones."
+  },
+  {
+    "id": "LC-035",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión semántica (Vocabulario)",
+    "enunciado": "Lea el fragmento:\n\n«La propuesta del comité ambiental fue recibida con total **displicencia** por parte de la mesa directiva de la mina, quienes ni siquiera se tomaron la molestia de abrir los folletos informativos antes de proceder con la votación técnica.»\n\nA partir del contexto del relato, la palabra **displicencia** denota:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "E entusiasmo y asombro desmedido ante una gran propuesta.",
+      "B": "Indiferencia, desdén, desinterés o falta de afecto hacia algo.",
+      "C": "Escrutinio riguroso, desconfianza y sospecha de fraude legal.",
+      "D": "Temor reverencial y respeto absoluto por la autoridad ambiental."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El contexto aclara que la mesa directiva 'ni se tomó la molestia de abrir los folletos'. Esta actitud revela apatía, desdén o desinterés absoluto, lo cual coincide exactamente con la definición de displicencia."
+  },
+  {
+    "id": "LC-036",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación semántica (Texto discontinuo)",
+    "enunciado": "[ANÁLISIS DE CARICATURA SOCIAL]: Un dibujo muestra a un hombre sentado frente a un televisor gigante que emite luces de colores brillantes. El hombre tiene la boca abierta y sus ojos han sido reemplazados por dos espirales de hipnosis. De su cabeza sale un cable que va directo a un enchufe en la pared rotulado como 'Opinión Pública Pre-fabricada'.\n\n¿Cuál es el argumento central del caricaturista al usar la analogía del cable en la cabeza?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La televisión moderna es una excelente fuente de energía renovable para los hogares urbanos.",
+      "B": "Los medios masivos de comunicación audiovisual pueden adormecer el pensamiento crítico del individuo, implantando ideas y opiniones preconcebidas sin que este las cuestione.",
+      "C": "El cableado eléctrico de las viviendas debe ser inspeccionado para evitar problemas neurológicos en los televidentes.",
+      "D": "La opinión pública se construye sumando los votos democráticos de ciudadanos altamente informados."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La alegoría del cable conectado a la 'opinión pre-fabricada' junto a los ojos hipnotizados representa visualmente la pérdida de autonomía intelectual del espectador, quien consume de manera pasiva y acrítica los mensajes emitidos por el televisor."
+  },
+  {
+    "id": "LC-037",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Relaciones lógicas)",
+    "enunciado": "Lea las dos frases del texto:\n\n«Frase 1: El Gobierno decretó el confinamiento estricto y el cese de operaciones comerciales en los puertos.\nFrase 2: El desabastecimiento de materias primas afectó la producción de medicamentos esenciales semanas después.»\n\n¿Qué relación lógica une a la Frase 1 con la Frase 2?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La Frase 1 es la causa directa del efecto o consecuencia descrita en la Frase 2.",
+      "B": "La Frase 2 constituye una justificación ética que valida las medidas decretadas en la Frase 1.",
+      "C": "Ambas frases presentan ideas contradictorias que se anulan mutuamente en la realidad.",
+      "D": "La Frase 1 añade un ejemplo secundario que amplía los datos científicos de la Frase 2."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El cierre de puertos y el confinamiento (Frase 1) paralizan el transporte de mercancías. Esto desencadena inevitablemente, como un efecto directo en el tiempo, la falta de suministros farmacéuticos (Frase 2)."
+  },
+  {
+    "id": "LC-038",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de validez lógica (Verdadero o Falso)",
+    "enunciado": "Determine si el siguiente razonamiento deductivo es formalmente válido o falaz:\n\n«Todos los mamíferos tienen pulmones. Las ballenas tienen pulmones. Por lo tanto, las ballenas son mamíferos.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero (Es válido)",
+      "B": "Falso (Es falaz)"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Aunque todas las afirmaciones son verdaderas en la biología, la estructura del silogismo es *falaz* (falacia del término medio no distribuido). Decir que los mamíferos tienen pulmones no implica que *solo* ellos los tengan (las aves y reptiles también tienen). La conclusión no se deriva formalmente de las premisas, es una coincidencia factual."
+  },
+  {
+    "id": "LC-039",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Filosófico)",
+    "enunciado": "Lea el siguiente aforismo:\n\n«Quien lucha con monstruos debe cuidar de convertirse a su vez en un monstruo. Cuando miras largo tiempo a un abismo, el abismo también mira dentro de ti.» — Friedrich Nietzsche.\n\nEn el contexto de la resolución de conflictos sociales y políticos, el aforismo advierte sobre el peligro de:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "No usar la tecnología militar adecuada para derrotar a los ejércitos rivales.",
+      "B": "Adoptar los mismos métodos violentos, crueles o inmorales del enemigo jurado en el proceso de intentar destruirlo.",
+      "C": "Pasar demasiado tiempo analizando la geografía de los acantilados y terrenos montañosos.",
+      "D": "Perdonar de manera apresurada los crímenes cometidos por regímenes totalitarios."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La metáfora del 'monstruo' refiere al enemigo o al mal que se combate. El autor advierte de un riesgo psicológico y moral: terminar mimetizándose con la crueldad del oponente, justificando actos atroces bajo la premisa de la defensa propia."
+  },
+  {
+    "id": "LC-040",
+    "materia": "Lectura Crítica",
+    "competencia": "Intención comunicativa (Ensayo)",
+    "enunciado": "Lea el fragmento:\n\n«Reducir la educación artística en las escuelas a una materia opcional es cercenar el desarrollo cognitivo de los estudiantes. Las artes plásticas y la música no son pasatiempos decorativos; son lenguajes complejos que potencian el pensamiento abstracto, la motricidad fina y la resiliencia emocional. Un sistema educativo que solo entrena para las matemáticas y la memoria técnica forma operarios eficientes, pero ciudadanos incompletos.»\n\n¿Cuál es la intención principal del autor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Sugerir que las matemáticas carecen de utilidad práctica en el desarrollo de la sociedad civil.",
+      "B": "Defender la importancia de la educación artística en el currículo escolar frente a los modelos puramente técnicos.",
+      "C": "Solicitar un aumento en el salario de los profesores encargados de los talleres de música.",
+      "D": "Diseñar un cronograma de actividades lúdicas para las vacaciones de los estudiantes."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor estructura un argumento sólido en favor del arte en las escuelas, demostrando sus beneficios neurológicos y humanos para contrarrestar la tendencia de marginar estas disciplinas en los planes de estudio."
+  },
+  {
+    "id": "LC-041",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Argumentativo)",
+    "enunciado": "Lea el siguiente texto y responda:\n\n«El castigo punitivo tradicional parte de una premisa errónea: asumir que aislar a un individuo de la sociedad en condiciones hostiles lo preparará mágicamente para reintegrarse a ella de forma armónica. La prisión, lejos de rehabilitar, opera como una universidad del crimen donde los reclusos perfeccionan técnicas delictivas y afianzan redes de violencia. Si el fin real de la justicia es la seguridad ciudadana, el enfoque debe migrar de la venganza estatal hacia la justicia restaurativa y la capacitación técnica real.»\n\n¿Cuál de las siguientes afirmaciones debilita más directamente el argumento principal del autor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los índices de reincidencia delictiva en países con sistemas penitenciarios humanizados son inferiores al 20%.",
+      "B": "Estudios sociológicos demuestran que el confinamiento prolongado reduce temporalmente la comisión de delitos en las calles al mantener a los criminales de alta peligrosidad fuera de circulación.",
+      "C": "La opinión pública de la mayoría de los ciudadanos exige penas de prisión más severas y cadena perpetua para los delitos graves.",
+      "D": "El presupuesto estatal invertido en la construcción de cárceles ha aumentado de forma sostenida en la última década."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El argumento central del autor es que la prisión no funciona para garantizar la seguridad ciudadana porque no rehabilita. La opción B debilita este argumento al proveer un dato que demuestra que la prisión, al menos mediante la incapacitación física temporal, sí cumple un rol directo en la reducción del crimen callejero."
+  },
+  {
+    "id": "LC-042",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Sintaxis)",
+    "enunciado": "Considere la siguiente oración:\n\n«El experimento fracasó rotundamente debido a la falta de presupuesto; **por lo tanto**, los investigadores se vieron obligados a disolver el laboratorio y archivar los resultados preliminares.»\n\n¿Qué función lógica cumple el conector resaltado en negrita (**por lo tanto**)?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Introducir una objeción parcial que contradice la primera parte de la afirmación.",
+      "B": "Establecer una relación de consecuencia o efecto derivado de la causa expuesta anteriormente.",
+      "C": "Añadir un ejemplo específico que ilustra las condiciones económicas del laboratorio.",
+      "D": "Indicar una relación de simultaneidad temporal entre el fracaso y el archivo de datos."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El conector 'por lo tanto' es de carácter consecutivo. Su función gramatical es ligar una causa (el fracaso por falta de presupuesto) con su efecto directo o conclusión lógica (la disolución del laboratorio)."
+  },
+  {
+    "id": "LC-043",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de las partes (Texto Discontinuo)",
+    "enunciado": "[DESCRIPCIÓN DE INFOGRAFÍA]: Una infografía del Ministerio de Salud ilustra la pirámide de nutrición balanceada. En la base (nivel 1) se muestran íconos de agua y actividad física. En el nivel 2 hay cereales integrales y legumbres. En el nivel 3, frutas y verduras. En el nivel 4, lácteos y carnes magras. En la cúspide estrecha (nivel 5) aparecen ultraprocesados, dulces y grasas saturadas, acompañados de una señal roja de pare.\n\n¿Qué lectura analítica se infiere sobre el tamaño decreciente de los niveles de la pirámide?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los alimentos de la cúspide son los más costosos y difíciles de adquirir en el mercado nacional.",
+      "B": "El área de cada nivel representa la proporción de consumo recomendada: a menor espacio visual en la pirámide, menor debe ser la ingesta diaria de esa categoría.",
+      "C": "Los alimentos situados en el nivel 5 poseen un valor nutricional superior que requiere menor espacio de almacenamiento.",
+      "D": "La pirámide está organizada alfabéticamente según el origen botánico de los ingredientes básicos."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "En las pirámides nutricionales tradicionales, la estructura geométrica decreciente comunica proporciones. La base ancha dicta lo que debe abundar (agua, ejercicio) y la punta estrecha simboliza lo que debe consumirse de manera marginal o mínima (dulces, grasas)."
+  },
+  {
+    "id": "LC-044",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de supuestos (Filosófico)",
+    "enunciado": "Lea el fragmento:\n\n«El determinismo biológico postula que la conducta humana, los niveles de inteligencia y la posición socioeconómica de los individuos están predefinidos de forma casi absoluta por su código genético. Bajo esta luz, los esfuerzos por modificar las desigualdades mediante políticas públicas de educación o subsidios son infructuosos, pues la naturaleza siempre se impone sobre la crianza.»\n\n¿En cuál de los siguientes supuestos no demostrados descansa el determinismo biológico según el texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El entorno social y cultural no ejerce una influencia significativa o plástica en el desarrollo de las capacidades humanas.",
+      "B": "La educación pública es el único motor de movilidad social en las democracias occidentales.",
+      "C": "El genoma humano es una estructura dinámica que muta según los hábitos nutricionales del individuo.",
+      "D": "Las diferencias económicas entre las clases sociales reflejan fielmente los niveles de empatía de los gobernantes."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El determinismo biológico afirma que los genes lo definen todo y que las políticas sociales no sirven. Por ende, asume como supuesto que el ambiente (la crianza, la educación, el entorno) no tiene poder para alterar o moldear lo que la genética dictó, ignorando la plasticidad cerebral y social."
+  },
+  {
+    "id": "LC-045",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de intenciones (Literario)",
+    "enunciado": "Lea el fragmento del relato:\n\n«El general entró al salón cubierto de medallas relucientes, con el mentón en alto y el paso firme de quien ha conquistado imperios. Sin embargo, al sentarse a la mesa, sus manos temblaron de forma incontrolable al intentar sostener la pluma, y una sola pregunta de su joven secretario bastó para que sus ojos buscaran desesperadamente la salida. El coloso de la patria no era más que un viejo asustado envuelto en un uniforme de gala.»\n\nEl contraste entre el uniforme del general y sus acciones físicas tiene el propósito literario de:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Exaltar la superioridad militar de los ejércitos antiguos sobre los modernos.",
+      "B": "Desmitificar la figura del héroe o líder autoritario, exponiendo la fragilidad y el miedo humano ocultos tras las apariencias del poder.",
+      "C": "Describir de forma técnica los síntomas neurológicos de las enfermedades degenerativas de la vejez.",
+      "D": "Criticar la falta de preparación académica de los secretarios en los despachos presidenciales."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor utiliza la contraposición entre las medallas y el uniforme ('el coloso') frente al temblor de manos y el miedo en los ojos ('viejo asustado') para desmontar la imagen mítica del gobernante poderoso, revelando su vulnerabilidad humana subyacente."
+  },
+  {
+    "id": "LC-046",
+    "materia": "Lectura Crítica",
+    "competencia": "Sentido de los enunciados (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente enunciado conceptual sobre la estructura de los textos argumentativos:\n\n«En un texto argumentativo, la tesis corresponde a la recopilación de datos estadísticos, citas bibliográficas y ejemplos históricos objetivos que el autor presenta a lo largo del desarrollo para sostener sus ideas.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Es falso. La tesis no es la recopilación de datos; la tesis es la postura, opinión o proposición central que el autor defiende. Los datos estadísticos, citas y ejemplos históricos constituyen los *argumentos* o evidencias que sirven para sustentar dicha tesis."
+  },
+  {
+    "id": "LC-047",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido global (Tesis)",
+    "enunciado": "Lea el fragmento de opinión:\n\n«Medir el éxito de una nación exclusivamente a través del Producto Interno Bruto (PIB) es una ceguera estadística alarmante. El PIB puede crecer de forma sostenida mientras los ríos se contaminan, las jornadas laborales destruyen la salud mental de los ciudadanos y la brecha de desigualdad se vuelve intolerable. Una economía verdaderamente próspera no es aquella que produce más mercancías, sino aquella que distribuye el bienestar y preserva las bases ecológicas de su propia existencia.»\n\n¿Cuál es la tesis central que defiende el autor del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El Producto Interno Bruto es la herramienta macroeconómica más exacta creada en el siglo XX.",
+      "B": "El crecimiento industrial y la contaminación de los recursos hídricos son procesos totalmente independientes.",
+      "C": "Se debe redefinir el concepto de éxito nacional, priorizando el bienestar social y la sostenibilidad ambiental por encima de los indicadores puramente monetarios como el PIB.",
+      "D": "Los gobiernos occidentales deberían abolir la recaudación de impuestos sobre las mercancías de consumo masivo."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El autor arremete contra el PIB como único medidor del éxito y propone un cambio de paradigma (última oración) enfocado en la distribución del bienestar y el cuidado ecológico, lo cual se resume de forma precisa en la opción C."
+  },
+  {
+    "id": "LC-048",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de enunciados (Coherencia)",
+    "enunciado": "Elija la opción que ordene las siguientes proposiciones para construir un texto coherente:\n\n1. Este proceso de selección artificial dio origen a las cientos de razas de perros domésticos que conocemos hoy.\n2. Hace miles de años, algunos lobos con niveles más bajos de agresividad se acercaron a las fogatas humanas en busca de restos de comida.\n3. Posteriormente, los humanos comenzaron a criar activamente a estos ejemplares dóciles para tareas de caza y pastoreo.\n4. El beneficio mutuo consolidó una relación simbiótica que alteró el rumbo evolutivo de ambas especies.",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "2 - 4 - 3 - 1",
+      "B": "2 - 3 - 1 - 4",
+      "C": "3 - 2 - 4 - 1",
+      "D": "4 - 2 - 3 - 1"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La secuencia cronológica y causal correcta inicia con la 2 (el acercamiento inicial de los lobos). Sigue la 4 que explica el efecto inmediato de ese acercamiento (el beneficio mutuo y la simbiosis). Luego va la 3 con una acción posterior en el tiempo (la cría activa para tareas específicas). Finalmente, la 1 concluye con el resultado evolutivo actual (las razas de perros modernos)."
+  },
+  {
+    "id": "LC-049",
+    "materia": "Lectura Crítica",
+    "competencia": "Aproximación crítica (Análisis de discursos)",
+    "enunciado": "Lea el fragmento de la siguiente crítica cultural:\n\n«Las películas taquilleras de superhéroes operan como mitologías analgésicas para el ciudadano contemporáneo. Frente a problemas estructurales complejos e irresolubles (como la crisis climática o la corrupción corporativa), estas ficciones nos ofrecen una solución infantil: un individuo con poderes extraordinarios que golpea al villano de turno y restaura el statu quo. Al salir de la sala de cine, el espectador no siente el deseo de organizarse políticamente, sino la cómoda esperanza de que alguien más vendrá a salvarnos.»\n\nDe acuerdo con el texto, el efecto político latente que producen estas películas en la sociedad es:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Estimular el activismo ambiental y la movilización comunitaria en contra de las grandes corporaciones.",
+      "B": "Inculcar conocimientos técnicos avanzados sobre cinematografía y efectos visuales modernos.",
+      "C": "Fomentar la pasividad civil y el conformismo social al promover la falsa creencia de que los problemas se solucionan mediante figuras providenciales individuales.",
+      "D": "Incrementar el pánico colectivo ante un inminente colapso de los servicios públicos urbanos."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El texto argumenta que estas películas funcionan como 'analgésicos' y que provocan en el espectador una 'cómoda esperanza de que alguien más vendrá a salvarnos' en lugar de un deseo de 'organizarse políticamente'. Esto equivale a fomentar la pasividad y la inacción ciudadana (Opción C)."
+  },
+  {
+    "id": "LC-050",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión semántica (Vocabulario)",
+    "enunciado": "Lea el fragmento:\n\n«El abogado defensor presentó un alegato **perentorio** ante el tribunal de apelaciones, exigiendo la liberación inmediata del detenido tras demostrarse que las órdenes de captura carecían de firmas judiciales válidas. Ante la contundencia de la ley, el juez no tuvo margen para postergar la decisión.»\n\nA partir del contexto del relato, la palabra **perentorio** significa que la acción es:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Opcional, deliberativa y sujeta a modificaciones presupuestales futuras.",
+      "B": "Definitivo, concluyente, urgente o que no admite prórroga ni discusión.",
+      "C": "Provisional, ambiguo y dependiente de testimonios de terceros.",
+      "D": "Secreto, confidencial y restringido para el público general."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El texto menciona que el alegato exigía la liberación 'inmediata' y que el juez 'no tuvo margen para postergar'. Esto dota a la palabra 'perentorio' de un significado de urgencia, obligatoriedad y carácter concluyente o inapelable."
+  },
+  {
+    "id": "LC-051",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación semántica (Texto discontinuo)",
+    "enunciado": "[ANÁLISIS DE VIÑETA]: En un cómic de tres recuadros se observa a un niño mirando una biblioteca llena de libros clásicos. Recuadro 1: El niño toma un libro grueso que dice 'Historia Universal'. Recuadro 2: Abre el libro y del interior brota una densa nube de polvo gris que lo hace toser. Recuadro 3: El niño cierra el libro con fuerza y dice: 'Con razón la historia es tan aburrida, está hecha enteramente de polvo'.\n\n¿En qué consiste el error de razonamiento o equívoco del personaje del cómic?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Confundir el deterioro físico del objeto (el polvo por el desuso) con el valor o la naturaleza conceptual del contenido intelectual del libro.",
+      "B": "Asumir que todos los libros de historia universal fueron escritos por arqueólogos en zonas desérticas.",
+      "C": "Creer que la tos es una reacción alérgica natural provocada por la lectura de eventos bélicos del pasado.",
+      "D": "Ignorar que las bibliotecas modernas cuentan con sistemas automatizados de limpieza digital."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El niño comete un error de asociación literal y concreta (humorístico): asume que el polvo físico acumulado sobre las páginas debido al abandono temporal del libro determina que la materia histórica en sí misma posee una naturaleza 'aburrida' o polvorienta."
+  },
+  {
+    "id": "LC-052",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Relaciones lógicas)",
+    "enunciado": "Lea los siguientes enunciados:\n\n«Enunciado 1: Las plataformas de 'streaming' implementaron tarifas extra por compartir contraseñas fuera del hogar principal.\nEnunciado 2: Millones de usuarios cancelaron sus suscripciones y migraron a alternativas gratuitas o piratas en los meses siguientes.»\n\n¿Qué conector lógico permite unir el Enunciado 1 con el Enunciado 2 manteniendo una relación de causa-efecto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Por el contrario",
+      "B": "En consecuencia",
+      "C": "No obstante",
+      "D": "Por ejemplo"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La cancelación de las suscripciones (Enunciado 2) es el resultado directo o la consecuencia de la nueva política tarifaria de las empresas (Enunciado 1). Por ende, el conector ilativo idóneo es 'En consecuencia' (o sus equivalentes 'Por ende', 'Así pues')."
+  },
+  {
+    "id": "LC-053",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de validez lógica (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente postulado sobre la argumentación falaz:\n\n«La falacia de apelación a la ignorancia (ad ignorantiam) se comete cuando se sostiene que una afirmación es definitivamente verdadera basándose únicamente en el hecho de que nadie ha podido probar que es falsa hasta el momento.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Es verdadero. La falacia *ad ignorantiam* consiste precisamente en defender la verdad (o falsedad) de una tesis apelando a que no existe prueba en contrario. Un ejemplo clásico es afirmar que los extraterrestres existen porque nadie ha demostrado que no existan."
+  },
+  {
+    "id": "LC-054",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Filosófico)",
+    "enunciado": "Lea el fragmento de Jean-Jacques Rousseau:\n\n«El primero al que, tras haber cercado un terreno, se le ocurrió decir \"esto es mío\" y encontró a personas lo bastante simples para creerle, fue el verdadero fundador de la sociedad civil. Cuántos crímenes, guerras, asesinatos, cuántas miserias e horrores habría ahorrado al género humano aquel que, arrancando las estacas, hubiera gritado a sus semejantes: \"¡Guardaos de escuchar a este impostor; estáis perdidos si olvidáis que los frutos son de todos y la tierra no es de nadie!\"»\n\nDe acuerdo con la tesis del fragmento, Rousseau identifica el origen de las grandes miserias humanas con:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La falta de herramientas técnicas para delimitar la agricultura de alta montaña.",
+      "B": "La invención y legitimación social de la propiedad privada sobre la tierra.",
+      "C": "La incapacidad de los seres humanos para defenderse de los depredadores naturales.",
+      "D": "El desarrollo de sistemas de escritura complejos en los primeros contratos comerciales."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Rousseau vincula explícitamente el inicio de la sociedad civil y de los horrores de la humanidad ('crímenes, guerras, miserias') al momento en que alguien delimitó un terreno y fundó el concepto de propiedad privada ('esto es mío'), el cual fue aceptado de forma ingenua por los demás."
+  },
+  {
+    "id": "LC-055",
+    "materia": "Lectura Crítica",
+    "competencia": "Intención comunicativa (Argumentativo)",
+    "enunciado": "Lea el fragmento de una columna sobre urbanismo:\n\n«Construir mega-autopistas elevadas dentro de los cascos urbanos bajo la promesa de solucionar los trancones es como intentar combatir la obesidad comprando pantalones más grandes. El fenómeno del tráfico obedece a la demanda inducida: a más vías pavimentadas, más incentivos para comprar autos particulares, saturando la infraestructura nueva en pocos meses. La única salida viable es priorizar el transporte público masivo eléctrico y las redes peatonales continuas.»\n\nEl autor utiliza la analogía de los pantalones más grandes con el fin primordial de:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Sugerir que los ingenieros civiles sufren de problemas metabólicos graves.",
+      "B": "Demostrar, mediante una comparación absurda y cotidiana, que ampliar la capacidad vial es una solución superficial e ineficaz contra el problema de fondo de la movilidad.",
+      "C": "Promover la industria textil local sobre la importación de insumos mecánicos pesados.",
+      "D": "Explicar los costos financieros que tiene para el municipio la adquisición de predios residenciales."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La analogía cumple una función retórica argumentativa: ilustra de manera contundente y satírica que atacar el síntoma (dar más espacio al tráfico/comprar ropa más grande) no soluciona la causa raíz del problema (el exceso de autos privados/el exceso de peso), demostrando la ineficacia de la medida vial tradicional."
+  },
+  {
+    "id": "LC-056",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Argumentativo)",
+    "enunciado": "Lea el siguiente texto y responda:\n\n«Se dice con frecuencia que la piratería digital destruye la industria cultural al arrebatarle ganancias legítimas a los creadores. No obstante, diversos estudios empíricos sugieren un fenómeno más complejo: la libre circulación de copias digitales funciona como un canal masivo de difusión que beneficia a autores emergentes que no cuentan con presupuestos de mercadeo. Para estos artistas, el verdadero enemigo no es la copia no autorizada, sino la absoluta invisibilidad en un mercado saturado por grandes monopolios del entretenimiento.»\n\n¿Cuál de las siguientes afirmaciones se opone más directamente a la postura expresada por el autor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Las grandes plataformas de streaming pagan regalías muy bajas por cada reproducción a los músicos independientes.",
+      "B": "La piratería reduce los ingresos globales de las productoras cinematográficas, impidiéndoles financiar proyectos de alto presupuesto.",
+      "C": "El acceso gratuito a bienes culturales digitales desvaloriza el trabajo intelectual, haciendo que el público asuma que el arte no debe ser pagado, lo cual condena a la quiebra tanto a artistas consagrados como a emergentes.",
+      "D": "Los conciertos en vivo y la venta de mercancía física constituyen la principal fuente de ingresos para los autores independientes en la actualidad."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El autor defiende que la piratería beneficia indirectamente a los creadores emergentes al darles visibilidad. La opción C ataca esta lógica directamente al argumentar que el acceso gratuito destruye el valor percibido del arte, perjudicando económicamente a *todos* los artistas sin distinción, lo que invalida el supuesto beneficio de la visibilidad."
+  },
+  {
+    "id": "LC-057",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Sintaxis)",
+    "enunciado": "Considere la siguiente frase:\n\n«La teoría del multiverso es fascinante desde una perspectiva de ciencia ficción; **sin embargo**, carece de sustento empírico verificable, por lo que la comunidad de físicos la considera una hipótesis metafísica más que una certeza científica.»\n\n¿Qué función cumple el conector resaltado en negrita (**sin embargo**)?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Ampliar los argumentos iniciales mediante la adición de nuevos datos experimentales.",
+      "B": "Introducir una restricción u objeción fundamental frente a la valoración positiva inicial de la teoría.",
+      "C": "Presentar una consecuencia matemática necesaria derivada del estudio de la ciencia ficción.",
+      "D": "Establecer una comparación equitativa entre la metafísica y la física nuclear."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El conector 'sin embargo' es adversativo. Su función es matizar u objetar el entusiasmo inicial por la teoría ('es fascinante') introduciendo su mayor debilidad ('carece de sustento empírico')."
+  },
+  {
+    "id": "LC-058",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de las partes (Texto Discontinuo)",
+    "enunciado": "[DESCRIPCIÓN DE CARICATURA MEDIOAMBIENTAL]: En la viñeta se observa a un grupo de ejecutivos corporativos en una sala de juntas de espaldas a un ventanal. A través del ventanal se ve un paisaje completamente desértico, chimeneas botando humo negro y ríos secos. Uno de los ejecutivos, apuntando a una pantalla con un gráfico de barras financieras ascendentes, dice con una sonrisa: 'Sí, destruimos el planeta, pero por unos gloriosos meses generamos un gran valor para los accionistas'.\n\nEl efecto humorístico y crítico de la caricatura se basa primordialmente en:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La falta de preparación de los ejecutivos para diseñar gráficos estadísticos en computadores.",
+      "B": "La yuxtaposición irónica entre la catástrofe ecológica irreversible visible afuera y la absurda justificación de éxito financiero temporal expresada adentro.",
+      "C": "El diseño arquitectónico moderno de las salas de juntas en las zonas industriales.",
+      "D": "La preferencia de los inversionistas bursátiles por los paisajes desérticos y soleados."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El núcleo de la sátira radica en el contraste absurdo y trágico entre la escala del daño (destrucción planetaria) y la insignificancia del beneficio celebrado (valor temporal para accionistas), evidenciando la ceguera y la falta de ética del modelo corporativo."
+  },
+  {
+    "id": "LC-059",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de supuestos (Filosófico)",
+    "enunciado": "Lea el fragmento:\n\n«El relativismo moral sostiene que los conceptos de bien y mal no son verdades objetivas u universales, sino construcciones culturales variables. Lo que es éticamente condenable en una sociedad puede ser considerado virtuoso en otra; por lo tanto, ninguna cultura posee el derecho legítimo de juzgar o intervenir en las prácticas normativas de las demás.»\n\n¿Cuál de las siguientes situaciones plantea un dilema ético insoluble o una consecuencia problemática si se acepta de forma absoluta el relativismo moral del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Una sociedad que decide cambiar sus leyes de tránsito para permitir que los autos viajen a mayor velocidad.",
+      "B": "La imposibilidad jurídica internacional de condenar o detener prácticas como la mutilación genital femenina o el exterminio de minorías étnicas dentro de un país que las justifica como parte de su tradición cultural.",
+      "C": "El debate entre ciudadanos de una misma región sobre la conveniencia de demoler un edificio antiguo para construir un parque.",
+      "D": "La adopción de dietas vegetarianas por parte de comunidades que históricamente dependían de la caza de animales."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Si el relativismo moral fuera absoluto, ninguna cultura podría juzgar a otra. Esto significaría que violaciones extremas a la dignidad humana (como el genocidio o la tortura) tendrían que ser respetadas y toleradas externamente si el grupo que las comete las considera válidas dentro de su sistema de normas, neutralizando la idea misma de Derechos Humanos Universales."
+  },
+  {
+    "id": "LC-060",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de intenciones (Literario)",
+    "enunciado": "Lea el siguiente fragmento narrativo:\n\n«Al principio, las luces parpadeaban en el horizonte de forma esporádica, como luciérnagas indecisas. Luego, el silencio de la noche fue devorado por un zumbido metálico, sordo y persistente, que hacía vibrar los cristales de las ventanas. El abuelo apagó el quinqué de un soplo. Nos tomó de las manos en la oscuridad y supimos, sin necesidad de que pronunciara una sola palabra, que el tiempo de la paz había terminado en el pueblo.»\n\nEl autor utiliza la descripción del zumbido metálico y las acciones del abuelo principalmente para crear una atmósfera de:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Celebración festiva y alegría comunitaria ante la llegada de la tecnología eléctrica.",
+      "B": "Tensión, peligro inminente y zozobra ante el inicio de un conflicto bélico o una invasión.",
+      "C": "Curiosidad científica por el avistamiento de fenómenos astronómicos inusuales.",
+      "D": "Aburrimiento y monotonía rutinaria en la vida cotidiana de una familia campesina."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Elementos como el silencio 'devorado', el zumbido metálico perturbador, el apagar la luz para ocultarse y tomarse de las manos en la oscuridad configuran sensorial y psicológicamente un ambiente de suspenso, miedo y peligro inminente ante la violencia que se avecina."
+  },
+  {
+    "id": "LC-061",
+    "materia": "Lectura Crítica",
+    "competencia": "Sentido de los enunciados (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente postulado sobre análisis semántico:\n\n«La denotación se refiere al significado literal, objetivo y formal de una palabra, tal como aparece registrado en los diccionarios, mientras que la connotación abarca los significados figurados, emocionales y culturales que se le añaden de forma subjetiva según el contexto.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Es verdadero. Esta es la distinción técnica en lingüística: lo denotativo es el significado base, directo y común para todos los hablantes (ej. 'corazón' como órgano muscular); lo connotativo es el sentido evocado o simbólico (ej. 'corazón' como símbolo de amor o valentía)."
+  },
+  {
+    "id": "LC-062",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido global (Tesis)",
+    "enunciado": "Lea el fragmento de opinión:\n\n«La generalización del teletrabajo fue celebrada como el triunfo definitivo de la flexibilidad laboral y el fin de los tormentosos desplazamientos urbanos. Sin embargo, la realidad ha desvelado su reverso oscuro: la disolución total de las fronteras entre la vida privada y la jornada laboral. Al llevar la oficina al hogar, el empleado nunca se desconecta realmente; la sala de estar se transforma en un espacio de productividad permanente bajo la vigilancia invisible de correos y notificaciones a deshoras. El teletrabajo no liberó al trabajador; lo confinó en su propio puesto de producción.»\n\n¿Cuál de las siguientes opciones expresa la idea central del texto anterior?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El teletrabajo es la mejor estrategia para reducir los índices de contaminación ambiental en las metrópolis.",
+      "B": "Las empresas que implementan el trabajo a distancia reportan un incremento del 30% en sus ganancias anuales.",
+      "C": "A pesar de sus aparentes ventajas, el teletrabajo precariza la vida del empleado al borrar los límites entre el tiempo de descanso familiar y las obligaciones laborales.",
+      "D": "Los empleados prefieren trabajar en oficinas tradicionales porque extrañan socializar con sus compañeros en los descansos."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El autor expone una visión crítica sobre el teletrabajo. Aunque reconoce que se celebró al inicio, su argumento principal gira en torno a cómo esta modalidad invade el espacio personal y condena al empleado a una disponibilidad permanente, conclusión que se sintetiza en la opción C."
+  },
+  {
+    "id": "LC-063",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de enunciados (Coherencia)",
+    "enunciado": "Elija la opción que ordene lógicamente las siguientes oraciones:\n\n1. En este ecosistema de escasez extrema, los cactus desarrollaron tallos gruesos capaces de almacenar miles de litros de agua.\n2. Adicionalmente, transformaron sus hojas en espinas afiladas para reducir la evaporación y defenderse de los herbívoros.\n3. El desierto de la Guajira se caracteriza por registrar temperaturas elevadas y sequías que se prolongan por meses.\n4. Estas adaptaciones morfológicas severas les permiten prosperar donde la mayoría de las plantas perecerían.",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "3 - 1 - 2 - 4",
+      "B": "3 - 4 - 1 - 2",
+      "C": "1 - 2 - 3 - 4",
+      "D": "2 - 1 - 3 - 4"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La estructura correcta va de la descripción del entorno a los efectos biológicos: La oración 3 introduce el escenario geográfico y climático (Desierto de la Guajira y sequías). La 1 introduce el sujeto (los cactus) y su respuesta a esa escasez (tallos que guardan agua). La 2 añade otra característica evolutiva complementaria mediante el conector 'Adicionalmente' (las espinas). Y la 4 sintetiza el resultado de ambas modificaciones ('Estas adaptaciones')."
+  },
+  {
+    "id": "LC-064",
+    "materia": "Lectura Crítica",
+    "competencia": "Aproximación crítica (Análisis de discursos)",
+    "enunciado": "Lea el fragmento de una columna de opinión política:\n\n«El actual ministro de hacienda defiende su reforma tributaria argumentando que es una herramienta técnica diseñada por los mejores economistas del país para estabilizar la macroeconomía. Lo que el ministro olvida mencionar es que, hace apenas cinco años, cuando él era un académico de oposición, calificó una reforma exactamente idéntica como 'un atraco descarado al bolsillo de la clase trabajadora'. Cambiar de silla en el Palacio de Nariño parece alterar profundamente la noción de justicia económica de nuestros tecnócratas.»\n\n¿Qué recurso utiliza principalmente el columnista para restarle validez a la defensa del ministro?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Presentar una serie de tablas estadísticas que demuestran errores matemáticos en la recaudación de impuestos.",
+      "B": "Evidenciar la contradicción ideológica y la falta de coherencia ética del funcionario basándose en sus propias declaraciones del pasado.",
+      "C": "Proponer un modelo económico alternativo fundamentado en la eliminación total de los aranceles aduaneros.",
+      "D": "Atacar los títulos universitarios y la formación académica de los asesores del ministerio."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El columnista recurre a un argumento de inconsistencia personal. No debate las cifras de la reforma, sino que expone cómo el ministro defendía una postura opuesta en el pasado cuando no estaba en el poder, lo que mina su credibilidad actual frente a la opinión pública."
+  },
+  {
+    "id": "LC-065",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión semántica (Vocabulario)",
+    "enunciado": "Lea el fragmento:\n\n«La actitud del director frente a las denuncias de acoso laboral fue calificada de **connivencia** por el sindicato, ya que a pesar de contar con pruebas testimoniales contundentes, mantuvo a los jefes acusados en sus cargos y archivó los expedientes bajo llave.»\n\nA partir del contexto de la situación, la palabra **connivencia** denota:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Desconocimiento absoluto e ignorancia involuntaria de un problema.",
+      "B": "Discrepancia, rechazo rotundo y persecución activa de las conductas delictivas.",
+      "C": "Complicidad, tolerancia silenciosa o acuerdo implícito con una mala acción o delito.",
+      "D": "Sorpresa, asombro y consternación profunda ante un hecho inesperado."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Dado que el director conocía las pruebas y decidió proteger a los acusados archivando el caso, el texto ilustra una conducta de complicidad o disimulo deliberado ante una falta, que es el significado exacto de connivencia."
+  },
+  {
+    "id": "LC-066",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación semántica (Texto discontinuo)",
+    "enunciado": "[ANÁLISIS DE INFOGRAFÍA DE CIUDADADANÍA]: Un cartel muestra un gran árbol cuyas raíces están rotuladas como 'Educación Básica', 'Respeto al Bien Público' y 'Participación Comunitaria'. El tronco del árbol dice 'Democracia Estable' y sus frutos maduros tienen los nombres de 'Equidad Social', 'Seguridad Urbano' y 'Libertad de Expresión'.\n\nDe acuerdo con la analogía botánica del cartel, se puede concluir que:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La equidad social es un recurso natural que crece de forma silvestre en los bosques colombianos.",
+      "B": "Para cosechar los beneficios de una sociedad libre y equitativa (frutos), es indispensable nutrir y fortalecer primero la educación y los valores ciudadanos básicos (raíces).",
+      "C": "La democracia estable (tronco) puede subsistir perfectamente aunque se corten por completo las raíces del árbol.",
+      "D": "El respeto al bien público es una consecuencia secundaria que aparece de forma espontánea cuando hay libertad de expresión."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La infografía utiliza la metáfora del árbol para establecer una jerarquía causal: los frutos (resultados deseables como libertad y seguridad) dependen de la solidez y nutrición de las raíces (procesos fundamentales como educación y respeto)."
+  },
+  {
+    "id": "LC-067",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Relaciones lógicas)",
+    "enunciado": "Lea las siguientes afirmaciones:\n\n«Frase 1: La producción global de microchips se concentró casi exclusivamente en tres fábricas ubicadas en Taiwán.\nFrase 2: Un terremoto de gran magnitud en las costas de Taiwán paralizó la industria automotriz y tecnológica mundial durante meses debido a la falta de componentes.»\n\n¿Qué problema de diseño logístico global se evidencia al conectar analíticamente la Frase 1 con la Frase 2?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La falta de personal capacitado en Taiwán para operar sistemas sismológicos de alerta.",
+      "B": "La vulnerabilidad extrema y el riesgo sistémico que implica centralizar la producción de un insumo tecnológico vital en un solo punto geográfico propenso a desastres naturales.",
+      "C": "La superioridad industrial de los automóviles eléctricos sobre los vehículos de combustión interna.",
+      "D": "La ineficacia de los planes de evacuación de las poblaciones costeras del continente asiático."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La relación entre ambas frases demuestra un vínculo directo de causa-efecto: concentrar la producción en un único sitio (Frase 1) provocó que un evento geográfico localizado tuviera repercusiones catastróficas a nivel mundial (Frase 2), desvelando una falla de diversificación en la cadena de suministros."
+  },
+  {
+    "id": "LC-068",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de validez lógica (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente planteamiento sobre falacias informales:\n\n«La falacia del hombre de paja (straw man) se comete cuando un polemista deforma, exagera o caricaturiza el argumento original de su oponente para que este parezca absurdo o indefendible, procediendo luego a atacar esa versión distorsionada en lugar de refutar la idea real.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Es verdadero. Esta es la definición exacta de la falacia del hombre de paja. En lugar de enfrentar el argumento real del contrincante, se fabrica un sustituto débil y caricaturesco (de paja) para derribarlo fácilmente en el debate."
+  },
+  {
+    "id": "LC-069",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Filosófico)",
+    "enunciado": "Lea el siguiente texto de Platón (Mito de la Caverna):\n\n«Imagina a unos hombres encerrados desde niños en una caverna, atados de pies y manos, mirando únicamente hacia la pared del fondo. Detrás de ellos, un fuego ilumina unos objetos que desfilan sobre un muro. Estos hombres no ven los objetos reales, sino las sombras proyectadas en el fondo. Si uno de ellos fuera liberado y saliera a la luz del sol, al principio sus ojos sufrirían y querría volver a la comodidad de las sombras, pues consideraría que las sombras eran más reales que la deslumbrante verdad exterior.»\n\nEn la alegoría de Platón, el retorno voluntario del prisionero liberado hacia las sombras de la caverna simboliza:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El éxito de los sistemas educativos basados en la memorización técnica de datos.",
+      "B": "La resistencia psicológica y el temor humano a abandonar los prejuicios, las falsas certezas y las ilusiones cómodas para asumir el esfuerzo que exige el conocimiento verdadero.",
+      "C": "La superioridad física de la visión nocturna en entornos subterráneos sobre la luz del día.",
+      "D": "La necesidad de organizar expediciones científicas para rescatar a las poblaciones marginadas."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El dolor en los ojos y el deseo de regresar a ver las sombras representan la resistencia cognitiva frente al proceso de iluminación intelectual o educación: la verdad suele ser dolorosa o incómoda al principio, prefiriéndose el confort de la ignorancia o las opiniones preconcebidas."
+  },
+  {
+    "id": "LC-070",
+    "materia": "Lectura Crítica",
+    "competencia": "Intención comunicativa (Ensayo)",
+    "enunciado": "Lea el fragmento:\n\n«Delegar nuestra memoria en los motores de búsqueda de internet está atrofiando la arquitectura neurobiológica del cerebro humano. Al saber que cualquier dato está disponible a un clic de distancia, el cerebro activa un mecanismo de economía cognitiva y deja de consolidar la información en la memoria a largo plazo. Nos estamos transformando en una especie con un acceso infinito a la información exterior, pero con una alarmante vacuidad mental interior. No poseemos el conocimiento; simplemente sabemos dónde buscarlo.»\n\n¿Cuál es el propósito comunicativo primordial del autor del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Recomendar la compra de computadores con mayor capacidad de almacenamiento de memoria RAM.",
+      "B": "Alertar de manera crítica sobre los efectos cognitivos negativos que produce la dependencia absoluta de internet en los procesos de memorización humana.",
+      "C": "Explicar el funcionamiento de los algoritmos de búsqueda indexada de las compañías tecnológicas.",
+      "D": "Demostrar que la evolución humana ha erradicado la necesidad de estudiar historia y ciencias sociales."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor expone con preocupación cómo delegar el almacenamiento mental en internet 'atrofia' el cerebro y genera 'vacuidad mental interior'. Su objetivo es lanzar una advertencia crítica sobre el uso desmedido y dependiente del buscador digital frente a las facultades biológicas."
+  },
+  {
+    "id": "LC-071",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Argumentativo)",
+    "enunciado": "Lea el siguiente texto y responda:\n\n«Los defensores del libre mercado absoluto argumentan que la privatización de los servicios de salud optimiza la eficiencia mediante la libre competencia. Sin embargo, este enfoque ignora una contradicción fundamental: el objetivo comercial de una empresa privada es maximizar el beneficio económico de sus accionistas, mientras que el objetivo de un sistema de salud público es maximizar el bienestar físico y la supervivencia de la población. Cuando la rentabilidad financiera choca contra la necesidad de un tratamiento costoso para un paciente de bajos recursos, la lógica del mercado dicta el descarte humano.»\n\n¿Cuál de las siguientes afirmaciones debilita la postura del autor frente a los servicios privados de salud?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Las clínicas privadas suelen presentar menores tiempos de espera para cirugías especializadas en comparación con los hospitales públicos saturados.",
+      "B": "En modelos de salud regulados, el Estado subsidia la atención de alta complejidad en clínicas privadas, garantizando cobertura universal sin que la rentabilidad de la empresa afecte el acceso del paciente.",
+      "C": "Los medicamentos genéricos producidos por laboratorios privados tienen un costo significativamente menor que los de marca.",
+      "D": "La mayoría de los estudiantes de medicina prefieren realizar sus residencias en el extranjero debido a los bajos salarios locales."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El argumento central del autor es que la lógica de mercado privado necesariamente excluye a los pacientes de bajos recursos en tratamientos costosos. La opción B debilita directamente esta premisa al mostrar un escenario (modelo regulado con subsidio estatal) donde la rentabilidad privada y el acceso universal coexisten sin el desenlace negativo que el autor da por obligatorio."
+  },
+  {
+    "id": "LC-072",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Sintaxis)",
+    "enunciado": "Considere el siguiente fragmento:\n\n«El calentamiento global no solo altera los patrones climáticos extremos; **asimismo**, acelera la acidificación de las cuencas oceánicas, destruyendo los arrecifes de coral a un ritmo sin precedentes históricos.»\n\n¿Qué relación lógica establece el conector resaltado en negrita (**asimismo**) entre las dos partes del enunciado?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Oposición, porque contrapone los efectos terrestres con los efectos marítimos del clima.",
+      "B": "Causa, ya que la acidificación es el origen directo de las tormentas atmosféricas.",
+      "C": "Adición o continuidad, puesto que añade un efecto destructivo de igual gravedad provocado por la misma causa.",
+      "D": "Condición, debido a que el daño oceánico depende de que se detenga el cambio climático."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El conector 'asimismo' es un ilativo de adición. Se utiliza para incorporar una nueva información o argumento que sigue la misma línea o dirección de lo expuesto anteriormente, sumando el daño oceánico al daño climático."
+  },
+  {
+    "id": "LC-073",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de las partes (Texto Discontinuo)",
+    "enunciado": "[DESCRIPCIÓN DE TABLA DE DATOS]: Una tabla del Ministerio de Educación compara cuatro metodologías de enseñanza (A, B, C y D) en 100 colegios piloto durante un año. La tabla mide el incremento en la comprensión lectora (%) y el costo de implementación por aula ($).\n- Metodología A: +5% comprensión / Costo: $100.000\n- Metodología B: +22% comprensión / Costo: $850.000\n- Metodología C: +20% comprensión / Costo: $200.000\n- Metodología D: +12% comprensión / Costo: $500.000\n\nSi el Gobierno busca optimizar el presupuesto público bajo un criterio de máxima eficiencia costo-beneficio, ¿cuál metodología debería priorizar?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La Metodología A, porque es la que requiere la menor inversión económica de todas.",
+      "B": "La Metodología B, dado que alcanza el porcentaje más alto de incremento absoluto en comprensión.",
+      "C": "La Metodología C, porque ofrece un alto rendimiento en comprensión lectora (+20%) con un costo notablemente inferior y eficiente comparado con la opción B.",
+      "D": "La Metodología D, ya que se encuentra en el promedio matemático exacto de ambas variables."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El análisis costo-beneficio busca el mayor impacto al menor costo posible. La metodología C logra casi el mismo resultado que la B (+20% frente a +22%) pero costando menos de una cuarta parte de su presupuesto ($200.000 frente a $850.000), consolidándose como la opción más eficiente."
+  },
+  {
+    "id": "LC-074",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de supuestos (Filosófico)",
+    "enunciado": "Lea el fragmento:\n\n«El utilitarismo es una teoría ética que establece que la mejor acción es aquella que maximiza la utilidad, definida comunmente como el mayor bienestar o felicidad para el mayor número de personas. Bajo este principio, las decisiones políticas deben guiarse por un cálculo matemático de consecuencias, donde los derechos individuales pueden ser sacrificados legítimamente si esto evita un sufrimiento mayor a la colectividad.»\n\n¿Cuál de las siguientes premisas constituye un supuesto crítico no explícito del utilitarismo según el fragmento?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La felicidad y el sufrimiento humanos son variables cuantitativas homogéneas que se pueden medir, comparar y sumar con precisión.",
+      "B": "Todos los seres humanos poseen un concepto idéntico y biológico de lo que significa la justicia divina.",
+      "C": "Las minorías sociales siempre sabotean de manera deliberada los planes económicos de los gobiernos.",
+      "D": "Los derechos individuales están garantizados por leyes naturales inmutables que ningún gobierno puede modificar."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Para que el utilitarismo pueda realizar un 'cálculo matemático de consecuencias' y determinar qué opción beneficia al 'mayor número', asume de forma implícita que la felicidad, el bienestar o el dolor son medibles y comparables cuantitativamente, como si se tratara de unidades numéricas en una ecuación."
+  },
+  {
+    "id": "LC-075",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de intenciones (Literario)",
+    "enunciado": "Lea el fragmento del poema:\n\n«Las grandes chimeneas de la tarde / devoran el azul con dientes de carbón. / El río ya no refleja el cielo, / sino un aceite denso y turbio / donde flotan los restos de la prisa. / La ciudad se levanta, monstruo de cemento, / que olvida que sus pies se hunden en la tierra.»\n\nEl uso de la metáfora 'devoran el azul con dientes de carbón' tiene la intención estética de:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Celebrar el avance de la ingeniería y la generación de energía en los entornos urbanos.",
+      "B": "Personificar la industrialización como una fuerza destructiva, voraz y contaminante que consume los elementos naturales como el cielo.",
+      "C": "Explicar los componentes químicos del humo que emiten las calderas de las fundiciones.",
+      "D": "Describir la llegada de la noche y el proceso natural de oscurecimiento atmosférico."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Al dar 'dientes de carbón' a las chimeneas y decir que 'devoran el azul' (el cielo limpio), el poeta recurre a una personificación con matices monstruosos para denunciar el impacto agresivo y degradante de la contaminación industrial sobre la naturaleza."
+  },
+  {
+    "id": "LC-076",
+    "materia": "Lectura Crítica",
+    "competencia": "Sentido de los enunciados (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente enunciado sobre los textos argumentativos:\n\n«Un contraargumento es una falacia formal que introduce el autor de manera descuidada, restándole coherencia a su propio discurso y facilitando que los lectores rechacen su postura.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Es falso. Un contraargumento no es una falacia ni un descuido; es un recurso argumentativo deliberado y legítimo. Consiste en presentar una objeción previsible a la propia tesis para, acto seguido, refutarla con mejores evidencias, lo cual fortalece la solidez y persuasión del texto."
+  },
+  {
+    "id": "LC-077",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido global (Tesis)",
+    "enunciado": "Lea el fragmento:\n\n«La idea de que la tecnología digital ha democratizado la creación musical es parcial. Si bien es cierto que hoy cualquiera puede grabar una canción en su habitación con un computador, el acceso a los canales de distribución masiva y a la atención del público sigue rígidamente monopolizado. Tres grandes corporaciones discográficas controlan los algoritmos de las principales plataformas de reproducción y financian las listas de éxitos. El cuello de botella ya no está en los medios de producción musical, sino en la visibilidad comercial de los contenidos.»\n\n¿Cuál es la conclusión principal del fragmento anterior?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Cualquier persona puede convertirse en una estrella musical internacional sin necesidad de invertir dinero.",
+      "B": "Las plataformas de reproducción digital desaparecerán pronto debido a la falta de regulaciones de propiedad intelectual.",
+      "C": "La democratización técnica de la grabación no eliminó la concentración del poder en la industria musical, la cual se trasladó al control algorítmico y comercial de la visibilidad.",
+      "D": "Los músicos prefieren los estudios de grabación analógicos del siglo pasado por su fidelidad acústica."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El autor matiza la supuesta democratización tecnológica indicando que el control de la industria musical persiste. Cambió de lugar: ya no importa quién puede grabar, sino quién controla las plataformas que deciden qué se escucha (la visibilidad), idea central de la opción C."
+  },
+  {
+    "id": "LC-078",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de enunciados (Coherencia)",
+    "enunciado": "Ordene de forma coherente las siguientes proposiciones:\n\n1. Al bloquear esta enzima, el fármaco detiene la replicación del material genético de la bacteria.\n2. Los investigadores aislaron un compuesto químico en las esponjas marinas del Pacífico.\n3. En consecuencia, la infección remite rápidamente sin generar daños secundarios en las células del paciente.\n4. Pruebas de laboratorio posteriores demostraron que este compuesto inhibe selectivamente la enzima necesaria para la división celular bacteriana.",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "2 - 4 - 1 - 3",
+      "B": "2 - 1 - 4 - 3",
+      "C": "4 - 2 - 1 - 3",
+      "D": "3 - 2 - 4 - 1"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El orden lógico sigue el método científico y el mecanismo biológico: La 2 introduce el origen del descubrimiento (compuesto aislado de esponjas). La 4 relata las pruebas experimentales que muestran la acción generalizada (inhibe la enzima). La 1 detalla a nivel molecular cómo funciona esa inhibición ('Al bloquear esta enzima...'). Y la 3 cierra con el efecto macro terapéutico final marcado por el conector 'En consecuencia'."
+  },
+  {
+    "id": "LC-079",
+    "materia": "Lectura Crítica",
+    "competencia": "Aproximación crítica (Análisis de discursos)",
+    "enunciado": "Lea el fragmento de un folleto publicitario inmobiliario:\n\n«¡Viva en contacto con la pureza! Green Village es un exclusivo complejo residencial cerrado, diseñado para quienes aprecian la tranquilidad silvestre. Para su edificación, hemos talado 40 hectáreas de bosque nativo secundario, sustituyéndolas por impecables prados de césped sintético, zonas comunes climatizadas y lagos artificiales con filtros de ozono. El lujo y la naturaleza se dan la mano en un entorno controlado y seguro.»\n\n¿Qué paradoja o ironía sustancial se oculta tras el discurso ambiental de este proyecto inmobiliario?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El uso de filtros de ozono para purificar lagos artificiales es perjudicial para las aves migratorias.",
+      "B": "Promocionar una vivienda en 'contacto con la pureza y la tranquilidad silvestre' cuando el proyecto implicó la destrucción real del ecosistema natural nativo para reemplazarlo por plástico y entornos artificiales.",
+      "C": "La exclusión de los ciudadanos de estratos bajos en las áreas comunes del complejo residencial.",
+      "D": "El hecho de que el césped sintético requiere un riego constante de agua potable durante los meses de verano."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La ironía del texto es evidente: utiliza palabras del campo semántico ecológico y natural ('pureza', 'silvestre', 'naturaleza') para vender un proyecto cuyo proceso de construcción requirió precisamente aniquilar el bosque real para implantar réplicas artificiales y lujos artificiales."
+  },
+  {
+    "id": "LC-080",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión semántica (Vocabulario)",
+    "enunciado": "Lea el fragmento:\n\n«El veredicto del jurado fue considerado **inicuo** por la opinión pública, ya que absolvió de todos los cargos al empresario a pesar de los videos nítidos y las transferencias bancarias que demostraban el desvío millonario de fondos públicos destinados a la alimentación escolar.»\n\nA partir del contexto de la situación, el término **inicuo** significa que la decisión fue:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Equitativa, legal y ajustada estrictamente a los procedimientos burocráticos.",
+      "B": "Injusto, malvado, contrario a la equidad y a la rectitud moral.",
+      "C": "Secreta, anónima y protegida por los protocolos de seguridad nacional.",
+      "D": "Inofensiva, irrelevante y carente de efectos en la economía del departamento."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El contexto muestra indignación pública porque se absolvió a alguien culpable de corrupción a pesar de las pruebas. Por tanto, el veredicto se evalúa como un acto falto de justicia y moralidad, lo que define el adjetivo 'inicuo'."
+  },
+  {
+    "id": "LC-081",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación semántica (Texto discontinuo)",
+    "enunciado": "[ANÁLISIS DE GRÁFICO SECTORIAL]: Un gráfico de torta representa los factores determinantes en la salud general de una población. El gráfico se divide en cuatro porciones:\n- Acceso al sistema hospitalario: 10%\n- Factores genéticos hereditarios: 20%\n- Factores ambientales (contaminación, agua potable): 20%\n- Estilo de vida y hábitos cotidianos (dieta, ejercicio, tabaco): 50%\n\nBasándose únicamente en la distribución de porcentajes del gráfico, ¿cuál de las siguientes conclusiones es correcta?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La inversión económica del gobierno debe dirigirse exclusivamente a la compra de equipos quirúrgicos para hospitales.",
+      "B": "Las campañas preventivas enfocadas en transformar los hábitos individuales de los ciudadanos tienen un margen potencial de impacto en la salud pública mayor que la ampliación física de la red hospitalaria.",
+      "C": "Las mutaciones genéticas determinan por completo el destino médico de los individuos sin importar sus dietas.",
+      "D": "El agua potable carece de relevancia en la prevención de afecciones de origen gastrointestinal."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El gráfico otorga un 50% de peso a los estilos de vida frente a un modesto 10% del sistema médico tradicional. Esto significa que intervenir sobre las conductas y hábitos cotidianos tiene un impacto potencial cinco veces mayor en la salud global que limitarse a expandir la infraestructura de los hospitales."
+  },
+  {
+    "id": "LC-082",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Relaciones lógicas)",
+    "enunciado": "Lea las frases de una investigación histórica:\n\n«Frase 1: La invención de la imprenta de tipos móviles redujo en un 95% el tiempo requerido para reproducir un texto escrito.\nFrase 2: Las ideas de la Reforma Protestante se propagaron por toda Europa en pocos meses, fracturando la hegemonía religiosa de la Iglesia Católica Occidental.»\n\n¿Qué relación histórica y lógica conecta a la Frase 1 con la Frase 2?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La Frase 1 presenta la condición técnica o catalizador tecnológico que viabilizó la rápida difusión descrita en la Frase 2.",
+      "B": "La Frase 2 es la causa teológica que obligó a los inventores a diseñar la imprenta en el siglo XV.",
+      "C": "Ambas frases describen procesos independientes que no guardan ninguna correlación sociológica.",
+      "D": "La Frase 1 refuta la veracidad empírica de las transformaciones religiosas de la Frase 2."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La reducción en el tiempo de copiado de libros (Frase 1) fue la base material y técnica indispensable que permitió que los panfletos e ideas religiosas circularan a una velocidad masiva e inédita, propiciando el impacto social narrado en la Frase 2."
+  },
+  {
+    "id": "LC-083",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de validez lógica (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente postulado lógico sobre la generalización apresurada:\n\n«La falacia de generalización apresurada (secundum quid) se configura cuando una persona extrae una conclusión universal e inductiva sobre un grupo entero basándose en una muestra estadística demasiado pequeña, atípica o insuficiente de casos particulares.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Es verdadero. Esta falacia ocurre cuando, por ejemplo, tras conocer a dos personas deshonestas de un país extranjero, se concluye de inmediato que *todos* los ciudadanos de esa nación son criminales. La muestra es insuficiente para validar una conclusión universal."
+  },
+  {
+    "id": "LC-084",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Filosófico)",
+    "enunciado": "Lea la cita de Immanuel Kant:\n\n«La ilustración es la liberación del hombre de su minoría de edad culpable. La minoría de edad es la incapacidad de servirse de tu propio entendimiento sin la guía de otro. Esta minoría de edad es culpable cuando su causa no reside en la falta de inteligencia, sino en la falta de decisión y valor para servirse por sí mismo de ella sin la dirección de un tercero. ¡Sapere aude! ¡Ten el valor de servirte de tu propio entendimiento!»\n\nSegún la perspectiva de Kant, el principal obstáculo para que los seres humanos alcancen la autonomía intelectual es:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La escasez de recursos económicos para acceder a universidades de prestigio internacional.",
+      "B": "La falta de un desarrollo cerebral biológico adecuado en las etapas de la juventud.",
+      "C": "La comodidad, la pereza y el temor psicológico que impiden pensar por cuenta propia, delegando las decisiones en autoridades externas.",
+      "D": "La censura violenta impuesta por los ejércitos coloniales en el siglo XVIII."
+    },
+    "text_evidence": "esta minoría de edad es culpable cuando su causa no reside en la falta de inteligencia, sino en la falta de decisión y valor",
+    "respuesta_correcta": "C",
+    "justificacion": "Kant aclara explícitamente que la causa de la minoría de edad no es la falta de inteligencia, sino de 'decisión y valor'. Esto significa que los frenos son la cobardía o la comodidad de dejar que otros (médicos, sacerdotes, gobernantes) piensen y decidan por uno."
+  },
+  {
+    "id": "LC-085",
+    "materia": "Lectura Crítica",
+    "competencia": "Intención comunicativa (Ensayo)",
+    "enunciado": "Lea el fragmento de un ensayo sociológico:\n\n«La gentrificación de los centros históricos urbanos es presentada por las alcaldías como un proceso de 'renovación y embellecimiento'. Lo que se silencia bajo este barniz estético es la violenta expulsión económica de los residentes tradicionales, desplazados por el aumento artificial de los arriendos y los impuestos comerciales. Al final, los barrios pierden su memoria histórica y su tejido comunitario para convertirse en una escenografía estandarizada para turistas de alto consumo.»\n\nLa intención principal del ensayista es:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Promover programas de subsidios hoteleros para incentivar el turismo internacional de lujo.",
+      "B": "Visibilizar y denunciar el impacto social negativo, el desplazamiento humano y la pérdida cultural que conlleva la gentrificación tras la fachada del embellecimiento urbano.",
+      "C": "Proponer planos arquitectónicos modernos para reestructurar las fachadas coloniales de las capitales.",
+      "D": "Explicar los modelos matemáticos que calculan el valor catastral de las propiedades residenciales."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor confronta la narrativa oficial amable ('renovación') develando lo que esta oculta ('violenta expulsión', 'pérdida de memoria'). Su meta comunicativa es alertar de manera crítica sobre los costos sociales reales de estos procesos urbanísticos."
+  },
+  {
+    "id": "LC-086",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Argumentativo)",
+    "enunciado": "Lea el siguiente texto y responda:\n\n«Es común escuchar que el mérito propio es el único determinante del éxito económico en las sociedades modernas: si trabajas lo suficientemente duro, prosperarás. No obstante, esta narrativa ignora el peso de la 'lotería de la cuna'. Un niño nacido en un hogar del decil más rico tiene acceso a educación privada de élite, redes de contactos influyentes y estabilidad nutricional desde la infancia. El esfuerzo personal es una variable importante, pero opera dentro de una estructura preexistente que amplifica las ventajas de unos y los obstáculos de otros.»\n\n¿Cuál de las siguientes afirmaciones resume de mejor manera la postura del autor frente a la meritocracia?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El esfuerzo personal es completamente inútil y nadie debería trabajar para mejorar su situación financiera.",
+      "B": "La meritocracia pura es un mito social, ya que el éxito económico está fuertemente condicionado por las desigualdades estructurales de origen.",
+      "C": "Los niños nacidos en hogares de bajos recursos poseen una inteligencia innata inferior a la de las clases altas.",
+      "D": "El Estado debería prohibir la educación privada para garantizar que todos los ciudadanos tengan los mismos contactos."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor no anula el valor del esfuerzo, pero matiza críticamente la idea de la meritocracia pura demostrando que las condiciones socioeconómicas de nacimiento ('lotería de la cuna') actúan como un filtro estructural que define las oportunidades de éxito."
+  },
+  {
+    "id": "LC-087",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Sintaxis)",
+    "enunciado": "Considere la siguiente frase de un ensayo histórico:\n\n«El rey se negó rotundamente a firmar la nueva constitución de la república; **por el contrario**, ordenó el arresto inmediato de los líderes parlamentarios y disolvió la asamblea nacional por la fuerza.»\n\n¿Qué relación lógica establece el conector resaltado en negrita (**por el contrario**) entre las dos acciones del monarca?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Consecuencia, porque el arresto fue provocado de manera democrática por los parlamentarios.",
+      "B": "Adición, ya que suma una lista de reformas constitucionales que el monarca aprobó posteriormente.",
+      "C": "Oposición o exclusión radical, pues muestra que en lugar de ceder al pacto constitucional, el rey ejecutó una acción autoritaria opuesta.",
+      "D": "Condición, debido a que la disolución de la asamblea dependía del presupuesto militar."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El conector 'por el contrario' es adveversativo exclusivo. Su función es descartar por completo la opción de la firma del documento para introducir en su lugar una respuesta radicalmente contraria y ofensiva (el arresto y la disolución)."
+  },
+  {
+    "id": "LC-088",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de las partes (Texto Discontinuo)",
+    "enunciado": "[DESCRIPCIÓN DE TABLA COMPARATIVA]: Una tabla evalúa el impacto ambiental de cuatro tipos de empaques para bebidas durante su ciclo de vida completo (producción, transporte y reciclaje):\n- Botella de Vidrio Retornable: Alta huella de carbono en transporte / Muy baja generación de residuos sólidos.\n- Botella de Plástico PET: Baja huella de carbono en transporte / Muy alta contaminación de ecosistemas marinos.\n- Lata de Aluminio: Media huella de carbono / Alta tasa de reciclaje eficiente a nivel global.\n- Tetra Brik (Cartón complejo): Baja huella de carbono / Muy difícil separación técnica de capas para reciclaje.\n\nSi una empresa de jugos busca minimizar de forma prioritaria la acumulación duradera de basura plástica en los océanos, ¿qué empaque debe descartar por completo?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La Botella de Vidrio Retornable.",
+      "B": "La Botella de Plástico PET.",
+      "C": "La Lata de Aluminio.",
+      "D": "El empaque de Tetra Brik."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El requerimiento de la empresa es específico: evitar la basura plástica en los mares. De acuerdo con los datos suministrados por la tabla, el empaque PET es el que se asocia directamente con la 'muy alta contaminación de ecosistemas marinos', por lo que debe ser el primero en descartarse."
+  },
+  {
+    "id": "LC-089",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de supuestos (Filosófico)",
+    "enunciado": "Lea el fragmento:\n\n«El filósofo utilitarista Jeremy Bentham diseñó el Panóptico: una arquitectura carcelaria circular con una torre de vigilancia en el centro. Desde las celdas, los prisioneros nunca pueden ver si el guardián los está observando en un momento específico, pero saben que *podría* estar haciéndolo. Como resultado, los reclusos asumen una conducta dócil y autocontrolada de manera permanente, internalizando la mirada del poder sin necesidad de castigos físicos constantes.»\n\n¿Cuál de los siguientes principios psicológicos sirve de supuesto para el funcionamiento del Panóptico según el texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los seres humanos solo modifican su comportamiento cuando reciben incentivos económicos directos.",
+      "B": "La incertidumbre ante una vigilancia constante y potencial es suficiente para obligar al individuo a autoregular su conducta según las normas impuestas.",
+      "C": "Los delincuentes prefieren las estructuras circulares porque reducen los niveles de claustrofobia.",
+      "D": "La violencia física directa es el único mecanismo eficaz para mantener el orden en una comunidad."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El panóptico funciona bajo el supuesto de que el prisionero, al no saber con certeza si lo miran pero consciente de que es una posibilidad constante, opta por vigilarse a sí mismo todo el tiempo, demostrando que la mera percepción o duda del control condiciona la conducta."
+  },
+  {
+    "id": "LC-090",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de intenciones (Literario)",
+    "enunciado": "Lea el fragmento del relato:\n\n«La campana de la iglesia dio las doce, pero en la mina el tiempo no se medía con horas, sino con paladas de carbón y metros de avance en la negrura. Los hombres salían a la superficie con los rostros idénticos, borrados por el hollín, como si la tierra les hubiera cobrado su identidad a cambio del pan diario. Al cruzar el umbral, ni sus propios perros los reconocían hasta que escuchaban sus voces gastadas.»\n\nLa descripción de los rostros 'borrados por el hollín' tiene el propósito estético de simbolizar:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La excelente higiene laboral y salud cutánea de la que gozaban los mineros del siglo XIX.",
+      "B": "La deshumanización, el desgaste extremo y la pérdida de individualidad que sufren los obreros bajo condiciones de trabajo alienantes.",
+      "C": "La lealtad incondicional de los animales domésticos en los entornos rurales del país.",
+      "D": "El uso de camuflaje táctico para evitar ser detectados por las autoridades aduaneras."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Al indicar que la tierra les cobraba su identidad y que salían con rostros 'borrados' e 'idénticos' hasta el punto de no ser reconocidos, el autor recurre a una metáfora literaria para ilustrar cómo el trabajo industrial despoja al ser humano de su singularidad y dignidad personal."
+  },
+  {
+    "id": "LC-091",
+    "materia": "Lectura Crítica",
+    "competencia": "Sentido de los enunciados (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente enunciado conceptual sobre la poesía y los géneros literarios:\n\n«El género lírico se caracteriza primordialmente por la narración objetiva, cronológica y documental de grandes epopeyas históricas y combates militares, prescindiendo por completo de las emociones o del mundo interior del autor.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Es falso. La descripción del enunciado corresponde más al género épico (narrativo). El género lírico se caracteriza justamente por lo contrario: la expresión de la subjetividad, las emociones, los sentimientos y el mundo interior del hablante lírico."
+  },
+  {
+    "id": "LC-092",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido global (Tesis)",
+    "enunciado": "Lea el fragmento científico:\n\n«La creencia de que la inteligencia es una capacidad fija e inmutable grabada en nuestros genes al nacer ha sido desmentida por la neurociencia moderna. A través del descubrimiento de la neuroplasticidad, hoy sabemos que el cerebro adulto continúa generando nuevas neuronas y reconfigurando sus conexiones sinápticas en respuesta al aprendizaje, el ejercicio mental y los estímulos ambientales. El cerebro no es un circuito cableado de fábrica, sino un músculo dinámico que se moldea con la experiencia.»\n\n¿Cuál de las siguientes opciones resume la idea principal del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La genética es el único factor determinante en la estructura del pensamiento matemático.",
+      "B": "El cerebro humano detiene de forma definitiva su desarrollo biológico al cumplir la mayoría de edad.",
+      "C": "Gracias a la neuroplasticidad, la inteligencia y las conexiones cerebrales son dinámicas y pueden continuar desarrollándose mediante el estímulo y el aprendizaje.",
+      "D": "Los ejercicios mentales provocan un desgaste celular irreversible en el lóbulo frontal de los adultos."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El texto refuta la noción fija de la inteligencia y resalta el concepto de neuroplasticidad, argumentando que el cerebro cambia y se adapta con las experiencias y el aprendizaje a lo largo de la vida, premisa contenida en la opción C."
+  },
+  {
+    "id": "LC-093",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación de enunciados (Coherencia)",
+    "enunciado": "Elija la opción que ordene lógicamente los siguientes fragmentos para conformar un texto coherente:\n\n1. Cuando la temperatura interna del nido desciende, los huevos dan origen a crías macho.\n2. En muchas especies de reptiles, como los cocodrilos y las tortugas marinas, el sexo de la descendencia no está determinado por cromosomas.\n3. Por el contrario, un incremento de pocos grados en el lodo de incubación produce un nacimiento masivo de hembras.\n4. Este fenómeno biológico, ligado a variables ambientales, vuelve a la especie altamente vulnerable ante las olas de calor del cambio climático.",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "2 - 1 - 3 - 4",
+      "B": "2 - 4 - 1 - 3",
+      "C": "1 - 3 - 2 - 4",
+      "D": "4 - 2 - 1 - 3"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El orden lógico es: La 2 introduce el tema general (determinación del sexo no cromosómica en reptiles). La 1 detalla el primer escenario térmico (baja temperatura genera machos). La 3 introduce el escenario opuesto usando el conector 'Por el contrario' (alta temperatura genera hembras). Y la 4 concluye analizando el impacto global de este proceso frente al cambio climático actual."
+  },
+  {
+    "id": "LC-094",
+    "materia": "Lectura Crítica",
+    "competencia": "Aproximación crítica (Análisis de discursos)",
+    "enunciado": "Lea el fragmento de un discurso de un candidato de campaña:\n\n«Ciudadanos, la delincuencia desbordada que azota nuestras calles no se soluciona con discursos académicos sobre sociología o pobreza. Los criminales no entienden de razones, solo entienden de fuerza. Si gano las elecciones, mi prioridad no será abrir bibliotecas ni gastar sus impuestos en costosos planes de empleo juvenil; mi prioridad será inundar las avenidas con soldados armados y duplicar el tamaño de los pabellones carcelarios. La paz se construye infundiendo miedo a quienes violan la ley.»\n\n¿Qué sesgo o limitación analítica deliberada presenta el discurso del candidato para convencer a sus votantes?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Ignorar por completo el costo financiero que tiene la adquisición de uniformes para los soldados.",
+      "B": "Reducir un problema multicausal complejo (la seguridad urbana) a una solución puramente punitiva y de fuerza, descartando de manera tajante la prevención social, el empleo y la educación como factores válidos.",
+      "C": "Sugerir que las bibliotecas públicas son las principales sedes de reclutamiento de las bandas criminales organizadas.",
+      "D": "Defender que el aumento del tamaño de las cárceles reduce de forma automática la inflación económica nacional."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El candidato emplea una retórica populista de mano dura. Su sesgo radica en plantear un falso dilema que descarta de plano las causas de fondo del crimen (pobreza, falta de oportunidades) para vender la fuerza física y el miedo como los únicos remedios posibles para la sociedad."
+  },
+  {
+    "id": "LC-095",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión semántica (Vocabulario)",
+    "enunciado": "Lea el fragmento:\n\n«La renuncia del ministro de salud fue un acto de **honestidad** intelectual; admitió públicamente que sus proyecciones epidemiológicas habían sido erróneas y prefirió dar un paso al costado para permitir que un equipo con mayor experiencia técnica asumiera la gestión de la crisis sanitaria.»\n\nEn el contexto anterior, la palabra **honestidad** denota una actitud de:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Sinceridad, rectitud, decencia y reconocimiento transparente de los propios errores o limitaciones.",
+      "B": "Cobardía, sumisión y pánico ante la fiscalización de los organismos de control del Estado.",
+      "C": "Arrogancia, soberbia y desdén hacia las opiniones de la comunidad científica internacional.",
+      "D": "Indiferencia absoluta frente al destino de la salud y el bienestar de los pacientes hospitalizados."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El fragmento exalta la acción del ministro porque reconoció sus equivocaciones y dejó su cargo de manera voluntaria en favor de expertos. Esto sintoniza el término con valores éticos de transparencia, franqueza y rectitud profesional."
+  },
+  {
+    "id": "LC-096",
+    "materia": "Lectura Crítica",
+    "competencia": "Articulación semántica (Texto discontinuo)",
+    "enunciado": "[ANÁLISIS DE CARICATURA EDUCATIVA]: Un dibujo muestra a un maestro sentado detrás de un escritorio con un molde metálico cuadrado en sus manos. Frente a él, hay una fila de niños pequeños que tienen cabezas redondas, triangulares y de estrellas. El maestro toma al primer niño (con cabeza de estrella) y le introduce la cabeza a la fuerza en el molde cuadrado. Al salir del molde por el otro lado de la mesa, todos los niños caminan en fila luciendo cabezas perfectamente cuadradas e idénticas, con miradas perdidas.\n\nEl argumento central del caricaturista apunta a criticar:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La falta de herramientas de geometría avanzada en los colegios de primaria.",
+      "B": "Un sistema educativo estandarizado y rígido que destruye la diversidad, la creatividad y la singularidad de los estudiantes para forzarlos a encajar en un patrón homogéneo y obediente.",
+      "C": "La preferencia de los maestros modernos por las figuras cúbicas en las clases de artes plásticas.",
+      "D": "El incremento del número de alumnos por salón de clases en las instituciones públicas."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La analogía visual del molde cuadrado que altera por la fuerza las diversas formas de las cabezas es una crítica clásica a la educación fabril o estandarizada, cuyo propósito latente es eliminar el pensamiento original o disidente para moldear individuos idénticos y dóciles útiles al sistema."
+  },
+  {
+    "id": "LC-097",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión del sentido local (Relaciones lógicas)",
+    "enunciado": "Lea los siguientes dos enunciados de un informe económico:\n\n«Enunciado 1: El banco central incrementó las tasas de interés de referencia al nivel más alto registrado en el último siglo.\nEnunciado 2: El consumo de las familias disminuyó drásticamente y la adquisición de créditos para vivienda cayó un 40% en los meses posteriores.»\n\n¿Qué relación macroeconómica une al Enunciado 1 con el Enunciado 2?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El Enunciado 2 es la causa directa que obligó al banco central a aplicar las medidas monetarias del Enunciado 1.",
+      "B": "El Enunciado 1 describe la medida o causa financiera que produjo las consecuencias o contracción del mercado descritas en el Enunciado 2.",
+      "C": "Ambos enunciados presentan situaciones que se contradicen mutuamente en la práctica bancaria.",
+      "D": "El Enunciado 2 desmiente la validez legal de las decisiones institucionales tomadas en el Enunciado 1."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El aumento de las tasas de interés encarece el costo del dinero (los préstamos). Por ende, el efecto o impacto directo e inmediato en la economía real es que las personas dejen de endeudarse y reduzcan su consumo, lo cual conecta al enunciado 1 como causa y al 2 como consecuencia."
+  },
+  {
+    "id": "LC-098",
+    "materia": "Lectura Crítica",
+    "competencia": "Evaluación de validez lógica (Verdadero o Falso)",
+    "enunciado": "Determine la veracidad del siguiente planteamiento sobre la estructura lógica formal:\n\n«La falacia ad hominem (ataque a la persona) se comete de forma legítima cuando un científico refuta las conclusiones de una investigación médica demostrando que el autor cometió errores matemáticos severos en las tablas de datos estadísticos.»",
+    "tipo": "verdadero_falso",
+    "opciones": {
+      "A": "Verdadero",
+      "B": "Falso"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Es falso. Demostrar errores matemáticos o metodológicos en los datos de un estudio no es una falacia *ad hominem*; es una refutación empírica válida enfocada en el *argumento*. La falacia *ad hominem* ocurre cuando se ataca la vida personal, carácter, religión o nacionalidad del autor para descalificar su idea, evadiendo la revisión de los datos."
+  },
+  {
+    "id": "LC-099",
+    "materia": "Lectura Crítica",
+    "competencia": "Reflexión a partir de un texto (Filosófico)",
+    "enunciado": "Lea el fragmento de René Descartes:\n\n«Advertí que, mientras deseaba pensar que todo era falso, era absolutamente necesario que yo, que lo pensaba, fuese alguna cosa. Y observando que esta verdad: \"pienso, luego existo\" (cogito ergo sum) era tan firme y segura que las más extravagantes suposiciones de los escépticos no eran capaces de conmoverla, juzgué que podía recibirla, sin escrúpulo, como el primer principio de la filosofía que buscaba.»\n\nEn la arquitectura del pensamiento cartesiano, la célebre conclusión «pienso, luego existo» funciona como:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Una hipótesis científica provisional sujeta a validación en laboratorios de física cuántica.",
+      "B": "Una verdad indubitable e inmune a la duda metódica que sirve de cimiento sólido sobre el cual reconstruir el conocimiento seguro.",
+      "C": "Una falacia lógica circular derivada de la traducción incorrecta del latín medieval.",
+      "D": "Una metáfora literaria creada para adornar los prólogos de los tratados de anatomía."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Descartes busca una certeza absoluta tras dudar de los sentidos y del mundo exterior. Encuentra que el acto mismo de dudar o pensar requiere obligatoriamente la existencia de un sujeto pensante, consolidando esta verdad como la base sólida (primer principio) de su filosofía."
+  },
+  {
+    "id": "LC-100",
+    "materia": "Lectura Crítica",
+    "competencia": "Intención comunicativa (Ensayo)",
+    "enunciado": "Lea el fragmento de un ensayo sobre ecología política:\n\n«La transición energética global hacia los vehículos eléctricos es promocionada por el norte global como la salvación verde del planeta. Sin embargo, este discurso oculta una geografía del despojo: la fabricación de estas baterías ecológicas exige una extracción masiva y destructiva de litio y cobalto en los salares de Sudamérica y las minas del Congo. El paisaje verde europeo se financia con la devastación hídrica y la explotación humana de los territorios del sur global. Cambiamos el tipo de combustible, pero mantuvimos intacta la estructura colonial del saqueo.»\n\n¿Cuál es el propósito central del autor del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Incentivar a los gobiernos sudamericanos a duplicar la exportación minera de litio sin regulaciones.",
+      "B": "Cuestionar críticamente el discurso ecológico de los vehículos eléctricos en los países desarrollados, evidenciando los costos socioambientales y coloniales que su producción traslada a las regiones del sur global.",
+      "C": "Explicar los beneficios mecánicos que tienen los motores eléctricos en comparación con los de gasolina tradicionales.",
+      "D": "Promover el turismo ecológico en las zonas mineras del continente africano."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor deconstruye la narrativa benevolente de la 'energía verde' del norte global demostrando que el costo ecológico y humano de su infraestructura se externaliza o traslada a países vulnerables, perpetuando lógicas coloniales de extracción, tal como concluye de forma idónea la opción B."
+  },
+  {
+    "id": "LC-300",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión de textos filosóficos",
+    "enunciado": "«Hay dos formas de ser musulmán, según que uno construya su islam sobre las suras que dicen 'Exterminad a los incrédulos hasta el último de ellos' (VIII, 7) o sobre estas otras: 'No está permitido forzar a nadie a creer' (II, 256), o bien: 'El que salva a un solo hombre debe ser considerado como si hubiese salvado a todos los hombres' (V, 32)». ¿Cómo puede describirse la relación que se establece entre la primera frase del fragmento y el resto del fragmento?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La primera oración contradice totalmente lo dicho en el resto del fragmento.",
+      "B": "La primera oración es un contraejemplo de lo dicho en el resto del fragmento.",
+      "C": "Lo dicho en el resto del fragmento es exactamente igual a la primera oración.",
+      "D": "Lo dicho en el resto del fragmento es una razón a favor de la primera oración."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "La primera oración plantea que hay dos formas de ser musulmán, y el resto del fragmento proporciona ejemplos de suras que justifican estas dos interpretaciones. Por lo tanto, el resto del texto ofrece razones que apoyan la afirmación inicial."
+  },
+  {
+    "id": "LC-301",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de conectores lógicos",
+    "enunciado": "«La creencia, por consiguiente, es cuestión de grado. Hablar de creer, no creer, dudar y suspender el juicio como si fueran las únicas posibilidades es como si, de lo escrito en un termómetro, tuviéramos que suponer que caliente, templado, frío y helado son las únicas temperaturas». La expresión 'por consiguiente' indica que:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Decir que la creencia es cuestión de grado es una razón a favor de lo dicho anteriormente.",
+      "B": "Decir que la creencia es cuestión de grado es una conclusión inferida a partir de lo dicho anteriormente.",
+      "C": "Decir que la creencia es cuestión de grado es una razón en contra de lo dicho anteriormente.",
+      "D": "Decir que la creencia es cuestión de grado constituye un buen ejemplo de lo dicho anteriormente."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El conector 'por consiguiente' indica una conclusión. El autor ha presentado ejemplos de diferentes grados de creencia (matemáticas, historia, futuro, ciencia, filosofía) y, a partir de estos, concluye que la creencia es cuestión de grado."
+  },
+  {
+    "id": "LC-302",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de fragmento narrativo",
+    "enunciado": "«Hoy me tiemblan las piernas y se me humedecen los ojos ante el recuerdo; pero entonces me empujaba un deseo irresistible y casi frenético; parecía haber perdido por completo el alma y la sensibilidad salvo para este objetivo». ¿Cuál de las siguientes opciones sintetiza correctamente el fragmento?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El narrador recuerda con nostalgia el momento de creación del nuevo ser y explica la felicidad que sintió durante el proceso.",
+      "B": "El narrador confiesa con tranquilidad el crimen cometido y relata la satisfacción que le produjo su hazaña.",
+      "C": "El narrador confiesa con alegría el hallazgo de una investigación y relata los beneficios que esto le trajo a su salud emocional.",
+      "D": "El narrador recuerda con repulsión el momento de creación del nuevo ser y explica las emociones que lo incitaron a continuar."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "El narrador muestra emoción al recordar el momento ('se humedecen los ojos'), pero describe una obsesión pasada que lo impulsó a actuar sin importar las consecuencias morales, lo que indica repulsión retrospectiva."
+  },
+  {
+    "id": "LC-303",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de argumentación",
+    "enunciado": "«No he venido a traer paz, sino espada» (Mateo X, 34-36), una espada que se convertirá en el símbolo de san Pablo, con el cual el cristianismo oficial ha construido su ideología más que con el Jesús de paz, de tolerancia y de amor. Este fragmento:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Expone un argumento del texto, pues allí se dice que el cristianismo es pacífico debido a su ideología.",
+      "B": "Argumenta parte de la tesis del autor, puesto que se muestra evidencia de la faceta violenta del cristianismo.",
+      "C": "Introduce la problemática general abordada por el autor, ya que todo gira en torno a la violencia religiosa.",
+      "D": "Anuncia la conclusión general del texto, porque parte de la argumentación del autor lleva a dicha afirmación."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor utiliza la cita bíblica como evidencia para sustentar su tesis de que el cristianismo también tiene una faceta violenta que ha sido utilizada para justificar actos de violencia histórica."
+  },
+  {
+    "id": "LC-304",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de tesis central",
+    "enunciado": "«Los hallazgos de la científica e investigadora colombiana Nubia Muñoz permitieron establecer por primera vez que el virus del papiloma humano (VPH) es la causa principal del cáncer de cérvix o de cuello uterino. [...] Sin embargo, la vacuna del VPH estuvo rodeada de polémica, especialmente en Colombia. [...] Algunas de las niñas presentaron mareos, dificultad para respirar, problemas en las piernas y de sensibilidad. [...] Pero todo resultó ser fruto de la autosugestión, según un estudio detallado del Instituto Nacional de Salud». ¿Qué se puede concluir de lo que se dice en el texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La evidencia demuestra que la vacuna contra el VPH tiene efectos secundarios.",
+      "B": "Hacen falta más estudios para establecer cuáles son los efectos de la vacuna contra el VPH.",
+      "C": "La causa de que el programa de vacunación se viniera abajo fue un rumor.",
+      "D": "La vacuna contra el virus VPH fue la causa de los problemas que presentaron las niñas."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El texto explica que los síntomas de las niñas fueron atribuidos erróneamente a la vacuna por un rumor, y que el Instituto Nacional de Salud no encontró relación causal entre la vacuna y los síntomas. El programa se vino abajo por este rumor, no por efectos reales de la vacuna."
+  },
+  {
+    "id": "LC-305",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de personajes y contexto",
+    "enunciado": "«Cuando a las fiestas de independencia, en noviembre, el mes que comenzaban las vacaciones, le agregaron los reinados de la belleza, las niñas que no quisimos ser monjas seguíamos en el colegio en preparación para secretariado comercial y contabilidad bilingüe. [...] ¿Cómo se camina? Dijimos todas: como Dios manda, sobre las dos piernas, a menos que seamos patulecas, o el tiburón nos haya arrancado un pie, la rodilla». ¿Cuál de las siguientes palabras significa lo mismo que la expresión 'patulecas' en el texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Torpes.",
+      "B": "Cojas.",
+      "C": "Mancas.",
+      "D": "Lentas."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "En el contexto, 'patulecas' se refiere a personas que caminan con dificultad o de manera torpe. El texto menciona 'a menos que seamos patulecas, o el tiburón nos haya arrancado un pie', lo que indica una condición que afecta la forma de caminar, pero no necesariamente cojera."
+  },
+  {
+    "id": "LC-306",
+    "materia": "Lectura Crítica",
+    "competencia": "Interpretación de textos literarios",
+    "enunciado": "«Johnny conocía a un tipo. A secas. Johnny era así, uno le decía: me encantaría multiplicar mis ahorros por mil. Y él: conozco a un tipo. [...] Johnny vivía a expensas de su mujer -mitad gringa, mitad ecuatoriana- y compraba hasta los calzoncillos de marca: alimentaba rigurosamente su pequeño sueño americano como si temiera que, si un día se olvidaba de hacerlo, se desplomara a sus pies como un pajarito famélico». El adjetivo que mejor describe a Johnny es:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Vividor.",
+      "B": "Generoso.",
+      "C": "Trabajador.",
+      "D": "Mezquino."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Johnny es descrito como alguien que vive a expensas de su mujer, cambia de carro cada seis meses, paga moteles y langostas, y mantiene un estilo de vida lujoso sin trabajar realmente. 'Vividor' (persona que vive a costa de otros o que disfruta de la vida sin preocuparse por el trabajo) es el adjetivo más adecuado."
+  },
+  {
+    "id": "LC-307",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos narrativos",
+    "enunciado": "«Supe que había sucedido algo irreparable en el momento en que un hombre me abrió la puerta de esa habitación de hotel y vi a mi mujer sentada al fondo, mirando por la ventana de muy extraña manera. [...] Agustina es un perro famélico y malherido que quisiera volver a casa y no lo logra». La frase 'Agustina es un perro famélico y malherido que quisiera volver a casa y no lo logra' es una metáfora utilizada por Aguilar para expresar:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La fragilidad de Agustina, debido a una enfermedad mental que la mantiene desconectada de la realidad.",
+      "B": "El desconcierto y la soledad de Agustina en medio de una enfermedad que deteriora su salud.",
+      "C": "El miedo que experimenta Agustina al estar en una habitación de hotel y no en su casa.",
+      "D": "La rabia animal que siente Agustina cada vez que Aguilar se acerca a hacerle preguntas."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "La metáfora del perro famélico y malherido que no puede volver a casa representa la fragilidad de Agustina y su desconexión con la realidad debido a una enfermedad mental. Aguilar la describe como alguien que quiere regresar a su estado normal pero no puede lograrlo."
+  },
+  {
+    "id": "LC-308",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos filosóficos",
+    "enunciado": "«Podemos elegir creer en la existencia de un Dios (cristiano); podemos elegir no hacerlo. Supongamos que elegimos creer. O Dios existe o no existe. Si Dios existe, todo está bien. Si no, entonces nuestra creencia es un inconveniente menor... Ahora supongamos, por otro lado, que elegimos no creer en la existencia de Dios. De nuevo, puede ser que Dios exista o que no. Si Dios no existe, todo está bien. Pero si Dios sí existe, ¡vaya que estamos en problemas! ... Así que cualquier persona inteligente debería creer en la existencia de Dios. Es el único camino prudente». A partir del enunciado 'cualquier persona inteligente debería creer en la existencia de Dios', se puede concluir lo siguiente:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Las personas que no son inteligentes no deben creer en Dios.",
+      "B": "Si yo soy una persona inteligente, debería creer en Dios.",
+      "C": "Cualquier persona creyente es inteligente.",
+      "D": "Algunas personas no creyentes deberían ser inteligentes."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El argumento (Apuesta de Pascal) establece un condicional: si eres inteligente (prudente), deberías creer en Dios. Por lo tanto, si una persona es inteligente (premisa), entonces debe creer en Dios (conclusión)."
+  },
+  {
+    "id": "LC-309",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de propósito del autor",
+    "enunciado": "«Obedezcan siempre a sus padres. Esta es la mejor política a la larga, porque si uno no lo hace ellos lo obligan. Los padres en su mayoría creen tener mejor criterio que uno, y uno por lo general se la pasa mejor honrando semejante superstición que actuando según su mejor criterio». El autor emplea el término 'superstición' al final del primer párrafo con la intención de sugerir que:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La creencia de que hay que obedecer siempre a los padres es injustificada.",
+      "B": "La idea de que los padres tienen mejor criterio que los hijos es injustificada.",
+      "C": "Los jóvenes deben honrar solamente las creencias injustificadas de los padres.",
+      "D": "Los jóvenes, a diferencia de los padres, tienen creencias injustificadas."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Mark Twain utiliza la ironía para sugerir que la creencia de que los padres tienen mejor criterio que los hijos es una 'superstición' (una creencia infundada). El autor está siendo sarcástico al llamarla superstición, en lugar de una verdad incuestionable."
+  },
+  {
+    "id": "LC-310",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de narrador",
+    "enunciado": "En 'El zorro es más sabio', ¿qué tipo de narrador utiliza el texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Narrador omnisciente.",
+      "B": "Narrador en segunda persona.",
+      "C": "Narrador protagonista.",
+      "D": "Narrador observador."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El narrador conoce todo lo que ocurre en la historia, incluyendo los pensamientos y motivaciones del Zorro, como su decisión de no publicar otro libro para evitar un fracaso."
+  },
+  {
+    "id": "LC-311",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de propósito del autor",
+    "enunciado": "En 'El general en su laberinto', ¿cuál es el propósito principal del autor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Describir el sentimiento de rechazo del mayordomo hacia el general.",
+      "B": "Mostrar que la vida de un general en campaña está llena de privaciones.",
+      "C": "Humanizar la figura de un veterano general en el final de su vida.",
+      "D": "Promover las virtudes medicinales de la amapola tomada en ayunas."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El autor describe al general como un hombre frágil, desmedrado y con síntomas de debilidad, mostrando su vulnerabilidad humana a pesar de su estatus militar. El propósito es humanizar la figura del general, mostrando su fragilidad física y emocional."
+  },
+  {
+    "id": "LC-312",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de tesis central",
+    "enunciado": "En el texto '¿Qué es el mal?', ¿cuál es la pregunta central que discute el autor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "¿Por qué Dios creó el mal, si Él es, por definición, bueno?",
+      "B": "¿De dónde proviene el mal provocado por el ser humano?",
+      "C": "¿Cuál es la diferencia entre el mal humano y el mal natural?",
+      "D": "¿Qué relación existe entre el mal y la responsabilidad humana?"
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El texto explora el origen del mal moral (Böse), es decir, el mal que procede de las acciones humanas, preguntándose cómo y por qué surge el mal en el corazón humano. Aunque menciona el mal natural (Übel), el enfoque central es el mal provocado por el ser humano."
+  },
+  {
+    "id": "LC-313",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de conceptos filosóficos",
+    "enunciado": "Según el texto '¿Qué es el mal?', en la tradición cristiana es fundamental la creencia en la libertad de la voluntad. ¿Cuál de las siguientes definiciones representa la antítesis de la postura cristiana frente al tema de la libertad?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Hedonismo: teoría que establece el placer como fin y fundamento de la vida.",
+      "B": "Fatalismo: creencia según la cual todo sucede ineludiblemente debido a la predeterminación o el destino.",
+      "C": "Relativismo: teoría que niega el carácter absoluto del conocimiento, al hacerlo relativo al sujeto que conoce.",
+      "D": "Escepticismo: doctrina que consiste en afirmar que la verdad no existe, o que, si existe, el hombre es incapaz de conocerla."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La postura cristiana defiende el libre albedrío (libertad de la voluntad). El fatalismo es lo opuesto: sostiene que todo está predeterminado y que la libertad humana es una ilusión. Por lo tanto, el fatalismo es la antítesis de la postura cristiana."
+  },
+  {
+    "id": "LC-314",
+    "materia": "Lectura Crítica",
+    "competencia": "Interpretación de infografías",
+    "enunciado": "Según la infografía de Twitter, ¿cuál de las siguientes opciones es una síntesis adecuada del apartado 'Algunos datos globales de Twitter'?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Twitter ha llegado a ser una red social muy popular, con millones de usuarios.",
+      "B": "Hoy Twitter es una red social muy valiosa gracias a sus millones de usuarios.",
+      "C": "Hoy Twitter es la red social más grande gracias a sus 200 millones de usuarios.",
+      "D": "Twitter nació como una red social popular gracias a sus millones de usuarios."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El apartado presenta datos sobre el crecimiento de Twitter en usuarios y tweets. La opción A resume adecuadamente la idea central: Twitter se ha vuelto una red social muy popular con millones de usuarios. Las otras opciones introducen valoraciones ('valiosa'), comparaciones ('la más grande') o datos incorrectos ('200 millones')."
+  },
+  {
+    "id": "LC-315",
+    "materia": "Lectura Crítica",
+    "competencia": "Interpretación de infografías",
+    "enunciado": "De acuerdo con la infografía de Twitter, ¿qué relación hay entre la persona al lado del encabezado, la posición de sus manos y el globo con la 't' de Twitter?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La 't' se refiere al lugar donde trabaja la persona.",
+      "B": "El globo conmemora el nacimiento del primer tweet.",
+      "C": "La 't' representa un mensaje enviado por la persona.",
+      "D": "La persona tiene un megáfono que representa la comunicación."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La infografía muestra a una persona con un globo de texto que contiene la 't' de Twitter, y sus manos están en posición de estar enviando o recibiendo algo. La 't' representa un mensaje (tweet) enviado por la persona."
+  },
+  {
+    "id": "LC-316",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de tesis central",
+    "enunciado": "El texto 'El teatro japonés en París' afirma que el teatro japonés es probablemente el que ha evolucionado más rápidamente en todo el mundo. ¿Cuál de las siguientes opciones es la idea principal del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Resulta curioso observar que los primeros ensayos dramáticos japoneses datan de la misma época en que vivió Calderón.",
+      "B": "Hacia 1600, un antiguo caballero o samurái contrajo nupcias con una bailarina llamada O-Kuni.",
+      "C": "El teatro japonés es probablemente el que ha evolucionado más rápidamente en el mundo, ya que es de creación muy reciente.",
+      "D": "Los elementos tradicionalistas de la nobleza se sintieron inquietos ante esta innovación."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La idea principal del texto es que el teatro japonés, aunque de creación reciente (comparado con el europeo), ha evolucionado muy rápidamente. Esta idea se enuncia al inicio y se desarrolla a lo largo del texto."
+  },
+  {
+    "id": "LC-317",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de consecuencias",
+    "enunciado": "Considere el siguiente fragmento del texto 'El teatro japonés en París': 'Pero los elementos tradicionalistas de la nobleza se sintieron inquietos ante esta innovación: opinaron que las actrices podían ejercer una influencia nefasta sobre las sanas costumbres del país'. ¿Cuál de las siguientes opciones señala una consecuencia del anterior fragmento?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El naciente teatro japonés no cumplía con los estándares del teatro europeo tradicionalista.",
+      "B": "Algunos pensaban que el naciente teatro japonés se distancia de las tradiciones del país.",
+      "C": "Los elementos tradicionalistas de la nobleza se oponían a cualquier innovación teatral.",
+      "D": "La nobleza tradicionalista de Japón canceló las presentaciones teatrales en el país."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "El fragmento describe la inquietud de la nobleza. La consecuencia directa de esta inquietud fue la prohibición de la aparición de mujeres en escena (en 1608) y, posteriormente, la supresión de los teatros (en 1652). La opción D sintetiza el efecto de esa oposición: la cancelación o prohibición de las presentaciones."
+  },
+  {
+    "id": "LC-318",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de propósito del autor",
+    "enunciado": "En el texto 'Consejos para la juventud', el autor dice: 'Obedezcan siempre a sus padres. Esta es la mejor política a la larga, porque si uno no lo hace ellos lo obligan'. ¿Qué relación hay entre estas dos afirmaciones?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La primera es una razón para afirmar la segunda.",
+      "B": "Son conclusiones de un argumento.",
+      "C": "Son premisas de un argumento.",
+      "D": "La segunda es una razón para afirmar la primera."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "La segunda afirmación ('porque si uno no lo hace ellos lo obligan') es la razón que justifica la primera ('obedezcan siempre a sus padres'). Primero se da el consejo (obedecer) y luego se da la razón (porque si no, ellos obligan)."
+  },
+  {
+    "id": "LC-319",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos filosóficos",
+    "enunciado": "En el texto 'Dios como problema', Saramago defiende la idea de que la religión es motivo de división entre los seres humanos. ¿Cuál de las siguientes afirmaciones contradice lo dicho por el autor?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Las prácticas y los dogmas religiosos suelen ser similares en los diferentes credos.",
+      "B": "Los preceptos religiosos estructuran y organizan la convivencia entre las personas.",
+      "C": "Las religiones han humanizado a Dios, a tal punto que lo han convertido en asesino.",
+      "D": "Las religiones buscan que sus dogmas sean principios únicos y de alcance universal."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "Saramago argumenta que la religión divide a los humanos (mata en nombre de Dios, genera conflictos). La opción B contradice esta idea al afirmar que los preceptos religiosos estructuran y organizan la convivencia, lo que implicaría que la religión tiene un efecto unificador y pacificador, opuesto a la tesis de Saramago."
+  },
+  {
+    "id": "LC-320",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de personajes",
+    "enunciado": "En el texto 'La sonrisa', ¿quién es el personaje femenino del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Una exnovia que el narrador enfrenta en el cine.",
+      "B": "Una mujer que el narrador conoce en el cine.",
+      "C": "Una vieja amiga que el narrador se encuentra en el cine.",
+      "D": "Un personaje ficticio que el narrador concibe como la pareja ideal."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El narrador describe cómo conoció a una mujer en la entrada del cine. Ella es una desconocida con la que entabla conversación. Por lo tanto, es una mujer que el narrador conoce en el cine."
+  },
+  {
+    "id": "LC-321",
+    "materia": "Lectura Crítica",
+    "competencia": "Interpretación de textos literarios",
+    "enunciado": "En el texto 'El origen del mal', ¿qué enunciado expresa una opinión similar a la del ermitaño?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El hambre, el amor, la ira y el miedo son el origen de todos los males.",
+      "B": "Los males que sufrimos dependen de nuestra historia personal.",
+      "C": "Solamente la experiencia permite conocer el origen del mal.",
+      "D": "El mal es propio de la condición humana."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "El ermitaño concluye: 'No es el hambre, el amor, la ira ni el miedo, la fuente de nuestros males, sino nuestra propia naturaleza. Ella es la que engendra el hambre, el amor, la ira y el miedo'. Esto equivale a decir que el mal es propio de la condición humana (nuestra naturaleza)."
+  },
+  {
+    "id": "LC-322",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos narrativos",
+    "enunciado": "En el texto 'Vendedor de nombres', la asignación de nombres se puede caracterizar como:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Una superstición antigua que ha sido abandonada.",
+      "B": "Una tarea religiosa realizada por monjes budistas.",
+      "C": "Una responsabilidad que recae solo en los padres.",
+      "D": "Una actividad comercial realizada por especialistas."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "El texto describe tienduchas donde se venden nombres, con vendedores que preparan horóscopos y meditan. Es claramente una actividad comercial realizada por especialistas (los vendedores de nombres)."
+  },
+  {
+    "id": "LC-323",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos narrativos",
+    "enunciado": "En el texto 'Vendedor de nombres', ¿quiénes realizan las acciones descritas en la frase 'Durante este tiempo preparan el horóscopo del futuro niño y se entregan a la meditación'?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Los padres de los futuros niños.",
+      "B": "Los vendedores de nombres.",
+      "C": "Los compradores de las tienduchas.",
+      "D": "Los seguidores de Buda."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El texto describe que los vendedores de nombres toman nota de los datos de los padres y luego preparan el horóscopo y se entregan a la meditación. Son los vendedores quienes realizan estas acciones."
+  },
+  {
+    "id": "LC-324",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos filosóficos",
+    "enunciado": "En el texto '¿Qué es el mal?', considere el siguiente fragmento: 'El mal no es algo positivo, que tenga existencia propia; es mera carencia, negación, privación de ser. Por eso Dios, dentro de esa lógica, no puede ser considerado como origen del mal. Él solo crea el ser'. Según concluye el fragmento, Dios NO puede ser considerado el origen del mal. Sin embargo, dicha idea requiere una mejor sustentación, ya que se podría argumentar que:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Dios no solo creó al hombre a su imagen y semejanza, sino que además lo dotó de libre albedrío.",
+      "B": "Fue el hombre el que, en medio de su vulnerabilidad, creó a Dios a su imagen y semejanza, y no al revés.",
+      "C": "Al ser el creador de todo cuanto existe, Dios sería también el responsable, aunque indirectamente, de todo lo que no existe.",
+      "D": "Lo que los humanos generalmente llamamos el 'mal' es una mera convención histórica y social frente a la que Dios es completamente ajeno."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "Si Dios es creador de todo, la ausencia de bien (el mal) podría considerarse responsabilidad indirecta suya. La opción C plantea una objeción lógica: si Dios crea el ser, también es responsable de lo que no es (la carencia de ser, el mal)."
+  },
+  {
+    "id": "LC-325",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos literarios",
+    "enunciado": "En el texto 'La noche de los feos', cuando el narrador usa la frase 'Usted admira a los hermosos, a los normales' supone que:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La sociedad establece los parámetros de la belleza física.",
+      "B": "Su experiencia personal determina si alguien es hermoso.",
+      "C": "La belleza física es parte de lo que conlleva ser normal.",
+      "D": "Los estándares de normalidad difieren de los de belleza."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El narrador sugiere que la mujer (y él mismo) admiran a los 'hermosos y normales', lo que implica que hay parámetros sociales establecidos sobre lo que se considera bello y normal. La sociedad define esos parámetros."
+  },
+  {
+    "id": "LC-326",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos literarios",
+    "enunciado": "En el texto 'La sonrisa', ¿en qué momento el padre de la narradora cambia su opinión sobre la labor de las mujeres?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Cuando llegó la invitación para participar en el concurso.",
+      "B": "Tras comenzar las vacaciones en el mes de noviembre.",
+      "C": "Después de la participación en el reinado de la belleza.",
+      "D": "Antes de la llegada de las fiestas de la independencia."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El texto dice: 'Cuando llegó la invitación para participar en la selección departamental de belleza, quien se animó fue papá. Decía: 'por primera vez un papel oficial no es para cobrar impuestos'. Esto indica que el padre cambió su opinión cuando llegó la invitación."
+  },
+  {
+    "id": "LC-327",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos argumentativos",
+    "enunciado": "En el texto 'Aporofobia, el miedo al pobre', el autor afirma que la aporofobia es lo que alimenta el rechazo a inmigrantes y refugiados. ¿Cuál de los siguientes fragmentos cumple con la función de ejemplificar el concepto de aporofobia?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Nadie pone reparos a que un jeque árabe se instale en un país europeo, ni a facilitar la residencia a un futbolista famoso.",
+      "B": "En la palabra 'aporofobia' dicha Fundación ha encontrado un término muy significativo.",
+      "C": "La recesión económica ha intensificado el miedo a la pobreza porque nos ha hecho ver que todos somos vulnerables.",
+      "D": "Lo ha denominado 'aporofobia', un fenómeno que está en el origen de las corrientes xenofóbicas y racistas."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El autor explica que la aporofobia es el rechazo al pobre, no al extranjero en sí. El ejemplo del jeque árabe o el futbolista famoso (ricos) que no son rechazados ilustra perfectamente que el rechazo es hacia los pobres, no hacia los extranjeros."
+  },
+  {
+    "id": "LC-328",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión de textos argumentativos",
+    "enunciado": "En el texto 'Aporofobia, el miedo al pobre', considere el siguiente fragmento: 'La recesión económica ha exacerbado el miedo a la pobreza porque nos ha hecho ver que todos somos vulnerables...'. ¿Qué se puede concluir de la idea expresada en la frase anterior?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Que no existe ninguna relación entre el contexto de una crisis económica y el creciente temor a la pobreza.",
+      "B": "Que las crisis económicas son una buena oportunidad para construir una sociedad más justa.",
+      "C": "Que el trabajo y el esfuerzo serán siempre recompensados y que, por tanto, el que es pobre es pobre porque quiere.",
+      "D": "Que cualquier persona puede quedarse de repente sin trabajo y sin medios de subsistencia."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "El fragmento sugiere que la recesión hace visible la vulnerabilidad de todos, incluso de quienes no eran pobres. La conclusión es que cualquiera puede caer en la pobreza, lo que genera miedo. La opción D refleja esta idea de que cualquier persona puede quedarse sin trabajo y medios de subsistencia."
+  },
+  {
+    "id": "LC-329",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos argumentativos",
+    "enunciado": "En el texto 'Muertos de hambre', ¿cuál de los siguientes fragmentos contiene una crítica de la autora sobre la desigualdad social durante la pandemia?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Me hacen falta muchas cosas pero no sé cuáles son. Desconecté, como un módulo desprendido de una nave, y orbito un planeta que soy yo misma, mudo, sordo, a veces ciego.",
+      "B": "En el umbral del edificio había un hombre desastroso, con varias bolsas en las que llevaba lo que tenía para vivir en la calle.",
+      "C": "Según las estimaciones, en 2019 había 821 millones de personas en situación de inseguridad alimentaria.",
+      "D": "He escuchado demasiadas veces esa frase de ceguera descomunal: 'Esta pandemia demuestra que el virus no discrimina'. ¿No discrimina? El nuevo mendigo no ha vuelto a aparecer. Yo sigo haciendo mis compras. Con tarjeta de crédito."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "La autora critica la frase 'el virus no discrimina' porque, en realidad, la pandemia afecta de manera desigual a ricos y pobres. Ella contrasta su propia situación (compras con tarjeta de crédito) con la desaparición del mendigo, señalando la hipocresía del discurso de igualdad."
+  },
+  {
+    "id": "LC-330",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de propósito del autor",
+    "enunciado": "Teniendo en cuenta su estructura, tono y estilo, ¿en qué tipo de publicación podría aparecer el texto 'Muertos de hambre'?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "En un libro de historia sobre los impactos sociales y económicos de la pandemia.",
+      "B": "En la sección de opinión de un periódico o revista.",
+      "C": "En una pieza publicitaria que promociona una nueva tarjeta de crédito.",
+      "D": "En la sección de noticias de un medio de comunicación."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El texto tiene un tono personal, reflexivo y crítico. La autora comparte su experiencia personal y reflexiona sobre la desigualdad. Este estilo es característico de los artículos de opinión o columnas en periódicos y revistas."
+  },
+  {
+    "id": "LC-331",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión de textos científicos",
+    "enunciado": "En el texto 'El gorila invisible', considere la siguiente oración: 'A nadie que viera el video sin tener que realizar aquella tarea se le hubiera escapado la presencia del gorila'. ¿Cuál de las siguientes opciones expresa el significado de la oración?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Ninguna persona que vea el video y realice la tarea solicitada por los investigadores notará al gorila.",
+      "B": "Cualquier persona que vea el video y no realice la tarea solicitada por los investigadores notará al gorila.",
+      "C": "Ninguna persona que vea el video notará la presencia del gorila.",
+      "D": "Cualquier persona que observe el video notará la presencia del gorila."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La oración establece un condicional: si alguien ve el video sin realizar la tarea de contar los pases, no se le escaparía la presencia del gorila. Es decir, cualquier persona que vea el video sin la tarea notará al gorila."
+  },
+  {
+    "id": "LC-332",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos científicos",
+    "enunciado": "En el texto 'El gorila invisible', ¿cuál de las siguientes opciones presenta el caso que utilizan los autores del texto para argumentar que nuestro comportamiento social tiene en cuenta las limitaciones de la atención?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Una concentración muy intensa en una actividad puede volver a las personas momentáneamente ciegas y sordas.",
+      "B": "Los pasajeros de un carro dejan de hablar cuando el conductor está realizando una maniobra arriesgada.",
+      "C": "Muchas personas que ven el video del gorila niegan que el gorila realmente esté en el video.",
+      "D": "Podemos estar ciegos a objetos ante nuestros ojos y ser inconscientes de nuestra ceguera."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El texto inicia con el ejemplo de los pasajeros que dejan de hablar cuando el conductor está adelantando un camión en una carretera angosta, para ilustrar cómo el comportamiento social reconoce las limitaciones de la atención."
+  },
+  {
+    "id": "LC-333",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos literarios",
+    "enunciado": "En el texto 'Continuidad de los parques', ¿cuántas voces intervienen en la narración del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Ninguna, pues lo que dicen los personajes que aparecen en la historia no se presenta.",
+      "B": "Una: la voz del narrador no identificado que relata la historia.",
+      "C": "Dos: la voz del lector de la novela que aparece en la historia y la del narrador de esa novela.",
+      "D": "Cuatro: las voces de los dos amantes, la del lector de la novela y la del jardinero."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El cuento tiene dos niveles narrativos: 1) la voz del narrador que describe al lector leyendo una novela, y 2) la voz del narrador de la novela que el lector está leyendo (que describe a los amantes). Por lo tanto, hay dos voces narrativas."
+  },
+  {
+    "id": "LC-334",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de tesis central",
+    "enunciado": "En el texto sobre la Ley Seca, ¿cuál de las siguientes opciones presenta mejor la tesis central del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La Ley Seca tendrá consecuencias positivas cuando se aplique.",
+      "B": "La Ley Seca, aunque evitaría actos criminales, no se puede establecer.",
+      "C": "La Ley Seca es una ley que prohíbe el consumo inmoderado de alcohol.",
+      "D": "La Ley Seca es un prodigio que acabará con todos los crímenes de sangre."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El autor reconoce que la Ley Seca evitaría crímenes ('es cierto, ciertísimo'), pero argumenta que es 'un imposible físico y moral'. La tesis central es que, aunque sería beneficiosa en teoría, no se puede establecer en la práctica."
+  },
+  {
+    "id": "LC-335",
+    "materia": "Lectura Crítica",
+    "competencia": "Comprensión de textos argumentativos",
+    "enunciado": "En el texto sobre la Ley Seca, el autor dice que la aplicación de la Ley Seca puede verse como un 'prodigio de redención'. ¿Por qué el autor la considera así?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Permitiría cumplir una meta importante.",
+      "B": "Acabaría con la química y el reino vegetal.",
+      "C": "Haría que la gente se envenenara con otras sustancias.",
+      "D": "No evitaría los crímenes de sangre y otras bestialidades."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El autor dice que la Ley Seca es un 'prodigio de redención' si por ella logran acabarse los crímenes que el consumo de alcohol provoca. Es decir, sería un prodigio porque permitiría cumplir una meta importante: la reducción de los crímenes asociados al alcohol."
+  },
+  {
+    "id": "LC-336",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación de narrador",
+    "enunciado": "En el texto 'El asalto', ¿a quién corresponde la voz que narra el texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "El ladrón que resultó herido.",
+      "B": "Un narrador ajeno a los hechos.",
+      "C": "Quien habla a través del teléfono.",
+      "D": "El pensamiento del mastín."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "El narrador no es un personaje de la historia; describe los hechos desde afuera, sin identificarse con ningún personaje. Es un narrador omnisciente ajeno a los hechos (narrador en tercera persona)."
+  },
+  {
+    "id": "LC-337",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos literarios",
+    "enunciado": "En el texto 'La noche de los feos', cuando el narrador usa la frase 'Usted admira a los hermosos, a los normales' supone que:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "La sociedad establece los parámetros de la belleza física.",
+      "B": "Su experiencia personal determina si alguien es hermoso.",
+      "C": "La belleza física es parte de lo que conlleva ser normal.",
+      "D": "Los estándares de normalidad difieren de los de belleza."
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El narrador asume que la mujer (y él mismo) admiran a los 'hermosos y normales', lo que implica que hay estándares sociales establecidos sobre lo que se considera bello y normal. La sociedad define esos parámetros."
+  },
+  {
+    "id": "LC-338",
+    "materia": "Lectura Crítica",
+    "competencia": "Identificación del discurso y del hablante",
+    "enunciado": "En el fragmento de 'Fahrenheit 451', ¿a quién está dirigido el discurso y quién lo pronuncia?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Dirigido a Montag y pronunciado por Ray Bradbury.",
+      "B": "Dirigido a quienes valoran la filosofía y la sociología, y pronunciado por Montag.",
+      "C": "Dirigido a Montag y pronunciado por otro de los Guardianes de la Felicidad.",
+      "D": "Dirigido a quienes valoran la filosofía y la sociología, y pronunciado por un Guardián de la Felicidad."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El discurso está claramente dirigido a Montag ('Tranquilidad, Montag', 'Dependemos de ti'), y quien lo pronuncia es otro de los Guardianes de la Felicidad (menciona 'tú, yo y los demás somos los Guardianes de la Felicidad')."
+  },
+  {
+    "id": "LC-339",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de propósito del hablante",
+    "enunciado": "En el fragmento de 'Fahrenheit 451', considere el siguiente fragmento: 'Tenemos nuestros dedos en el dique. Hay que aguantar firme. No permitir que el torrente de melancolía y la funesta Filosofía ahoguen nuestro mundo. Dependemos de ti'. Mediante estas palabras, la persona que pronuncia el discurso busca:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Deleitar y adular a su interlocutor.",
+      "B": "Echarle en cara a su interlocutor su falta de compromiso.",
+      "C": "Recriminarle a su interlocutor su ignorancia sobre el tema que les ocupa.",
+      "D": "Motivar y comprometer a su interlocutor en la lucha a favor de una causa."
+    },
+    "respuesta_correcta": "D",
+    "justificacion": "El hablante utiliza un lenguaje metafórico ('dedos en el dique', 'torrente') y apela directamente a Montag ('Dependemos de ti') para motivarlo a comprometerse con la causa de mantener la felicidad superficial y evitar la filosofía que podría perturbar el orden establecido."
+  },
+  {
+    "id": "LC-340",
+    "materia": "Lectura Crítica",
+    "competencia": "Análisis de textos narrativos",
+    "enunciado": "En el texto 'El arte de conversar', ¿qué función cumple la anécdota de la vaca dentro del texto?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Explicar la forma adecuada de tratar con el ganado sano que muere víctima de accidentes.",
+      "B": "Justificar cómo don Pepe Sierra obtuvo fama y fortuna a través del trato cauteloso que les daba a sus empleados.",
+      "C": "Ejemplificar la manera en que se puede conocer la personalidad de la gente a través de los sucesos de su vida.",
+      "D": "Argumentar que prueba cuál es la manera correcta de conducir una conversación interesante."
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "La autora del texto explica que las anécdotas son 'la sal de la conversación' y permiten conocer la personalidad de las personas a través de los hechos de su vida. La anécdota de la vaca se presenta precisamente como un ejemplo de cómo una anécdota revela la personalidad de don Pepe Sierra."
+  },
+  {
+    "id": "LC-341",
+    "materia": "Lectura Crítica",
+    "competencia": "Síntesis de textos",
+    "enunciado": "Considere la siguiente síntesis del texto 'El arte de conversar': 'Según la autora, el buen conversador no es aquel que habla de sí mismo; más bien, es el que dirige una conversación, procurando que todos participen. El buen conversador emplea relatos valiosos que permiten conocer la personalidad de los individuos a través de los eventos de su vida, como ocurre, por ejemplo, con la anécdota de la vaca, gracias a la cual se puede conocer la personalidad del acaudalado antioqueño don Pepe Sierra, quien cuidaba de sus bienes'. La anterior síntesis es:",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "Incompleta, puesto que no reproduce la anécdota de la vaca.",
+      "B": "Completa, pues recoge las ideas centrales del autor sobre el arte de conversar y la importancia que les confiere a las anécdotas.",
+      "C": "Precisa, ya que usa las mismas palabras del autor para dar cuenta de su tesis central.",
+      "D": "Imprecisa, dado que no emplea las mismas palabras que emplea el autor para exponer sus puntos de vista."
+    },
+    "respuesta_correcta": "B",
+    "justificacion": "La síntesis recoge las ideas centrales del texto: la definición del buen conversador (no habla de sí mismo, dirige la conversación, todos participan), la importancia de las anécdotas para conocer la personalidad, y el ejemplo de don Pepe Sierra. Aunque no reproduce la anécdota completa, la síntesis es completa en cuanto a las ideas centrales."
+  }
+]
