@@ -725,8 +725,17 @@
       const mc = MATERIA_COLORS[pregunta.materia] || { bg: 'bg-gray-100', text: 'text-gray-700' };
       DOM.quizMateriaBadge.className = `px-3 py-1 rounded-full text-xs font-bold ${mc.bg} ${mc.text}`;
       DOM.quizMateriaBadge.textContent = pregunta.materia;
+
+      // 🆕 Mostrar ID de la pregunta
+const idBadge = document.getElementById('quiz-id-badge');
+if (idBadge) {
+  idBadge.textContent = `ID: ${pregunta.id}`;
+}
     
       DOM.quizCompetenciaText.textContent = pregunta.competencia || 'Competencia general';
+
+
+      
     
       renderizarEnunciado(pregunta);
     
