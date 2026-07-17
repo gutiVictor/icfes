@@ -193,6 +193,47 @@
   
     async function init() {
       await cargarPreguntas();
+
+        // 🆕 VERIFICAR SI HAY PARÁMETRO DE PREGUNTA
+  const params = new URLSearchParams(window.location.search);
+  const preguntaId = params.get('pregunta');
+  
+  if (preguntaId) {
+    // Buscar la pregunta en todas las cargadas
+    const pregunta = state.todasPreguntas.find(p => p.id === preguntaId);
+    if (pregunta) {
+      // Configurar modo "vista previa"
+      state.modo = 'debug';
+      state.preguntasSesion = [pregunta];
+      state.indiceActual = 0;
+      state.respuestas = [];
+      state.correctas = 0;
+      state.incorrectas = 0;
+      
+      // Ocultar timer en modo debug
+      state.timerActivo = false;
+      
+      // Ir directamente al quiz
+      mostrarPantalla('quiz');
+      renderizarPregunta();
+      
+      // Mostrar indicador de debug
+      const badge = document.createElement('span');
+      badge.className = 'fixed top-20 right-4 z-50 px-3 py-1 rounded-full text-xs font-bold bg-yellow-400 text-black shadow-lg';
+      badge.textContent = '🔍 DEBUG: ' + preguntaId;
+      document.body.appendChild(badge);
+      
+      return;
+    } else {
+      console.warn('⚠️ Pregunta no encontrada:', preguntaId);
+    }
+  }
+  
+  // ✅ Si no hay parámetro, sigue con la app normal
+  configurarTema();
+  configurarEventos();
+
+      
       configurarTema();
       configurarEventos();
       
@@ -1347,9 +1388,9 @@
       const texto = pregunta.enunciado;
       const imgRegex = /!\[(.*?)\]\((.*?)\)/;
       const match = texto.match(imgRegex);
-  
+    
       DOM.preguntaEnunciado.innerHTML = '';
-  
+    
       if (match) {
         const altText = match[1];
         const imgUrl = match[2];
@@ -1364,12 +1405,35 @@
         
         const imgContainer = document.createElement('div');
         imgContainer.className = 'enunciado-img-container animate-fade-in';
-        imgContainer.innerHTML = `
-          <img src="${imgUrl}" alt="${altText}" class="enunciado-img" title="Click para abrir en pestaña completa">
-        `;
-        imgContainer.querySelector('img').addEventListener('click', () => {
+        
+        // Crear la imagen con manejo de error
+        const img = document.createElement('img');
+        img.src = imgUrl;
+        img.alt = altText;
+        img.className = 'enunciado-img';
+        img.title = 'Click para abrir en pestaña completa';
+        
+        // 🆕 MANEJO DE ERROR: si la imagen no carga
+        img.addEventListener('error', function() {
+          this.style.display = 'none';
+          
+          // Crear placeholder
+          const placeholder = document.createElement('div');
+          placeholder.className = 'enunciado-img-placeholder';
+          placeholder.innerHTML = `
+            <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+            <span class="text-xs text-gray-400">Imagen no disponible</span>
+          `;
+          this.parentNode.appendChild(placeholder);
+        });
+        
+        img.addEventListener('click', () => {
           window.open(imgUrl, '_blank');
         });
+        
+        imgContainer.appendChild(img);
         DOM.preguntaEnunciado.appendChild(imgContainer);
         
         if (partes[1] && partes[1].trim()) {
@@ -1384,7 +1448,7 @@
         textNode.textContent = texto;
         DOM.preguntaEnunciado.appendChild(textNode);
       }
-  
+    
       setTimeout(renderizarFormulas, 100);
     }
   

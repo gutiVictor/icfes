@@ -33,7 +33,7 @@
     "id": "LC-003",
     "materia": "Lectura Crítica",
     "competencia": "Articulación de las partes de un texto (Discontinuo)",
-    "enunciado": "[DESCRIPCIÓN DE INFOGRAFÍA]: Imagina una infografía sobre el calentamiento global. En la parte superior hay un dibujo de la Tierra sudando con un termómetro. Abajo hay dos columnas: la izquierda muestra barras de emisiones de CO2 en aumento (2000-2026), y la derecha muestra siluetas de fábricas y autos. En el pie de página dice en letras pequeñas: 'Datos tomados de informes ambientales de la ONU'.\n\n¿Qué función cumple el texto del pie de página en la infografía descrita?",
+    "enunciado": "![Infografía calentamiento global](data/img/infografia_calentamiento.png) Imagina una infografía sobre el calentamiento global. En la parte superior hay un dibujo de la Tierra sudando con un termómetro. Abajo hay dos columnas: la izquierda muestra barras de emisiones de CO2 en aumento (2000-2026), y la derecha muestra siluetas de fábricas y autos. En el pie de página dice en letras pequeñas: 'Datos tomados de informes ambientales de la ONU'.\n\n¿Qué función cumple el texto del pie de página en la infografía descrita?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "Explicar las soluciones científicas necesarias para detener el aumento de la temperatura mundial.",
@@ -121,7 +121,7 @@
     "id": "LC-009",
     "materia": "Lectura Crítica",
     "competencia": "Articulación semántica (Texto discontinuo)",
-    "enunciado": "[ANÁLISIS DE CARICATURA POLITICA]: En una viñeta se observa a dos políticos idénticos parados en un podio de campaña. El de la izquierda tiene un letrero que dice 'PROMESAS A'. El de la derecha tiene un letrero que dice 'PROMESAS B'. Frente a ellos hay una multitud de ciudadanos aplaudiendo con fervor. Detrás de los podios, ambos políticos están conectados por cables a la misma máquina de dinero etiquetada como 'Grandes Monopolios'.\n\n¿Cuál es el mensaje subyacente que el caricaturista intenta comunicar?",
+    "enunciado": "![Caricatura política](data/img/caricatura_politica.png) En una viñeta se observa a dos políticos idénticos parados en un podio de campaña. El de la izquierda tiene un letrero que dice 'PROMESAS A'. El de la derecha tiene un letrero que dice 'PROMESAS B'. Frente a ellos hay una multitud de ciudadanos aplaudiendo con fervor. Detrás de los podios, ambos políticos están conectados por cables a la misma máquina de dinero etiquetada como 'Grandes Monopolios'.\n\n¿Cuál es el mensaje subyacente que el caricaturista intenta comunicar?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "La ciudadanía prefiere las propuestas del candidato A debido a su carisma en el podio.",
@@ -299,7 +299,7 @@
     "id": "LC-021",
     "materia": "Lectura Crítica",
     "competencia": "Articulación semántica (Texto discontinuo)",
-    "enunciado": "[ANÁLISIS DE AFICHE PUBLICITARIO]: Un cartel de una campaña gubernamental muestra la fotografía de un bosque frondoso. En el centro, hay una enorme huella digital humana pixelada que reemplaza los árboles caídos de una sección. El eslogan dice en letras grandes: 'Tu identidad destruye la de ellos. Cuida el uso del papel'.\n\n¿A qué apela principalmente la campaña para persuadir al lector?",
+    "enunciado": "![Afiche ambiental](data/img/afiche_ambiental.png) Un cartel de una campaña gubernamental muestra la fotografía de un bosque frondoso. En el centro, hay una enorme huella digital humana pixelada que reemplaza los árboles caídos de una sección. El eslogan dice en letras grandes: 'Tu identidad destruye la de ellos. Cuida el uso del papel'.\n\n¿A qué apela principalmente la campaña para persuadir al lector?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "A la lógica económica sobre los altos costos de importación de la madera.",
@@ -520,7 +520,7 @@
     "id": "LC-036",
     "materia": "Lectura Crítica",
     "competencia": "Articulación semántica (Texto discontinuo)",
-    "enunciado": "[ANÁLISIS DE CARICATURA SOCIAL]: Un dibujo muestra a un hombre sentado frente a un televisor gigante que emite luces de colores brillantes. El hombre tiene la boca abierta y sus ojos han sido reemplazados por dos espirales de hipnosis. De su cabeza sale un cable que va directo a un enchufe en la pared rotulado como 'Opinión Pública Pre-fabricada'.\n\n¿Cuál es el argumento central del caricaturista al usar la analogía del cable en la cabeza?",
+    "enunciado": "![Caricatura medios](data/img/caricatura_medios.png) Un dibujo muestra a un hombre sentado frente a un televisor gigante que emite luces de colores brillantes. El hombre tiene la boca abierta y sus ojos han sido reemplazados por dos espirales de hipnosis. De su cabeza sale un cable que va directo a un enchufe en la pared rotulado como 'Opinión Pública Pre-fabricada'.\n\n¿Cuál es el argumento central del caricaturista al usar la analogía del cable en la cabeza?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "La televisión moderna es una excelente fuente de energía renovable para los hogares urbanos.",
@@ -741,7 +741,7 @@
     "id": "LC-051",
     "materia": "Lectura Crítica",
     "competencia": "Articulación semántica (Texto discontinuo)",
-    "enunciado": "[ANÁLISIS DE VIÑETA]: En un cómic de tres recuadros se observa a un niño mirando una biblioteca llena de libros clásicos. Recuadro 1: El niño toma un libro grueso que dice 'Historia Universal'. Recuadro 2: Abre el libro y del interior brota una densa nube de polvo gris que lo hace toser. Recuadro 3: El niño cierra el libro con fuerza y dice: 'Con razón la historia es tan aburrida, está hecha enteramente de polvo'.\n\n¿En qué consiste el error de razonamiento o equívoco del personaje del cómic?",
+    "enunciado": "![Cómic biblioteca](data/img/comic_biblioteca.png) En un cómic de tres recuadros se observa a un niño mirando una biblioteca llena de libros clásicos. Recuadro 1: El niño toma un libro grueso que dice 'Historia Universal'. Recuadro 2: Abre el libro y del interior brota una densa nube de polvo gris que lo hace toser. Recuadro 3: El niño cierra el libro con fuerza y dice: 'Con razón la historia es tan aburrida, está hecha enteramente de polvo'.\n\n¿En qué consiste el error de razonamiento o equívoco del personaje del cómic?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "Confundir el deterioro físico del objeto (el polvo por el desuso) con el valor o la naturaleza conceptual del contenido intelectual del libro.",
@@ -962,7 +962,7 @@
     "id": "LC-066",
     "materia": "Lectura Crítica",
     "competencia": "Articulación semántica (Texto discontinuo)",
-    "enunciado": "[ANÁLISIS DE INFOGRAFÍA DE CIUDADADANÍA]: Un cartel muestra un gran árbol cuyas raíces están rotuladas como 'Educación Básica', 'Respeto al Bien Público' y 'Participación Comunitaria'. El tronco del árbol dice 'Democracia Estable' y sus frutos maduros tienen los nombres de 'Equidad Social', 'Seguridad Urbano' y 'Libertad de Expresión'.\n\nDe acuerdo con la analogía botánica del cartel, se puede concluir que:",
+    "enunciado": "![Infografía ciudadanía](data/img/infografia_ciudadania.png) Un cartel muestra un gran árbol cuyas raíces están rotuladas como 'Educación Básica', 'Respeto al Bien Público' y 'Participación Comunitaria'. El tronco del árbol dice 'Democracia Estable' y sus frutos maduros tienen los nombres de 'Equidad Social', 'Seguridad Urbano' y 'Libertad de Expresión'.\n\nDe acuerdo con la analogía botánica del cartel, se puede concluir que:",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "La equidad social es un recurso natural que crece de forma silvestre en los bosques colombianos.",
@@ -1405,7 +1405,7 @@
     "id": "LC-096",
     "materia": "Lectura Crítica",
     "competencia": "Articulación semántica (Texto discontinuo)",
-    "enunciado": "[ANÁLISIS DE CARICATURA EDUCATIVA]: Un dibujo muestra a un maestro sentado detrás de un escritorio con un molde metálico cuadrado en sus manos. Frente a él, hay una fila de niños pequeños que tienen cabezas redondas, triangulares y de estrellas. El maestro toma al primer niño (con cabeza de estrella) y le introduce la cabeza a la fuerza en el molde cuadrado. Al salir del molde por el otro lado de la mesa, todos los niños caminan en fila luciendo cabezas perfectamente cuadradas e idénticas, con miradas perdidas.\n\nEl argumento central del caricaturista apunta a criticar:",
+    "enunciado": "![Caricatura educación](data/img/caricatura_educacion.png) Un dibujo muestra a un maestro sentado detrás de un escritorio con un molde metálico cuadrado en sus manos. Frente a él, hay una fila de niños pequeños que tienen cabezas redondas, triangulares y de estrellas. El maestro toma al primer niño (con cabeza de estrella) y le introduce la cabeza a la fuerza en el molde cuadrado. Al salir del molde por el otro lado de la mesa, todos los niños caminan en fila luciendo cabezas perfectamente cuadradas e idénticas, con miradas perdidas.\n\nEl argumento central del caricaturista apunta a criticar:",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "La falta de herramientas de geometría avanzada en los colegios de primaria.",

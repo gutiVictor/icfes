@@ -63,7 +63,7 @@
     "id": "MA-005",
     "materia": "Matemáticas",
     "competencia": "Interpretación y representación (Análisis de gráficos)",
-    "enunciado": "[DESCRIPCIÓN DE GRÁFICO]: Un diagrama de dispersión muestra la relación entre el número de horas semanales dedicadas al estudio autónomo (eje X) y el puntaje obtenido en una prueba de aptitud académica (eje Y). Los puntos graficados muestran una clara tendencia lineal ascendente que va desde el origen hasta el extremo superior derecho.\n\n¿Qué tipo de correlación y dependencia describe el comportamiento de las variables en el gráfico?",
+    "enunciado": "![Diagrama de dispersión](data/img/scatter_plot.png) Un diagrama de dispersión muestra la relación entre el número de horas semanales dedicadas al estudio autónomo (eje X) y el puntaje obtenido en una prueba de aptitud académica (eje Y). Los puntos graficados muestran una clara tendencia lineal ascendente que va desde el origen hasta el extremo superior derecho.\n\n¿Qué tipo de correlación y dependencia describe el comportamiento de las variables en el gráfico?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "Correlación negativa, indicando que a mayor tiempo de estudio disminuye el rendimiento en la prueba.",
@@ -211,7 +211,7 @@
     "id": "MA-015",
     "materia": "Matemáticas",
     "competencia": "Interpretación y representación (Estadística - Gráficos)",
-    "enunciado": "[DESCRIPCIÓN DE HISTOGRAMA]: Un histograma representa la distribución de frecuencias de los salarios mensuales de una empresa textil. El eje X agrupa los salarios en cuatro intervalos de igual amplitud y el eje Y muestra el número de empleados. El intervalo de [$1.000.000 - $1.500.000] tiene una barra de altura 45; el intervalo de ($1.500.000 - $2.000.000] una altura de 15; el intervalo de ($2.000.000 - $2.500.000] una altura de 8; y el intervalo de ($2.500.000 - $3.000.000] una altura de 2.\n\n¿Qué porcentaje del personal total de la empresa devenga un salario inferior o igual a $2.000.000 mensuales?",
+    "enunciado": "![Histograma de salarios](data/img/histogram.png) Un histograma representa la distribución de frecuencias de los salarios mensuales de una empresa textil. El eje X agrupa los salarios en cuatro intervalos de igual amplitud y el eje Y muestra el número de empleados. El intervalo de [$1.000.000 - $1.500.000] tiene una barra de altura 45; el intervalo de ($1.500.000 - $2.000.000] una altura de 15; el intervalo de ($2.000.000 - $2.500.000] una altura de 8; y el intervalo de ($2.500.000 - $3.000.000] una altura de 2.\n\n¿Qué porcentaje del personal total de la empresa devenga un salario inferior o igual a $2.000.000 mensuales?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "60%",
@@ -1105,7 +1105,7 @@
     "id": "MA-074",
     "materia": "Matemáticas",
     "competencia": "Interpretación y representación (Estadística - Gráficos)",
-    "enunciado": "[DESCRIPCIÓN DE HISTOGRAMA]: Un histograma de frecuencias relativas analiza la distribución salarial de un gremio profesional. El eje horizontal muestra los rangos de ingresos mensuales en millones de pesos y el eje vertical las frecuencias. La primera barra va de 1 a 2 millones (25%), la segunda de 2 a 3 millones (40%), la tercera de 3 a 4 millones (20%), y la cuarta de 4 a 5 millones (15%).\n\nSi seleccionamos un trabajador al azar dentro de este gremio, ¿cuál es la probabilidad porcentual exacta de que su ingreso mensual sea igual o superior a los 3 millones de pesos?",
+   "enunciado": "![Histograma de frecuencias](data/img/histogram.png) Un histograma de frecuencias relativas analiza la distribución salarial de un gremio profesional. El eje horizontal muestra los rangos de ingresos mensuales en millones de pesos y el eje vertical las frecuencias. La primera barra va de 1 a 2 millones (25%), la segunda de 2 a 3 millones (40%), la tercera de 3 a 4 millones (20%), y la cuarta de 4 a 5 millones (15%).\n\nSi seleccionamos un trabajador al azar dentro de este gremio, ¿cuál es la probabilidad porcentual exacta de que su ingreso mensual sea igual o superior a los 3 millones de pesos?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "35%",
