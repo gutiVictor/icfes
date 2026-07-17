@@ -676,19 +676,19 @@
       const total = state.preguntasSesion.length;
       const numero = state.indiceActual + 1;
       const progreso = (numero / total) * 100;
-  
+    
       DOM.quizCounter.textContent = `${numero}/${total}`;
       DOM.quizProgressBar.style.width = `${progreso}%`;
       DOM.quizPercent.textContent = `${Math.round(progreso)}%`;
-  
+    
       const mc = MATERIA_COLORS[pregunta.materia] || { bg: 'bg-gray-100', text: 'text-gray-700' };
       DOM.quizMateriaBadge.className = `px-3 py-1 rounded-full text-xs font-bold ${mc.bg} ${mc.text}`;
       DOM.quizMateriaBadge.textContent = pregunta.materia;
-  
+    
       DOM.quizCompetenciaText.textContent = pregunta.competencia || 'Competencia general';
-  
+    
       renderizarEnunciado(pregunta);
-  
+    
       state.opcionSeleccionada = null;
       state.respondida = false;
       DOM.btnVerificar.classList.remove('hidden');
@@ -697,24 +697,38 @@
       DOM.btnSiguiente.classList.add('hidden');
       DOM.feedbackContainer.classList.add('hidden');
       DOM.timerDisplay.classList.remove('timer-pulse-critical');
-  
+    
       if (state.timerActivo && state.timerModo === 'pregunta') {
         state.timerPreguntaRestante = state.timerLimitPregunta;
         iniciarTimer();
       }
-  
+    
+      // ============================================================
+      // 🆕 NUEVO: DETECTAR Y RENDERIZAR CLOZE TEST
+      // ============================================================
+      if (pregunta.tipo === 'seleccion_multiple_integrada') {
+        renderizarPreguntaCloze(pregunta);
+        DOM.miniCorrectas.textContent = state.correctas;
+        DOM.miniIncorrectas.textContent = state.incorrectas;
+        guardarProgreso();
+        return;
+      }
+    
+      // ============================================================
+      // ✅ EXISTENTE: RENDERIZAR OPCIONES NORMALES
+      // ============================================================
       DOM.opcionesContainer.innerHTML = '';
       if (pregunta.tipo === 'verdadero_falso') {
         DOM.opcionesContainer.className = 'px-5 sm:px-7 pb-5 sm:pb-6 opciones-grid-2';
       } else {
         DOM.opcionesContainer.className = 'px-5 sm:px-7 pb-5 sm:pb-6 space-y-3';
       }
-  
+    
       const letras = ['A', 'B', 'C', 'D'];
       letras.forEach((letra, i) => {
         const texto = pregunta.opciones[letra];
         if (!texto) return;
-  
+    
         const btn = document.createElement('button');
         btn.className = 'opcion-btn';
         btn.dataset.letra = letra;
@@ -725,12 +739,12 @@
         btn.addEventListener('click', () => seleccionarOpcion(letra));
         DOM.opcionesContainer.appendChild(btn);
       });
-  
+    
       setTimeout(renderizarFormulas, 200);
-  
+    
       DOM.preguntaEnunciado.parentElement.classList.add('animate-fade-in');
       setTimeout(() => DOM.preguntaEnunciado.parentElement.classList.remove('animate-fade-in'), 500);
-  
+    
       DOM.miniCorrectas.textContent = state.correctas;
       DOM.miniIncorrectas.textContent = state.incorrectas;
       guardarProgreso();
