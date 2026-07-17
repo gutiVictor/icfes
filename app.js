@@ -919,7 +919,7 @@ if (idBadge) {
       const total = state.respuestas.length;
       const totalCorrectas = state.respuestas.filter(r => r.correcta).length;
       const puntajeGlobal = Math.round((totalCorrectas / total) * 100);
-  
+    
       const porMateria = {};
       state.respuestas.forEach(r => {
         if (!porMateria[r.materia]) {
@@ -928,11 +928,11 @@ if (idBadge) {
         porMateria[r.materia].total++;
         if (r.correcta) porMateria[r.materia].correctas++;
       });
-  
+    
       mostrarPantalla('resultados');
-  
+    
       DOM.globalPuntaje.textContent = puntajeGlobal;
-  
+    
       let mensajeGlobal, detalleGlobal, colorGlobal;
       const tiempoTexto = state.timerActivo && state.timerModo === 'total' 
         ? ` en ${formatearTiempo(state.timerSeconds)}` 
@@ -960,7 +960,7 @@ if (idBadge) {
       DOM.globalMensaje.className = `mt-4 text-base sm:text-lg font-semibold ${colorGlobal}`;
       DOM.globalMensaje.textContent = mensajeGlobal;
       DOM.globalDetalle.textContent = detalleGlobal;
-  
+    
       if (puntajeGlobal >= 80 && typeof confetti === 'function') {
         confetti({
           particleCount: 150,
@@ -968,7 +968,8 @@ if (idBadge) {
           origin: { y: 0.6 }
         });
       }
-  
+    
+      // Alerta Medicina (existente)
       if (state.modo === 'medicina') {
         const datosCN = porMateria['Ciencias Naturales'];
         const csPuntaje = datosCN ? Math.round((datosCN.correctas / datosCN.total) * 100) : 0;
@@ -1006,13 +1007,18 @@ if (idBadge) {
       } else {
         DOM.medicinaAlertaContainer.classList.add('hidden');
       }
-  
+    
+      // Renderizar gráficos existentes
       renderizarDonutGlobal(puntajeGlobal);
       renderizarBarrasMateria(porMateria);
       renderizarChartBarras(porMateria);
       generarRecomendacion(porMateria);
       
+      // Agregar al historial
       agregarIntento();
+    
+      // 🆕 NUEVO: Mostrar detalle de resultados estilo ICFES
+      mostrarDetalleResultados(porMateria, totalCorrectas, total);
     }
   
     // ===== RENDERIZAR DONUT GLOBAL =====
@@ -2468,6 +2474,166 @@ if (idBadge) {
       if (mins === 0) return `${secs} segundos`;
       return `${mins} min ${secs} seg`;
     }
+
+    // ===== MOSTRAR DETALLE DE RESULTADOS (ESTILO ICFES) =====
+
+function mostrarDetalleResultados(porMateria, totalCorrectas, total) {
+  const container = document.getElementById('resultado-detallado-container');
+  if (!container) return;
+  
+  // 1. Puntaje Global sobre 500
+  const puntajePorcentaje = Math.round((totalCorrectas / total) * 100);
+  const puntajeGlobal500 = Math.round((puntajePorcentaje / 100) * 500);
+  
+  document.getElementById('detalle-puntaje-global').textContent = puntajeGlobal500;
+  
+  // 2. Nivel de desempeño
+  const nivel = obtenerNivel(puntajeGlobal500);
+  const nivelEl = document.getElementById('detalle-nivel');
+  nivelEl.textContent = nivel.nombre;
+  nivelEl.className = `text-3xl font-black ${nivel.color}`;
+  
+  // 3. Posición en curso (simulada - se puede mejorar con backend)
+  // Genera una posición aleatoria entre 1 y 35 para simular
+  const posicionCurso = Math.floor(Math.random() * 35) + 1;
+  const totalCurso = 35;
+  document.getElementById('detalle-posicion-curso').textContent = posicionCurso;
+  document.getElementById('detalle-total-curso').textContent = totalCurso;
+  
+  // 4. Tabla de puntajes por área
+  const tbody = document.getElementById('detalle-tabla-cuerpo');
+  tbody.innerHTML = '';
+  
+  const materias = Object.keys(porMateria);
+  const coloresMateria = {
+    'Lectura Crítica': { bg: 'bg-blue-50 dark:bg-blue-900/20', text: 'text-blue-600 dark:text-blue-400' },
+    'Matemáticas': { bg: 'bg-purple-50 dark:bg-purple-900/20', text: 'text-purple-600 dark:text-purple-400' },
+    'Sociales y Ciudadanas': { bg: 'bg-amber-50 dark:bg-amber-900/20', text: 'text-amber-600 dark:text-amber-400' },
+    'Ciencias Naturales': { bg: 'bg-emerald-50 dark:bg-emerald-900/20', text: 'text-emerald-600 dark:text-emerald-400' },
+    'Inglés': { bg: 'bg-pink-50 dark:bg-pink-900/20', text: 'text-pink-600 dark:text-pink-400' }
+  };
+  
+  // Ordenar materias por puntaje (de mayor a menor)
+  const materiasOrdenadas = materias.sort((a, b) => {
+    const pA = Math.round((porMateria[a].correctas / porMateria[a].total) * 100);
+    const pB = Math.round((porMateria[b].correctas / porMateria[b].total) * 100);
+    return pB - pA;
+  });
+  
+  materiasOrdenadas.forEach(materia => {
+    const datos = porMateria[materia];
+    const puntaje = Math.round((datos.correctas / datos.total) * 100);
+    // Subpuntaje simulado (entre 30 y 90 basado en el puntaje)
+    const subpuntaje = Math.round(puntaje * 0.75 + Math.random() * 10);
+    const nivelMateria = obtenerNivel(Math.round((puntaje / 100) * 500));
+    const colores = coloresMateria[materia] || { bg: 'bg-gray-50 dark:bg-gray-800/50', text: 'text-gray-600 dark:text-gray-400' };
+    
+    const tr = document.createElement('tr');
+    tr.className = 'border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors';
+    tr.innerHTML = `
+      <td class="py-2 px-3 font-medium">${materia}</td>
+      <td class="text-center py-2 px-3 font-bold ${colores.text}">${puntaje}</td>
+      <td class="text-center py-2 px-3 text-gray-500 dark:text-gray-400">${subpuntaje}</td>
+      <td class="text-center py-2 px-3">
+        <span class="px-2 py-0.5 rounded-full text-xs font-bold ${nivelMateria.bg} ${nivelMateria.text}">
+          ${nivelMateria.nombre}
+        </span>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+  
+  // 5. Comparativo de rangos
+  const rangosContainer = document.getElementById('detalle-rangos-container');
+  rangosContainer.innerHTML = '';
+  
+  const niveles = [
+    { nombre: 'Avanzado', min: 71, max: 100, color: 'text-green-600 dark:text-green-400', bg: 'bg-green-50 dark:bg-green-900/20' },
+    { nombre: 'Satisfactorio', min: 51, max: 70, color: 'text-blue-600 dark:text-blue-400', bg: 'bg-blue-50 dark:bg-blue-900/20' },
+    { nombre: 'Mínimo', min: 31, max: 50, color: 'text-yellow-600 dark:text-yellow-400', bg: 'bg-yellow-50 dark:bg-yellow-900/20' },
+    { nombre: 'Insuficiente', min: 0, max: 30, color: 'text-red-600 dark:text-red-400', bg: 'bg-red-50 dark:bg-red-900/20' }
+  ];
+  
+  // Calcular promedio general para comparación
+  const promedioGeneral = Math.round((totalCorrectas / total) * 100);
+  
+  materiasOrdenadas.forEach(materia => {
+    const datos = porMateria[materia];
+    const puntaje = Math.round((datos.correctas / datos.total) * 100);
+    
+    // Simular promedio del grado (varía entre 50 y 85)
+    const promedioGrado = Math.min(85, Math.max(50, puntaje + (Math.random() * 20 - 10)));
+    const promedioGradoRedondeado = Math.round(promedioGrado);
+    
+    const div = document.createElement('div');
+    div.className = 'mb-3';
+    div.innerHTML = `
+      <div class="flex items-center justify-between text-xs">
+        <span class="font-medium text-gray-700 dark:text-gray-300">${materia}</span>
+        <div class="flex items-center gap-3">
+          <span class="text-gray-500 dark:text-gray-400">Tú: ${puntaje}/100</span>
+          <span class="text-gray-400 dark:text-gray-500">Grado: ${promedioGradoRedondeado}/100</span>
+        </div>
+      </div>
+      <div class="relative w-full h-4 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden mt-1">
+        <!-- Barras de niveles -->
+        <div class="absolute inset-0 flex">
+          ${niveles.map(nivel => {
+            const width = ((nivel.max - nivel.min + 1) / 100) * 100;
+            return `<div class="h-full ${nivel.bg} border-r border-white dark:border-gray-700 last:border-0" style="width: ${width}%;"></div>`;
+          }).join('')}
+        </div>
+        <!-- Marcador del puntaje del estudiante -->
+        <div class="absolute top-0 h-full w-0.5 bg-red-500 dark:bg-red-400 z-10" style="left: ${Math.min(100, Math.max(0, puntaje))}%;"></div>
+        <!-- Marcador del promedio del grado -->
+        <div class="absolute top-0 h-full w-0.5 bg-blue-500 dark:bg-blue-400 z-10" style="left: ${Math.min(100, Math.max(0, promedioGradoRedondeado))}%;"></div>
+      </div>
+      <div class="flex justify-between text-[10px] text-gray-400 dark:text-gray-500 mt-0.5">
+        <span>0</span>
+        <span class="text-green-600 dark:text-green-400">Avanzado</span>
+        <span class="text-blue-600 dark:text-blue-400">Satisfactorio</span>
+        <span class="text-yellow-600 dark:text-yellow-400">Mínimo</span>
+        <span class="text-red-600 dark:text-red-400">Insuficiente</span>
+        <span>100</span>
+      </div>
+      <div class="flex justify-end gap-4 text-[10px] mt-0.5">
+        <span class="text-red-500">● Tú</span>
+        <span class="text-blue-500">● Grado</span>
+      </div>
+    `;
+    rangosContainer.appendChild(div);
+  });
+}
+
+// ===== OBTENER NIVEL DE DESEMPEÑO =====
+
+function obtenerNivel(puntaje500) {
+  if (puntaje500 >= 437) {
+    return { 
+      nombre: 'Avanzado', 
+      color: 'text-green-600 dark:text-green-400',
+      bg: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300'
+    };
+  } else if (puntaje500 >= 325) {
+    return { 
+      nombre: 'Satisfactorio', 
+      color: 'text-blue-600 dark:text-blue-400',
+      bg: 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300'
+    };
+  } else if (puntaje500 >= 221) {
+    return { 
+      nombre: 'Mínimo', 
+      color: 'text-yellow-600 dark:text-yellow-400',
+      bg: 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300'
+    };
+  } else {
+    return { 
+      nombre: 'Insuficiente', 
+      color: 'text-red-600 dark:text-red-400',
+      bg: 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300'
+    };
+  }
+}
   
     // ===== INICIAR APP =====
     document.addEventListener('DOMContentLoaded', init);

@@ -373,68 +373,127 @@
     </main>
   </div>
 
-  <!-- ==================== PANTALLA DE RESULTADOS ==================== -->
-  <div id="pantalla-resultados" class="min-h-screen flex flex-col hidden">
-    <nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-        <div class="flex items-center gap-2">
-          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-primary-500/25">S11</div>
-          <span class="font-bold text-lg tracking-tight hidden sm:block">Resultados</span>
+ <!-- ==================== PANTALLA DE RESULTADOS ==================== -->
+<div id="pantalla-resultados" class="min-h-screen flex flex-col hidden">
+  <nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-primary-500/25">S11</div>
+        <span class="font-bold text-lg tracking-tight hidden sm:block">Resultados</span>
+      </div>
+      <button id="btn-reiniciar" class="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 text-sm font-semibold hover:bg-primary-100 dark:hover:bg-primary-900/40 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+        Nuevo Entrenamiento
+      </button>
+    </div>
+  </nav>
+
+  <main class="flex-1 px-4 sm:px-6 py-8 sm:py-12">
+    <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8">
+
+      <!-- Hero de resultados -->
+      <div id="resultado-hero" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8 text-center">
+        <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Puntaje Global</p>
+        <div class="relative inline-block">
+          <canvas id="chart-donut-global" width="200" height="200" class="mx-auto"></canvas>
+          <div class="absolute inset-0 flex items-center justify-center flex-col">
+            <span id="global-puntaje" class="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white"></span>
+            <span class="text-xs text-gray-400 dark:text-gray-500 font-medium">de 100</span>
+          </div>
         </div>
-        <button id="btn-reiniciar" class="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400 text-sm font-semibold hover:bg-primary-100 dark:hover:bg-primary-900/40 transition-colors">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+        <p id="global-mensaje" class="mt-4 text-base sm:text-lg font-semibold"></p>
+        <p id="global-detalle" class="mt-1 text-sm text-gray-500 dark:text-gray-400"></p>
+      </div>
+
+      <!-- Rendimiento por Materia -->
+      <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8">
+        <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+          <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          Rendimiento por Materia
+        </h3>
+        <div id="materias-barras" class="space-y-5"></div>
+        <div class="mt-8 hidden sm:block">
+          <canvas id="chart-barras-materias" height="250"></canvas>
+        </div>
+      </div>
+
+      <!-- 🆕 NUEVA SECCIÓN: DETALLE DE RESULTADOS ESTILO ICFES -->
+      <div id="resultado-detallado-container" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8">
+        <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+          <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+          Detalle de Resultados
+        </h3>
+
+        <!-- Tarjetas de resumen -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          <div class="p-4 rounded-2xl bg-primary-50 dark:bg-primary-900/20 text-center">
+            <p class="text-xs text-gray-500 dark:text-gray-400">Puntaje Global</p>
+            <p id="detalle-puntaje-global" class="text-3xl font-black text-primary-600 dark:text-primary-400">0</p>
+            <p class="text-xs text-gray-400">sobre 500</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-green-50 dark:bg-green-900/20 text-center">
+            <p class="text-xs text-gray-500 dark:text-gray-400">Posición en Curso</p>
+            <p id="detalle-posicion-curso" class="text-3xl font-black text-green-600 dark:text-green-400">--</p>
+            <p class="text-xs text-gray-400">de <span id="detalle-total-curso">35</span></p>
+          </div>
+          <div class="p-4 rounded-2xl bg-blue-50 dark:bg-blue-900/20 text-center">
+            <p class="text-xs text-gray-500 dark:text-gray-400">Nivel de Desempeño</p>
+            <p id="detalle-nivel" class="text-3xl font-black text-blue-600 dark:text-blue-400">--</p>
+            <p class="text-xs text-gray-400">según puntaje global</p>
+          </div>
+        </div>
+
+        <!-- Tabla de puntajes por área -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th class="text-left py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Área</th>
+                <th class="text-center py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Puntaje</th>
+                <th class="text-center py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Subpuntaje</th>
+                <th class="text-center py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Nivel</th>
+              </tr>
+            </thead>
+            <tbody id="detalle-tabla-cuerpo">
+              <!-- Generado por JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Comparativo de rangos -->
+        <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+          <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Comparativo de rangos por área</h4>
+          <div id="detalle-rangos-container" class="space-y-3">
+            <!-- Generado por JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Alerta Medicina -->
+      <div id="medicina-alerta-container" class="hidden animate-fade-in-up"></div>
+
+      <!-- Recomendación -->
+      <div id="recomendacion-card" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8">
+        <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+          <svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          Recomendación
+        </h3>
+        <div id="recomendacion-content" class="text-sm leading-relaxed text-gray-600 dark:text-gray-300"></div>
+      </div>
+
+      <!-- Botón móvil -->
+      <div class="sm:hidden">
+        <button id="btn-reiniciar-mobile" class="w-full py-4 rounded-2xl bg-gradient-to-r from-primary-600 to-primary-500 text-white font-bold text-sm shadow-lg shadow-primary-500/25 flex items-center justify-center gap-2 active:scale-[0.98] transition-all">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
           Nuevo Entrenamiento
         </button>
       </div>
-    </nav>
 
-    <main class="flex-1 px-4 sm:px-6 py-8 sm:py-12">
-      <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8">
-
-        <div id="resultado-hero" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8 text-center">
-          <p class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Puntaje Global</p>
-          <div class="relative inline-block">
-            <canvas id="chart-donut-global" width="200" height="200" class="mx-auto"></canvas>
-            <div class="absolute inset-0 flex items-center justify-center flex-col">
-              <span id="global-puntaje" class="text-4xl sm:text-5xl font-black text-gray-900 dark:text-white"></span>
-              <span class="text-xs text-gray-400 dark:text-gray-500 font-medium">de 100</span>
-            </div>
-          </div>
-          <p id="global-mensaje" class="mt-4 text-base sm:text-lg font-semibold"></p>
-          <p id="global-detalle" class="mt-1 text-sm text-gray-500 dark:text-gray-400"></p>
-        </div>
-
-        <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8">
-          <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
-            <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-            Rendimiento por Materia
-          </h3>
-          <div id="materias-barras" class="space-y-5"></div>
-          <div class="mt-8 hidden sm:block">
-            <canvas id="chart-barras-materias" height="250"></canvas>
-          </div>
-        </div>
-
-        <div id="medicina-alerta-container" class="hidden animate-fade-in-up"></div>
-
-        <div id="recomendacion-card" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8">
-          <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
-            <svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
-            Recomendación
-          </h3>
-          <div id="recomendacion-content" class="text-sm leading-relaxed text-gray-600 dark:text-gray-300"></div>
-        </div>
-
-        <div class="sm:hidden">
-          <button id="btn-reiniciar-mobile" class="w-full py-4 rounded-2xl bg-gradient-to-r from-primary-600 to-primary-500 text-white font-bold text-sm shadow-lg shadow-primary-500/25 flex items-center justify-center gap-2 active:scale-[0.98] transition-all">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-            Nuevo Entrenamiento
-          </button>
-        </div>
-
-      </div>
-    </main>
-  </div>
+    </div>
+  </main>
+</div>
 
   <!-- ==================== MODALES ==================== -->
 
