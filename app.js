@@ -2081,6 +2081,43 @@ if (idBadge) {
         materiasHtml = '<p class="text-sm text-gray-400">No hay datos de materias disponibles.</p>';
       }
       
+      // ============================================================
+      // 🆕 PASO 1: GENERAR HTML DE COMPONENTES DEL INTENTO
+      // ============================================================
+      let componentesHtml = '';
+      const componentes = intento.componentes || {};
+      const compKeys = Object.keys(componentes);
+      
+      if (compKeys.length > 0) {
+        // Ordenar componentes por porcentaje (de mayor a menor)
+        compKeys.sort((a, b) => componentes[b].porcentaje - componentes[a].porcentaje);
+        
+        componentesHtml = compKeys.map(comp => {
+          const data = componentes[comp];
+          const pct = data.porcentaje || 0;
+          const color = pct >= 70 ? 'text-green-600 dark:text-green-400' : 
+                       pct >= 50 ? 'text-yellow-600 dark:text-yellow-400' : 
+                       'text-red-600 dark:text-red-400';
+          const barColor = pct >= 70 ? 'bg-green-500' : 
+                          pct >= 50 ? 'bg-yellow-500' : 
+                          'bg-red-500';
+          return `
+            <div class="flex items-center justify-between py-1.5 border-b border-gray-100 dark:border-gray-800 last:border-0">
+              <span class="text-sm font-medium text-gray-700 dark:text-gray-300">${comp}</span>
+              <div class="flex items-center gap-3 flex-1 ml-4">
+                <div class="flex-1 h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                  <div class="h-full ${barColor} rounded-full transition-all duration-700" style="width: ${pct}%"></div>
+                </div>
+                <span class="text-sm font-bold ${color}">${pct}%</span>
+                <span class="text-xs text-gray-400">${data.correctas}/${data.total}</span>
+              </div>
+            </div>
+          `;
+        }).join('');
+      } else {
+        componentesHtml = '<p class="text-sm text-gray-400">No hay datos de componentes disponibles.</p>';
+      }
+      
       const fecha = new Date(intento.fecha);
       const fechaStr = fecha.toLocaleDateString('es-ES', { 
         day: 'numeric', month: 'long', year: 'numeric' 
@@ -2109,7 +2146,13 @@ if (idBadge) {
             </div>
           </div>
           
-          <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Desglose por materia</h4>
+          <!-- 🆕 SECCIÓN DE COMPONENTES -->
+          <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">📊 Desglose por componente</h4>
+          <div class="bg-gray-50 dark:bg-gray-800/30 rounded-xl p-3 mb-4">
+            ${componentesHtml}
+          </div>
+          
+          <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">📚 Desglose por materia</h4>
           <div class="bg-gray-50 dark:bg-gray-800/30 rounded-xl p-3">
             ${materiasHtml}
           </div>
@@ -2130,7 +2173,6 @@ if (idBadge) {
         if (e.target === modal) modal.remove();
       });
     }
-  
     function limpiarHistorial() {
       if (confirm('¿Estás seguro de que quieres eliminar todo tu historial? Esta acción no se puede deshacer.')) {
         saveHistorial([]);
@@ -2822,6 +2864,120 @@ function mostrarDetalleResultados(porMateria, totalCorrectas, total) {
     rangosContainer.appendChild(div);
   });
 }
+
+
+// ============================================================
+// ===== GRÁFICO DE RADAR PARA COMPONENTES ====================
+// ============================================================
+
+function renderizarGraficoRadar(componentes) {
+  const container = document.getElementById('grafico-radar-container');
+  if (!container) return;
+  
+  const canvas = document.getElementById('chart-radar');
+  if (!canvas) return;
+  
+  // Verificar que haya datos
+  const compKeys = Object.keys(componentes);
+  if (compKeys.length === 0) {
+    container.classList.add('hidden');
+    return;
+  }
+  
+  container.classList.remove('hidden');
+  
+  const ctx = canvas.getContext('2d');
+  const isDark = document.documentElement.classList.contains('dark');
+  
+  // Destruir gráfico anterior si existe
+  if (canvas._chart) {
+    canvas._chart.destroy();
+    canvas._chart = null;
+  }
+  
+  // Preparar datos para el radar
+  const labels = compKeys;
+  const data = compKeys.map(comp => componentes[comp].porcentaje || 0);
+  
+  // Colores según rendimiento
+  const colors = data.map(p => {
+    if (p >= 70) return '#10b981';
+    if (p >= 50) return '#f59e0b';
+    return '#ef4444';
+  });
+  
+  const chart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Rendimiento por Componente',
+        data: data,
+        backgroundColor: 'rgba(99, 102, 241, 0.2)',
+        borderColor: '#6366f1',
+        borderWidth: 2,
+        pointBackgroundColor: colors,
+        pointBorderColor: isDark ? '#1f2937' : '#ffffff',
+        pointBorderWidth: 2,
+        pointRadius: 5,
+        pointHoverRadius: 7,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        r: {
+          min: 0,
+          max: 100,
+          ticks: {
+            stepSize: 20,
+            color: isDark ? '#9ca3af' : '#6b7280',
+            backdropColor: 'transparent',
+            font: { size: 9 }
+          },
+          grid: {
+            color: isDark ? '#374151' : '#e5e7eb',
+          },
+          angleLines: {
+            color: isDark ? '#374151' : '#e5e7eb',
+          },
+          pointLabels: {
+            color: isDark ? '#d1d5db' : '#374151',
+            font: { size: 10, weight: '600' },
+          }
+        }
+      },
+      plugins: {
+        legend: {
+          display: false,
+        },
+        tooltip: {
+          backgroundColor: isDark ? '#1f2937' : '#ffffff',
+          titleColor: isDark ? '#f3f4f6' : '#111827',
+          bodyColor: isDark ? '#d1d5db' : '#4b5563',
+          borderColor: isDark ? '#374151' : '#e5e7eb',
+          borderWidth: 1,
+          cornerRadius: 8,
+          padding: 10,
+          callbacks: {
+            label: function(context) {
+              return `${context.label}: ${context.raw}%`;
+            }
+          }
+        }
+      },
+      animation: {
+        duration: 1000,
+        easing: 'easeOutQuart',
+      },
+    },
+  });
+  
+  canvas._chart = chart;
+}
+
+
 // ===== OBTENER NIVEL DE DESEMPEÑO =====
 
 function obtenerNivel(puntaje500) {

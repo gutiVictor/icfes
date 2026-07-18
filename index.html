@@ -417,59 +417,67 @@
         </div>
       </div>
 
-      <!-- 🆕 NUEVA SECCIÓN: DETALLE DE RESULTADOS ESTILO ICFES -->
-      <div id="resultado-detallado-container" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8">
-        <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
-          <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-          </svg>
-          Detalle de Resultados
-        </h3>
-
-        <!-- Tarjetas de resumen -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-          <div class="p-4 rounded-2xl bg-primary-50 dark:bg-primary-900/20 text-center">
-            <p class="text-xs text-gray-500 dark:text-gray-400">Puntaje Global</p>
-            <p id="detalle-puntaje-global" class="text-3xl font-black text-primary-600 dark:text-primary-400">0</p>
-            <p class="text-xs text-gray-400">sobre 500</p>
-          </div>
-          <div class="p-4 rounded-2xl bg-green-50 dark:bg-green-900/20 text-center">
-            <p class="text-xs text-gray-500 dark:text-gray-400">Posición en Curso</p>
-            <p id="detalle-posicion-curso" class="text-3xl font-black text-green-600 dark:text-green-400">--</p>
-            <p class="text-xs text-gray-400">de <span id="detalle-total-curso">35</span></p>
-          </div>
-          <div class="p-4 rounded-2xl bg-blue-50 dark:bg-blue-900/20 text-center">
-            <p class="text-xs text-gray-500 dark:text-gray-400">Nivel de Desempeño</p>
-            <p id="detalle-nivel" class="text-3xl font-black text-blue-600 dark:text-blue-400">--</p>
-            <p class="text-xs text-gray-400">según puntaje global</p>
-          </div>
-        </div>
-
-        <!-- Tabla de puntajes por área -->
-        <div class="overflow-x-auto">
-          <table class="w-full text-sm">
-            <thead>
-              <tr class="border-b border-gray-200 dark:border-gray-700">
-                <th class="text-left py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Área</th>
-                <th class="text-center py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Puntaje</th>
-                <th class="text-center py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Subpuntaje</th>
-                <th class="text-center py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Nivel</th>
-              </tr>
-            </thead>
-            <tbody id="detalle-tabla-cuerpo">
-              <!-- Generado por JavaScript -->
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Comparativo de rangos -->
-        <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-          <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Comparativo de rangos por área</h4>
-          <div id="detalle-rangos-container" class="space-y-3">
-            <!-- Generado por JavaScript -->
-          </div>
-        </div>
-      </div>
+            <!-- 🆕 NUEVA SECCIÓN: DETALLE DE RESULTADOS ESTILO ICFES -->
+            <div id="resultado-detallado-container" class="bg-white dark:bg-gray-900 rounded-3xl shadow-xl shadow-gray-200/50 dark:shadow-black/50 border border-gray-100 dark:border-gray-800 p-6 sm:p-8">
+              <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+                <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+                Detalle de Resultados
+              </h3>
+      
+              <!-- Tarjetas de resumen -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                <div class="p-4 rounded-2xl bg-primary-50 dark:bg-primary-900/20 text-center">
+                  <p class="text-xs text-gray-500 dark:text-gray-400">Puntaje Global</p>
+                  <p id="detalle-puntaje-global" class="text-3xl font-black text-primary-600 dark:text-primary-400">0</p>
+                  <p class="text-xs text-gray-400">sobre 500</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-green-50 dark:bg-green-900/20 text-center">
+                  <p class="text-xs text-gray-500 dark:text-gray-400">Posición en Curso</p>
+                  <p id="detalle-posicion-curso" class="text-3xl font-black text-green-600 dark:text-green-400">--</p>
+                  <p class="text-xs text-gray-400">de <span id="detalle-total-curso">35</span></p>
+                </div>
+                <div class="p-4 rounded-2xl bg-blue-50 dark:bg-blue-900/20 text-center">
+                  <p class="text-xs text-gray-500 dark:text-gray-400">Nivel de Desempeño</p>
+                  <p id="detalle-nivel" class="text-3xl font-black text-blue-600 dark:text-blue-400">--</p>
+                  <p class="text-xs text-gray-400">según puntaje global</p>
+                </div>
+              </div>
+      
+              <!-- Tabla de puntajes por área -->
+              <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                      <th class="text-left py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Área</th>
+                      <th class="text-center py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Puntaje</th>
+                      <th class="text-center py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Subpuntaje</th>
+                      <th class="text-center py-2 px-3 font-semibold text-gray-500 dark:text-gray-400">Nivel</th>
+                    </tr>
+                  </thead>
+                  <tbody id="detalle-tabla-cuerpo">
+                    <!-- Generado por JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+      
+              <!-- 🆕 GRÁFICO DE RADAR (PASO 2) -->
+              <div id="grafico-radar-container" class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700 hidden">
+                <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">📊 Visualización por Componentes</h4>
+                <div class="relative w-full max-w-sm mx-auto" style="height: 280px;">
+                  <canvas id="chart-radar"></canvas>
+                </div>
+              </div>
+      
+              <!-- Comparativo de rangos -->
+              <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Comparativo de rangos por área</h4>
+                <div id="detalle-rangos-container" class="space-y-3">
+                  <!-- Generado por JavaScript -->
+                </div>
+              </div>
+            </div>
 
       <!-- Alerta Medicina -->
       <div id="medicina-alerta-container" class="hidden animate-fade-in-up"></div>
