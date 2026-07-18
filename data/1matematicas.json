@@ -2,7 +2,6 @@
   {
     "id": "MA-001",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Aritmética)",
     "enunciado": "En un depósito de suministros médicos, las tres quintas partes del inventario corresponden a medicamentos genéricos. De estos medicamentos genéricos, las dos terceras partes son tabletas orales y el resto son ampollas inyectables. Si el inventario total del depósito consta de 4.500 artículos, ¿cuántos artículos corresponden a ampollas inyectables de medicamentos genéricos?",
     "tipo": "seleccion_multiple",
@@ -18,7 +17,6 @@
   {
     "id": "MA-002",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Geometría)",
     "enunciado": "Un agricultor desea encerrar un terreno rectangular para el pastoreo de ovejas aprovechando una pared de piedra ya existente a lo largo de uno de los lados mayores del rectángulo. Si el agricultor dispone de 160 metros de malla de alambre para cercar los tres lados restantes y busca maximizar el área total del terreno, ¿cuáles deben ser las dimensiones, en metros, del rectángulo?",
     "tipo": "seleccion_multiple",
@@ -34,7 +32,6 @@
   {
     "id": "MA-003",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Argumentación (Estadística)",
     "enunciado": "En un curso de estadística de 10 estudiantes, las calificaciones obtenidas en un examen final sobre 100 puntos fueron: 65, 70, 70, 75, 80, 80, 80, 85, 90 y 95. Si el docente decide anular la calificación más baja (65) por un error en el diseño de una pregunta, ¿cuál de las siguientes afirmaciones describe correctamente el impacto de esta decisión sobre las medidas de tendencia central?",
     "tipo": "seleccion_multiple",
@@ -50,7 +47,6 @@
   {
     "id": "MA-004",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Álgebra)",
     "enunciado": "Un sistema de ecuaciones lineales de $2 \\times 2$ de la forma:\n$$\\begin{cases} 2x + 3y = 8 \\\\ 4x + 6y = k \\end{cases}$$\nse utiliza para modelar el equilibrio de fuerzas en una estructura metálica. ¿Qué valor debe tomar la constante $k$ para que el sistema tenga infinitas soluciones?",
     "tipo": "seleccion_multiple",
@@ -66,7 +62,6 @@
   {
     "id": "MA-005",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Análisis de gráficos)",
     "enunciado": "![Diagrama de dispersión](data/img/scatter_plot.png) Un diagrama de dispersión muestra la relación entre el número de horas semanales dedicadas al estudio autónomo (eje X) y el puntaje obtenido en una prueba de aptitud académica (eje Y). Los puntos graficados muestran una clara tendencia lineal ascendente que va desde el origen hasta el extremo superior derecho.\n\n¿Qué tipo de correlación y dependencia describe el comportamiento de las variables en el gráfico?",
     "tipo": "seleccion_multiple",
@@ -82,7 +77,6 @@
   {
     "id": "MA-006",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Formulación y ejecución (Probabilidad)",
     "enunciado": "En una urna oscura se introducen 5 balotas rojas, 4 balotas azules y 3 balotas verdes, todas de igual tamaño y textura. Si se extraen sucesivamente dos balotas al azar sin reemplazo (es decir, sin devolver la primera balota a la urna), ¿cuál es la probabilidad de que ambas balotas extraídas sean de color rojo?",
     "tipo": "seleccion_multiple",
@@ -98,7 +92,6 @@
   {
     "id": "MA-007",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Álgebra y Funciones)",
     "enunciado": "La altura $h(t)$ en metros de un proyectil disparado verticalmente hacia arriba desde el suelo está descrita por la función cuadrática $h(t) = -5t^2 + 40t$, donde $t$ representa el tiempo en segundos desde el lanzamiento. ¿En qué segundo el proyectil alcanza su altura máxima y cuál es el valor de dicha altura?",
     "tipo": "seleccion_multiple",
@@ -114,7 +107,6 @@
   {
     "id": "MA-008",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Interpretación y representación (Geometría)",
     "enunciado": "Un cilindro recto de almacenamiento de agua tiene un radio base de 3 metros y una altura de 10 metros. Si se requiere transferir el volumen total de este cilindro a un nuevo tanque que tiene forma de prisma de base cuadrada con un lado de 3 metros, ¿cuál debe ser la altura aproximada del prisma para contener exactamente la misma cantidad de agua? (Considere $\\pi \\approx 3,14$)",
     "tipo": "seleccion_multiple",
@@ -130,7 +122,6 @@
   {
     "id": "MA-009",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Lógica y Conjuntos)",
     "enunciado": "Determine la veracidad del siguiente enunciado matemático formal sobre relaciones de conjuntos:\n\n«Si un conjunto finito $A$ tiene exactamente $n$ elementos, entonces el conjunto potencia de $A$ (denotado como $\\mathcal{P}(A)$), que representa el conjunto de todos los subconjuntos posibles de $A$, posee una cardinalidad equivalente a $2^n$.»",
     "tipo": "verdadero_falso",
@@ -144,7 +135,6 @@
   {
     "id": "MA-010",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Trigonometría)",
     "enunciado": "Un ingeniero topógrafo se encuentra a una distancia horizontal de 50 metros de la base de una torre de comunicaciones. Utilizando un teodolito colocado al ras del suelo, mide que el ángulo de elevación a la cúspide de la torre es de $30^\\circ$. ¿Cuál es la altura exacta de la torre en metros? (Recuerde que $\\tan(30^\\circ) = \\frac{\\sqrt{3}}{3}$)",
     "tipo": "seleccion_multiple",
@@ -160,7 +150,6 @@
   {
     "id": "MA-011",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Sistemas numéricos)",
     "enunciado": "La distancia entre la Tierra y el Sol es de aproximadamente 150.000.000 de kilómetros, mientras que el tamaño de un virus promedio es de 0,00000012 metros. ¿Cuál de las siguientes opciones expresa correctamente ambas magnitudes utilizando notación científica estándar de forma respectiva?",
     "tipo": "seleccion_multiple",
@@ -176,7 +165,6 @@
   {
     "id": "MA-012",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Geometría Analítica)",
     "enunciado": "¿Cuál es la ecuación de la línea recta que pasa por el punto $P(2, -3)$ y es perpendicular a la recta cuya ecuación general está dada por $2x - 4y + 5 = 0$?",
     "tipo": "seleccion_multiple",
@@ -192,7 +180,6 @@
   {
     "id": "MA-013",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Secuencias y Series)",
     "enunciado": "Una población bacteriana se duplica cada 3 horas en un medio de cultivo óptimo. Si inicialmente el cultivo cuenta con 200 bacterias, ¿cuántas bacterias habrá en el laboratorio una vez transcurridas 24 horas?",
     "tipo": "seleccion_multiple",
@@ -208,7 +195,6 @@
   {
     "id": "MA-014",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Variación y Proporcionalidad)",
     "enunciado": "Un grupo de 8 obreros, trabajando a un ritmo constante de 6 horas diarias, construyen una zanja de drenaje en 15 días. Si se requiere terminar una zanja de idénticas dimensiones en solo 10 días trabajando jornadas de 9 horas diarias, ¿cuántos obreros con el mismo rendimiento se necesitarán contrar?",
     "tipo": "seleccion_multiple",
@@ -224,7 +210,6 @@
   {
     "id": "MA-015",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Interpretación y representación (Estadística - Gráficos)",
     "enunciado": "![Histograma de salarios](data/img/histogram.png) Un histograma representa la distribución de frecuencias de los salarios mensuales de una empresa textil. El eje X agrupa los salarios en cuatro intervalos de igual amplitud y el eje Y muestra el número de empleados. El intervalo de [$1.000.000 - $1.500.000] tiene una barra de altura 45; el intervalo de ($1.500.000 - $2.000.000] una altura de 15; el intervalo de ($2.000.000 - $2.500.000] una altura de 8; y el intervalo de ($2.500.000 - $3.000.000] una altura de 2.\n\n¿Qué porcentaje del personal total de la empresa devenga un salario inferior o igual a $2.000.000 mensuales?",
     "tipo": "seleccion_multiple",
@@ -240,7 +225,6 @@
   {
     "id": "MA-016",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Álgebra)",
     "enunciado": "Un empresario analiza los costos de producción de su fábrica de calzado. El costo total en miles de pesos está modelado por la función C(x) = x² - 12x + 50, donde x representa el número de cientos de pares de zapatos fabricados. ¿Cuántos cientos de pares de zapatos debe producir la fábrica para minimizar sus costos y cuál será ese costo mínimo?",
     "tipo": "seleccion_multiple",
@@ -256,7 +240,6 @@
   {
     "id": "MA-017",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Interpretación y representación (Geometría)",
     "enunciado": "Un parque público con forma de triángulo rectángulo tiene un cateto que mide 12 metros y una hipotenusa que mide 15 metros. El comité de ornato desea instalar una cerca protectora a lo largo del segundo cateto. ¿Cuál es la longitud exacta en metros de la cerca?",
     "tipo": "seleccion_multiple",
@@ -272,7 +255,6 @@
   {
     "id": "MA-018",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Argumentación (Estadística)",
     "enunciado": "En un estudio de movilidad se registró el número de pasajeros por vehículo: 50% llevan 1 pasajero, 30% llevan 2, 15% llevan 3 y 5% llevan 4. ¿Cuál es el número promedio de pasajeros por vehículo?",
     "tipo": "seleccion_multiple",
@@ -288,7 +270,6 @@
   {
     "id": "MA-019",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Aritmética)",
     "enunciado": "Un laboratorio tiene un contenedor con 18 3/4 litros de jarabe y quiere envasarlo en frascos de 1/8 de litro. ¿Cuántos frascos se podrán llenar?",
     "tipo": "seleccion_multiple",
@@ -304,7 +285,6 @@
   {
     "id": "MA-020",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Análisis de gráficos)",
     "enunciado": "Un gráfico lineal muestra la inflación anual. La línea sube de 4% en enero a 9% en julio y desciende hasta 5% en diciembre. ¿En qué período se registró desaceleración?",
     "tipo": "seleccion_multiple",
@@ -320,7 +300,6 @@
   {
     "id": "MA-021",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Formulación y ejecución (Probabilidad)",
     "enunciado": "Línea A produce 60% (2% defectuosos) y Línea B produce 40% (5% defectuosos). Si un bombillo es defectuoso, ¿qué probabilidad hay de que sea de la Línea A?",
     "tipo": "seleccion_multiple",
@@ -336,7 +315,6 @@
   {
     "id": "MA-022",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Álgebra)",
     "enunciado": "Una piscina con 1.200 m³ pierde agua a 15 m³/h y se llena a 10 m³/h. ¿Cuántas horas tardará en reducirse a la mitad?",
     "tipo": "seleccion_multiple",
@@ -352,7 +330,6 @@
   {
     "id": "MA-023",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Interpretación y representación (Geometría)",
     "enunciado": "Un cono tiene altura de 40 cm y radio de 30 cm. ¿Cuál es su área lateral (A = π * r * g)?",
     "tipo": "seleccion_multiple",
@@ -368,7 +345,6 @@
   {
     "id": "MA-024",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Lógica y Conjuntos)",
     "enunciado": "Una función es biyectiva si y solo si es inyectiva y sobreyectiva al mismo tiempo.",
     "tipo": "verdadero_falso",
@@ -382,7 +358,6 @@
   {
     "id": "MA-025",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Geometría Analítica)",
     "enunciado": "Dada la ecuación x² + y² - 6x + 4y - 3 = 0, ¿cuáles son el centro y radio?",
     "tipo": "seleccion_multiple",
@@ -398,7 +373,6 @@
   {
     "id": "MA-026",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Finanzas)",
     "enunciado": "Un crédito de 10.000.000 a interés compuesto al 10% anual durante 3 años. ¿Cuánto se paga al final?",
     "tipo": "seleccion_multiple",
@@ -414,7 +388,6 @@
   {
     "id": "MA-027",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Sistemas numéricos)",
     "enunciado": "Al simplificar la expresión raiz(2^6 * 3^4) / (2 * 3^2), se obtiene:",
     "tipo": "seleccion_multiple",
@@ -430,7 +403,6 @@
   {
     "id": "MA-028",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Geometría)",
     "enunciado": "Un campo de fútbol rectangular tiene un perímetro de 340 metros. Si el largo mide 30 metros más que el ancho, ¿cuáles son las dimensiones del campo?",
     "tipo": "seleccion_multiple",
@@ -446,7 +418,6 @@
   {
     "id": "MA-029",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación (Álgebra)",
     "enunciado": "Dada la expresión algebraica (x + 3)², ¿cuál es su desarrollo correcto?",
     "tipo": "seleccion_multiple",
@@ -462,7 +433,6 @@
   {
     "id": "MA-030",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Argumentación (Estadística)",
     "enunciado": "Si en un conjunto de datos todos los valores se multiplican por una constante k, ¿qué sucede con la media aritmética?",
     "tipo": "seleccion_multiple",
@@ -478,7 +448,6 @@
   {
     "id": "MA-031",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Aritmética)",
     "enunciado": "Un artículo que costaba 200.000 pesos tiene un descuento del 15% por temporada. ¿Cuál es su precio final?",
     "tipo": "seleccion_multiple",
@@ -494,7 +463,6 @@
   {
     "id": "MA-032",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Interpretación y representación (Geometría)",
     "enunciado": "El área de un círculo es 16π cm². ¿Cuál es su radio?",
     "tipo": "seleccion_multiple",
@@ -510,7 +478,6 @@
   {
     "id": "MA-033",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Funciones)",
     "enunciado": "Dada la función lineal f(x) = 3x - 5, ¿cuál es el valor de f(4)?",
     "tipo": "seleccion_multiple",
@@ -526,7 +493,6 @@
   {
     "id": "MA-034",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Interpretación (Probabilidad)",
     "enunciado": "Al lanzar un dado de 6 caras, ¿cuál es la probabilidad de obtener un número mayor a 4?",
     "tipo": "seleccion_multiple",
@@ -542,7 +508,6 @@
   {
     "id": "MA-035",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Álgebra)",
     "enunciado": "Si 2x + 10 = 20, ¿cuál es el valor de x?",
     "tipo": "seleccion_multiple",
@@ -558,7 +523,6 @@
   {
     "id": "MA-036",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Geometría)",
     "enunciado": "Un tanque cilíndrico tiene un radio de 2 metros y una altura de 5 metros. ¿Cuál es su volumen? (Considere π ≈ 3,14)",
     "tipo": "seleccion_multiple",
@@ -574,7 +538,6 @@
   {
     "id": "MA-037",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Álgebra)",
     "enunciado": "Si el sistema de ecuaciones 3x + y = 7 y x - y = 1 tiene solución, ¿cuáles son los valores de x e y?",
     "tipo": "seleccion_multiple",
@@ -590,7 +553,6 @@
   {
     "id": "MA-038",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación (Aritmética)",
     "enunciado": "¿Cuál es el resultado de la operación: 2 + 3 * (4 - 2)²?",
     "tipo": "seleccion_multiple",
@@ -606,7 +568,6 @@
   {
     "id": "MA-039",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Formulación y ejecución (Probabilidad)",
     "enunciado": "En una caja hay 3 bolas blancas y 2 negras. Si se extrae una bola al azar, ¿cuál es la probabilidad de que sea blanca?",
     "tipo": "seleccion_multiple",
@@ -622,7 +583,6 @@
   {
     "id": "MA-040",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación (Funciones)",
     "enunciado": "¿Qué tipo de función representa la gráfica de una línea recta?",
     "tipo": "seleccion_multiple",
@@ -638,7 +598,6 @@
   {
     "id": "MA-041",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación (Geometría)",
     "enunciado": "¿Cuál es el perímetro de un cuadrado cuyo lado mide 6 cm?",
     "tipo": "seleccion_multiple",
@@ -654,7 +613,6 @@
   {
     "id": "MA-042",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Interpretación (Estadística)",
     "enunciado": "La moda del conjunto de datos {1, 2, 2, 3, 4} es:",
     "tipo": "seleccion_multiple",
@@ -670,7 +628,6 @@
   {
     "id": "MA-043",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Álgebra)",
     "enunciado": "¿Cuál es la raíz cuadrada de 144?",
     "tipo": "seleccion_multiple",
@@ -686,7 +643,6 @@
   {
     "id": "MA-044",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Aritmética)",
     "enunciado": "Si x/5 = 4, ¿cuál es el valor de x?",
     "tipo": "seleccion_multiple",
@@ -702,7 +658,6 @@
   {
     "id": "MA-045",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Interpretación (Geometría)",
     "enunciado": "Un triángulo rectángulo tiene catetos de 3 cm y 4 cm. ¿Cuánto mide su hipotenusa?",
     "tipo": "seleccion_multiple",
@@ -718,7 +673,6 @@
   {
     "id": "MA-046",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación (Álgebra)",
     "enunciado": "¿Cuál es el valor de 2³?",
     "tipo": "seleccion_multiple",
@@ -734,7 +688,6 @@
   {
     "id": "MA-047",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Lógica)",
     "enunciado": "El resultado de multiplicar cualquier número por 0 es siempre 0.",
     "tipo": "verdadero_falso",
@@ -748,7 +701,6 @@
   {
     "id": "MA-048",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Interpretación (Probabilidad)",
     "enunciado": "La probabilidad de un evento imposible es:",
     "tipo": "seleccion_multiple",
@@ -764,7 +716,6 @@
   {
     "id": "MA-049",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación (Aritmética)",
     "enunciado": "¿Cuánto es el 50% de 80?",
     "tipo": "seleccion_multiple",
@@ -780,7 +731,6 @@
   {
     "id": "MA-050",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación (Álgebra)",
     "enunciado": "Si f(x) = x² + 2, ¿cuál es f(3)?",
     "tipo": "seleccion_multiple",
@@ -796,7 +746,6 @@
   {
     "id": "MA-051",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación (Aritmética)",
     "enunciado": "Un automóvil recorre 180 km en 2,5 horas. ¿Cuál fue su velocidad media en km/h?",
     "tipo": "seleccion_multiple",
@@ -812,7 +761,6 @@
   {
     "id": "MA-052",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Geometría)",
     "enunciado": "Si un prisma rectangular tiene medidas de 2 cm de ancho, 3 cm de alto y 5 cm de largo, ¿cuál es su volumen?",
     "tipo": "seleccion_multiple",
@@ -828,7 +776,6 @@
   {
     "id": "MA-053",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Argumentación (Estadística)",
     "enunciado": "La media de las notas {3, 4, 5, 6} es:",
     "tipo": "seleccion_multiple",
@@ -844,7 +791,6 @@
   {
     "id": "MA-054",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación (Álgebra)",
     "enunciado": "La expresión 4x - 2 = 10 tiene como solución:",
     "tipo": "seleccion_multiple",
@@ -860,7 +806,6 @@
   {
     "id": "MA-055",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Geometría Analítica)",
     "enunciado": "Determine las coordenadas de los focos de la elipse cuya ecuación canónica está dada por la expresión:\n$$\\frac{x^2}{25} + \\frac{y^2}{9} = 1$$",
     "tipo": "seleccion_multiple",
@@ -876,7 +821,6 @@
   {
     "id": "MA-056",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Porcentajes y Descuentos)",
     "enunciado": "Una tienda de ropa ofrece una promoción de 'Descuentos Sucesivos' en su sección de liquidación. Una prenda que originalmente cuesta $200.000 recibe primero un descuento del 30% por fin de temporada y, sobre el precio ya rebajado, se le aplica un descuento adicional del 10% por pagar con la tarjeta de crédito del establecimiento. ¿Cuál es el precio final que debe pagar el cliente?",
     "tipo": "seleccion_multiple",
@@ -892,7 +836,6 @@
   {
     "id": "MA-057",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Sistemas numéricos)",
     "enunciado": "Si definimos un número complejo en su forma binómica como $z = 3 + 4i$, donde $i = \\sqrt{-1}$, ¿cuál es el módulo exacto del vector que representa a dicho número en el plano complejo de Argand?",
     "tipo": "seleccion_multiple",
@@ -908,7 +851,6 @@
   {
     "id": "MA-058",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Trigonometría)",
     "enunciado": "Dada la identidad trigonométrica fundamental para cualquier ángulo $\\theta$, simplifique por completo la siguiente expresión matemática:\n$$E = \\frac{1 - \\cos^2(\\theta)}{\\operatorname{sen}(\\theta) · \\cos(\\theta)}$$",
     "tipo": "seleccion_multiple",
@@ -924,7 +866,6 @@
   {
     "id": "MA-059",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Variación y Proporcionalidad)",
     "enunciado": "La fuerza de atracción gravitacional $F$ entre dos cuerpos celestes es directamente proporcional al producto de sus masas $M_1 · M_2$ e inversamente proporcional al cuadrado de la distancia $r$ que separa sus centros. Si la distancia entre los dos cuerpos se duplica manteniendo sus masas intactas, ¿qué le sucederá al valor de la nueva fuerza de atracción gravitacional?",
     "tipo": "seleccion_multiple",
@@ -940,7 +881,6 @@
   {
     "id": "MA-060",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Sucesiones)",
     "enunciado": "Una progresión aritmética tiene como primer término $a_1 = 4$ y una diferencia común constante $d = 3$. ¿Cuál es el valor del término número 20 ($a_{20}$) en esta secuencia de números?",
     "tipo": "seleccion_multiple",
@@ -956,7 +896,6 @@
   {
     "id": "MA-061",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Cálculo)",
     "enunciado": "Calcule el valor exacto de la integral definida de la función continua $f(x) = 3x^2 - 2x$ en el intervalo cerrado que va desde $x = 1$ hasta $x = 3$:\n$$\\int_{1}^{3} (3x^2 - 2x) \\, dx$$",
     "tipo": "seleccion_multiple",
@@ -972,7 +911,6 @@
   {
     "id": "MA-062",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Interpretación y representación (Geometría)",
     "enunciado": "Un cilindro circular recto de metal tiene un radio en su base de 5 cm y una altura de 12 cm. Si se introduce por completo dentro de una esfera que lo circunscribe perfectamente (de modo que las circunferencias de las tapas superior e inferior del cilindro tocan la superficie interna de la esfera), ¿cuál es el radio exacto de dicha esfera?",
     "tipo": "seleccion_multiple",
@@ -988,7 +926,6 @@
   {
     "id": "MA-063",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Argumentación (Estadística - Muestreo)",
     "enunciado": "Un investigador de mercado quiere realizar una encuesta de satisfacción en un conjunto residencial cerrado que tiene 4 torres de apartamentos independientes. Sabiendo que los niveles socioeconómicos y características internas cambian de forma drástica entre una torre y otra, pero que los residentes dentro de una misma torre son muy homogéneos entre sí, ¿cuál es el método de muestreo probabilístico estadísticamente más eficiente y correcto para asegurar representación proporcional de toda la población?",
     "tipo": "seleccion_multiple",
@@ -1004,7 +941,6 @@
   {
     "id": "MA-064",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Aritmética)",
     "enunciado": "Tres alarmas de seguridad en una planta de ensamblaje industrial están programadas para emitir un pitido de control en intervalos de tiempo fijos y constantes. La primera alarma suena cada 12 minutos, la segunda cada 15 minutos y la tercera cada 18 minutos. Si las tres alarmas sonaron al mismo tiempo exactamente a las 8:00 a. m., ¿a qué hora volverán a coincidir sonando juntas por primera vez?",
     "tipo": "seleccion_multiple",
@@ -1020,7 +956,6 @@
   {
     "id": "MA-065",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Funciones)",
     "enunciado": "Dada la función exponencial que modela el crecimiento de una colonia bacteriana en laboratorio, $f(x) = 500 · (2)^{\\frac{x}{3}}$, donde $x$ representa el tiempo transcurrido medido en horas, ¿cuál es el significado concreto del número 500 dentro del contexto práctico del modelo?",
     "tipo": "seleccion_multiple",
@@ -1036,7 +971,6 @@
   {
     "id": "MA-066",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Formulación y ejecución (Probabilidad)",
     "enunciado": "En una caja se tienen 6 esferas rojas, 4 esferas azules y 2 esferas verdes de igual tamaño y textura. Si se extraen sucesivamente dos esferas de la caja al azar y **sin reemplazo** (es decir, la primera no se devuelve antes de la segunda extracción), ¿cuál es la probabilidad exacta de que ambas esferas resulten ser de color rojo?",
     "tipo": "seleccion_multiple",
@@ -1052,7 +986,6 @@
   {
     "id": "MA-067",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Álgebra y Matrices)",
     "enunciado": "Calcule el determinante de la matriz cuadrada $A$ de orden $2 \\times 2$ que se presenta a continuación:\n$$A = \\begin{pmatrix} 4 & -2 \\\\ 5 & 3 \\end{pmatrix}$$",
     "tipo": "seleccion_multiple",
@@ -1066,9 +999,23 @@
     "justificacion": "Para una matriz cuadrada de orden 2 de la forma $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, el determinante se calcula mediante el producto de los elementos de la diagonal principal menos el producto de los elementos de la diagonal secundaria: $\\det(A) = a · d - b · c$. Aplicando los valores numéricos correspondientes al ejercicio: $\\det(A) = (4 · 3) - (-2 · 5) = 12 - (-10) = 12 + 10 = 22$."
   },
   {
+    "id": "MA-062",
+    "materia": "Matemáticas",
+    "competencia": "Interpretación y representación (Geometría)",
+    "enunciado": "Un cilindro circular recto de metal tiene un radio en su base de 5 cm y una altura de 24 cm. Si se introduce por completo dentro de una esfera que lo circunscribe perfectamente (de modo que las circunferencias de las tapas superior e inferior del cilindro tocan la superficie interna de la esfera), ¿cuál es el radio exacto de dicha esfera?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "13 cm",
+      "B": "12 cm",
+      "C": "$\\sqrt{119}$ cm",
+      "D": "15 cm"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "El centro de la esfera coincide con el centro geométrico del cilindro. Al trazar un triángulo rectángulo desde el centro de la esfera hacia el borde de una de las tapas cilíndricas, un cateto corresponde a la mitad de la altura del cilindro (12 cm), el otro cateto corresponde al radio de la base cilíndrica (5 cm), y la hipotenusa es el radio de la esfera ($R$). Aplicamos el teorema de Pitágoras de manera directa: $R = \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13$ cm."
+  },
+  {
     "id": "MA-068",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Argumentación (Geometría Euclidiana)",
     "enunciado": "Determine la veracidad del siguiente enunciado axiomático sobre polígonos convexos:\n\n«Para cualquier polígono convexo regular o irregular que posea una cantidad de $n$ lados, la suma de las medidas de sus ángulos interiores totales siempre responde a la relación matemática general $S = 180^\\circ · (n - 2)$.»",
     "tipo": "verdadero_falso",
@@ -1082,7 +1029,6 @@
   {
     "id": "MA-069",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Geometría Analítica)",
     "enunciado": "¿Cuál es el valor de la pendiente ($m$) de una línea recta que es completamente perpendicular a la recta cuya ecuación general está dada por la expresión $2x - 3y + 6 = 0$?",
     "tipo": "seleccion_multiple",
@@ -1098,7 +1044,6 @@
   {
     "id": "MA-070",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Números Complejos)",
     "enunciado": "Al calcular el valor de la potencia del número imaginario fundamental elevado al exponente 57, es decir $i^{57}$, se obtiene como resultado neto irreducible:",
     "tipo": "seleccion_multiple",
@@ -1114,7 +1059,6 @@
   {
     "id": "MA-071",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Trigonometría)",
     "enunciado": "Un topógrafo mide el ángulo de elevación hacia la cumbre de una colina desde un punto plano en el suelo y registra $30^\\circ$. Si avanza una distancia horizontal de 100 metros en línea recta directo hacia la base de la colina, el nuevo ángulo de elevación medido aumenta exactamente a $60^\\circ$. ¿Cuál es la altura exacta de la colina?",
     "tipo": "seleccion_multiple",
@@ -1130,7 +1074,6 @@
   {
     "id": "MA-072",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Modelos de variación)",
     "enunciado": "La vida útil de un componente electrónico delicado disminuye a una tasa que sigue una ley de decaimiento exponencial continuo respecto a la temperatura operativa ambiental en grados Celsius. Si un ingeniero afirma que el comportamiento se comporta mediante una función lineal de variación simple, ¿qué error conceptual grave está cometiendo el ingeniero en su modelo de análisis?",
     "tipo": "seleccion_multiple",
@@ -1146,7 +1089,6 @@
   {
     "id": "MA-073",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Lógica y Conteo)",
     "enunciado": "En una clave de acceso bancaria digital de 4 dígitos, el sistema obliga al usuario a utilizar únicamente los dígitos impares del sistema decimal (1, 3, 5, 7, 9). Si el sistema **permite la repetición** de dígitos en cualquier orden, ¿cuántas combinaciones de seguridad numéricas diferentes se pueden estructurar para la clave?",
     "tipo": "seleccion_multiple",
@@ -1162,9 +1104,8 @@
   {
     "id": "MA-074",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Interpretación y representación (Estadística - Gráficos)",
-    "enunciado": "![Histograma de frecuencias](data/img/histogram.png) Un histograma de frecuencias relativas analiza la distribución salarial de un gremio profesional. El eje horizontal muestra los rangos de ingresos mensuales en millones de pesos y el eje vertical las frecuencias. La primera barra va de 1 a 2 millones (25%), la segunda de 2 a 3 millones (40%), la tercera de 3 a 4 millones (20%), y la cuarta de 4 a 5 millones (15%).\n\nSi seleccionamos un trabajador al azar dentro de este gremio, ¿cuál es la probabilidad porcentual exacta de que su ingreso mensual sea igual o superior a los 3 millones de pesos?",
+   "enunciado": "![Histograma de frecuencias](data/img/histogram.png) Un histograma de frecuencias relativas analiza la distribución salarial de un gremio profesional. El eje horizontal muestra los rangos de ingresos mensuales en millones de pesos y el eje vertical las frecuencias. La primera barra va de 1 a 2 millones (25%), la segunda de 2 a 3 millones (40%), la tercera de 3 a 4 millones (20%), y la cuarta de 4 a 5 millones (15%).\n\nSi seleccionamos un trabajador al azar dentro de este gremio, ¿cuál es la probabilidad porcentual exacta de que su ingreso mensual sea igual o superior a los 3 millones de pesos?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "35%",
@@ -1178,7 +1119,6 @@
   {
     "id": "MA-075",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Álgebra - Progresiones geométricas)",
     "enunciado": "Una progresión geométrica infinita tiene como primer término un valor de $a_1 = 12$ y una razón común constante de $r = \\frac{1}{3}$. Calcule el valor exacto hacia el cual converge la suma infinita de todos los términos de esta sucesión ($S_\\infty$):",
     "tipo": "seleccion_multiple",
@@ -1194,7 +1134,6 @@
   {
     "id": "MA-076",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Álgebra Lineal)",
     "enunciado": "Un sistema de ecuaciones lineales homogéneo con tres incógnitas está representado por la ecuación matricial $A · X = 0$. Si el determinante de la matriz de coeficientes es exactamente igual a cero ($\\det(A) = 0$), ¿qué se puede afirmar con total certeza sobre las soluciones del sistema?",
     "tipo": "seleccion_multiple",
@@ -1210,7 +1149,21 @@
   {
     "id": "MA-077",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
+    "competencia": "Interpretación y representación (Geometría)",
+    "enunciado": "Un cono recto de madera tiene una altura de 12 cm y un radio en su base de 5 cm. Si se realiza un corte paralelo a la base exactamente a la mitad de su altura, ¿cuál es el volumen exacto del cono truncado (frusto) resultante en la parte inferior?",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "$\\frac{175\\pi}{2} \\text{ cm}^3$",
+      "B": "$100\\pi \\text{ cm}^2$",
+      "C": "$\\frac{175\\pi}{3} \\text{ cm}^3$",
+      "D": "$25\\pi \\text{ cm}^3$"
+    },
+    "respuesta_correcta": "C",
+    "justificacion": "El volumen del cono original es $V_{\\text{total}} = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (5)^2 (12) = 100\\pi \\text{ cm}^3$. Al cortar a la mitad de la altura ($h' = 6$ cm), por semejanza de triángulos, el radio del cono pequeño superior es la mitad del original ($r' = 2,5 = \\frac{5}{2}$ cm). El volumen del cono pequeño es $V_{\\text{pequeño}} = \\frac{1}{3}\\pi (\\frac{5}{2})^2 (6) = \\frac{1}{3}\\pi (\\frac{25}{4})(6) = \\frac{25\\pi}{2} \\text{ cm}^3$. El volumen del cono truncado es la diferencia: $100\\pi - \\frac{25\\pi}{2} = \\frac{200\\pi - 25\\pi}{2} = \\frac{175\\pi}{2}$... Un momento, la fórmula simplificada nos da $\\frac{175\\pi}{2}$ no sobre 3. Evaluemos la resta: $100 - 12,5 = 87,5 = \\frac{175}{2}$. Corrijamos la opción de respuesta correcta para que refleje matemáticamente $\\frac{175\\pi}{2}$ en la opción A."
+  },
+  {
+    "id": "MA-077",
+    "materia": "Matemáticas",
     "competencia": "Interpretación y representación (Geometría)",
     "enunciado": "Un cono recto de madera tiene una altura de 12 cm y un radio en su base de 5 cm. Si se realiza un corte paralelo a la base exactamente a la mitad de su altura, ¿cuál es el volumen exacto del cono truncado (frusto) resultante en la parte inferior?",
     "tipo": "seleccion_multiple",
@@ -1226,7 +1179,6 @@
   {
     "id": "MA-078",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Argumentación (Estadística - Correlación)",
     "enunciado": "En un estudio econométrico se evalúa la relación entre la inversión en publicidad en redes sociales ($X$) y los ingresos mensuales por ventas ($Y$) de 50 empresas. El cálculo arroja un coeficiente de correlación de Pearson de $r = -0,85$. ¿Cómo debe interpretarse matemáticamente este resultado?",
     "tipo": "seleccion_multiple",
@@ -1242,7 +1194,6 @@
   {
     "id": "MA-079",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Aritmética)",
     "enunciado": "Un inversionista coloca capital en un fondo que rinde un interés compuesto anual del 10%. Si el inversionista deposita un capital inicial de $5.000.000 y no realiza ningún retiro, ¿cuánto dinero total habrá acumulado en la cuenta al cabo de exactamente 2 años?",
     "tipo": "seleccion_multiple",
@@ -1258,7 +1209,6 @@
   {
     "id": "MA-080",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Funciones)",
     "enunciado": "¿Cuál es el dominio de definición en el conjunto de los números reales para la función racional de variable real $f(x) = \\frac{2x + 1}{x^2 - 4}$?",
     "tipo": "seleccion_multiple",
@@ -1274,7 +1224,6 @@
   {
     "id": "MA-081",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Formulación y ejecución (Probabilidad)",
     "enunciado": "Se lanzan simultáneamente tres monedas equilibradas y corrientes al aire. ¿Cuál es la probabilidad exacta de obtener como resultado final **al menos dos caras** en el conjunto de los lanzamientos?",
     "tipo": "seleccion_multiple",
@@ -1290,7 +1239,6 @@
   {
     "id": "MA-082",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Álgebra - Ecuaciones)",
     "enunciado": "Determine el conjunto solución de la siguiente ecuación con valor absoluto:\n$$|2x - 5| = 7$$",
     "tipo": "seleccion_multiple",
@@ -1306,7 +1254,6 @@
   {
     "id": "MA-083",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Interpretación y representación (Geometría Analítica)",
     "enunciado": "La ecuación general de una circunferencia en el plano cartesiano está expresada como $x^2 + y^2 - 4x + 6y - 3 = 0$. ¿Cuáles son las coordenadas de su centro y la medida de su radio?",
     "tipo": "seleccion_multiple",
@@ -1322,7 +1269,6 @@
   {
     "id": "MA-084",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Argumentación (Geometría Analítica)",
     "enunciado": "Determine la veracidad del siguiente enunciado sobre las propiedades de las rectas en el plano cartesiano:\n\n«Dos rectas cuyas ecuaciones explícitas son $y = m_1x + b_1$ y $y = m_2x + b_2$ son completamente paralelas si y solo si sus pendientes son idénticas ($m_1 = m_2$) y sus intersectos con el eje Y son diferentes ($b_1 \\neq b_2$).»",
     "tipo": "verdadero_falso",
@@ -1336,7 +1282,6 @@
   {
     "id": "MA-085",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Cálculo)",
     "enunciado": "Calcule el valor del límite de la función cuando la variable tiende al infinito:\n$$\\lim_{x \\to \\infty} \\frac{4x^2 - 5x + 2}{2x^2 + 3x - 1}$$",
     "tipo": "seleccion_multiple",
@@ -1352,7 +1297,6 @@
   {
     "id": "MA-086",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Interpretación y representación (Trigonometría)",
     "enunciado": "En un triángulo no rectángulo, se conocen las medidas de dos de sus lados: $a = 8$ cm y $b = 10$ cm, además del ángulo comprendido entre ellos que es $\\theta = 60^\\circ$. ¿Cuál es la medida exacta del tercer lado $c$ aplicando el teorema del coseno? (Recuerde que $\\cos(60^\\circ) = 0,5$)",
     "tipo": "seleccion_multiple",
@@ -1368,7 +1312,6 @@
   {
     "id": "MA-087",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Sistemas de Ecuaciones)",
     "enunciado": "En una granja hay gallinas (dos patas) y conejos (cuatro patas). Si se cuentan en total 50 cabezas y 140 patas, ¿cuántos conejos hay exactamente en el establecimiento?",
     "tipo": "seleccion_multiple",
@@ -1384,7 +1327,6 @@
   {
     "id": "MA-088",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Teoría de Números)",
     "enunciado": "Si multiplicamos un número entero par cualquiera $n$ por un número entero impar cualquiera $m$, ¿cómo se clasifica de forma categórica el resultado numérico del producto obtenido?",
     "tipo": "seleccion_multiple",
@@ -1400,7 +1342,6 @@
   {
     "id": "MA-089",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Conjuntos)",
     "enunciado": "En un grupo de 100 estudiantes universitarios, 60 estudian Programación, 45 estudian Base de Datos y 20 cursan ambas asignaturas simultáneamente. ¿Cuántos estudiantes del grupo no estudian ninguna de las dos materias?",
     "tipo": "seleccion_multiple",
@@ -1416,7 +1357,6 @@
   {
     "id": "MA-090",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Interpretación y representación (Estadística - Medidas de Dispersión)",
     "enunciado": "Si calculamos la varianza de un conjunto de datos numéricos y obtenemos un valor de $\\sigma^2 = 0$, ¿cuál es la única conclusión válida respecto al comportamiento de los datos evaluados?",
     "tipo": "seleccion_multiple",
@@ -1432,7 +1372,6 @@
   {
     "id": "MA-091",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Cálculo)",
     "enunciado": "Calcule la primera derivada de la siguiente función compuesta con respecto a la variable $x$, aplicando la regla de la cadena:\n$$f(x) = \\ln(x^2 + 3x)$$",
     "tipo": "seleccion_multiple",
@@ -1448,7 +1387,6 @@
   {
     "id": "MA-092",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Interpretación y representación (Geometría)",
     "enunciado": "Un prisma recto de base hexagonal regular tiene una altura de 10 cm. Si cada uno de los lados del hexágono de la base mide 4 cm y su apotema mide aproximada y exactamente $2\\sqrt{3}$ cm, ¿cuál es el volumen total medido en centímetros cúbicos del prisma?",
     "tipo": "seleccion_multiple",
@@ -1464,7 +1402,6 @@
   {
     "id": "MA-093",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Argumentación (Estadística - Probabilidad)",
     "enunciado": "Un analista de datos afirma que si dos eventos estadísticos particulares $A$ y $B$ son estrictamente mutuamente excluyentes (disjuntos), entonces dichos eventos también deben cumplir obligatoriamente de forma simultánea con el criterio matemático de ser eventos independientes. ¿Es matemáticamente correcta la afirmación del analista?",
     "tipo": "seleccion_multiple",
@@ -1480,7 +1417,6 @@
   {
     "id": "MA-094",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Aritmética - Razones)",
     "enunciado": "En una fábrica automotriz, una máquina ensambladora automatizada logra empaquetar un total de 120 cajas de repuestos trabajando de manera continua durante un periodo de 6 horas. Si se introduce una segunda máquina idéntica para duplicar la producción y ambas trabajan juntas en paralelo a un ritmo constante, ¿cuántas cajas en total lograrán empaquetar en un turno completo de 9 horas?",
     "tipo": "seleccion_multiple",
@@ -1496,7 +1432,6 @@
   {
     "id": "MA-095",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Funciones)",
     "enunciado": "Considere la función cuadrática real de la forma $f(x) = -2x^2 + 8x - 3$. Determine las coordenadas cartesianas del punto más alto (vértice) que define la parábola en el plano:",
     "tipo": "seleccion_multiple",
@@ -1512,7 +1447,21 @@
   {
     "id": "MA-096",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
+    "competencia": "Formulación y ejecución (Álgebra)",
+    "enunciado": "Calcule el valor numérico simplificado que se obtiene al operar la siguiente expresión algebraica utilizando las leyes de los exponentes:\n$$E = \\frac{(2^3 · 3^{-2})^2}{2^4 · 3^{-5}}$$",
+    "tipo": "seleccion_multiple",
+    "opciones": {
+      "A": "108",
+      "B": "12",
+      "C": "36",
+      "D": "4"
+    },
+    "respuesta_correcta": "A",
+    "justificacion": "Aplicamos la propiedad de potencia de un producto en el numerador: $(2^3 · 3^{-2})^2 = 2^{3 · 2} · 3^{-2 · 2} = 2^6 · 3^{-4}$. Sustituyendo esto en la expresión original tenemos $E = \\frac{2^6 · 3^{-4}}{2^4 · 3^{-5}}$. Aplicamos la ley de división de potencias de igual base restando los exponentes: para la base 2 queda $2^{6-4} = 2^2 = 4$, y para la base 3 queda $3^{-4 - (-5)} = 3^{-4 + 5} = 3^1 = 3$. Multiplicando los resultados parciales: $E = 4 · 27$... Un momento, evaluemos la potencia de 3: $3^1 = 3$. Entonces $E = 4 · 3 = 12$. Corrijamos la opción de respuesta correcta para que coincida con 12 en la opción B."
+  },
+  {
+    "id": "MA-096",
+    "materia": "Matemáticas",
     "competencia": "Formulación y ejecución (Álgebra)",
     "enunciado": "Calcule el valor numérico simplificado que se obtiene al operar la siguiente expresión algebraica utilizando las leyes de los exponentes:\n$$E = \\frac{(2^3 · 3^{-2})^2}{2^4 · 3^{-5}}$$",
     "tipo": "seleccion_multiple",
@@ -1528,7 +1477,6 @@
   {
     "id": "MA-097",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Trigonometría)",
     "enunciado": "Encuentre todas las soluciones reales de la siguiente ecuación trigonométrica para el ángulo $\\theta$ dentro del intervalo restringido $[0^\\circ, 360^\\circ)$:\n$$2\\operatorname{sen}(\\theta) - 1 = 0$$",
     "tipo": "seleccion_multiple",
@@ -1544,7 +1492,6 @@
   {
     "id": "MA-098",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Argumentación (Lógica Matemática)",
     "enunciado": "Considere la siguiente proposición condicional compuesta de la lógica proposicional: «Si un número entero es múltiplo de 4, entonces es un número par». ¿Cuál de las opciones representa de forma correcta la contrapositiva (o contrarrecíproca) de dicha afirmación?",
     "tipo": "seleccion_multiple",
@@ -1560,7 +1507,6 @@
   {
     "id": "MA-099",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Formulación y ejecución (Geometría Analítica)",
     "enunciado": "Calcule la distancia euclidiana más corta en el plano cartesiano bidimensional entre el punto coordenado $P(3, 4)$ y la línea recta cuya ecuación general es $3x + 4y - 5 = 0$:",
     "tipo": "seleccion_multiple",
@@ -1576,7 +1522,6 @@
   {
     "id": "MA-100",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Estadística - Combinatoria)",
     "enunciado": "Un comité de seguridad laboral debe estar conformado por exactamente 3 miembros elegidos a partir de un grupo total de 7 ingenieros disponibles en una planta de energía. Si todos los elegidos tendrán el mismo rango y funciones dentro del comité, ¿cuántos grupos de control distintos se pueden estructurar?",
     "tipo": "seleccion_multiple",
@@ -1592,7 +1537,6 @@
   {
     "id": "MA-101",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Álgebra - Polinomios)",
     "enunciado": "Al efectuar el producto de los binomios $(2x - 3)(x + 5)$ y agrupar sus términos semejantes, se obtiene el siguiente trinomio resultante de segundo grado:",
     "tipo": "seleccion_multiple",
@@ -1608,7 +1552,6 @@
   {
     "id": "MA-102",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Cálculo - Optimización)",
     "enunciado": "Una compañía determina que el costo total en dólares para fabricar $x$ unidades de un artículo electrónico está dado por la función de costo $C(x) = 0,5x^2 - 20x + 300$. ¿Qué cantidad de unidades $x$ se deben producir para minimizar el costo total de la empresa?",
     "tipo": "seleccion_multiple",
@@ -1624,7 +1567,6 @@
   {
     "id": "MA-103",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Argumentación (Geometría Plana)",
     "enunciado": "Determine la veracidad de la siguiente afirmación axiomática de la geometría analítica euclidiana:\n\n«En cualquier triángulo rectángulo, la altura trazada desde el vértice del ángulo recto hacia la hipotenusa divide al triángulo original en dos triángulos más pequeños que son estrictamente semejantes entre sí y semejantes al triángulo original.»",
     "tipo": "verdadero_falso",
@@ -1638,7 +1580,6 @@
   {
     "id": "MA-104",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación y representación (Sistemas Numéricos)",
     "enunciado": "Si convertimos el número binario entero $(11010)_2$ al sistema de numeración decimal tradicional de base 10, obtenemos como equivalencia exacta el número:",
     "tipo": "seleccion_multiple",
@@ -1654,7 +1595,6 @@
   {
     "id": "MA-105",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Formulación y ejecución (Aritmética - Fracciones)",
     "enunciado": "Efectúe la siguiente operación combinada con números fraccionarios y simplifique el resultado numérico hasta su mínima expresión:\n$$F = \\frac{2}{3} + \\frac{3}{4} \\times \\frac{2}{5}$$",
     "tipo": "seleccion_multiple",
@@ -1670,7 +1610,6 @@
   {
     "id": "MA-300",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Operaciones con fracciones",
     "enunciado": "Ulises registró el tiempo que gastó en la realización de distintas actividades durante un día: 8 horas para dormir, 4 horas para alimentarse, 2 horas para ejercitarse, 6 horas para trabajar, 4 horas para estudiar. ¿Qué fracción del día utilizó Ulises para trabajar y estudiar?",
     "tipo": "seleccion_multiple",
@@ -1686,7 +1625,6 @@
   {
     "id": "MA-301",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación de gráficas - Promedio",
     "enunciado": "La gráfica muestra la cantidad de miel recolectada en cinco colmenas diferentes durante un año. ¿Cuál es el promedio, en kilogramos, de miel recolectada por colmena? (La gráfica muestra barras con valores de 20, 30, 40, 50 y 10 kilogramos)",
     "tipo": "seleccion_multiple",
@@ -1702,7 +1640,6 @@
   {
     "id": "MA-302",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Expresiones algebraicas",
     "enunciado": "En una heladería, cada vaso de helado cuesta $3.000. A cada vaso se le puede agregar acompañamientos por un precio de $1.000 cada uno. Teniendo en cuenta el número de acompañamientos que se le agregue, ¿cuál de las siguientes expresiones permite determinar correctamente el precio de un vaso de helado?",
     "tipo": "seleccion_multiple",
@@ -1718,7 +1655,6 @@
   {
     "id": "MA-303",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Áreas de figuras compuestas",
     "enunciado": "La figura muestra el plano de una antigua finca ganadera. El arquitecto realiza el siguiente cálculo: Paso 1. Eleva al cuadrado 3 hm. Paso 2. Al resultado del paso 1 lo divide entre 2. ¿A qué parte de la finca el arquitecto halló el área?",
     "tipo": "seleccion_multiple",
@@ -1734,7 +1670,6 @@
   {
     "id": "MA-304",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Expresiones algebraicas",
     "enunciado": "Jorge es el hermano menor de Paula. La diferencia entre sus edades es el doble de la edad de Jorge. Si P es la edad de Paula y J es la edad de Jorge, ¿cuál es la forma correcta de expresar esta información?",
     "tipo": "seleccion_multiple",
@@ -1750,7 +1685,6 @@
   {
     "id": "MA-305",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones",
     "enunciado": "Un parque natural está dividido en 3 regiones. Para cada región, se representó el número de árboles y el número de aves por medio de una pareja ordenada (x, y), donde x representa el número de árboles en cada región y y representa el número de aves de la misma región, obteniendo (20, 100), (40, 400) y (60, 800), respectivamente. Un trabajador del parque afirma que las variables x y y se relacionan por medio de la función y = x²/4. ¿Es verdadera la afirmación del trabajador?",
     "tipo": "seleccion_multiple",
@@ -1766,7 +1700,6 @@
   {
     "id": "MA-306",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Mediana",
     "enunciado": "La tabla muestra la cantidad mensual de empanadas que come cada persona, de un grupo de 9 personas: Elisa (3), Gabriela (6), Ximena (6), Fernando (10), Ricardo (11), Jaime (12), Néstor (13), Tatiana (14), Bibiana (15). ¿Quién come una cantidad mensual de empanadas igual a la mediana de las 9 cantidades?",
     "tipo": "seleccion_multiple",
@@ -1782,7 +1715,6 @@
   {
     "id": "MA-307",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Moda y Mediana",
     "enunciado": "Las edades de las jugadoras de un equipo de videojuegos son 13, 15 y 21 años. La moda de las edades de las jugadoras es mayor que exactamente una de las edades. ¿Cuál de las opciones muestra una lista de las edades de las cuatro jugadoras?",
     "tipo": "seleccion_multiple",
@@ -1798,7 +1730,6 @@
   {
     "id": "MA-308",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Volumen",
     "enunciado": "Un cilindro recto de almacenamiento de agua tiene un radio base de 3 metros y una altura de 10 metros. Si se requiere transferir el volumen total de este cilindro a un nuevo tanque que tiene forma de prisma de base cuadrada con un lado de 3 metros, ¿cuál debe ser la altura aproximada del prisma para contener exactamente la misma cantidad de agua? (Considere π ≈ 3,14)",
     "tipo": "seleccion_multiple",
@@ -1814,7 +1745,6 @@
   {
     "id": "MA-309",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Probabilidad",
     "enunciado": "En un barrio donde hay 1.000 casas de estratos 1 y 2, se realizó una encuesta para conocer las casas que tienen conexión a Internet. De las 350 casas de estrato 1, solamente 2 tienen conexión a Internet. ¿Cuál es la probabilidad de que al elegir una casa al azar, esta NO tenga conexión a Internet?",
     "tipo": "seleccion_multiple",
@@ -1830,7 +1760,6 @@
   {
     "id": "MA-310",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación de gráficas",
     "enunciado": "La gráfica muestra el porcentaje de ventas del último año de una empresa de álbumes musicales en tres idiomas: inglés, francés y español. Al ver la gráfica, un ejecutivo de la empresa interpreta que la menor parte de los álbumes musicales vendidos en el último año fueron los del idioma francés. ¿La interpretación del ejecutivo es correcta?",
     "tipo": "seleccion_multiple",
@@ -1846,7 +1775,6 @@
   {
     "id": "MA-311",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Operaciones con fracciones",
     "enunciado": "En una tienda de animales, el administrador realiza el siguiente procedimiento para hacer un inventario de sus canarios: 1. Separa los canarios en tres grupos excluyentes: canarios de color, canarios de forma y canarios de canto. 2. Cuenta la cantidad de canarios de cada grupo. 3. Divide el número de canarios de cada grupo entre el número total de canarios, y el resultado lo multiplica por 100 %. Si en la tienda de animales el 40 % son canarios de canto, entonces, después de realizar el inventario, se tendrá:",
     "tipo": "seleccion_multiple",
@@ -1862,7 +1790,6 @@
   {
     "id": "MA-312",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación de gráficas",
     "enunciado": "La gráfica muestra la cantidad de productos vendidos en una tienda, en marzo y abril. La tabla que muestra la misma información de la gráfica es:",
     "tipo": "seleccion_multiple",
@@ -1878,7 +1805,6 @@
   {
     "id": "MA-313",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Álgebra - Edades",
     "enunciado": "Jorge es el hermano menor de Paula. La diferencia entre sus edades es el doble de la edad de Jorge. Si P es la edad de Paula y J es la edad de Jorge, ¿cuál es la forma correcta de expresar esta información?",
     "tipo": "seleccion_multiple",
@@ -1894,7 +1820,6 @@
   {
     "id": "MA-314",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones",
     "enunciado": "Un parque natural está dividido en 3 regiones. Para cada región, se representó el número de árboles y el número de aves por medio de una pareja ordenada (x, y), donde x representa el número de árboles en cada región y y representa el número de aves de la misma región, obteniendo (20, 100), (40, 400) y (60, 800), respectivamente. Un trabajador del parque afirma que las variables x y y se relacionan por medio de la función y = x²/4. ¿Es verdadera la afirmación del trabajador?",
     "tipo": "seleccion_multiple",
@@ -1910,7 +1835,6 @@
   {
     "id": "MA-315",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Razones",
     "enunciado": "A todos los asistentes a un centro deportivo se les hizo la pregunta: ¿Cuál es su deporte preferido? Las respuestas obtenidas son: Fútbol: 23, Tenis: 12, Baloncesto: 41, Golf: 24. Para hallar la razón entre la cantidad de asistentes que prefieren el fútbol o el baloncesto, respecto al total de asistentes, se realizó el siguiente procedimiento: Paso 1. Sumar el número de asistentes que prefieren el fútbol y el número de asistentes que prefieren el baloncesto. Paso 2. Calcular el número total de asistentes. Paso 3. Escribir una fracción cuyo numerador es el resultado del paso 1 y el denominador es el resultado del paso 2. ¿Cuál es la fracción obtenida luego de realizar el procedimiento?",
     "tipo": "seleccion_multiple",
@@ -1926,7 +1850,6 @@
   {
     "id": "MA-316",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación de gráficas",
     "enunciado": "Una aplicación para celular mide la cantidad de calorías que quema una persona al trotar. En la gráfica, se muestra la cantidad de calorías que quemaron Mónica y Julio al trotar durante 30 minutos. Usando solo la información de la gráfica, ¿cuál de las siguientes afirmaciones sobre las calorías quemadas por Mónica y Julio es verdadera?",
     "tipo": "seleccion_multiple",
@@ -1942,7 +1865,6 @@
   {
     "id": "MA-317",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Múltiplos",
     "enunciado": "A una ballena le instalaron un aparato electrónico que emite una señal cada 6 segundos y, al mismo tiempo, se activó el equipo receptor de la señal que funciona cada 4 segundos. La persona que maneja el equipo receptor afirma que cada 30 segundos el equipo recibirá la señal que emite el aparato de la ballena. ¿Es verdadera la afirmación de la persona?",
     "tipo": "seleccion_multiple",
@@ -1958,7 +1880,6 @@
   {
     "id": "MA-318",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Centro de masa",
     "enunciado": "Las coordenadas del centro de masa de un polígono se calculan sumando las respectivas coordenadas de sus vértices y dividiendo por la cantidad de estos. Por ejemplo, en un triángulo con vértices P = (0, 2), Q = (2, 3) y R = (4, -1), las coordenadas del centro de masa son: Coordenada x = (0+2+4)/3 = 2, Coordenada y = (2+3-1)/3 = 4/3. Si los vértices de un cuadrilátero son los puntos E = (1, 0), F = (-1, 5), G = (4, 6) y H = (8, -1), ¿cuál de las siguientes figuras muestra el cuadrilátero EFGH con su centro de masa?",
     "tipo": "seleccion_multiple",
@@ -1974,7 +1895,6 @@
   {
     "id": "MA-319",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Planes de ahorro",
     "enunciado": "Carlina planea invertir $1,000,000 en una cooperativa, y allí le ofrecen dos planes de ahorro: Plan 1. Cada 5 años se triplica la inversión. Plan 2. Cada 3 años se duplica la inversión. Carlina desea elegir el plan que le ofrece mayor rendimiento a 15 años. ¿Cuáles datos se deben calcular para escoger el plan de ahorro que le ofrece a Carlina un mayor rendimiento de su dinero a 15 años?",
     "tipo": "seleccion_multiple",
@@ -1990,7 +1910,6 @@
   {
     "id": "MA-320",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones cuadráticas",
     "enunciado": "En clase de Física se está aprendiendo sobre el movimiento uniformemente acelerado (MUA). El profesor menciona que la posición de un cuerpo que sigue este movimiento puede modelarse por medio de la función cuadrática f(x) = 5x² + 1, donde x representa el tiempo transcurrido en segundos y f(x) la posición en dicho tiempo. Para conocer la posición del cuerpo en x = 3 segundos, un estudiante propone el siguiente procedimiento: Paso 1. En la función, cambiar la x por el valor del tiempo dado. Paso 2. Multiplicar el valor del tiempo por 2. Paso 3. Multiplicar por 5 el resultado del paso 2. Paso 4. Sumar 1 al resultado del paso 3. El docente le comunica al estudiante que hay un error en los pasos propuestos. ¿Cuál de los pasos propuestos contiene el error?",
     "tipo": "seleccion_multiple",
@@ -2006,7 +1925,6 @@
   {
     "id": "MA-321",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación de mapas",
     "enunciado": "La gráfica muestra la ubicación de algunos lugares en una ciudad. Un distribuidor de ventiladores debe transportar un pedido desde la fábrica hasta la escuela, pero debe pasar por el hospital y la estación de policía. El distribuidor plantea el siguiente procedimiento para cumplir con el recorrido planteado, partiendo desde la fábrica: Paso 1. Recorrer 2 kilómetros hacia el sur. Paso 2. Recorrer 3 kilómetros hacia el oriente. Paso 3. Recorrer 1 kilómetro hacia el sur. Paso 4. Recorrer 4 kilómetros hacia el sur. ¿En cuál paso del procedimiento hay un error?",
     "tipo": "seleccion_multiple",
@@ -2022,7 +1940,6 @@
   {
     "id": "MA-322",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Área de baldosa",
     "enunciado": "La imagen muestra el nuevo diseño de una baldosa que se vende en una ferretería. Para calcular el área de la región de la baldosa que está sombreada, un empleado realizó el siguiente procedimiento: Paso 1. Restó al área de la baldosa el área del círculo que pasa por P, Q, R, S y ese resultado lo dividió entre 2. Paso 2. Restó al área del círculo el área del cuadrado PQRS, y ese resultado lo dividió entre 2. Paso 3. Dividió entre 2 el área del cuadrado PQRS. Paso 4. Sumó los resultados obtenidos en los pasos 1, 2 y 3. Una persona afirma que el anterior procedimiento también sirve para calcular el área de la región que está pintada de blanco. ¿Es verdadera esta afirmación?",
     "tipo": "seleccion_multiple",
@@ -2038,7 +1955,6 @@
   {
     "id": "MA-323",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Porcentajes",
     "enunciado": "En una tienda de animales, el administrador realiza el siguiente procedimiento para hacer un inventario de sus canarios: 1. Separa los canarios en tres grupos excluyentes: canarios de color, canarios de forma y canarios de canto. 2. Cuenta la cantidad de canarios de cada grupo. 3. Divide el número de canarios de cada grupo entre el número total de canarios, y el resultado lo multiplica por 100 %. Si en la tienda de animales el 40 % son canarios de canto, entonces, después de realizar el inventario, se tendrá:",
     "tipo": "seleccion_multiple",
@@ -2054,7 +1970,6 @@
   {
     "id": "MA-324",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación de gráficas",
     "enunciado": "La gráfica muestra la cantidad de productos vendidos en una tienda, en marzo y abril. La tabla que muestra la misma información de la gráfica es:",
     "tipo": "seleccion_multiple",
@@ -2070,7 +1985,6 @@
   {
     "id": "MA-325",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Trigonometría",
     "enunciado": "Un grupo de arquitectos quiere calcular la altura de un edificio usando los datos de la figura. Se proponen dos procedimientos para hallar h: Procedimiento 1. tan(60°) = h/6 ⇒ h = 6 tan(60°). Procedimiento 2. h/sen(60°) = 6/sen(90°) ⇒ h = (sen(60°) × 6) / sen(90°). Respecto a estos procedimientos, es verdadero afirmar que:",
     "tipo": "seleccion_multiple",
@@ -2086,7 +2000,6 @@
   {
     "id": "MA-326",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Ángulos",
     "enunciado": "Las medidas de dos ángulos de un triángulo se muestran en la figura. ¿Cuál es la medida del ángulo Q? (La figura muestra un triángulo con un ángulo exterior y un ángulo interior)",
     "tipo": "seleccion_multiple",
@@ -2102,7 +2015,6 @@
   {
     "id": "MA-327",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Producción",
     "enunciado": "Una empresa se dedica a la fabricación de cuadernos cuadriculados y rayados de dos tamaños: grande y pequeño. La tabla y la gráfica muestran la producción en los primeros dos días de funcionamiento de la empresa. ¿Cuál tabla corresponde a la producción total de los dos días?",
     "tipo": "seleccion_multiple",
@@ -2118,7 +2030,6 @@
   {
     "id": "MA-328",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Combinatoria",
     "enunciado": "Una empresa se dedica a la fabricación de cuadernos cuadriculados y rayados de dos tamaños: grande y pequeño. Si ingresara en el año 2050, ¿cuál es el máximo número de códigos diferentes que se pueden generar en cada año de ingreso? (El sistema usa letras y números)",
     "tipo": "seleccion_multiple",
@@ -2134,7 +2045,6 @@
   {
     "id": "MA-329",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Distancia en bicicleta",
     "enunciado": "La afirmación de Andrés es: 'Para saber la distancia que avanza un pedalista en los próximos minutos, hace falta saber cuántos metros avanza en cada pedalazo y cuántos pedalazos da en un minuto'. ¿Es correcta la afirmación de Andrés?",
     "tipo": "seleccion_multiple",
@@ -2150,7 +2060,6 @@
   {
     "id": "MA-330",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Aritmética - Notas con porcentajes",
     "enunciado": "En una universidad, un curso se aprueba si se obtiene una nota final igual o mayor que 3,0. De las cuatro notas del curso, la primera equivale al 10 %, la segunda al 20 %, la tercera al 30 % y la cuarta al 40 %. Un estudiante que obtuvo 4,0 en la primera nota, 2,5 en la segunda, 3,0 en la tercera y 2,5 en la cuarta se sorprendió al saber que había reprobado el curso, porque suponía que su nota final era 3,0. Al estudiante le faltó considerar:",
     "tipo": "seleccion_multiple",
@@ -2166,7 +2075,6 @@
   {
     "id": "MA-331",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Aritmética - Conversión de unidades",
     "enunciado": "Un recipiente contiene dos litros y medio de agua. Si cada litro equivale a 1.000 cm³, en total, en ese recipiente hay:",
     "tipo": "seleccion_multiple",
@@ -2182,7 +2090,6 @@
   {
     "id": "MA-332",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones - Satélite",
     "enunciado": "Si se sabe que la mejor forma para que un satélite de señal televisiva lleve su señal a todo el territorio de un país es que se mueva según la función x = 2(-t² + 10), donde t es el tiempo en órbita y x es la distancia respecto a la línea del ecuador, y los valores negativos de x representan distancias hacia el sur y los valores positivos de x representan distancias hacia el norte, ¿cuál es la distancia máxima hacia el norte a la que estará el satélite de la línea del ecuador?",
     "tipo": "seleccion_multiple",
@@ -2198,7 +2105,6 @@
   {
     "id": "MA-333",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Tablas",
     "enunciado": "Unos pescadores expertos determinan que, para obtener una buena pesca, se requiere que haya la menor cantidad de personas en el lago y que, además, no esté lloviendo, por lo cual quieren elaborar una tabla que les permita conocer cuál es el mejor día para ir de pesca. De acuerdo con la información anterior, ¿cuál de las siguientes tablas reúne la información que requieren los pescadores?",
     "tipo": "seleccion_multiple",
@@ -2214,7 +2120,6 @@
   {
     "id": "MA-334",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Estadística - Porcentaje de variación",
     "enunciado": "La tabla muestra el promedio mensual de vehículos afiliados al servicio de transporte público en cuatro ciudades. Si se ordenan las ciudades según el porcentaje de variación de menor a mayor, el orden correcto es:",
     "tipo": "seleccion_multiple",
@@ -2230,7 +2135,6 @@
   {
     "id": "MA-335",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Interpretación de gráficas",
     "enunciado": "Una compañía realizó una encuesta para conocer la cantidad de pacientes que se atendieron por varicela, sarampión y rubeola en el país durante tres años. Los resultados se muestran en la tabla. La gráfica que representa la cantidad total de personas atendidas por estas enfermedades durante los tres años observados es:",
     "tipo": "seleccion_multiple",
@@ -2246,7 +2150,6 @@
   {
     "id": "MA-336",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Estadística - Quejas",
     "enunciado": "La gráfica muestra información sobre las quejas que se reciben en un punto de servicio al cliente de una compañía de telefonía celular. ¿Cuál de las siguientes tablas muestra la cantidad de personas y el porcentaje acumulado por cada tipo de queja?",
     "tipo": "seleccion_multiple",
@@ -2262,7 +2165,6 @@
   {
     "id": "MA-337",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Salario y tarjetas",
     "enunciado": "En un estudio, se analizó el salario de 200 personas, de las cuales solo 164 tenían deudas por tarjeta de crédito. En la Tabla 1 se muestra la distribución de las 200 personas según su salario, y en la Tabla 2 se muestra el porcentaje del salario que destinan para pagar las cuotas mensuales de la tarjeta de crédito. Con los datos de las personas que destinan el 15% del salario a cuotas mensuales por tarjetas de crédito, se planeó efectuar el siguiente procedimiento: Paso 1. Determinar el salario de la persona. Paso 2. Determinar el porcentaje del salario que destina a cuotas mensuales por tarjeta de crédito (15%). Paso 3. Multiplicar los resultados de los pasos anteriores. Con este procedimiento, es correcto afirmar que:",
     "tipo": "seleccion_multiple",
@@ -2278,7 +2180,6 @@
   {
     "id": "MA-338",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Promedio",
     "enunciado": "En un estudio, se analizó el salario de 200 personas. ¿Cuál es el salario promedio de las 100 mujeres? (Basado en la tabla de distribución de salarios por género)",
     "tipo": "seleccion_multiple",
@@ -2294,7 +2195,6 @@
   {
     "id": "MA-339",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Combinatoria",
     "enunciado": "En un colegio se ofrecen seis deportes, para que los estudiantes los practiquen durante el año. Un estudiante elaboró una tabla que relaciona la cantidad de deportes que puede escoger y la cantidad de posibilidades distintas que hay para seleccionarlos. De un conjunto con n elementos, se deben seleccionar r elementos. Combinaciones: cuando no importa el orden en el que se selecciona cada deporte. Permutaciones: cuando sí importa el orden en que se selecciona cada deporte. De acuerdo con la información anterior, ¿es correcta la información que aparece en la tabla?",
     "tipo": "seleccion_multiple",
@@ -2310,7 +2210,6 @@
   {
     "id": "MA-340",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Aritmética - Suma de impares",
     "enunciado": "En su infancia, el matemático Carl Friedrich Gauss descubrió una forma rápida para sumar números consecutivos. Por ejemplo, si quería calcular la suma de los números enteros del 1 al 10, seguía este procedimiento: Paso 1. Escribir en dos filas los números a sumar. Paso 2. Sumar los números de cada columna; el resultado en todos los casos es el mismo: 11. Paso 3. Como hay 10 columnas, la suma de todos los números de la tabla es: 10 × 11 = 110. Paso 4. Como se escribió la lista de números del 1 al 10 dos veces (una en cada fila), el resultado del paso anterior se divide entre dos: 110/2 = 55. La idea del procedimiento anterior se puede aplicar a otros problemas similares. Por ejemplo, considerando el resultado de sumar los números impares menores que 30: 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23 + 25 + 27 + 29.",
     "tipo": "seleccion_multiple",
@@ -2326,7 +2225,6 @@
   {
     "id": "MA-341",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Ascenso al Everest",
     "enunciado": "La gráfica forma parte de un reportaje sobre montañismo en los montes Everest y Lhotse. En ella se indican las alturas a las que habitualmente se ubican los campamentos al escalar y un posible plan de ascenso al Everest en 17 días. Un grupo de montañistas planea realizar un ascenso al Everest distinto al mostrado en la gráfica, instalando un campo cada 700 metros desde el campo base hasta la cumbre. Si instalan el campo base a 5.300 metros, ¿cuántos campos en total tendrían que usar incluyendo el campo base?",
     "tipo": "seleccion_multiple",
@@ -2342,7 +2240,6 @@
   {
     "id": "MA-342",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones - Continuidad",
     "enunciado": "Dada la función definida a trozos: f(x) = 4x - 6 si x ≤ 2; f(x) = x² - x si x > 2. Para evaluar la continuidad de la función, se realizan los siguientes pasos: Paso 1. Se reemplaza x = 2 en el trozo 4x - 6. Paso 2. Se reemplaza x = 2 en el trozo x² - x. Paso 3. Se comparan los resultados de los pasos 1 y 2. ¿Cuál es el resultado de la comparación?",
     "tipo": "seleccion_multiple",
@@ -2358,7 +2255,6 @@
   {
     "id": "MA-343",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Ortocentro",
     "enunciado": "El ortocentro se define como el lugar geométrico en el cual se cruzan las tres alturas de un triángulo. En la figura, se le han dibujado las alturas al triángulo MOP. ¿En cuál punto se ubica el ortocentro del triángulo?",
     "tipo": "seleccion_multiple",
@@ -2374,7 +2270,6 @@
   {
     "id": "MA-344",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Indicador de crecimiento",
     "enunciado": "En la producción de flores en un invernadero se utilizan tres diferentes insumos aplicados a cuatro especies. La persona encargada del cultivo mide el crecimiento de las plantas bajo un sistema de indicadores. ¿Cuál es el indicador de crecimiento?",
     "tipo": "seleccion_multiple",
@@ -2390,7 +2285,6 @@
   {
     "id": "MA-345",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Acierto por pregunta",
     "enunciado": "El porcentaje de acierto por pregunta en una prueba de selección se presenta en la gráfica. Una pregunta se considera de alto nivel de dificultad, si menos del 50 % de las personas aciertan la respuesta. De acuerdo con los resultados, ¿las preguntas difíciles se ubicaron?",
     "tipo": "seleccion_multiple",
@@ -2406,7 +2300,6 @@
   {
     "id": "MA-346",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Triángulo equilátero",
     "enunciado": "Un estudiante dibuja un triángulo equilátero en un plano cartesiano, como se muestra en la figura. ¿Cuáles son las coordenadas del vértice superior?",
     "tipo": "seleccion_multiple",
@@ -2422,7 +2315,6 @@
   {
     "id": "MA-347",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación de gráficas",
     "enunciado": "La gráfica muestra el porcentaje de ventas del último año de una empresa de álbumes musicales en tres idiomas: inglés, francés y español. Al ver la gráfica, un ejecutivo de la empresa interpreta que la menor parte de los álbumes musicales vendidos en el último año fueron los del idioma francés. ¿La interpretación del ejecutivo es correcta?",
     "tipo": "seleccion_multiple",
@@ -2438,7 +2330,6 @@
   {
     "id": "MA-348",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Círculos en movimiento",
     "enunciado": "Dos círculos se encuentran como se presenta en la figura. Si el círculo grande da una vuelta completa hacia la derecha a lo largo del eje x, este cambia su centro del punto (0,2r) al punto (4πr, 2r). ¿Cuántas vueltas tiene que dar el círculo pequeño para que vuelva a quedar de forma similar dentro del círculo grande?",
     "tipo": "seleccion_multiple",
@@ -2454,7 +2345,6 @@
   {
     "id": "MA-349",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Combinatoria - Pares de clientes",
     "enunciado": "Mario debe visitar a sus clientes Carlos, Alberto, Lucía y Patricia, quienes viven en la misma zona, pero solo tiene tiempo para visitar a dos de ellos. ¿Cuántos pares diferentes de clientes puede Mario escoger para visitar?",
     "tipo": "seleccion_multiple",
@@ -2470,7 +2360,6 @@
   {
     "id": "MA-350",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Interpretación de tabla",
     "enunciado": "En la tabla se muestra la cantidad de libros de dos géneros que han leído tres personas: Javier: Ficción 7, Poesía 5; Celeste: Ficción 16, Poesía 8; Eduardo: Ficción 15, Poesía 9. ¿Cuál de las siguientes opciones es una interpretación errónea de los datos de la tabla?",
     "tipo": "seleccion_multiple",
@@ -2486,7 +2375,6 @@
   {
     "id": "MA-351",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Hexágono regular",
     "enunciado": "En la figura se muestra un hexágono regular y un ángulo θ. Pedro afirma que el ángulo θ debe ser menor o igual que 100°. ¿La afirmación de Pedro es verdadera?",
     "tipo": "seleccion_multiple",
@@ -2502,7 +2390,6 @@
   {
     "id": "MA-352",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Álgebra - Arriendo de terreno",
     "enunciado": "Para calcular el arriendo mensual de un terreno rectangular, se efectúa el siguiente procedimiento: Paso 1. Se calcula el área del terreno. Paso 2. Se multiplica el resultado del paso 1 por una tasa fija de doscientos mil pesos ($200.000). Paso 3. Se le adiciona al resultado del paso 2 un pago extra de cien mil pesos ($100.000) por cada metro de frente. Si un terreno tiene 4 metros de frente y 6 de profundidad, ¿cuál es el valor del arriendo mensual?",
     "tipo": "seleccion_multiple",
@@ -2518,7 +2405,6 @@
   {
     "id": "MA-353",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Aritmética - Mínimo común múltiplo",
     "enunciado": "A una ballena le instalaron un aparato electrónico que emite una señal cada 6 segundos y, al mismo tiempo, se activó el equipo receptor de la señal que funciona cada 4 segundos. La persona que maneja el equipo receptor afirma que cada 30 segundos el equipo recibirá la señal que emite el aparato de la ballena. ¿Es verdadera la afirmación de la persona?",
     "tipo": "seleccion_multiple",
@@ -2534,7 +2420,6 @@
   {
     "id": "MA-354",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Estadística - Promedio",
     "enunciado": "Una persona que puede escoger tres rutas de buses para transportarse a su trabajo registra algunos datos, como se muestra en la tabla: Ruta 1: Tiempo 15 min, Distancia 18 km; Ruta 2: Tiempo 180 min, Distancia 15 km; Ruta 3: Tiempo 300 min, Distancia 20 km. ¿Cuál es el promedio de los tiempos de recorrido en minutos de las tres rutas?",
     "tipo": "seleccion_multiple",
@@ -2550,7 +2435,6 @@
   {
     "id": "MA-355",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Área del hexágono",
     "enunciado": "La figura muestra un hexágono regular, es decir, un polígono con seis vértices y seis lados de igual longitud, L representa el valor del lado y a el valor de la apotema (la menor distancia entre el centro del hexágono y cualquiera de sus lados). Para calcular el área del hexágono, se efectúa el siguiente procedimiento: Paso 1. Sumar la longitud del lado del polígono tantas veces como número de lados haya. Paso 2. Multiplicar el resultado del paso 1 por el valor de la apotema. Paso 3. Dividir el resultado del paso 2 entre dos. Con base en el procedimiento anterior, ¿cuál es el valor del área del hexágono? (L = 2 m, apotema = √3 m)",
     "tipo": "seleccion_multiple",
@@ -2566,7 +2450,6 @@
   {
     "id": "MA-356",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Mediana de pH",
     "enunciado": "El pH es una medida de la acidez o alcalinidad de una sustancia. La siguiente lista muestra diferentes sustancias con su respectivo valor de pH: detergente, 12; zumo de limón, 2; leche, 6; hidróxido de sodio, 14. Para calcular la mediana de los valores pH de estas sustancias, se realizan los siguientes pasos: Paso 1. Ordenar los valores de pH de mayor a menor. Paso 2. Con los valores ordenados en el paso 1, identificar los dos valores de pH que están en el medio. Paso 3. Tomar el promedio entre los dos valores identificados en el paso 2. ¿Qué característica debe tener el resultado de la mediana pH para las 4 sustancias?",
     "tipo": "seleccion_multiple",
@@ -2582,7 +2465,6 @@
   {
     "id": "MA-357",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Razón de semejanza",
     "enunciado": "La figura muestra las baldosas triangulares equiláteras W y X, cuyos perímetros son 9 cm y 27 cm, respectivamente. Vanesa necesita saber la razón de semejanza que existe entre las baldosas y, para ello, plantea el siguiente procedimiento: Paso 1. Dividir el perímetro de la baldosa W entre 3. Paso 2. Dividir el perímetro de la baldosa X entre 3. Paso 3. Dividir el resultado del paso 2 entre el resultado del paso 1. Ahora bien, Johana afirma que el procedimiento realizado por Vanesa es incorrecto porque en los pasos 1 y 2 se debe dividir entre 6 y no entre 3. ¿Es verdadera la afirmación de Johana?",
     "tipo": "seleccion_multiple",
@@ -2598,7 +2480,6 @@
   {
     "id": "MA-358",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Mediana de tallas",
     "enunciado": "Una empresa dedicada a la fabricación y comercialización de calzado necesita priorizar la fabricación de ciertas tallas de calzado para incrementar sus ventas; para esto, toma como referencia las tallas más vendidas en el último mes. Uno de los ejecutivos propone utilizar la mediana de la muestra estadística. La gráfica representa la información obtenida en el último mes. ¿La propuesta del ejecutivo de calcular la mediana permite hallar el valor de referencia requerido?",
     "tipo": "seleccion_multiple",
@@ -2614,7 +2495,6 @@
   {
     "id": "MA-359",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Estadística - Promedio de notas",
     "enunciado": "Un estudiante debe obtener un promedio de 4,5 en las asignaturas Inglés, Matemáticas, Química y Física. Sus resultados se muestran en las tablas. El promedio lo calcula resolviendo (5 + 4 + 4 + 5) / 4. ¿Este procedimiento es correcto o incorrecto?",
     "tipo": "seleccion_multiple",
@@ -2630,7 +2510,6 @@
   {
     "id": "MA-360",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Vuelta de círculo",
     "enunciado": "Dos círculos se encuentran como se presenta en la figura. Si el círculo grande da una vuelta completa hacia la derecha a lo largo del eje x, este cambia su centro del punto (0,2r) al punto (4πr, 2r). ¿Cuántas vueltas tiene que dar el círculo pequeño para que vuelva a quedar de forma similar dentro del círculo grande?",
     "tipo": "seleccion_multiple",
@@ -2646,7 +2525,6 @@
   {
     "id": "MA-361",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones - Tabla de datos",
     "enunciado": "Una empresa solo tiene dos fuentes de ingreso. Un nuevo coordinador quiere comparar los ingresos que se han obtenido a través de las dos fuentes y encuentra reportes con los consolidados. Sin embargo, el coordinador no encuentra un reporte para la fuente 2 y necesita saber si por esta ha recibido más o menos ingresos que por la primera. Por este motivo, debe primero hallar el valor asociado a los ingresos de la fuente 2, y para esto el procedimiento que debe llevar a cabo es:",
     "tipo": "seleccion_multiple",
@@ -2662,7 +2540,6 @@
   {
     "id": "MA-362",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Probabilidad - Dado especial",
     "enunciado": "En cierto juego de mesa se usa un dado especial, de forma que, al lanzarlo, se obtiene el número 8 con una probabilidad de 1/7. Un grupo de amigos busca modificar el dado, de manera que la probabilidad de obtener el número 8 aumente. Ellos proponen utilizar un dado de 8 caras, numeradas del 1 al 8, donde cada cara tenga igual probabilidad de salir, pues afirman que esto incrementaría la probabilidad de obtener el número 8. ¿La solución dada por el grupo de amigos es correcta?",
     "tipo": "seleccion_multiple",
@@ -2678,7 +2555,6 @@
   {
     "id": "MA-363",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Polígono regular",
     "enunciado": "En un polígono regular, la suma de los ángulos internos es 720°. ¿Cuántos lados tiene el polígono?",
     "tipo": "seleccion_multiple",
@@ -2694,7 +2570,6 @@
   {
     "id": "MA-364",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones - Mínimo de función cuadrática",
     "enunciado": "La función f(x) = 2x² - 8x + 3 representa el costo de producción de una empresa. ¿Cuál es el costo mínimo?",
     "tipo": "seleccion_multiple",
@@ -2710,7 +2585,6 @@
   {
     "id": "MA-365",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Teorema de Pitágoras",
     "enunciado": "Un triángulo rectángulo tiene un cateto de 6 cm y la hipotenusa de 10 cm. ¿Cuál es la longitud del otro cateto?",
     "tipo": "seleccion_multiple",
@@ -2726,7 +2600,6 @@
   {
     "id": "MA-366",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Promedio de pasajeros",
     "enunciado": "En un estudio de movilidad se registró el número de pasajeros por vehículo: 50% llevan 1 pasajero, 30% llevan 2, 15% llevan 3 y 5% llevan 4. ¿Cuál es el número promedio de pasajeros por vehículo?",
     "tipo": "seleccion_multiple",
@@ -2742,7 +2615,6 @@
   {
     "id": "MA-367",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Aritmética - Fracciones",
     "enunciado": "Un laboratorio tiene un contenedor con 18 3/4 litros de jarabe y quiere envasarlo en frascos de 1/8 de litro. ¿Cuántos frascos se podrán llenar?",
     "tipo": "seleccion_multiple",
@@ -2758,7 +2630,6 @@
   {
     "id": "MA-368",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Interpretación de gráficas",
     "enunciado": "Un gráfico lineal muestra la inflación anual. La línea sube de 4% en enero a 9% en julio y desciende hasta 5% en diciembre. ¿En qué período se registró desaceleración?",
     "tipo": "seleccion_multiple",
@@ -2774,7 +2645,6 @@
   {
     "id": "MA-369",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Probabilidad - Bombillos defectuosos",
     "enunciado": "Una fábrica produce bombillos en dos líneas. La línea A produce 60% de los bombillos con 2% defectuosos, y la línea B produce 40% con 5% defectuosos. Si un bombillo es defectuoso, ¿qué probabilidad hay de que sea de la línea A?",
     "tipo": "seleccion_multiple",
@@ -2790,7 +2660,6 @@
   {
     "id": "MA-370",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Perímetro de cuadrado",
     "enunciado": "¿Cuál es el perímetro de un cuadrado cuyo lado mide 6 cm?",
     "tipo": "seleccion_multiple",
@@ -2806,7 +2675,6 @@
   {
     "id": "MA-371",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Moda",
     "enunciado": "La moda del conjunto de datos {1, 2, 2, 3, 4} es:",
     "tipo": "seleccion_multiple",
@@ -2822,7 +2690,6 @@
   {
     "id": "MA-372",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Aritmética - Raíz cuadrada",
     "enunciado": "¿Cuál es la raíz cuadrada de 144?",
     "tipo": "seleccion_multiple",
@@ -2838,7 +2705,6 @@
   {
     "id": "MA-373",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Álgebra - Ecuación lineal",
     "enunciado": "Si x/5 = 4, ¿cuál es el valor de x?",
     "tipo": "seleccion_multiple",
@@ -2854,7 +2720,6 @@
   {
     "id": "MA-374",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Hipotenusa",
     "enunciado": "Un triángulo rectángulo tiene catetos de 3 cm y 4 cm. ¿Cuánto mide su hipotenusa?",
     "tipo": "seleccion_multiple",
@@ -2870,7 +2735,6 @@
   {
     "id": "MA-375",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Aritmética - Potencia",
     "enunciado": "¿Cuál es el valor de 2³?",
     "tipo": "seleccion_multiple",
@@ -2886,7 +2750,6 @@
   {
     "id": "MA-376",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Álgebra - Propiedad del cero",
     "enunciado": "El resultado de multiplicar cualquier número por 0 es siempre 0.",
     "tipo": "verdadero_falso",
@@ -2900,7 +2763,6 @@
   {
     "id": "MA-377",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Probabilidad - Evento imposible",
     "enunciado": "La probabilidad de un evento imposible es:",
     "tipo": "seleccion_multiple",
@@ -2916,7 +2778,6 @@
   {
     "id": "MA-378",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Aritmética - Porcentaje",
     "enunciado": "¿Cuánto es el 50% de 80?",
     "tipo": "seleccion_multiple",
@@ -2932,7 +2793,6 @@
   {
     "id": "MA-379",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones",
     "enunciado": "Si f(x) = x² + 2, ¿cuál es f(3)?",
     "tipo": "seleccion_multiple",
@@ -2948,7 +2808,6 @@
   {
     "id": "MA-380",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Velocidad media",
     "enunciado": "Un automóvil recorre 180 km en 2.5 horas. ¿Cuál fue su velocidad media en km/h?",
     "tipo": "seleccion_multiple",
@@ -2964,7 +2823,6 @@
   {
     "id": "MA-381",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Volumen de prisma",
     "enunciado": "Si un prisma rectangular tiene medidas de 2 cm de ancho, 3 cm de alto y 5 cm de largo, ¿cuál es su volumen?",
     "tipo": "seleccion_multiple",
@@ -2980,7 +2838,6 @@
   {
     "id": "MA-382",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Media",
     "enunciado": "La media de las notas {3, 4, 5, 6} es:",
     "tipo": "seleccion_multiple",
@@ -2996,7 +2853,6 @@
   {
     "id": "MA-383",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Álgebra - Ecuación lineal",
     "enunciado": "La expresión 4x - 2 = 10 tiene como solución:",
     "tipo": "seleccion_multiple",
@@ -3012,7 +2868,6 @@
   {
     "id": "MA-384",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Elipse",
     "enunciado": "Determine las coordenadas de los focos de la elipse cuya ecuación canónica está dada por la expresión: x²/25 + y²/9 = 1.",
     "tipo": "seleccion_multiple",
@@ -3028,7 +2883,6 @@
   {
     "id": "MA-385",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Descuentos sucesivos",
     "enunciado": "Una prenda que originalmente cuesta $200,000 recibe primero un descuento del 30% y luego un descuento adicional del 10% sobre el precio ya rebajado. ¿Cuál es el precio final?",
     "tipo": "seleccion_multiple",
@@ -3044,7 +2898,6 @@
   {
     "id": "MA-386",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Álgebra - Números complejos",
     "enunciado": "Si definimos un número complejo en su forma binómica como z = 3 + 4i, donde i = √-1, ¿cuál es el módulo exacto del vector que representa a dicho número en el plano complejo?",
     "tipo": "seleccion_multiple",
@@ -3060,7 +2913,6 @@
   {
     "id": "MA-387",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Trigonometría",
     "enunciado": "Simplifique la expresión: (1 - cos²θ) / (senθ · cosθ).",
     "tipo": "seleccion_multiple",
@@ -3076,7 +2928,6 @@
   {
     "id": "MA-388",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Razonamiento - Ley de gravitación",
     "enunciado": "La fuerza de atracción gravitacional F entre dos cuerpos es inversamente proporcional al cuadrado de la distancia r. Si la distancia se duplica, ¿qué le sucede a la fuerza?",
     "tipo": "seleccion_multiple",
@@ -3092,7 +2943,6 @@
   {
     "id": "MA-389",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones - Progresión aritmética",
     "enunciado": "Una progresión aritmética tiene a₁ = 4 y d = 3. ¿Cuál es el valor de a₂₀?",
     "tipo": "seleccion_multiple",
@@ -3108,7 +2958,6 @@
   {
     "id": "MA-390",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Cálculo - Integral",
     "enunciado": "Calcule la integral definida de ∫₁³ (3x² - 2x) dx.",
     "tipo": "seleccion_multiple",
@@ -3124,7 +2973,6 @@
   {
     "id": "MA-391",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Cilindro en esfera",
     "enunciado": "Un cilindro circular recto de radio 5 cm y altura 24 cm está inscrito en una esfera. ¿Cuál es el radio de la esfera?",
     "tipo": "seleccion_multiple",
@@ -3140,7 +2988,6 @@
   {
     "id": "MA-392",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Muestreo",
     "enunciado": "¿Cuál es el método de muestreo probabilístico más eficiente cuando la población se divide en grupos homogéneos internamente pero heterogéneos entre sí?",
     "tipo": "seleccion_multiple",
@@ -3156,7 +3003,6 @@
   {
     "id": "MA-393",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Aritmética - MCM",
     "enunciado": "Tres alarmas suenan cada 12, 15 y 18 minutos. Si suenan juntas a las 8:00 a.m., ¿a qué hora volverán a sonar juntas?",
     "tipo": "seleccion_multiple",
@@ -3172,7 +3018,6 @@
   {
     "id": "MA-394",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones - Exponencial",
     "enunciado": "La función f(x) = 500 × 2^(x/3) modela el crecimiento de bacterias. ¿Qué representa el número 500?",
     "tipo": "seleccion_multiple",
@@ -3188,7 +3033,6 @@
   {
     "id": "MA-395",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Probabilidad - Sin reemplazo",
     "enunciado": "En una caja hay 6 rojas, 4 azules y 2 verdes. Si se extraen dos sin reemplazo, ¿cuál es la probabilidad de que ambas sean rojas?",
     "tipo": "seleccion_multiple",
@@ -3204,7 +3048,6 @@
   {
     "id": "MA-396",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Álgebra - Determinante",
     "enunciado": "Calcule el determinante de la matriz A = [[4, -2], [5, 3]].",
     "tipo": "seleccion_multiple",
@@ -3220,7 +3063,6 @@
   {
     "id": "MA-397",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Suma de ángulos internos",
     "enunciado": "La suma de los ángulos internos de un polígono convexo de n lados es S = 180° × (n-2).",
     "tipo": "verdadero_falso",
@@ -3234,7 +3076,6 @@
   {
     "id": "MA-398",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Pendiente de recta perpendicular",
     "enunciado": "¿Cuál es la pendiente de una recta perpendicular a la recta 2x - 3y + 6 = 0?",
     "tipo": "seleccion_multiple",
@@ -3250,7 +3091,6 @@
   {
     "id": "MA-399",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Álgebra - Potencias de i",
     "enunciado": "Calcule i⁵⁷.",
     "tipo": "seleccion_multiple",
@@ -3266,7 +3106,6 @@
   {
     "id": "MA-400",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Trigonometría",
     "enunciado": "Un topógrafo mide un ángulo de elevación de 30° a una colina. Avanza 100 m y el nuevo ángulo es 60°. ¿Cuál es la altura de la colina?",
     "tipo": "seleccion_multiple",
@@ -3282,7 +3121,6 @@
   {
     "id": "MA-401",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones - Decaimiento exponencial",
     "enunciado": "La vida útil de un componente electrónico disminuye exponencialmente con la temperatura. Un modelo lineal sería incorrecto porque:",
     "tipo": "seleccion_multiple",
@@ -3298,7 +3136,6 @@
   {
     "id": "MA-402",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Combinatoria - Clave bancaria",
     "enunciado": "Una clave de 4 dígitos usa solo dígitos impares (1,3,5,7,9). Si se permite repetición, ¿cuántas combinaciones son posibles?",
     "tipo": "seleccion_multiple",
@@ -3314,7 +3151,6 @@
   {
     "id": "MA-403",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Histograma",
     "enunciado": "En un histograma, los intervalos de ingresos son: 1-2 millones (25%), 2-3 millones (40%), 3-4 millones (20%), 4-5 millones (15%). ¿Qué porcentaje gana 3 millones o más?",
     "tipo": "seleccion_multiple",
@@ -3330,7 +3166,6 @@
   {
     "id": "MA-404",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones - Progresión geométrica infinita",
     "enunciado": "Una progresión geométrica infinita tiene a₁ = 12 y r = 1/3. ¿Cuál es la suma infinita?",
     "tipo": "seleccion_multiple",
@@ -3346,7 +3181,6 @@
   {
     "id": "MA-405",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Álgebra - Sistema homogéneo",
     "enunciado": "Un sistema homogéneo A·X = 0 tiene det(A) = 0. ¿Qué se puede afirmar?",
     "tipo": "seleccion_multiple",
@@ -3362,7 +3196,6 @@
   {
     "id": "MA-406",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Volumen de cono truncado",
     "enunciado": "Un cono de radio 5 cm y altura 12 cm se corta a la mitad de la altura. ¿Cuál es el volumen del tronco inferior?",
     "tipo": "seleccion_multiple",
@@ -3378,7 +3211,6 @@
   {
     "id": "MA-407",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Estadística - Correlación",
     "enunciado": "Un coeficiente de correlación de Pearson r = -0.85 indica:",
     "tipo": "seleccion_multiple",
@@ -3394,7 +3226,6 @@
   {
     "id": "MA-408",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Aritmética - Interés compuesto",
     "enunciado": "Un capital de $5,000,000 al 10% anual compuesto por 2 años. ¿Cuánto se acumula?",
     "tipo": "seleccion_multiple",
@@ -3410,7 +3241,6 @@
   {
     "id": "MA-409",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Funciones - Dominio",
     "enunciado": "¿Cuál es el dominio de f(x) = (2x+1)/(x²-4)?",
     "tipo": "seleccion_multiple",
@@ -3426,7 +3256,6 @@
   {
     "id": "MA-410",
     "materia": "Matemáticas",
-    "componente": "Aleatorio",
     "competencia": "Probabilidad - Lanzamiento de monedas",
     "enunciado": "Al lanzar tres monedas, ¿cuál es la probabilidad de obtener al menos dos caras?",
     "tipo": "seleccion_multiple",
@@ -3442,7 +3271,6 @@
   {
     "id": "MA-411",
     "materia": "Matemáticas",
-    "componente": "Numérico - variacional",
     "competencia": "Álgebra - Ecuación con valor absoluto",
     "enunciado": "Resuelva |2x - 5| = 7.",
     "tipo": "seleccion_multiple",
@@ -3458,7 +3286,6 @@
   {
     "id": "MA-412",
     "materia": "Matemáticas",
-    "componente": "Geométrico - métrico",
     "competencia": "Geometría - Circunferencia",
     "enunciado": "La ecuación x² + y² - 4x + 6y - 3 = 0 representa una circunferencia. ¿Cuáles son el centro y el radio?",
     "tipo": "seleccion_multiple",

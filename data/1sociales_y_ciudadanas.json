@@ -2,7 +2,6 @@
   {
     "id": "SC-001",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "En un colegio de una ciudad principal se ha presentado un incremento de tensiones y agresiones verbales entre estudiantes nativos y un grupo de estudiantes migrantes recién llegados. Para abordar la situación, el comité de convivencia propone una estrategia. ¿Cuál de las siguientes propuestas se orienta de manera prioritaria hacia la resolución pacífica de conflictos y la promoción de una convivencia armónica basada en el pluralismo?",
     "tipo": "seleccion_multiple",
@@ -18,7 +17,6 @@
   {
     "id": "SC-002",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Ante la escasez de agua en una región agrícola, el gobierno local decide desviar el cauce de un río secundario para abastecer prioritariamente a los centros urbanos. Los campesinos de la zona baja protestan argumentando que sus cultivos se perderán, mientras que los representantes de las industrias urbanas afirman que sin agua la economía de la ciudad colapsará, afectando el empleo regional. En esta situación, ¿cuáles son las perspectivas en conflicto?",
     "tipo": "seleccion_multiple",
@@ -34,7 +32,6 @@
   {
     "id": "SC-003",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "Durante la primera mitad del siglo XX en Colombia, el proceso de industrialización y el auge económico de las principales ciudades estuvieron acompañados por un fenómeno demográfico acelerado. ¿Cuál fue este fenómeno y qué factor estructural lo impulsó principalmente?",
     "tipo": "seleccion_multiple",
@@ -50,7 +47,6 @@
   {
     "id": "SC-004",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un municipio decide legalizar y formalizar la minería a pequeña escala en una zona de reserva forestal con el fin de aumentar la recaudación de impuestos y erradicar la delincuencia asociada a la explotación ilegal. Sin embargo, diversos colectivos ambientales advierten que esta medida provocará la contaminación irremediable de las fuentes hídricas que surten a los acueductos municipales. ¿Qué dimensiones del desarrollo sostenible entran en tensión directa en este ordenamiento?",
     "tipo": "seleccion_multiple",
@@ -66,7 +62,6 @@
   {
     "id": "SC-005",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Lea con atención el siguiente fragmento del Artículo 12 de la Constitución Política de Colombia:\n\n«Nadie será sometido a desaparición forzada, a torturas ni a tratos o penas crueles, inhumanos o degradantes».\n\n¿A qué categoría fundamental de derechos pertenece lo enunciado en este artículo y cuál es su principal implicación para el Estado?",
     "tipo": "seleccion_multiple",
@@ -82,7 +77,6 @@
   {
     "id": "SC-006",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "En un debate televisado sobre la flexibilización de los contratos laborales, un líder gremial de empresarios afirma: 'Disminuir los costos de despido y los recargos nocturnos permitirá a las empresas contratar más personal, dinamizando el empleo'. Por su parte, un representante sindical de trabajadores replica: 'Esa medida solo precariza las condiciones de vida de la clase obrera, reduce el poder adquisitivo y aumenta las ganancias del empleador a costa del bienestar familiar'. Con respecto a la propuesta de flexibilización laboral, se puede afirmar que:",
     "tipo": "seleccion_multiple",
@@ -98,7 +92,6 @@
   {
     "id": "SC-007",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "La Constitución de 1991 definió a Colombia como un 'Estado social de derecho, organizado en forma de República unitaria, descentralizada, con autonomía de sus entidades territoriales, democrática, participativa y pluralista'. ¿Qué transformación fundamental introdujo el concepto de 'pluralista' en relación con el ordenamiento constitucional de la Constitución de 1886?",
     "tipo": "seleccion_multiple",
@@ -114,7 +107,6 @@
   {
     "id": "SC-008",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Una coalición de países decide imponer un severo bloqueo comercial y financiero a una nación gobernada por un régimen autoritario, argumentando que la presión económica forzará la caída del dictador y el retorno a la democracia. No obstante, analistas internacionales señalan que los efectos inmediatos recaerán sobre la escasez de medicamentos y alimentos para la población civil, desatando una crisis humanitaria. ¿Qué característica del sistema internacional contemporáneo ilustra este caso?",
     "tipo": "seleccion_multiple",
@@ -130,7 +122,6 @@
   {
     "id": "SC-009",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Determine la veracidad del siguiente enunciado sobre los mecanismos constitucionales de participación ciudadana en el contexto colombiano:\n\n«El plebiscito es el pronunciamiento del pueblo convocado por el Presidente de la República, mediante el cual apoya o rechaza una determinada decisión del Ejecutivo, y requiere la aprobación previa del Congreso para su convocatoria.»",
     "tipo": "verdadero_falso",
@@ -144,7 +135,6 @@
   {
     "id": "SC-010",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Un grupo de jóvenes grafiteros es contratado por la alcaldía para pintar murales artísticos en los puentes de una avenida comercial. Los comerciantes del sector reclaman manifestando que los grafitis 'afean la zona, promueven el vandalismo y alejan a los clientes de estrato alto'. Los jóvenes artistas sostienen que sus obras 'democratizan el arte urbano, embellecen el concreto gris y rescatan la memoria histórica popular'. ¿Qué prejuicio se evidencia subyacente en la postura de los comerciantes?",
     "tipo": "seleccion_multiple",
@@ -160,7 +150,6 @@
   {
     "id": "SC-011",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "A finales del siglo XVIII, la Revolución Francesa sacudió las estructuras políticas de Europa Occidental al socavar el modelo del Absolutismo Monárquico. ¿Cuál de los siguientes principios legados por este proceso histórico se constituyó en la base de los modernos Estados democráticos constitucionales?",
     "tipo": "seleccion_multiple",
@@ -176,7 +165,6 @@
   {
     "id": "SC-012",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Para combatir el alarmante hacinamiento carcelario, un congresista presenta un proyecto de ley dirigido a despenalizar delitos menores y promover penas sustitutivas no restrictivas de la libertad (como el servicio comunitario). Un sector de la ciudadanía se opone rotundamente exigiendo el endurecimiento generalizado de penas y la construcción de megacárceles. Si se evalúa este panorama desde un enfoque sistémico, ¿qué impacto colateral indeseado podría tener la propuesta de endurecimiento de penas exigida por los ciudadanos?",
     "tipo": "seleccion_multiple",
@@ -192,7 +180,6 @@
   {
     "id": "SC-013",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Frente a un caso recurrente de matoneo (bullying) homofóbico en una escuela en contra de un estudiante de décimo grado, el manual de convivencia de la institución sugiere que la víctima debe acomodarse al comportamiento común y vestir prendas tradicionales para evitar llamar la atención. Si evaluamos esta norma institucional a la luz de los derechos constitucionales colombianos, la directriz de la escuela resulta:",
     "tipo": "seleccion_multiple",
@@ -208,7 +195,6 @@
   {
     "id": "SC-014",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "El fenómeno del 'Frente Nacional' (1958-1974) en Colombia consistió en un acuerdo político entre los partidos Liberal y Conservador. ¿Cuál era el objetivo inicial declarado de este pacto institucional y qué consecuencia política excluyente generó en la sociedad de la época?",
     "tipo": "seleccion_multiple",
@@ -224,7 +210,6 @@
   {
     "id": "SC-015",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Un sindicato de trabajadores mineros exige a una multinacional carbonífera mantener los turnos tradicionales de operación y aumentar los bonos salariales por riesgo de salud. La gerencia de la empresa argumenta que los precios internacionales del carbón han caído y que para evitar despidos colectivos deben transitar hacia la automatización de procesos y reducir las prebendas laborales. Al analizar esta controversia, se puede inferir que el núcleo del desacuerdo radica en:",
     "tipo": "seleccion_multiple",
@@ -240,7 +225,6 @@
   {
     "id": "SC-016",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Una comunidad indígena reclama la propiedad ancestral de un territorio que fue adjudicado legalmente por el Estado a una empresa agroindustrial para el cultivo de palma de aceite. La empresa argumenta tener títulos de propiedad legítimos y generar empleo local, mientras que la comunidad indígena señala que la tierra alberga sus sitios sagrados y garantiza su pervivencia cultural. En el marco de la Constitución de 1991, ¿cuál es el mecanismo prioritario para resolver este conflicto respetando el pluralismo?",
     "tipo": "seleccion_multiple",
@@ -256,7 +240,6 @@
   {
     "id": "SC-017",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Ante el aumento del hurto callejero en una gran ciudad, un sector de ciudadanos propone legalizar y flexibilizar el porte de armas de fuego para la legítima defensa, afirmando que 'los delincuentes lo pensarán dos veces si saben que los ciudadanos están armados'. Por el contrario, un centro de estudios sociológicos se opone señalando que 'mayor cantidad de armas en circulación incrementa la violencia homicida, los accidentes caseros y las riñas vecinales mortales'. Las dos posturas entran en conflicto porque:",
     "tipo": "seleccion_multiple",
@@ -272,7 +255,6 @@
   {
     "id": "SC-018",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "A mediados del siglo XIX, las reformas liberales en Colombia (1845-1853) transformaron radicalmente la estructura económica y social colonial que aún persistía. ¿Cuál de las siguientes medidas hizo parte de este paquete de reformas históricas y transformó la fuerza laboral del país?",
     "tipo": "seleccion_multiple",
@@ -288,7 +270,6 @@
   {
     "id": "SC-019",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un país con altos índices de desempleo decide fijar por ley un aumento del 30% en el salario mínimo obligatorio, buscando reactivar el consumo y sacar a miles de familias de la pobreza de forma inmediata. Al evaluar esta política desde una perspectiva sistémica, ¿cuál de las siguientes opciones describe un efecto colateral no deseado que afectaría el mercado laboral?",
     "tipo": "seleccion_multiple",
@@ -304,7 +285,6 @@
   {
     "id": "SC-020",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Un personero escolar de un colegio público propone en su plan de trabajo que las estudiantes que queden en estado de embarazo no asistan a las clases regulares, sino que presenten trabajos desde sus casas. Argumenta que esto protege la intimidad de las jóvenes y evita que se conviertan en un 'mal ejemplo' para las estudiantes de grados inferiores. De acuerdo con la Constitución y los derechos ciudadanos, esta propuesta es:",
     "tipo": "seleccion_multiple",
@@ -320,7 +300,6 @@
   {
     "id": "SC-021",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Durante la discusión de un proyecto de ley para regular las plataformas digitales de transporte de pasajeros, se escuchan dos voces. Los representantes de las plataformas argumentan: 'Ofrecemos libertad horaria a miles de conductores desempleados y tarifas competitivas basadas en la tecnología para el ciudadano'. Los gremios de taxistas tradicionales replican: 'Es una competencia desleal; nosotros pagamos cupos caros, seguros contractuales y revisiones que las plataformas eluden'. El punto de quiebre que divide estas perspectivas radica en:",
     "tipo": "seleccion_multiple",
@@ -336,7 +315,6 @@
   {
     "id": "SC-022",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "La Guerra Fría fue un periodo de confrontación global indirecta que dividió al mundo en dos bloques ideológicos y económicos encabezados por Estados Unidos y la Unión Soviética. ¿Cuál fue una de las principales manifestaciones de este conflicto en el continente latinoamericano durante la segunda mitad del siglo XX?",
     "tipo": "seleccion_multiple",
@@ -352,7 +330,6 @@
   {
     "id": "SC-023",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Una ciudad intermedia experimenta un rápido crecimiento económico que atrae la instalación de un gran parque industrial. Esto genera miles de empleos directos e incrementa los ingresos fiscales de la alcaldía. Al mismo tiempo, la súbita llegada de trabajadores colapsa las redes de acueducto locales, dispara el costo de los arriendos y satura los servicios de salud del hospital público. Este escenario demuestra que:",
     "tipo": "seleccion_multiple",
@@ -368,7 +345,6 @@
   {
     "id": "SC-024",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Determine la veracidad del siguiente enunciado sobre las funciones de las ramas del poder público en Colombia:\n\n«La Rama Judicial del poder público tiene como función principal tramitar, discutir y redactar las leyes de la República, además de ejercer el control político sobre el gobierno de turno a través de mecanismos como la moción de censura.»",
     "tipo": "verdadero_falso",
@@ -382,7 +358,6 @@
   {
     "id": "SC-025",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Un gobernador propone un plan alimentario escolar que incluye carne de res en los almuerzos diarios de los colegios rurales. Un colectivo vegano interpone una acción judicial exigiendo retirar la carne, argumentando que 'promueve el maltrato animal y destruye la ética ambiental de los niños'. Por su parte, la asociación de padres de familia de la zona replica: 'Nuestros hijos sufren de altos índices de desnutrición y la carne es la principal fuente de proteína accesible que reciben en el día'. El colectivo vegano incurre en un error de perspectiva al:",
     "tipo": "seleccion_multiple",
@@ -398,7 +373,6 @@
   {
     "id": "SC-026",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "El Neoliberalismo es un modelo económico y político que se expandió de forma generalizada globalmente a finales del siglo XX. ¿Cuál de las siguientes premisas conceptuales caracteriza de manera central a este modelo de desarrollo?",
     "tipo": "seleccion_multiple",
@@ -414,7 +388,6 @@
   {
     "id": "SC-027",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Para reducir los alarmantes niveles de contaminación del aire, una alcaldía metropolitana prohíbe de forma permanente e indefinida la circulación de vehículos particulares dos días a la semana (pico y placa ambiental extendido). En respuesta, los concesionarios reportan un incremento inusitado en la venta de carros usados de bajo costo, y el transporte público masivo empieza a operar con niveles peligrosos de sobrecupo. ¿Qué falló en el diseño de esta política pública desde una lectura sistémica?",
     "tipo": "seleccion_multiple",
@@ -430,7 +403,6 @@
   {
     "id": "SC-028",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Un grupo de ciudadanos afrodescendientes es rechazado a la entrada de un establecimiento comercial nocturno bajo la excusa de que 'el lugar se reserva el derecho de admisión por razones de seguridad de etiqueta'. Los afectados interponen una acción de tutela argumentando discriminación racial. ¿Qué principio de la Constitución de 1991 respalda de forma directa la reclamación de los ciudadanos?",
     "tipo": "seleccion_multiple",
@@ -444,9 +416,8 @@
     "justificacion": "El Artículo 13 de la Constitución colombiana consagra el derecho a la igualdad de protección y trato ante la ley, prohibiendo explícitamente la discriminación racial. Las cláusulas comerciales privadas como 'el derecho de admisión' están subordinadas a la Carta Política y no pueden ser utilizadas como fachadas legales para segregar a las personas por motivos étnicos."
   },
   {
-    "id": "SC-029",
+    "id": "SC-022",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Un debate municipal gira en torno a la demolición de un antiguo teatro de arquitectura colonial para construir una moderna estación de bomberos de alta capacidad. Los historiadores locales defienden el teatro alegando su valor estético e identitario, mientras que la junta de gestión del riesgo insiste en que la estación es urgente porque los incendios en la zona han aumentado un 40% y la actual sede está obsoleta. En esta disputa, se puede concluir correctamente que:",
     "tipo": "seleccion_multiple",
@@ -462,7 +433,6 @@
   {
     "id": "SC-030",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "A lo largo de la segunda mitad del siglo XX, la estructura agraria en Colombia estuvo marcada por una alta concentración de la propiedad de la tierra en pocas manos (latifundismo) y una gran cantidad de campesinos sin tierra. ¿Qué fenómeno sociopolítico estructural del país se encuentra íntimamente ligado a esta problemática de tenencia rural?",
     "tipo": "seleccion_multiple",
@@ -478,7 +448,6 @@
   {
     "id": "SC-031",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "En un municipio fuertemente afectado por el conflicto armado interno se firma un acuerdo de paz local entre un grupo al margen de la ley y las autoridades locales. Una asociación de víctimas exige que, antes de implementar proyectos productivos para los desmovilizados, estos confiesen la ubicación de las fosas comunes y reconozcan sus crímenes. Los delegados del proceso argumentan que exigir esto de inmediato puede romper la confianza y hacer que los combatientes regresen a las armas. ¿Qué concepto de la justicia está en el centro de esta tensión?",
     "tipo": "seleccion_multiple",
@@ -494,7 +463,6 @@
   {
     "id": "SC-032",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Un alcalde propone reubicar a los vendedores ambulantes del centro histórico en un centro comercial construido por el municipio a las afueras de la ciudad, con el fin de recuperar el espacio público y fomentar el turismo. Los vendedores se oponen rotundamente argumentando que en la nueva ubicación no hay flujo de peatones, lo que destruirá sus ventas diarias y arruinará el sustento de sus familias. En esta situación, los intereses en conflicto son:",
     "tipo": "seleccion_multiple",
@@ -510,7 +478,6 @@
   {
     "id": "SC-033",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "Durante la época colonial en la Nueva Granada (siglos XVI al XVIII), la Corona española implementó la institución de la 'Encomienda'. ¿En qué consistía jurídicamente esta figura y cuál era su trasfondo real de explotación socioeconómica?",
     "tipo": "seleccion_multiple",
@@ -526,7 +493,6 @@
   {
     "id": "SC-034",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Para proteger la industria textil nacional frente a la llegada de ropa extranjera barata, un gobierno decide imponer aranceles del 40% a todas las importaciones de prendas de vestir. Al evaluar esta medida desde una perspectiva sistémica, ¿cuál de las siguientes opciones describe un impacto colateral indirecto pero probable en la economía interna?",
     "tipo": "seleccion_multiple",
@@ -542,7 +508,6 @@
   {
     "id": "SC-035",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Un ciudadano interpone un derecho de petición ante su EPS solicitando la autorización urgente de un examen diagnóstico complejo ordenado por su médico tratante. La entidad responde de manera negativa manifestando que dicho procedimiento no se encuentra cubierto en el plan básico de salud debido a restricciones fiscales de la empresa. Ante esta vulneración que pone en riesgo la vida del paciente, ¿cuál es el mecanismo constitucional judicial e inmediato aplicable?",
     "tipo": "seleccion_multiple",
@@ -558,7 +523,6 @@
   {
     "id": "SC-036",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "En un debate sobre políticas de drogas, un sociólogo sostiene: 'La criminalización del consumo estigmatiza a las poblaciones vulnerables y llena las cárceles de adictos que necesitan atención médica'. Un líder de una asociación religiosa replica: 'Legalizar o flexibilizar el consumo destruye los valores morales de la familia, normaliza el vicio ante los ojos de los niños y multiplica la decadencia social en las calles'. Las posturas difieren estructuralmente en su manera de definir el problema porque:",
     "tipo": "seleccion_multiple",
@@ -574,7 +538,6 @@
   {
     "id": "SC-037",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "A comienzos del siglo XIX, las revoluciones de independencia en Hispanoamérica rompieron los lazos de dominación colonial con el Imperio español. Además del descontento de la élite criolla por la exclusión de los altos cargos políticos, ¿qué coyuntura política externa de carácter europeo facilitó el estallido de las juntas de gobierno en América en 1810?",
     "tipo": "seleccion_multiple",
@@ -590,7 +553,6 @@
   {
     "id": "SC-038",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un país petrolero experimenta una bonanza económica sin precedentes debido al aumento histórico de los precios internacionales del crudo. El gobierno gasta masivamente estos ingresos en subsidios directos a la población e importación de alimentos. A la postre, la industria agrícola e industrial local quiebra al no poder competir con los productos extranjeros baratos, y la moneda local se sobrevalora de forma desmedida (fenómeno conocido como 'Enfermedad Holandesa'). ¿Qué error sistémico de planeación ilustra este caso?",
     "tipo": "seleccion_multiple",
@@ -606,7 +568,6 @@
   {
     "id": "SC-039",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Determine la veracidad del siguiente enunciado sobre la conformación del Congreso de la República de Colombia:\n\n«El Senado de la República de Colombia se elige mediante circunscripción nacional, lo que significa que los senadores representan los intereses de todo el territorio del país, existiendo además dos curules especiales asignadas constitucionalmente para las comunidades indígenas.»",
     "tipo": "verdadero_falso",
@@ -620,7 +581,6 @@
   {
     "id": "SC-040",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Un resguardo indígena prohíbe de forma autónoma el ingreso y uso de teléfonos celulares inteligentes dentro de su territorio comunitario, afirmando que estos dispositivos 'erosionan el lenguaje nativo, rompen la comunicación familiar cara a cara y contaminan la mente de los jóvenes con el consumismo occidental'. Un grupo de jóvenes del resguardo protesta alegando que la medida los aísla de la educación virtual global y limita sus libertades. En este dilema cultural, se evidencia una tensión entre:",
     "tipo": "seleccion_multiple",
@@ -636,7 +596,6 @@
   {
     "id": "SC-041",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "A mediados del siglo XX, tras el asesinato del líder político Jorge Eliécer Gaitán el 9 de abril de 1948, Colombia entró en un periodo histórico de violencia generalizada conocido popularmente como 'La Violencia'. ¿Cuál fue la principal característica política e institucional de esta etapa del país?",
     "tipo": "seleccion_multiple",
@@ -652,7 +611,6 @@
   {
     "id": "SC-042",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un municipio minero cuya economía depende en un 90% de la extracción de carbón sufre una parálisis total de sus operaciones debido al cierre definitivo de la mina por cumplimiento de políticas globales de transición energética ecológica. En los meses siguientes, se dispara el desempleo, aumentan las tasas de deserción escolar porque los padres no pueden pagar útiles y crecen los niveles de desnutrición infantil. Este impacto multidimensional demuestra que:",
     "tipo": "seleccion_multiple",
@@ -668,7 +626,6 @@
   {
     "id": "SC-043",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Un ciudadano considera que una nueva ley aprobada de forma definitiva por el Congreso de la República contradice abiertamente los derechos a la intimidad y la libertad de expresión protegidos en la Constitución Política. ¿Ante qué organismo estatal debe interponer una demanda pública de inconstitucionalidad para exigir el retiro de dicha ley del ordenamiento jurídico?",
     "tipo": "seleccion_multiple",
@@ -684,7 +641,6 @@
   {
     "id": "SC-044",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Una compañía de energía eléctrica planea inundar un cañón montañoso para construir una represa hidroeléctrica de gran envergadura. Los ingenieros sostienen que el proyecto dotará de energía limpia y barata al 30% del país. Los colectivos de pescadores tradicionales ribereños denuncian que la represa matará la fauna acuática y acabará con su único oficio económico de sustento secular. ¿Cuál es el núcleo del conflicto de perspectivas entre los ingenieros y los pescadores?",
     "tipo": "seleccion_multiple",
@@ -700,7 +656,6 @@
   {
     "id": "SC-045",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "El sistema político conocido como 'Fascismo', consolidado en Europa Occidental en el periodo de entreguerras (primera mitad del siglo XX), se caracterizó ideológicamente por una de las siguientes características doctrinales. Identifíquela:",
     "tipo": "seleccion_multiple",
@@ -716,7 +671,6 @@
   {
     "id": "SC-046",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Una ley estatal busca reducir los índices de reincidencia criminal prohibiendo de forma permanente que las personas con antecedentes penales trabajen en empresas de transporte, mensajería o atención al público. Un colectivo de derechos humanos demanda la ley argumentando que imposibilita la resocialización de los exconvictos. En esta situación, ¿cuáles principios constitucionales entran en una tensión directa?",
     "tipo": "seleccion_multiple",
@@ -732,7 +686,6 @@
   {
     "id": "SC-047",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Durante la ola invernal, un alcalde decreta la evacuación forzosa de un barrio construido ilegalmente en la ladera de un río debido a un riesgo inminente de avalancha. Las familias se niegan a abandonar sus hogares alegando: 'Llevamos 15 años construyendo nuestras casas con esfuerzo; si nos vamos, los ladrones desvalijarán lo poco que tenemos y el gobierno no nos dará una vivienda digna real'. En este conflicto, la perspectiva de las familias se fundamenta en:",
     "tipo": "seleccion_multiple",
@@ -748,7 +701,6 @@
   {
     "id": "SC-048",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "A comienzos del siglo XX, la separación de Panamá (1903) significó una profunda crisis geopolítica y traumática para Colombia. Además del descontento interno por los estragos de la Guerra de los Mil Días, ¿qué factor internacional directo determinó la consolidación de la independencia del istmo?",
     "tipo": "seleccion_multiple",
@@ -764,7 +716,6 @@
   {
     "id": "SC-049",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un gobierno implementa una política de sustitución obligatoria de cultivos ilícitos mediante la fumigación aérea con glifosato en una región selvática controlada por bandas criminales. A la vuelta de un año, se registra una reducción temporal de las hectáreas de coca, pero aumentan los casos de afecciones respiratorias en la población rural, se contaminan los cultivos de pancoger de comunidades indígenas locales y las bandas criminales trasladan sus laboratorios a reservas ambientales vecinas. Este balance integral demuestra que:",
     "tipo": "seleccion_multiple",
@@ -780,7 +731,6 @@
   {
     "id": "SC-050",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Un ciudadano es detenido por la policía durante una jornada de protesta social. Al ser ingresado a la estación de policía, los agentes le retienen su teléfono móvil, le impiden comunicarse con sus familiares o un abogado, y lo mantienen incomunicado en un calabozo durante 48 horas sin presentarlo ante ninguna autoridad judicial. De acuerdo con la Constitución y el debido proceso, el procedimiento policial es:",
     "tipo": "seleccion_multiple",
@@ -796,7 +746,6 @@
   {
     "id": "SC-051",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "En una mesa de concertación sobre la erradicación del trabajo infantil en zonas mineras, un funcionario estatal afirma: 'Debemos penalizar drásticamente a los padres que lleven a sus hijos a los socavones; la infancia es para estudiar y el trabajo de menores es un delito'. Un líder comunitario de la zona replica: 'Aquí no hay colegios de bachillerato ni alternativas de empleo; el trabajo en la mina artesanal ayuda a que la familia no muera de hambre. Si encarcelan a los padres, los niños quedarán en el abandono absoluto'. Al evaluar este cruce de argumentos, se deduce que el punto de desacuerdo estructural radica en:",
     "tipo": "seleccion_multiple",
@@ -812,7 +761,6 @@
   {
     "id": "SC-052",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "La 'Guerra de los Mil Días' (1899-1902) fue una de las confrontaciones civiles más sangrientas de la historia de Colombia. ¿Cuál fue una de las principales causas políticas subyacentes que encendió este conflicto armado entre los partidos tradicionales?",
     "tipo": "seleccion_multiple",
@@ -828,7 +776,6 @@
   {
     "id": "SC-053",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un país en desarrollo decide construir una gigantesca autopista que atravesará un parque nacional natural con el propósito de conectar sus zonas agrícolas de frontera con los puertos marítimos internacionales de exportación. De acuerdo con los modelos de planificación territorial, esta megaobra genera beneficios económicos notables, pero destruye corredores biológicos y provoca la deforestación masiva de bosques primarios. ¿Qué dimensiones del ordenamiento se encuentran en una contradicción directa?",
     "tipo": "seleccion_multiple",
@@ -844,7 +791,6 @@
   {
     "id": "SC-054",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Determine la veracidad del siguiente enunciado sobre los estados de excepción en Colombia según la Carta Política de 1991:\n\n«Bajo el Estado de Conmoción Interior, el Presidente de la República adquiere de manera transitoria facultades legislativas excepcionales, pero bajo ninguna circunstancia puede suspender los derechos humanos ni las libertades fundamentales, estando sus decretos sujetos al control automático de constitucionalidad por parte de la Corte Constitucional.»",
     "tipo": "verdadero_falso",
@@ -858,7 +804,6 @@
   {
     "id": "SC-055",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Un alcalde decide implementar un programa de 'cambio de armas por alimentos y útiles escolares' en un barrio con altos índices de criminalidad pandillera. Un sector vecinal critica la medida señalando: 'Están premiando a los criminales y regalándoles comida con nuestros impuestos, mientras que los ciudadanos honestos tenemos que trabajar duro para comprar la comida'. Al analizar la crítica ciudadana, se observa que adolece de un sesgo analítico porque:",
     "tipo": "seleccion_multiple",
@@ -874,7 +819,6 @@
   {
     "id": "SC-056",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "La 'Masacre de las Bananeras' (1928) es uno de los episodios más trágicos e icónicos de la historia laboral colombiana. ¿Qué condiciones de orden social y económico detonaron la huelga de los trabajadores y cuál fue la respuesta institucional del Estado de la época?",
     "tipo": "seleccion_multiple",
@@ -890,7 +834,6 @@
   {
     "id": "SC-057",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Una ciudad con graves problemas de congestión vehicular decide decretar la gratuidad total en el servicio de transporte público masivo de buses, financiándolo a través de un aumento general en el impuesto predial de los inmuebles urbanos. Al evaluar las interconexiones del sistema, ¿cuál de los siguientes escenarios describe un efecto colateral económico indeseado que afectaría a la población arrendataria de menores ingresos?",
     "tipo": "seleccion_multiple",
@@ -906,7 +849,6 @@
   {
     "id": "SC-058",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Un grupo de padres de familia de un colegio oficial solicita formalmente al rector la expulsión de una estudiante de 14 años porque se enteraron de que practica una religión no cristiana y comparte contenido de su fe en sus redes sociales personales. Los padres argumentan que esto 'pone en riesgo la formación moral y católica de la mayoría de los alumnos'. De acuerdo con el marco constitucional colombiano, la solicitud de los padres es:",
     "tipo": "seleccion_multiple",
@@ -922,7 +864,6 @@
   {
     "id": "SC-059",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Una compañía transnacional minera descubre un rico yacimiento de oro en un páramo que abastece de agua a tres ciudades capitales. La minera ofrece utilizar tecnología avanzada de circuito cerrado para mitigar impactos ambientales y promete pagar millones en regalías que financiarán hospitales regionales. Los movimientos ambientales y acueductos urbanos exigen la prohibición del proyecto sosteniendo que 'ninguna tecnología anula el riesgo de contaminación química de los nacimientos hídricos esenciales'. La manzana de la discordia en este escenario gira en torno a:",
     "tipo": "seleccion_multiple",
@@ -938,7 +879,6 @@
   {
     "id": "SC-060",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "La 'Guerra Fría' (1947-1991) estructuró un orden mundial bipolar. ¿Qué organismo político-militar fue creado por el bloque occidental liderado por Estados Unidos para contrarrestar la expansión de la influencia de la Unión Soviética en Europa, y cuál fue la contraparte creada por el bloque comunista?",
     "tipo": "seleccion_multiple",
@@ -954,7 +894,6 @@
   {
     "id": "SC-061",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Una organización comunitaria de un barrio popular solicita formalmente a la alcaldía la implementación de un sistema de alarmas comunitarias y frentes de seguridad barriales administrados por los propios vecinos, argumentando la ineficacia de la policía local. El secretario de gobierno niega la solicitud manifestando que el Estado no puede delegar las funciones de vigilancia y control territorial en manos de civiles armados u organizados de forma independiente. ¿Qué principio del Estado moderno sustenta de manera directa la respuesta del secretario?",
     "tipo": "seleccion_multiple",
@@ -970,7 +909,6 @@
   {
     "id": "SC-062",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "En medio de una crisis migratoria, un gobierno anuncia la construcción de albergues públicos temporales y subsidios de alimentación para las familias extranjeras que ingresan por la frontera. El gremio de transportadores y comerciantes locales convoca a un paro protestando que: 'La prioridad de los recursos de nuestros impuestos debe ser para los ciudadanos locales desempleados; financiar a extranjeros satura los servicios públicos y precariza el empleo informal'. Al evaluar esta situación, las dos posturas en conflicto se basan en:",
     "tipo": "seleccion_multiple",
@@ -986,7 +924,6 @@
   {
     "id": "SC-063",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "Durante la época de la Violencia bipartidista en Colombia (décadas de 1940 y 1950), el fenómeno de los 'Pájaros' tuvo un impacto trágico en las dinámicas rurales del Valle del Cauca y otras zonas agrarias. ¿Quiénes eran estos actores y cuál era su propósito político?",
     "tipo": "seleccion_multiple",
@@ -1002,7 +939,6 @@
   {
     "id": "SC-064",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un gobierno decide subsidiar el 100% de la tasa de interés para la compra de vivienda de interés social (VIS), buscando dinamizar la construcción y permitir que miles de hogares adquieran casa propia. En los dos años siguientes, la venta de viviendas se triplica; sin embargo, las constructoras compran terrenos periféricos de valor bajo, lo que genera una expansión urbana desordenada en zonas carentes de vías pavimentadas, colegios públicos, hospitales y redes de alcantarillado. ¿Qué falla de reflexión sistémica se evidencia en este programa?",
     "tipo": "seleccion_multiple",
@@ -1018,7 +954,6 @@
   {
     "id": "SC-065",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Un grupo de ciudadanos organiza una manifestación pacífica en las afueras de un edificio gubernamental para protestar contra una reforma tributaria. Al cabo de unas horas, el gobernador ordena al ejército intervenir para dispersar la concentración argumentando que los manifestantes 'bloquean visualmente la fachada histórica del palacio de gobierno y alteran la armonía estética del centro'. Al luz de la Constitución de 1991, la orden del gobernador es:",
     "tipo": "seleccion_multiple",
@@ -1034,7 +969,6 @@
   {
     "id": "SC-066",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "En una cumbre de cambio climático, el representante de un país industrializado de ingresos altos declara: 'Todos los países del mundo, sin excepción, deben fijar impuestos severos al carbono y frenar el uso de combustibles fósiles de forma inmediata para salvar el planeta'. El delegado de una nación en desarrollo replica: 'Su país se industrializó quemando carbón durante dos siglos; exigirnos frenar nuestra matriz energética barata hoy condena a millones de nuestros ciudadanos a la pobreza extrema crónica'. El punto crítico de desacuerdo entre ambos delegados radica en:",
     "tipo": "seleccion_multiple",
@@ -1050,7 +984,6 @@
   {
     "id": "SC-067",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "La 'Reforma Agraria' contenida en la Ley 200 de 1936, promulgada durante el gobierno de Alfonso López Pumarejo bajo el lema de la 'Revolución en Marcha', introdujo un principio jurídico revolucionario para la propiedad rural en Colombia. ¿Cuál fue este principio central?",
     "tipo": "seleccion_multiple",
@@ -1066,7 +999,6 @@
   {
     "id": "SC-068",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un Banco Central decide bajar drásticamente sus tasas de interés de referencia para reactivar una economía que muestra signos de estancamiento. Al evaluar los eslabones que conforman el sistema macroeconómico, ¿cuál de las siguientes opciones describe una consecuencia colateral probable a mediano plazo sobre las finanzas del consumidor promedio?",
     "tipo": "seleccion_multiple",
@@ -1082,7 +1014,6 @@
   {
     "id": "SC-069",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Determine la veracidad del siguiente enunciado sobre el funcionamiento del mecanismo constitucional de la Consulta Popular en Colombia:\n\n«La Consulta Popular es un mecanismo de participación ciudadana mediante el cual el Gobernador, el Alcalde o el Presidente somete una pregunta de carácter general sobre un asunto de trascendencia nacional, departamental o municipal a consideración del pueblo, y la decisión adoptada por los ciudadanos es de obligatorio cumplimiento.»",
     "tipo": "verdadero_falso",
@@ -1096,7 +1027,6 @@
   {
     "id": "SC-070",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Un colegio aprueba la instalación de cámaras de seguridad con reconocimiento facial dentro de los salones de clase para vigilar que los estudiantes no hagan copia en los exámenes y controlar la disciplina. La asociación de estudiantes protesta manifestando que la medida los hace sentir como 'presos en un panóptico y viola su privacidad'. La dirección del colegio responde afirmando que: 'El que nada debe, nada teme, y la seguridad y el orden académico están por encima de cualquier capricho individual'. El sesgo argumentativo de la dirección escolar consiste en:",
     "tipo": "seleccion_multiple",
@@ -1112,7 +1042,6 @@
   {
     "id": "SC-071",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "A finales del siglo XIX y principios del XX, el modelo económico agroexportador de Colombia se consolidó principalmente en torno al cultivo y comercialización internacional del café. ¿Qué transformación estructural en la tenencia de la tierra y la geografía económica propició la expansión de la caficultura en la zona del centro-occidente del país (antiguo Caldas, Antioquia y norte del Tolima)?",
     "tipo": "seleccion_multiple",
@@ -1128,7 +1057,6 @@
   {
     "id": "SC-072",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Para combatir los preocupantes índices de obesidad de la población civil, un congreso aprueba un impuesto del 25% a las bebidas azucaradas y alimentos ultraprocesados. Al evaluar las variables socioeconómicas desde una lectura sistémica, ¿cuál de los siguientes escenarios describe una repercusión indirecta que afectaría a las familias de menores ingresos en sus entornos cotidianos?",
     "tipo": "seleccion_multiple",
@@ -1144,7 +1072,6 @@
   {
     "id": "SC-073",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Un recluso que cumple una condena de 8 años de prisión por delitos financieros solicita permiso al director del centro penitenciario para asistir al funeral de su madre en una ciudad vecina. El director niega la solicitud de manera verbal aduciendo que: 'Los delincuentes pierden todos sus derechos al entrar a la cárcel y no merecen prebendas sentimentales'. Si evaluamos penal y constitucionalmente la respuesta del director, esta resulta:",
     "tipo": "seleccion_multiple",
@@ -1160,7 +1087,6 @@
   {
     "id": "SC-074",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Una alcaldía proyecta la peatonalización de un tramo vial del centro histórico de la ciudad. Los colectivos ambientales y ciclistas aplauden la idea manifestando que: 'Reduce los gases contaminantes, embellece el entorno y prioriza al ciudadano que camina'. Los comerciantes del sector interponen recursos legales alegando que: 'Si prohíben el paso de carros particulares y taxis, los clientes no podrán cargar paquetes pesados, las ventas se desplomarán y tendremos que quebrar y despedir empleados'. El nudo del conflicto de perspectivas se sintetiza en:",
     "tipo": "seleccion_multiple",
@@ -1176,7 +1102,6 @@
   {
     "id": "SC-075",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "El periodo del absolutismo monárquico en la Europa de los siglos XVII y XVIII se sustentaba ideológicamente en la teoría del derecho divino de los reyes, según la cual el poder del monarca emanaba directamente de Dios y no estaba sujeto a leyes terrenales. ¿Qué corriente de pensamiento de la modernidad cuestionó radicalmente este principio, promoviendo en su lugar la división de poderes y el contrato social?",
     "tipo": "seleccion_multiple",
@@ -1192,7 +1117,6 @@
   {
     "id": "SC-076",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "En una comunidad rural, tras la desmovilización de un actor armado ilegal, se reactivan disputas territoriales históricas entre familias de agricultores por los linderos de las fincas. Un líder comunitario sugiere resolver los conflictos aplicando la legislación civil formal en los juzgados del circuito. No obstante, la mayoría de los habitantes prefiere acudir a los jueces de paz locales, argumentando que estos últimos priorizan la conciliación mutua y el tejido social por encima de las multas o los castigos formalistas. ¿Qué característica institucional define el papel de los jueces de paz en Colombia?",
     "tipo": "seleccion_multiple",
@@ -1208,7 +1132,6 @@
   {
     "id": "SC-077",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Una empresa constructora obtiene una licencia legal para edificar un condominio residencial en una colina urbana adyacente a un humedal protegido. La constructora afirma que el proyecto creará empleo, dinamizará la economía y mitigar el déficit de vivienda con ecotecnologías. Colectivos de vecinos y biólogos protestan exigiendo la revocación de la licencia, alegando que la remoción de tierras compactará los suelos, destruirá la escorrentía natural que alimenta el humedal y extinguirá especies de aves endémicas. En este escenario, ¿cuál es la tensión subyacente entre las perspectivas de los actores?",
     "tipo": "seleccion_multiple",
@@ -1224,7 +1147,6 @@
   {
     "id": "SC-078",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "A finales de la década de 1950 en Colombia, tras el derrocamiento de la dictadura militar de Gustavo Rojas Pinilla, los partidos Liberal y Conservador firmaron un acuerdo de coalición política conocido como el 'Frente Nacional' (1958-1974). ¿En qué consistió formalmente este mecanismo institucional y cuál fue su principal impacto colateral en el orden público?",
     "tipo": "seleccion_multiple",
@@ -1240,7 +1162,6 @@
   {
     "id": "SC-079",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un país decide enfrentar los problemas de contaminación del aire urbano subsidiando la compra de automóviles eléctricos y prohibiendo los de combustión interna en los centros de las ciudades. Un análisis sistémico a gran escala revela que, si la matriz energética nacional depende en un 70% de la quema de carbón en centrales termoeléctricas para generar electricidad, la contaminación atmosférica global del país no disminuirá de forma neta. ¿A qué se debe esta limitación sistémica?",
     "tipo": "seleccion_multiple",
@@ -1256,7 +1177,6 @@
   {
     "id": "SC-080",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Una ciudad experimenta un incremento alarmante de hurtos. El comandante de la policía propone implementar requisas masivas y detenciones preventivas automáticas de hasta 24 horas para cualquier ciudadano que transite por calles comerciales de estratos bajos sin portar su documento de identidad original. ¿Por qué esta medida entra en contradicción con el marco constitucional de un Estado Social de Derecho?",
     "tipo": "seleccion_multiple",
@@ -1272,7 +1192,6 @@
   {
     "id": "SC-081",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "En un debate televisivo sobre la despenalización de la eutanasia, un médico intensivista argumenta: 'Nuestra prioridad moral debe ser respetar la autonomía del paciente y aliviar el sufrimiento atroz e irreversible de una enfermedad terminal; obligar a alguien a vivir con dolor es una tortura'. Un teólogo de una comunidad conservadora replica: 'La vida humana es sagrada, un regalo divino sobre el cual ningún ser humano tiene potestad de decidir el momento del fin; legalizar la muerte debilita el valor ético de la sociedad'. ¿Cuál es la raíz filosófica del desacuerdo entre ambos?",
     "tipo": "seleccion_multiple",
@@ -1288,7 +1207,6 @@
   {
     "id": "SC-082",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "La 'Constitución Política de 1886', que rigió a Colombia por más de un siglo, fue el pilar del movimiento de la Regeneración liderado por Rafael Núñez. ¿Cuál de las siguientes opciones describe una característica política y territorial fundamental de dicho ordenamiento constitucional?",
     "tipo": "seleccion_multiple",
@@ -1304,7 +1222,6 @@
   {
     "id": "SC-083",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un gobierno local implementa una red exclusiva de carriles para bicicletas (ciclorrutas) reduciendo a la mitad las calzadas destinadas a automóviles particulares en las avenidas principales. Al cabo de unos meses, se observa una mejora en la salud de los biciusuarios y menor contaminación del aire; sin embargo, los tiempos de viaje en transporte público de bus se duplican por el trancón de los carros, lo que causa retrasos masivos a los trabajadores de la periferia urbana que no pueden usar bicicleta por las distancias. Este resultado indica que de forma sistémica:",
     "tipo": "seleccion_multiple",
@@ -1320,7 +1237,6 @@
   {
     "id": "SC-084",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Determine la veracidad del siguiente enunciado sobre el funcionamiento del mecanismo constitucional del Plebiscito en Colombia:\n\n«El Plebiscito es convocado exclusivamente por el Presidente de la República con la firma de todos los ministros, previo pronunciamiento del Congreso, para que el pueblo apruebe o rechace una decisión del Ejecutivo sobre políticas que no requieran una reforma constitucional explícita.»",
     "tipo": "verdadero_falso",
@@ -1334,7 +1250,6 @@
   {
     "id": "SC-085",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Una universidad pública prohíbe las ventas informales de dulces, emparedados y café dentro de los campus, argumentando la necesidad de proteger la higiene alimentaria, formalizar los locales comerciales internos y mantener el orden. Los estudiantes organizan protestas alegando que: 'Muchos compañeros financian sus fotocopias, almuerzos y transporte diario vendiendo estos productos debido a la falta de subsidios reales'. El sesgo analítico de la administración universitaria consiste en:",
     "tipo": "seleccion_multiple",
@@ -1350,7 +1265,6 @@
   {
     "id": "SC-086",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "Durante la década de 1970 y 1980 en Colombia, el sector agrario experimentó intensas movilizaciones lideradas por la Asociación Nacional de Usuarios Campesinos (ANUC), cuyo lema era 'Tierra pa' que la trabaje el que la necesite'. ¿Cuál era la principal reivindicación estructural de este movimiento y frente a qué modelo económico se oponía?",
     "tipo": "seleccion_multiple",
@@ -1366,7 +1280,6 @@
   {
     "id": "SC-087",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un gobierno aprueba un subsidio universal para el consumo doméstico de gas licuado de petróleo (GLP) con el fin de evitar que las familias campesinas cocinen con leña. En una evaluación de impacto sistémico, se encuentra que disminuyeron los casos de cáncer de pulmón e infecciones respiratorias agudas en las zonas rurales; sin embargo, la tasa de deforestación de los bosques nativos circundantes se redujo de manera notable en el mismo periodo. Este resultado sistémico positivo demuestra que:",
     "tipo": "seleccion_multiple",
@@ -1380,9 +1293,8 @@
     "justificacion": "La reflexión sistémica visibiliza el nexo entre energía, salud y medio ambiente. Cocinar con leña genera humo intradomiciliario tóxico (dimensión de salud) y exige talar árboles de forma continua (dimensión ecológica). El subsidio al gas irrumpe en el bucle alterando positivamente ambas variables al unísono, evidenciando que las políticas sociales bien estructuradas acarrean beneficios ambientales colaterales indirectos pero valiosos."
   },
   {
-    "id": "SC-088",
+    "id": "SC-082",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Un grupo de ciudadanos pertenecientes a una comunidad afrodescendiente interpone una Acción Popular contra una alcaldía municipal que otorgó un permiso para la instalación de un vertedero de basuras a cielo abierto a escasos 500 metros de su territorio colectivo, sin realizar previamente la Consulta Previa obligatoria. ¿Qué bien jurídico constitucional buscan amparar los demandantes a través de esta acción específica?",
     "tipo": "seleccion_multiple",
@@ -1398,7 +1310,6 @@
   {
     "id": "SC-089",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Una multinacional de tecnología ofrece instalar antenas de telecomunicación 5G de forma gratuita en todas las escuelas de un municipio rural, a cambio de recolectar de forma anónima los datos de navegación e intereses digitales de los niños para optimizar sus algoritmos educativos globales. El alcalde defiende la alianza argumentando que 'sacará al municipio del atraso digital sin gastar un peso'. Un colectivo de padres rechaza el trato aduciendo que 'la privacidad y los perfiles de comportamiento de los niños no son mercancías de canje comercial'. El núcleo irreconciliable de las posturas radica en:",
     "tipo": "seleccion_multiple",
@@ -1414,7 +1325,6 @@
   {
     "id": "SC-090",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "El período histórico conocido como la 'Revolución Industrial', iniciado en Inglaterra en la segunda mitad del siglo XVIII, alteró radicalmente la estructura social de Occidente. ¿Qué nuevas clases sociales emergieron como protagonistas de la dinámica socioeconómica y el conflicto político de esta etapa?",
     "tipo": "seleccion_multiple",
@@ -1430,7 +1340,6 @@
   {
     "id": "SC-091",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Un municipio expide un decreto que prohíbe la circulación de motocicletas después de las 10:00 p.m. con el fin de contrarrestar los hurtos callejeros cometidos en este tipo de vehículo. Un colectivo de motociclistas que trabaja en plataformas digitales de mensajería y entrega de alimentos a domicilio interpone una acción judicial contra la medida, alegando que se les priva de su único medio de sustento y se vulnera su mínimo vital. En esta situación, ¿cuáles principios constitucionales entran en una tensión directa?",
     "tipo": "seleccion_multiple",
@@ -1446,7 +1355,6 @@
   {
     "id": "SC-092",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "Una junta de acción comunal decide clausurar la cancha de fútbol del barrio los fines de semana para instalar allí un mercado agroecológico artesanal gestionado por madres cabeza de familia. Los jóvenes del sector protestan tumbando las vallas de cerramiento argumentando: 'El deporte nos aleja de las drogas y las calles; es el único espacio recreativo gratuito que tenemos'. Las organizadoras del mercado responden: 'El empleo y la alimentación de nuestros hijos están por encima de un partido de fútbol'. Al analizar el conflicto, el punto de desencuentro estructural radica en:",
     "tipo": "seleccion_multiple",
@@ -1462,7 +1370,6 @@
   {
     "id": "SC-093",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "A mediados del siglo XX, el proceso de urbanización en Colombia se aceleró drásticamente, transformando al país de una sociedad mayoritariamente rural a una predominantemente urbana. ¿Qué factor socioeconómico y político estructural detonó principalmente este éxodo masivo del campo a las grandes capitales?",
     "tipo": "seleccion_multiple",
@@ -1478,7 +1385,6 @@
   {
     "id": "SC-094",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Un gobierno decide eliminar todos los aranceles de importación para el maíz y el trigo extranjeros con el objetivo de abaratar los alimentos de la canasta básica y frenar la inflación en beneficio de los consumidores urbanos. Al cabo de un año, los alimentos importados inundan el mercado a precios muy bajos; sin embargo, miles de pequeños productores campesinos nacionales quiebran al no poder competir con los precios internacionales, lo que dispara el desempleo rural y provoca marchas masivas hacia las capitales. Desde una perspectiva sistémica, esta situación demuestra que:",
     "tipo": "seleccion_multiple",
@@ -1494,7 +1400,6 @@
   {
     "id": "SC-095",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Determine la veracidad del siguiente enunciado sobre las facultades del Defensor del Pueblo en el ordenamiento institucional colombiano:\n\n«El Defensor del Pueblo, como cabeza de un organismo autónomo adscrito al Ministerio Público, posee la facultad legal de decretar la destitución inmediata e inhabilidad permanente de cualquier funcionario público de elección popular que vulnere los derechos humanos de las comunidades étnicas.»",
     "tipo": "verdadero_falso",
@@ -1508,7 +1413,6 @@
   {
     "id": "SC-096",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Interpretación y análisis de perspectivas",
     "competencia": "Análisis de perspectivas",
     "enunciado": "El director de una prisión propone suprimir las visitas conyugales y los talleres de formación artística de los reclusos para destinar ese presupuesto a la compra de blindajes de alta tecnología y armas de disuasión electrónica para el cuerpo de vigilancia, argumentando que: 'La cárcel es un centro de castigo penitenciario y control militar absoluto, no un hotel vacacional'. Un comité de psicólogos y sociólogos penitenciarios interpone una queja advirtiendo que la medida deshumaniza las condiciones de reclusión y aumentará las riñas sangrientas. El sesgo analítico del director radica en:",
     "tipo": "seleccion_multiple",
@@ -1524,7 +1428,6 @@
   {
     "id": "SC-097",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "A comienzos de la década de 1980, la emergencia y consolidación de los carteles del narcotráfico (como los de Medellín y Cali) alteraron profundamente la estructura social, económica y política de Colombia. Además de la violencia terrorista ejercida contra el Estado, ¿qué fenómeno socioeconómico rural y urbano impulsó la inserción del dinero ilícito en las dinámicas territoriales?",
     "tipo": "seleccion_multiple",
@@ -1540,7 +1443,6 @@
   {
     "id": "SC-098",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Reflexión sistémica",
     "enunciado": "Para reducir la cantidad de residuos plásticos que contaminan los océanos, un país prohíbe de forma absoluta la fabricación y comercialización de bolsas plásticas de un solo uso. Una evaluación sistémica posterior revela que los comercios sustituyeron las bolsas de plástico por bolsas de papel kraft de un solo uso. Esto provocó que la huella hídrica y la tasa de deforestación forestal aumentaran un 40% debido a la inmensa cantidad de agua y pulpa de celulosa vegetal que demanda la industria del papel. Este resultado imprevisto demuestra que:",
     "tipo": "seleccion_multiple",
@@ -1556,7 +1458,6 @@
   {
     "id": "SC-099",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Convivencia y paz",
     "enunciado": "Una mujer acude a un centro de salud público en una zona rural solicitando la interrupción voluntaria de su embarazo debido a que fue víctima de una agresión sexual debidamente denunciada. El médico de turno se niega a realizar el procedimiento manifestando que sus convicciones éticas y religiosas le impiden participar en un aborto. De acuerdo con el marco constitucional y jurisprudencial en Colombia, ¿cómo debe proceder la institución de salud ante esta situación?",
     "tipo": "seleccion_multiple",
@@ -1572,7 +1473,6 @@
   {
     "id": "SC-100",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Pensamiento social",
     "enunciado": "La 'Declaración de los Derechos del Hombre y del Ciudadano', proclamada en 1789 durante la Revolución Francesa, rompió de forma jurídica con la sociedad estamental del Antiguo Régimen. ¿Cuál de los siguientes principios universales constituyó el eje de esta histórica declaración?",
     "tipo": "seleccion_multiple",
@@ -1588,7 +1488,6 @@
   {
     "id": "SC-300",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Constitución - Derechos Fundamentales",
     "enunciado": "En Colombia, tanto el matrimonio civil (ante juez o notario) como el religioso con efectos civiles protegen los derechos que surgen cuando dos personas conforman una familia, como el reconocimiento del vínculo familiar o los derechos sobre el patrimonio que consiguen. La Constitución política de Colombia, en su artículo 42, define el matrimonio como la unión entre un hombre y una mujer. Sin embargo, en el país también se realizan uniones de parejas del mismo sexo. Estas uniones también se consideran matrimonios civiles de acuerdo con una sentencia del año 2016, expedida por la Corte Constitucional. No obstante, la definición de matrimonio presente en la Constitución Política no se modificó. ¿Puede modificarse la definición de matrimonio en la Constitución Política de Colombia para que esta incluya las uniones de parejas del mismo sexo?",
     "tipo": "seleccion_multiple",
@@ -1604,7 +1503,6 @@
   {
     "id": "SC-301",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Constitución - Derechos Fundamentales",
     "enunciado": "Un grupo de ciudadanos asociados a un partido político viene promoviendo que en Colombia se apruebe la pena de muerte para aquellas personas que cometan delitos sexuales contra los menores de edad. Esto implicaría la modificación del artículo número 11 de la Constitución Política que manifiesta que el derecho a la vida es inviolable y que prohíbe de manera explícita la pena de muerte. Si el grupo de ciudadanos quiere llevar a cabo la modificación de ese artículo constitucional, ¿cuál de los siguientes mecanismos se lo permitiría?",
     "tipo": "seleccion_multiple",
@@ -1620,7 +1518,6 @@
   {
     "id": "SC-302",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Derechos",
     "enunciado": "Los humedales son ecosistemas fundamentales para la diversidad de anfibios, peces y aves. Estas zonas de transición entre el medio acuático y terrestre son espacios vitales para la preservación del medio ambiente. Desde el 2008, el humedal de Guaymaral, ubicado en la Sabana de Bogotá, ha sido rellenado en su mayoría para construir concesionarios, centros comerciales, colegios, universidades, parqueaderos, cementerios y estaciones de servicio. Según la Constitución Política de Colombia, la situación planteada es un caso de:",
     "tipo": "seleccion_multiple",
@@ -1636,7 +1533,6 @@
   {
     "id": "SC-303",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Partidos Políticos",
     "enunciado": "La democracia ha subsistido en la modernidad y se ha diferenciado de otro tipo de sistemas de gobierno como los totalitarios o los de tradición hereditaria. ¿Cuál de las siguientes figuras es fundamental y encierra uno de los principios para que un sistema pueda ser considerado como democrático?",
     "tipo": "seleccion_multiple",
@@ -1652,7 +1548,6 @@
   {
     "id": "SC-304",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto Armado - Víctimas",
     "enunciado": "«Todos deberían aceptar el Acuerdo de paz, incluyendo a quienes nunca han padecido el conflicto directamente, pero aun así se atrevieron a votar en contra de la paz en nuestros territorios. El nuestro era un municipio compartido por comunidades indígenas y negras principalmente, reconocido en la región como la despensa agrícola del Chocó, que llegó a exportar plátanos, tenía producción importante en cacao y arroz; un pequeño paraíso donde la población no tenía riquezas monetarias pero no le faltaba nada para ser feliz, hasta que llegó el conflicto armado y nos destrozó la vida». Una hipótesis sobre los autores del anterior fragmento es que estos pertenecen a una población conformada por minorías víctimas del conflicto armado. ¿Qué elementos del texto sirven para apoyar esta hipótesis?",
     "tipo": "seleccion_multiple",
@@ -1668,7 +1563,6 @@
   {
     "id": "SC-305",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Constitución - Derecho al Trabajo",
     "enunciado": "El sindicato de una empresa se reunió para aprobar el pliego de peticiones que le presentarían a su empleador. Al enterarse de las intenciones de los trabajadores, los directivos de la empresa amenazaron a los trabajadores con despedirlos de sus trabajos e insistían en que no mantuvieran su sindicato. Al encontrar una respuesta negativa por parte de los trabajadores, las directivas de la empresa decidieron dar por terminados sus contratos de trabajo. Los trabajadores que no pertenecían al sindicato mantuvieron sus contratos. Según la Constitución Política de Colombia, en la decisión tomada por las directivas:",
     "tipo": "seleccion_multiple",
@@ -1684,7 +1578,6 @@
   {
     "id": "SC-306",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Historia - Rebelión de los Comuneros",
     "enunciado": "En 1781 se desató la Rebelión de los Comuneros, uno de los movimientos políticos más grandes en la historia de Colombia. Aproximadamente 20.000 personas marcharon hacia Bogotá para exigir la suspensión del aumento de impuestos y la eliminación de barreras que restringían el cultivo de tabaco y el comercio de aguardiente. Los historiadores han relacionado este evento con otro que tuvo lugar unos años antes y a miles de kilómetros. Para ese entonces, Colombia era parte del imperio español. En 1759 la corona había pasado a manos de un nuevo rey, quien comenzó un periodo de intensas reformas. ¿Cuál de los siguientes argumentos soporta la relación existente entre la Rebelión de los Comuneros (1781) y las reformas impulsadas por el rey de España (1759)?",
     "tipo": "seleccion_multiple",
@@ -1700,7 +1593,6 @@
   {
     "id": "SC-307",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Economía - Globalización y Desigualdad",
     "enunciado": "«El propósito económico que inspira la globalización es el crecimiento económico de la clase empresarial, pero no hay evidencia de que la cuestión de desarrollo del ser humano tenga parte importante en el movimiento. La globalización puede ser una buena estrategia para la acumulación de riquezas, pero esas riquezas son ante todo para unos pocos y no integra ninguna política proyectada para el desarrollo integral de una comunidad o una población». ¿Cuál de las siguientes evidencias apoyaría la tesis planteada por el autor de esta cita?",
     "tipo": "seleccion_multiple",
@@ -1716,7 +1608,6 @@
   {
     "id": "SC-308",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Constitución - División de Poderes",
     "enunciado": "En Colombia, como estrategia para evitar la concentración del poder político en una misma persona u organización:",
     "tipo": "seleccion_multiple",
@@ -1732,9 +1623,8 @@
   {
     "id": "SC-309",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Economía - Proteccionismo",
-    "enunciado": "«Estados Unidos se convirtió en la economía dominante del mundo al convertirse en el productor dominante a nivel mundial. [...] Pero Estados Unidos cambió su política: de promover el desarrollo en Estados Unidos pasó a promover el desarrollo en otras naciones. [...] Hemos permitido que los países extranjeros subsidien sus bienes, devalúen sus monedas, violen sus acuerdos, y hagan trampa de todas las formas imaginables». De acuerdo con este discurso, el candidato presidencial defiende la implementación de un modelo proteccionista, porque considera que:",
+    "enunciado": "«Estados Unidos se convirtió en la economía dominante del mundo al convertirse en el productor dominante a nivel mundial. [...] Pero Estados Unidos cambió su política: de promover el desarrollo en Estados Unidos pasó a promover el desarrollo en otras naciones. [...] Hemos permitido que los países extranjeros subsidien sus bienes, devaluen sus monedas, violen sus acuerdos, y hagan trampa de todas las formas imaginables». De acuerdo con este discurso, el candidato presidencial defiende la implementación de un modelo proteccionista, porque considera que:",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "La producción nacional debe privilegiarse sobre la competencia extranjera.",
@@ -1748,7 +1638,6 @@
   {
     "id": "SC-310",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Diversidad Cultural - Indígenas",
     "enunciado": "En un municipio del país habita un grupo de indígenas que huyó de su territorio por problemas de violencia e inseguridad. Los integrantes más jóvenes de esta comunidad se adaptaron rápidamente al estilo de vida del nuevo municipio y no desean regresar a sus territorios, mientras que los integrantes de mayor edad consideran que es necesario regresar, pues ven con preocupación que los más jóvenes están perdiendo sus costumbres, su lengua y todos los saberes propios de su comunidad. En la situación descrita, ¿cuál es el origen del conflicto?",
     "tipo": "seleccion_multiple",
@@ -1764,7 +1653,6 @@
   {
     "id": "SC-311",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos Humanos - Discriminación",
     "enunciado": "La discriminación por motivos de etnia, raza y cultura ha sido un fenómeno persistente a lo largo del siglo XX. Este fenómeno se manifiesta en situaciones cotidianas por medio del rechazo y de sentimientos de odio sistemático hacia un grupo poblacional. ¿Cuál de las siguientes situaciones puede analizarse desde el concepto de discriminación anteriormente descrito?",
     "tipo": "seleccion_multiple",
@@ -1780,7 +1668,6 @@
   {
     "id": "SC-312",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos Humanos - Educación y Niños",
     "enunciado": "En un pequeño municipio rural, un niño en condición de discapacidad visual fue matriculado por sus padres en la escuela para cursar primer grado de primaria. El director de la escuela, los docentes y los padres discuten cómo proceder. El director decide enviar por un mes a un docente a otra ciudad para que sea capacitado. ¿Cuál es la principal desventaja de la decisión del director de la escuela?",
     "tipo": "seleccion_multiple",
@@ -1796,7 +1683,6 @@
   {
     "id": "SC-313",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Voto Obligatorio",
     "enunciado": "En algunos países se ha establecido que el voto para la elección popular de cargos públicos sea de carácter obligatorio. Con esta medida se busca combatir prácticas como la compra de votos y el clientelismo. Quienes consideran que en Colombia debe imponerse el voto obligatorio acompañado de sanción señalan que, si no hay una sanción, la medida resultaría ineficaz. ¿Qué característica del contexto colombiano es importante tener en cuenta en el momento de establecer el voto obligatorio?",
     "tipo": "seleccion_multiple",
@@ -1812,7 +1698,6 @@
   {
     "id": "SC-314",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Economía - Monopolio",
     "enunciado": "Considere las siguientes situaciones: Situación 1: En el mercado farmacéutico, una empresa controla el precio y la producción de un medicamento esencial, dado que es la única firma con los derechos de fabricación. Situación 2: En un mercado de productos agrícolas, un pequeño grupo de empresas concentran la importación y distribución de la mayoría de insumos como semillas, insecticidas y abonos. ¿Cuál de los siguientes conceptos define mejor las situaciones anteriormente descritas?",
     "tipo": "seleccion_multiple",
@@ -1828,7 +1713,6 @@
   {
     "id": "SC-315",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Minería",
     "enunciado": "En un municipio al norte de un país, una empresa petrolera estatal desea construir un oleoducto. Un grupo de habitantes protesta argumentando que la extracción de petróleo podría generar daños irreparables a fuentes hídricas. Expertos sostienen que la extracción permitiría generar recursos para el país. De acuerdo con la problemática descrita, la dimensión económica y la ambiental están en conflicto porque:",
     "tipo": "seleccion_multiple",
@@ -1844,7 +1728,6 @@
   {
     "id": "SC-316",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Conflicto Armado - Ley de Justicia y Paz",
     "enunciado": "En 2005, como parte del proceso de desmovilización de grupos paramilitares en Colombia, se implementó la Ley de Justicia y Paz. Esta ley fue impulsada por el Gobierno con el propósito de ofrecer incentivos legales a quienes se desmovilizaran y contribuyeran a la verdad y reparación a las víctimas. ¿Por qué el poder judicial realizó este proceso de revisión si la Ley de Justicia y Paz fue impulsada por el Gobierno y discutida por el Congreso?",
     "tipo": "seleccion_multiple",
@@ -1860,7 +1743,6 @@
   {
     "id": "SC-317",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Desarrollo Sostenible",
     "enunciado": "El modelo de desarrollo sostenible promueve el uso responsable de los recursos naturales. El siguiente fragmento presenta algunas características de la aplicación de este modelo en las ciudades: 'Una ciudad sostenible es aquella que crece sin acabar con sus recursos naturales, como las fuentes de agua o los bosques. Y deja atrás hábitos como el de utilizar siempre el carro particular para transportarse'. ¿Qué posibles efectos traería la aplicación del modelo de desarrollo sostenible en la movilidad de las grandes ciudades?",
     "tipo": "seleccion_multiple",
@@ -1876,7 +1758,6 @@
   {
     "id": "SC-318",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos Humanos - Discriminación Racial",
     "enunciado": "En una ciudad, Cintia camina con su amiga y ve a un señor que viste prendas viejas y desgastadas. Cuando Cintia lo ve, toma a su amiga por el brazo, le dice 'crucemos' y cambia de acera. Su amiga le pregunta por qué ha reaccionado de esa manera. Cintia le responde que, dado el aspecto del señor, era muy probable que se tratase de un ladrón. Cintia expresó un prejuicio cuando:",
     "tipo": "seleccion_multiple",
@@ -1892,7 +1773,6 @@
   {
     "id": "SC-319",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Oposición Política",
     "enunciado": "Se acercan las elecciones legislativas en un país democrático. El presidente decide suprimir los partidos políticos porque, según él, son causa de divisiones y disputas que pueden promover la violencia. Al eliminar los partidos políticos, la medida adoptada por el presidente tiene en la democracia un efecto:",
     "tipo": "seleccion_multiple",
@@ -1908,7 +1788,6 @@
   {
     "id": "SC-320",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Narcotráfico en Colombia",
     "enunciado": "El siguiente es un fragmento de un comunicado firmado por un grupo denominado 'Los extraditables' y publicado en Colombia el 6 de noviembre de 1986: 'Preferimos una tumba en Colombia a un calabozo en Estados Unidos (...) Reclamamos poner fin a la extradición de colombianos, en nombre de los derechos de la familia, de los derechos humanos y de la soberanía nacional'. Este comunicado está relacionado con el contexto social y político de la década de los años 1980 en Colombia, porque, en esa década:",
     "tipo": "seleccion_multiple",
@@ -1924,7 +1803,6 @@
   {
     "id": "SC-321",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Historia - Frente Nacional",
     "enunciado": "El siguiente es un fragmento del Pacto de Bendorm firmado por liberales y conservadores, a mediados del siglo XX: 'Sería insensato reabrir inmediatamente la lucha por el poder entre conservadores y liberales. Se encuentra necesario y enteramente posible crear un gobierno o una sucesión de gobiernos de coalición amplia de los dos partidos, hasta tanto que recreadas las instituciones...'. ¿Cuál de los siguientes hechos de la historia política colombiana pudo haber motivado la firma de este acuerdo político entre los partidos tradicionales?",
     "tipo": "seleccion_multiple",
@@ -1940,7 +1818,6 @@
   {
     "id": "SC-322",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Diversidad - Multiculturalidad",
     "enunciado": "El siguiente fragmento es parte de la Declaración de Independencia de Israel: 'La tierra de Israel fue la cuna del pueblo judío. Aquí se forjó su identidad espiritual, religiosa y nacional... La catástrofe que recientemente azotó al pueblo judío fue una clara demostración de la urgencia por resolver el problema de su falta de hogar...'. La declaración de independencia presentada en el anterior fragmento se ubica en los años posteriores a la Segunda Guerra Mundial, porque en el fragmento:",
     "tipo": "seleccion_multiple",
@@ -1956,7 +1833,6 @@
   {
     "id": "SC-323",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Participación Ciudadana",
     "enunciado": "Suponga que en un municipio de Colombia se hace una consulta popular. Los resultados arrojaron que los habitantes del municipio están en contra de la ejecución de un proyecto minero. Al respecto, un representante del Gobierno realiza la siguiente declaración: 'Respeto y admiro la capacidad de la población para organizarse y hacerse escuchar. Es muy importante que las personas se manifiesten democráticamente en favor de sus intereses, pero hay que decir que en este caso la votación solo tiene un peso político y simbólico: no altera los acuerdos previos de este gobierno con las empresas inversionistas'. De acuerdo con la descripción anterior, ¿cuál es la intención del representante del Gobierno con su declaración?",
     "tipo": "seleccion_multiple",
@@ -1972,7 +1848,6 @@
   {
     "id": "SC-324",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Minería Ilegal",
     "enunciado": "En un departamento con escasa presencia de autoridades estatales y gran parte de la población en condiciones de pobreza extrema, existen desde hace varios años actividades de minería ilegal. En otra región del mismo país, ante la falta de recursos para fortalecer al Ejército Nacional, operan actores armados ilegales que han promovido la minería ilegal para financiarse. De las siguientes razones, ¿cuál podría explicar las semejanzas que caracterizan a la minería ilegal en ambas regiones?",
     "tipo": "seleccion_multiple",
@@ -1988,7 +1863,6 @@
   {
     "id": "SC-325",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Educación Sexual",
     "enunciado": "Lea con atención los siguientes fragmentos escritos por el Ministerio de Educación Nacional sobre los programas de educación sexual en los colegios: Fragmento 1 (1993): 'La educación sexual debe garantizar que el estudiante tenga conocimientos sobre los aspectos biológicos de la sexualidad... y sobre los diversos medios de regulación de la fertilidad humana'. Fragmento 2 (2008): 'La educación para la sexualidad debe comprender el desarrollo de competencias basadas en el respeto a la dignidad y a las autonomías sobre el propio cuerpo, de todo ser humano, de manera que se valore y se promuevan relaciones de pareja, familiares y sociales pacíficas, equitativas y democráticas'. ¿Qué cambio en la visión del Ministerio se identifica entre el primer y el segundo fragmento?",
     "tipo": "seleccion_multiple",
@@ -2004,7 +1878,6 @@
   {
     "id": "SC-326",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Minería",
     "enunciado": "La explotación minera en Colombia tiene defensores y detractores. Los primeros señalan que esta crea empleo, trae inversión al país y protege los territorios de la explotación ilegal. Los detractores sostienen que la explotación de estos recursos crea daños irreparables tanto para las comunidades como para el ambiente. La Corte Constitucional señaló que las comunidades locales tienen competencia para tomar decisiones sobre los proyectos de minería. En este debate, ¿entre cuáles actores involucrados es probable que se dé un conflicto?",
     "tipo": "seleccion_multiple",
@@ -2020,7 +1893,6 @@
   {
     "id": "SC-327",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Discriminación por Pobreza",
     "enunciado": "Cintia camina con su amiga y ve a un señor que viste prendas viejas y desgastadas. Cuando Cintia lo ve, toma a su amiga por el brazo, le dice 'crucemos' y cambia de acera. Su amiga le pregunta por qué ha reaccionado de esa manera. Cintia le responde que, dado el aspecto del señor, era muy probable que se tratase de un ladrón. Cintia expresó un prejuicio cuando:",
     "tipo": "seleccion_multiple",
@@ -2036,7 +1908,6 @@
   {
     "id": "SC-328",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Inclusión Educativa",
     "enunciado": "En un pequeño municipio rural, un niño en condición de discapacidad visual fue matriculado por sus padres en la escuela para cursar primer grado de primaria. El director de la escuela, los docentes y los padres discuten cómo proceder. El director decide enviar por un mes a un docente a otra ciudad para que sea capacitado. ¿Cuál es la principal desventaja de la decisión del director de la escuela?",
     "tipo": "seleccion_multiple",
@@ -2052,7 +1923,6 @@
   {
     "id": "SC-329",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Historia - Ley Seca en Colombia",
     "enunciado": "Lo que llaman la 'Ley Seca', a estilo y texto yanquis, está en la mente de varios legisladores y en el corazón de muchos colombianos. Vista por un lado, parece un prodigio de redención; vista por otro lado, bien puede parecer una solemne necedad. Prodigio, si por ella logran acabarse los crímenes que el consumo de alcohol provoca; necedad, si por ella se entregan las gentes a otras bebidas que las envenenen y las enloquezcan más. Que con la ley se evitarían crímenes de sangre y otras bestialidades es cierto, ciertísimo. Por desgracia, no gozaremos de tanta dicha: la Ley Seca, aunque rija oficial y aparentemente, en cualquier parte, es un imposible físico y moral. Para establecerla habría que tumbar instituciones, leyes sobre tributos, sobre industrias, sobre comercio; habría que acabar con la química, con el reino vegetal y con el agua del cielo. El tal linaje humano parece necesitar de algo que lo intoxique. ¿Cuál de las siguientes opciones presenta mejor la tesis central del texto?",
     "tipo": "seleccion_multiple",
@@ -2068,7 +1938,6 @@
   {
     "id": "SC-330",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Historia - Comuneros",
     "enunciado": "En 1781 se desató la Rebelión de los Comuneros. Aproximadamente 20.000 personas marcharon hacia Bogotá para exigir la suspensión del aumento de impuestos y la eliminación de barreras que restringían el cultivo de tabaco y el comercio de aguardiente. En 1759 la corona española había pasado a manos de un nuevo rey, quien comenzó un periodo de intensas reformas. ¿Cuál de los siguientes argumentos soporta la relación existente entre la Rebelión de los Comuneros (1781) y las reformas impulsadas por el rey de España (1759)?",
     "tipo": "seleccion_multiple",
@@ -2084,7 +1953,6 @@
   {
     "id": "SC-331",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Economía - Teoría Centro-Periferia",
     "enunciado": "El economista argentino Raúl Prebisch clasificó los países del mundo en dos grandes grupos: centro y periferia. Prebisch incluyó dentro de los países centrales a aquellos que exportan productos industriales y tecnológicos de alto valor, realizan inversiones más allá de sus fronteras y generan o adoptan las innovaciones. En la categoría de países periféricos incluyó aquellos especializados en la producción de materias primas o productos industriales de escaso valor, que basan su economía en la explotación de mano de obra barata y necesitan importar la tecnología para producir. Tomando como referencia estas categorías de centro y periferia, puede afirmarse que los tratados de libre comercio:",
     "tipo": "seleccion_multiple",
@@ -2100,7 +1968,6 @@
   {
     "id": "SC-332",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Embarazo Adolescente",
     "enunciado": "Recientemente, las autoridades nacionales han manifestado su preocupación por las alarmantes cifras del embarazo adolescente en Colombia. Se estima que una de cada cinco adolescentes entre los 15 y los 19 años de edad es madre o está embarazada. Con el fin de mitigar el embarazo adolescente, se emprendió una campaña de sensibilización sobre el uso de los métodos anticonceptivos y la importancia de tomar decisiones responsables respecto al futuro, la cual se concentró especialmente en ambientes educativos de las principales ciudades del país. ¿Qué dimensión del problema fue privilegiada en la campaña propuesta para reducir el embarazo adolescente?",
     "tipo": "seleccion_multiple",
@@ -2116,7 +1983,6 @@
   {
     "id": "SC-333",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Justicia Transicional",
     "enunciado": "En el texto 'Colombia y Sudáfrica', el autor compara los procesos de justicia transicional en ambos países. En Sudáfrica, Mandela optó por una fórmula de amnistía a cambio de verdad y asunción de responsabilidades. En Colombia, el acuerdo con las FARC prevé que los responsables de crímenes atroces tendrán que pasar por la justicia y tendrán sanciones. Según el autor, ¿por qué algunos colombianos consideran admirable a Mandela y desprecian el acuerdo con las FARC, cuando la fórmula colombiana es más robusta en términos de justicia?",
     "tipo": "seleccion_multiple",
@@ -2132,7 +1998,6 @@
   {
     "id": "SC-334",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Mandela y Sudáfrica",
     "enunciado": "En el texto 'Lecciones de Sudáfrica para Colombia', se menciona que Sudáfrica y Colombia no son tan comparables porque mientras la una tuvo un conflicto racial en un régimen tiránico, en la otra ha habido una larga guerra política en un contexto de relativa democracia. Sin embargo, el autor sostiene que Sudáfrica sí es un espejo para Colombia. ¿Por qué?",
     "tipo": "seleccion_multiple",
@@ -2148,7 +2013,6 @@
   {
     "id": "SC-335",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Estado y Nación",
     "enunciado": "En el texto 'El Estado y la Nación', el autor expone los cuatro criterios fundamentales para que una entidad sea considerada un Estado: base territorial, población estable, gobierno al cual la población le deba obediencia, y reconocimiento diplomático. Sin embargo, el autor señala que estos criterios no son absolutos. ¿Cuál de las siguientes afirmaciones describe una de las tesis centrales del texto?",
     "tipo": "seleccion_multiple",
@@ -2164,7 +2028,6 @@
   {
     "id": "SC-336",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Policía y Discriminación",
     "enunciado": "En una ciudad, Cintia camina con su amiga y ve a un señor que viste prendas viejas y desgastadas. Cuando Cintia lo ve, toma a su amiga por el brazo, le dice 'crucemos' y cambia de acera. Su amiga le pregunta por qué ha reaccionado de esa manera. Cintia le responde que, dado el aspecto del señor, era muy probable que se tratase de un ladrón. ¿Qué expresó Cintia?",
     "tipo": "seleccion_multiple",
@@ -2180,7 +2043,6 @@
   {
     "id": "SC-337",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Diversidad - Colombia",
     "enunciado": "El siguiente texto describe la diversidad étnica en Colombia: 'Colombia cuenta con una amplia diversidad étnica que se manifiesta en la presencia de comunidades y pueblos indígenas, negros, afros, raizalés, palenqueros y rrom reconocidos como sujetos de derechos fundamentales, tanto en zonas rurales como urbanas. En conjunto, estos grupos étnicos representaban en 2005 el 14,06 % del total de la población nacional'. ¿Qué implica el respeto a la multiculturalidad en Colombia?",
     "tipo": "seleccion_multiple",
@@ -2196,7 +2058,6 @@
   {
     "id": "SC-338",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Desplazamiento",
     "enunciado": "En Colombia, tras el proceso de desmovilización de las FARC, aumentó la tala indiscriminada de árboles en áreas que antes ellos controlaban. Por décadas, este grupo guerrillero ejerció como 'autoridad' ambiental en cientos de hectáreas de bosque y de selva. En el caso concreto de la Amazonia colombiana, después de la desmovilización, se han perdido al menos 1.200 hectáreas de bosque. Los campesinos de la zona afirman: 'nosotros no queremos talar, pero si el Gobierno no nos trae un proyecto en el que podamos ubicarnos o tener un modo de vida diferente, nos toca seguir en esto'. ¿Entre quiénes es probable que se dé un conflicto?",
     "tipo": "seleccion_multiple",
@@ -2212,7 +2073,6 @@
   {
     "id": "SC-339",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Partidos Políticos",
     "enunciado": "Se acercan las elecciones legislativas en un país democrático. El presidente decide suprimir los partidos políticos porque, según él, son causa de divisiones y disputas. Al eliminar los partidos políticos, la medida adoptada por el presidente tiene en la democracia un efecto:",
     "tipo": "seleccion_multiple",
@@ -2228,7 +2088,6 @@
   {
     "id": "SC-340",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Economía - Comercio Informal",
     "enunciado": "Para el alcalde de una ciudad, el comercio informal en las calles está asociado a problemas como la evasión de impuestos, la inseguridad y el uso inadecuado del espacio público. Con el objeto de erradicar esta modalidad de comercio, el alcalde contempla la implementación de un programa social que construiría una zona de comercio donde se asignaran puestos de venta. La Asociación de vendedores ambulantes propone al alcalde que les permita continuar trabajando en las calles. ¿Qué valoración haría más probablemente el alcalde sobre la propuesta de la Asociación?",
     "tipo": "seleccion_multiple",
@@ -2244,7 +2103,6 @@
   {
     "id": "SC-341",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Desarrollo Sostenible",
     "enunciado": "El modelo de desarrollo sostenible promueve el uso responsable de los recursos naturales. Una característica del modelo de desarrollo sostenible es:",
     "tipo": "seleccion_multiple",
@@ -2260,7 +2118,6 @@
   {
     "id": "SC-342",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Constitución - Reforma",
     "enunciado": "El presidente quiere otorgar el estatus de Distrito Especial a una ciudad, pero para hacerlo debe modificar la Constitución. ¿Tiene el presidente la capacidad para realizar esta reforma constitucional por su cuenta?",
     "tipo": "seleccion_multiple",
@@ -2276,7 +2133,6 @@
   {
     "id": "SC-343",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Libertad de Expresión",
     "enunciado": "En un barrio de una ciudad de Colombia, existen varios medios de comunicación alternativos liderados por jóvenes. Una bancada de congresistas considera que estos medios alteran el orden público y propone un proyecto de ley para clausurarlos y prohibirlos. De acuerdo con lo establecido en la Constitución Política de Colombia, en esta situación:",
     "tipo": "seleccion_multiple",
@@ -2292,7 +2148,6 @@
   {
     "id": "SC-344",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Diversidad - Pueblos Indígenas",
     "enunciado": "Un grupo de indígenas huyó de su territorio por problemas de violencia e inseguridad. Los jóvenes se adaptaron rápidamente al estilo de vida del nuevo municipio y no desean regresar, mientras que los mayores consideran que es necesario regresar para preservar sus costumbres. En la situación descrita, ¿cuál es el origen del conflicto?",
     "tipo": "seleccion_multiple",
@@ -2308,7 +2163,6 @@
   {
     "id": "SC-345",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Diversidad - Globalización",
     "enunciado": "«La globalización puede ser una buena estrategia para la acumulación de riquezas, pero esas riquezas son ante todo para unos pocos y no integra ninguna política proyectada para el desarrollo integral de una comunidad o una población». ¿Cuál de las siguientes evidencias apoyaría la tesis planteada por el autor?",
     "tipo": "seleccion_multiple",
@@ -2324,7 +2178,6 @@
   {
     "id": "SC-346",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Narcotráfico",
     "enunciado": "El siguiente es un fragmento de un comunicado firmado por un grupo denominado 'Los extraditables': 'Preferimos una tumba en Colombia a un calabozo en Estados Unidos (...) Reclamamos poner fin a la extradición de colombianos, en nombre de los derechos de la familia, de los derechos humanos y de la soberanía nacional'. Este comunicado está relacionado con el contexto de la década de 1980 en Colombia porque:",
     "tipo": "seleccion_multiple",
@@ -2340,7 +2193,6 @@
   {
     "id": "SC-347",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Economía - Subsidios",
     "enunciado": "En Colombia se desarrolló una política de subsidios para impulsar el crecimiento agrícola. Quienes quisieran recibir un subsidio tenían que participar en una convocatoria pública. Sin embargo, un sector privado entabló conversaciones directas con los directivos públicos y los convencieron de elegirlos directamente, a cambio de una suma de dinero. En esta situación, el sector público:",
     "tipo": "seleccion_multiple",
@@ -2356,7 +2208,6 @@
   {
     "id": "SC-348",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Minería",
     "enunciado": "En un municipio al norte de un país, una empresa petrolera estatal desea construir un oleoducto. Un grupo de habitantes protesta argumentando que la extracción de petróleo podría generar daños irreparables a fuentes hídricas. Expertos sostienen que la extracción permitiría generar recursos para el país. De acuerdo con la problemática descrita, la dimensión económica y la ambiental están en conflicto porque:",
     "tipo": "seleccion_multiple",
@@ -2372,7 +2223,6 @@
   {
     "id": "SC-349",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Historia - Guerra de los Mil Días",
     "enunciado": "Lea esta lista de episodios de la historia de Colombia: 1. Las batallas de Palonegro y Peralonso durante la guerra de los Mil Días. 2. Los asesinatos de jueces y periodistas por órdenes de los líderes de carteles. 3. Los enfrentamientos entre liberales y conservadores después del asesinato de Gaitán. 4. Los enfrentamientos por el control del narcotráfico entre bandas criminales. La opción que ordena correctamente, del más antiguo al más reciente, los episodios de violencia en Colombia es:",
     "tipo": "seleccion_multiple",
@@ -2388,7 +2238,6 @@
   {
     "id": "SC-350",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Consulta Popular",
     "enunciado": "Suponga que en un municipio de Colombia se hace una consulta popular. Los resultados arrojaron que los habitantes están en contra de la ejecución de un proyecto minero. Al respecto, un representante del Gobierno declara que 'la votación solo tiene un peso político y simbólico: no altera los acuerdos previos de este gobierno con las empresas inversionistas'. De acuerdo con la descripción anterior, ¿cuál es la intención del representante del Gobierno con su declaración?",
     "tipo": "seleccion_multiple",
@@ -2404,7 +2253,6 @@
   {
     "id": "SC-351",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Desplazamiento Forzado",
     "enunciado": "En Colombia, tras el proceso de desmovilización de las FARC, aumentó la tala indiscriminada de árboles en áreas que antes ellos controlaban. Los campesinos afirman: 'nosotros no queremos talar, pero si el Gobierno no nos trae un proyecto en el que podamos ubicarnos, nos toca seguir en esto'. ¿Entre quiénes es probable que se dé un conflicto?",
     "tipo": "seleccion_multiple",
@@ -2420,7 +2268,6 @@
   {
     "id": "SC-352",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Vivienda",
     "enunciado": "En una ciudad existe un déficit de vivienda en los sectores de bajos ingresos. Los empresarios proponen que el Gobierno dé estímulos a las constructoras. Los sociólogos proponen destinar predios abandonados. Las constructoras opinan que el Gobierno debería exigir a los bancos flexibilizar los requisitos para créditos. Las organizaciones sociales opinan que se debe mejorar las condiciones laborales. Si el Gobierno decide reducir los impuestos a las constructoras para que construyan viviendas de bajo costo en zonas distantes, ¿cuál de los actores podría tener una opinión desfavorable?",
     "tipo": "seleccion_multiple",
@@ -2436,7 +2283,6 @@
   {
     "id": "SC-353",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Poder Judicial",
     "enunciado": "En 2005, se implementó la Ley de Justicia y Paz para la desmovilización de grupos paramilitares. La ley fue revisada por el poder judicial. ¿Por qué el poder judicial realizó este proceso de revisión?",
     "tipo": "seleccion_multiple",
@@ -2452,7 +2298,6 @@
   {
     "id": "SC-354",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Educación",
     "enunciado": "En un pequeño municipio rural, un niño en condición de discapacidad visual fue matriculado en la escuela. Los docentes no cuentan con capacitación previa. El director decide enviar a un docente a capacitarse. ¿Cuál es la principal desventaja de la decisión del director?",
     "tipo": "seleccion_multiple",
@@ -2468,7 +2313,6 @@
   {
     "id": "SC-355",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Economía - Informalidad",
     "enunciado": "Para el alcalde de una ciudad, el comercio informal está asociado a problemas como la evasión de impuestos y la inseguridad. El alcalde propone construir una zona de comercio formal. La Asociación de vendedores ambulantes propone continuar trabajando en las calles. ¿Qué valoración haría más probablemente el alcalde sobre la propuesta de la Asociación?",
     "tipo": "seleccion_multiple",
@@ -2484,9 +2328,8 @@
   {
     "id": "SC-356",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Economía - Proteccionismo",
-    "enunciado": "En un discurso, un candidato presidencial afirma: 'Estados Unidos se convirtió en la economía dominante al convertirse en el productor dominante. Pero cambió su política: de promover el desarrollo en Estados Unidos pasó a promover el desarrollo en otras naciones. Hemos permitido que los países extranjeros subsidien sus bienes, devalúen sus monedas, violen sus acuerdos'. De acuerdo con este discurso, el candidato defiende:",
+    "enunciado": "En un discurso, un candidato presidencial afirma: 'Estados Unidos se convirtió en la economía dominante al convertirse en el productor dominante. Pero cambió su política: de promover el desarrollo en Estados Unidos pasó a promover el desarrollo en otras naciones. Hemos permitido que los países extranjeros subsidien sus bienes, devaluen sus monedas, violen sus acuerdos'. De acuerdo con este discurso, el candidato defiende:",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "La producción nacional debe privilegiarse sobre la competencia extranjera.",
@@ -2500,7 +2343,6 @@
   {
     "id": "SC-357",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Participación",
     "enunciado": "En un país con un sistema presidencialista, una fuerza política lleva casi 20 años en el poder. El presidente se atribuye las funciones del poder legislativo, lo que genera protestas en todo el país. En la situación descrita, ¿qué es lo que probablemente quiere lograr la oposición?",
     "tipo": "seleccion_multiple",
@@ -2516,7 +2358,6 @@
   {
     "id": "SC-358",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Constitución - Derechos Fundamentales",
     "enunciado": "En Colombia, el matrimonio civil y el religioso con efectos civiles protegen los derechos que surgen cuando dos personas conforman una familia. La Constitución define el matrimonio como la unión entre un hombre y una mujer, pero las uniones de parejas del mismo sexo también se consideran matrimonios civiles según una sentencia de la Corte Constitucional de 2016. ¿Puede modificarse la definición de matrimonio en la Constitución?",
     "tipo": "seleccion_multiple",
@@ -2532,7 +2373,6 @@
   {
     "id": "SC-359",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Causas",
     "enunciado": "De acuerdo con cifras del informe '¡Basta ya!', del Centro de Memoria Histórica, de las masacres ocurridas en Colombia entre 1985 y 2012, el 56,6 % fueron cometidas por grupos paramilitares, 17,3 % por las guerrillas, 8 % por la fuerza pública y 14,9 % por grupos armados no identificados. Un docente afirma: 'Si los paramilitares cometieron el mayor número de masacres, en el paramilitarismo debemos buscar el origen y las causas principales de nuestro conflicto histórico'. El uso que el docente hace de las cifras es:",
     "tipo": "seleccion_multiple",
@@ -2548,7 +2388,6 @@
   {
     "id": "SC-360",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Diversidad - Étnica",
     "enunciado": "Colombia cuenta con una amplia diversidad étnica que se manifiesta en la presencia de comunidades y pueblos indígenas, negros, afros, raizalés, palenqueros y rrom. ¿Qué implica el respeto a la multiculturalidad en Colombia?",
     "tipo": "seleccion_multiple",
@@ -2564,7 +2403,6 @@
   {
     "id": "SC-361",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Política de Drogas",
     "enunciado": "En 2016, durante los diálogos de paz en La Habana, se discutió la sustitución de cultivos ilícitos. Se concluyó que se deben buscar nuevas opciones centradas en la sustitución de cultivos y la implementación de Planes Integrales de Sustitución y Desarrollo Alternativo. ¿Cuál es una medida consecuente con la aplicación de estas políticas?",
     "tipo": "seleccion_multiple",
@@ -2580,7 +2418,6 @@
   {
     "id": "SC-362",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Desarrollo",
     "enunciado": "El modelo de desarrollo sostenible promueve el uso responsable de los recursos naturales. ¿Qué efectos traería la aplicación del modelo de desarrollo sostenible en la movilidad de las grandes ciudades?",
     "tipo": "seleccion_multiple",
@@ -2596,7 +2433,6 @@
   {
     "id": "SC-363",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Economía - Pobreza",
     "enunciado": "Los estudios acerca de la desigualdad en la distribución mundial de la riqueza indican que aunque la riqueza a nivel mundial va en aumento, esto no significa que la desigualdad disminuya. El economista Thomas Piketty señala que la desigualdad entre el dinero que una persona puede acumular gracias a su trabajo y el dinero que pueden continuar acumulando quienes heredan un capital importante 'puede llevar a trayectorias explosivas y a espirales de desigualdad fuera de todo control'. ¿Cuál de los siguientes enunciados apoya la posición del economista?",
     "tipo": "seleccion_multiple",
@@ -2612,7 +2448,6 @@
   {
     "id": "SC-364",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Representación",
     "enunciado": "La democracia ha subsistido en la modernidad y se ha diferenciado de otro tipo de sistemas de gobierno. ¿Cuál de las siguientes figuras es fundamental para que un sistema pueda ser considerado como democrático?",
     "tipo": "seleccion_multiple",
@@ -2628,7 +2463,6 @@
   {
     "id": "SC-365",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Salud",
     "enunciado": "Luisa padece una enfermedad crónica desde hace veinte años. Jorge sufre una enfermedad degenerativa desde hace un año. Jorge consultó a varios médicos que le diagnosticaron la enfermedad. La EPS le notificó que solo podría costear el 30% del valor total del tratamiento. Luisa afirma: 'Si hace veinte años usted hubiera tenido los mismos síntomas, le habría tocado pagar un médico privado y costearse el tratamiento. Por eso yo creo que el sistema de salud ha mejorado mucho y es cada vez más humano'. De acuerdo con la situación descrita, puede afirmarse que el argumento de Luisa NO refuta del todo el de Jorge, porque:",
     "tipo": "seleccion_multiple",
@@ -2644,7 +2478,6 @@
   {
     "id": "SC-366",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Proceso de Paz",
     "enunciado": "En 2016, dos de las más representativas organizaciones empresariales colombianas manifestaron su apoyo al proceso de paz entre el Gobierno y las FARC. ¿Cuál de las siguientes circunstancias históricas podría explicar el apoyo de los empresarios al proceso de paz?",
     "tipo": "seleccion_multiple",
@@ -2660,7 +2493,6 @@
   {
     "id": "SC-367",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Diversidad - Multiculturalidad",
     "enunciado": "El siguiente fragmento describe la Ley 975 de 2001 que estableció el 'Día Nacional de la Afrocolombianidad'. El autor del texto señala que, a pesar de que Colombia cuenta con un marco constitucional apropiado para lograr la igualdad racial, persisten formas estructurales de invisibilización y discriminación. ¿Qué afirma el autor sobre la situación de la población afrocolombiana?",
     "tipo": "seleccion_multiple",
@@ -2676,7 +2508,6 @@
   {
     "id": "SC-368",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Minería",
     "enunciado": "En una región del país, la minería artesanal de oro constituye una fuente de ingresos importante para muchas familias, pero involucra el uso de mercurio, que afecta el ecosistema acuático y causa graves problemas de salud. La eliminación del uso del mercurio es una prioridad. ¿Qué tipo de problema plantea esta situación?",
     "tipo": "seleccion_multiple",
@@ -2692,7 +2523,6 @@
   {
     "id": "SC-369",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Niños",
     "enunciado": "En 2016, el presidente de Filipinas respaldó un proyecto de ley que permite que niños de nueve años puedan ir a la cárcel, como parte de una política anticrimen. ¿Cuál es un efecto no deseado de la aplicación del proyecto de ley?",
     "tipo": "seleccion_multiple",
@@ -2708,7 +2538,6 @@
   {
     "id": "SC-370",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Participación Política",
     "enunciado": "Se acercan las elecciones legislativas en un país democrático. El presidente decide suprimir los partidos políticos porque, según él, son causa de divisiones y disputas. Al eliminar los partidos políticos, la medida adoptada por el presidente tiene en la democracia un efecto:",
     "tipo": "seleccion_multiple",
@@ -2724,7 +2553,6 @@
   {
     "id": "SC-371",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Justicia Penal",
     "enunciado": "En un país hay un serio problema de hacinamiento carcelario. El Gobierno propone excarcelar un porcentaje significativo de reclusos mediante amnistías y rebajas de penas. Un sector de la sociedad apoya esta iniciativa porque considera que la privación de la libertad no tiene como efecto disuadir a los criminales. ¿Cuál enunciado es más afín con este sector?",
     "tipo": "seleccion_multiple",
@@ -2740,7 +2568,6 @@
   {
     "id": "SC-372",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Constitución - Artículo 13",
     "enunciado": "La Constitución Política de Colombia establece en su artículo 13 que 'todas las personas nacen libres e iguales ante la ley, recibirán la misma protección y trato de las autoridades y gozarán de los mismos derechos, libertades y oportunidades sin ninguna discriminación por razones de sexo, raza, origen nacional o familiar, lengua, religión, opinión política o filosofía'. ¿Qué principio fundamental establece este artículo?",
     "tipo": "seleccion_multiple",
@@ -2756,7 +2583,6 @@
   {
     "id": "SC-373",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Víctimas",
     "enunciado": "«Todos deberían aceptar el Acuerdo de paz, incluyendo a quienes nunca han padecido el conflicto directamente, pero aun así se atrevieron a votar en contra de la paz en nuestros territorios». Una hipótesis sobre los autores del anterior fragmento es que estos pertenecen a una población conformada por minorías víctimas del conflicto armado. ¿Qué elementos del texto sirven para apoyar esta hipótesis?",
     "tipo": "seleccion_multiple",
@@ -2772,7 +2598,6 @@
   {
     "id": "SC-374",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Diversidad - Cultural",
     "enunciado": "En un departamento del país, un grupo de afrocolombianos debe dar varias clases sobre su lengua nativa para enseñársela a algunos habitantes de la región. ¿En cuál de las siguientes situaciones se protege la diversidad cultural o étnica?",
     "tipo": "seleccion_multiple",
@@ -2788,7 +2613,6 @@
   {
     "id": "SC-375",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Economía - Política",
     "enunciado": "Un gobierno con alta tasa de desempleo pretende explotar intensivamente sus recursos naturales para garantizar trabajo a la población. Grupos ecologistas se oponen argumentando que la explotación afecta negativamente los ecosistemas y la provisión de agua. ¿Cuál dimensión está en conflicto con la conservación ambiental?",
     "tipo": "seleccion_multiple",
@@ -2804,7 +2628,6 @@
   {
     "id": "SC-376",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Humedales",
     "enunciado": "Los humedales son ecosistemas fundamentales para la diversidad de anfibios, peces y aves. Desde 2008, el humedal de Guaymaral ha sido rellenado para construir concesionarios, centros comerciales y colegios. Según la Constitución, esta situación es un caso de:",
     "tipo": "seleccion_multiple",
@@ -2820,7 +2643,6 @@
   {
     "id": "SC-377",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Participación",
     "enunciado": "En una ciudad intermedia, los habitantes están preocupados por el mal estado de los parques y espacios comunales. El alcalde contrata un experto que propone organizar a los ciudadanos para que se involucren en la discusión e implementación de soluciones. El concepto que mejor sintetiza la propuesta del experto es:",
     "tipo": "seleccion_multiple",
@@ -2836,7 +2658,6 @@
   {
     "id": "SC-378",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Discriminación Racial",
     "enunciado": "La reciente ola de protestas contra la brutalidad policial y el racismo ha incluido ataques a monumentos vinculados con la esclavitud y el colonialismo. Un profesor de Historia afirma: 'Puedes derribar todos los monumentos del mundo, pero eso no cambia necesariamente lo que ocurrió. Aún estamos obligados a aprender ese pasado'. ¿Cuál de los siguientes enunciados apoya lo dicho por el profesor?",
     "tipo": "seleccion_multiple",
@@ -2852,7 +2673,6 @@
   {
     "id": "SC-379",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Desplazamiento",
     "enunciado": "En Colombia, tras el proceso de desmovilización de las FARC, aumentó la tala indiscriminada de árboles en áreas que antes ellos controlaban. Los campesinos afirman: 'nosotros no queremos talar, pero si el Gobierno no nos trae un proyecto en el que podamos ubicarnos, nos toca seguir en esto'. ¿Entre quiénes es probable que se dé un conflicto?",
     "tipo": "seleccion_multiple",
@@ -2868,7 +2688,6 @@
   {
     "id": "SC-380",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Salud",
     "enunciado": "El costo de los medicamentos en Colombia varía dramáticamente según el laboratorio. Por ejemplo, el omeprazol puede costar entre $11,249 y $138,000. Frente a este problema, los ministerios desarrollaron una aplicación llamada Clic Salud para dar a conocer los precios de un mismo medicamento. ¿En qué condiciones sería posible solucionar el problema del sector agroindustrial relacionado con los precios de los fertilizantes?",
     "tipo": "seleccion_multiple",
@@ -2884,7 +2703,6 @@
   {
     "id": "SC-381",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Pensamiento reflexivo y sistémico",
     "competencia": "Economía - Informalidad",
     "enunciado": "Para el alcalde de una ciudad, el comercio informal está asociado a problemas como la evasión de impuestos y la inseguridad. El alcalde propone construir una zona de comercio formal. La Asociación de vendedores ambulantes propone continuar trabajando en las calles. ¿Qué valoración haría más probablemente el alcalde sobre la propuesta de la Asociación?",
     "tipo": "seleccion_multiple",
@@ -2900,7 +2718,6 @@
   {
     "id": "SC-382",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Paz",
     "enunciado": "En 2016, dos de las más representativas organizaciones empresariales colombianas manifestaron su apoyo al proceso de paz entre el Gobierno y las FARC. ¿Cuál de las siguientes circunstancias históricas podría explicar el apoyo de los empresarios al proceso de paz?",
     "tipo": "seleccion_multiple",
@@ -2916,7 +2733,6 @@
   {
     "id": "SC-383",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Diversidad - Cultural",
     "enunciado": "En un departamento del país, un grupo de afrocolombianos debe dar varias clases sobre su lengua nativa para enseñársela a algunos habitantes de la región. ¿En cuál de las siguientes situaciones se protege la diversidad cultural o étnica?",
     "tipo": "seleccion_multiple",
@@ -2932,7 +2748,6 @@
   {
     "id": "SC-384",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Representación",
     "enunciado": "La democracia ha subsistido en la modernidad y se ha diferenciado de otro tipo de sistemas de gobierno. ¿Cuál de las siguientes figuras es fundamental para que un sistema pueda ser considerado como democrático?",
     "tipo": "seleccion_multiple",
@@ -2948,7 +2763,6 @@
   {
     "id": "SC-385",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Minería",
     "enunciado": "En un municipio al norte de un país, una empresa petrolera estatal desea construir un oleoducto. Un grupo de habitantes protesta argumentando que la extracción de petróleo podría generar daños irreparables a fuentes hídricas. Expertos sostienen que la extracción permitiría generar recursos para el país. De acuerdo con la problemática descrita, la dimensión económica y la ambiental están en conflicto porque:",
     "tipo": "seleccion_multiple",
@@ -2964,7 +2778,6 @@
   {
     "id": "SC-386",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Mujeres",
     "enunciado": "En 2016, el primer ministro de Japón propuso un plan para 'feminizar' la economía japonesa, buscando que el 30% de la fuerza laboral fueran mujeres. Sin embargo, en 2016 solo el 15% de los puestos en compañías privadas eran ocupados por mujeres. ¿Qué razón explica que la propuesta no esté teniendo los resultados esperados?",
     "tipo": "seleccion_multiple",
@@ -2980,7 +2793,6 @@
   {
     "id": "SC-387",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Causas",
     "enunciado": "De acuerdo con cifras del informe '¡Basta ya!', del Centro de Memoria Histórica, de las masacres ocurridas en Colombia entre 1985 y 2012, el 56,6 % fueron cometidas por grupos paramilitares. Un docente afirma: 'Si los paramilitares cometieron el mayor número de masacres, en el paramilitarismo debemos buscar el origen y las causas principales de nuestro conflicto histórico'. El uso que el docente hace de las cifras es:",
     "tipo": "seleccion_multiple",
@@ -2996,7 +2808,6 @@
   {
     "id": "SC-388",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Educación",
     "enunciado": "En un pequeño municipio rural, un niño en condición de discapacidad visual fue matriculado en la escuela. Los docentes no cuentan con capacitación previa. El director decide enviar a un docente a capacitarse. ¿Cuál es la principal desventaja de la decisión del director?",
     "tipo": "seleccion_multiple",
@@ -3012,7 +2823,6 @@
   {
     "id": "SC-389",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Economía - Desarrollo",
     "enunciado": "En un país con alta tasa de desempleo, el gobierno pretende explotar intensivamente sus recursos naturales para garantizar trabajo a la población. Grupos ecologistas se oponen. ¿Cuál dimensión está en conflicto con la conservación ambiental?",
     "tipo": "seleccion_multiple",
@@ -3028,7 +2838,6 @@
   {
     "id": "SC-390",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Oposición",
     "enunciado": "En un país con un sistema presidencialista, una fuerza política lleva casi 20 años en el poder. El presidente se atribuye las funciones del poder legislativo, lo que genera protestas. En la situación descrita, ¿qué es lo que probablemente quiere lograr la oposición?",
     "tipo": "seleccion_multiple",
@@ -3044,7 +2853,6 @@
   {
     "id": "SC-391",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Diversidad - Étnica",
     "enunciado": "Colombia cuenta con una amplia diversidad étnica que se manifiesta en la presencia de comunidades y pueblos indígenas, negros, afros, raizalés, palenqueros y rrom. ¿Qué implica el respeto a la multiculturalidad en Colombia?",
     "tipo": "seleccion_multiple",
@@ -3060,7 +2868,6 @@
   {
     "id": "SC-392",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Espacial ambiental",
     "competencia": "Medio Ambiente - Parques",
     "enunciado": "El Parque Natural Tayrona fue cerrado por un mes para proteger su ecosistema y como respuesta a una solicitud de los pueblos indígenas de la zona. En un Estado social de derecho, la decisión de cerrar el parque es:",
     "tipo": "seleccion_multiple",
@@ -3076,7 +2883,6 @@
   {
     "id": "SC-393",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Derechos - Trabajo",
     "enunciado": "El sindicato de una empresa se reunió para aprobar el pliego de peticiones. Los directivos despidieron a los trabajadores del sindicato. Según la Constitución, la decisión de las directivas:",
     "tipo": "seleccion_multiple",
@@ -3092,7 +2898,6 @@
   {
     "id": "SC-394",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Historia y cultura",
     "competencia": "Conflicto - Paz",
     "enunciado": "En 2016, dos de las más representativas organizaciones empresariales colombianas manifestaron su apoyo al proceso de paz entre el Gobierno y las FARC. ¿Cuál de las siguientes circunstancias históricas podría explicar el apoyo de los empresarios al proceso de paz?",
     "tipo": "seleccion_multiple",
@@ -3108,7 +2913,6 @@
   {
     "id": "SC-395",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Economía - Vivienda",
     "enunciado": "En una ciudad existe un déficit de vivienda en los sectores de bajos ingresos. Los empresarios proponen que el Gobierno dé estímulos a las constructoras. Los sociólogos proponen destinar predios abandonados del centro. Si el Gobierno decide reducir los impuestos a las constructoras para que construyan viviendas de bajo costo en zonas distantes, ¿cuál de los actores podría tener una opinión desfavorable?",
     "tipo": "seleccion_multiple",
@@ -3124,7 +2928,6 @@
   {
     "id": "SC-396",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Democracia - Participación",
     "enunciado": "En una ciudad intermedia, los habitantes están preocupados por el mal estado de los parques y espacios comunales. El alcalde contrata un experto que propone organizar a los ciudadanos para que se involucren en la discusión e implementación de soluciones. El concepto que mejor sintetiza la propuesta del experto es:",
     "tipo": "seleccion_multiple",
@@ -3140,7 +2943,6 @@
   {
     "id": "SC-397",
     "materia": "Sociales y Ciudadanas",
-    "componente": "Ético-político",
     "competencia": "Constitución - Reforma",
     "enunciado": "El presidente quiere otorgar el estatus de Distrito Especial a una ciudad, pero para hacerlo debe modificar la Constitución. ¿Tiene el presidente la capacidad para realizar esta reforma constitucional por su cuenta?",
     "tipo": "seleccion_multiple",
