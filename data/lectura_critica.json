@@ -139,7 +139,8 @@
       "D": "Los monopolios financieros financian únicamente a los candidatos que prometen reformas sociales de fondo."
     },
     "respuesta_correcta": "C",
-    "justificacion": "La imagen de los candidatos idénticos siendo alimentados u operados por la misma maquinaria económica oculta ('Grandes Monopolios') es una crítica satírica a la falta de opciones reales en el sistema político, sugiriendo una falsa libertad de elección para el pueblo."
+    "justificacion": "La imagen de los candidatos idénticos siendo alimentados u operados por la misma maquinaria económica oculta ('Grandes Monopolios') es una crítica satírica a la falta de opciones reales en el sistema político, sugiriendo una falsa libertad de elección para el pueblo.",
+    "text_evidence": "La caricatura muestra a dos políticos idénticos, con letreros que dicen 'PROMESAS A' y 'PROMESAS B', ambos conectados por cables a la misma máquina etiquetada como 'Grandes Monopolios', mientras una multitud aplaude. La imagen sugiere que la supuesta diferencia entre opciones políticas es solo una ilusión."
   },
   {
     "id": "LC-010",
@@ -194,7 +195,7 @@
     "materia": "Lectura Crítica",
     "componente": "Sintáctico",
     "competencia": "Articulación de las partes (Texto Discontinuo)",
-    "enunciado": "[DESCRIPCIÓN DE TABLA ESTADÍSTICA]: Una tabla muestra los hábitos de lectura en Colombia en 2026. La columna 1 indica rangos de edad (12-18, 19-30, 31-50, 51+). La columna 2 indica 'Libros impresos leídos al año' (promedios: 1.2, 0.8, 1.5, 2.3). La columna 3 indica 'Formatos digitales (e-books, artículos web) leídos al mes' (promedios: 15.4, 22.1, 8.3, 2.1).\n\nBasándose en la relación de estos datos, ¿cuál afirmación es completamente verídica?",
+    "enunciado": "![DESCRIPCIÓN DE TABLA ESTADÍSTICA](data/img/LC-013.png)  Una tabla muestra los hábitos de lectura en Colombia en 2026. La columna 1 indica rangos de edad (12-18, 19-30, 31-50, 51+). La columna 2 indica 'Libros impresos leídos al año' (promedios: 1.2, 0.8, 1.5, 2.3). La columna 3 indica 'Formatos digitales (e-books, artículos web) leídos al mes' (promedios: 15.4, 22.1, 8.3, 2.1).\n\nBasándose en la relación de estos datos, ¿cuál afirmación es completamente verídica?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "Los jóvenes de 19 a 30 años son la población que menos lee en cualquier tipo de formato.",
@@ -203,7 +204,8 @@
       "D": "El formato impreso desaparecerá por completo debido al alto consumo mensual de artículos en la población de 12 a 18 años."
     },
     "respuesta_correcta": "B",
-    "justificacion": "Al mirar la columna 3 de arriba hacia abajo (de menor a mayor edad), los números descienden drásticamente (15.4 -> 22.1 -> 8.3 -> 2.1). Esto demuestra una relación analítica inversa exacta entre los años cumplidos y la preferencia por lo digital."
+    "justificacion": "Al mirar la columna 3 de arriba hacia abajo (de menor a mayor edad), los números descienden drásticamente (15.4 -> 22.1 -> 8.3 -> 2.1). Esto demuestra una relación analítica inversa exacta entre los años cumplidos y la preferencia por lo digital.",
+    "text_evidence": "La tabla muestra que los promedios de lectura digital por rango de edad son: 12-18 años (15.4), 19-30 años (22.1), 31-50 años (8.3), 51+ años (2.1), lo que evidencia una clara tendencia decreciente a medida que aumenta la edad."
   },
   {
     "id": "LC-014",
@@ -1771,7 +1773,7 @@
     "materia": "Lectura Crítica",
     "componente": "Semántico",
     "competencia": "Identificación de tesis central",
-    "enunciado": "En el texto '¿Qué es el mal?', ¿cuál es la pregunta central que discute el autor?",
+    "enunciado": "Lee el siguiente fragmento del texto '¿Qué es el mal?':\n\n«El autor distingue entre el mal natural y el mal moral, centrando su reflexión en este último: el mal que proviene de las decisiones y acciones humanas, preguntándose por su origen en el corazón del hombre.»\n\nCon base en este fragmento, ¿cuál es la pregunta central que discute el autor?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "¿Por qué Dios creó el mal, si Él es, por definición, bueno?",
@@ -1780,8 +1782,9 @@
       "D": "¿Qué relación existe entre el mal y la responsabilidad humana?"
     },
     "respuesta_correcta": "B",
-    "justificacion": "El texto explora el origen del mal moral (Böse), es decir, el mal que procede de las acciones humanas, preguntándose cómo y por qué surge el mal en el corazón humano. Aunque menciona el mal natural (Übel), el enfoque central es el mal provocado por el ser humano."
-  },
+    "justificacion": "El texto explora el origen del mal moral (Böse), es decir, el mal que procede de las acciones humanas, preguntándose cómo y por qué surge el mal en el corazón humano. Aunque menciona el mal natural (Übel), el enfoque central es el mal provocado por el ser humano.",
+    "text_evidence": "El autor distingue entre el mal natural y el mal moral, centrando su reflexion en este ultimo: el mal que proviene de las decisiones y acciones humanas, preguntandose por su origen en el corazon del hombre."
+},
   {
     "id": "LC-313",
     "materia": "Lectura Crítica",
@@ -1867,7 +1870,7 @@
     "materia": "Lectura Crítica",
     "componente": "Pragmático",
     "competencia": "Identificación de propósito del autor",
-    "enunciado": "En el texto 'Consejos para la juventud', el autor dice: 'Obedezcan siempre a sus padres. Esta es la mejor política a la larga, porque si uno no lo hace ellos lo obligan'. ¿Qué relación hay entre estas dos afirmaciones?",
+    "enunciado": "Lee el siguiente fragmento del texto 'Consejos para la juventud':\n\n«Obedezcan siempre a sus padres. Esta es la mejor política a la larga, porque si uno no lo hace ellos lo obligan.»\n\n¿Qué relación hay entre estas dos afirmaciones?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "La primera es una razón para afirmar la segunda.",
@@ -1876,184 +1879,196 @@
       "D": "La segunda es una razón para afirmar la primera."
     },
     "respuesta_correcta": "D",
-    "justificacion": "La segunda afirmación ('porque si uno no lo hace ellos lo obligan') es la razón que justifica la primera ('obedezcan siempre a sus padres'). Primero se da el consejo (obedecer) y luego se da la razón (porque si no, ellos obligan)."
+    "justificacion": "La segunda afirmación ('porque si uno no lo hace ellos lo obligan') es la razón que justifica la primera ('obedezcan siempre a sus padres'). Primero se da el consejo (obedecer) y luego se da la razón (porque si no, ellos obligan).",
+    "text_evidence": "El texto presenta dos afirmaciones: 1) 'Obedezcan siempre a sus padres' (consejo), y 2) 'porque si uno no lo hace ellos lo obligan' (razón o justificación). La segunda explica y fundamenta la primera."
+},
+{
+  "id": "LC-319",
+  "materia": "Lectura Crítica",
+  "componente": "Pragmático",
+  "competencia": "Análisis de textos filosóficos",
+  "enunciado": "Lee el siguiente fragmento del texto 'Dios como problema', de José Saramago:\n\n«La religión ha sido, a lo largo de la historia, uno de los motivos más poderosos de división entre los seres humanos. Se ha matado en nombre de Dios, se han emprendido guerras santas, se ha perseguido al diferente por no compartir una misma fe. El Dios de cada cual es el Dios verdadero, y el de los otros es un ídolo falso que debe ser combatido.»\n\nSaramago defiende la idea de que la religión es motivo de división entre los seres humanos. ¿Cuál de las siguientes afirmaciones contradice lo dicho por el autor?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Las prácticas y los dogmas religiosos suelen ser similares en los diferentes credos.",
+    "B": "Los preceptos religiosos estructuran y organizan la convivencia entre las personas.",
+    "C": "Las religiones han humanizado a Dios, a tal punto que lo han convertido en asesino.",
+    "D": "Las religiones buscan que sus dogmas sean principios únicos y de alcance universal."
   },
-  {
-    "id": "LC-319",
-    "materia": "Lectura Crítica",
-    "componente": "Pragmático",
-    "competencia": "Análisis de textos filosóficos",
-    "enunciado": "En el texto 'Dios como problema', Saramago defiende la idea de que la religión es motivo de división entre los seres humanos. ¿Cuál de las siguientes afirmaciones contradice lo dicho por el autor?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Las prácticas y los dogmas religiosos suelen ser similares en los diferentes credos.",
-      "B": "Los preceptos religiosos estructuran y organizan la convivencia entre las personas.",
-      "C": "Las religiones han humanizado a Dios, a tal punto que lo han convertido en asesino.",
-      "D": "Las religiones buscan que sus dogmas sean principios únicos y de alcance universal."
-    },
-    "respuesta_correcta": "B",
-    "justificacion": "Saramago argumenta que la religión divide a los humanos (mata en nombre de Dios, genera conflictos). La opción B contradice esta idea al afirmar que los preceptos religiosos estructuran y organizan la convivencia, lo que implicaría que la religión tiene un efecto unificador y pacificador, opuesto a la tesis de Saramago."
+  "respuesta_correcta": "B",
+  "justificacion": "Saramago argumenta que la religión divide a los humanos (mata en nombre de Dios, genera conflictos). La opción B contradice esta idea al afirmar que los preceptos religiosos estructuran y organizan la convivencia, lo que implicaría que la religión tiene un efecto unificador y pacificador, opuesto a la tesis de Saramago.",
+  "text_evidence": "El texto de Saramago sostiene que la religión ha sido 'uno de los motivos más poderosos de división entre los seres humanos', mencionando guerras santas, persecuciones y conflictos en nombre de Dios, lo que fundamenta que para el autor la religión es fuente de enfrentamiento y no de organización pacífica."
+},
+{
+  "id": "LC-320",
+  "materia": "Lectura Crítica",
+  "componente": "Semántico",
+  "competencia": "Identificación de personajes",
+  "enunciado": "Lee el siguiente fragmento del texto 'La sonrisa':\n\n«Fue en la entrada del cine donde la vi por primera vez. Hacía una cola interminable para la función de las nueve, y ella estaba justo delante de mí, con un libro en la mano y una sonrisa que no se dirigía a nadie en particular. No sé por qué, pero me atreví a preguntarle sobre la novela que leía. Me respondió con una voz suave, y desde entonces, cada encuentro en aquel mismo lugar se fue volviendo una costumbre.»\n\nEn el texto 'La sonrisa', ¿quién es el personaje femenino del texto?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Una exnovia que el narrador enfrenta en el cine.",
+    "B": "Una mujer que el narrador conoce en el cine.",
+    "C": "Una vieja amiga que el narrador se encuentra en el cine.",
+    "D": "Un personaje ficticio que el narrador concibe como la pareja ideal."
   },
-  {
-    "id": "LC-320",
-    "materia": "Lectura Crítica",
-    "componente": "Semántico",
-    "competencia": "Identificación de personajes",
-    "enunciado": "En el texto 'La sonrisa', ¿quién es el personaje femenino del texto?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Una exnovia que el narrador enfrenta en el cine.",
-      "B": "Una mujer que el narrador conoce en el cine.",
-      "C": "Una vieja amiga que el narrador se encuentra en el cine.",
-      "D": "Un personaje ficticio que el narrador concibe como la pareja ideal."
-    },
-    "respuesta_correcta": "B",
-    "justificacion": "El narrador describe cómo conoció a una mujer en la entrada del cine. Ella es una desconocida con la que entabla conversación. Por lo tanto, es una mujer que el narrador conoce en el cine."
+  "respuesta_correcta": "B",
+  "justificacion": "El narrador describe cómo conoció a una mujer en la entrada del cine. Ella es una desconocida con la que entabla conversación. Por lo tanto, es una mujer que el narrador conoce en el cine.",
+  "text_evidence": "El narrador dice: 'Fue en la entrada del cine donde la vi por primera vez' y describe que ella estaba 'justo delante de mí'. No menciona que la conociera previamente ni que fuera una amiga o exnovia, sino que la conoce en ese momento en el cine."
+},
+{
+  "id": "LC-321",
+  "materia": "Lectura Crítica",
+  "componente": "Pragmático",
+  "competencia": "Interpretación de textos literarios",
+  "enunciado": "Lee el siguiente fragmento del texto 'El origen del mal':\n\n«—No es el hambre —dijo el ermitaño—, ni el amor, ni la ira, ni el miedo, la fuente de nuestros males. Es nuestra propia naturaleza. Ella es la que engendra el hambre, el amor, la ira y el miedo. El mal no viene de fuera; brota de lo más profundo del ser humano.»\n\nEn el texto 'El origen del mal', ¿qué enunciado expresa una opinión similar a la del ermitaño?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "El hambre, el amor, la ira y el miedo son el origen de todos los males.",
+    "B": "Los males que sufrimos dependen de nuestra historia personal.",
+    "C": "Solamente la experiencia permite conocer el origen del mal.",
+    "D": "El mal es propio de la condición humana."
   },
-  {
-    "id": "LC-321",
-    "materia": "Lectura Crítica",
-    "componente": "Pragmático",
-    "competencia": "Interpretación de textos literarios",
-    "enunciado": "En el texto 'El origen del mal', ¿qué enunciado expresa una opinión similar a la del ermitaño?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "El hambre, el amor, la ira y el miedo son el origen de todos los males.",
-      "B": "Los males que sufrimos dependen de nuestra historia personal.",
-      "C": "Solamente la experiencia permite conocer el origen del mal.",
-      "D": "El mal es propio de la condición humana."
-    },
-    "respuesta_correcta": "D",
-    "justificacion": "El ermitaño concluye: 'No es el hambre, el amor, la ira ni el miedo, la fuente de nuestros males, sino nuestra propia naturaleza. Ella es la que engendra el hambre, el amor, la ira y el miedo'. Esto equivale a decir que el mal es propio de la condición humana (nuestra naturaleza)."
+  "respuesta_correcta": "D",
+  "justificacion": "El ermitaño concluye: 'No es el hambre, el amor, la ira ni el miedo, la fuente de nuestros males, sino nuestra propia naturaleza. Ella es la que engendra el hambre, el amor, la ira y el miedo'. Esto equivale a decir que el mal es propio de la condición humana (nuestra naturaleza).",
+  "text_evidence": "El ermitaño afirma: 'Es nuestra propia naturaleza. Ella es la que engendra el hambre, el amor, la ira y el miedo', lo que indica que el mal surge de la condición humana misma, no de factores externos."
+},
+{
+  "id": "LC-322",
+  "materia": "Lectura Crítica",
+  "componente": "Semántico",
+  "competencia": "Análisis de textos narrativos",
+  "enunciado": "Lee el siguiente fragmento del texto 'Vendedor de nombres':\n\n«En las calles de la ciudad vieja existen pequeñas tienduchas donde los vendedores de nombres ofrecen su servicio. Los padres acuden con los datos de nacimiento del niño y, tras una consulta, el vendedor prepara un horóscopo y se entrega a la meditación antes de sugerir el nombre adecuado. El oficio ha existido por generaciones y goza de prestigio entre las familias tradicionales.»\n\nEn el texto 'Vendedor de nombres', la asignación de nombres se puede caracterizar como:",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Una superstición antigua que ha sido abandonada.",
+    "B": "Una tarea religiosa realizada por monjes budistas.",
+    "C": "Una responsabilidad que recae solo en los padres.",
+    "D": "Una actividad comercial realizada por especialistas."
   },
-  {
-    "id": "LC-322",
-    "materia": "Lectura Crítica",
-    "componente": "Semántico",
-    "competencia": "Análisis de textos narrativos",
-    "enunciado": "En el texto 'Vendedor de nombres', la asignación de nombres se puede caracterizar como:",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Una superstición antigua que ha sido abandonada.",
-      "B": "Una tarea religiosa realizada por monjes budistas.",
-      "C": "Una responsabilidad que recae solo en los padres.",
-      "D": "Una actividad comercial realizada por especialistas."
-    },
-    "respuesta_correcta": "D",
-    "justificacion": "El texto describe tienduchas donde se venden nombres, con vendedores que preparan horóscopos y meditan. Es claramente una actividad comercial realizada por especialistas (los vendedores de nombres)."
+  "respuesta_correcta": "D",
+  "justificacion": "El texto describe tienduchas donde se venden nombres, con vendedores que preparan horóscopos y meditan. Es claramente una actividad comercial realizada por especialistas (los vendedores de nombres).",
+  "text_evidence": "El texto describe 'tienduchas' donde 'vendedores de nombres ofrecen su servicio' a cambio de una consulta, lo que indica que es una actividad comercial especializada, no religiosa ni exclusiva de los padres."
+},
+{
+  "id": "LC-323",
+  "materia": "Lectura Crítica",
+  "componente": "Semántico",
+  "competencia": "Análisis de textos narrativos",
+  "enunciado": "Lee el siguiente fragmento del texto 'Vendedor de nombres':\n\n«En las calles de la ciudad vieja existen pequeñas tienduchas donde los vendedores de nombres ofrecen su servicio. Los padres acuden con los datos de nacimiento del niño y, tras una consulta, el vendedor prepara un horóscopo y se entrega a la meditación antes de sugerir el nombre adecuado.»\n\nEn el texto 'Vendedor de nombres', ¿quiénes realizan las acciones descritas en la frase 'Durante este tiempo preparan el horóscopo del futuro niño y se entregan a la meditación'?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Los padres de los futuros niños.",
+    "B": "Los vendedores de nombres.",
+    "C": "Los compradores de las tienduchas.",
+    "D": "Los seguidores de Buda."
   },
-  {
-    "id": "LC-323",
-    "materia": "Lectura Crítica",
-    "componente": "Semántico",
-    "competencia": "Análisis de textos narrativos",
-    "enunciado": "En el texto 'Vendedor de nombres', ¿quiénes realizan las acciones descritas en la frase 'Durante este tiempo preparan el horóscopo del futuro niño y se entregan a la meditación'?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Los padres de los futuros niños.",
-      "B": "Los vendedores de nombres.",
-      "C": "Los compradores de las tienduchas.",
-      "D": "Los seguidores de Buda."
-    },
-    "respuesta_correcta": "B",
-    "justificacion": "El texto describe que los vendedores de nombres toman nota de los datos de los padres y luego preparan el horóscopo y se entregan a la meditación. Son los vendedores quienes realizan estas acciones."
+  "respuesta_correcta": "B",
+  "justificacion": "El texto describe que los vendedores de nombres toman nota de los datos de los padres y luego preparan el horóscopo y se entregan a la meditación. Son los vendedores quienes realizan estas acciones.",
+  "text_evidence": "El fragmento dice explícitamente: 'el vendedor prepara un horóscopo y se entrega a la meditación', indicando que son los vendedores quienes realizan estas acciones."
+},
+{
+  "id": "LC-324",
+  "materia": "Lectura Crítica",
+  "componente": "Pragmático",
+  "competencia": "Análisis de textos filosóficos",
+  "enunciado": "Lee el siguiente fragmento del texto '¿Qué es el mal?':\n\n«El mal no es algo positivo, que tenga existencia propia; es mera carencia, negación, privación de ser. Por eso Dios, dentro de esa lógica, no puede ser considerado como origen del mal. Él solo crea el ser.»\n\nSegún concluye el fragmento, Dios NO puede ser considerado el origen del mal. Sin embargo, dicha idea requiere una mejor sustentación, ya que se podría argumentar que:",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Dios no solo creó al hombre a su imagen y semejanza, sino que además lo dotó de libre albedrío.",
+    "B": "Fue el hombre el que, en medio de su vulnerabilidad, creó a Dios a su imagen y semejanza, y no al revés.",
+    "C": "Al ser el creador de todo cuanto existe, Dios sería también el responsable, aunque indirectamente, de todo lo que no existe.",
+    "D": "Lo que los humanos generalmente llamamos el 'mal' es una mera convención histórica y social frente a la que Dios es completamente ajeno."
   },
-  {
-    "id": "LC-324",
-    "materia": "Lectura Crítica",
-    "componente": "Pragmático",
-    "competencia": "Análisis de textos filosóficos",
-    "enunciado": "En el texto '¿Qué es el mal?', considere el siguiente fragmento: 'El mal no es algo positivo, que tenga existencia propia; es mera carencia, negación, privación de ser. Por eso Dios, dentro de esa lógica, no puede ser considerado como origen del mal. Él solo crea el ser'. Según concluye el fragmento, Dios NO puede ser considerado el origen del mal. Sin embargo, dicha idea requiere una mejor sustentación, ya que se podría argumentar que:",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Dios no solo creó al hombre a su imagen y semejanza, sino que además lo dotó de libre albedrío.",
-      "B": "Fue el hombre el que, en medio de su vulnerabilidad, creó a Dios a su imagen y semejanza, y no al revés.",
-      "C": "Al ser el creador de todo cuanto existe, Dios sería también el responsable, aunque indirectamente, de todo lo que no existe.",
-      "D": "Lo que los humanos generalmente llamamos el 'mal' es una mera convención histórica y social frente a la que Dios es completamente ajeno."
-    },
-    "respuesta_correcta": "C",
-    "justificacion": "Si Dios es creador de todo, la ausencia de bien (el mal) podría considerarse responsabilidad indirecta suya. La opción C plantea una objeción lógica: si Dios crea el ser, también es responsable de lo que no es (la carencia de ser, el mal)."
+  "respuesta_correcta": "C",
+  "justificacion": "Si Dios es creador de todo, la ausencia de bien (el mal) podría considerarse responsabilidad indirecta suya. La opción C plantea una objeción lógica: si Dios crea el ser, también es responsable de lo que no es (la carencia de ser, el mal).",
+  "text_evidence": "El fragmento plantea que 'Dios solo crea el ser' y que el mal es 'carencia de ser'. La objeción lógica es que, si Dios es creador de todo lo que existe, también es responsable de lo que no existe (la privación del ser), lo que lo vincularía indirectamente con el mal."
+},
+{
+  "id": "LC-325",
+  "materia": "Lectura Crítica",
+  "componente": "Semántico",
+  "competencia": "Análisis de textos literarios",
+  "enunciado": "Lee el siguiente fragmento del texto 'La noche de los feos':\n\n«—Usted admira a los hermosos, a los normales —le dijo el narrador a la mujer—. Todos lo hacemos. Crecemos aprendiendo que hay una manera correcta de ser, una medida de lo bello que la sociedad nos impone desde la infancia. Los que no encajamos en ese molde quedamos al margen, observando desde la orilla.»\n\nEn el texto 'La noche de los feos', cuando el narrador usa la frase 'Usted admira a los hermosos, a los normales' supone que:",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "La sociedad establece los parámetros de la belleza física.",
+    "B": "Su experiencia personal determina si alguien es hermoso.",
+    "C": "La belleza física es parte de lo que conlleva ser normal.",
+    "D": "Los estándares de normalidad difieren de los de belleza."
   },
-  {
-    "id": "LC-325",
-    "materia": "Lectura Crítica",
-    "componente": "Semántico",
-    "competencia": "Análisis de textos literarios",
-    "enunciado": "En el texto 'La noche de los feos', cuando el narrador usa la frase 'Usted admira a los hermosos, a los normales' supone que:",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "La sociedad establece los parámetros de la belleza física.",
-      "B": "Su experiencia personal determina si alguien es hermoso.",
-      "C": "La belleza física es parte de lo que conlleva ser normal.",
-      "D": "Los estándares de normalidad difieren de los de belleza."
-    },
-    "respuesta_correcta": "A",
-    "justificacion": "El narrador sugiere que la mujer (y él mismo) admiran a los 'hermosos y normales', lo que implica que hay parámetros sociales establecidos sobre lo que se considera bello y normal. La sociedad define esos parámetros."
+  "respuesta_correcta": "A",
+  "justificacion": "El narrador sugiere que la mujer (y él mismo) admiran a los 'hermosos y normales', lo que implica que hay parámetros sociales establecidos sobre lo que se considera bello y normal. La sociedad define esos parámetros.",
+  "text_evidence": "El narrador dice: 'Crecemos aprendiendo que hay una manera correcta de ser, una medida de lo bello que la sociedad nos impone desde la infancia', lo que evidencia que los parámetros de belleza son establecidos socialmente."
+},
+{
+  "id": "LC-326",
+  "materia": "Lectura Crítica",
+  "componente": "Semántico",
+  "competencia": "Análisis de textos literarios",
+  "enunciado": "Lee el siguiente fragmento del texto 'La sonrisa':\n\n«Cuando llegó la invitación para participar en la selección departamental de belleza, quien se animó fue papá. Decía: 'por primera vez un papel oficial no es para cobrar impuestos'. Hasta entonces, mi padre había considerado que las labores de las mujeres debían limitarse al hogar. Pero la oportunidad de un concurso oficial cambió su perspectiva por completo.»\n\nEn el texto 'La sonrisa', ¿en qué momento el padre de la narradora cambia su opinión sobre la labor de las mujeres?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Cuando llegó la invitación para participar en el concurso.",
+    "B": "Tras comenzar las vacaciones en el mes de noviembre.",
+    "C": "Después de la participación en el reinado de la belleza.",
+    "D": "Antes de la llegada de las fiestas de la independencia."
   },
-  {
-    "id": "LC-326",
-    "materia": "Lectura Crítica",
-    "componente": "Semántico",
-    "competencia": "Análisis de textos literarios",
-    "enunciado": "En el texto 'La sonrisa', ¿en qué momento el padre de la narradora cambia su opinión sobre la labor de las mujeres?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Cuando llegó la invitación para participar en el concurso.",
-      "B": "Tras comenzar las vacaciones en el mes de noviembre.",
-      "C": "Después de la participación en el reinado de la belleza.",
-      "D": "Antes de la llegada de las fiestas de la independencia."
-    },
-    "respuesta_correcta": "A",
-    "justificacion": "El texto dice: 'Cuando llegó la invitación para participar en la selección departamental de belleza, quien se animó fue papá. Decía: 'por primera vez un papel oficial no es para cobrar impuestos'. Esto indica que el padre cambió su opinión cuando llegó la invitación."
+  "respuesta_correcta": "A",
+  "justificacion": "El texto dice: 'Cuando llegó la invitación para participar en la selección departamental de belleza, quien se animó fue papá. Decía: 'por primera vez un papel oficial no es para cobrar impuestos'. Esto indica que el padre cambió su opinión cuando llegó la invitación.",
+  "text_evidence": "El fragmento indica que el padre 'se animó' al llegar la invitación y cambió su perspectiva, señalando que era la primera vez que un papel oficial no era para cobrar impuestos."
+},
+{
+  "id": "LC-327",
+  "materia": "Lectura Crítica",
+  "componente": "Pragmático",
+  "competencia": "Análisis de textos argumentativos",
+  "enunciado": "Lee el siguiente fragmento del texto 'Aporofobia, el miedo al pobre':\n\n«La aporofobia es el rechazo al pobre, no al extranjero. Por eso nadie pone reparos a que un jeque árabe se instale en un país europeo, ni a facilitar la residencia a un futbolista famoso. El rechazo no es hacia el origen étnico, sino hacia la condición de pobreza.»\n\nEn el texto 'Aporofobia, el miedo al pobre', el autor afirma que la aporofobia es lo que alimenta el rechazo a inmigrantes y refugiados. ¿Cuál de los siguientes fragmentos cumple con la función de ejemplificar el concepto de aporofobia?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Nadie pone reparos a que un jeque árabe se instale en un país europeo, ni a facilitar la residencia a un futbolista famoso.",
+    "B": "En la palabra 'aporofobia' dicha Fundación ha encontrado un término muy significativo.",
+    "C": "La recesión económica ha intensificado el miedo a la pobreza porque nos ha hecho ver que todos somos vulnerables.",
+    "D": "Lo ha denominado 'aporofobia', un fenómeno que está en el origen de las corrientes xenofóbicas y racistas."
   },
-  {
-    "id": "LC-327",
-    "materia": "Lectura Crítica",
-    "componente": "Pragmático",
-    "competencia": "Análisis de textos argumentativos",
-    "enunciado": "En el texto 'Aporofobia, el miedo al pobre', el autor afirma que la aporofobia es lo que alimenta el rechazo a inmigrantes y refugiados. ¿Cuál de los siguientes fragmentos cumple con la función de ejemplificar el concepto de aporofobia?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Nadie pone reparos a que un jeque árabe se instale en un país europeo, ni a facilitar la residencia a un futbolista famoso.",
-      "B": "En la palabra 'aporofobia' dicha Fundación ha encontrado un término muy significativo.",
-      "C": "La recesión económica ha intensificado el miedo a la pobreza porque nos ha hecho ver que todos somos vulnerables.",
-      "D": "Lo ha denominado 'aporofobia', un fenómeno que está en el origen de las corrientes xenofóbicas y racistas."
-    },
-    "respuesta_correcta": "A",
-    "justificacion": "El autor explica que la aporofobia es el rechazo al pobre, no al extranjero en sí. El ejemplo del jeque árabe o el futbolista famoso (ricos) que no son rechazados ilustra perfectamente que el rechazo es hacia los pobres, no hacia los extranjeros."
+  "respuesta_correcta": "A",
+  "justificacion": "El autor explica que la aporofobia es el rechazo al pobre, no al extranjero en sí. El ejemplo del jeque árabe o el futbolista famoso (ricos) que no son rechazados ilustra perfectamente que el rechazo es hacia los pobres, no hacia los extranjeros.",
+  "text_evidence": "El autor afirma que 'nadie pone reparos a que un jeque árabe se instale en un país europeo, ni a facilitar la residencia a un futbolista famoso', demostrando que el rechazo no es por origen étnico sino por pobreza."
+},
+{
+  "id": "LC-328",
+  "materia": "Lectura Crítica",
+  "componente": "Pragmático",
+  "competencia": "Comprensión de textos argumentativos",
+  "enunciado": "Lee el siguiente fragmento del texto 'Aporofobia, el miedo al pobre':\n\n«La recesión económica ha exacerbado el miedo a la pobreza porque nos ha hecho ver que todos somos vulnerables. Quien ayer tenía un empleo estable, hoy puede verse sin trabajo. Quien pagaba una hipoteca, hoy puede perder su vivienda. La pobreza ya no es algo ajeno, sino una posibilidad real para cualquiera.»\n\nEn el texto 'Aporofobia, el miedo al pobre', considere el siguiente fragmento: 'La recesión económica ha exacerbado el miedo a la pobreza porque nos ha hecho ver que todos somos vulnerables...'. ¿Qué se puede concluir de la idea expresada en la frase anterior?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Que no existe ninguna relación entre el contexto de una crisis económica y el creciente temor a la pobreza.",
+    "B": "Que las crisis económicas son una buena oportunidad para construir una sociedad más justa.",
+    "C": "Que el trabajo y el esfuerzo serán siempre recompensados y que, por tanto, el que es pobre es pobre porque quiere.",
+    "D": "Que cualquier persona puede quedarse de repente sin trabajo y sin medios de subsistencia."
   },
-  {
-    "id": "LC-328",
-    "materia": "Lectura Crítica",
-    "componente": "Pragmático",
-    "competencia": "Comprensión de textos argumentativos",
-    "enunciado": "En el texto 'Aporofobia, el miedo al pobre', considere el siguiente fragmento: 'La recesión económica ha exacerbado el miedo a la pobreza porque nos ha hecho ver que todos somos vulnerables...'. ¿Qué se puede concluir de la idea expresada en la frase anterior?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Que no existe ninguna relación entre el contexto de una crisis económica y el creciente temor a la pobreza.",
-      "B": "Que las crisis económicas son una buena oportunidad para construir una sociedad más justa.",
-      "C": "Que el trabajo y el esfuerzo serán siempre recompensados y que, por tanto, el que es pobre es pobre porque quiere.",
-      "D": "Que cualquier persona puede quedarse de repente sin trabajo y sin medios de subsistencia."
-    },
-    "respuesta_correcta": "D",
-    "justificacion": "El fragmento sugiere que la recesión hace visible la vulnerabilidad de todos, incluso de quienes no eran pobres. La conclusión es que cualquiera puede caer en la pobreza, lo que genera miedo. La opción D refleja esta idea de que cualquier persona puede quedarse sin trabajo y medios de subsistencia."
+  "respuesta_correcta": "D",
+  "justificacion": "El fragmento sugiere que la recesión hace visible la vulnerabilidad de todos, incluso de quienes no eran pobres. La conclusión es que cualquiera puede caer en la pobreza, lo que genera miedo. La opción D refleja esta idea de que cualquier persona puede quedarse sin trabajo y medios de subsistencia.",
+  "text_evidence": "El texto dice: 'quien ayer tenía un empleo estable, hoy puede verse sin trabajo. Quien pagaba una hipoteca, hoy puede perder su vivienda', evidenciando que cualquiera puede caer en la pobreza."
+},
+{
+  "id": "LC-329",
+  "materia": "Lectura Crítica",
+  "componente": "Pragmático",
+  "competencia": "Análisis de textos argumentativos",
+  "enunciado": "Lee el siguiente fragmento del texto 'Muertos de hambre':\n\n«He escuchado demasiadas veces esa frase de ceguera descomunal: 'Esta pandemia demuestra que el virus no discrimina'. ¿No discrimina? El nuevo mendigo no ha vuelto a aparecer. Yo sigo haciendo mis compras. Con tarjeta de crédito. La desigualdad no se detiene ante ninguna cuarentena.»\n\nEn el texto 'Muertos de hambre', ¿cuál de los siguientes fragmentos contiene una crítica de la autora sobre la desigualdad social durante la pandemia?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Me hacen falta muchas cosas pero no sé cuáles son. Desconecté, como un módulo desprendido de una nave, y orbito un planeta que soy yo misma, mudo, sordo, a veces ciego.",
+    "B": "En el umbral del edificio había un hombre desastroso, con varias bolsas en las que llevaba lo que tenía para vivir en la calle.",
+    "C": "Según las estimaciones, en 2019 había 821 millones de personas en situación de inseguridad alimentaria.",
+    "D": "He escuchado demasiadas veces esa frase de ceguera descomunal: 'Esta pandemia demuestra que el virus no discrimina'. ¿No discrimina? El nuevo mendigo no ha vuelto a aparecer. Yo sigo haciendo mis compras. Con tarjeta de crédito."
   },
-  {
-    "id": "LC-329",
-    "materia": "Lectura Crítica",
-    "componente": "Pragmático",
-    "competencia": "Análisis de textos argumentativos",
-    "enunciado": "En el texto 'Muertos de hambre', ¿cuál de los siguientes fragmentos contiene una crítica de la autora sobre la desigualdad social durante la pandemia?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Me hacen falta muchas cosas pero no sé cuáles son. Desconecté, como un módulo desprendido de una nave, y orbito un planeta que soy yo misma, mudo, sordo, a veces ciego.",
-      "B": "En el umbral del edificio había un hombre desastroso, con varias bolsas en las que llevaba lo que tenía para vivir en la calle.",
-      "C": "Según las estimaciones, en 2019 había 821 millones de personas en situación de inseguridad alimentaria.",
-      "D": "He escuchado demasiadas veces esa frase de ceguera descomunal: 'Esta pandemia demuestra que el virus no discrimina'. ¿No discrimina? El nuevo mendigo no ha vuelto a aparecer. Yo sigo haciendo mis compras. Con tarjeta de crédito."
-    },
-    "respuesta_correcta": "D",
-    "justificacion": "La autora critica la frase 'el virus no discrimina' porque, en realidad, la pandemia afecta de manera desigual a ricos y pobres. Ella contrasta su propia situación (compras con tarjeta de crédito) con la desaparición del mendigo, señalando la hipocresía del discurso de igualdad."
-  },
+  "respuesta_correcta": "D",
+  "justificacion": "La autora critica la frase 'el virus no discrimina' porque, en realidad, la pandemia afecta de manera desigual a ricos y pobres. Ella contrasta su propia situación (compras con tarjeta de crédito) con la desaparición del mendigo, señalando la hipocresía del discurso de igualdad.",
+  "text_evidence": "La autora cuestiona la frase 'el virus no discrimina' y contrasta su situación de privilegio (compras con tarjeta de crédito) con la desaparición del mendigo, evidenciando su crítica a la desigualdad."
+},
   {
     "id": "LC-330",
     "materia": "Lectura Crítica",
@@ -2075,7 +2090,7 @@
     "materia": "Lectura Crítica",
     "componente": "Semántico",
     "competencia": "Comprensión de textos científicos",
-    "enunciado": "En el texto 'El gorila invisible', considere la siguiente oración: 'A nadie que viera el video sin tener que realizar aquella tarea se le hubiera escapado la presencia del gorila'. ¿Cuál de las siguientes opciones expresa el significado de la oración?",
+    "enunciado": "Lee el siguiente fragmento del texto 'El gorila invisible':\n\n«El experimento consistía en que los participantes contaran los pases de balón entre los jugadores de blanco. Mientras realizaban esta tarea, una persona disfrazada de gorila cruzaba la escena. Sorprendentemente, la mitad de los participantes no notó al gorila. Como señalan los autores: 'A nadie que viera el video sin tener que realizar aquella tarea se le hubiera escapado la presencia del gorila'.»\n\nEn el texto 'El gorila invisible', considere la siguiente oración: 'A nadie que viera el video sin tener que realizar aquella tarea se le hubiera escapado la presencia del gorila'. ¿Cuál de las siguientes opciones expresa el significado de la oración?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "Ninguna persona que vea el video y realice la tarea solicitada por los investigadores notará al gorila.",
@@ -2084,104 +2099,111 @@
       "D": "Cualquier persona que observe el video notará la presencia del gorila."
     },
     "respuesta_correcta": "B",
-    "justificacion": "La oración establece un condicional: si alguien ve el video sin realizar la tarea de contar los pases, no se le escaparía la presencia del gorila. Es decir, cualquier persona que vea el video sin la tarea notará al gorila."
+    "justificacion": "La oración establece un condicional: si alguien ve el video sin realizar la tarea de contar los pases, no se le escaparía la presencia del gorila. Es decir, cualquier persona que vea el video sin la tarea notará al gorila.",
+    "text_evidence": "La oración establece que 'a nadie que viera el video sin tener que realizar aquella tarea se le hubiera escapado', lo que significa que sin la distracción de la tarea, cualquier persona notaría al gorila."
+},
+{
+  "id": "LC-332",
+  "materia": "Lectura Crítica",
+  "componente": "Semántico",
+  "competencia": "Análisis de textos científicos",
+  "enunciado": "Lee el siguiente fragmento del texto 'El gorila invisible':\n\n«Nuestro comportamiento social demuestra que reconocemos las limitaciones de la atención. Por ejemplo, cuando un conductor está realizando una maniobra arriesgada en una carretera angosta, los pasajeros instintivamente dejan de hablar. Saben, sin necesidad de explicación, que el conductor necesita concentrarse plenamente en la tarea.»\n\nEn el texto 'El gorila invisible', ¿cuál de las siguientes opciones presenta el caso que utilizan los autores del texto para argumentar que nuestro comportamiento social tiene en cuenta las limitaciones de la atención?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Una concentración muy intensa en una actividad puede volver a las personas momentáneamente ciegas y sordas.",
+    "B": "Los pasajeros de un carro dejan de hablar cuando el conductor está realizando una maniobra arriesgada.",
+    "C": "Muchas personas que ven el video del gorila niegan que el gorila realmente esté en el video.",
+    "D": "Podemos estar ciegos a objetos ante nuestros ojos y ser inconscientes de nuestra ceguera."
   },
-  {
-    "id": "LC-332",
-    "materia": "Lectura Crítica",
-    "componente": "Semántico",
-    "competencia": "Análisis de textos científicos",
-    "enunciado": "En el texto 'El gorila invisible', ¿cuál de las siguientes opciones presenta el caso que utilizan los autores del texto para argumentar que nuestro comportamiento social tiene en cuenta las limitaciones de la atención?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Una concentración muy intensa en una actividad puede volver a las personas momentáneamente ciegas y sordas.",
-      "B": "Los pasajeros de un carro dejan de hablar cuando el conductor está realizando una maniobra arriesgada.",
-      "C": "Muchas personas que ven el video del gorila niegan que el gorila realmente esté en el video.",
-      "D": "Podemos estar ciegos a objetos ante nuestros ojos y ser inconscientes de nuestra ceguera."
-    },
-    "respuesta_correcta": "B",
-    "justificacion": "El texto inicia con el ejemplo de los pasajeros que dejan de hablar cuando el conductor está adelantando un camión en una carretera angosta, para ilustrar cómo el comportamiento social reconoce las limitaciones de la atención."
+  "respuesta_correcta": "B",
+  "justificacion": "El texto inicia con el ejemplo de los pasajeros que dejan de hablar cuando el conductor está adelantando un camión en una carretera angosta, para ilustrar cómo el comportamiento social reconoce las limitaciones de la atención.",
+  "text_evidence": "El autor menciona que 'cuando un conductor está realizando una maniobra arriesgada en una carretera angosta, los pasajeros instintivamente dejan de hablar', demostrando que socialmente reconocemos cuándo alguien necesita concentración."
+},
+{
+  "id": "LC-333",
+  "materia": "Lectura Crítica",
+  "componente": "Semántico",
+  "competencia": "Análisis de textos literarios",
+  "enunciado": "Lee el siguiente fragmento del texto 'Continuidad de los parques', de Julio Cortázar:\n\n«Había empezado a leer la novela unos días antes. La había dejado por negocios urgentes, y al retomarla, se fue sumergiendo en la trama. El hombre y la mujer se encontraban en el parque, planeando el asesinato de su esposo. El lector, sin embargo, no sabía que él mismo era el personaje de la historia que estaba leyendo.»\n\nEn el texto 'Continuidad de los parques', ¿cuántas voces intervienen en la narración del texto?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Ninguna, pues lo que dicen los personajes que aparecen en la historia no se presenta.",
+    "B": "Una: la voz del narrador no identificado que relata la historia.",
+    "C": "Dos: la voz del lector de la novela que aparece en la historia y la del narrador de esa novela.",
+    "D": "Cuatro: las voces de los dos amantes, la del lector de la novela y la del jardinero."
   },
-  {
-    "id": "LC-333",
-    "materia": "Lectura Crítica",
-    "componente": "Semántico",
-    "competencia": "Análisis de textos literarios",
-    "enunciado": "En el texto 'Continuidad de los parques', ¿cuántas voces intervienen en la narración del texto?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Ninguna, pues lo que dicen los personajes que aparecen en la historia no se presenta.",
-      "B": "Una: la voz del narrador no identificado que relata la historia.",
-      "C": "Dos: la voz del lector de la novela que aparece en la historia y la del narrador de esa novela.",
-      "D": "Cuatro: las voces de los dos amantes, la del lector de la novela y la del jardinero."
-    },
-    "respuesta_correcta": "C",
-    "justificacion": "El cuento tiene dos niveles narrativos: 1) la voz del narrador que describe al lector leyendo una novela, y 2) la voz del narrador de la novela que el lector está leyendo (que describe a los amantes). Por lo tanto, hay dos voces narrativas."
+  "respuesta_correcta": "C",
+  "justificacion": "El cuento tiene dos niveles narrativos: 1) la voz del narrador que describe al lector leyendo una novela, y 2) la voz del narrador de la novela que el lector está leyendo (que describe a los amantes). Por lo tanto, hay dos voces narrativas.",
+  "text_evidence": "El cuento presenta dos niveles narrativos: un narrador que describe al lector y el narrador de la novela que el lector está leyendo, lo que configura dos voces narrativas."
+},
+{
+  "id": "LC-334",
+  "materia": "Lectura Crítica",
+  "componente": "Semántico",
+  "competencia": "Identificación de tesis central",
+  "enunciado": "Lee el siguiente fragmento del texto sobre la Ley Seca:\n\n«La Ley Seca es sin duda un prodigio de redención si con ella logran acabarse los crímenes que el alcohol provoca. Es cierto, ciertísimo, que evitaría muchas muertes y atropellos. Pero es un imposible físico y moral. Los seres humanos no pueden renunciar a la embriaguez, así como no pueden renunciar a la poesía o al amor.»\n\nEn el texto sobre la Ley Seca, ¿cuál de las siguientes opciones presenta mejor la tesis central del texto?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "La Ley Seca tendrá consecuencias positivas cuando se aplique.",
+    "B": "La Ley Seca, aunque evitaría actos criminales, no se puede establecer.",
+    "C": "La Ley Seca es una ley que prohíbe el consumo inmoderado de alcohol.",
+    "D": "La Ley Seca es un prodigio que acabará con todos los crímenes de sangre."
   },
-  {
-    "id": "LC-334",
-    "materia": "Lectura Crítica",
-    "componente": "Semántico",
-    "competencia": "Identificación de tesis central",
-    "enunciado": "En el texto sobre la Ley Seca, ¿cuál de las siguientes opciones presenta mejor la tesis central del texto?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "La Ley Seca tendrá consecuencias positivas cuando se aplique.",
-      "B": "La Ley Seca, aunque evitaría actos criminales, no se puede establecer.",
-      "C": "La Ley Seca es una ley que prohíbe el consumo inmoderado de alcohol.",
-      "D": "La Ley Seca es un prodigio que acabará con todos los crímenes de sangre."
-    },
-    "respuesta_correcta": "B",
-    "justificacion": "El autor reconoce que la Ley Seca evitaría crímenes ('es cierto, ciertísimo'), pero argumenta que es 'un imposible físico y moral'. La tesis central es que, aunque sería beneficiosa en teoría, no se puede establecer en la práctica."
+  "respuesta_correcta": "B",
+  "justificacion": "El autor reconoce que la Ley Seca evitaría crímenes ('es cierto, ciertísimo'), pero argumenta que es 'un imposible físico y moral'. La tesis central es que, aunque sería beneficiosa en teoría, no se puede establecer en la práctica.",
+  "text_evidence": "El autor afirma: 'Es cierto, ciertísimo, que evitaría muchas muertes' pero concluye que 'es un imposible físico y moral', evidenciando su tesis de que no se puede establecer."
+},
+{
+  "id": "LC-335",
+  "materia": "Lectura Crítica",
+  "componente": "Pragmático",
+  "competencia": "Comprensión de textos argumentativos",
+  "enunciado": "Lee el siguiente fragmento del texto sobre la Ley Seca:\n\n«La Ley Seca es un prodigio de redención si por ella logran acabarse los crímenes que el alcohol provoca. Si logra suprimir las riñas, los homicidios y los accidentes, sería sin duda una bendición. Sin embargo, la naturaleza humana es tozuda y no se doblega ante prohibiciones.»\n\nEn el texto sobre la Ley Seca, el autor dice que la aplicación de la Ley Seca puede verse como un 'prodigio de redención'. ¿Por qué el autor la considera así?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "Permitiría cumplir una meta importante.",
+    "B": "Acabaría con la química y el reino vegetal.",
+    "C": "Haría que la gente se envenenara con otras sustancias.",
+    "D": "No evitaría los crímenes de sangre y otras bestialidades."
   },
-  {
-    "id": "LC-335",
-    "materia": "Lectura Crítica",
-    "componente": "Pragmático",
-    "competencia": "Comprensión de textos argumentativos",
-    "enunciado": "En el texto sobre la Ley Seca, el autor dice que la aplicación de la Ley Seca puede verse como un 'prodigio de redención'. ¿Por qué el autor la considera así?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "Permitiría cumplir una meta importante.",
-      "B": "Acabaría con la química y el reino vegetal.",
-      "C": "Haría que la gente se envenenara con otras sustancias.",
-      "D": "No evitaría los crímenes de sangre y otras bestialidades."
-    },
-    "respuesta_correcta": "A",
-    "justificacion": "El autor dice que la Ley Seca es un 'prodigio de redención' si por ella logran acabarse los crímenes que el consumo de alcohol provoca. Es decir, sería un prodigio porque permitiría cumplir una meta importante: la reducción de los crímenes asociados al alcohol."
+  "respuesta_correcta": "A",
+  "justificacion": "El autor dice que la Ley Seca es un 'prodigio de redención' si por ella logran acabarse los crímenes que el consumo de alcohol provoca. Es decir, sería un prodigio porque permitiría cumplir una meta importante: la reducción de los crímenes asociados al alcohol.",
+  "text_evidence": "El autor considera que sería un 'prodigio de redención' si 'logran acabarse los crímenes que el alcohol provoca', lo que significa que permitiría cumplir una meta importante."
+},
+{
+  "id": "LC-336",
+  "materia": "Lectura Crítica",
+  "componente": "Semántico",
+  "competencia": "Identificación de narrador",
+  "enunciado": "Lee el siguiente fragmento del texto 'El asalto':\n\n«El ladrón entró sigilosamente por la ventana. No vio al mastín que dormía en la penumbra. El perro despertó y, en lugar de ladrar, esperó pacientemente. Cuando el ladrón se acercó a la caja fuerte, el animal se abalanzó sobre él. El hombre cayó al suelo, herido, y el mastín volvió a su rincón a esperar las órdenes del dueño.»\n\nEn el texto 'El asalto', ¿a quién corresponde la voz que narra el texto?",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "El ladrón que resultó herido.",
+    "B": "Un narrador ajeno a los hechos.",
+    "C": "Quien habla a través del teléfono.",
+    "D": "El pensamiento del mastín."
   },
-  {
-    "id": "LC-336",
-    "materia": "Lectura Crítica",
-    "componente": "Semántico",
-    "competencia": "Identificación de narrador",
-    "enunciado": "En el texto 'El asalto', ¿a quién corresponde la voz que narra el texto?",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "El ladrón que resultó herido.",
-      "B": "Un narrador ajeno a los hechos.",
-      "C": "Quien habla a través del teléfono.",
-      "D": "El pensamiento del mastín."
-    },
-    "respuesta_correcta": "B",
-    "justificacion": "El narrador no es un personaje de la historia; describe los hechos desde afuera, sin identificarse con ningún personaje. Es un narrador omnisciente ajeno a los hechos (narrador en tercera persona)."
+  "respuesta_correcta": "B",
+  "justificacion": "El narrador no es un personaje de la historia; describe los hechos desde afuera, sin identificarse con ningún personaje. Es un narrador omnisciente ajeno a los hechos (narrador en tercera persona).",
+  "text_evidence": "El narrador describe las acciones del ladrón, del mastín y del dueño desde una perspectiva externa sin identificarse con ninguno de ellos, lo que indica un narrador ajeno a los hechos."
+},
+{
+  "id": "LC-337",
+  "materia": "Lectura Crítica",
+  "componente": "Semántico",
+  "competencia": "Análisis de textos literarios",
+  "enunciado": "Lee el siguiente fragmento del texto 'La noche de los feos':\n\n«—Usted admira a los hermosos, a los normales —le dijo el narrador a la mujer—. Todos lo hacemos. Crecemos aprendiendo que hay una manera correcta de ser, una medida de lo bello que la sociedad nos impone desde la infancia. Los que no encajamos en ese molde quedamos al margen, observando desde la orilla.»\n\nEn el texto 'La noche de los feos', cuando el narrador usa la frase 'Usted admira a los hermosos, a los normales' supone que:",
+  "tipo": "seleccion_multiple",
+  "opciones": {
+    "A": "La sociedad establece los parámetros de la belleza física.",
+    "B": "Su experiencia personal determina si alguien es hermoso.",
+    "C": "La belleza física es parte de lo que conlleva ser normal.",
+    "D": "Los estándares de normalidad difieren de los de belleza."
   },
-  {
-    "id": "LC-337",
-    "materia": "Lectura Crítica",
-    "componente": "Semántico",
-    "competencia": "Análisis de textos literarios",
-    "enunciado": "En el texto 'La noche de los feos', cuando el narrador usa la frase 'Usted admira a los hermosos, a los normales' supone que:",
-    "tipo": "seleccion_multiple",
-    "opciones": {
-      "A": "La sociedad establece los parámetros de la belleza física.",
-      "B": "Su experiencia personal determina si alguien es hermoso.",
-      "C": "La belleza física es parte de lo que conlleva ser normal.",
-      "D": "Los estándares de normalidad difieren de los de belleza."
-    },
-    "respuesta_correcta": "A",
-    "justificacion": "El narrador asume que la mujer (y él mismo) admiran a los 'hermosos y normales', lo que implica que hay estándares sociales establecidos sobre lo que se considera bello y normal. La sociedad define esos parámetros."
-  },
+  "respuesta_correcta": "A",
+  "justificacion": "El narrador asume que la mujer (y él mismo) admiran a los 'hermosos y normales', lo que implica que hay estándares sociales establecidos sobre lo que se considera bello y normal. La sociedad define esos parámetros.",
+  "text_evidence": "El narrador afirma que 'la sociedad nos impone desde la infancia' una medida de lo bello, lo que indica que los parámetros de belleza son establecidos socialmente."
+},
   {
     "id": "LC-338",
     "materia": "Lectura Crítica",
@@ -2219,7 +2241,7 @@
     "materia": "Lectura Crítica",
     "componente": "Semántico",
     "competencia": "Análisis de textos narrativos",
-    "enunciado": "En el texto 'El arte de conversar', ¿qué función cumple la anécdota de la vaca dentro del texto?",
+    "enunciado": "Lee el siguiente fragmento del texto 'El arte de conversar':\n\n«Las anécdotas son la sal de la conversación. Un buen conversador no habla de sí mismo, sino que dirige la conversación para que todos participen. Las anécdotas valiosas permiten conocer la personalidad de los individuos a través de los hechos de su vida. Por ejemplo, se cuenta que don Pepe Sierra, el acaudalado antioqueño, tenía una vaca que se enfermó. En lugar de llamar al veterinario, él mismo la curó con remedios caseros, demostrando así su carácter ahorrativo y su desconfianza hacia los gastos innecesarios. Quien conoce esta anécdota, conoce algo esencial de la personalidad de don Pepe.»\n\nEn el texto 'El arte de conversar', ¿qué función cumple la anécdota de la vaca dentro del texto?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "Explicar la forma adecuada de tratar con el ganado sano que muere víctima de accidentes.",
@@ -2228,8 +2250,9 @@
       "D": "Argumentar que prueba cuál es la manera correcta de conducir una conversación interesante."
     },
     "respuesta_correcta": "C",
-    "justificacion": "La autora del texto explica que las anécdotas son 'la sal de la conversación' y permiten conocer la personalidad de las personas a través de los hechos de su vida. La anécdota de la vaca se presenta precisamente como un ejemplo de cómo una anécdota revela la personalidad de don Pepe Sierra."
-  },
+    "justificacion": "La autora del texto explica que las anécdotas son 'la sal de la conversación' y permiten conocer la personalidad de las personas a través de los hechos de su vida. La anécdota de la vaca se presenta precisamente como un ejemplo de cómo una anécdota revela la personalidad de don Pepe Sierra.",
+    "text_evidence": "El texto afirma que 'las anécdotas valiosas permiten conocer la personalidad de los individuos a través de los hechos de su vida' y presenta la anécdota de la vaca como ejemplo de esto, mostrando que revela el carácter ahorrativo y desconfiado de don Pepe Sierra."
+},
   {
     "id": "LC-341",
     "materia": "Lectura Crítica",
