@@ -1140,7 +1140,7 @@
     "materia": "Lectura Crítica",
     "componente": "Sintáctico",
     "competencia": "Articulación de las partes (Texto Discontinuo)",
-    "enunciado": "[DESCRIPCIÓN DE TABLA DE DATOS]: Una tabla del Ministerio de Educación compara cuatro metodologías de enseñanza (A, B, C y D) en 100 colegios piloto durante un año. La tabla mide el incremento en la comprensión lectora (%) y el costo de implementación por aula ($).\n- Metodología A: +5% comprensión / Costo: $100.000\n- Metodología B: +22% comprensión / Costo: $850.000\n- Metodología C: +20% comprensión / Costo: $200.000\n- Metodología D: +12% comprensión / Costo: $500.000\n\nSi el Gobierno busca optimizar el presupuesto público bajo un criterio de máxima eficiencia costo-beneficio, ¿cuál metodología debería priorizar?",
+    "enunciado": "![DESCRIPCIÓN DE TABLA DE DATOS](data/img/LC-073.png)  Una tabla del Ministerio de Educación compara cuatro metodologías de enseñanza (A, B, C y D) en 100 colegios piloto durante un año. La tabla mide el incremento en la comprensión lectora (%) y el costo de implementación por aula ($).\n- Metodología A: +5% comprensión / Costo: $100.000\n- Metodología B: +22% comprensión / Costo: $850.000\n- Metodología C: +20% comprensión / Costo: $200.000\n- Metodología D: +12% comprensión / Costo: $500.000\n\nSi el Gobierno busca optimizar el presupuesto público bajo un criterio de máxima eficiencia costo-beneficio, ¿cuál metodología debería priorizar?",
     "tipo": "seleccion_multiple",
     "opciones": {
       "A": "La Metodología A, porque es la que requiere la menor inversión económica de todas.",

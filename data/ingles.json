@@ -776,7 +776,7 @@
    "materia": "Inglés",
    "componente": "Lexical",
    "competencia": "Competencia Léxica (Vocabulario)",
-   "enunciado": "Read the text and choose the best word to complete the blank space:\n\n«The structural integrity of the old suspension bridge was severely compromised. Therefore, the city enginee rs decided to ________ vehicle traffic across it until reinforcements were installed.» ",
+   "enunciado": "Read the text and choose the best word to complete the blank space:\n\n«The structural integrity of the old suspension bridge was severely compromised. Therefore, the city engineers decided to ________ vehicle traffic across it until reinforcements were installed.» ",
    "tipo": "seleccion_multiple",
    "opciones": {
    "A": "encourage ",
