@@ -33,8 +33,230 @@
         'Lectura Crítica': 41
       }
     };
-  
-    // ===== COLORES DE MATERIA =====
+
+    // ============================================================
+    // ===== MÓDULO DE GAMIFICACIÓN =====
+    // ============================================================
+
+    const GAMI_KEY = 'icfes-gamification';
+
+    // Definición de niveles: { nivel, nombre, xpMin, xpMax, frase }
+    const NIVELES = [
+      { nivel: 1,  nombre: 'Aprendiz',       xpMin: 0,    xpMax: 100,  frase: '¡Bienvenido al entrenamiento!' },
+      { nivel: 2,  nombre: 'Explorador',     xpMin: 100,  xpMax: 250,  frase: '¡Ya empiezas a destacar!' },
+      { nivel: 3,  nombre: 'Estudioso',      xpMin: 250,  xpMax: 450,  frase: '¡Sigue practicando!' },
+      { nivel: 4,  nombre: 'Analista',       xpMin: 450,  xpMax: 700,  frase: '¡Tu enfoque es impresionante!' },
+      { nivel: 5,  nombre: 'Estratega',      xpMin: 700,  xpMax: 1000, frase: '¡Dominas el conocimiento!' },
+      { nivel: 6,  nombre: 'Sabio',          xpMin: 1000, xpMax: 1400, frase: '¡Eres un referente!' },
+      { nivel: 7,  nombre: 'Maestro',        xpMin: 1400, xpMax: 1900, frase: '¡Camino al 500!' },
+      { nivel: 8,  nombre: 'Experto',        xpMin: 1900, xpMax: 2500, frase: '¡Casi en la cima!' },
+      { nivel: 9,  nombre: 'Crack',          xpMin: 2500, xpMax: 3200, frase: '¡Leyenda del ICFES!' },
+      { nivel: 10, nombre: 'Leyenda',        xpMin: 3200, xpMax: 9999, frase: '¡Puntaje perfecto en camino!' },
+    ];
+
+    // Definición de logros
+    const LOGROS_DEF = [
+      { id: 'primera_correcta',  icon: '🌟', nombre: 'Primera estrella',     desc: 'Responde tu primera pregunta correctamente',  check: (g) => g.totalCorrectas >= 1 },
+      { id: 'racha_3',          icon: '🔥', nombre: 'En racha',              desc: 'Responde 3 preguntas correctas seguidas',        check: (g) => g.rachaActual >= 3 },
+      { id: 'racha_5',          icon: '💥', nombre: 'Imparable',             desc: 'Responde 5 preguntas correctas seguidas',        check: (g) => g.rachaActual >= 5 },
+      { id: 'racha_10',         icon: '⚡', nombre: 'Tormenta',              desc: '10 respuestas correctas seguidas',               check: (g) => g.rachaActual >= 10 },
+      { id: 'precision_80',     icon: '🎯', nombre: 'Tirador certero',       desc: 'Mantén 80% de precisión en la sesión',          check: (g, s) => s.correctas > 0 && (s.correctas / (s.correctas + s.incorrectas)) >= 0.8 },
+      { id: 'precision_100',    icon: '🏆', nombre: 'Perfección',            desc: 'Sesión con 100% de precisión (mín. 5 preguntas)', check: (g, s) => s.correctas >= 5 && s.incorrectas === 0 },
+      { id: 'total_50',         icon: '📚', nombre: 'Estudiante',            desc: 'Acumula 50 respuestas correctas en total',       check: (g) => g.totalCorrectas >= 50 },
+      { id: 'total_100',        icon: '🎓', nombre: 'Académico',             desc: 'Acumula 100 respuestas correctas en total',      check: (g) => g.totalCorrectas >= 100 },
+      { id: 'total_500',        icon: '👑', nombre: 'Rey del ICFES',         desc: 'Acumula 500 respuestas correctas en total',      check: (g) => g.totalCorrectas >= 500 },
+      { id: 'nivel_5',          icon: '🌈', nombre: 'A mitad de camino',     desc: 'Alcanza el nivel 5',                            check: (g) => g.nivel >= 5 },
+      { id: 'nivel_10',         icon: '💎', nombre: 'Leyenda viviente',      desc: 'Alcanza el nivel máximo (10)',                  check: (g) => g.nivel >= 10 },
+      { id: 'racha_dias_2',     icon: '📅', nombre: 'Constante',             desc: '2 días de racha de estudio',                    check: (g) => g.streakDias >= 2 },
+    ];
+
+    function gamiCargar() {
+      try {
+        const raw = localStorage.getItem(GAMI_KEY);
+        if (raw) return JSON.parse(raw);
+      } catch(e) {}
+      return {
+        xp: 0,
+        nivel: 1,
+        totalCorrectas: 0,
+        rachaActual: 0,    // racha de preguntas correctas seguidas (sesión)
+        streakDias: 0,     // días consecutivos de práctica
+        ultimoDia: null,
+        logrosDesbloqueados: [],
+      };
+    }
+
+    function gamiGuardar(g) {
+      localStorage.setItem(GAMI_KEY, JSON.stringify(g));
+    }
+
+    function gamiGetNivelInfo(xp) {
+      let info = NIVELES[NIVELES.length - 1];
+      for (let i = NIVELES.length - 1; i >= 0; i--) {
+        if (xp >= NIVELES[i].xpMin) { info = NIVELES[i]; break; }
+      }
+      return info;
+    }
+
+    function gamiActualizarHUD() {
+      const g = gamiCargar();
+      const nivelInfo = gamiGetNivelInfo(g.xp);
+      const xpEnNivel = g.xp - nivelInfo.xpMin;
+      const xpParaSiguiente = nivelInfo.xpMax - nivelInfo.xpMin;
+      const porcentaje = Math.min(100, Math.round((xpEnNivel / xpParaSiguiente) * 100));
+
+      const elNivel    = document.getElementById('gami-nivel');
+      const elXpBar    = document.getElementById('gami-xp-bar');
+      const elXpTexto  = document.getElementById('gami-xp-texto');
+      const elStreak   = document.getElementById('gami-streak');
+      const elStreakIcon = document.getElementById('gami-streak-icon');
+      const elLogros   = document.getElementById('gami-logros');
+      const elPrecision = document.getElementById('gami-precision');
+
+      if (elNivel)    elNivel.textContent    = nivelInfo.nivel;
+      if (elXpBar)    elXpBar.style.width    = porcentaje + '%';
+      if (elXpTexto)  elXpTexto.textContent  = `${xpEnNivel} / ${xpParaSiguiente} XP`;
+      if (elStreak)   elStreak.textContent   = g.streakDias;
+      if (elStreakIcon) {
+        if (g.streakDias >= 2) {
+          elStreakIcon.classList.add('streak-active');
+        } else {
+          elStreakIcon.classList.remove('streak-active');
+        }
+      }
+      if (elLogros)   elLogros.textContent   = g.logrosDesbloqueados.length;
+
+      // Precisión de la sesión actual
+      const total = state.correctas + state.incorrectas;
+      const pct = total > 0 ? Math.round((state.correctas / total) * 100) : 0;
+      if (elPrecision) elPrecision.textContent = pct + '%';
+    }
+
+    function gamiMostrarXpPopup(xpGanado, esCorrecta) {
+      const bar = document.getElementById('gamification-bar');
+      if (!bar) return;
+      const rect = bar.getBoundingClientRect();
+      const popup = document.createElement('span');
+      popup.className = 'xp-popup';
+      popup.textContent = esCorrecta ? `+${xpGanado} XP` : '-1 💔';
+      if (!esCorrecta) popup.style.color = '#fca5a5';
+      popup.style.left = (rect.left + rect.width * 0.45 + Math.random() * 60 - 30) + 'px';
+      popup.style.top  = (rect.bottom + 4) + 'px';
+      document.body.appendChild(popup);
+      setTimeout(() => popup.remove(), 1200);
+    }
+
+    function gamiMostrarToastLogro(logro) {
+      // Elimina toasts anteriores para no acumular
+      document.querySelectorAll('.achievement-toast').forEach(t => t.remove());
+      const toast = document.createElement('div');
+      toast.className = 'achievement-toast';
+      toast.innerHTML = `
+        <span class="toast-icon">${logro.icon}</span>
+        <div>
+          <div class="toast-title">🏅 Logro desbloqueado</div>
+          <div class="toast-name">${logro.nombre}</div>
+          <div class="toast-desc">${logro.desc}</div>
+        </div>
+      `;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 3600);
+    }
+
+    function gamiMostrarModalNivel(nivelInfo) {
+      const modal    = document.getElementById('modal-level-up');
+      const title    = document.getElementById('modal-level-up-title');
+      const desc     = document.getElementById('modal-level-up-desc');
+      const btnClose = document.getElementById('btn-cerrar-level-up');
+      if (!modal) return;
+
+      if (title) title.textContent = `Nivel ${nivelInfo.nivel}: ${nivelInfo.nombre}`;
+      if (desc)  desc.textContent  = nivelInfo.frase;
+
+      // Re-trigger animation
+      const badge = modal.querySelector('.level-badge-animate');
+      if (badge) {
+        badge.classList.remove('level-badge-animate');
+        void badge.offsetWidth;
+        badge.classList.add('level-badge-animate');
+      }
+
+      modal.classList.remove('hidden');
+      if (btnClose) {
+        btnClose.onclick = () => modal.classList.add('hidden');
+      }
+
+      // Confetti al subir nivel
+      if (typeof confetti === 'function') {
+        confetti({ particleCount: 80, spread: 60, origin: { y: 0.5 }, colors: ['#a78bfa', '#f0abfc', '#fde68a'] });
+      }
+    }
+
+    function gamiOtorgarXP(esCorrecta) {
+      const g = gamiCargar();
+      const nivelAntes = gamiGetNivelInfo(g.xp).nivel;
+
+      let xpGanado = 0;
+      if (esCorrecta) {
+        xpGanado = 10;
+        // Bonus por racha
+        if (g.rachaActual >= 10) xpGanado += 10;
+        else if (g.rachaActual >= 5) xpGanado += 5;
+        else if (g.rachaActual >= 3) xpGanado += 2;
+        g.rachaActual++;
+        g.totalCorrectas++;
+      } else {
+        g.rachaActual = 0; // Rompe racha
+      }
+
+      g.xp = Math.max(0, g.xp + xpGanado);
+      const nivelDespues = gamiGetNivelInfo(g.xp).nivel;
+
+      // Verificar logros
+      const logrosNuevos = [];
+      LOGROS_DEF.forEach(logro => {
+        if (!g.logrosDesbloqueados.includes(logro.id)) {
+          if (logro.check(g, state)) {
+            g.logrosDesbloqueados.push(logro.id);
+            logrosNuevos.push(logro);
+          }
+        }
+      });
+
+      gamiGuardar(g);
+      gamiActualizarHUD();
+      gamiMostrarXpPopup(xpGanado, esCorrecta);
+
+      // Subida de nivel (con delay para que se vea el XP popup primero)
+      if (nivelDespues > nivelAntes) {
+        setTimeout(() => gamiMostrarModalNivel(gamiGetNivelInfo(g.xp)), 800);
+      }
+
+      // Toasts de logros (escalonados)
+      logrosNuevos.forEach((logro, i) => {
+        setTimeout(() => gamiMostrarToastLogro(logro), 1200 + i * 4000);
+      });
+    }
+
+    function gamiVerificarStreak() {
+      const g = gamiCargar();
+      const hoy = new Date().toDateString();
+      if (g.ultimoDia === hoy) {
+        // Ya practicó hoy
+      } else if (g.ultimoDia === new Date(Date.now() - 86400000).toDateString()) {
+        // Ayer practicó: mantiene racha
+        g.streakDias++;
+        g.ultimoDia = hoy;
+      } else {
+        // Se rompió la racha
+        g.streakDias = 1;
+        g.ultimoDia = hoy;
+      }
+      gamiGuardar(g);
+      gamiActualizarHUD();
+    }
+
+      // ===== COLORES DE MATERIA =====
     const MATERIA_COLORS = {
       'Lectura Crítica': { bg: 'bg-blue-100 dark:bg-blue-900/30', text: 'text-blue-700 dark:text-blue-300', bar: '#3b82f6' },
       'Matemáticas': { bg: 'bg-purple-100 dark:bg-purple-900/30', text: 'text-purple-700 dark:text-purple-300', bar: '#8b5cf6' },
@@ -246,6 +468,11 @@
       actualizarTiempoEstimado();
       
       verificarProgresoGuardado();
+
+      // ===== GAMIFICACIÓN: inicializar =====
+      gamiVerificarStreak();
+      gamiActualizarHUD();
+      // ======================================
     }
   
     // ============================================================
@@ -668,6 +895,7 @@
       }
   
       mostrarPantalla('quiz');
+      gamiActualizarHUD(); // Resetear HUD al iniciar sesi\u00f3n
       renderizarPregunta();
     }
   
@@ -900,6 +1128,11 @@ if (idBadge) {
   
       DOM.miniCorrectas.textContent = state.correctas;
       DOM.miniIncorrectas.textContent = state.incorrectas;
+
+      // ===== GAMIFICACIÓN: otorgar XP =====
+      gamiOtorgarXP(esCorrecta);
+      // =====================================
+
       guardarProgreso();
     }
   

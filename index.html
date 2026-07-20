@@ -288,7 +288,66 @@
 
   <!-- ==================== PANTALLA DEL CUESTIONARIO ==================== -->
   <div id="pantalla-quiz" class="min-h-screen flex flex-col hidden">
-    <nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50">
+
+    <!-- ===== BARRA DE GAMIFICACIÓN ===== -->
+    <div id="gamification-bar" class="px-3 py-2">
+      <div class="max-w-3xl mx-auto flex items-center gap-2 sm:gap-3">
+
+        <!-- Nivel -->
+        <div class="flex items-center gap-1.5 flex-shrink-0">
+          <span class="text-base sm:text-lg" title="Nivel">&#11088;</span>
+          <div class="text-center">
+            <span id="gami-nivel-label" class="block text-[10px] text-purple-200 font-semibold leading-none">NIVEL</span>
+            <span id="gami-nivel" class="block text-white font-extrabold text-sm leading-tight">1</span>
+          </div>
+        </div>
+
+        <!-- Barra XP -->
+        <div class="flex flex-col gap-0.5 flex-1 min-w-0">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] text-purple-200 font-semibold">XP</span>
+            <span id="gami-xp-texto" class="text-[10px] text-purple-200">0 / 100</span>
+          </div>
+          <div class="gami-xp-track">
+            <div id="gami-xp-bar" class="gami-xp-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <!-- Separador -->
+        <div class="w-px h-6 bg-white/20 flex-shrink-0 hidden sm:block"></div>
+
+        <!-- Racha -->
+        <div class="flex items-center gap-1 flex-shrink-0">
+          <span id="gami-streak-icon" class="text-base">&#128293;</span>
+          <div class="text-center">
+            <span id="gami-streak" class="block text-white font-extrabold text-sm leading-tight">0</span>
+            <span class="block text-[9px] text-purple-200 font-semibold leading-none">días</span>
+          </div>
+        </div>
+
+        <!-- Logros -->
+        <div class="flex items-center gap-1 flex-shrink-0">
+          <span class="text-base">&#127885;</span>
+          <div class="text-center">
+            <span id="gami-logros" class="block text-white font-extrabold text-sm leading-tight">0</span>
+            <span class="block text-[9px] text-purple-200 font-semibold leading-none">logros</span>
+          </div>
+        </div>
+
+        <!-- Precisión -->
+        <div class="flex items-center gap-1 flex-shrink-0">
+          <span class="text-base">&#127919;</span>
+          <div class="text-center">
+            <span id="gami-precision" class="block text-white font-extrabold text-sm leading-tight">0%</span>
+            <span class="block text-[9px] text-purple-200 font-semibold leading-none">precisión</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ===== FIN BARRA GAMIFICACIÓN ===== -->
+
+    <nav class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 sticky top-[52px] z-50">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 py-3">
         <div class="flex items-center gap-3 mb-2">
           <span id="quiz-counter" class="text-xs font-bold text-primary-600 dark:text-primary-400 whitespace-nowrap">1/10</span>
@@ -581,6 +640,22 @@
         <div id="lista-perfiles" class="space-y-2"></div>
         <p id="sin-perfiles" class="text-center text-gray-400 dark:text-gray-500 py-4 text-sm hidden">No hay perfiles creados.<br>Crea uno para guardar tu progreso.</p>
       </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL SUBIDA DE NIVEL ==================== -->
+  <div id="modal-level-up" class="fixed inset-0 z-[120] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm hidden">
+    <div class="bg-gradient-to-br from-indigo-900 via-purple-900 to-violet-900 rounded-3xl max-w-sm w-full p-8 shadow-2xl border border-purple-500/30 text-center">
+      <div class="level-badge-animate inline-flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-br from-yellow-300 to-amber-500 shadow-lg shadow-amber-500/40 mx-auto mb-4 text-5xl">
+        &#11088;
+      </div>
+      <p class="text-purple-300 text-xs font-bold uppercase tracking-widest mb-1">¡Subiste de nivel!
+      </p>
+      <h3 id="modal-level-up-title" class="text-3xl font-black text-white mb-2">Nivel 2</h3>
+      <p id="modal-level-up-desc" class="text-purple-200 text-sm mb-6">Sigue así, eres imparable.</p>
+      <button id="btn-cerrar-level-up" class="w-full py-3 rounded-2xl bg-gradient-to-r from-violet-500 to-purple-500 hover:from-violet-600 hover:to-purple-600 text-white font-bold text-sm shadow-lg shadow-purple-500/30 transition-all duration-200 active:scale-[0.98]">
+        ¡Continuar!
+      </button>
     </div>
   </div>
 
